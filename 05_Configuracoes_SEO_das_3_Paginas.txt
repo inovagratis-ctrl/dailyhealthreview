@@ -1,0 +1,45 @@
+﻿=============================================================
+CONFIGURAÇÕES DE SEO DAS 3 PÁGINAS NO SYSTEME.IO
+(Cole em: Editor > Configurações ⚙️ > Otimização de SEO)
+=============================================================
+
+--- 1. PÁGINA INICIAL (HOME / CAPA DO PORTAL) ---
+Título (Title):
+Daily Health Review | Evidence-Based Wellness & Metabolism Reports
+
+Descrição (Description):
+Daily Health Review publishes independent investigative reports on metabolic health, natural morning routines, longevity science, and evidence-based wellness.
+
+Palavras-chave (Keywords):
+daily health review, metabolic health, natural morning routine, metabolism booster, longevity science, wellness reports
+
+Autor (Author):
+Daily Health Review Editorial Team
+
+
+--- 2. ARTIGO 1 (7-SECOND EASTERN MORNING ELIXIR) ---
+Título (Title):
+The 7-Second "Eastern Morning Elixir" That Reawakens Metabolism
+
+Descrição (Description):
+Discover the simple 7-second Eastern morning ritual that helps reawaken a dormant cellular metabolism naturally without strict diets or exhausting cardio.
+
+Palavras-chave (Keywords):
+7 second morning elixir, eastern morning ritual, slow metabolism fix, metabolic switch, natural fat burning ritual, daily health review
+
+Autor (Author):
+Daily Health Review • Health & Wellness Desk
+
+
+--- 3. ARTIGO 2 (NAGANO LEAN BODY TONIC - COM FOTOS) ---
+Título (Title):
+Nagano Morning Tonic: The Science Behind Sluggish Metabolism After 35
+
+Descrição (Description):
+Discover the Japanese mountain morning ritual studied by metabolic researchers. How the Nagano Tonic formula targets cellular fat burning without extreme diets.
+
+Palavras-chave (Keywords):
+nagano lean body tonic, nagano tonic review, metabolism after 35, morning metabolism ritual, eastern morning elixir, sluggish metabolism fix
+
+Autor (Author):
+Sarah Lin, Senior Health Editor

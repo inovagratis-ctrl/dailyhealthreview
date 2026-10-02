@@ -1,0 +1,14 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/morning-routine", "destination": "/articles/02_Artigo_1_Elixir_7_Segundos.html" },
+    { "source": "/nagano-tonic-review", "destination": "/articles/03_Artigo_2_Nagano_Completo_Com_Fotos.html" },
+    { "source": "/prodentim-report", "destination": "/articles/prodentim-special-report.html" },
+    { "source": "/privacy", "destination": "/legal/privacy-policy.html" },
+    { "source": "/terms", "destination": "/legal/terms-of-service.html" },
+    { "source": "/disclosure", "destination": "/legal/affiliate-disclosure.html" },
+    { "source": "/disclaimer", "destination": "/legal/fda-disclaimer.html" },
+    { "source": "/contact", "destination": "/legal/contact.html" }
+  ]
+}

@@ -1,0 +1,44 @@
+﻿=============================================================
+PACOTE DE PINS DO PINTEREST (PROMPTS + METADADOS EM INGLÊS)
+=============================================================
+
+--- PIN 1: O TÔNICO MATINAL (ALTO CLIQUE) ---
+PROMPT DA IMAGEM:
+A vertical 2:3 Pinterest graphic poster. The background is a bright, photorealistic photo of a clear glass mug filled with a warm golden herbal morning tonic, faint steam rising, fresh lemon slice, on a modern white marble kitchen counter with morning sunlight. Overlaying the image is clean, professional graphic design typography: At the top, bold legible dark letters read: "THE 7-SECOND MORNING TONIC". Directly underneath in a clean contrasting badge, bold letters read: "DRINK BEFORE BREAKFAST". Elegant editorial magazine layout, perfectly spelled text, sharp typography, 8k resolution.
+
+TÍTULO NO PINTEREST:
+The 7-Second Eastern Morning Habit That Reawakens Metabolism
+
+DESCRIÇÃO NO PINTEREST:
+Tired of stubborn midsection fat and afternoon crashes? Discover the simple 7-second morning ritual discovered in Japan that naturally reawakens a dormant metabolism without extreme dieting. Click to read the full report.
+
+LINK DE DESTINO:
+https://dailyhealthreview.systeme.io/morning-routine
+
+
+--- PIN 2: ESTILO DE VIDA / MULHER 40+ ---
+PROMPT DA IMAGEM:
+A vertical 2:3 Pinterest lifestyle poster. The background is a realistic, beautiful photo of a healthy, glowing 45-year-old woman smiling in a bright sunlit kitchen, holding a warm cup of herbal tea. Across the top third of the image, placed on a subtle semi-transparent white card, is crisp, modern typography: Large bold dark letters reading "WHY STRICT DIETS FAIL" followed by a prominent colored sub-headline reading "THE DORMANT METABOLISM SECRET". Magazine cover aesthetic, flawless typography, clean fonts, high resolution, 8k.
+
+TÍTULO NO PINTEREST:
+Why Strict Diets Fail: The Dormant Metabolism Secret
+
+DESCRIÇÃO NO PINTEREST:
+See why thousands are ditching restrictive calorie counting for this simple 7-second morning routine. More energy, fewer cravings, and a revitalized metabolism. Tap through to read the full report.
+
+LINK DE DESTINO:
+https://dailyhealthreview.systeme.io/morning-routine
+
+
+--- PIN 3: INGREDIENTES NATURAIS / BOTÂNICOS ---
+PROMPT DA IMAGEM:
+A vertical 2:3 Pinterest aesthetic wellness poster. The background is an artistic top-down flat-lay photo of fresh ginger, cinnamon sticks, lemon wedges, and a small glass bottle of golden elixir on white marble. Overlaid neatly in the center is a modern minimalist text box with bold, clean typography: Large uppercase letters reading "THE ANCIENT MORNING ELIXIR" with a smaller subtitle badge reading "FLIP YOUR METABOLIC SWITCH". Professional wellness journal aesthetic, perfectly rendered letters, no typos, sharp 8k quality.
+
+TÍTULO NO PINTEREST:
+The Ancient Morning Elixir to Support Sluggish Metabolism
+
+DESCRIÇÃO NO PINTEREST:
+Learn about the ancient botanical ritual from the mountains of Nagano that helps flip your body's natural calorie-burning switch. Easy to do at home every morning. Tap the link to read the breakdown.
+
+LINK DE DESTINO:
+https://dailyhealthreview.systeme.io/morning-routine
