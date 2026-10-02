@@ -1,5 +1,6 @@
-﻿=============================================================
+=============================================================
 PACOTE DE PINS DO PINTEREST (PROMPTS + METADADOS EM INGLÊS)
+DOMÍNIO OFICIAL: https://dailyhealthreview.vercel.app
 =============================================================
 
 --- PIN 1: O TÔNICO MATINAL (ALTO CLIQUE) ---
@@ -12,8 +13,8 @@ The 7-Second Eastern Morning Habit That Reawakens Metabolism
 DESCRIÇÃO NO PINTEREST:
 Tired of stubborn midsection fat and afternoon crashes? Discover the simple 7-second morning ritual discovered in Japan that naturally reawakens a dormant metabolism without extreme dieting. Click to read the full report.
 
-LINK DE DESTINO:
-https://dailyhealthreview.systeme.io/morning-routine
+LINK DE DESTINO NOVO (VERCEL):
+https://dailyhealthreview.vercel.app/morning-routine
 
 
 --- PIN 2: ESTILO DE VIDA / MULHER 40+ ---
@@ -26,8 +27,8 @@ Why Strict Diets Fail: The Dormant Metabolism Secret
 DESCRIÇÃO NO PINTEREST:
 See why thousands are ditching restrictive calorie counting for this simple 7-second morning routine. More energy, fewer cravings, and a revitalized metabolism. Tap through to read the full report.
 
-LINK DE DESTINO:
-https://dailyhealthreview.systeme.io/morning-routine
+LINK DE DESTINO NOVO (VERCEL):
+https://dailyhealthreview.vercel.app/morning-routine
 
 
 --- PIN 3: INGREDIENTES NATURAIS / BOTÂNICOS ---
@@ -40,5 +41,19 @@ The Ancient Morning Elixir to Support Sluggish Metabolism
 DESCRIÇÃO NO PINTEREST:
 Learn about the ancient botanical ritual from the mountains of Nagano that helps flip your body's natural calorie-burning switch. Easy to do at home every morning. Tap the link to read the breakdown.
 
-LINK DE DESTINO:
-https://dailyhealthreview.systeme.io/morning-routine
+LINK DE DESTINO NOVO (VERCEL):
+https://dailyhealthreview.vercel.app/morning-routine
+
+
+--- PIN 4: SAÚDE BUCAL / DENTES E GENGIVAS (PRODENTIM) ---
+PROMPT DA IMAGEM:
+A vertical 2:3 Pinterest health poster. A photorealistic, clean medical aesthetic photo of a smiling woman with naturally bright white teeth and healthy pink gums, holding an organic mint leaf, modern bright bathroom background. Overlay text in bold, clean dark letters: "THE ORAL MICROBIOME SECRET" with a sub-badge reading "REPOPULATE GOOD BACTERIA". Clean, minimalist, editorial typography, 8k quality.
+
+TÍTULO NO PINTEREST:
+Why Common Toothpastes Destroy Good Mouth Bacteria (And What to Do)
+
+DESCRIÇÃO NO PINTEREST:
+Discover why traditional dental products might be wiping out your mouth's natural defense line. How 3.5 billion oral probiotics rebuild healthy gums and fresh breath. Click to read the special report.
+
+LINK DE DESTINO NOVO (VERCEL):
+https://dailyhealthreview.vercel.app/prodentim-report
