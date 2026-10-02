@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dailyhealthreview.vercel.app/sitemap.xml
