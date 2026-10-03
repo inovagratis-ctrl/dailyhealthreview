@@ -1,15 +1,27 @@
-﻿=============================================================
-LINKS, CÓDIGOS E DADOS DO PROJETO
+=============================================================
+LINKS, CÓDIGOS E CREDENCIAIS DO PROJETO
 =============================================================
 
-Subdomínio Systeme.io:
-dailyhealthreview.systeme.io
+1. Domínio Oficial no Ar (Vercel):
+   https://dailyhealthreview.vercel.app
 
-Produto ClickBank:
-Nagano Lean Body Tonic (Comissão: ~$120 a $140 por venda)
+2. Repositório GitHub Conectado:
+   https://github.com/inovagratis-ctrl/dailyhealthreview
 
-Seu HopLink de Afiliado ClickBank:
-https://06fe0-8qxlbmeo9jfi-fx24x4f.hop.clickbank.net
+3. Meta Tag do Google Search Console:
+   <meta name="google-site-verification" content="Ih8x_kaPf1GY6a-zmdo429ySG7ha7PmzStUR5dxe4nM" />
 
-Meta Tag de Verificação do Google Search Console:
-<meta name="google-site-verification" content="cscoRWzuiQkINBevB5IysIna4u-UxYGK7QczmVeFqAk" />
+4. Produtos & HopLinks ClickBank:
+   - Nagano Lean Body Tonic (Metabolismo / 7s Elixir):
+     URL Artigo: https://dailyhealthreview.vercel.app/morning-routine
+     HopLink: https://06fe0-8qxlbmeo9jfi-fx24x4f.hop.clickbank.net
+
+   - ProDentim (Saúde Bucal / Dentes e Gengivas):
+     URL Artigo: https://dailyhealthreview.vercel.app/prodentim-report
+     HopLink: https://8e01330llbokexfevijb-nq74a.hop.clickbank.net
+
+5. E-mail de Notificações / Suporte Editorial:
+   eusimar72@gmail.com
+
+6. Chave de API ClickBank (Ativa & Testada):
+   API-C6JT52HMN2YWGH0YK3IFCI8O3D37X5O4VLTV
