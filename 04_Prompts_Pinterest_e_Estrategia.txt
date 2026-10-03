@@ -3,7 +3,7 @@ PACOTE DE PINS DO PINTEREST (PROMPTS + METADADOS EM INGLÊS)
 DOMÍNIO OFICIAL: https://dailyhealthreview.vercel.app
 =============================================================
 
---- PIN 1: O TÔNICO MATINAL (ALTO CLIQUE) ---
+--- PIN 1: O TÔNICO MATINAL (ALTO CLIQUE - NAGANO TONIC) ---
 PROMPT DA IMAGEM:
 A vertical 2:3 Pinterest graphic poster. The background is a bright, photorealistic photo of a clear glass mug filled with a warm golden herbal morning tonic, faint steam rising, fresh lemon slice, on a modern white marble kitchen counter with morning sunlight. Overlaying the image is clean, professional graphic design typography: At the top, bold legible dark letters read: "THE 7-SECOND MORNING TONIC". Directly underneath in a clean contrasting badge, bold letters read: "DRINK BEFORE BREAKFAST". Elegant editorial magazine layout, perfectly spelled text, sharp typography, 8k resolution.
 
@@ -57,3 +57,26 @@ Discover why traditional dental products might be wiping out your mouth's natura
 
 LINK DE DESTINO NOVO (VERCEL):
 https://dailyhealthreview.vercel.app/prodentim-report
+
+
+--- PIN 5: CONTROLE DE GLICOSE & ENERGIA (SUGAR DEFENDER) ---
+IMAGEM GERADA:
+Arquivo: pin_sugar_defender_glucose_report.jpg (Salvo em Downloads)
+
+TÍTULO NO PINTEREST:
+Why Blood Sugar Spikes Trigger Afternoon Crashes (And The 24-Herb Fix)
+
+DESCRIÇÃO NO PINTEREST:
+Struggling with sluggish 3 PM fatigue, intense sugar cravings, and stubborn belly fat? Discover how this 24-in-1 botanical liquid dropper helps balance healthy glucose levels and restores clean all-day energy naturally. Tap to read the full independent clinical review!
+
+LINK DE DESTINO NOVO (VERCEL):
+https://dailyhealthreview.vercel.app/sugar-defender-guide
+
+TAGS SUGERIDAS NO PINTEREST:
+- Blood sugar balance
+- Energy booster
+- Sugar cravings
+- Healthy lifestyle
+- Natural remedies
+- Wellness
+- Healthy diet
