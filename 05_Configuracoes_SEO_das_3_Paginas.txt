@@ -1,45 +1,55 @@
-﻿=============================================================
-CONFIGURAÇÕES DE SEO DAS 3 PÁGINAS NO SYSTEME.IO
-(Cole em: Editor > Configurações ⚙️ > Otimização de SEO)
-=============================================================
+================================================================================
+CONFIGURAÇÕES COMPLETAS DE SEO & SITEMAP — DAILY HEALTH REVIEW
+================================================================================
 
---- 1. PÁGINA INICIAL (HOME / CAPA DO PORTAL) ---
-Título (Title):
-Daily Health Review | Evidence-Based Wellness & Metabolism Reports
+DOMÍNIO: https://dailyhealthreview.vercel.app
+GOOGLE SEARCH CONSOLE TAG: <meta name="google-site-verification" content="Ih8x_kaPf1GY6a-zmdo429ySG7ha7PmzStUR5dxe4nM" />
+SITEMAP XML OFICIAL: https://dailyhealthreview.vercel.app/sitemap.xml
+ROBOTS.TXT: https://dailyhealthreview.vercel.app/robots.txt
 
-Descrição (Description):
-Daily Health Review publishes independent investigative reports on metabolic health, natural morning routines, longevity science, and evidence-based wellness.
+--------------------------------------------------------------------------------
+MAPA DE TODAS AS PÁGINAS INDEXADAS NO GOOGLE & MECANISMOS DE BUSCA:
+--------------------------------------------------------------------------------
 
-Palavras-chave (Keywords):
-daily health review, metabolic health, natural morning routine, metabolism booster, longevity science, wellness reports
+1. HOME / PORTAL PRINCIPAL (Priority 1.0)
+   - URL: https://dailyhealthreview.vercel.app/
+   - Title: Daily Health Review | Evidence-Based Health Reports & Natural Wellness
+   - Description: Independent investigative health journal covering natural metabolism protocols, glucose management, cardiovascular vitality, and cellular wellness.
 
-Autor (Author):
-Daily Health Review Editorial Team
+2. CIRCO2 NITRIC OXIDE PROTOCOL (Priority 0.9)
+   - URL: https://dailyhealthreview.vercel.app/circo2-nitric-oxide-report
+   - Title: SPECIAL REPORT: The Nobel Prize Nitric Oxide Breakthrough For Circulation & Vitality After 50 | Daily Health Review
+   - Focus Keywords: CircO2 review, nitric oxide booster, blood circulation after 50, cold hands heavy legs natural remedy.
 
+3. CLEANSE SANA GUT REBOOT (Priority 0.9)
+   - URL: https://dailyhealthreview.vercel.app/cleansesana-gut-reboot
+   - Title: SPECIAL REPORT: The 7-Second Gut Reboot Protocol For Rapid Bloating Relief & Microbiome Reset | Daily Health Review
+   - Focus Keywords: CleanseSana review, gut microbiome reboot, abdominal bloating flush, natural digestive herbs.
 
---- 2. ARTIGO 1 (7-SECOND EASTERN MORNING ELIXIR) ---
-Título (Title):
-The 7-Second "Eastern Morning Elixir" That Reawakens Metabolism
+4. SUGAR DEFENDER GLUCOSE GUIDE (Priority 0.9)
+   - URL: https://dailyhealthreview.vercel.app/sugar-defender-guide
+   - Title: SPECIAL REPORT: The 24-Herb Blood Sugar Breakthrough That Restores Clean Energy | Daily Health Review
+   - Focus Keywords: Sugar Defender review, blood sugar balance, 24 herb drops, afternoon energy crash fix.
 
-Descrição (Description):
-Discover the simple 7-second Eastern morning ritual that helps reawaken a dormant cellular metabolism naturally without strict diets or exhausting cardio.
+5. NAGANO LEAN BODY TONIC — MORNING ROUTINE (Priority 0.9)
+   - URL: https://dailyhealthreview.vercel.app/morning-routine
+   - Title: The Odd 7-Second "Eastern Morning Elixir" That Reawakens Dormant Metabolism Naturally | Daily Health Review
+   - Focus Keywords: 7-second morning ritual, Japanese mountain elixir, dormant metabolism ritual.
 
-Palavras-chave (Keywords):
-7 second morning elixir, eastern morning ritual, slow metabolism fix, metabolic switch, natural fat burning ritual, daily health review
+6. NAGANO TONIC FULL CLINICAL REVIEW (Priority 0.9)
+   - URL: https://dailyhealthreview.vercel.app/nagano-tonic-review
+   - Title: Nagano Tonic Reviews: Independent Medical Investigation & Ingredients Breakdown | Daily Health Review
+   - Focus Keywords: Nagano Lean Body Tonic review, does Nagano tonic work, ingredients safety discount.
 
-Autor (Author):
-Daily Health Review • Health & Wellness Desk
+7. PRODENTIM ORAL MICROBIOME REPORT (Priority 0.9)
+   - URL: https://dailyhealthreview.vercel.app/prodentim-report
+   - Title: The Oral Microbiome Secret: How Probiotics Rebuild Healthy Teeth & Gums Naturally | Daily Health Review
+   - Focus Keywords: ProDentim review, oral probiotics for gums, teeth whitening bacteria, bad breath remedy.
 
-
---- 3. ARTIGO 2 (NAGANO LEAN BODY TONIC - COM FOTOS) ---
-Título (Title):
-Nagano Morning Tonic: The Science Behind Sluggish Metabolism After 35
-
-Descrição (Description):
-Discover the Japanese mountain morning ritual studied by metabolic researchers. How the Nagano Tonic formula targets cellular fat burning without extreme diets.
-
-Palavras-chave (Keywords):
-nagano lean body tonic, nagano tonic review, metabolism after 35, morning metabolism ritual, eastern morning elixir, sluggish metabolism fix
-
-Autor (Author):
-Sarah Lin, Senior Health Editor
+8. PÁGINAS LEGAIS / COMPLIANCE (Priority 0.3 - 0.4):
+   - Privacy Policy: https://dailyhealthreview.vercel.app/privacy
+   - Terms of Service: https://dailyhealthreview.vercel.app/terms
+   - Affiliate Disclosure: https://dailyhealthreview.vercel.app/disclosure
+   - FDA & Medical Disclaimer: https://dailyhealthreview.vercel.app/disclaimer
+   - Contact Us: https://dailyhealthreview.vercel.app/contact
+================================================================================
