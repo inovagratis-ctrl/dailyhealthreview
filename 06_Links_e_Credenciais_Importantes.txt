@@ -20,13 +20,18 @@ LINKS, CÓDIGOS E CREDENCIAIS DO PROJETO
      URL Artigo: https://dailyhealthreview.vercel.app/prodentim-report
      HopLink: https://8e01330llbokexfevijb-nq74a.hop.clickbank.net
 
-
    - Sugar Defender (Controle de Glicose & Energia):
      URL Artigo: https://dailyhealthreview.vercel.app/sugar-defender-guide
      HopLink Oficial: https://1bb1cc1ek8qf8sbh84dll9uk5s.hop.clickbank.net
 
-5. E-mail de Notificações / Suporte Editorial:
+5. Produtos & Links Digistore24:
+   - CleanseSana (The Gut Reboot / Saúde Intestinal & Desinchaço):
+     Affiliate ID: eusimar72
+     URL Artigo no Blog: https://dailyhealthreview.vercel.app/cleansesana-gut-reboot
+     Link Oficial de Afiliado: https://cleansesana.com/cleansesana-pdp-fe#aff=eusimar72
+
+6. E-mail de Notificações / Suporte Editorial:
    eusimar72@gmail.com
 
-6. Chave de API ClickBank (Ativa & Testada):
+7. Chave de API ClickBank (Ativa & Testada):
    API-C6JT52HMN2YWGH0YK3IFCI8O3D37X5O4VLTV
