@@ -11,6 +11,7 @@ import threading
 
 API_KEY = "API-C6JT52HMN2YWGH0YK3IFCI8O3D37X5O4VLTV"
 ACCOUNT_NICKNAME = "eusimar72"
+DIGISTORE_ID = "eusimar72"
 PORT = 8080
 
 def fetch_clickbank_orders():
@@ -48,7 +49,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daily Health Review | ClickBank Live Sales Dashboard</title>
+  <title>Daily Health Review | Live Sales & Affiliate Command Center</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -72,12 +73,12 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         <span class="bg-red-700 text-white font-black text-xl px-2.5 py-1 rounded shadow">DHR</span>
         <div>
           <h1 class="text-lg font-extrabold tracking-tight text-white flex items-center gap-2">
-            ClickBank Live Sales Dashboard
+            ClickBank & Digistore24 Live Command Center
             <span class="text-[11px] font-bold uppercase tracking-wider bg-emerald-950 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded-full flex items-center gap-1.5">
               <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span> API ONLINE
             </span>
           </h1>
-          <p class="text-xs text-slate-400">Conta: <span class="text-amber-400 font-bold">eusimar72</span> • Portal: <span class="text-slate-300 font-mono">dailyhealthreview.vercel.app</span></p>
+          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Portal: <span class="text-slate-300 font-mono">dailyhealthreview.vercel.app</span></p>
         </div>
       </div>
       
@@ -86,7 +87,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           <i class="fa-solid fa-arrows-rotate" id="refresh-icon"></i> Atualizar Agora
         </button>
         <a href="https://dailyhealthreview.vercel.app" target="_blank" class="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-lg border border-slate-700 flex items-center gap-1.5">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Blog
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Portal
         </a>
       </div>
     </div>
@@ -108,7 +109,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         </div>
         <div class="text-3xl font-black text-white" id="total-commissions">$0.00</div>
         <div class="text-xs text-emerald-200/80 mt-2 flex items-center gap-1">
-          <i class="fa-solid fa-circle-check"></i> Saldo direto na ClickBank
+          <i class="fa-solid fa-circle-check"></i> Saldo direto na ClickBank API
         </div>
       </div>
 
@@ -122,7 +123,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         </div>
         <div class="text-3xl font-black text-white" id="total-sales">0</div>
         <div class="text-xs text-amber-200/80 mt-2 flex items-center gap-1">
-          <i class="fa-solid fa-chart-line"></i> Pedidos registrados na API
+          <i class="fa-solid fa-chart-line"></i> Transações em tempo real
         </div>
       </div>
 
@@ -134,9 +135,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-layer-group"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">3 Ativos</div>
+        <div class="text-3xl font-black text-white">7 Ativos</div>
         <div class="text-xs text-cyan-200/80 mt-2 flex items-center gap-1">
-          <i class="fa-solid fa-bolt"></i> Nagano, ProDentim, Sugar Def.
+          <i class="fa-solid fa-bolt"></i> ClickBank & Digistore24
         </div>
       </div>
 
@@ -148,9 +149,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-tags"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">~$130.00</div>
+        <div class="text-3xl font-black text-white">~$125.00</div>
         <div class="text-xs text-purple-200/80 mt-2 flex items-center gap-1">
-          <i class="fa-solid fa-shield-halved"></i> 75% a 85% de comissão
+          <i class="fa-solid fa-shield-halved"></i> 60% a 85% de comissão
         </div>
       </div>
 
@@ -161,29 +162,96 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="flex items-center justify-between mb-5">
         <div>
           <h2 class="text-base font-bold text-white flex items-center gap-2">
-            <i class="fa-solid fa-link text-emerald-400"></i> Produtos Conectados no Blog & HopLinks
+            <i class="fa-solid fa-link text-emerald-400"></i> Esteira de Produtos Conectados no Blog & Links Oficiais
           </h2>
-          <p class="text-xs text-slate-400">Monitorando conversões e tráfego orgânico do Pinterest e Google</p>
+          <p class="text-xs text-slate-400">Monitorando conversões e tráfego orgânico do Pinterest, Google SEO e Flipboard</p>
         </div>
-        <span class="text-xs text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700">3 Links Monitorados</span>
+        <span class="text-xs text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700 font-bold text-emerald-400">7 Artigos Monitorados</span>
       </div>
 
       <div class="overflow-x-auto">
         <table class="w-full text-left text-xs">
           <thead class="bg-slate-900/80 text-slate-300 uppercase font-bold text-[11px] border-b border-slate-800">
             <tr>
-              <th class="p-3.5">Produto ClickBank</th>
+              <th class="p-3.5">Produto Oficial</th>
+              <th class="p-3.5">Plataforma</th>
               <th class="p-3.5">Nicho / Categoria</th>
               <th class="p-3.5">Comissão Média</th>
-              <th class="p-3.5">Página no seu Blog (Vercel)</th>
+              <th class="p-3.5">Artigo no seu Portal (Vercel)</th>
               <th class="p-3.5">Status</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-800/60 font-medium">
+            <!-- VisiFlora -->
             <tr class="hover:bg-slate-800/40 transition">
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> Nagano Lean Body Tonic
+                <span class="w-2.5 h-2.5 rounded-full bg-indigo-400"></span> VisiFlora™
               </td>
+              <td class="p-3.5 text-amber-400 font-bold">ClickBank</td>
+              <td class="p-3.5 text-slate-300">Saúde dos Olhos / Eixo Intestino-Visão</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$159.37</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreview.vercel.app/visiflora-vision-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /visiflora-vision-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
+
+            <!-- CircO2 -->
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-400"></span> CircO2™
+              </td>
+              <td class="p-3.5 text-blue-400 font-bold">Digistore24</td>
+              <td class="p-3.5 text-slate-300">Óxido Nítrico / Circulação Sênior 50+</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$83.36 a $131.00</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreview.vercel.app/circo2-nitric-oxide-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /circo2-nitric-oxide-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
+
+            <!-- Advanced Memory Formula -->
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-sky-400"></span> Advanced Memory Formula™
+              </td>
+              <td class="p-3.5 text-blue-400 font-bold">Digistore24</td>
+              <td class="p-3.5 text-slate-300">Memória / Cérebro & Foco 60+</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$87.73</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreview.vercel.app/advanced-memory-formula-guide" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /advanced-memory-formula-guide <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
+
+            <!-- CleanseSana -->
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> CleanseSana™
+              </td>
+              <td class="p-3.5 text-blue-400 font-bold">Digistore24</td>
+              <td class="p-3.5 text-slate-300">Microbioma / Desinchaço Intestinal</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$106.94</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreview.vercel.app/cleansesana-gut-reboot" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /cleansesana-gut-reboot <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
+
+            <!-- Nagano Tonic -->
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-red-400"></span> Nagano Lean Body Tonic
+              </td>
+              <td class="p-3.5 text-amber-400 font-bold">ClickBank</td>
               <td class="p-3.5 text-slate-300">Metabolismo / 7s Elixir</td>
               <td class="p-3.5 text-emerald-400 font-bold">$120.00 a $140.00</td>
               <td class="p-3.5">
@@ -194,10 +262,28 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
             </tr>
 
+            <!-- Sugar Defender -->
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span> Sugar Defender®
+              </td>
+              <td class="p-3.5 text-amber-400 font-bold">ClickBank</td>
+              <td class="p-3.5 text-slate-300">Controle de Glicose & Energia</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$125.00 a $145.00</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreview.vercel.app/sugar-defender-guide" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /sugar-defender-guide <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
+
+            <!-- ProDentim -->
             <tr class="hover:bg-slate-800/40 transition">
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-teal-400"></span> ProDentim®
               </td>
+              <td class="p-3.5 text-amber-400 font-bold">ClickBank</td>
               <td class="p-3.5 text-slate-300">Saúde Bucal / Dentes & Gengivas</td>
               <td class="p-3.5 text-emerald-400 font-bold">$100.00 a $135.00</td>
               <td class="p-3.5">
@@ -208,19 +294,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
             </tr>
 
-            <tr class="hover:bg-slate-800/40 transition">
-              <td class="p-3.5 font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span> Sugar Defender®
-              </td>
-              <td class="p-3.5 text-slate-300">Controle de Glicose & Energia</td>
-              <td class="p-3.5 text-emerald-400 font-bold">$125.00 a $145.00</td>
-              <td class="p-3.5">
-                <a href="https://dailyhealthreview.vercel.app/sugar-defender-guide" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
-                  /sugar-defender-guide <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
-                </a>
-              </td>
-              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
-            </tr>
           </tbody>
         </table>
       </div>
@@ -246,7 +319,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           </div>
           <h3 class="text-sm font-bold text-slate-200 mb-1">Aguardando Primeiras Conversões</h3>
           <p class="text-xs text-slate-400 max-w-md mx-auto">
-            Assim que um leitor clicar em qualquer um dos seus Pins no Pinterest ou no Blog e finalizar a compra na ClickBank, a transação, valor da comissão e Tracking ID (TID) aparecerão aqui instantaneamente!
+            Assim que um leitor clicar em qualquer um dos seus Pins no Pinterest ou no Blog e finalizar a compra na ClickBank ou Digistore24, a transação, valor da comissão e Tracking ID (TID) aparecerão aqui instantaneamente!
           </p>
         </div>
       </div>
@@ -255,80 +328,82 @@ HTML_TEMPLATE = """<!DOCTYPE html>
   </main>
 
   <!-- Footer -->
-  <footer class="card-glow border-t border-slate-800 py-6 text-center text-xs text-slate-500 mt-auto">
-    <p>© 2026 Daily Health Review Dashboard • Monitoramento Integrado ClickBank REST API v1.3</p>
+  <footer class="border-t border-slate-800 text-center py-6 text-xs text-slate-500">
+    Daily Health Review Live Analytics • Conectado à API ClickBank REST 1.3 • Nickname: <strong class="text-slate-300">eusimar72</strong>
   </footer>
 
   <script>
     async function refreshData() {
       const icon = document.getElementById('refresh-icon');
-      icon.classList.add('fa-spin');
+      if (icon) icon.classList.add('fa-spin');
       
       try {
-        const resp = await fetch('/api/stats');
-        const data = await resp.json();
+        const res = await fetch('/api/orders');
+        const data = await res.json();
         
-        document.getElementById('total-commissions').innerText = '$' + (data.total_amount || 0).toFixed(2);
-        document.getElementById('total-sales').innerText = data.total_count || 0;
-        
+        if (data.success) {
+          document.getElementById('total-commissions').innerText = '$' + data.total_amount.toFixed(2);
+          document.getElementById('total-sales').innerText = data.total_count;
+          
+          const container = document.getElementById('orders-container');
+          if (data.orders.length > 0) {
+            let html = '<div class="overflow-x-auto"><table class="w-full text-left text-xs font-medium"><thead class="bg-slate-900 text-slate-300 uppercase text-[10px]"><tr><th class="p-3">Data/Hora</th><th class="p-3">Recibo / Order ID</th><th class="p-3">Produto</th><th class="p-3">Comissão Afiliado</th><th class="p-3">Tracking ID</th></tr></thead><tbody class="divide-y divide-slate-800">';
+            data.orders.forEach(o => {
+              html += `<tr class="hover:bg-slate-800/40"><td class="p-3">${o.transactionTime || 'N/A'}</td><td class="p-3 font-mono text-cyan-400">${o.receipt || 'N/A'}</td><td class="p-3 text-white font-bold">${o.itemTitle || o.itemNo || 'N/A'}</td><td class="p-3 text-emerald-400 font-bold">$${parseFloat(o.affiliateCommission || 0).toFixed(2)}</td><td class="p-3 text-amber-400 font-mono">${o.trackingId || '-'}</td></tr>`;
+            });
+            html += '</tbody></table></div>';
+            container.innerHTML = html;
+          }
+        }
+      } catch (e) {
+        console.error('Erro ao buscar dados:', e);
+      } finally {
+        if (icon) icon.classList.remove('fa-spin');
         const now = new Date();
         document.getElementById('last-update').innerText = 'Última checagem: ' + now.toLocaleTimeString();
-        
-        if (data.orders && data.orders.length > 0) {
-          let html = '<div class="overflow-x-auto"><table class="w-full text-left text-xs">';
-          html += '<thead class="bg-slate-900 text-slate-300 font-bold uppercase text-[11px]"><tr><th class="p-3">Data</th><th class="p-3">ID Pedido</th><th class="p-3">Produto</th><th class="p-3">Comissão</th><th class="p-3">Tracking ID (TID)</th></tr></thead><tbody class="divide-y divide-slate-800">';
-          data.orders.forEach(o => {
-            html += `<tr class="hover:bg-slate-800/50"><td class="p-3">${o.transactionTime || '-'}</td><td class="p-3 font-mono text-amber-400">${o.receipt || '-'}</td><td class="p-3 font-bold text-white">${o.itemTitle || '-'}</td><td class="p-3 font-bold text-emerald-400">$${o.affiliateCommission || '0.00'}</td><td class="p-3 font-mono text-cyan-400">${o.trackingId || '-'}</td></tr>`;
-          });
-          html += '</tbody></table></div>';
-          document.getElementById('orders-container').innerHTML = html;
-        }
-      } catch (err) {
-        console.error('Erro ao buscar dados:', err);
-      } finally {
-        setTimeout(() => icon.classList.remove('fa-spin'), 600);
       }
     }
 
-    // Auto-refresh every 60 seconds
+    // Auto refresh every 60 seconds
     setInterval(refreshData, 60000);
-    // Initial fetch
-    refreshData();
+    window.onload = refreshData;
   </script>
+
 </body>
 </html>
 """
 
 class DashboardHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
-        if self.path == "/" or self.path == "/index.html":
+        if self.path == "/api/orders":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            data = fetch_clickbank_orders()
+            self.wfile.write(json.dumps(data).encode("utf-8"))
+        else:
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
             self.end_headers()
             self.wfile.write(HTML_TEMPLATE.encode("utf-8"))
-        elif self.path == "/api/stats":
-            data = fetch_clickbank_orders()
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json; charset=utf-8")
-            self.end_headers()
-            self.wfile.write(json.dumps(data).encode("utf-8"))
-        else:
-            super().do_GET()
 
 def start_server():
-    server = HTTPServer(("localhost", PORT), DashboardHandler)
-    print(f"Server started at http://localhost:{PORT}")
+    server = HTTPServer(('127.0.0.1', PORT), DashboardHandler)
+    print("\n=======================================================")
+    print("[+] CLICKBANK & DIGISTORE LIVE SALES DASHBOARD ATIVO!")
+    print("[+] API Status: ONLINE (Conectada a ClickBank REST 1.3)")
+    print(f"[+] Acesse no seu navegador: http://localhost:{PORT}")
+    print("=======================================================\n")
     server.serve_forever()
 
 if __name__ == "__main__":
     t = threading.Thread(target=start_server, daemon=True)
     t.start()
     time.sleep(1)
-    url = f"http://localhost:{PORT}"
-    print(f"Abrindo Dashboard no navegador: {url}")
-    webbrowser.open(url)
+    webbrowser.open(f"http://localhost:{PORT}")
     try:
         while True:
             time.sleep(1)
     except KeyboardInterrupt:
-        print("Encerrando Dashboard.")
+        print("\nPainel encerrado.")

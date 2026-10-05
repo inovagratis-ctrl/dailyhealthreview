@@ -8,7 +8,7 @@ SITEMAP XML OFICIAL: https://dailyhealthreview.vercel.app/sitemap.xml
 ROBOTS.TXT: https://dailyhealthreview.vercel.app/robots.txt
 
 --------------------------------------------------------------------------------
-MAPA DE TODAS AS PÁGINAS INDEXADAS NO GOOGLE & MECANISMOS DE BUSCA:
+MAPA DE TODAS AS 14 PÁGINAS INDEXADAS NO GOOGLE & MECANISMOS DE BUSCA:
 --------------------------------------------------------------------------------
 
 1. HOME / PORTAL PRINCIPAL (Priority 1.0)
@@ -16,37 +16,47 @@ MAPA DE TODAS AS PÁGINAS INDEXADAS NO GOOGLE & MECANISMOS DE BUSCA:
    - Title: Daily Health Review | Evidence-Based Health Reports & Natural Wellness
    - Description: Independent investigative health journal covering natural metabolism protocols, glucose management, cardiovascular vitality, and cellular wellness.
 
-2. CIRCO2 NITRIC OXIDE PROTOCOL (Priority 0.9)
+2. VISIFLORA GUT-EYE VISION REPORT (Priority 0.9) - [CLICKBANK: US$ 159,37/venda]
+   - URL: https://dailyhealthreview.vercel.app/visiflora-vision-report
+   - Title: SPECIAL REPORT: The "Gut-Eye Connection" Restoring 20/20 Vision Clarity Naturally | Daily Health Review
+   - Focus Keywords: VisiFlora review, gut eye axis, natural vision restoration, macular clarity botanicals.
+
+3. ADVANCED MEMORY FORMULA GUIDE (Priority 0.9) - [DIGISTORE24: US$ 87,73/venda]
+   - URL: https://dailyhealthreview.vercel.app/advanced-memory-formula-guide
+   - Title: SPECIAL REPORT: The Nobel Prize-Winning Memory Breakthrough For Razor-Sharp Recall After 60 | Daily Health Review
+   - Focus Keywords: Advanced Memory Formula review, brain fog remedy, senior memory nutrients, luteolin ginkgo.
+
+4. CIRCO2 NITRIC OXIDE PROTOCOL (Priority 0.9) - [DIGISTORE24: US$ 83-131/venda]
    - URL: https://dailyhealthreview.vercel.app/circo2-nitric-oxide-report
    - Title: SPECIAL REPORT: The Nobel Prize Nitric Oxide Breakthrough For Circulation & Vitality After 50 | Daily Health Review
    - Focus Keywords: CircO2 review, nitric oxide booster, blood circulation after 50, cold hands heavy legs natural remedy.
 
-3. CLEANSE SANA GUT REBOOT (Priority 0.9)
+5. CLEANSE SANA GUT REBOOT (Priority 0.9) - [DIGISTORE24: US$ 106,94/venda]
    - URL: https://dailyhealthreview.vercel.app/cleansesana-gut-reboot
    - Title: SPECIAL REPORT: The 7-Second Gut Reboot Protocol For Rapid Bloating Relief & Microbiome Reset | Daily Health Review
    - Focus Keywords: CleanseSana review, gut microbiome reboot, abdominal bloating flush, natural digestive herbs.
 
-4. SUGAR DEFENDER GLUCOSE GUIDE (Priority 0.9)
+6. SUGAR DEFENDER GLUCOSE GUIDE (Priority 0.9) - [CLICKBANK: US$ 130-155/venda]
    - URL: https://dailyhealthreview.vercel.app/sugar-defender-guide
    - Title: SPECIAL REPORT: The 24-Herb Blood Sugar Breakthrough That Restores Clean Energy | Daily Health Review
    - Focus Keywords: Sugar Defender review, blood sugar balance, 24 herb drops, afternoon energy crash fix.
 
-5. NAGANO LEAN BODY TONIC — MORNING ROUTINE (Priority 0.9)
+7. NAGANO LEAN BODY TONIC — MORNING ROUTINE (Priority 0.9) - [CLICKBANK: US$ 120-150/venda]
    - URL: https://dailyhealthreview.vercel.app/morning-routine
    - Title: The Odd 7-Second "Eastern Morning Elixir" That Reawakens Dormant Metabolism Naturally | Daily Health Review
    - Focus Keywords: 7-second morning ritual, Japanese mountain elixir, dormant metabolism ritual.
 
-6. NAGANO TONIC FULL CLINICAL REVIEW (Priority 0.9)
+8. NAGANO TONIC FULL CLINICAL REVIEW (Priority 0.9) - [CLICKBANK: US$ 120-150/venda]
    - URL: https://dailyhealthreview.vercel.app/nagano-tonic-review
    - Title: Nagano Tonic Reviews: Independent Medical Investigation & Ingredients Breakdown | Daily Health Review
    - Focus Keywords: Nagano Lean Body Tonic review, does Nagano tonic work, ingredients safety discount.
 
-7. PRODENTIM ORAL MICROBIOME REPORT (Priority 0.9)
+9. PRODENTIM ORAL MICROBIOME REPORT (Priority 0.9) - [CLICKBANK: US$ 115-140/venda]
    - URL: https://dailyhealthreview.vercel.app/prodentim-report
    - Title: The Oral Microbiome Secret: How Probiotics Rebuild Healthy Teeth & Gums Naturally | Daily Health Review
    - Focus Keywords: ProDentim review, oral probiotics for gums, teeth whitening bacteria, bad breath remedy.
 
-8. PÁGINAS LEGAIS / COMPLIANCE (Priority 0.3 - 0.4):
+10. PÁGINAS LEGAIS / COMPLIANCE (Priority 0.3 - 0.4):
    - Privacy Policy: https://dailyhealthreview.vercel.app/privacy
    - Terms of Service: https://dailyhealthreview.vercel.app/terms
    - Affiliate Disclosure: https://dailyhealthreview.vercel.app/disclosure
