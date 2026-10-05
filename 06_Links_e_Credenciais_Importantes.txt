@@ -1,5 +1,5 @@
 =============================================================
-LINKS, CÓDIGOS E CREDENCIAIS DO PROJETO
+LINKS, CÓDIGOS E CREDENCIAIS DO PROJETO — DAILY HEALTH REVIEW
 =============================================================
 
 1. Domínio Oficial no Ar (Vercel):
@@ -11,27 +11,42 @@ LINKS, CÓDIGOS E CREDENCIAIS DO PROJETO
 3. Meta Tag do Google Search Console:
    <meta name="google-site-verification" content="Ih8x_kaPf1GY6a-zmdo429ySG7ha7PmzStUR5dxe4nM" />
 
-4. Produtos & HopLinks ClickBank:
-   - Nagano Lean Body Tonic (Metabolismo / 7s Elixir):
+4. Sitemap XML Oficial:
+   https://dailyhealthreview.vercel.app/sitemap.xml
+
+5. PRODUTOS & HOPLINKS CLICKBANK ATIVOS:
+   - VisiFlora (Saúde dos Olhos & Eixo Intestino-Visão - $159,37/venda):
+     URL Artigo: https://dailyhealthreview.vercel.app/visiflora-vision-report
+     HopLink: https://51062z5fucqiis5oqcr2mm151a.hop.clickbank.net
+
+   - Nagano Lean Body Tonic (Metabolismo / 7s Elixir - $120-$150/venda):
      URL Artigo: https://dailyhealthreview.vercel.app/morning-routine
+     URL Review: https://dailyhealthreview.vercel.app/nagano-tonic-review
      HopLink: https://06fe0-8qxlbmeo9jfi-fx24x4f.hop.clickbank.net
 
-   - ProDentim (Saúde Bucal / Dentes e Gengivas):
-     URL Artigo: https://dailyhealthreview.vercel.app/prodentim-report
-     HopLink: https://8e01330llbokexfevijb-nq74a.hop.clickbank.net
-
-   - Sugar Defender (Controle de Glicose & Energia):
+   - Sugar Defender (Controle de Glicose & Energia - $130-$155/venda):
      URL Artigo: https://dailyhealthreview.vercel.app/sugar-defender-guide
      HopLink Oficial: https://1bb1cc1ek8qf8sbh84dll9uk5s.hop.clickbank.net
 
-5. Produtos & Links Digistore24:
-   - CleanseSana (The Gut Reboot / Saúde Intestinal & Desinchaço):
-     Affiliate ID: eusimar72
-     URL Artigo no Blog: https://dailyhealthreview.vercel.app/cleansesana-gut-reboot
-     Link Oficial de Afiliado: https://cleansesana.com/cleansesana-pdp-fe#aff=eusimar72
+   - ProDentim (Saúde Bucal & Dentes/Gengivas - $115-$140/venda):
+     URL Artigo: https://dailyhealthreview.vercel.app/prodentim-report
+     HopLink: https://8e01330llbokexfevijb-nq74a.hop.clickbank.net
 
-6. E-mail de Notificações / Suporte Editorial:
+6. PRODUTOS & LINKS DIGISTORE24 ATIVOS (ID: eusimar72):
+   - CircO2 (Óxido Nítrico & Circulação Sênior - $83-$131/venda):
+     URL Artigo: https://dailyhealthreview.vercel.app/circo2-nitric-oxide-report
+     Link Oficial: https://www.advancedbionutritionals.com/DS24/Nitric-Oxide-Supplements/Superhuman-At-70/HD.htm#aff=eusimar72
+
+   - Advanced Memory Formula (Memória & Foco Cerebral - $87,73/venda):
+     URL Artigo: https://dailyhealthreview.vercel.app/advanced-memory-formula-guide
+     Link Oficial: https://www.advancedbionutritionals.com/DS24/Advanced-Memory/Nobel-Prize-Winning-Memory-Breakthroughs/HD.htm#aff=eusimar72
+
+   - CleanseSana (Microbioma & Desinchaço Intestinal - $106,94/venda):
+     URL Artigo: https://dailyhealthreview.vercel.app/cleansesana-gut-reboot
+     Link Oficial: https://cleansesana.com/cleansesana-pdp-fe#aff=eusimar72
+
+7. E-mail de Notificações / Suporte Editorial:
    eusimar72@gmail.com
 
-7. Chave de API ClickBank (Ativa & Testada):
+8. Chave de API ClickBank:
    API-C6JT52HMN2YWGH0YK3IFCI8O3D37X5O4VLTV
