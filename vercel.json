@@ -1,6 +1,43 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/go/visiflora",
+      "destination": "https://51062z5fucqiis5oqcr2mm151a.hop.clickbank.net",
+      "permanent": false
+    },
+    {
+      "source": "/go/circo2",
+      "destination": "https://www.advancedbionutritionals.com/DS24/Nitric-Oxide-Supplements/Superhuman-At-70/HD.htm#aff=eusimar72",
+      "permanent": false
+    },
+    {
+      "source": "/go/memory",
+      "destination": "https://www.advancedbionutritionals.com/DS24/Advanced-Memory/Nobel-Prize-Winning-Memory-Breakthroughs/HD.htm#aff=eusimar72",
+      "permanent": false
+    },
+    {
+      "source": "/go/cleansesana",
+      "destination": "https://cleansesana.com/cleansesana-pdp-fe#aff=eusimar72",
+      "permanent": false
+    },
+    {
+      "source": "/go/nagano",
+      "destination": "https://06fe0-8qxlbmeo9jfi-fx24x4f.hop.clickbank.net",
+      "permanent": false
+    },
+    {
+      "source": "/go/sugardefender",
+      "destination": "https://1bb1cc1ek8qf8sbh84dll9uk5s.hop.clickbank.net",
+      "permanent": false
+    },
+    {
+      "source": "/go/prodentim",
+      "destination": "https://8e01330llbokexfevijb-nq74a.hop.clickbank.net",
+      "permanent": false
+    }
+  ],
   "rewrites": [
     { "source": "/morning-routine", "destination": "/articles/02_Artigo_1_Elixir_7_Segundos.html" },
     { "source": "/nagano-tonic-review", "destination": "/articles/03_Artigo_2_Nagano_Completo_Com_Fotos.html" },
