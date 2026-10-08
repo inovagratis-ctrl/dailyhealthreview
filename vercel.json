@@ -3,6 +3,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/go/audifort",
+      "destination": "https://6f9834zioammkt802al5tm4pf5.hop.clickbank.net",
+      "permanent": false
+    },
+    {
       "source": "/go/neurovera",
       "destination": "https://6fd8bc8jpfkil09mti3fybx058.hop.clickbank.net",
       "permanent": false
