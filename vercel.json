@@ -3,6 +3,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/go/neurovera",
+      "destination": "https://6fd8bc8jpfkil09mti3fybx058.hop.clickbank.net",
+      "permanent": false
+    },
+    {
       "source": "/go/femicore",
       "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=FEMICORE",
       "permanent": false
