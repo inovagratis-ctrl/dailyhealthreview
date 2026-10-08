@@ -3,6 +3,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/go/femicore",
+      "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=FEMICORE",
+      "permanent": false
+    },
+    {
       "source": "/go/visiflora",
       "destination": "https://51062z5fucqiis5oqcr2mm151a.hop.clickbank.net",
       "permanent": false
