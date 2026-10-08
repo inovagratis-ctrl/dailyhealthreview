@@ -3,6 +3,11 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/go/lymphtonic",
+      "destination": "https://19a86z9ovajqhs57bex45l0flv.hop.clickbank.net",
+      "permanent": false
+    },
+    {
       "source": "/go/audifort",
       "destination": "https://6f9834zioammkt802al5tm4pf5.hop.clickbank.net",
       "permanent": false
