@@ -2,329 +2,331 @@ import os
 import sys
 import re
 import subprocess
-from pathlib import Path
 
 VOICE = "en-US-ChristopherNeural"
 
-# 12 Scenes aligned with strict investigative standards
+# 12 Scenes aligned with 100% strict compliance & mobile-ready typography
 SCENES = [
     {
         "id": "01",
-        "file_keyword": "CENA_01",
-        "tag": "EDUCATIONAL HEALTH REVIEW  |  DAILY HEALTH REVIEW",
+        "title": "NEUROVERA REVIEW  •  EVERYDAY FOCUS & CLARITY",
         "effect": "zoom_in",
         "sentences": [
-            "Have you ever walked into a room only to completely forget why you went there?",
-            "Or found yourself struggling to recall familiar names, feeling that stubborn, frustrating mental fog clouding your daily focus?",
-            "As we pass forty and fifty, subtle memory lapses become more frequent—leading many to wonder if cognitive decline is an inevitable part of aging.",
-            "Today on Daily Health Review, we take an objective look at NeuroVera—a botanical formula designed to target the cellular root causes of brain fog."
+            "Have you ever walked into a room only to momentarily forget why you went there?",
+            "Or found yourself searching for familiar words, feeling occasional mental sluggishness throughout your daily routine?",
+            "As we age, occasional lapses in focus lead many to look for natural nutritional support.",
+            "Today on Daily Health Review, we examine NeuroVera, a dietary supplement formulated with traditional botanical ingredients to support everyday focus and mental clarity."
         ]
     },
     {
         "id": "02",
-        "file_keyword": "CENA_02",
-        "tag": "ILLUSTRATIVE MEDICAL CONCEPT  |  DAILY HEALTH REVIEW",
+        "title": "COGNITIVE WELLNESS  •  NEURAL NUTRITION & CIRCULATION",
         "effect": "zoom_in_macro",
         "sentences": [
-            "Modern neurobiology reveals that cognitive sluggishness often stems from micro-vascular circulation slowdowns and oxidative stress on delicate brain tissue.",
-            "Furthermore, the gradual depletion of acetylcholine—the vital neurotransmitter responsible for swift memory retrieval—slows communication between neural pathways.",
-            "When brain synapses lack essential micronutrients, mental fatigue and slow recall naturally follow."
+            "Everyday cognitive performance relies on complex cellular networks, balanced neurotransmitters, and steady blood flow.",
+            "Factors such as oxidative stress, daily fatigue, and nutritional gaps can influence how quickly we process information and recall details.",
+            "This has led to growing interest in nootropic botanicals that provide targeted nutritional nourishment for brain health."
         ]
     },
     {
         "id": "03",
-        "file_keyword": "CENA_03",
-        "tag": "PRODUCT INVESTIGATION  |  DAILY HEALTH REVIEW",
+        "title": "PRODUCT OVERVIEW  •  NEUROVERA BY NUTRAVILLE",
         "effect": "zoom_in",
         "sentences": [
             "This brings us to NeuroVera by Nutraville.",
-            "Promoted under the philosophy 'Clarity Starts Within', NeuroVera is a standardized dietary supplement created to support memory retention and sharp mental stamina.",
-            "Crucially, it is formulated without synthetic stimulants or aggressive caffeine spikes.",
-            "Let us analyze its five primary active botanical ingredients."
+            "Marketed under the concept of everyday cognitive wellness, NeuroVera is an encapsulated dietary formula designed to support mental clarity and sustained focus.",
+            "Notably, it is crafted without harsh synthetic stimulants or excessive caffeine.",
+            "Let us take a closer look at the five primary botanical ingredients featured in the blend."
         ]
     },
     {
         "id": "04",
-        "file_keyword": "CENA_04",
-        "tag": "BOTANICAL PHYTOCHEMISTRY  |  DAILY HEALTH REVIEW",
+        "title": "KEY INGREDIENT  •  SCHISANDRA FRUIT EXTRACT",
         "effect": "pan_left_right",
         "sentences": [
             "First is Schisandra Fruit Extract.",
-            "Traditionally revered in herbal medicine as a master adaptogen, modern clinical research shows Schisandra contains potent lignans like schisandrin B.",
-            "These bioactive compounds help shield neurons against oxidative stress and support sustained mental alertness during high-pressure cognitive tasks."
+            "Traditionally used in Eastern herbal practices as an adaptogen, Schisandra is valued for helping the body adapt to daily environmental stressors.",
+            "Nutritional researchers study its natural plant lignans for their antioxidant properties and potential role in supporting mental endurance."
         ]
     },
     {
         "id": "05",
-        "file_keyword": "CENA_05",
-        "tag": "CLINICAL BOTANY  |  DAILY HEALTH REVIEW",
+        "title": "KEY INGREDIENT  •  GOTU KOLA (CENTELLA ASIATICA)",
         "effect": "zoom_in",
         "sentences": [
-            "Next in the matrix is Gotu Kola powder, known scientifically as Centella Asiatica.",
-            "Rich in triterpenoid saponins, Gotu Kola supports healthy microcirculation across delicate cerebral capillaries.",
-            "By optimizing oxygen and nutrient delivery to brain cells, research indicates it aids in neural plasticity and calm mental clarity."
+            "Next in the formula is Gotu Kola, known botanically as Centella Asiatica.",
+            "Long recognized in traditional wellness systems, Gotu Kola is frequently studied for its triterpene compounds.",
+            "It is commonly taken to support healthy circulation and promote calm, steady concentration during demanding tasks."
         ]
     },
     {
         "id": "06",
-        "file_keyword": "CENA_06",
-        "tag": "CELLULAR NUTRITION  |  DAILY HEALTH REVIEW",
+        "title": "MINERAL RESIN  •  PURIFIED SHILAJIT EXTRACT",
         "effect": "zoom_out",
         "sentences": [
-            "The third key element is purified Shilajit extract.",
-            "Sourced from high-altitude Himalayan rock layers, Shilajit is rich in natural fulvic acid and over eighty-four trace ionic minerals.",
-            "In cognitive science, fulvic acid enhances cellular mitochondrial ATP production so brain cells have the metabolic fuel required for quick thinking."
+            "The third ingredient is purified Shilajit extract.",
+            "Sourced from mineral-rich mountainous regions, Shilajit contains natural fulvic acid along with a wide spectrum of trace minerals.",
+            "In nutritional science, fulvic acid is appreciated for supporting cellular nutrient absorption and overall vitality."
         ]
     },
     {
         "id": "07",
-        "file_keyword": "CENA_07",
-        "tag": "NEUROBIOLOGICAL RESEARCH  |  DAILY HEALTH REVIEW",
+        "title": "NOOTROPIC MUSHROOM  •  LION'S MANE EXTRACT",
         "effect": "zoom_in_macro",
         "sentences": [
             "Fourth is Lion's Mane mushroom, or Hericium Erinaceus.",
-            "This unique nootropic fungus is world-famous for containing hericenones and erinacines—compounds that cross the blood-brain barrier to stimulate Nerve Growth Factor, or NGF.",
-            "NGF is the essential biological protein responsible for the growth, maintenance, and structural repair of neurons."
+            "This distinctive mushroom has gained widespread attention in modern nootropic research for its natural bioactive compounds.",
+            "It is widely used to support cognitive wellness, clarity, and normal neural health."
         ]
     },
     {
         "id": "08",
-        "file_keyword": "CENA_08",
-        "tag": "BOTANICAL NOOTROPICS  |  DAILY HEALTH REVIEW",
+        "title": "TRADITIONAL BOTANICAL  •  BACOPA MONNIERI",
         "effect": "pan_right_left",
         "sentences": [
-            "Rounding out the synergistic core is Bacopa Monnieri.",
-            "Extensively documented in peer-reviewed clinical trials, Bacopa's active bacosides facilitate the repair of damaged synaptic connections.",
-            "Studies demonstrate significant improvements in visual information processing, rapid memory consolidation, and mental processing speed."
+            "Rounding out the five key botanicals is Bacopa Monnieri.",
+            "Bacopa is an ancient herb with a long history of traditional use for supporting memory recall and mental processing speed.",
+            "Contemporary studies continue to evaluate how its natural bacoside compounds support cognitive performance over time."
         ]
     },
     {
         "id": "09",
-        "file_keyword": "CENA_09",
-        "tag": "QUALITY ASSURANCE  |  DAILY HEALTH REVIEW",
+        "title": "QUALITY & SOURCING  •  FORMULA TRANSPARENCY",
         "effect": "zoom_in",
         "sentences": [
-            "Quality and consumer safety are non-negotiable.",
-            "NeuroVera is manufactured in the United States in state-of-the-art facilities that strictly adhere to cGMP standards.",
-            "The formula is non-GMO, vegan-friendly, gluten-free, and contains zero synthetic preservatives or jitter-inducing stimulants."
+            "When evaluating any dietary supplement, ingredient quality and manufacturing transparency are essential considerations.",
+            "Check the product label and manufacturer's documentation for ingredient and quality information."
         ]
     },
     {
         "id": "10",
-        "file_keyword": "CENA_10",
-        "tag": "NUTRITIONAL PROTOCOL  |  DAILY HEALTH REVIEW",
+        "title": "USAGE GUIDELINES  •  MANUFACTURER PROTOCOL",
         "effect": "pan_left_right",
         "sentences": [
-            "Using NeuroVera is simple: the manufacturer recommends taking two easy-to-swallow capsules daily with a glass of water alongside your morning meal.",
-            "While some individuals report noticeable alertness within two to three weeks, botanical compounds work cumulatively.",
-            "Optimal cellular benefits in memory and mental endurance are typically observed with sixty to ninety days of consistent daily use."
+            "In terms of daily routine, the manufacturer suggests taking two capsules daily with water alongside a meal.",
+            "As with any dietary supplement, individual experiences can vary based on personal metabolism and consistency.",
+            "Nutritional botanicals are generally intended for steady daily use alongside balanced nutrition and healthy lifestyle habits."
         ]
     },
     {
         "id": "11",
-        "file_keyword": "CENA_11",
-        "tag": "CONSUMER PROTECTION NOTICE  |  DAILY HEALTH REVIEW",
+        "title": "PURCHASING ADVISORY  •  OFFICIAL SUPPLIER & TERMS",
         "effect": "zoom_in",
         "sentences": [
-            "An important consumer advisory: to guarantee authentic formulation and activate the full sixty-day money-back guarantee, always order directly from the official laboratory portal.",
-            "The producer offers discounted multi-bottle bundles starting as low as twenty-nine dollars per bottle with free shipping, allowing you to test the formula risk-free."
+            "For consumer safety, it is always recommended to purchase dietary supplements directly through the brand's verified website.",
+            "Check current pricing, seller information, and return terms before purchasing.",
+            "The official portal also details available multi-bottle packages and customer support options."
         ]
     },
     {
         "id": "12",
-        "file_keyword": "CENA_12",
-        "tag": "TRANSPARENT EDITORIAL DISCLOSURE  |  DAILY HEALTH REVIEW",
+        "title": "FINAL SUMMARY  •  DAILY HEALTH REVIEW",
         "effect": "zoom_out",
         "sentences": [
-            "In conclusion, NeuroVera provides a well-balanced, research-supported botanical blend for anyone seeking to reclaim mental clarity and protect long-term cognitive vitality.",
-            "You can find the direct link to the official discounted portal in the description and pinned comment below.",
-            "This is an affiliate link—meaning we may earn a small commission at no additional cost to you, supporting our independent reviews.",
-            "Thank you for watching Daily Health Review, and subscribe for more evidence-based health insights."
+            "In summary, NeuroVera combines five well-known traditional botanicals into a convenient daily formula for cognitive support.",
+            "If you want to review full ingredient details, customer feedback, and current pricing, check the official verified link in the description and pinned comment below.",
+            "As a reminder, our link is an affiliate link, which supports our channel at no extra cost to you.",
+            "Thank you for watching Daily Health Review, and remember to subscribe for more balanced health and supplement evaluations."
         ]
     }
 ]
 
-def format_ass_timestamp(seconds):
-    h = int(seconds // 3600)
-    m = int((seconds % 3600) // 60)
-    s = int(seconds % 60)
-    cs = int(round((seconds - int(seconds)) * 100))
-    if cs >= 100:
-        cs = 99
-    return f"{h}:{m:02d}:{s:02d}.{cs:02d}"
+def find_image_file_strict(folder, scene_id):
+    prefix = f"{scene_id}_"
+    for f in sorted(os.listdir(folder)):
+        if f.startswith(prefix) and f.lower().endswith(('.jpg', '.jpeg', '.png', '.webp')):
+            return os.path.join(folder, f)
+    for f in sorted(os.listdir(folder)):
+        if f"Cena_{scene_id}" in f and f.lower().endswith(('.jpg', '.jpeg', '.png', '.webp')):
+            return os.path.join(folder, f)
+    raise FileNotFoundError(f"Imagem correspondente da Cena {scene_id} não encontrada em {folder}")
 
-def generate_tts_and_vtt(text, audio_path, vtt_path):
-    cmd = [
-        "edge-tts",
-        f"--voice={VOICE}",
-        f"--text={text}",
-        f"--write-media={audio_path}",
-        f"--write-subtitles={vtt_path}"
-    ]
-    subprocess.run(cmd, check=True, capture_output=True)
+def get_audio_duration(audio_path):
+    cmd = f'ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 "{audio_path}"'
+    res = subprocess.check_output(cmd, shell=True).decode('utf-8').strip()
+    return float(res)
 
-def parse_vtt(vtt_path):
-    with open(vtt_path, "r", encoding="utf-8") as f:
-        content = f.read()
-    
-    entries = []
-    pattern = r"(\d{2}:\d{2}:\d{2}\.\d{3})\s*-->\s*(\d{2}:\d{2}:\d{2}\.\d{3})\s*\n(.*?)(?=\n\n|\n\d{2}:|\Z)"
-    matches = re.findall(pattern, content, re.DOTALL)
-    
-    for start_str, end_str, text in matches:
-        def to_sec(ts):
-            parts = ts.split(":")
-            h = float(parts[0])
-            m = float(parts[1])
-            s = float(parts[2])
-            return h * 3600 + m * 60 + s
-        
-        cleaned_text = " ".join(text.strip().split())
-        cleaned_text = re.sub(r"<[^>]+>", "", cleaned_text)
-        if cleaned_text:
-            entries.append((to_sec(start_str), to_sec(end_str), cleaned_text))
-    return entries
+def parse_time_srt(ts):
+    ts = ts.replace('.', ',')
+    parts = ts.split(':')
+    h = int(parts[0])
+    m = int(parts[1])
+    s_parts = parts[2].split(',')
+    s = int(s_parts[0])
+    ms = int(s_parts[1]) if len(s_parts) > 1 else 0
+    return h * 3600 + m * 60 + s + ms / 1000.0
 
-def get_audio_duration(file_path):
-    cmd = [
-        "ffprobe", "-v", "error",
-        "-show_entries", "format=duration",
-        "-of", "default=noprint_wrappers=1:nokey=1",
-        file_path
-    ]
-    res = subprocess.run(cmd, capture_output=True, text=True, check=True)
-    return float(res.stdout.strip())
+def format_ass_time(sec):
+    h = int(sec // 3600)
+    m = int((sec % 3600) // 60)
+    s = sec % 60
+    return f"{h}:{m:02d}:{s:05.2f}"
 
-def create_ass_subtitles(entries, tag_text, total_duration, ass_path):
-    ass_header = f"""[Script Info]
+def create_full_video():
+    img_folder = r"C:\Users\Eusimar\Downloads\VIDEO-NEUROVERA"
+    temp_dir = r"C:\Users\Eusimar\Downloads\_temp_neurovera_custom_render"
+    downloads_dir = r"C:\Users\Eusimar\Downloads"
+    os.makedirs(temp_dir, exist_ok=True)
+
+    print("\n=======================================================")
+    print("GERADOR DE VÍDEO REVIEW - NEUROVERA (SOLID 145px TOP BAR & MOBILE-OPTIMIZED)")
+    print(f"PASTA DAS IMAGENS: {img_folder}")
+    print("DAILY HEALTH REVIEW - QUALIDADE BROADCAST 1080p")
+    print("=======================================================\n")
+
+    clip_paths = []
+    total_running_time = 0.0
+    all_ass_events = []
+
+    # ASS Subtitle Master Header:
+    # TopBarTitle: Alignment=8 (Top Center), Fontsize=34 (Crisp & Large for Mobile), MarginV=52
+    # Default: Alignment=2 (Bottom Center), Fontsize=42, MarginV=65, Dark-Pill Box (&HB50A0F1D)
+    ass_master_path = os.path.join(temp_dir, "master_subtitles.ass")
+    ass_header = """[Script Info]
 ScriptType: v4.00+
 PlayResX: 1920
 PlayResY: 1080
+WrapStyle: 0
 ScaledBorderAndShadow: yes
 
 [V4+ Styles]
 Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
-Style: Subtitle,Arial,46,&H00FFFFFF,&H000000FF,&H00000000,&H90000000,-1,0,0,0,100,100,0,0,3,10,0,2,100,100,65,1
-Style: Tag,Arial,28,&H0000F0FF,&H000000FF,&H00000000,&HA0000000,-1,0,0,0,100,100,1,0,3,6,0,8,40,40,35,1
+Style: Default,Arial,42,&H00FFFFFF,&H000000FF,&H00000000,&HB50A0F1D,-1,0,0,0,100,100,0,0,3,7,0,2,80,80,65,1
+Style: TopBarTitle,Arial,34,&H0038BDF8,&H000000FF,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,3,0,8,40,40,52,1
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 1,0:00:00.00,{format_ass_timestamp(total_duration)},Tag,,0,0,0,,[ {tag_text} ]
 """
-    with open(ass_path, "w", encoding="utf-8") as f:
-        f.write(ass_header)
-        for start, end, text in entries:
-            f.write(f"Dialogue: 0,{format_ass_timestamp(start)},{format_ass_timestamp(end)},Subtitle,,0,0,0,,{text}\n")
 
-def render_scene(image_path, audio_path, ass_path, effect, duration, output_path):
-    fps = 30
-    total_frames = int(duration * fps) + 5
-    
-    # Smooth Ken Burns Filter Expressions
-    if effect == "zoom_in":
-        vf_expr = f"scale=8000:-1,zoompan=z='min(zoom+0.0006,1.25)':d={total_frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1920x1080:fps={fps}"
-    elif effect == "zoom_in_macro":
-        vf_expr = f"scale=8000:-1,zoompan=z='min(zoom+0.0009,1.35)':d={total_frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1920x1080:fps={fps}"
-    elif effect == "zoom_out":
-        vf_expr = f"scale=8000:-1,zoompan=z='if(lte(zoom,1.0),1.25,max(1.001,zoom-0.0006))':d={total_frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1920x1080:fps={fps}"
-    elif effect == "pan_left_right":
-        vf_expr = f"scale=8000:-1,zoompan=z='1.15':d={total_frames}:x='if(lte(on,-1),(iw-iw/zoom)/2,x+0.8)':y='ih/2-(ih/zoom/2)':s=1920x1080:fps={fps}"
-    elif effect == "pan_right_left":
-        vf_expr = f"scale=8000:-1,zoompan=z='1.15':d={total_frames}:x='if(lte(on,-1),(iw-iw/zoom),x-0.8)':y='ih/2-(ih/zoom/2)':s=1920x1080:fps={fps}"
-    else:
-        vf_expr = f"scale=8000:-1,zoompan=z='min(zoom+0.0005,1.2)':d={total_frames}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1920x1080:fps={fps}"
+    for idx, scene in enumerate(SCENES):
+        scene_id = scene["id"]
+        print(f"\n[Cena {scene_id}/12] Renderizando áudio e animação de câmera com barra sólida 145px...")
 
-    # Format path for ASS filter (handling Windows backslashes)
-    ass_filter_path = str(Path(ass_path).resolve()).replace("\\", "/").replace(":", "\\:")
-    full_vf = f"{vf_expr},subtitles='{ass_filter_path}'"
+        img_path = find_image_file_strict(img_folder, scene_id)
+        txt_path = os.path.join(temp_dir, f"text_{scene_id}.txt")
+        audio_path = os.path.join(temp_dir, f"audio_{scene_id}.mp3")
+        srt_path = os.path.join(temp_dir, f"sub_{scene_id}.srt")
+        clip_path = os.path.join(temp_dir, f"clip_{scene_id}.mp4")
 
-    cmd = [
-        "ffmpeg", "-y",
-        "-loop", "1", "-i", str(image_path),
-        "-i", str(audio_path),
-        "-vf", full_vf,
-        "-c:v", "libx264", "-tune", "stillimage", "-pix_fmt", "yuv420p",
-        "-c:a", "aac", "-b:a", "192k",
-        "-t", f"{duration:.3f}",
-        "-preset", "faster",
-        str(output_path)
-    ]
-    subprocess.run(cmd, check=True)
+        # Write sentences
+        with open(txt_path, "w", encoding="utf-8") as f:
+            f.write("\n".join(scene["sentences"]))
 
-def main():
-    base_dir = Path("C:/Users/Eusimar/Downloads/VIDEO_NEUROVERA")
-    base_dir.mkdir(parents=True, exist_ok=True)
-    
-    print("=== DAILY HEALTH REVIEW: NEUROVERA VIDEO COMPILER ===")
-    print(f"Working Directory: {base_dir}")
-    
-    rendered_scenes = []
-    
-    for scene in SCENES:
-        sid = scene["id"]
-        print(f"\n--- Processing Scene {sid} ({scene['tag']}) ---")
-        
-        # Audio & Subtitle generation
-        combined_text = " ".join(scene["sentences"])
-        audio_file = base_dir / f"scene_{sid}_audio.mp3"
-        vtt_file = base_dir / f"scene_{sid}.vtt"
-        ass_file = base_dir / f"scene_{sid}.ass"
-        scene_mp4 = base_dir / f"scene_{sid}.mp4"
-        
-        print(f"Generating TTS audio with voice {VOICE}...")
-        generate_tts_and_vtt(combined_text, str(audio_file), str(vtt_file))
-        
-        duration = get_audio_duration(str(audio_file)) + 0.5  # padding
-        print(f"Scene duration: {duration:.2f}s")
-        
-        # Subtitles
-        entries = parse_vtt(str(vtt_file))
-        create_ass_subtitles(entries, scene["tag"], duration, str(ass_file))
-        
-        # Find Scene Image
-        img_candidates = list(base_dir.glob(f"*{scene['file_keyword']}*")) + list(base_dir.glob(f"*{sid}*"))
-        img_candidates = [f for f in img_candidates if f.suffix.lower() in [".jpg", ".jpeg", ".png", ".webp"]]
-        
-        if not img_candidates:
-            # Fallback to general bottle if not generated yet
-            fallback = base_dir / "neurovera_bottle.png"
-            if not fallback.exists():
-                fallback = Path("C:/Users/Eusimar/.gemini/antigravity/scratch/Projeto_ClickBank_DailyHealthReview/Imagens_Oficiais/neurovera_bottle.png")
-            img_path = fallback
-            print(f"Notice: Specific scene image not found. Using fallback: {img_path.name}")
+        # 1. Generate Voice + Subtitles with edge_tts CLI
+        cmd_tts = [
+            "python", "-m", "edge_tts",
+            "--voice", VOICE,
+            "--file", txt_path,
+            "--write-media", audio_path,
+            "--write-subtitles", srt_path
+        ]
+        subprocess.run(cmd_tts, check=True)
+
+        dur = get_audio_duration(audio_path)
+        clip_dur = dur + 0.3
+        frames_count = int(clip_dur * 30)
+
+        print(f"  -> Imagem usada: {os.path.basename(img_path)}")
+        print(f"  -> Duração: {dur:.2f}s (Clip: {clip_dur:.2f}s, {frames_count} frames)")
+
+        # Add Single Centered Top Bar Title (Large & Mobile-Ready)
+        tag_start = format_ass_time(total_running_time)
+        tag_end = format_ass_time(total_running_time + clip_dur)
+        all_ass_events.append(f"Dialogue: 0,{tag_start},{tag_end},TopBarTitle,,0,0,0,,{scene['title']}")
+
+        # 2. Parse SRT and adjust timestamps for master ASS
+        if os.path.exists(srt_path):
+            with open(srt_path, "r", encoding="utf-8") as f:
+                content = f.read().strip()
+            blocks = re.split(r'\n\s*\n', content)
+            for b in blocks:
+                lines = [l.strip() for l in b.split("\n") if l.strip()]
+                if len(lines) >= 3 and "-->" in lines[1]:
+                    t_parts = lines[1].split("-->")
+                    t_start = parse_time_srt(t_parts[0].strip()) + total_running_time
+                    t_end = parse_time_srt(t_parts[1].strip()) + total_running_time
+                    sub_text = " ".join(lines[2:])
+                    sub_text = re.sub(r'<[^>]+>', '', sub_text)
+                    all_ass_events.append(f"Dialogue: 1,{format_ass_time(t_start)},{format_ass_time(t_end)},Default,,0,0,0,,{sub_text}")
+
+        # 3. Ultra-Smooth Ken Burns Camera Motions + 100% Solid 145px Top Header Bar
+        # The drawbox filter covers the top 145px with 100% solid opacity (color=0x070B19@1.0)
+        # to completely mask all background text, with a 3px sky-blue border at y=142
+        top_bar_filter = "drawbox=x=0:y=0:w=1920:h=145:color=0x070B19@1.0:t=fill,drawbox=x=0:y=142:w=1920:h=3:color=0x38BDF8@1.0:t=fill"
+
+        if scene["effect"] == "zoom_in":
+            base_vf = f"scale=8000:-1,zoompan=z='min(zoom+0.0005,1.20)':d={frames_count}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1920x1080:fps=30"
+        elif scene["effect"] == "zoom_in_macro":
+            base_vf = f"scale=8000:-1,zoompan=z='min(zoom+0.0007,1.25)':d={frames_count}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1920x1080:fps=30"
+        elif scene["effect"] == "zoom_out":
+            base_vf = f"scale=8000:-1,zoompan=z='if(lte(zoom,1.0),1.20,max(1.001,zoom-0.0005))':d={frames_count}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1920x1080:fps=30"
+        elif scene["effect"] == "pan_left_right":
+            base_vf = f"scale=8000:-1,zoompan=z='1.12':d={frames_count}:x='if(lte(on,-1),(iw-iw/zoom)/2,x+0.6)':y='ih/2-(ih/zoom/2)':s=1920x1080:fps=30"
+        elif scene["effect"] == "pan_right_left":
+            base_vf = f"scale=8000:-1,zoompan=z='1.12':d={frames_count}:x='if(lte(on,-1),(iw-iw/zoom),x-0.6)':y='ih/2-(ih/zoom/2)':s=1920x1080:fps=30"
         else:
-            img_path = img_candidates[0]
-            print(f"Using image: {img_path.name}")
-            
-        print(f"Rendering scene video with Ken Burns [{scene['effect']}]...")
-        render_scene(img_path, audio_file, ass_file, scene["effect"], duration, scene_mp4)
-        rendered_scenes.append(scene_mp4)
-        print(f"Scene {sid} rendered successfully.")
+            base_vf = f"scale=8000:-1,zoompan=z='min(zoom+0.0004,1.15)':d={frames_count}:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s=1920x1080:fps=30"
 
-    # Concat all scenes
-    print("\n--- Concatenating Scenes into Master Review ---")
-    concat_list = base_dir / "concat_list.txt"
-    with open(concat_list, "w", encoding="utf-8") as f:
-        for sc in rendered_scenes:
-            clean_path = str(sc.resolve()).replace("\\", "/")
-            f.write(f"file '{clean_path}'\n")
-            
-    master_video = Path("C:/Users/Eusimar/Downloads/NeuroVera_Review_Completo_4Min_DailyHealthReview.mp4")
+        full_vf = f"{base_vf},{top_bar_filter}"
+
+        cmd_video = [
+            "ffmpeg", "-y",
+            "-loop", "1", "-i", img_path,
+            "-i", audio_path,
+            "-vf", full_vf,
+            "-c:v", "libx264", "-tune", "stillimage", "-pix_fmt", "yuv420p",
+            "-c:a", "aac", "-b:a", "192k",
+            "-t", f"{clip_dur:.3f}",
+            "-preset", "faster",
+            clip_path
+        ]
+        subprocess.run(cmd_video, check=True)
+        clip_paths.append(clip_path)
+        total_running_time += clip_dur
+
+    # Save Master ASS Subtitles
+    with open(ass_master_path, "w", encoding="utf-8") as f:
+        f.write(ass_header + "\n".join(all_ass_events))
+
+    print(f"\n[+] Total de duração do vídeo: {total_running_time:.2f}s (~{total_running_time/60:.1f} minutos)")
+    print("[+] Concatenando todos os 12 clipes...")
+
+    # Concatenate clips
+    list_path = os.path.join(temp_dir, "concat_list.txt")
+    with open(list_path, "w", encoding="utf-8") as f:
+        for p in clip_paths:
+            f.write(f"file '{p}'\n")
+
+    raw_concat_video = os.path.join(temp_dir, "raw_concatenated.mp4")
     cmd_concat = [
         "ffmpeg", "-y",
         "-f", "concat", "-safe", "0",
-        "-i", str(concat_list),
+        "-i", list_path,
         "-c", "copy",
-        str(master_video)
+        raw_concat_video
     ]
     subprocess.run(cmd_concat, check=True)
-    
-    total_dur = get_audio_duration(str(master_video))
-    print(f"\n=======================================================")
-    print(f"SUCCESS! Master Video Rendered:")
-    print(f"File: {master_video}")
-    print(f"Total Duration: {total_dur:.1f} seconds (~{total_dur/60:.1f} minutes)")
-    print(f"=======================================================")
+
+    # Burn Subtitles
+    print("[+] Queimando legendas master com acabamento final...")
+    final_output = os.path.join(downloads_dir, "NeuroVera_Review_Completo_4Min_DailyHealthReview.mp4")
+    clean_ass_path = ass_master_path.replace("\\", "/").replace(":", "\\:")
+
+    cmd_burn = [
+        "ffmpeg", "-y",
+        "-i", raw_concat_video,
+        "-vf", f"subtitles='{clean_ass_path}'",
+        "-c:v", "libx264", "-crf", "18", "-preset", "medium",
+        "-c:a", "copy",
+        final_output
+    ]
+    subprocess.run(cmd_burn, check=True)
+
+    print("\n=======================================================")
+    print("SUCESSO TOTAL! VÍDEO FINALIZADO COM PADRÃO BROADCAST!")
+    print(f"Arquivo Final: {final_output}")
+    print(f"Duração Total: {total_running_time:.2f} segundos (~{total_running_time/60:.1f} minutos)")
+    print("=======================================================\n")
 
 if __name__ == "__main__":
-    main()
+    create_full_video()

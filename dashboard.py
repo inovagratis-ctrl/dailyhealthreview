@@ -4,7 +4,6 @@ import json
 import time
 import urllib.request
 import urllib.error
-import xml.etree.ElementTree as ET
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 import webbrowser
 import threading
@@ -75,7 +74,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           <h1 class="text-lg font-extrabold tracking-tight text-white flex items-center gap-2">
             ClickBank & Digistore24 Live Command Center
             <span class="text-[11px] font-bold uppercase tracking-wider bg-emerald-950 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded-full flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span> API ONLINE
+              <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span> API ONLINE (8080)
             </span>
           </h1>
           <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Portal: <span class="text-slate-300 font-mono">dailyhealthreview.vercel.app</span></p>
@@ -109,7 +108,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         </div>
         <div class="text-3xl font-black text-white" id="total-commissions">$0.00</div>
         <div class="text-xs text-emerald-200/80 mt-2 flex items-center gap-1">
-          <i class="fa-solid fa-circle-check"></i> Saldo direto na ClickBank API
+          <i class="fa-solid fa-circle-check"></i> Saldo direto na ClickBank REST API
         </div>
       </div>
 
@@ -135,7 +134,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-layer-group"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">7 Ativos</div>
+        <div class="text-3xl font-black text-white">10 Ativos</div>
         <div class="text-xs text-cyan-200/80 mt-2 flex items-center gap-1">
           <i class="fa-solid fa-bolt"></i> ClickBank & Digistore24
         </div>
@@ -149,9 +148,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-tags"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">~$125.00</div>
+        <div class="text-3xl font-black text-white">~$135.00</div>
         <div class="text-xs text-purple-200/80 mt-2 flex items-center gap-1">
-          <i class="fa-solid fa-shield-halved"></i> 60% a 85% de comissão
+          <i class="fa-solid fa-shield-halved"></i> 60% a 85% / Até $160 CPA
         </div>
       </div>
 
@@ -162,11 +161,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="flex items-center justify-between mb-5">
         <div>
           <h2 class="text-base font-bold text-white flex items-center gap-2">
-            <i class="fa-solid fa-link text-emerald-400"></i> Esteira de Produtos Conectados no Blog & Links Oficiais
+            <i class="fa-solid fa-link text-emerald-400"></i> Esteira de 10 Produtos Conectados no Blog & Redirecionamentos Limpos
           </h2>
-          <p class="text-xs text-slate-400">Monitorando conversões e tráfego orgânico do Pinterest, Google SEO e Flipboard</p>
+          <p class="text-xs text-slate-400">Monitorando conversões e tráfego orgânico do Pinterest, Google SEO, YouTube e Flipboard</p>
         </div>
-        <span class="text-xs text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700 font-bold text-emerald-400">7 Artigos Monitorados</span>
+        <span class="text-xs text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700 font-bold text-emerald-400">10 Artigos Publicados & Monitorados</span>
       </div>
 
       <div class="overflow-x-auto">
@@ -176,12 +175,65 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <th class="p-3.5">Produto Oficial</th>
               <th class="p-3.5">Plataforma</th>
               <th class="p-3.5">Nicho / Categoria</th>
-              <th class="p-3.5">Comissão Média</th>
+              <th class="p-3.5">Comissão Estimada</th>
               <th class="p-3.5">Artigo no seu Portal (Vercel)</th>
+              <th class="p-3.5">Redirecionamento</th>
               <th class="p-3.5">Status</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-800/60 font-medium">
+
+            <!-- Lymph Tonic (NEW) -->
+            <tr class="hover:bg-slate-800/40 transition bg-teal-950/20">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-teal-400 animate-pulse"></span> Lymph Tonic™
+              </td>
+              <td class="p-3.5 text-amber-400 font-bold">ClickBank</td>
+              <td class="p-3.5 text-slate-300">Drenagem Linfática / Pernas Inchadas</td>
+              <td class="p-3.5 text-emerald-400 font-bold">Até $160 CPA / $200+</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreview.vercel.app/lymphtonic-drainage-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /lymphtonic-drainage-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/lymphtonic</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
+
+            <!-- Audifort (NEW) -->
+            <tr class="hover:bg-slate-800/40 transition bg-cyan-950/20">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span> Audifort™
+              </td>
+              <td class="p-3.5 text-amber-400 font-bold">ClickBank</td>
+              <td class="p-3.5 text-slate-300">Saúde Auditiva / Zumbido (Tinnitus)</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$100.00 a $190.00 (65%)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreview.vercel.app/audifort-hearing-support-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /audifort-hearing-support-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/audifort</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
+
+            <!-- NeuroVera (NEW) -->
+            <tr class="hover:bg-slate-800/40 transition bg-indigo-950/20">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-indigo-400 animate-pulse"></span> NeuroVera™
+              </td>
+              <td class="p-3.5 text-amber-400 font-bold">ClickBank</td>
+              <td class="p-3.5 text-slate-300">Saúde Cerebral / Memória & Foco</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$115.00 a $145.00</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreview.vercel.app/neurovera-brain-clarity-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /neurovera-brain-clarity-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/neurovera</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
+
             <!-- VisiFlora -->
             <tr class="hover:bg-slate-800/40 transition">
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
@@ -195,6 +247,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                   /visiflora-vision-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/visiflora</td>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
             </tr>
 
@@ -211,6 +264,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                   /circo2-nitric-oxide-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/circo2</td>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
             </tr>
 
@@ -227,6 +281,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                   /advanced-memory-formula-guide <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/memory</td>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
             </tr>
 
@@ -243,6 +298,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                   /cleansesana-gut-reboot <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/cleansesana</td>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
             </tr>
 
@@ -259,6 +315,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                   /nagano-tonic-review <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/nagano</td>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
             </tr>
 
@@ -275,6 +332,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                   /sugar-defender-guide <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/sugardefender</td>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
             </tr>
 
@@ -291,6 +349,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                   /prodentim-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/prodentim</td>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
             </tr>
 
@@ -319,7 +378,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           </div>
           <h3 class="text-sm font-bold text-slate-200 mb-1">Aguardando Primeiras Conversões</h3>
           <p class="text-xs text-slate-400 max-w-md mx-auto">
-            Assim que um leitor clicar em qualquer um dos seus Pins no Pinterest ou no Blog e finalizar a compra na ClickBank ou Digistore24, a transação, valor da comissão e Tracking ID (TID) aparecerão aqui instantaneamente!
+            Assim que um visitante clicar em qualquer um dos seus Pins no Pinterest, Vídeos no YouTube ou Artigos no Blog e finalizar a compra na ClickBank ou Digistore24, a transação, valor da comissão e Tracking ID (TID) aparecerão aqui instantaneamente!
           </p>
         </div>
       </div>
@@ -329,7 +388,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   <!-- Footer -->
   <footer class="border-t border-slate-800 text-center py-6 text-xs text-slate-500">
-    Daily Health Review Live Analytics • Conectado à API ClickBank REST 1.3 • Nickname: <strong class="text-slate-300">eusimar72</strong>
+    Daily Health Review Live Analytics • Conectado à API ClickBank REST 1.3 • Nickname: <strong class="text-slate-300">eusimar72</strong> • 10 Ofertas Conectadas
   </footer>
 
   <script>
@@ -382,6 +441,12 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             self.end_headers()
             data = fetch_clickbank_orders()
             self.wfile.write(json.dumps(data).encode("utf-8"))
+        elif self.path == "/api/status":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.send_header("Access-Control-Allow-Origin", "*")
+            self.end_headers()
+            self.wfile.write(json.dumps({"status": "ONLINE", "port": PORT, "products_count": 10, "nickname": ACCOUNT_NICKNAME}).encode("utf-8"))
         else:
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
@@ -401,7 +466,6 @@ if __name__ == "__main__":
     t = threading.Thread(target=start_server, daemon=True)
     t.start()
     time.sleep(1)
-    webbrowser.open(f"http://localhost:{PORT}")
     try:
         while True:
             time.sleep(1)
