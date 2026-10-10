@@ -56,6 +56,16 @@
       "source": "/go/prodentim",
       "destination": "https://8e01330llbokexfevijb-nq74a.hop.clickbank.net",
       "permanent": false
+    },
+    {
+      "source": "/go/slimmingtea",
+      "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=so50supp&op=start",
+      "permanent": false
+    },
+    {
+      "source": "/go/alldayslimmingtea",
+      "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=so50supp&op=start",
+      "permanent": false
     }
   ],
   "rewrites": [
