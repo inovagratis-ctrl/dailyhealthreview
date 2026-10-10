@@ -66,6 +66,16 @@
       "source": "/go/alldayslimmingtea",
       "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=so50supp&op=start",
       "permanent": false
+    },
+    {
+      "source": "/go/amino",
+      "destination": "https://www.advancedbionutritionals.com/DS24/Advanced-Amino/Muscle-Mass-Loss/HD.htm#aff=eusimar72",
+      "permanent": false
+    },
+    {
+      "source": "/go/advancedamino",
+      "destination": "https://www.advancedbionutritionals.com/DS24/Advanced-Amino/Muscle-Mass-Loss/HD.htm#aff=eusimar72",
+      "permanent": false
     }
   ],
   "rewrites": [
