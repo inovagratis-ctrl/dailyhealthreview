@@ -23,6 +23,11 @@
       "permanent": false
     },
     {
+      "source": "/go/phytomem",
+      "destination": "https://c25f303qn6ign-5duwwht5-s57.hop.clickbank.net",
+      "permanent": false
+    },
+    {
       "source": "/go/visiflora",
       "destination": "https://51062z5fucqiis5oqcr2mm151a.hop.clickbank.net",
       "permanent": false

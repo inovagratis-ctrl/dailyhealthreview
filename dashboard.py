@@ -134,7 +134,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-layer-group"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">13 Ativos</div>
+        <div class="text-3xl font-black text-white">14 Ativos</div>
         <div class="text-xs text-cyan-200/80 mt-2 flex items-center gap-1">
           <i class="fa-solid fa-bolt"></i> ClickBank & Digistore24
         </div>
@@ -182,6 +182,23 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-800/60 font-medium">
+
+            <!-- Phytomem One (NEW) -->
+            <tr class="hover:bg-slate-800/40 transition bg-amber-950/40">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span> Phytomem One™
+              </td>
+              <td class="p-3.5 text-amber-400 font-bold">ClickBank</td>
+              <td class="p-3.5 text-slate-300">Memória, Plastic Stranglehold & Combustível Cerebral</td>
+              <td class="p-3.5 text-emerald-400 font-bold">65% (AOV $230+, EPC $3.20+)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/phytomem-memory-formula-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /phytomem-memory-formula-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/phytomem</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
 
             <!-- Advanced Amino Formula (NEW) -->
             <tr class="hover:bg-slate-800/40 transition bg-sky-950/30">
@@ -502,7 +519,7 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             self.send_header("Content-Type", "application/json")
             self.send_header("Access-Control-Allow-Origin", "*")
             self.end_headers()
-            self.wfile.write(json.dumps({"status": "ONLINE", "port": PORT, "products_count": 13, "nickname": ACCOUNT_NICKNAME}).encode("utf-8"))
+            self.wfile.write(json.dumps({"status": "ONLINE", "port": PORT, "products_count": 14, "nickname": ACCOUNT_NICKNAME}).encode("utf-8"))
         else:
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
