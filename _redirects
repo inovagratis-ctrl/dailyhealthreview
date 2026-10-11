@@ -1,0 +1,29 @@
+# Cloudflare Pages Redirects and Rewrites Configuration
+# Affiliate Bridge Redirects (Temporary 302/307)
+/go/lymphtonic https://19a86z9ovajqhs57bex45l0flv.hop.clickbank.net 302
+/go/audifort https://6f9834zioammkt802al5tm4pf5.hop.clickbank.net 302
+/go/neurovera https://6fd8bc8jpfkil09mti3fybx058.hop.clickbank.net 302
+/go/femicore https://0f72a06krdfg8n52tbm1tdusai.hop.clickbank.net 302
+/go/phytomem https://c25f303qn6ign-5duwwht5-s57.hop.clickbank.net 302
+/go/glucotrust https://www.checkout-ds24.com/redir/600906/eusimar72/ 302
+/go/visiflora https://51062z5fucqiis5oqcr2mm151a.hop.clickbank.net 302
+/go/circo2 https://www.digistore24.com/redir/538693/eusimar72/ 302
+/go/memory https://www.digistore24.com/redir/599473/eusimar72/ 302
+/go/cleansesana https://cleansesana.com/cleansesana-pdp-fe#aff=eusimar72 302
+/go/nagano https://06fe0-8qxlbmeo9jfi-fx24x4f.hop.clickbank.net 302
+/go/sugardefender https://1bb1cc1ek8qf8sbh84dll9uk5s.hop.clickbank.net 302
+/go/prodentim https://8e01330llbokexfevijb-nq74a.hop.clickbank.net 302
+/go/slimmingtea https://hop.clickbank.net/?affiliate=eusimar72&vendor=so50supp&op=start 302
+/go/alldayslimmingtea https://hop.clickbank.net/?affiliate=eusimar72&vendor=so50supp&op=start 302
+/go/amino https://www.digistore24.com/redir/472629/eusimar72/ 302
+/go/advancedamino https://www.digistore24.com/redir/472629/eusimar72/ 302
+
+# Clean URL Rewrites for Legal & Articles
+/morning-routine /articles/02_Artigo_1_Elixir_7_Segundos.html 200
+/nagano-tonic-review /articles/03_Artigo_2_Nagano_Completo_Com_Fotos.html 200
+/prodentim-report /articles/prodentim-special-report.html 200
+/privacy /legal/privacy-policy.html 200
+/terms /legal/terms-of-service.html 200
+/disclosure /legal/affiliate-disclosure.html 200
+/disclaimer /legal/fda-disclaimer.html 200
+/contact /legal/contact.html 200
