@@ -77,7 +77,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span> API ONLINE (8080)
             </span>
           </h1>
-          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Portal: <span class="text-slate-300 font-mono">dailyhealthreview.vercel.app</span></p>
+          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Portal: <span class="text-emerald-400 font-mono font-bold">dailyhealthreviewus.com</span></p>
         </div>
       </div>
       
@@ -85,7 +85,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         <button onclick="refreshData()" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-lg shadow transition flex items-center gap-2">
           <i class="fa-solid fa-arrows-rotate" id="refresh-icon"></i> Atualizar Agora
         </button>
-        <a href="https://dailyhealthreview.vercel.app" target="_blank" class="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-lg border border-slate-700 flex items-center gap-1.5">
+        <a href="https://dailyhealthreviewus.com" target="_blank" class="px-3 py-2 bg-slate-800 hover:bg-slate-700 text-slate-200 text-xs font-semibold rounded-lg border border-slate-700 flex items-center gap-1.5">
           <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver Portal
         </a>
       </div>
@@ -134,7 +134,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-layer-group"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">10 Ativos</div>
+        <div class="text-3xl font-black text-white">13 Ativos</div>
         <div class="text-xs text-cyan-200/80 mt-2 flex items-center gap-1">
           <i class="fa-solid fa-bolt"></i> ClickBank & Digistore24
         </div>
@@ -148,7 +148,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-tags"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">~$135.00</div>
+        <div class="text-3xl font-black text-white">~$140.00</div>
         <div class="text-xs text-purple-200/80 mt-2 flex items-center gap-1">
           <i class="fa-solid fa-shield-halved"></i> 60% a 85% / Até $160 CPA
         </div>
@@ -161,11 +161,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="flex items-center justify-between mb-5">
         <div>
           <h2 class="text-base font-bold text-white flex items-center gap-2">
-            <i class="fa-solid fa-link text-emerald-400"></i> Esteira de 10 Produtos Conectados no Blog & Redirecionamentos Limpos
+            <i class="fa-solid fa-link text-emerald-400"></i> Esteira de 13 Produtos Conectados no Blog & Redirecionamentos Limpos
           </h2>
           <p class="text-xs text-slate-400">Monitorando conversões e tráfego orgânico do Pinterest, Google SEO, YouTube e Flipboard</p>
         </div>
-        <span class="text-xs text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700 font-bold text-emerald-400">10 Artigos Publicados & Monitorados</span>
+        <span class="text-xs text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700 font-bold text-emerald-400">13 Artigos Publicados & Monitorados</span>
       </div>
 
       <div class="overflow-x-auto">
@@ -176,23 +176,74 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <th class="p-3.5">Plataforma</th>
               <th class="p-3.5">Nicho / Categoria</th>
               <th class="p-3.5">Comissão Estimada</th>
-              <th class="p-3.5">Artigo no seu Portal (Vercel)</th>
+              <th class="p-3.5">Artigo no seu Portal</th>
               <th class="p-3.5">Redirecionamento</th>
               <th class="p-3.5">Status</th>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-800/60 font-medium">
 
-            <!-- Lymph Tonic (NEW) -->
+            <!-- Advanced Amino Formula (NEW) -->
+            <tr class="hover:bg-slate-800/40 transition bg-sky-950/30">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-sky-400 animate-pulse"></span> Advanced Amino Formula™
+              </td>
+              <td class="p-3.5 text-blue-400 font-bold">Digistore24</td>
+              <td class="p-3.5 text-slate-300">Reversão de Perda Muscular Sênior 50+</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$33.25 a $199.50 (50-60%)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/advanced-amino-formula-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /advanced-amino-formula-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/amino</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
+
+            <!-- All Day Slimming Tea (NEW) -->
+            <tr class="hover:bg-slate-800/40 transition bg-amber-950/30">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span> All Day Slimming Tea™
+              </td>
+              <td class="p-3.5 text-amber-400 font-bold">ClickBank</td>
+              <td class="p-3.5 text-slate-300">Metabolismo Matinal/Noturno & Desintoxicação</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$100.00 a $150.00 (75%)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/all-day-slimming-tea-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /all-day-slimming-tea-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/slimmingtea</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
+
+            <!-- FemiCore (NEW) -->
+            <tr class="hover:bg-slate-800/40 transition bg-rose-950/30">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-400 animate-pulse"></span> FemiCore™
+              </td>
+              <td class="p-3.5 text-amber-400 font-bold">ClickBank</td>
+              <td class="p-3.5 text-slate-300">Saúde da Bexiga Feminina & Microbioma</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$120.00 a $145.00</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/femicore-pelvic-health-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /femicore-pelvic-health-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/femicore</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
+
+            <!-- Lymph Tonic -->
             <tr class="hover:bg-slate-800/40 transition bg-teal-950/20">
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-teal-400 animate-pulse"></span> Lymph Tonic™
+                <span class="w-2.5 h-2.5 rounded-full bg-teal-400"></span> Lymph Tonic™
               </td>
               <td class="p-3.5 text-amber-400 font-bold">ClickBank</td>
               <td class="p-3.5 text-slate-300">Drenagem Linfática / Pernas Inchadas</td>
               <td class="p-3.5 text-emerald-400 font-bold">Até $160 CPA / $200+</td>
               <td class="p-3.5">
-                <a href="https://dailyhealthreview.vercel.app/lymphtonic-drainage-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                <a href="https://dailyhealthreviewus.com/lymphtonic-drainage-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
                   /lymphtonic-drainage-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
@@ -200,16 +251,16 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
             </tr>
 
-            <!-- Audifort (NEW) -->
+            <!-- Audifort -->
             <tr class="hover:bg-slate-800/40 transition bg-cyan-950/20">
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span> Audifort™
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span> Audifort™
               </td>
               <td class="p-3.5 text-amber-400 font-bold">ClickBank</td>
               <td class="p-3.5 text-slate-300">Saúde Auditiva / Zumbido (Tinnitus)</td>
               <td class="p-3.5 text-emerald-400 font-bold">$100.00 a $190.00 (65%)</td>
               <td class="p-3.5">
-                <a href="https://dailyhealthreview.vercel.app/audifort-hearing-support-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                <a href="https://dailyhealthreviewus.com/audifort-hearing-support-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
                   /audifort-hearing-support-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
@@ -217,16 +268,16 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
             </tr>
 
-            <!-- NeuroVera (NEW) -->
+            <!-- NeuroVera -->
             <tr class="hover:bg-slate-800/40 transition bg-indigo-950/20">
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-indigo-400 animate-pulse"></span> NeuroVera™
+                <span class="w-2.5 h-2.5 rounded-full bg-indigo-400"></span> NeuroVera™
               </td>
               <td class="p-3.5 text-amber-400 font-bold">ClickBank</td>
               <td class="p-3.5 text-slate-300">Saúde Cerebral / Memória & Foco</td>
               <td class="p-3.5 text-emerald-400 font-bold">$115.00 a $145.00</td>
               <td class="p-3.5">
-                <a href="https://dailyhealthreview.vercel.app/neurovera-brain-clarity-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                <a href="https://dailyhealthreviewus.com/neurovera-brain-clarity-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
                   /neurovera-brain-clarity-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
@@ -243,7 +294,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5 text-slate-300">Saúde dos Olhos / Eixo Intestino-Visão</td>
               <td class="p-3.5 text-emerald-400 font-bold">$159.37</td>
               <td class="p-3.5">
-                <a href="https://dailyhealthreview.vercel.app/visiflora-vision-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                <a href="https://dailyhealthreviewus.com/visiflora-vision-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
                   /visiflora-vision-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
@@ -260,7 +311,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5 text-slate-300">Óxido Nítrico / Circulação Sênior 50+</td>
               <td class="p-3.5 text-emerald-400 font-bold">$83.36 a $131.00</td>
               <td class="p-3.5">
-                <a href="https://dailyhealthreview.vercel.app/circo2-nitric-oxide-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                <a href="https://dailyhealthreviewus.com/circo2-nitric-oxide-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
                   /circo2-nitric-oxide-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
@@ -277,7 +328,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5 text-slate-300">Memória / Cérebro & Foco 60+</td>
               <td class="p-3.5 text-emerald-400 font-bold">$87.73</td>
               <td class="p-3.5">
-                <a href="https://dailyhealthreview.vercel.app/advanced-memory-formula-guide" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                <a href="https://dailyhealthreviewus.com/advanced-memory-formula-guide" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
                   /advanced-memory-formula-guide <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
@@ -294,7 +345,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5 text-slate-300">Microbioma / Desinchaço Intestinal</td>
               <td class="p-3.5 text-emerald-400 font-bold">$106.94</td>
               <td class="p-3.5">
-                <a href="https://dailyhealthreview.vercel.app/cleansesana-gut-reboot" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                <a href="https://dailyhealthreviewus.com/cleansesana-gut-reboot" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
                   /cleansesana-gut-reboot <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
@@ -311,7 +362,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5 text-slate-300">Metabolismo / 7s Elixir</td>
               <td class="p-3.5 text-emerald-400 font-bold">$120.00 a $140.00</td>
               <td class="p-3.5">
-                <a href="https://dailyhealthreview.vercel.app/nagano-tonic-review" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                <a href="https://dailyhealthreviewus.com/nagano-tonic-review" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
                   /nagano-tonic-review <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
@@ -328,7 +379,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5 text-slate-300">Controle de Glicose & Energia</td>
               <td class="p-3.5 text-emerald-400 font-bold">$125.00 a $145.00</td>
               <td class="p-3.5">
-                <a href="https://dailyhealthreview.vercel.app/sugar-defender-guide" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                <a href="https://dailyhealthreviewus.com/sugar-defender-guide" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
                   /sugar-defender-guide <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
@@ -345,13 +396,18 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5 text-slate-300">Saúde Bucal / Dentes & Gengivas</td>
               <td class="p-3.5 text-emerald-400 font-bold">$100.00 a $135.00</td>
               <td class="p-3.5">
-                <a href="https://dailyhealthreview.vercel.app/prodentim-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                <a href="https://dailyhealthreviewus.com/prodentim-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
                   /prodentim-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                 </a>
               </td>
               <td class="p-3.5 font-mono text-slate-400">/go/prodentim</td>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
             </tr>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
 
           </tbody>
         </table>
@@ -388,7 +444,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   <!-- Footer -->
   <footer class="border-t border-slate-800 text-center py-6 text-xs text-slate-500">
-    Daily Health Review Live Analytics • Conectado à API ClickBank REST 1.3 • Nickname: <strong class="text-slate-300">eusimar72</strong> • 10 Ofertas Conectadas
+    Daily Health Review Live Analytics • Conectado à API ClickBank REST 1.3 • Nickname: <strong class="text-slate-300">eusimar72</strong> • 13 Ofertas Conectadas
   </footer>
 
   <script>
@@ -446,7 +502,7 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             self.send_header("Content-Type", "application/json")
             self.send_header("Access-Control-Allow-Origin", "*")
             self.end_headers()
-            self.wfile.write(json.dumps({"status": "ONLINE", "port": PORT, "products_count": 10, "nickname": ACCOUNT_NICKNAME}).encode("utf-8"))
+            self.wfile.write(json.dumps({"status": "ONLINE", "port": PORT, "products_count": 13, "nickname": ACCOUNT_NICKNAME}).encode("utf-8"))
         else:
             self.send_response(200)
             self.send_header("Content-Type", "text/html; charset=utf-8")
