@@ -28,6 +28,11 @@
       "permanent": false
     },
     {
+      "source": "/go/glucotrust",
+      "destination": "https://www.checkout-ds24.com/redir/600906/eusimar72/",
+      "permanent": false
+    },
+    {
       "source": "/go/visiflora",
       "destination": "https://51062z5fucqiis5oqcr2mm151a.hop.clickbank.net",
       "permanent": false

@@ -134,7 +134,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-layer-group"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">14 Ativos</div>
+        <div class="text-3xl font-black text-white">15 Ativos</div>
         <div class="text-xs text-cyan-200/80 mt-2 flex items-center gap-1">
           <i class="fa-solid fa-bolt"></i> ClickBank & Digistore24
         </div>
@@ -161,11 +161,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="flex items-center justify-between mb-5">
         <div>
           <h2 class="text-base font-bold text-white flex items-center gap-2">
-            <i class="fa-solid fa-link text-emerald-400"></i> Esteira de 13 Produtos Conectados no Blog & Redirecionamentos Limpos
+            <i class="fa-solid fa-link text-emerald-400"></i> Esteira de 15 Produtos Conectados no Blog & Redirecionamentos Limpos
           </h2>
           <p class="text-xs text-slate-400">Monitorando conversões e tráfego orgânico do Pinterest, Google SEO, YouTube e Flipboard</p>
         </div>
-        <span class="text-xs text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700 font-bold text-emerald-400">13 Artigos Publicados & Monitorados</span>
+        <span class="text-xs text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700 font-bold text-emerald-400">15 Artigos Publicados & Monitorados</span>
       </div>
 
       <div class="overflow-x-auto">
@@ -182,6 +182,23 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-800/60 font-medium">
+
+            <!-- GlucoTrust German (NEW) -->
+            <tr class="hover:bg-slate-800/40 transition bg-emerald-950/40">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span> GlucoTrust™ (German DACH)
+              </td>
+              <td class="p-3.5 text-blue-400 font-bold">Digistore24</td>
+              <td class="p-3.5 text-slate-300">Blutzucker, Tiefschlaf & Cortisol</td>
+              <td class="p-3.5 text-emerald-400 font-bold">60% RevShare (€242 AOV, EPC €4.50)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/glucotrust-blutzucker-bericht" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /glucotrust-blutzucker-bericht <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/glucotrust</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
 
             <!-- Phytomem One (NEW) -->
             <tr class="hover:bg-slate-800/40 transition bg-amber-950/40">
