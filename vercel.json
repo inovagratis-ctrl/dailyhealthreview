@@ -23,6 +23,11 @@
       "permanent": false
     },
     {
+      "source": "/go/neotonics",
+      "destination": "https://1adc598rkgejfr0fleuao7jm4c.hop.clickbank.net",
+      "permanent": false
+    },
+    {
       "source": "/go/phytomem",
       "destination": "https://c25f303qn6ign-5duwwht5-s57.hop.clickbank.net",
       "permanent": false
