@@ -251,14 +251,14 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
             </tr>
 
-            <!-- All Day Slimming Tea (NEW) -->
-            <tr class="hover:bg-slate-800/40 transition bg-amber-950/30">
+            <!-- All Day Slimming Tea (Whitelisted VIP) -->
+            <tr class="hover:bg-slate-800/40 transition bg-emerald-950/30">
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span> All Day Slimming Tea™
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span> All Day Slimming Tea™ (Whitelisted VIP)
               </td>
-              <td class="p-3.5 text-amber-400 font-bold">ClickBank</td>
+              <td class="p-3.5 text-amber-400 font-bold">ClickBank (allslimtea)</td>
               <td class="p-3.5 text-slate-300">Metabolismo Matinal/Noturno & Desintoxicação</td>
-              <td class="p-3.5 text-emerald-400 font-bold">$100.00 a $150.00 (75%)</td>
+              <td class="p-3.5 text-emerald-400 font-bold">65% FE / 50% Upsells (Aprovado VIP)</td>
               <td class="p-3.5">
                 <a href="https://dailyhealthreviewus.com/all-day-slimming-tea-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
                   /all-day-slimming-tea-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>

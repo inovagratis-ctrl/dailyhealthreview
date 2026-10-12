@@ -74,12 +74,12 @@
     },
     {
       "source": "/go/slimmingtea",
-      "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=so50supp&op=start",
+      "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=allslimtea",
       "permanent": false
     },
     {
       "source": "/go/alldayslimmingtea",
-      "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=so50supp&op=start",
+      "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=allslimtea",
       "permanent": false
     },
     {
