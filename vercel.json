@@ -96,6 +96,11 @@
       "source": "/go/spartamax",
       "destination": "https://getspartamax.com/#aff=eusimar72",
       "permanent": false
+    },
+    {
+      "source": "/go/cardioslim",
+      "destination": "https://964c53zqs8lllzb6dngayqzeq4.hop.clickbank.net",
+      "permanent": false
     }
   ],
   "rewrites": [

@@ -6,3 +6,7 @@
 !.dev.vars.example
 .env*
 !.env.example
+
+# Video rendering scratch files
+video_assets/
+*.py
