@@ -101,6 +101,21 @@
       "source": "/go/cardioslim",
       "destination": "https://964c53zqs8lllzb6dngayqzeq4.hop.clickbank.net",
       "permanent": false
+    },
+    {
+      "source": "/01_Pagina_Inicial_Portal_Home.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/02_Artigo_1_Elixir_7_Segundos.html",
+      "destination": "/morning-routine",
+      "permanent": true
+    },
+    {
+      "source": "/03_Artigo_2_Nagano_Completo_Com_Fotos.html",
+      "destination": "/nagano-tonic-review",
+      "permanent": true
     }
   ],
   "rewrites": [
