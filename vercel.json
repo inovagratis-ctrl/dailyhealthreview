@@ -3,6 +3,16 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/go/fimavyn",
+      "destination": "https://69fc860owaqedt88jellbmeu3l.hop.clickbank.net",
+      "permanent": false
+    },
+    {
+      "source": "/go/fimavyn-metabolic",
+      "destination": "https://69fc860owaqedt88jellbmeu3l.hop.clickbank.net",
+      "permanent": false
+    },
+    {
       "source": "/go/lymphtonic",
       "destination": "https://19a86z9ovajqhs57bex45l0flv.hop.clickbank.net",
       "permanent": false
