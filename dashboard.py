@@ -161,11 +161,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="flex items-center justify-between mb-5">
         <div>
           <h2 class="text-base font-bold text-white flex items-center gap-2">
-            <i class="fa-solid fa-link text-emerald-400"></i> Esteira de 18 Produtos Conectados no Blog & Redirecionamentos Limpos
+            <i class="fa-solid fa-link text-emerald-400"></i> Esteira de 19 Produtos Conectados no Blog & Redirecionamentos Limpos
           </h2>
           <p class="text-xs text-slate-400">Monitorando conversões e tráfego orgânico do Pinterest, Google SEO, YouTube e Flipboard</p>
         </div>
-        <span class="text-xs text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700 font-bold text-emerald-400">18 Artigos Publicados & Monitorados</span>
+        <span class="text-xs text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700 font-bold text-emerald-400">19 Artigos Publicados & Monitorados</span>
       </div>
 
       <div class="overflow-x-auto">
@@ -182,6 +182,23 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-800/60 font-medium">
+
+            <!-- Java Burn (NEW) -->
+            <tr class="hover:bg-slate-800/40 transition bg-amber-950/40">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span> Java Burn™ (Coffee Ritual)
+              </td>
+              <td class="p-3.5 text-amber-400 font-bold">ClickBank (javaburn)</td>
+              <td class="p-3.5 text-slate-300">Metabolismo Matinal & Queima de Gordura no Café</td>
+              <td class="p-3.5 text-emerald-400 font-bold">Até $165.00 por Venda (AOV $294, EPC $2.80+)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/java-burn-coffee-ritual-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /java-burn-coffee-ritual-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/javaburn</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
 
             <!-- Cardio Slim Tea (VIP Whitelisted NEW) -->
             <tr class="hover:bg-slate-800/40 transition bg-blue-950/40">

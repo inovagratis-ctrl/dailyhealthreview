@@ -103,6 +103,11 @@
       "permanent": false
     },
     {
+      "source": "/go/javaburn",
+      "destination": "https://6319020gpebhb02coila-kru3j.hop.clickbank.net",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true
