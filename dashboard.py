@@ -134,7 +134,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-layer-group"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">22 Ativos</div>
+        <div class="text-3xl font-black text-white">23 Ativos</div>
         <div class="text-xs text-cyan-200/80 mt-2 flex items-center gap-1">
           <i class="fa-solid fa-bolt"></i> ClickBank & Digistore24
         </div>
@@ -161,11 +161,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="flex items-center justify-between mb-5">
         <div>
           <h2 class="text-base font-bold text-white flex items-center gap-2">
-            <i class="fa-solid fa-link text-emerald-400"></i> Esteira de 22 Produtos Conectados no Blog & Redirecionamentos Limpos
+            <i class="fa-solid fa-link text-emerald-400"></i> Esteira de 23 Produtos Conectados no Blog & Redirecionamentos Limpos
           </h2>
           <p class="text-xs text-slate-400">Monitorando conversões e tráfego orgânico do Pinterest, Google SEO, YouTube e Flipboard</p>
         </div>
-        <span class="text-xs text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700 font-bold text-emerald-400">22 Artigos Publicados & Monitorados</span>
+        <span class="text-xs text-slate-400 bg-slate-800/80 px-3 py-1 rounded-full border border-slate-700 font-bold text-emerald-400">23 Artigos Publicados & Monitorados</span>
       </div>
 
       <div class="overflow-x-auto">
@@ -182,6 +182,23 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             </tr>
           </thead>
           <tbody class="divide-y divide-slate-800/60 font-medium">
+
+            <!-- Advanced Collagen PLUS (NEW Digistore24) -->
+            <tr class="hover:bg-slate-800/40 transition bg-rose-950/40">
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-400 animate-pulse"></span> Advanced Collagen PLUS™
+              </td>
+              <td class="p-3.5 text-blue-400 font-bold">Digistore24 (soundview)</td>
+              <td class="p-3.5 text-slate-300">Rejuvenescimento da Pele, Cabelos, Unhas & Articulações (5 Tipos)</td>
+              <td class="p-3.5 text-emerald-400 font-bold">60% em todo o funil (Até $149+ por Venda)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/advanced-collagen-plus-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1">
+                  /advanced-collagen-plus-report <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/collagen</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">PUBLICADO</span></td>
+            </tr>
 
             <!-- JointEternal (NEW Digistore24) -->
             <tr class="hover:bg-slate-800/40 transition bg-teal-950/40">

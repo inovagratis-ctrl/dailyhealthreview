@@ -133,6 +133,21 @@
       "permanent": false
     },
     {
+      "source": "/go/collagen",
+      "destination": "https://www.advancedbionutritionals.com/DS24/Collagen/This-Simple-10-Second-Kitchen-Test/HD.htm#aff=eusimar72",
+      "permanent": false
+    },
+    {
+      "source": "/go/collagenplus",
+      "destination": "https://www.advancedbionutritionals.com/DS24/Collagen/This-Simple-10-Second-Kitchen-Test/HD.htm#aff=eusimar72",
+      "permanent": false
+    },
+    {
+      "source": "/go/advancedcollagen",
+      "destination": "https://www.advancedbionutritionals.com/DS24/Collagen/This-Simple-10-Second-Kitchen-Test/HD.htm#aff=eusimar72",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true
