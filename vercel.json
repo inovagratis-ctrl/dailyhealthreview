@@ -108,6 +108,11 @@
       "permanent": false
     },
     {
+      "source": "/go/prostavive",
+      "destination": "https://fdec819gulieco3cyb76w71v3h.hop.clickbank.net",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true
