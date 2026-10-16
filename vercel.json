@@ -123,6 +123,16 @@
       "permanent": false
     },
     {
+      "source": "/go/jointeternal",
+      "destination": "https://jointeternal.com/discover/#aff=eusimar72",
+      "permanent": false
+    },
+    {
+      "source": "/go/joint-eternal",
+      "destination": "https://jointeternal.com/discover/#aff=eusimar72",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true
