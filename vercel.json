@@ -113,6 +113,16 @@
       "permanent": false
     },
     {
+      "source": "/go/jointsupport",
+      "destination": "https://www.advancedbionutritionals.com/DS24/Advanced-Joint/Beat-Joint-Pain-With-Cucumbers.htm#aff=eusimar72",
+      "permanent": false
+    },
+    {
+      "source": "/go/joint-support",
+      "destination": "https://www.advancedbionutritionals.com/DS24/Advanced-Joint/Beat-Joint-Pain-With-Cucumbers.htm#aff=eusimar72",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true
