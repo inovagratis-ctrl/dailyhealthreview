@@ -3,6 +3,16 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/go/corevital",
+      "destination": "https://corevitalnutra.com/burn/clickbank/",
+      "permanent": false
+    },
+    {
+      "source": "/go/corevital-burn",
+      "destination": "https://corevitalnutra.com/burn/clickbank/",
+      "permanent": false
+    },
+    {
       "source": "/go/fimavyn",
       "destination": "https://69fc860owaqedt88jellbmeu3l.hop.clickbank.net",
       "permanent": false
