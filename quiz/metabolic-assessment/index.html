@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7PQXFY9F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BE7PQXFY9F');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30-Second Metabolic Profile Assessment | Daily Health Review</title>
+  <meta name="description" content="Take this quick 30-second metabolic assessment to evaluate your dormant resting metabolic rate and discover customized botanical solutions.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Pinterest Tag -->
+  <script>
+  !function(e){if(!window.pintrk){window.pintrk = function () {
+  window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+    n=window.pintrk;n.queue=[],n.version="3.0";var
+    t=document.createElement("script");t.async=!0,t.src=e;var
+    r=document.getElementsByTagName("script")[0];
+    r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+  pintrk('load', '2613505577093');
+  pintrk('page');
+  </script>
+  <noscript>
+  <img height="1" width="1" style="display:none;" alt="" src="https://ct.pinterest.com/v3/?event=init&tid=2613505577093&noscript=1" />
+  </noscript>
+
+  <style>
+    @keyframes pulseBtn {
+      0%, 100% { transform: scale(1); box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4); }
+      50% { transform: scale(1.02); box-shadow: 0 8px 25px rgba(245, 158, 11, 0.7); }
+    }
+    .pulse-amber {
+      animation: pulseBtn 2s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen font-sans antialiased">
+
+  <!-- Header -->
+  <header class="bg-white border-b border-slate-200 py-3 px-4 shadow-sm">
+    <div class="max-w-2xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-2">
+        <span class="bg-red-700 text-white font-black text-sm px-2 py-0.5 rounded tracking-tight">DHR</span>
+        <span class="text-sm font-extrabold tracking-tight text-slate-900">DAILY HEALTH <span class="text-red-700">REVIEW</span></span>
+      </div>
+      <span class="text-[11px] font-bold text-emerald-800 bg-emerald-50 border border-emerald-200 px-2.5 py-1 rounded-full">
+        ⚡ 2026 Interactive Diagnostic Tool
+      </span>
+    </div>
+  </header>
+
+  <!-- Main Quiz Container -->
+  <main class="max-w-2xl mx-auto px-4 py-8 sm:py-12 flex-grow w-full">
+
+    <!-- Progress Indicator -->
+    <div id="progress-container" class="mb-6">
+      <div class="flex justify-between items-center text-xs font-bold text-slate-500 mb-2">
+        <span id="step-counter">Question 1 of 4</span>
+        <span id="progress-percent" class="text-amber-600 font-extrabold">25% Completed</span>
+      </div>
+      <div class="w-full bg-slate-200 h-2.5 rounded-full overflow-hidden">
+        <div id="progress-bar" class="bg-gradient-to-r from-amber-500 to-amber-600 h-full w-1/4 transition-all duration-300 rounded-full"></div>
+      </div>
+    </div>
+
+    <!-- QUIZ CARD -->
+    <div id="quiz-card" class="bg-white rounded-2xl border border-slate-200 shadow-xl p-6 sm:p-8">
+
+      <!-- QUESTION 1 -->
+      <div id="q1" class="quiz-step">
+        <span class="text-xs font-black uppercase tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded inline-block mb-3">
+          Step 1 • Primary Focus
+        </span>
+        <h1 class="text-xl sm:text-2xl font-black text-slate-900 mb-2 leading-snug">
+          What is your main wellness & weight management goal right now?
+        </h1>
+        <p class="text-xs sm:text-sm text-slate-500 mb-6">
+          Select the challenge that feels most frustrating in your everyday routine.
+        </p>
+
+        <div class="space-y-3">
+          <button onclick="nextQuestion(1, 'Midsection stubborn fat')" class="w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-amber-500 hover:bg-amber-50/50 transition flex items-center justify-between group">
+            <span class="font-bold text-sm sm:text-base text-slate-800 group-hover:text-amber-900">A. Losing stubborn belly & hip weight that won't budge</span>
+            <span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400 group-hover:border-amber-500 group-hover:text-amber-600">&rarr;</span>
+          </button>
+          <button onclick="nextQuestion(1, 'Slow sluggish metabolism')" class="w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-amber-500 hover:bg-amber-50/50 transition flex items-center justify-between group">
+            <span class="font-bold text-sm sm:text-base text-slate-800 group-hover:text-amber-900">B. Re-igniting a metabolism that feels like it stopped after 40</span>
+            <span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400 group-hover:border-amber-500 group-hover:text-amber-600">&rarr;</span>
+          </button>
+          <button onclick="nextQuestion(1, 'Afternoon energy crash')" class="w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-amber-500 hover:bg-amber-50/50 transition flex items-center justify-between group">
+            <span class="font-bold text-sm sm:text-base text-slate-800 group-hover:text-amber-900">C. Eliminating severe afternoon fatigue & brain fog</span>
+            <span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400 group-hover:border-amber-500 group-hover:text-amber-600">&rarr;</span>
+          </button>
+          <button onclick="nextQuestion(1, 'All of the above')" class="w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-amber-500 hover:bg-amber-50/50 transition flex items-center justify-between group">
+            <span class="font-bold text-sm sm:text-base text-slate-800 group-hover:text-amber-900">D. All of the above (Weight + Low Energy + Cravings)</span>
+            <span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400 group-hover:border-amber-500 group-hover:text-amber-600">&rarr;</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- QUESTION 2 -->
+      <div id="q2" class="quiz-step hidden">
+        <span class="text-xs font-black uppercase tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded inline-block mb-3">
+          Step 2 • Energy Timing
+        </span>
+        <h2 class="text-xl sm:text-2xl font-black text-slate-900 mb-2 leading-snug">
+          At what time of day do you feel your energy drop the sharpest?
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 mb-6">
+          This reveals your body's circadian metabolic hormone response.
+        </p>
+
+        <div class="space-y-3">
+          <button onclick="nextQuestion(2, '2PM to 4PM crash')" class="w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-amber-500 hover:bg-amber-50/50 transition flex items-center justify-between group">
+            <span class="font-bold text-sm sm:text-base text-slate-800 group-hover:text-amber-900">A. The "3:00 PM Slump" (Drowsy, craving sugar or coffee)</span>
+            <span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400 group-hover:border-amber-500 group-hover:text-amber-600">&rarr;</span>
+          </button>
+          <button onclick="nextQuestion(2, 'Morning exhaustion')" class="w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-amber-500 hover:bg-amber-50/50 transition flex items-center justify-between group">
+            <span class="font-bold text-sm sm:text-base text-slate-800 group-hover:text-amber-900">B. First thing in the morning (Wake up unrefreshed)</span>
+            <span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400 group-hover:border-amber-500 group-hover:text-amber-600">&rarr;</span>
+          </button>
+          <button onclick="nextQuestion(2, 'Post meal slump')" class="w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-amber-500 hover:bg-amber-50/50 transition flex items-center justify-between group">
+            <span class="font-bold text-sm sm:text-base text-slate-800 group-hover:text-amber-900">C. Right after eating lunch or dinner (Food coma feeling)</span>
+            <span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400 group-hover:border-amber-500 group-hover:text-amber-600">&rarr;</span>
+          </button>
+          <button onclick="nextQuestion(2, 'Constant tiredness')" class="w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-amber-500 hover:bg-amber-50/50 transition flex items-center justify-between group">
+            <span class="font-bold text-sm sm:text-base text-slate-800 group-hover:text-amber-900">D. Constant low-grade sluggishness throughout the entire day</span>
+            <span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400 group-hover:border-amber-500 group-hover:text-amber-600">&rarr;</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- QUESTION 3 -->
+      <div id="q3" class="quiz-step hidden">
+        <span class="text-xs font-black uppercase tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded inline-block mb-3">
+          Step 3 • Diet Resistance
+        </span>
+        <h2 class="text-xl sm:text-2xl font-black text-slate-900 mb-2 leading-snug">
+          How have traditional low-calorie or low-carb diets worked for you recently?
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 mb-6">
+          Evaluates whether your body has entered "dormant metabolic conservation".
+        </p>
+
+        <div class="space-y-3">
+          <button onclick="nextQuestion(3, 'Zero progress despite strict diet')" class="w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-amber-500 hover:bg-amber-50/50 transition flex items-center justify-between group">
+            <span class="font-bold text-sm sm:text-base text-slate-800 group-hover:text-amber-900">A. Little to no progress even when eating strictly</span>
+            <span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400 group-hover:border-amber-500 group-hover:text-amber-600">&rarr;</span>
+          </button>
+          <button onclick="nextQuestion(3, 'Rebound weight gain')" class="w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-amber-500 hover:bg-amber-50/50 transition flex items-center justify-between group">
+            <span class="font-bold text-sm sm:text-base text-slate-800 group-hover:text-amber-900">B. I lose a few pounds, but it instantly rebounds back</span>
+            <span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400 group-hover:border-amber-500 group-hover:text-amber-600">&rarr;</span>
+          </button>
+          <button onclick="nextQuestion(3, 'Caffeine jitters from pills')" class="w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-amber-500 hover:bg-amber-50/50 transition flex items-center justify-between group">
+            <span class="font-bold text-sm sm:text-base text-slate-800 group-hover:text-amber-900">C. Commercial fat burner pills made me jittery with heart racing</span>
+            <span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400 group-hover:border-amber-500 group-hover:text-amber-600">&rarr;</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- QUESTION 4 -->
+      <div id="q4" class="quiz-step hidden">
+        <span class="text-xs font-black uppercase tracking-wider text-amber-600 bg-amber-50 px-2.5 py-1 rounded inline-block mb-3">
+          Step 4 • Solution Readiness
+        </span>
+        <h2 class="text-xl sm:text-2xl font-black text-slate-900 mb-2 leading-snug">
+          Are you willing to practice a 30-second all-natural morning water ritual?
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 mb-6">
+          Inspired by traditional Japanese botanical elixirs, with zero harsh caffeine stimulants.
+        </p>
+
+        <div class="space-y-3">
+          <button onclick="calculateResults()" class="w-full text-left p-4 rounded-xl border-2 border-amber-500 bg-amber-50/60 hover:bg-amber-100 transition flex items-center justify-between group">
+            <span class="font-black text-sm sm:text-base text-amber-950">✓ YES — I want a clean, plant-based ritual without crashes</span>
+            <span class="w-6 h-6 rounded-full bg-amber-500 text-white flex items-center justify-center text-xs font-black">&rarr;</span>
+          </button>
+          <button onclick="calculateResults()" class="w-full text-left p-4 rounded-xl border-2 border-slate-200 hover:border-amber-500 hover:bg-amber-50/50 transition flex items-center justify-between group">
+            <span class="font-bold text-sm sm:text-base text-slate-800 group-hover:text-amber-900">✓ YES — If it is backed by clinical research and a money-back guarantee</span>
+            <span class="w-6 h-6 rounded-full border border-slate-300 flex items-center justify-center text-xs font-bold text-slate-400 group-hover:border-amber-500 group-hover:text-amber-600">&rarr;</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- CALCULATING SCREEN -->
+      <div id="calculating" class="quiz-step hidden text-center py-10">
+        <div class="inline-block w-16 h-16 border-4 border-amber-500 border-t-transparent rounded-full animate-spin mb-4"></div>
+        <h2 class="text-xl font-black text-slate-900 mb-2">Analyzing Your Metabolic Answers...</h2>
+        <p id="calc-status" class="text-xs text-slate-500 font-semibold tracking-wide uppercase">Cross-referencing resting metabolic biomarkers...</p>
+      </div>
+
+      <!-- PERSONALIZED RESULTS SCREEN -->
+      <div id="results" class="quiz-step hidden">
+        
+        <div class="text-center pb-6 border-b border-slate-200 mb-6">
+          <span class="bg-amber-100 text-amber-900 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-3">
+            Diagnostic Complete • Verified Assessment
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 leading-tight">
+            Your Metabolic Status: <span class="text-amber-600">Dormant Metabolic Rate</span>
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-600 max-w-lg mx-auto mt-2 leading-relaxed">
+            Your responses indicate that your cellular thermogenesis is operating in <strong>conservation mode</strong>. Calorie restriction alone will not restart this engine—your cells require specific morning botanical signaling to awaken resting lipid oxidation.
+          </p>
+        </div>
+
+        <!-- MATCHED PRODUCT CARD -->
+        <div class="bg-gradient-to-b from-amber-50/50 to-white rounded-2xl border-2 border-amber-500 p-6 shadow-md mb-6">
+          <div class="flex flex-col sm:flex-row items-center gap-6">
+            <div class="w-36 h-36 flex-shrink-0 bg-white p-2 rounded-xl border border-amber-200 shadow-sm flex items-center justify-center">
+              <img src="/Imagens_Oficiais/pote_nagano_selo_ouro.jpg" alt="Nagano Lean Body Tonic" class="max-h-full max-w-full object-contain">
+            </div>
+            <div>
+              <span class="text-[10px] font-black uppercase tracking-widest text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">
+                98.4% Match For Your Profile
+              </span>
+              <h3 class="text-xl font-black text-slate-900 mt-1 mb-1">
+                Nagano Lean Body Tonic™
+              </h3>
+              <p class="text-xs text-slate-500 font-medium mb-3">
+                Ancient Japanese Morning Elixir • 30 Daily Scoops
+              </p>
+              <ul class="text-xs text-slate-700 space-y-1.5">
+                <li class="flex items-center gap-1.5 font-semibold">
+                  <span class="text-emerald-600 font-bold">✓</span> Standardized EGCG + Camu Camu targets resting fat burning
+                </li>
+                <li class="flex items-center gap-1.5 font-semibold">
+                  <span class="text-emerald-600 font-bold">✓</span> Panax Ginseng & Ashwagandha eliminate 3 PM afternoon crashes
+                </li>
+                <li class="flex items-center gap-1.5 font-semibold">
+                  <span class="text-emerald-600 font-bold">✓</span> 100% Non-stimulant: No jitters, heart palpitations, or insomnia
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- DISCOUNT & ACTION CALLOUT -->
+        <div class="bg-slate-900 text-white rounded-2xl p-6 text-center shadow-xl mb-4">
+          <span class="text-amber-400 text-xs font-extrabold tracking-widest uppercase block mb-1">
+            Exclusive Diagnostic Reader Benefit Unlocked
+          </span>
+          <h4 class="text-lg sm:text-xl font-black mb-2">
+            Claim Up to 75% Off + 180-Day 100% Money-Back Guarantee
+          </h4>
+          <p class="text-xs text-slate-300 max-w-md mx-auto mb-5 leading-relaxed">
+            Your quiz results have reserved a prioritized manufacturer allocation directly from the verified laboratory batch.
+          </p>
+
+          <a href="/go/nagano" target="_blank" rel="noopener noreferrer" class="pulse-amber block w-full bg-amber-500 hover:bg-amber-600 text-slate-950 font-black py-4 px-6 rounded-xl text-base sm:text-lg tracking-wide uppercase transition transform">
+            👉 REVEAL MY PERSONALIZED PROTOCOL & DISCOUNT &rarr;
+          </a>
+          <span class="block text-[11px] text-slate-400 mt-2.5">
+            Free US Shipping On Select Bundles • Direct Authorized ClickBank Retailer
+          </span>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Guarantees Row -->
+    <div class="flex flex-wrap items-center justify-center gap-6 mt-6 text-xs text-slate-500 font-semibold">
+      <span class="flex items-center gap-1">🔒 256-Bit SSL Encryption</span>
+      <span class="flex items-center gap-1">🛡️ 180-Day Return Guarantee</span>
+      <span class="flex items-center gap-1">🇺🇸 Made in FDA-Registered Facility</span>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-6 px-4 text-center text-xs text-slate-400 mt-auto">
+    <div class="max-w-2xl mx-auto space-y-2">
+      <div class="flex justify-center space-x-4 text-slate-500 font-medium">
+        <a href="/privacy" class="hover:underline">Privacy Policy</a>
+        <span>&bull;</span>
+        <a href="/terms" class="hover:underline">Terms of Service</a>
+        <span>&bull;</span>
+        <a href="/disclaimer" class="hover:underline">FDA Disclaimer</a>
+      </div>
+      <p class="text-[11px] leading-relaxed">
+        These statements have not been evaluated by the Food and Drug Administration. This diagnostic tool is for educational and self-assessment purposes only and does not substitute for personalized medical advice.
+      </p>
+      <p class="text-[10px] text-slate-400">
+        &copy; 2026 Daily Health Review. All Rights Reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    let currentStep = 1;
+    const totalSteps = 4;
+
+    function nextQuestion(step, answer) {
+      document.getElementById('q' + step).classList.add('hidden');
+      currentStep = step + 1;
+
+      if (currentStep <= totalSteps) {
+        document.getElementById('q' + currentStep).classList.remove('hidden');
+        document.getElementById('step-counter').innerText = 'Question ' + currentStep + ' of ' + totalSteps;
+        const pct = Math.round((currentStep / totalSteps) * 100);
+        document.getElementById('progress-percent').innerText = pct + '% Completed';
+        document.getElementById('progress-bar').style.width = pct + '%';
+      }
+    }
+
+    function calculateResults() {
+      document.getElementById('q4').classList.add('hidden');
+      document.getElementById('progress-container').classList.add('hidden');
+      document.getElementById('calculating').classList.remove('hidden');
+
+      const statuses = [
+        "Analyzing circadian hormone patterns...",
+        "Evaluating cellular thermogenesis biomarkers...",
+        "Matching botanical synergy profile...",
+        "Calculating optimal discount allocation..."
+      ];
+
+      let idx = 0;
+      const interval = setInterval(() => {
+        idx++;
+        if (idx < statuses.length) {
+          document.getElementById('calc-status').innerText = statuses[idx];
+        } else {
+          clearInterval(interval);
+          document.getElementById('calculating').classList.add('hidden');
+          document.getElementById('results').classList.remove('hidden');
+        }
+      }, 700);
+    }
+  </script>
+
+</body>
+</html>
