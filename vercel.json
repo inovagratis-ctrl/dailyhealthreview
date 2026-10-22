@@ -195,6 +195,8 @@
     { "source": "/quiz/metabolism", "destination": "/quiz/metabolic-assessment" },
     { "source": "/story/nagano", "destination": "/special/japanese-morning-ritual" },
     { "source": "/verify/nagano", "destination": "/verify/nagano-official-warning" },
-    { "source": "/quick/nagano", "destination": "/quick/nagano-fast-track" }
+    { "source": "/quick/nagano", "destination": "/quick/nagano-fast-track" },
+    { "source": "/showcase/nagano", "destination": "/showcase/nagano-tonic" },
+    { "source": "/offer/nagano", "destination": "/showcase/nagano-tonic" }
   ]
 }
