@@ -192,9 +192,9 @@
     { "source": "/disclosure", "destination": "/legal/affiliate-disclosure.html" },
     { "source": "/disclaimer", "destination": "/legal/fda-disclaimer.html" },
     { "source": "/contact", "destination": "/legal/contact.html" },
-    { "source": "/quiz/metabolism", "destination": "/quiz/metabolic-assessment/index.html" },
-    { "source": "/story/nagano", "destination": "/special/japanese-morning-ritual/index.html" },
-    { "source": "/verify/nagano", "destination": "/verify/nagano-official-warning/index.html" },
-    { "source": "/quick/nagano", "destination": "/quick/nagano-fast-track/index.html" }
+    { "source": "/quiz/metabolism", "destination": "/quiz/metabolic-assessment" },
+    { "source": "/story/nagano", "destination": "/special/japanese-morning-ritual" },
+    { "source": "/verify/nagano", "destination": "/verify/nagano-official-warning" },
+    { "source": "/quick/nagano", "destination": "/quick/nagano-fast-track" }
   ]
 }
