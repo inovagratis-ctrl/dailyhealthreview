@@ -69,11 +69,11 @@
   <!-- 2. NAVBAR (CHATGPT INSPIRED LEAF BRAND + CLEAN NAVIGATION)                -->
   <!-- ========================================================================= -->
   <header class="bg-white/95 backdrop-blur-md border-b border-slate-200/80 sticky top-0 z-50 shadow-sm transition">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex items-center justify-between gap-4">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 sm:py-4 flex items-center justify-between gap-4">
       
       <!-- Brand Logo -->
       <a href="/" class="flex items-center group">
-        <img src="/images/logo-transparent.png" alt="Daily Health Review - Better Choices. A Healthier You." class="h-9 sm:h-11 w-auto object-contain group-hover:opacity-90 transition" />
+        <img src="/images/logo-transparent.png" alt="Daily Health Review - Better Choices. A Healthier You." class="h-12 sm:h-14 md:h-16 w-auto object-contain transition transform hover:scale-105" />
       </a>
 
       <!-- Navigation Links -->
@@ -100,13 +100,13 @@
 
   <!-- ========================================================================= -->
   <!-- ========================================================================= -->
-  <!-- 3. HERO SECTION (CHATGPT MOCKUP STANDARD: CLEAN HERO WITH WOMAN BG)       -->
+  <!-- 3. HERO SECTION (FULL-WIDTH EDGE-TO-EDGE CLEAN HERO BANNER)               -->
   <!-- ========================================================================= -->
-  <section class="relative bg-white border-b border-slate-200/80 overflow-hidden" style="background-image: url('/images/hero-bg-clean.jpg'); background-repeat: no-repeat; background-position: right center; background-size: cover;">
+  <section class="relative w-full bg-white border-b border-slate-200/80 overflow-hidden" style="background-image: url('/images/hero-bg-clean.jpg'); background-repeat: no-repeat; background-position: right center; background-size: cover;">
     <!-- Soft responsive gradient overlay ensuring maximum text readability across mobile & desktop -->
     <div class="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/20 sm:via-white/90 lg:via-white/70"></div>
 
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 lg:py-24">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-20 lg:py-28">
       <div class="max-w-xl lg:max-w-2xl space-y-5 text-left">
         
         <!-- Evidence-Based Pill Badge -->
@@ -903,51 +903,52 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 11. NEWSLETTER BANNER (CHATGPT MOCKUP STANDARD: GREEN LEAVES BG BANNER)   -->
+  <!-- 11. NEWSLETTER BANNER (FULL-WIDTH EDGE-TO-EDGE CLEAN BANNER)              -->
   <!-- ========================================================================= -->
-  <section class="max-w-7xl mx-auto my-12 px-4">
-    <div class="relative rounded-3xl overflow-hidden shadow-2xl p-8 sm:p-12 text-white border border-emerald-900/40" style="background-image: url('/images/newsletter-bg-clean.jpg'); background-repeat: no-repeat; background-position: left center; background-size: cover; background-color: #013f30;">
-      <!-- Soft gradient overlay ensuring contrast -->
-      <div class="absolute inset-0 bg-gradient-to-r from-emerald-950/40 via-emerald-900/60 to-emerald-950/80 sm:to-transparent"></div>
+  <section class="w-full relative overflow-hidden text-white border-t border-emerald-950" style="background-image: url('/images/newsletter-bg-clean.jpg'); background-repeat: no-repeat; background-position: left center; background-size: cover; background-color: #013f30;">
+    <!-- Soft responsive gradient overlay ensuring contrast -->
+    <div class="absolute inset-0 bg-gradient-to-r from-emerald-950/60 via-emerald-900/65 to-emerald-950/80 sm:to-transparent"></div>
 
-      <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
-        <div class="text-left max-w-xl">
-          <h3 class="text-2xl sm:text-3xl font-black text-white font-serif">Get Our Independent Supplement Audits</h3>
-          <p class="text-emerald-100 text-xs sm:text-sm mt-1.5 leading-relaxed">
-            Subscribe to receive evidence-based clinical breakdowns, formulation alerts, and verified manufacturer deals delivered directly to your inbox.
-          </p>
-        </div>
-
-        <form action="https://formsubmit.co/eusimar72@gmail.com" method="POST" class="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-auto">
-          <input type="hidden" name="_subject" value="📬 New Subscriber - Daily Health Review">
-          <input type="text" name="_honey" style="display:none">
-          <input 
-            type="email" 
-            name="email" 
-            required 
-            placeholder="Enter your email address..." 
-            class="px-5 py-3.5 rounded-xl bg-white text-slate-900 text-xs sm:text-sm w-full sm:w-80 focus:outline-none focus:ring-2 focus:ring-emerald-400 shadow-inner placeholder-slate-400"
-          />
-          <button type="submit" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs sm:text-sm py-3.5 px-7 rounded-xl shadow-md transition whitespace-nowrap w-full sm:w-auto">
-            Subscribe Free &rarr;
-          </button>
-        </form>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 sm:py-16 flex flex-col lg:flex-row items-center justify-between gap-8">
+      <div class="text-left max-w-xl">
+        <h3 class="text-2xl sm:text-3xl font-black text-white font-serif">Get Our Independent Supplement Audits</h3>
+        <p class="text-emerald-100 text-xs sm:text-sm mt-1.5 leading-relaxed">
+          Subscribe to receive evidence-based clinical breakdowns, formulation alerts, and verified manufacturer deals delivered directly to your inbox.
+        </p>
       </div>
+
+      <form action="https://formsubmit.co/eusimar72@gmail.com" method="POST" class="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-auto">
+        <input type="hidden" name="_subject" value="📬 New Subscriber - Daily Health Review">
+        <input type="text" name="_honey" style="display:none">
+        <input 
+          type="email" 
+          name="email" 
+          required 
+          placeholder="Enter your email address..." 
+          class="px-5 py-3.5 rounded-xl bg-white text-slate-900 text-xs sm:text-sm w-full sm:w-80 focus:outline-none focus:ring-2 focus:ring-emerald-400 shadow-inner placeholder-slate-400"
+        />
+        <button type="submit" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs sm:text-sm py-3.5 px-7 rounded-xl shadow-md transition whitespace-nowrap w-full sm:w-auto">
+          Subscribe Free &rarr;
+        </button>
+      </form>
     </div>
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 12. CLEAN AUTHORITATIVE FOOTER (CHATGPT MOCKUP STANDARD)                  -->
+  <!-- 12. CLEAN AUTHORITATIVE FOOTER (FULL-WIDTH WITH CLEAN FOOTER BANNER BG)    -->
   <!-- ========================================================================= -->
-  <footer class="bg-[#0b1723] text-slate-400 pt-14 pb-14 px-4 text-xs border-t border-slate-800 mt-auto">
-    <div class="max-w-7xl mx-auto space-y-10">
+  <footer class="w-full text-slate-400 pt-16 pb-16 px-4 text-xs border-t border-slate-800 mt-auto relative" style="background-image: url('/images/footer-banner-clean.png'); background-repeat: no-repeat; background-position: right bottom; background-size: cover; background-color: #07192c;">
+    <!-- Dark navy ambient overlay ensuring high readability -->
+    <div class="absolute inset-0 bg-[#07192c]/85"></div>
+
+    <div class="relative z-10 max-w-7xl mx-auto space-y-10">
       
       <!-- Top Row: Logo, Nav Links, Social Icons (Matching ChatGPT Mockup) -->
       <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
         
-        <!-- Left: Crisp White Brand Logo -->
+        <!-- Left: Crisp White Brand Logo (Enlarged) -->
         <a href="/" class="flex items-center group">
-          <img src="/images/logo-white.png" alt="Daily Health Review" class="h-9 w-auto object-contain group-hover:opacity-90 transition" />
+          <img src="/images/logo-white.png" alt="Daily Health Review" class="h-12 sm:h-14 w-auto object-contain transition transform hover:scale-105" />
         </a>
 
         <!-- Center: Primary Nav Links -->
