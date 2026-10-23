@@ -99,68 +99,55 @@
   </header>
 
   <!-- ========================================================================= -->
-  <!-- 3. HERO SECTION (ACTIVE COUPLE BANNER + HIGH CONVERSION ACTION DECK)       -->
   <!-- ========================================================================= -->
-  <section class="relative bg-gradient-to-b from-[#f8fafc] via-white to-slate-50 border-b border-slate-200/80 pt-6 sm:pt-10 pb-14 sm:pb-20 px-4 overflow-hidden">
-    <div class="max-w-7xl mx-auto">
-      
-      <!-- High-Impact Active Couple Hero Banner (Official Graphic) -->
-      <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-slate-100 mb-10 max-w-6xl mx-auto group">
-        <img 
-          src="/images/options/header_couple.png" 
-          alt="Daily Health Review - Make Informed Supplement Choices" 
-          class="w-full h-auto object-cover object-center transform group-hover:scale-[1.01] transition duration-500"
-        />
-      </div>
+  <!-- 3. HERO SECTION (CHATGPT MOCKUP STANDARD: CLEAN HERO WITH WOMAN BG)       -->
+  <!-- ========================================================================= -->
+  <section class="relative bg-white border-b border-slate-200/80 overflow-hidden" style="background-image: url('/images/hero-bg-clean.jpg'); background-repeat: no-repeat; background-position: right center; background-size: cover;">
+    <!-- Soft responsive gradient overlay ensuring maximum text readability across mobile & desktop -->
+    <div class="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/20 sm:via-white/90 lg:via-white/70"></div>
 
-      <!-- Action & Value Proposition Deck -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center max-w-6xl mx-auto">
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 lg:py-24">
+      <div class="max-w-xl lg:max-w-2xl space-y-5 text-left">
         
-        <!-- Left: Editorial Value Proposition -->
-        <div class="lg:col-span-7 space-y-4 text-left">
-          <div class="inline-flex items-center gap-2 bg-emerald-50 text-emerald-800 border border-emerald-200 px-3.5 py-1.5 rounded-full text-xs font-extrabold uppercase tracking-wider">
-            <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
-            Evidence-Based Health Research &bull; 2026 Buyers' Guide
-          </div>
-
-          <h1 class="text-2xl sm:text-4xl font-black text-slate-900 leading-[1.2] font-serif">
-            Healthier choices with <span class="text-emerald-700 underline decoration-emerald-300 decoration-4">more science</span> and less hype.
-          </h1>
-
-          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-            We audit, cross-reference, and compare America's highest-rated dietary supplements against peer-reviewed clinical studies, cGMP purity standards, and verified return policies before you buy.
-          </p>
+        <!-- Evidence-Based Pill Badge -->
+        <div>
+          <span class="inline-flex items-center gap-1.5 bg-[#0e5e43] text-white font-bold px-3.5 py-1.5 rounded-full text-[11px] uppercase tracking-wider shadow-sm">
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-300 animate-pulse"></span>
+            ANÁLISES BASEADAS EM EVIDÊNCIAS
+          </span>
         </div>
 
-        <!-- Right: Action Buttons & Trust Points -->
-        <div class="lg:col-span-5 flex flex-col justify-center space-y-4 bg-white p-6 sm:p-8 rounded-3xl border border-slate-200/90 shadow-md">
-          <a href="#rankings" class="text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-sm sm:text-base py-4 px-7 rounded-2xl shadow-lg transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
-            <span>Explore Our 2026 Rankings</span>
-            <span>&rarr;</span>
-          </a>
-          <a href="#methodology" class="text-center bg-slate-50 hover:bg-slate-100 text-slate-700 font-bold text-xs sm:text-sm py-3 px-6 rounded-xl border border-slate-200 transition">
-            How We Evaluate Formulations
-          </a>
+        <!-- Main Headline (Matching ChatGPT Mockup) -->
+        <h1 class="text-3xl sm:text-5xl font-black text-slate-900 tracking-tight leading-[1.15] font-serif">
+          Escolhas mais saudáveis para uma vida melhor
+        </h1>
 
-          <!-- 3 Trust Points -->
-          <div class="pt-2 border-t border-slate-100 grid grid-cols-3 gap-2 text-[11px] font-bold text-slate-600 text-center">
-            <div class="flex flex-col items-center gap-1">
-              <i class="fa-solid fa-microscope text-emerald-700 text-sm"></i>
-              <span>Clinical Data</span>
-            </div>
-            <div class="flex flex-col items-center gap-1">
-              <i class="fa-solid fa-scale-balanced text-emerald-700 text-sm"></i>
-              <span>Unbiased Audits</span>
-            </div>
-            <div class="flex flex-col items-center gap-1">
-              <i class="fa-solid fa-shield-halved text-emerald-700 text-sm"></i>
-              <span>Direct Deals</span>
-            </div>
-          </div>
+        <!-- Subtitle Paragraph -->
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+          Revisamos e comparamos os melhores suplementos, com base em ciência, qualidade e resultados reais. Aqui você encontra informações confiáveis para cuidar da sua saúde.
+        </p>
+
+        <!-- CTA Action Button -->
+        <div class="pt-2">
+          <a href="#rankings" class="inline-flex items-center gap-2 bg-[#0e5e43] hover:bg-[#09422f] text-white font-black text-sm py-3.5 px-8 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-0.5">
+            Explore nossas análises &rarr;
+          </a>
+        </div>
+
+        <!-- 3 Trust Points (Matching Mockup) -->
+        <div class="pt-4 flex flex-wrap items-center gap-6 sm:gap-8 text-xs font-bold text-slate-700 border-t border-slate-200/80">
+          <span class="inline-flex items-center gap-2">
+            <i class="fa-solid fa-microscope text-emerald-700 text-sm"></i> Base científica
+          </span>
+          <span class="inline-flex items-center gap-2">
+            <i class="fa-solid fa-shield-halved text-emerald-700 text-sm"></i> Avaliações imparciais
+          </span>
+          <span class="inline-flex items-center gap-2">
+            <i class="fa-solid fa-tag text-emerald-700 text-sm"></i> Melhores ofertas
+          </span>
         </div>
 
       </div>
-
     </div>
   </section>
 
@@ -173,83 +160,83 @@
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
         <div>
           <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 inline-block mb-2">
-            Explore by Goal
+            Categorias Principais
           </span>
-          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 font-serif">What Are You Looking to Support?</h2>
-          <p class="text-slate-600 text-xs sm:text-sm mt-1">Select your health objective to inspect our top evaluated formulas and studies.</p>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 font-serif">Explore por Objetivo de Saúde</h2>
+          <p class="text-slate-600 text-xs sm:text-sm mt-1">Selecione uma área para ver análises detalhadas, estudos clínicos e os suplementos mais confiáveis.</p>
         </div>
         <a href="#catalog" class="text-xs font-bold text-emerald-700 hover:text-emerald-900 flex items-center gap-1">
-          View all 25 categories &rarr;
+          Ver todos os suplementos &rarr;
         </a>
       </div>
 
-      <!-- 6 Categories Grid -->
+      <!-- 6 Categories Grid (Exact ChatGPT Standard) -->
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
         
-        <!-- Goal 1: Weight & Metabolism -->
-        <button onclick="filterCategory('weight')" class="p-4 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/50 hover:shadow-md transition text-left group bg-white">
-          <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition">
-            🔥
+        <!-- Category 1: Vitaminas e Minerais -->
+        <button onclick="filterCategory('all')" class="p-4 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/50 hover:shadow-md transition text-left group bg-white">
+          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition">
+            <i class="fa-solid fa-shield-halved"></i>
           </div>
           <h3 class="font-extrabold text-xs sm:text-sm text-slate-900 flex items-center justify-between">
-            Metabolism <span class="text-slate-400 group-hover:text-emerald-600 text-xs">&rsaquo;</span>
+            Vitaminas &amp; Minerais <span class="text-slate-400 group-hover:text-emerald-600 text-xs">&rsaquo;</span>
           </h3>
-          <p class="text-[11px] text-slate-500 mt-1">Fat burn &amp; calorie rate</p>
+          <p class="text-[11px] text-slate-500 mt-1">Imunidade e energia</p>
         </button>
 
-        <!-- Goal 2: Joints & Mobility -->
-        <button onclick="filterCategory('joints')" class="p-4 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/50 hover:shadow-md transition text-left group bg-white">
-          <div class="w-10 h-10 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition">
-            🦴
-          </div>
-          <h3 class="font-extrabold text-xs sm:text-sm text-slate-900 flex items-center justify-between">
-            Joints <span class="text-slate-400 group-hover:text-emerald-600 text-xs">&rsaquo;</span>
-          </h3>
-          <p class="text-[11px] text-slate-500 mt-1">Cartilage &amp; mobility</p>
-        </button>
-
-        <!-- Goal 3: Heart & Circulation -->
-        <button onclick="filterCategory('cardio')" class="p-4 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/50 hover:shadow-md transition text-left group bg-white">
-          <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition">
-            ❤️
-          </div>
-          <h3 class="font-extrabold text-xs sm:text-sm text-slate-900 flex items-center justify-between">
-            Heart <span class="text-slate-400 group-hover:text-emerald-600 text-xs">&rsaquo;</span>
-          </h3>
-          <p class="text-[11px] text-slate-500 mt-1">Circulation &amp; blood flow</p>
-        </button>
-
-        <!-- Goal 4: Oral & Dental -->
-        <button onclick="filterCategory('dental')" class="p-4 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/50 hover:shadow-md transition text-left group bg-white">
-          <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition">
-            🦷
-          </div>
-          <h3 class="font-extrabold text-xs sm:text-sm text-slate-900 flex items-center justify-between">
-            Oral Health <span class="text-slate-400 group-hover:text-emerald-600 text-xs">&rsaquo;</span>
-          </h3>
-          <p class="text-[11px] text-slate-500 mt-1">Gums &amp; oral probiotics</p>
-        </button>
-
-        <!-- Goal 5: Memory & Brain -->
+        <!-- Category 2: Saúde Mental -->
         <button onclick="filterCategory('brain')" class="p-4 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/50 hover:shadow-md transition text-left group bg-white">
           <div class="w-10 h-10 rounded-xl bg-purple-50 text-purple-600 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition">
-            🧠
+            <i class="fa-solid fa-brain"></i>
           </div>
           <h3 class="font-extrabold text-xs sm:text-sm text-slate-900 flex items-center justify-between">
-            Memory <span class="text-slate-400 group-hover:text-emerald-600 text-xs">&rsaquo;</span>
+            Saúde Mental <span class="text-slate-400 group-hover:text-emerald-600 text-xs">&rsaquo;</span>
           </h3>
-          <p class="text-[11px] text-slate-500 mt-1">Focus &amp; cognition</p>
+          <p class="text-[11px] text-slate-500 mt-1">Foco e equilíbrio</p>
         </button>
 
-        <!-- Goal 6: Youth & Collagen -->
-        <button onclick="filterCategory('longevity')" class="p-4 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/50 hover:shadow-md transition text-left group bg-white">
-          <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition">
-            ✨
+        <!-- Category 3: Emagrecimento -->
+        <button onclick="filterCategory('weight')" class="p-4 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/50 hover:shadow-md transition text-left group bg-white">
+          <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition">
+            <i class="fa-solid fa-fire"></i>
           </div>
           <h3 class="font-extrabold text-xs sm:text-sm text-slate-900 flex items-center justify-between">
-            Youth &amp; Skin <span class="text-slate-400 group-hover:text-emerald-600 text-xs">&rsaquo;</span>
+            Emagrecimento <span class="text-slate-400 group-hover:text-emerald-600 text-xs">&rsaquo;</span>
           </h3>
-          <p class="text-[11px] text-slate-500 mt-1">Collagen, hair &amp; nails</p>
+          <p class="text-[11px] text-slate-500 mt-1">Metabolismo e controle</p>
+        </button>
+
+        <!-- Category 4: Sono -->
+        <button onclick="filterCategory('joints')" class="p-4 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/50 hover:shadow-md transition text-left group bg-white">
+          <div class="w-10 h-10 rounded-xl bg-indigo-50 text-indigo-600 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition">
+            <i class="fa-solid fa-moon"></i>
+          </div>
+          <h3 class="font-extrabold text-xs sm:text-sm text-slate-900 flex items-center justify-between">
+            Sono &amp; Articulações <span class="text-slate-400 group-hover:text-emerald-600 text-xs">&rsaquo;</span>
+          </h3>
+          <p class="text-[11px] text-slate-500 mt-1">Descanso e recuperação</p>
+        </button>
+
+        <!-- Category 5: Saúde do Coração -->
+        <button onclick="filterCategory('cardio')" class="p-4 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/50 hover:shadow-md transition text-left group bg-white">
+          <div class="w-10 h-10 rounded-xl bg-rose-50 text-rose-600 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition">
+            <i class="fa-solid fa-heart-pulse"></i>
+          </div>
+          <h3 class="font-extrabold text-xs sm:text-sm text-slate-900 flex items-center justify-between">
+            Saúde do Coração <span class="text-slate-400 group-hover:text-emerald-600 text-xs">&rsaquo;</span>
+          </h3>
+          <p class="text-[11px] text-slate-500 mt-1">Pressão e circulação</p>
+        </button>
+
+        <!-- Category 6: Beleza e Pele -->
+        <button onclick="filterCategory('longevity')" class="p-4 rounded-2xl border border-slate-200 hover:border-emerald-500 hover:bg-emerald-50/50 hover:shadow-md transition text-left group bg-white">
+          <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-lg mb-3 group-hover:scale-110 transition">
+            <i class="fa-solid fa-spa"></i>
+          </div>
+          <h3 class="font-extrabold text-xs sm:text-sm text-slate-900 flex items-center justify-between">
+            Beleza e Pele <span class="text-slate-400 group-hover:text-emerald-600 text-xs">&rsaquo;</span>
+          </h3>
+          <p class="text-[11px] text-slate-500 mt-1">Cabelos, pele e colágeno</p>
         </button>
 
       </div>
@@ -266,13 +253,13 @@
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
         <div>
           <span class="text-xs font-bold uppercase tracking-wider text-amber-700 bg-amber-50 px-3 py-1 rounded-full border border-amber-200 inline-block mb-2">
-            🏆 2026 Editorial Selections
+            🏆 Seleções Editoriais 2026
           </span>
-          <h2 class="text-2xl sm:text-4xl font-black text-slate-900 font-serif">Top 5 Most Recommended Supplements</h2>
-          <p class="text-slate-600 text-xs sm:text-sm mt-1">Audited formulations backed by human clinical trials, verified cGMP facilities, and 60–180 day refund terms.</p>
+          <h2 class="text-2xl sm:text-4xl font-black text-slate-900 font-serif">Top 5 Suplementos Mais Recomendados</h2>
+          <p class="text-slate-600 text-xs sm:text-sm mt-1">Produtos bem avaliados, com excelente custo-benefício e alta confiança dos usuários.</p>
         </div>
         <a href="#catalog" class="text-xs font-bold text-emerald-700 hover:text-emerald-900 flex items-center gap-1">
-          Explore complete 25-brand directory &rarr;
+          Ver todos os rankings &rarr;
         </a>
       </div>
 
@@ -337,7 +324,7 @@
             <!-- Dual Buttons -->
             <div class="mt-4 space-y-2">
               <a href="/showcase/nagano-tonic" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-4 rounded-xl shadow transition">
-                Check Official Offer &rarr;
+                Ver oferta &rarr;
               </a>
               <a href="/nagano-tonic-review" class="block w-full text-center bg-slate-50 hover:bg-slate-100 text-slate-600 font-bold text-[11px] py-1.5 rounded-lg border border-slate-200 transition">
                 Read Formulation Audit
@@ -391,7 +378,7 @@
 
             <div class="mt-4 space-y-2">
               <a href="/showcase/advanced-joint" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-4 rounded-xl shadow transition">
-                Check Official Offer &rarr;
+                Ver oferta &rarr;
               </a>
               <a href="/showcase/advanced-joint" class="block w-full text-center bg-slate-50 hover:bg-slate-100 text-slate-600 font-bold text-[11px] py-1.5 rounded-lg border border-slate-200 transition">
                 Read Formulation Audit
@@ -445,7 +432,7 @@
 
             <div class="mt-4 space-y-2">
               <a href="/showcase/prodentim" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-4 rounded-xl shadow transition">
-                Check Official Offer &rarr;
+                Ver oferta &rarr;
               </a>
               <a href="/prodentim-report" class="block w-full text-center bg-slate-50 hover:bg-slate-100 text-slate-600 font-bold text-[11px] py-1.5 rounded-lg border border-slate-200 transition">
                 Read Formulation Audit
@@ -499,7 +486,7 @@
 
             <div class="mt-4 space-y-2">
               <a href="/showcase/corevital" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-4 rounded-xl shadow transition">
-                Check Official Offer &rarr;
+                Ver oferta &rarr;
               </a>
               <a href="/showcase/corevital" class="block w-full text-center bg-slate-50 hover:bg-slate-100 text-slate-600 font-bold text-[11px] py-1.5 rounded-lg border border-slate-200 transition">
                 Read Formulation Audit
@@ -553,7 +540,7 @@
 
             <div class="mt-4 space-y-2">
               <a href="/showcase/cardioslim" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-4 rounded-xl shadow transition">
-                Check Official Offer &rarr;
+                Ver oferta &rarr;
               </a>
               <a href="/cardioslim-tea-cardio-support-report" class="block w-full text-center bg-slate-50 hover:bg-slate-100 text-slate-600 font-bold text-[11px] py-1.5 rounded-lg border border-slate-200 transition">
                 Read Formulation Audit
@@ -575,55 +562,55 @@
       
       <div class="text-center max-w-2xl mx-auto mb-12">
         <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 inline-block mb-2">
-          Methodology &amp; Standards
+          Padrões de Auditoria
         </span>
-        <h2 class="text-2xl sm:text-4xl font-black text-slate-900 font-serif">How Daily Health Review Audits Supplements</h2>
-        <p class="text-slate-600 text-xs sm:text-sm mt-2">Our research desk adheres to four objective pillars before recommending any formulation.</p>
+        <h2 class="text-2xl sm:text-4xl font-black text-slate-900 font-serif">Por que confiar no Daily Health Review?</h2>
+        <p class="text-slate-600 text-xs sm:text-sm mt-2">Nossa missão é ajudar você a fazer escolhas informadas e seguras.</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        <!-- Pillar 1 -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/90 relative">
-          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 font-black text-base flex items-center justify-center mb-4">
-            1
+        <!-- Pillar 1: Equipe Especializada -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/90 relative text-center sm:text-left">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-800 text-xl flex items-center justify-center mb-4 mx-auto sm:mx-0 shadow-sm">
+            <i class="fa-solid fa-user-doctor"></i>
           </div>
-          <h3 class="font-extrabold text-base text-slate-900 mb-2">Formula &amp; Clinical Doses</h3>
+          <h3 class="font-extrabold text-base text-slate-900 mb-2">Equipe especializada</h3>
           <p class="text-xs text-slate-600 leading-relaxed">
-            We inspect the full label to ensure active ingredients match the exact therapeutic dosages verified in human clinical trials, avoiding hidden filler blends.
+            Revisão feita por pesquisadores e especialistas focados em farmacologia botânica e rotulagem nutricional.
           </p>
         </div>
 
-        <!-- Pillar 2 -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/90 relative">
-          <div class="w-10 h-10 rounded-xl bg-blue-100 text-blue-800 font-black text-base flex items-center justify-center mb-4">
-            2
+        <!-- Pillar 2: Fontes Científicas -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/90 relative text-center sm:text-left">
+          <div class="w-12 h-12 rounded-2xl bg-blue-100 text-blue-800 text-xl flex items-center justify-center mb-4 mx-auto sm:mx-0 shadow-sm">
+            <i class="fa-solid fa-microscope"></i>
           </div>
-          <h3 class="font-extrabold text-base text-slate-900 mb-2">Ingredient Evidence</h3>
+          <h3 class="font-extrabold text-base text-slate-900 mb-2">Fontes científicas</h3>
           <p class="text-xs text-slate-600 leading-relaxed">
-            Every botanical extract is cross-referenced with peer-reviewed medical journals (e.g. PubMed, Am J Clin Nutr) to substantiate safety and biological efficacy.
+            Avaliações fundamentadas exclusivamente em ensaios clínicos humanos e literatura médica revisada por pares.
           </p>
         </div>
 
-        <!-- Pillar 3 -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/90 relative">
-          <div class="w-10 h-10 rounded-xl bg-purple-100 text-purple-800 font-black text-base flex items-center justify-center mb-4">
-            3
+        <!-- Pillar 3: Transparência Total -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/90 relative text-center sm:text-left">
+          <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-800 text-xl flex items-center justify-center mb-4 mx-auto sm:mx-0 shadow-sm">
+            <i class="fa-solid fa-scale-balanced"></i>
           </div>
-          <h3 class="font-extrabold text-base text-slate-900 mb-2">cGMP Safety &amp; Lab Purity</h3>
+          <h3 class="font-extrabold text-base text-slate-900 mb-2">Transparência total</h3>
           <p class="text-xs text-slate-600 leading-relaxed">
-            Formulations must be manufactured in US-based, FDA-registered, cGMP-certified facilities with third-party testing for zero microbial or heavy metal contamination.
+            Divulgamos links afiliados com 100% de clareza, auditando termos de reembolso e políticas de devolução.
           </p>
         </div>
 
-        <!-- Pillar 4 -->
-        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/90 relative">
-          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 font-black text-base flex items-center justify-center mb-4">
-            4
+        <!-- Pillar 4: Atualização Constante -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/90 relative text-center sm:text-left">
+          <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-800 text-xl flex items-center justify-center mb-4 mx-auto sm:mx-0 shadow-sm">
+            <i class="fa-solid fa-arrows-rotate"></i>
           </div>
-          <h3 class="font-extrabold text-base text-slate-900 mb-2">Price &amp; 100% Refund Terms</h3>
+          <h3 class="font-extrabold text-base text-slate-900 mb-2">Atualização constante</h3>
           <p class="text-xs text-slate-600 leading-relaxed">
-            We verify the daily cost per serving against market competitors and confirm an unconditional 60 to 180-day money-back guarantee with hassle-free returns.
+            Conteúdo periodicamente revisado para refletir novos lotes, laudos laboratoriais e ajustes de fórmulas.
           </p>
         </div>
 
@@ -633,7 +620,7 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 7. RECENT CONSUMER GUIDES & ARTICLES (CHATGPT CARDS + REAL SOURCES)        -->
+  <!-- 7. RECENT CONSUMER GUIDES & ARTICLES (CHATGPT MOCKUP STANDARD)            -->
   <!-- ========================================================================= -->
   <section id="guides" class="py-16 bg-[#f8fafc] border-b border-slate-200 px-4">
     <div class="max-w-7xl mx-auto">
@@ -641,104 +628,104 @@
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
         <div>
           <span class="text-xs font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 px-3 py-1 rounded-full border border-emerald-200 inline-block mb-2">
-            📰 Consumer Guides &amp; Science
+            📰 Artigos e Guias de Saúde
           </span>
-          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 font-serif">Articles &amp; Educational Research</h2>
-          <p class="text-slate-600 text-xs sm:text-sm mt-1">Empowering you with independent research before choosing any supplement.</p>
+          <h2 class="text-2xl sm:text-3xl font-black text-slate-900 font-serif">Conteúdo Educativo Baseado em Evidências</h2>
+          <p class="text-slate-600 text-xs sm:text-sm mt-1">Informação de qualidade para você tomar as melhores decisões para sua saúde.</p>
         </div>
-        <a href="/about" class="text-xs font-bold text-emerald-700 hover:text-emerald-900 flex items-center gap-1">
-          Learn about our editorial desk &rarr;
+        <a href="#catalog" class="text-xs font-bold text-emerald-700 hover:text-emerald-900 flex items-center gap-1">
+          Ver todos os artigos &rarr;
         </a>
       </div>
 
-      <!-- 4 Article Cards Grid -->
+      <!-- 4 Article Cards Grid (Exact ChatGPT Standard) -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        <!-- Guide 1: How to Read a Supplement Label -->
+        <!-- Guide 1: Magnésio -->
         <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between">
           <div>
-            <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80" alt="Supplements bottle" class="w-full h-44 object-cover" />
+            <img src="/images/guides/magnesium.jpg" alt="Magnésio benefícios dosagem e segurança" class="w-full h-40 object-cover" />
             <div class="p-5">
-              <span class="text-[10px] font-black uppercase tracking-wider text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded border border-emerald-200">
-                Ingredients Guide
+              <span class="text-[10px] font-black uppercase tracking-wider text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded border border-emerald-200 inline-block">
+                Guia de Ingredientes
               </span>
-              <h3 class="font-extrabold text-base text-slate-900 mt-2 font-serif leading-snug">
-                How to Read a Dietary Supplement Label &amp; Spot Hidden Fillers
+              <h3 class="font-extrabold text-sm sm:text-base text-slate-900 mt-2.5 font-serif leading-snug">
+                Magnésio: benefícios, dosagem e segurança
               </h3>
               <p class="text-xs text-slate-500 mt-2 line-clamp-2">
-                A practical checklist for decoding proprietary blends, standardized extracts, and third-party purity seals.
+                Entenda como o magnésio pode melhorar seu sono, reduzir o estresse e apoiar sua saúde cardiovascular.
               </p>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-400 text-[11px]">7-Min Read</span>
-            <a href="/nagano-tonic-review" class="font-bold text-emerald-700 hover:underline">Read Guide &rarr;</a>
+          <div class="px-5 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400 text-[11px]">15 de abr de 2026</span>
+            <a href="/nagano-tonic-review" class="font-bold text-emerald-700 hover:underline">Ler mais &rarr;</a>
           </div>
         </article>
 
-        <!-- Guide 2: Morning Metabolism Science -->
+        <!-- Guide 2: Sono -->
         <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between">
           <div>
-            <img src="https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=600&q=80" alt="Morning healthy habit" class="w-full h-44 object-cover" />
+            <img src="/images/guides/sleep.jpg" alt="Como melhorar a qualidade do sono naturalmente" class="w-full h-40 object-cover" />
             <div class="p-5">
-              <span class="text-[10px] font-black uppercase tracking-wider text-amber-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">
-                Metabolic Science
+              <span class="text-[10px] font-black uppercase tracking-wider text-indigo-800 bg-indigo-50 px-2.5 py-0.5 rounded border border-indigo-200 inline-block">
+                Sono
               </span>
-              <h3 class="font-extrabold text-base text-slate-900 mt-2 font-serif leading-snug">
-                Why Calorie Counting Often Slows Down After Age 35
+              <h3 class="font-extrabold text-sm sm:text-base text-slate-900 mt-2.5 font-serif leading-snug">
+                Como melhorar a qualidade do sono naturalmente
               </h3>
               <p class="text-xs text-slate-500 mt-2 line-clamp-2">
-                Understanding cellular dormant metabolic mode and how Eastern botanical co-factors support natural thermogenesis.
+                Dicas práticas e suplementos que podem ajudar você a ter noites mais tranquilas e restauradoras.
               </p>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-400 text-[11px]">8-Min Read</span>
-            <a href="/nagano-tonic-review" class="font-bold text-emerald-700 hover:underline">Read Guide &rarr;</a>
+          <div class="px-5 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400 text-[11px]">12 de abr de 2026</span>
+            <a href="/showcase/advanced-memory" class="font-bold text-emerald-700 hover:underline">Ler mais &rarr;</a>
           </div>
         </article>
 
-        <!-- Guide 3: Oral Microbiome -->
+        <!-- Guide 3: Ômega 3 -->
         <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between">
           <div>
-            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=600&q=80" alt="Healthy smile nutrition" class="w-full h-44 object-cover" />
+            <img src="/images/guides/omega3.jpg" alt="Ômega 3 por que ele é essencial para o coração" class="w-full h-40 object-cover" />
             <div class="p-5">
-              <span class="text-[10px] font-black uppercase tracking-wider text-teal-800 bg-teal-50 px-2 py-0.5 rounded border border-teal-200">
-                Oral Health
+              <span class="text-[10px] font-black uppercase tracking-wider text-rose-800 bg-rose-50 px-2.5 py-0.5 rounded border border-rose-200 inline-block">
+                Saúde do Coração
               </span>
-              <h3 class="font-extrabold text-base text-slate-900 mt-2 font-serif leading-snug">
-                Oral Microbiome Balance: The 3.5B CFU Probiotic Approach
+              <h3 class="font-extrabold text-sm sm:text-base text-slate-900 mt-2.5 font-serif leading-snug">
+                Ômega 3: por que ele é essencial para o coração?
               </h3>
               <p class="text-xs text-slate-500 mt-2 line-clamp-2">
-                Why harsh alcohol-based mouthwashes can disrupt mouth bacteria and how targeted probiotics restore firm gums.
+                Conheça os benefícios, fontes naturais e como escolher o melhor suplemento com pureza certificada.
               </p>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-400 text-[11px]">6-Min Read</span>
-            <a href="/prodentim-report" class="font-bold text-emerald-700 hover:underline">Read Guide &rarr;</a>
+          <div class="px-5 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400 text-[11px]">10 de abr de 2026</span>
+            <a href="/circo2-nitric-oxide-report" class="font-bold text-emerald-700 hover:underline">Ler mais &rarr;</a>
           </div>
         </article>
 
-        <!-- Guide 4: Joint Cushioning -->
+        <!-- Guide 4: Colágeno -->
         <article class="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between">
           <div>
-            <img src="https://images.unsplash.com/photo-1512290900672-1f5be572e452?auto=format&fit=crop&w=600&q=80" alt="Active healthy lifestyle" class="w-full h-44 object-cover" />
+            <img src="/images/guides/collagen.jpg" alt="Colágeno realmente funciona" class="w-full h-40 object-cover" />
             <div class="p-5">
-              <span class="text-[10px] font-black uppercase tracking-wider text-blue-800 bg-blue-50 px-2 py-0.5 rounded border border-blue-200">
-                Joint Mobility
+              <span class="text-[10px] font-black uppercase tracking-wider text-teal-800 bg-teal-50 px-2.5 py-0.5 rounded border border-teal-200 inline-block">
+                Beleza e Pele
               </span>
-              <h3 class="font-extrabold text-base text-slate-900 mt-2 font-serif leading-snug">
-                Beyond Glucosamine: Can Q-Actin™ Cucumber Extract Cushion Knees?
+              <h3 class="font-extrabold text-sm sm:text-base text-slate-900 mt-2.5 font-serif leading-snug">
+                Colágeno: realmente funciona?
               </h3>
               <p class="text-xs text-slate-500 mt-2 line-clamp-2">
-                Clinical comparison of standardized cucumber extract versus traditional glucosamine-chondroitin combinations.
+                Descubra como o colágeno pode melhorar a elasticidade da pele, cabelos, unhas e articulações.
               </p>
             </div>
           </div>
-          <div class="px-5 pb-5 pt-2 border-t border-slate-100 flex items-center justify-between text-xs">
-            <span class="text-slate-400 text-[11px]">5-Min Read</span>
-            <a href="/showcase/advanced-joint" class="font-bold text-emerald-700 hover:underline">Read Guide &rarr;</a>
+          <div class="px-5 pb-5 pt-3 border-t border-slate-100 flex items-center justify-between text-xs">
+            <span class="text-slate-400 text-[11px]">08 de abr de 2026</span>
+            <a href="/showcase/advanced-collagen" class="font-bold text-emerald-700 hover:underline">Ler mais &rarr;</a>
           </div>
         </article>
 
@@ -916,142 +903,116 @@
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 11. NEWSLETTER / HEALTH DISCOVERY STRIP                                    -->
+  <!-- 11. NEWSLETTER BANNER (CHATGPT MOCKUP STANDARD: GREEN LEAVES BG BANNER)   -->
   <!-- ========================================================================= -->
-  <section class="bg-gradient-to-r from-emerald-900 via-[#0e5e43] to-emerald-950 text-white py-12 px-4">
-    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-      <div class="text-center md:text-left">
-        <h3 class="text-xl sm:text-2xl font-black font-serif">Receive Our Latest Supplement Audits</h3>
-        <p class="text-xs text-emerald-200 mt-1">Get verified health research, ingredient alerts, and exclusive discounts directly in your inbox.</p>
-      </div>
+  <section class="max-w-7xl mx-auto my-12 px-4">
+    <div class="relative rounded-3xl overflow-hidden shadow-2xl p-8 sm:p-12 text-white border border-emerald-900/40" style="background-image: url('/images/newsletter-bg-clean.jpg'); background-repeat: no-repeat; background-position: left center; background-size: cover; background-color: #013f30;">
+      <!-- Soft gradient overlay ensuring contrast -->
+      <div class="absolute inset-0 bg-gradient-to-r from-emerald-950/40 via-emerald-900/60 to-emerald-950/80 sm:to-transparent"></div>
 
-      <form action="https://formsubmit.co/eusimar72@gmail.com" method="POST" class="flex flex-col sm:flex-row gap-2 w-full md:w-auto">
-        <input type="hidden" name="_subject" value="📬 New Newsletter Subscriber - Daily Health Review">
-        <input type="text" name="_honey" style="display:none">
-        <input 
-          type="email" 
-          name="email" 
-          required 
-          placeholder="Enter your email address..." 
-          class="px-4 py-3 rounded-xl text-slate-900 text-xs w-full sm:w-64 focus:outline-none focus:ring-2 focus:ring-emerald-300 shadow-inner"
-        />
-        <button type="submit" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs py-3 px-6 rounded-xl shadow transition whitespace-nowrap">
-          Subscribe Free &rarr;
-        </button>
-      </form>
+      <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8">
+        <div class="text-left max-w-xl">
+          <h3 class="text-2xl sm:text-3xl font-black text-white font-serif">Receba nossas melhores recomendações</h3>
+          <p class="text-emerald-100 text-xs sm:text-sm mt-1.5 leading-relaxed">
+            Inscreva-se para receber análises, guias e ofertas exclusivas diretamente no seu e-mail.
+          </p>
+        </div>
+
+        <form action="https://formsubmit.co/eusimar72@gmail.com" method="POST" class="flex flex-col sm:flex-row items-center gap-3 w-full lg:w-auto">
+          <input type="hidden" name="_subject" value="📬 Novo Assinante - Daily Health Review">
+          <input type="text" name="_honey" style="display:none">
+          <input 
+            type="email" 
+            name="email" 
+            required 
+            placeholder="Digite seu e-mail" 
+            class="px-5 py-3.5 rounded-xl bg-white text-slate-900 text-xs sm:text-sm w-full sm:w-80 focus:outline-none focus:ring-2 focus:ring-emerald-400 shadow-inner placeholder-slate-400"
+          />
+          <button type="submit" class="bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs sm:text-sm py-3.5 px-7 rounded-xl shadow-md transition whitespace-nowrap w-full sm:w-auto">
+            Quero receber &rarr;
+          </button>
+        </form>
+      </div>
     </div>
   </section>
 
   <!-- ========================================================================= -->
-  <!-- 12. EXPANDED MEGA-FOOTER (COUPLE BANNER + 4 COLUMNS + COMPLIANCE)         -->
+  <!-- 12. CLEAN AUTHORITATIVE FOOTER (CHATGPT MOCKUP STANDARD)                  -->
   <!-- ========================================================================= -->
-  <footer class="bg-slate-950 text-slate-400 pt-16 pb-16 px-4 text-xs border-t border-slate-800 mt-auto">
-    <div class="max-w-7xl mx-auto space-y-12">
+  <footer class="bg-[#0b1723] text-slate-400 pt-14 pb-14 px-4 text-xs border-t border-slate-800 mt-auto">
+    <div class="max-w-7xl mx-auto space-y-10">
       
-      <!-- Featured Graphic Banner: "Live Healthier. Live Better." -->
-      <div class="rounded-3xl overflow-hidden shadow-2xl border-2 border-slate-800/80 bg-slate-900 group">
-        <img 
-          src="/images/options/footer_couple.png" 
-          alt="Daily Health Review - Live Healthier. Live Better." 
-          class="w-full h-auto object-cover transform group-hover:scale-[1.005] transition duration-500"
-        />
-      </div>
-
-      <!-- 4-Column Authoritative Info Architecture -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-slate-800/80">
+      <!-- Top Row: Logo, Nav Links, Social Icons (Matching ChatGPT Mockup) -->
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pb-8 border-b border-slate-800">
         
-        <!-- Column 1: Brand Mission (4 cols) -->
-        <div class="lg:col-span-4 space-y-4">
-          <div class="inline-block bg-white/95 px-3.5 py-1.5 rounded-xl shadow-sm">
-            <img src="/images/logo-transparent.png" alt="Daily Health Review" class="h-8 w-auto object-contain" />
-          </div>
-          <p class="text-slate-400 text-xs leading-relaxed">
-            Daily Health Review is an independent dietary supplement evaluation desk and consumer advocacy publication. We deconstruct product formulations, audit third-party certificates of analysis (COAs), and cross-reference therapeutic dosages against peer-reviewed human trials.
-          </p>
-          <div class="flex items-center gap-3 pt-2">
-            <span class="inline-flex items-center gap-1.5 text-[11px] font-bold text-emerald-400 bg-emerald-950/80 px-3 py-1.5 rounded-xl border border-emerald-800/60">
-              <i class="fa-solid fa-lock text-xs"></i> 256-Bit SSL Encrypted
-            </span>
-            <span class="inline-flex items-center gap-1.5 text-[11px] font-bold text-blue-400 bg-blue-950/80 px-3 py-1.5 rounded-xl border border-blue-800/60">
-              <i class="fa-solid fa-shield-halved text-xs"></i> 100% Risk-Free Terms
-            </span>
-          </div>
+        <!-- Left: Crisp White Brand Logo -->
+        <a href="/" class="flex items-center group">
+          <img src="/images/logo-white.png" alt="Daily Health Review" class="h-9 w-auto object-contain group-hover:opacity-90 transition" />
+        </a>
+
+        <!-- Center: Primary Nav Links -->
+        <nav class="flex flex-wrap items-center justify-center gap-6 text-xs font-bold text-slate-300">
+          <a href="/" class="hover:text-emerald-400 transition">Início</a>
+          <a href="#rankings" class="hover:text-emerald-400 transition">Suplementos</a>
+          <a href="#guides" class="hover:text-emerald-400 transition">Guias de Saúde</a>
+          <a href="#methodology" class="hover:text-emerald-400 transition">Ingredientes</a>
+          <a href="/about" class="hover:text-emerald-400 transition">Sobre Nós</a>
+          <a href="/contact" class="hover:text-emerald-400 transition">Contato</a>
+        </nav>
+
+        <!-- Right: Social Media Icons -->
+        <div class="flex items-center gap-4 text-slate-400 text-base">
+          <a href="https://facebook.com" target="_blank" rel="noopener" class="hover:text-emerald-400 transition" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="hover:text-emerald-400 transition" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener" class="hover:text-emerald-400 transition" aria-label="Pinterest"><i class="fa-brands fa-pinterest"></i></a>
+          <a href="https://youtube.com" target="_blank" rel="noopener" class="hover:text-emerald-400 transition" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
         </div>
 
-        <!-- Column 2: Health Categories (3 cols) -->
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="text-white font-extrabold text-sm uppercase tracking-wider font-serif">Research Categories</h4>
-          <ul class="space-y-2 text-slate-400 text-xs">
-            <li><a href="#catalog" onclick="filterCategory('weight')" class="hover:text-emerald-400 transition flex items-center gap-1.5">&rsaquo; Weight &amp; Resting Metabolism</a></li>
-            <li><a href="#catalog" onclick="filterCategory('joints')" class="hover:text-emerald-400 transition flex items-center gap-1.5">&rsaquo; Joint Mobility &amp; Cartilage Cushion</a></li>
-            <li><a href="#catalog" onclick="filterCategory('cardio')" class="hover:text-emerald-400 transition flex items-center gap-1.5">&rsaquo; Cardiovascular &amp; Circulation</a></li>
-            <li><a href="#catalog" onclick="filterCategory('dental')" class="hover:text-emerald-400 transition flex items-center gap-1.5">&rsaquo; Oral Health &amp; Dental Probiotics</a></li>
-            <li><a href="#catalog" onclick="filterCategory('brain')" class="hover:text-emerald-400 transition flex items-center gap-1.5">&rsaquo; Cognitive Focus &amp; Brain Nutrition</a></li>
-            <li><a href="#catalog" onclick="filterCategory('longevity')" class="hover:text-emerald-400 transition flex items-center gap-1.5">&rsaquo; Longevity, Collagen &amp; Aminos</a></li>
-          </ul>
+      </div>
+
+      <!-- Middle: Authoritative Corporate & Regulatory Information -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 text-[11px] text-slate-400 leading-relaxed">
+        
+        <!-- Corporate Publishing Entity -->
+        <div class="lg:col-span-6 space-y-2">
+          <p class="text-slate-300 font-bold">Daily Health Review Media &amp; Publishing</p>
+          <p>
+            7901 4th St N, STE 300, St. Petersburg, FL 33702, USA &bull; 
+            Redação: <a href="mailto:editorial@dailyhealthreviewus.com" class="text-emerald-400 hover:underline">editorial@dailyhealthreviewus.com</a>
+          </p>
+          <p class="text-slate-500">
+            Editora-Chefe de Pesquisa em Saúde: <strong>Sarah Lin</strong>
+          </p>
         </div>
 
-        <!-- Column 3: Audit Methodology (2 cols) -->
-        <div class="lg:col-span-2 space-y-3">
-          <h4 class="text-white font-extrabold text-sm uppercase tracking-wider font-serif">Our Standards</h4>
-          <ul class="space-y-2 text-slate-400 text-xs">
-            <li class="flex items-center gap-2"><span class="text-emerald-400 font-bold">&bull;</span> Clinical Dosing (30%)</li>
-            <li class="flex items-center gap-2"><span class="text-blue-400 font-bold">&bull;</span> cGMP Lab Purity (30%)</li>
-            <li class="flex items-center gap-2"><span class="text-amber-400 font-bold">&bull;</span> Refund Safety (20%)</li>
-            <li class="flex items-center gap-2"><span class="text-purple-400 font-bold">&bull;</span> Value Per Dose (20%)</li>
-            <li class="pt-2"><a href="/about" class="text-emerald-400 hover:underline font-bold">Read Audit Standards &rarr;</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 4: Corporate Entity & Contact (3 cols) -->
-        <div class="lg:col-span-3 space-y-3">
-          <h4 class="text-white font-extrabold text-sm uppercase tracking-wider font-serif">Publishing &amp; Contact</h4>
-          <p class="text-xs text-slate-400 leading-relaxed">
-            <strong class="text-white">Daily Health Review Media &amp; Publishing</strong><br />
-            7901 4th St N, STE 300<br />
-            St. Petersburg, FL 33702, USA
+        <!-- Compliance & Transparency Notice -->
+        <div class="lg:col-span-6 space-y-1.5 text-slate-500">
+          <p>
+            <strong>Aviso FDA:</strong> As declarações e produtos no Daily Health Review não foram avaliados pela Food and Drug Administration. Suplementos não se destinam a diagnosticar, tratar, curar ou prevenir qualquer doença.
           </p>
-          <p class="text-xs text-slate-400">
-            <strong class="text-white">Editorial Desk:</strong> <a href="mailto:editorial@dailyhealthreviewus.com" class="text-emerald-400 hover:underline">editorial@dailyhealthreviewus.com</a><br />
-            <strong class="text-white">Compliance:</strong> <a href="mailto:compliance@dailyhealthreviewus.com" class="text-emerald-400 hover:underline">compliance@dailyhealthreviewus.com</a>
-          </p>
-          <p class="text-[11px] text-slate-500">
-            Senior Investigative Health Editor: <strong>Sarah Lin</strong>
+          <p>
+            <strong>Divulgação FTC:</strong> Participamos de programas de afiliados da ClickBank, Digistore24 e fabricantes oficiais. Podemos receber comissões sem custo adicional para você ao comprar por meio dos nossos links verificados.
           </p>
         </div>
 
       </div>
 
-      <!-- Legal Navigation Strip -->
-      <div class="flex flex-wrap items-center justify-between gap-4 py-4 border-b border-slate-800 text-xs text-slate-300 font-semibold">
-        <div class="flex flex-wrap gap-6">
-          <a href="/" class="hover:text-emerald-400 transition">Home</a>
-          <a href="/about" class="hover:text-emerald-400 transition">About Us &amp; Standards</a>
-          <a href="/privacy" class="hover:text-emerald-400 transition">Privacy Policy</a>
-          <a href="/terms" class="hover:text-emerald-400 transition">Terms of Service</a>
-          <a href="/disclosure" class="hover:text-emerald-400 transition">Affiliate Disclosure</a>
-          <a href="/disclaimer" class="hover:text-emerald-400 transition">FDA Disclaimer</a>
-          <a href="/contact" class="hover:text-emerald-400 transition">Contact Editorial Desk</a>
+      <!-- Bottom Row: Copyright, Legal Links & SSL Badge -->
+      <div class="pt-6 border-t border-slate-800/80 flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-slate-400">
+        <div>
+          &copy; 2026 Daily Health Review. Todos os direitos reservados.
         </div>
-        <div class="text-slate-500 text-[11px]">
-          America's Independent Nutrition Authority
-        </div>
-      </div>
 
-      <!-- Legal Compliance Notices -->
-      <div class="space-y-4 text-[11px] text-slate-500 leading-relaxed">
-        <p>
-          <strong class="text-slate-400">FDA Statement:</strong> The statements, dietary supplement products, and wellness claims mentioned on Daily Health Review (dailyhealthreviewus.com) have not been evaluated by the Food and Drug Administration. Dietary supplements are not intended to diagnose, treat, cure, or prevent any disease or medical condition. Consult a licensed physician or qualified medical provider before starting any dietary supplement protocol, especially if you are pregnant, nursing, taking medications, or under medical supervision.
-        </p>
-        <p>
-          <strong class="text-slate-400">FTC Affiliate Transparency Disclosure:</strong> Daily Health Review participates in authorized affiliate marketing programs with ClickBank, Digistore24, and direct manufacturer platforms. When you click links on our site and make purchases on verified merchant websites, we may receive financial referral commissions at zero additional cost to you. This compensation funds our independent research desk, lab report reviews, and hosting expenses without influencing our editorial integrity or formulation ratings.
-        </p>
-        <p>
-          <strong class="text-slate-400">Merchant Disclosure:</strong> ClickBank is the retailer of products featured on this site. CLICKBANK&reg; is a registered trademark of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave., Suite 410, Boise, ID 83709, USA.
-        </p>
-        <p class="pt-6 text-center text-slate-600 font-medium border-t border-slate-900 text-xs">
-          &copy; 2026 Daily Health Review Media &amp; Publishing. All Rights Reserved. 7901 4th St N, STE 300, St. Petersburg, FL 33702, USA.
-        </p>
+        <div class="flex flex-wrap gap-5 font-medium text-slate-300">
+          <a href="/privacy" class="hover:text-emerald-400 transition">Política de Privacidade</a>
+          <a href="/terms" class="hover:text-emerald-400 transition">Termos de Uso</a>
+          <a href="/disclosure" class="hover:text-emerald-400 transition">Divulgação de Afiliados</a>
+          <a href="/disclaimer" class="hover:text-emerald-400 transition">Aviso Legal</a>
+        </div>
+
+        <div class="inline-flex items-center gap-2 text-emerald-400 bg-emerald-950/70 border border-emerald-800/50 px-3 py-1.5 rounded-lg shadow-sm">
+          <i class="fa-solid fa-shield-halved text-xs"></i> Site seguro SSL protegido
+        </div>
       </div>
 
     </div>
@@ -1486,7 +1447,7 @@
 
             <div class="space-y-2">
               <a href="${p.showcase}" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-3 rounded-xl shadow-sm transition">
-                Check Official Offer &rarr;
+                Ver oferta &rarr;
               </a>
               <a href="${p.review}" class="block w-full text-center bg-slate-50 hover:bg-slate-100 text-slate-600 font-bold text-[11px] py-1.5 rounded-lg border border-slate-200 transition">
                 Read Audit
