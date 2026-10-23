@@ -12,3 +12,4 @@ video_assets/
 *.py
 __pycache__/
 *.pyc
+official_*.html
