@@ -10,3 +10,5 @@
 # Video rendering scratch files
 video_assets/
 *.py
+__pycache__/
+*.pyc
