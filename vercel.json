@@ -181,6 +181,91 @@
       "source": "/03_Artigo_2_Nagano_Completo_Com_Fotos.html",
       "destination": "/nagano-tonic-review",
       "permanent": true
+    },
+    {
+      "source": "/privacy-policy.html",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/terms-of-service.html",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/affiliate-disclosure.html",
+      "destination": "/disclosure",
+      "permanent": true
+    },
+    {
+      "source": "/fda-disclaimer.html",
+      "destination": "/disclaimer",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/disclaimer/privacy-policy.html",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/disclaimer/terms-of-service.html",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/disclaimer/affiliate-disclosure.html",
+      "destination": "/disclosure",
+      "permanent": true
+    },
+    {
+      "source": "/privacy/terms-of-service.html",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/privacy/affiliate-disclosure.html",
+      "destination": "/disclosure",
+      "permanent": true
+    },
+    {
+      "source": "/privacy/fda-disclaimer.html",
+      "destination": "/disclaimer",
+      "permanent": true
+    },
+    {
+      "source": "/terms/privacy-policy.html",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/terms/affiliate-disclosure.html",
+      "destination": "/disclosure",
+      "permanent": true
+    },
+    {
+      "source": "/terms/fda-disclaimer.html",
+      "destination": "/disclaimer",
+      "permanent": true
+    },
+    {
+      "source": "/disclosure/privacy-policy.html",
+      "destination": "/privacy",
+      "permanent": true
+    },
+    {
+      "source": "/disclosure/terms-of-service.html",
+      "destination": "/terms",
+      "permanent": true
+    },
+    {
+      "source": "/disclosure/fda-disclaimer.html",
+      "destination": "/disclaimer",
+      "permanent": true
     }
   ],
   "rewrites": [
