@@ -17,8 +17,28 @@
   <meta name="google-site-verification" content="Ih8x_kaPf1GY6a-zmdo429ySG7ha7PmzStUR5dxe4nM" />
   <title>Daily Health Review | Evidence-Based Supplement Comparisons & Buyers Guide</title>
   <meta name="description" content="Independent, science-backed dietary supplement reviews, clinical dosing comparisons, and verified manufacturer discounts. Make informed health choices with more science and less hype." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <link rel="canonical" href="https://dailyhealthreviewus.com/" />
   
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@DailyHealthRev" />
+  <meta name="twitter:title" content="Daily Health Review | Evidence-Based Supplement Comparisons & Buyers Guide" />
+  <meta name="twitter:description" content="Independent, science-backed dietary supplement reviews, clinical dosing comparisons, and verified manufacturer discounts. Make informed health choices with more science and less hype." />
+  <meta name="twitter:image" content="https://dailyhealthreviewus.com/Imagens_Oficiais/banner_medium_nagano_promo.jpg" />
+  <meta name="twitter:image:alt" content="Daily Health Review - Evidence-Based Supplement Reviews" />
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Daily Health Review" />
+  <meta property="og:title" content="Daily Health Review | Evidence-Based Supplement Comparisons & Buyers Guide" />
+  <meta property="og:description" content="Independent, science-backed dietary supplement reviews, clinical dosing comparisons, and verified manufacturer discounts. Make informed health choices with more science and less hype." />
+  <meta property="og:url" content="https://dailyhealthreviewus.com/" />
+  <meta property="og:image" content="https://dailyhealthreviewus.com/Imagens_Oficiais/banner_medium_nagano_promo.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
   <!-- Tailwind CSS & FontAwesome -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -27,13 +47,89 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;0,900;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Caveat:wght@600&display=swap" rel="stylesheet">
-  
-  <!-- Open Graph / Meta -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Daily Health Review | Better Choices. A Healthier You." />
-  <meta property="og:description" content="Compare formulation evidence, cGMP purity, and direct manufacturer pricing before you buy." />
-  <meta property="og:url" content="https://dailyhealthreviewus.com/" />
-  <meta property="og:image" content="https://dailyhealthreviewus.com/Imagens_Oficiais/banner_medium_nagano_promo.jpg" />
+
+  <!-- JSON-LD Structured Data: WebSite, Organization & ItemList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://dailyhealthreviewus.com/#website",
+        "url": "https://dailyhealthreviewus.com/",
+        "name": "Daily Health Review",
+        "description": "Evidence-Based Supplement Comparisons, Clinical Dosing Audits & Verified Manufacturer Deals",
+        "publisher": {
+          "@id": "https://dailyhealthreviewus.com/#organization"
+        },
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://dailyhealthreviewus.com/#catalog?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
+        ],
+        "inLanguage": "en-US"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://dailyhealthreviewus.com/#organization",
+        "name": "Daily Health Review",
+        "url": "https://dailyhealthreviewus.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://dailyhealthreviewus.com/images/logo-transparent.png",
+          "width": 600,
+          "height": 180
+        },
+        "description": "Independent scientific review organization providing rigorous clinical evidence breakdowns for dietary supplements.",
+        "sameAs": [
+          "https://pinterest.com/dailyhealthreviewus"
+        ]
+      },
+      {
+        "@type": "ItemList",
+        "@id": "https://dailyhealthreviewus.com/#top-rankings",
+        "name": "Top Audited Dietary Supplements 2026",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Nagano Lean Body Tonic",
+            "url": "https://dailyhealthreviewus.com/showcase/nagano-tonic"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "ProstaVive",
+            "url": "https://dailyhealthreviewus.com/showcase/prostavive"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Sugar Defender",
+            "url": "https://dailyhealthreviewus.com/showcase/sugar-defender"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Java Burn",
+            "url": "https://dailyhealthreviewus.com/showcase/java-burn"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "name": "ProDentim",
+            "url": "https://dailyhealthreviewus.com/showcase/prodentim"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
   <style>
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
@@ -85,16 +181,53 @@
         <a href="/about" class="hover:text-emerald-700 transition">About Us</a>
       </nav>
 
-      <!-- Search & Top CTA -->
-      <div class="flex items-center gap-3">
+      <!-- Search, Top CTA & Mobile Menu Button -->
+      <div class="flex items-center gap-2 sm:gap-3">
         <a href="#catalog" class="hidden sm:inline-flex items-center gap-1.5 text-xs font-bold text-slate-600 hover:text-emerald-700 py-2 px-3 rounded-lg hover:bg-slate-50 transition">
           <i class="fa-solid fa-magnifying-glass text-slate-400"></i> Search 25 Brands
         </a>
-        <a href="#rankings" class="inline-flex items-center gap-1.5 bg-[#0e5e43] hover:bg-[#09422f] text-white font-black text-xs py-2.5 px-4 rounded-xl shadow-sm transition transform hover:-translate-y-0.5">
+        <a href="#rankings" class="inline-flex items-center gap-1.5 bg-[#0e5e43] hover:bg-[#09422f] text-white font-black text-xs py-2 px-3 sm:py-2.5 sm:px-4 rounded-xl shadow-sm transition transform hover:-translate-y-0.5">
           <i class="fa-solid fa-star text-amber-300 text-xs"></i> 2026 Rankings
         </a>
+        <button id="mobileMenuBtn" type="button" aria-label="Toggle navigation menu" aria-expanded="false" class="lg:hidden inline-flex items-center justify-center p-2 rounded-xl text-slate-700 hover:text-emerald-700 hover:bg-slate-100 transition focus:outline-none focus:ring-2 focus:ring-emerald-600">
+          <i id="mobileMenuIcon" class="fa-solid fa-bars text-xl"></i>
+        </button>
       </div>
 
+    </div>
+
+    <!-- Mobile Collapsible Menu Drawer -->
+    <div id="mobileMenuDrawer" class="hidden lg:hidden border-t border-slate-100 bg-white/98 backdrop-blur-md px-4 pt-3 pb-6 space-y-2 shadow-lg transition-all duration-300">
+      <div class="space-y-1 text-sm font-bold text-slate-700">
+        <a href="#rankings" class="mobile-nav-link flex items-center justify-between py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">
+          <span><i class="fa-solid fa-trophy text-emerald-600 w-5 mr-2"></i> Top 2026 Rankings</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        <a href="#goals" class="mobile-nav-link flex items-center justify-between py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">
+          <span><i class="fa-solid fa-heart-pulse text-emerald-600 w-5 mr-2"></i> Health Goals</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        <a href="#guides" class="mobile-nav-link flex items-center justify-between py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">
+          <span><i class="fa-solid fa-book-medical text-emerald-600 w-5 mr-2"></i> Guides &amp; Research</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        <a href="#methodology" class="mobile-nav-link flex items-center justify-between py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">
+          <span><i class="fa-solid fa-microscope text-emerald-600 w-5 mr-2"></i> How We Audit</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        <a href="#catalog" class="mobile-nav-link flex items-center justify-between py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">
+          <span><i class="fa-solid fa-magnifying-glass text-emerald-600 w-5 mr-2"></i> Search All 25 Brands</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+        <a href="/about" class="mobile-nav-link flex items-center justify-between py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">
+          <span><i class="fa-solid fa-circle-info text-emerald-600 w-5 mr-2"></i> About Our Editorial Team</span>
+          <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
+        </a>
+      </div>
+      <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500 px-3">
+        <span>Clinical-Grade Auditing</span>
+        <span class="text-emerald-700 font-semibold flex items-center gap-1"><i class="fa-solid fa-circle-check text-emerald-600"></i> 100% Independent</span>
+      </div>
     </div>
   </header>
 
@@ -1500,6 +1633,37 @@
       );
       renderProducts(filtered);
     }
+
+    // Mobile Menu Toggle
+    (function initMobileMenu() {
+      const btn = document.getElementById('mobileMenuBtn');
+      const drawer = document.getElementById('mobileMenuDrawer');
+      const icon = document.getElementById('mobileMenuIcon');
+      if (!btn || !drawer || !icon) return;
+
+      btn.addEventListener('click', function() {
+        const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!isExpanded));
+        if (isExpanded) {
+          drawer.classList.add('hidden');
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        } else {
+          drawer.classList.remove('hidden');
+          icon.classList.remove('fa-bars');
+          icon.classList.add('fa-xmark');
+        }
+      });
+
+      document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
+        link.addEventListener('click', function() {
+          drawer.classList.add('hidden');
+          btn.setAttribute('aria-expanded', 'false');
+          icon.classList.remove('fa-xmark');
+          icon.classList.add('fa-bars');
+        });
+      });
+    })();
 
     // Initial load
     window.onload = function() {
