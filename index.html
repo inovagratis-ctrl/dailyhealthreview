@@ -1550,7 +1550,36 @@
         return;
       }
 
+      const GO_ROUTES = {
+        'nagano': '/go/nagano',
+        'advanced-joint': '/go/jointsupport',
+        'prodentim': '/go/prodentim',
+        'corevital': '/go/corevital',
+        'cardioslim': '/go/cardioslim',
+        'sugar-defender': '/go/sugardefender',
+        'cleansesana': '/go/cleansesana',
+        'advanced-amino': '/go/amino',
+        'collagen': '/go/collagen',
+        'memory': '/go/memory',
+        'circo2': '/go/circo2',
+        'audifort': '/go/audifort',
+        'femicore': '/go/femicore',
+        'neotonics': '/go/neotonics',
+        'lymphtonic': '/go/lymphtonic',
+        'visiflora': '/go/visiflora',
+        'neurovera': '/go/neurovera',
+        'phytomem': '/go/phytomem',
+        'joint-eternal': '/go/jointeternal',
+        'prostavive': '/go/prostavive',
+        'slimming-tea': '/go/slimmingtea',
+        'spartamax': '/go/spartamax',
+        'fimavyn': '/go/fimavyn',
+        'glucotrust': '/go/glucotrust',
+        'javaburn': '/go/javaburn'
+      };
+
       list.forEach(p => {
+        const directOfferUrl = GO_ROUTES[p.id] || p.showcase;
         const card = document.createElement('div');
         card.className = "product-card bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all p-5 flex flex-col justify-between";
         card.innerHTML = `
@@ -1580,7 +1609,7 @@
             </div>
 
             <div class="space-y-2">
-              <a href="${p.showcase}" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-3 rounded-xl shadow-sm transition">
+              <a href="${directOfferUrl}" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-3 rounded-xl shadow-sm transition transform hover:-translate-y-0.5">
                 Check Official Offer &rarr;
               </a>
               <a href="${p.review}" target="_blank" rel="noopener" class="block w-full text-center bg-slate-50 hover:bg-slate-100 text-slate-600 font-bold text-[11px] py-1.5 rounded-lg border border-slate-200 transition">
