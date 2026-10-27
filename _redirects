@@ -28,6 +28,8 @@
 /02_Artigo_1_Elixir_7_Segundos.html /morning-routine 301
 /03_Artigo_2_Nagano_Completo_Com_Fotos.html /nagano-tonic-review 301
 
+/showcase /showcase/ 301
+
 # Clean URL Rewrites for Legal & Articles
 /morning-routine /articles/02_Artigo_1_Elixir_7_Segundos.html 200
 /nagano-tonic-review /articles/03_Artigo_2_Nagano_Completo_Com_Fotos.html 200
