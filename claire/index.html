@@ -154,7 +154,122 @@
         </div>
       </a>
 
-      <!-- Button 3: Free 3-Day Anti-Aging Guide (Accordion / Modal) -->
+      <!-- Button 3: Claire's Anti-Aging Kitchen Recipes (Accordion) -->
+      <div class="bg-white rounded-2xl border border-stone-200/80 card-shadow overflow-hidden transition-all duration-300">
+        <button 
+          onclick="document.getElementById('recipes-content').classList.toggle('hidden');" 
+          class="w-full text-left p-4 sm:p-5 flex items-center gap-4 hover:bg-stone-50/90 transition group"
+        >
+          <div class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-100 flex items-center justify-center text-2xl flex-shrink-0 group-hover:scale-110 transition duration-300">
+            🍨
+          </div>
+          <div class="flex-grow">
+            <span class="inline-block bg-amber-100 text-amber-900 text-[10px] uppercase tracking-wider font-extrabold px-2 py-0.5 rounded-full mb-1">
+              Viral Kitchen Recipes
+            </span>
+            <h2 class="text-base font-bold text-stone-900 leading-tight">
+              Claire's 4 Anti-Aging Kitchen Recipes
+            </h2>
+            <p class="text-xs text-stone-500 mt-0.5">
+              Chocolate ice cream, glowing green smoothie &amp; night elixirs.
+            </p>
+          </div>
+          <div class="text-stone-400 group-hover:text-amber-700 transition duration-300">
+            <i class="fa-solid fa-chevron-down text-lg"></i>
+          </div>
+        </button>
+
+        <!-- Dropdown Recipes Content -->
+        <div id="recipes-content" class="hidden px-5 pb-5 pt-2 text-xs text-stone-600 border-t border-stone-100 space-y-4 bg-stone-50/50">
+          
+          <!-- Recipe 1: Ice Cream -->
+          <div class="p-3.5 bg-white rounded-xl border border-stone-200/80 shadow-sm">
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="text-base">🍫</span>
+              <p class="font-bold text-stone-900 text-sm">1. 3-Ingredient Guilt-Free Chocolate Ice Cream</p>
+            </div>
+            <p class="text-stone-500 mb-2 italic">As seen in Claire's viral Instagram &amp; TikTok video!</p>
+            <div class="space-y-1 mb-2">
+              <p><strong class="text-stone-700">&bull; 2 ripe bananas</strong> (sliced and frozen solid)</p>
+              <p><strong class="text-stone-700">&bull; 2 tbsp pure unsweetened raw cacao powder</strong></p>
+              <p><strong class="text-stone-700">&bull; 2 tbsp unsweetened almond milk</strong> (or oat milk)</p>
+            </div>
+            <p class="text-stone-600 bg-amber-50/60 p-2 rounded-lg border border-amber-100/60 leading-relaxed">
+              <strong>How to make:</strong> Blend everything in a high-speed blender for 60 seconds until silky smooth. Freeze for 30 minutes, scoop, and enjoy creamy chocolate heaven with zero dairy or refined sugar!
+            </p>
+          </div>
+
+          <!-- Recipe 2: Green Smoothie -->
+          <div class="p-3.5 bg-white rounded-xl border border-stone-200/80 shadow-sm">
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="text-base">🥑</span>
+              <p class="font-bold text-stone-900 text-sm">2. Cellular Turnover Green Smoothie</p>
+            </div>
+            <div class="space-y-1 mb-2">
+              <p><strong class="text-stone-700">&bull; 1 cup fresh baby spinach</strong></p>
+              <p><strong class="text-stone-700">&bull; 1/2 ripe avocado</strong> (healthy lipids for skin barrier)</p>
+              <p><strong class="text-stone-700">&bull; 1 cup pure coconut water + squeeze of lemon</strong></p>
+            </div>
+            <p class="text-stone-600 bg-emerald-50/60 p-2 rounded-lg border border-emerald-100/60 leading-relaxed">
+              <strong>How to make:</strong> Blend with a couple ice cubes. Drink 30 minutes before breakfast to flood skin cells with bioavailable lutein and vitamin C cofactors.
+            </p>
+          </div>
+
+          <!-- Recipe 3: Night Elixir -->
+          <div class="p-3.5 bg-white rounded-xl border border-stone-200/80 shadow-sm">
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="text-base">🌙</span>
+              <p class="font-bold text-stone-900 text-sm">3. Golden Turmeric &amp; Ginger Bedtime Elixir</p>
+            </div>
+            <div class="space-y-1 mb-2">
+              <p><strong class="text-stone-700">&bull; 1 cup warm unsweetened almond milk</strong></p>
+              <p><strong class="text-stone-700">&bull; 1/2 tsp ground turmeric + 1/4 tsp grated ginger</strong></p>
+              <p><strong class="text-stone-700">&bull; Tiny pinch of black pepper</strong> (boosts curcumin absorption by 2,000%)</p>
+            </div>
+            <p class="text-stone-600 bg-amber-50/60 p-2 rounded-lg border border-amber-100/60 leading-relaxed">
+              <strong>How to make:</strong> Whisk gently in a small saucepan over low heat. Sip warm 45 minutes before sleep to calm inflammation while cellular repair peaks.
+            </p>
+          </div>
+
+          <!-- Recipe 4: Chia Pudding -->
+          <div class="p-3.5 bg-white rounded-xl border border-stone-200/80 shadow-sm">
+            <div class="flex items-center gap-2 mb-1.5">
+              <span class="text-base">🥣</span>
+              <p class="font-bold text-stone-900 text-sm">4. Overnight Chia &amp; Berry Collagen Pudding</p>
+            </div>
+            <div class="space-y-1 mb-2">
+              <p><strong class="text-stone-700">&bull; 2 tbsp chia seeds + 1 tbsp ground flaxseeds</strong></p>
+              <p><strong class="text-stone-700">&bull; 3/4 cup unsweetened vanilla almond milk</strong></p>
+              <p><strong class="text-stone-700">&bull; Handful of fresh wild blueberries</strong></p>
+            </div>
+            <p class="text-stone-600 bg-stone-100/70 p-2 rounded-lg border border-stone-200/60 leading-relaxed">
+              <strong>How to make:</strong> Stir in a small mason jar and refrigerate overnight. In the morning, top with blueberries for dense plant-based omega-3s that lock in hydration.
+            </p>
+          </div>
+
+          <!-- Bridge / CTA to Neotonics -->
+          <div class="p-4 bg-gradient-to-r from-rose-50 to-amber-50 rounded-xl border border-rose-200/70 text-center space-y-2">
+            <p class="font-bold text-rose-900 text-xs sm:text-sm">
+              ✨ Claire's Golden Rule for Women 50+:
+            </p>
+            <p class="text-stone-600 text-[11px] leading-relaxed">
+              "These clean recipes give your body raw nutrients, but after 45, your gut microbiome needs a daily activator to turn those nutrients into real cellular firmness. That's why I pair every healthy meal with my daily chewable formula:"
+            </p>
+            <a 
+              href="/go/neotonics" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="inline-flex items-center gap-2 bg-gradient-to-r from-rose-600 to-amber-600 text-white font-bold text-xs px-4 py-2 rounded-xl shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 mt-1"
+            >
+              <span>See Claire's #1 Morning Formula (Neotonics)</span>
+              <i class="fa-solid fa-arrow-right text-[10px]"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Button 4: Free 3-Day Anti-Aging Guide (Accordion / Modal) -->
       <div class="bg-white rounded-2xl border border-stone-200/80 card-shadow overflow-hidden transition-all duration-300">
         <button 
           onclick="document.getElementById('guide-content').classList.toggle('hidden');" 
