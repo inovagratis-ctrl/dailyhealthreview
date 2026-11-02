@@ -218,6 +218,16 @@
       "permanent": false
     },
     {
+      "source": "/go/nitricboost",
+      "destination": "https://d549316ruicd8samq8xf6o8o6r.hop.clickbank.net",
+      "permanent": false
+    },
+    {
+      "source": "/go/nitric-boost",
+      "destination": "https://d549316ruicd8samq8xf6o8o6r.hop.clickbank.net",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true
