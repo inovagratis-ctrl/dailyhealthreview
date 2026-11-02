@@ -188,6 +188,16 @@
       "permanent": false
     },
     {
+      "source": "/go/metanail",
+      "destination": "https://0073349hoglif-b7fgd1xgno6d.hop.clickbank.net",
+      "permanent": false
+    },
+    {
+      "source": "/go/metanailcomplex",
+      "destination": "https://0073349hoglif-b7fgd1xgno6d.hop.clickbank.net",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true
