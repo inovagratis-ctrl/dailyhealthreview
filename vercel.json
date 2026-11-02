@@ -248,6 +248,16 @@
       "permanent": false
     },
     {
+      "source": "/go/yusleep",
+      "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=yusleep&op=glp",
+      "permanent": false
+    },
+    {
+      "source": "/go/yu-sleep",
+      "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=yusleep&op=glp",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true

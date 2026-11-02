@@ -418,4 +418,16 @@
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
+  <url>
+    <loc>https://dailyhealthreviewus.com/yusleep-deep-rest-report</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://dailyhealthreviewus.com/showcase/yusleep</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
 </urlset>
