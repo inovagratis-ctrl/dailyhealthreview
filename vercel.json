@@ -198,6 +198,16 @@
       "permanent": false
     },
     {
+      "source": "/go/jointgenesis",
+      "destination": "https://2f8a5c1kyapodw8dtg-rtcww4w.hop.clickbank.net",
+      "permanent": false
+    },
+    {
+      "source": "/go/joint-genesis",
+      "destination": "https://2f8a5c1kyapodw8dtg-rtcww4w.hop.clickbank.net",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true
