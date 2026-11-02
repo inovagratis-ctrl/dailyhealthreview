@@ -48,7 +48,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daily Health Review | Live Sales & Affiliate Command Center (25 Produtos)</title>
+  <title>Daily Health Review | Live Sales & Affiliate Command Center (35 Produtos)</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -79,7 +79,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span> LIVE 8080
             </span>
           </h1>
-          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Catálogo: <strong class="text-emerald-400 font-bold">25 Showcases &amp; 25 Artigos no Ar</strong></p>
+          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Catálogo: <strong class="text-emerald-400 font-bold">35 Showcases &amp; 35 Artigos no Ar</strong></p>
         </div>
       </div>
       
@@ -136,7 +136,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-layer-group"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">25 / 25 Ativos</div>
+        <div class="text-3xl font-black text-white">35 / 35 Ativos</div>
         <div class="text-xs text-cyan-200/80 mt-2 flex items-center gap-1">
           <i class="fa-solid fa-check-double"></i> 100% dos Showcases no Ar
         </div>
@@ -163,16 +163,16 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div>
           <h2 class="text-base font-black text-white flex items-center gap-2">
-            <i class="fa-solid fa-table-cells-large text-emerald-400"></i> Matriz Completa de 25 Produtos (Artigos Pre-Sell &amp; Showcases Oficiais)
+            <i class="fa-solid fa-table-cells-large text-emerald-400"></i> Matriz Completa de 35 Produtos (Artigos Pre-Sell &amp; Showcases Oficiais)
           </h2>
           <p class="text-xs text-slate-400">Clique para abrir e auditar qualquer artigo ou página de vendas oficial do seu portal</p>
         </div>
         
         <div class="flex flex-wrap items-center gap-2">
           <!-- Filter Buttons -->
-          <button onclick="filterTable('all')" id="btn-filter-all" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow">Todos (25)</button>
-          <button onclick="filterTable('clickbank')" id="btn-filter-cb" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">ClickBank (16)</button>
-          <button onclick="filterTable('digistore')" id="btn-filter-ds" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">Digistore24 (9)</button>
+          <button onclick="filterTable('all')" id="btn-filter-all" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow">Todos (35)</button>
+          <button onclick="filterTable('clickbank')" id="btn-filter-cb" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">ClickBank (25)</button>
+          <button onclick="filterTable('digistore')" id="btn-filter-ds" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">Digistore24 (10)</button>
           
           <!-- Instant Search Input -->
           <div class="relative">
@@ -774,6 +774,236 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">ONLINE</span></td>
             </tr>
 
+            <!-- 26. Kerassentials -->
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="digistore">
+              <td class="p-3.5 text-slate-500 font-mono">26</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> Kerassentials®
+              </td>
+              <td class="p-3.5"><span class="badge-ds text-[10px] font-bold px-2 py-0.5 rounded">Digistore24</span></td>
+              <td class="p-3.5 text-slate-300">Saúde das Unhas &amp; Pele / Óleos Especiais</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$110.00 a $140.00</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/kerassentials-fungus-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
+                  /kerassentials-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/showcase/kerassentials" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /showcase/kerassentials <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/kerassentials</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">ONLINE</span></td>
+            </tr>
+
+            <!-- 27. NanoDefense Pro -->
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="digistore">
+              <td class="p-3.5 text-slate-500 font-mono">27</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span> NanoDefense Pro™
+              </td>
+              <td class="p-3.5"><span class="badge-ds text-[10px] font-bold px-2 py-0.5 rounded">Digistore24</span></td>
+              <td class="p-3.5 text-slate-300">Nanotecnologia para Pele &amp; Unhas</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$120.00 a $150.00</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/nanodefense-pro-nanotech-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
+                  /nanodefense-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/showcase/nanodefense" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /showcase/nanodefense <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/nanodefensepro</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">ONLINE</span></td>
+            </tr>
+
+            <!-- 28. Synaptigen -->
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="digistore">
+              <td class="p-3.5 text-slate-500 font-mono">28</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-purple-400"></span> Synaptigen™
+              </td>
+              <td class="p-3.5"><span class="badge-ds text-[10px] font-bold px-2 py-0.5 rounded">Digistore24</span></td>
+              <td class="p-3.5 text-slate-300">Neuroplasticidade &amp; Clareza Mental (L-Treonato)</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$115.00 a $145.00</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/synaptigen-cognitive-clarity-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
+                  /synaptigen-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/showcase/synaptigen" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /showcase/synaptigen <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/synaptigen</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">ONLINE</span></td>
+            </tr>
+
+            <!-- 29. Metanail Complex -->
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank">
+              <td class="p-3.5 text-slate-500 font-mono">29</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-pink-400"></span> Metanail Complex™
+              </td>
+              <td class="p-3.5"><span class="badge-cb text-[10px] font-bold px-2 py-0.5 rounded">ClickBank</span></td>
+              <td class="p-3.5 text-slate-300">Fórmula 20-em-1 Sérum Unhas &amp; Cutículas</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$125.00 a $155.00</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/metanail-complex-audit-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
+                  /metanail-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/showcase/metanail" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /showcase/metanail <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/metanail</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">ONLINE</span></td>
+            </tr>
+
+            <!-- 30. Joint Genesis -->
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank">
+              <td class="p-3.5 text-slate-500 font-mono">30</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-blue-400"></span> BioDynamix Joint Genesis™
+              </td>
+              <td class="p-3.5"><span class="badge-cb text-[10px] font-bold px-2 py-0.5 rounded">ClickBank</span></td>
+              <td class="p-3.5 text-slate-300">Líquido Sinovial &amp; Cartilagem (Patente Mobilee®)</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$135.00 a $165.00</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/joint-genesis-synovial-fluid-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
+                  /jointgenesis-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/showcase/jointgenesis" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /showcase/jointgenesis <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/jointgenesis</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">ONLINE</span></td>
+            </tr>
+
+            <!-- 31. Synevra -->
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank">
+              <td class="p-3.5 text-slate-500 font-mono">31</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-400"></span> Synevra Lift &amp; Lock System™
+              </td>
+              <td class="p-3.5"><span class="badge-cb text-[10px] font-bold px-2 py-0.5 rounded">ClickBank</span></td>
+              <td class="p-3.5 text-slate-300">Sérum Anti-Rugas Suíço Biomimético (SYN-AKE®)</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$130.00 a $160.00 (65%)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/synevra-lift-and-lock-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
+                  /synevra-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/showcase/synevra" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /showcase/synevra <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/synevra</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">ONLINE</span></td>
+            </tr>
+
+            <!-- 32. Nitric Boost Ultra -->
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank">
+              <td class="p-3.5 text-slate-500 font-mono">32</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span> Nitric Boost Ultra™
+              </td>
+              <td class="p-3.5"><span class="badge-cb text-[10px] font-bold px-2 py-0.5 rounded">ClickBank</span></td>
+              <td class="p-3.5 text-slate-300">Óxido Nítrico &amp; Saúde Masculina / Circulação</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$130.00 a $165.00 (70%)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/nitric-boost-ultra-vitality-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
+                  /nitricboost-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/showcase/nitricboost" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /showcase/nitricboost <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/nitricboost</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">ONLINE</span></td>
+            </tr>
+
+            <!-- 33. Liv Pure -->
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank">
+              <td class="p-3.5 text-slate-500 font-mono">33</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-teal-400"></span> Liv Pure™
+              </td>
+              <td class="p-3.5"><span class="badge-cb text-[10px] font-bold px-2 py-0.5 rounded">ClickBank</span></td>
+              <td class="p-3.5 text-slate-300">Desintoxicação Hepática &amp; Queima de Gordura</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$135.00 a $175.00 (75%)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/liv-pure-liver-fat-burning-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
+                  /livpure-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/showcase/livpure" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /showcase/livpure <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/livpure</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">ONLINE</span></td>
+            </tr>
+
+            <!-- 34. DentaBiome -->
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank">
+              <td class="p-3.5 text-slate-500 font-mono">34</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span> DentaBiome™
+              </td>
+              <td class="p-3.5"><span class="badge-cb text-[10px] font-bold px-2 py-0.5 rounded">ClickBank</span></td>
+              <td class="p-3.5 text-slate-300">Pós-Biótico Mastigável / Quebra FabM &amp; Gengivas</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$125.00 a $150.00</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/dentabiome-oral-postbiotic-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
+                  /dentabiome-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/showcase/dentabiome" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /showcase/dentabiome <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/dentabiome</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">ONLINE</span></td>
+            </tr>
+
+            <!-- 35. Yu Sleep -->
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank">
+              <td class="p-3.5 text-slate-500 font-mono">35</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-indigo-400"></span> Yu Sleep™ Deep Rest
+              </td>
+              <td class="p-3.5"><span class="badge-cb text-[10px] font-bold px-2 py-0.5 rounded">ClickBank</span></td>
+              <td class="p-3.5 text-slate-300">Gotas Sublinguais / Cereja Azeda &amp; Despertares 3h</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$115.00 a $160.00 (67% / $160 CPA)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/yusleep-deep-rest-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
+                  /yusleep-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/showcase/yusleep" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /showcase/yusleep <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/yusleep</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">ONLINE</span></td>
+            </tr>
+
           </tbody>
         </table>
       </div>
@@ -809,7 +1039,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   <!-- Footer -->
   <footer class="border-t border-slate-800 text-center py-6 text-xs text-slate-500">
-    Daily Health Review Live Analytics • Conectado à API ClickBank REST 1.3 • Nickname: <strong class="text-slate-300">eusimar72</strong> • 25 Ofertas e Showcases Conectados
+    Daily Health Review Live Analytics • Conectado à API ClickBank REST 1.3 • Nickname: <strong class="text-slate-300">eusimar72</strong> • 35 Ofertas e Showcases Conectados
   </footer>
 
   <script>
