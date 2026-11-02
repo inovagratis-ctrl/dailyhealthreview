@@ -183,6 +183,11 @@
       "permanent": false
     },
     {
+      "source": "/go/synaptigen",
+      "destination": "https://synaptigen24.com/text.php#aff=eusimar72",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true
