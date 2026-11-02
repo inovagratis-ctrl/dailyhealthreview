@@ -208,6 +208,16 @@
       "permanent": false
     },
     {
+      "source": "/go/synevra",
+      "destination": "https://8c500-yjt6pgjy4i5ari275n5t.hop.clickbank.net",
+      "permanent": false
+    },
+    {
+      "source": "/go/synevra-ultralift",
+      "destination": "https://8c500-yjt6pgjy4i5ari275n5t.hop.clickbank.net",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true
