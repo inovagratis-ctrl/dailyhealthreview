@@ -238,6 +238,16 @@
       "permanent": false
     },
     {
+      "source": "/go/dentabiome",
+      "destination": "https://671272-iwcbjcy41kk86g4thhf.hop.clickbank.net",
+      "permanent": false
+    },
+    {
+      "source": "/go/denta-biome",
+      "destination": "https://671272-iwcbjcy41kk86g4thhf.hop.clickbank.net",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true
