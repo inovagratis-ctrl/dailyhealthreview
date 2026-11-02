@@ -48,7 +48,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daily Health Review | Live Sales & Affiliate Command Center (35 Produtos)</title>
+  <title>Daily Health Review | Live Sales & Affiliate Command Center (36 Produtos)</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -79,7 +79,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span> LIVE 8080
             </span>
           </h1>
-          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Catálogo: <strong class="text-emerald-400 font-bold">35 Showcases &amp; 35 Artigos no Ar</strong></p>
+          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Catálogo: <strong class="text-emerald-400 font-bold">36 Showcases &amp; 36 Artigos no Ar</strong></p>
         </div>
       </div>
       
@@ -136,7 +136,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-layer-group"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">35 / 35 Ativos</div>
+        <div class="text-3xl font-black text-white">36 / 36 Ativos</div>
         <div class="text-xs text-cyan-200/80 mt-2 flex items-center gap-1">
           <i class="fa-solid fa-check-double"></i> 100% dos Showcases no Ar
         </div>
@@ -163,15 +163,15 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div>
           <h2 class="text-base font-black text-white flex items-center gap-2">
-            <i class="fa-solid fa-table-cells-large text-emerald-400"></i> Matriz Completa de 35 Produtos (Artigos Pre-Sell &amp; Showcases Oficiais)
+            <i class="fa-solid fa-table-cells-large text-emerald-400"></i> Matriz Completa de 36 Produtos (Artigos Pre-Sell &amp; Showcases Oficiais)
           </h2>
           <p class="text-xs text-slate-400">Clique para abrir e auditar qualquer artigo ou página de vendas oficial do seu portal</p>
         </div>
         
         <div class="flex flex-wrap items-center gap-2">
           <!-- Filter Buttons -->
-          <button onclick="filterTable('all')" id="btn-filter-all" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow">Todos (35)</button>
-          <button onclick="filterTable('clickbank')" id="btn-filter-cb" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">ClickBank (25)</button>
+          <button onclick="filterTable('all')" id="btn-filter-all" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow">Todos (36)</button>
+          <button onclick="filterTable('clickbank')" id="btn-filter-cb" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">ClickBank (26)</button>
           <button onclick="filterTable('digistore')" id="btn-filter-ds" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">Digistore24 (10)</button>
           
           <!-- Instant Search Input -->
@@ -1004,6 +1004,29 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">ONLINE</span></td>
             </tr>
 
+            <!-- 36. PrimeBiome -->
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank">
+              <td class="p-3.5 text-slate-500 font-mono">36</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> PrimeBiome™ Gut &amp; Skin
+              </td>
+              <td class="p-3.5"><span class="badge-cb text-[10px] font-bold px-2 py-0.5 rounded">ClickBank</span></td>
+              <td class="p-3.5 text-slate-300">Gomas Probióticas / Eixo Intestino-Pele &amp; Rugas</td>
+              <td class="p-3.5 text-emerald-400 font-bold">$125.00 a $165.00 (65%)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/primebiome-gut-skin-axis-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
+                  /primebiome-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/showcase/primebiome" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /showcase/primebiome <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5 font-mono text-slate-400">/go/primebiome</td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded">ONLINE</span></td>
+            </tr>
+
           </tbody>
         </table>
       </div>
@@ -1039,7 +1062,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   <!-- Footer -->
   <footer class="border-t border-slate-800 text-center py-6 text-xs text-slate-500">
-    Daily Health Review Live Analytics • Conectado à API ClickBank REST 1.3 • Nickname: <strong class="text-slate-300">eusimar72</strong> • 35 Ofertas e Showcases Conectados
+    Daily Health Review Live Analytics • Conectado à API ClickBank REST 1.3 • Nickname: <strong class="text-slate-300">eusimar72</strong> • 36 Ofertas e Showcases Conectados
   </footer>
 
   <script>

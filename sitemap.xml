@@ -430,4 +430,16 @@
     <changefreq>daily</changefreq>
     <priority>0.95</priority>
   </url>
+  <url>
+    <loc>https://dailyhealthreviewus.com/primebiome-gut-skin-axis-report</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+  <url>
+    <loc>https://dailyhealthreviewus.com/showcase/primebiome</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
 </urlset>

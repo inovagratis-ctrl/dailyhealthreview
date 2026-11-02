@@ -216,7 +216,7 @@
           <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
         </a>
         <a href="#catalog" class="mobile-nav-link flex items-center justify-between py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">
-          <span><i class="fa-solid fa-magnifying-glass text-emerald-600 w-5 mr-2"></i> Search All 35 Brands</span>
+          <span><i class="fa-solid fa-magnifying-glass text-emerald-600 w-5 mr-2"></i> Search All 36 Brands</span>
           <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
         </a>
         <a href="/about" class="mobile-nav-link flex items-center justify-between py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">
@@ -877,7 +877,7 @@
         <span class="text-xs font-bold uppercase tracking-wider text-emerald-800 bg-emerald-100 px-3.5 py-1 rounded-full border border-emerald-300 inline-block mb-3">
           Complete Consumer Directory
         </span>
-        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 font-serif">Search All 35 Verified Formulations</h2>
+        <h2 class="text-3xl sm:text-4xl font-black text-slate-900 font-serif">Search All 36 Verified Formulations</h2>
         <p class="text-slate-600 text-xs sm:text-sm mt-2">Filter by health objective or search by brand name to access official reports and verified deals.</p>
       </div>
 
@@ -898,7 +898,7 @@
       <!-- Category Filter Pills -->
       <div class="flex flex-wrap items-center justify-center gap-2 mb-10 text-xs font-bold text-slate-600">
         <button onclick="filterCategory('all')" class="cat-pill active px-4 py-2 rounded-xl border border-emerald-700 bg-[#0e5e43] text-white transition">
-          All 35 Brands
+          All 36 Brands
         </button>
         <button onclick="filterCategory('weight')" class="cat-pill px-4 py-2 rounded-xl border border-slate-200 bg-white hover:border-emerald-500 hover:text-emerald-700 transition">
           🔥 Weight &amp; Metabolism
@@ -2413,6 +2413,50 @@
             </div>
           </div>
         </div>
+
+        <!-- PrimeBiome Card -->
+        <div class="product-card bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all p-5 flex flex-col justify-between" data-category="longevity" data-id="primebiome">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="text-[10px] font-black uppercase tracking-wider text-slate-700 bg-slate-100 px-2.5 py-0.5 rounded-full border border-slate-200 truncate max-w-[200px]">
+                🌿 #1 Gut-Skin Axis Probiotic Gummies
+              </span>
+              <span class="text-[11px] font-extrabold text-amber-500">★ 4.9</span>
+            </div>
+
+            <div class="py-4 flex items-center justify-center">
+              <a href="/showcase/primebiome" target="_blank" rel="noopener" class="block group-hover:scale-105 transition-transform">
+                <img src="/Imagens_Oficiais/primebiome_bottle.png" alt="PrimeBiome™" class="product-img h-36 object-contain drop-shadow" loading="lazy" />
+              </a>
+            </div>
+
+            <h3 class="font-black text-sm text-slate-900 font-serif leading-tight mt-1">
+              <a href="/showcase/primebiome" target="_blank" rel="noopener" class="hover:text-emerald-700 transition">
+                PrimeBiome™
+              </a>
+            </h3>
+            <p class="text-[11px] text-slate-500 mt-1 line-clamp-2">Doctor-formulated chewable probiotic gummies with Bacillus Coagulans, Babchi extract, and inulin to heal gut dysbiosis and smooth aging skin.</p>
+          </div>
+
+          <div class="mt-4 pt-3 border-t border-slate-100">
+            <div class="flex items-baseline justify-between mb-3">
+              <div>
+                <span class="text-base font-black text-slate-900">$49/bottle</span>
+                <span class="text-xs text-slate-400 line-through ml-1">$179</span>
+              </div>
+              <span class="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">60-Day Guarantee</span>
+            </div>
+
+            <div class="space-y-2">
+              <a href="/showcase/primebiome" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-3 rounded-xl shadow-sm transition transform hover:-translate-y-0.5">
+                Check Official Offer &rarr;
+              </a>
+              <a href="/primebiome-gut-skin-axis-report" target="_blank" rel="noopener" class="block w-full text-center bg-slate-50 hover:bg-slate-100 text-slate-600 font-bold text-[11px] py-1.5 rounded-lg border border-slate-200 transition">
+                Read Formulation Audit
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -3250,6 +3294,22 @@
             "showcase": "/showcase/yusleep",
             "review": "/yusleep-deep-rest-report",
             "go": "/go/yusleep"
+      },
+      {
+            "id": "primebiome",
+            "title": "PrimeBiome™ Gut & Skin",
+            "category": "longevity",
+            "superlative": "🌿 #1 Gut-Skin Axis Probiotic Gummies",
+            "image": "/Imagens_Oficiais/primebiome_bottle.png",
+            "rating": 4.9,
+            "reviews": "22,180+",
+            "price": "$49/bottle",
+            "originalPrice": "$179",
+            "guarantee": "60-Day Guarantee",
+            "desc": "Doctor-formulated chewable probiotic gummies with Bacillus Coagulans, Babchi extract, and inulin to heal gut dysbiosis and smooth aging skin.",
+            "showcase": "/showcase/primebiome",
+            "review": "/primebiome-gut-skin-axis-report",
+            "go": "/go/primebiome"
       }
 ];
 
@@ -3263,7 +3323,7 @@
           <div class="col-span-full py-12 text-center text-slate-500">
             <i class="fa-solid fa-flask-vial text-3xl text-slate-300 mb-3 block"></i>
             <p class="font-bold">No formulations matched your search.</p>
-            <button onclick="filterCategory('all')" class="mt-3 text-xs text-emerald-700 underline font-bold">Reset filters & view all 35 brands</button>
+            <button onclick="filterCategory('all')" class="mt-3 text-xs text-emerald-700 underline font-bold">Reset filters & view all 36 brands</button>
           </div>
         `;
         return;

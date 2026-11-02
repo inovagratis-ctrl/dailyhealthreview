@@ -258,6 +258,16 @@
       "permanent": false
     },
     {
+      "source": "/go/primebiome",
+      "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=primebiome",
+      "permanent": false
+    },
+    {
+      "source": "/go/prime-biome",
+      "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=primebiome",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true
