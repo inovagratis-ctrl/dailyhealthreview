@@ -168,6 +168,21 @@
       "permanent": false
     },
     {
+      "source": "/go/kerassentials",
+      "destination": "https://mykerassentials24.com/text2.php#aff=eusimar72",
+      "permanent": false
+    },
+    {
+      "source": "/go/nanodefensepro",
+      "destination": "https://nanodefensepro24.com/text.php#aff=eusimar72",
+      "permanent": false
+    },
+    {
+      "source": "/go/nanodefense",
+      "destination": "https://nanodefensepro24.com/text.php#aff=eusimar72",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true

@@ -893,30 +893,35 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
 class DashboardHandler(SimpleHTTPRequestHandler):
     def do_GET(self):
-        if self.path == "/api/orders":
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            data = fetch_clickbank_orders()
-            self.wfile.write(json.dumps(data).encode("utf-8"))
-        elif self.path == "/api/status":
-            self.send_response(200)
-            self.send_header("Content-Type", "application/json")
-            self.send_header("Access-Control-Allow-Origin", "*")
-            self.end_headers()
-            self.wfile.write(json.dumps({
-                "status": "ONLINE",
-                "port": PORT,
-                "products_count": 25,
-                "showcases_count": 25,
-                "nickname": ACCOUNT_NICKNAME
-            }).encode("utf-8"))
-        else:
-            self.send_response(200)
-            self.send_header("Content-Type", "text/html; charset=utf-8")
-            self.end_headers()
-            self.wfile.write(HTML_TEMPLATE.encode("utf-8"))
+        try:
+            if self.path == "/api/orders":
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                data = fetch_clickbank_orders()
+                self.wfile.write(json.dumps(data).encode("utf-8"))
+            elif self.path == "/api/status":
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                self.wfile.write(json.dumps({
+                    "status": "ONLINE",
+                    "port": PORT,
+                    "products_count": 25,
+                    "showcases_count": 25,
+                    "nickname": ACCOUNT_NICKNAME
+                }).encode("utf-8"))
+            else:
+                self.send_response(200)
+                self.send_header("Content-Type", "text/html; charset=utf-8")
+                self.end_headers()
+                self.wfile.write(HTML_TEMPLATE.encode("utf-8"))
+        except (ConnectionResetError, ConnectionAbortedError, BrokenPipeError):
+            pass
+        except Exception as e:
+            print(f"Erro em do_GET: {e}")
 
 def start_server():
     server = HTTPServer(('127.0.0.1', PORT), DashboardHandler)

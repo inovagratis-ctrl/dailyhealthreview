@@ -1,29 +1,49 @@
 ======================================================================
 AUDITORIA COMPLETA DE LINKS - DAILY HEALTH REVIEW
 ======================================================================
-Total de arquivos escaneados: 41
+Total de arquivos escaneados: 111
 
-1. ROTAS INTERNAS DE REDIRECIONAMENTO LIMPAS (/go/): Total = 11
+1. ROTAS INTERNAS DE REDIRECIONAMENTO LIMPAS (/go/): Total = 27
+   /go/amino            -> https://www.digistore24.com/redir/472629/eusimar72/
    /go/audifort         -> https://6f9834zioammkt802al5tm4pf5.hop.clickbank.net
-   /go/circo2           -> https://www.advancedbionutritionals.com/DS24/Nitric-Oxide-Supplements/Superhuman-At-70/HD.htm#aff=eusimar72
+   /go/cardioslim       -> https://964c53zqs8lllzb6dngayqzeq4.hop.clickbank.net
+   /go/circo2           -> https://www.digistore24.com/redir/538693/eusimar72/
    /go/cleansesana      -> https://cleansesana.com/cleansesana-pdp-fe#aff=eusimar72
-   /go/femicore         -> https://hop.clickbank.net/?affiliate=eusimar72&vendor=FEMICORE
+   /go/collagen         -> https://www.advancedbionutritionals.com/DS24/Collagen/This-Simple-10-Second-Kitchen-Test/HD.htm#aff=eusimar72
+   /go/corevital        -> https://hop.clickbank.net/?affiliate=eusimar72&vendor=cvnutra
+   /go/femicore         -> https://0f72a06krdfg8n52tbm1tdusai.hop.clickbank.net
+   /go/fimavyn          -> https://fimavyn.com/text.html
+   /go/glucotrust       -> https://www.checkout-ds24.com/redir/600906/eusimar72/
+   /go/javaburn         -> https://6319020gpebhb02coila-kru3j.hop.clickbank.net
+   /go/jointeternal     -> https://www.digistore24.com/redir/508842/eusimar72/
+   /go/jointsupport     -> https://www.advancedbionutritionals.com/DS24/Advanced-Joint/Beat-Joint-Pain-With-Cucumbers.htm#aff=eusimar72
+   /go/kerassentials    -> https://mykerassentials24.com/text2.php#aff=eusimar72
    /go/lymphtonic       -> https://19a86z9ovajqhs57bex45l0flv.hop.clickbank.net
-   /go/memory           -> https://www.advancedbionutritionals.com/DS24/Advanced-Memory/Nobel-Prize-Winning-Memory-Breakthroughs/HD.htm#aff=eusimar72
+   /go/memory           -> https://www.digistore24.com/redir/599473/eusimar72/
    /go/nagano           -> https://06fe0-8qxlbmeo9jfi-fx24x4f.hop.clickbank.net
+   /go/nanodefensepro   -> https://nanodefensepro24.com/text.php#aff=eusimar72
+   /go/neotonics        -> https://1adc598rkgejfr0fleuao7jm4c.hop.clickbank.net
    /go/neurovera        -> https://6fd8bc8jpfkil09mti3fybx058.hop.clickbank.net
+   /go/phytomem         -> https://c25f303qn6ign-5duwwht5-s57.hop.clickbank.net
    /go/prodentim        -> https://8e01330llbokexfevijb-nq74a.hop.clickbank.net
+   /go/prostavive       -> https://fdec819gulieco3cyb76w71v3h.hop.clickbank.net
+   /go/slimmingtea      -> https://fed7803okemiewb5p6zakhpmdh.hop.clickbank.net
+   /go/spartamax        -> https://www.digistore24.com/redir/640292/eusimar72/
    /go/sugardefender    -> https://1bb1cc1ek8qf8sbh84dll9uk5s.hop.clickbank.net
    /go/visiflora        -> https://51062z5fucqiis5oqcr2mm151a.hop.clickbank.net
 
 ----------------------------------------------------------------------
 2. LINKS DE CTA (/go/...) PRESENTES NAS PAGINAS DO SITE:
-   [PAGINA] 02_Artigo_1_Elixir_7_Segundos.html
-      |--> /go/nagano
-   [PAGINA] 03_Artigo_2_Nagano_Completo_Com_Fotos.html
-      |--> /go/nagano
+   [PAGINA] advanced-amino-formula-report/index.html
+      |--> /go/amino
+   [PAGINA] advanced-collagen-plus-report/index.html
+      |--> /go/collagen
+   [PAGINA] advanced-joint-support-report/index.html
+      |--> /go/jointsupport
    [PAGINA] advanced-memory-formula-guide/index.html
       |--> /go/memory
+   [PAGINA] all-day-slimming-tea-report/index.html
+      |--> /go/slimmingtea
    [PAGINA] articles/02_Artigo_1_Elixir_7_Segundos.html
       |--> /go/nagano
    [PAGINA] articles/03_Artigo_2_Nagano_Completo_Com_Fotos.html
@@ -34,67 +54,363 @@ Total de arquivos escaneados: 41
       |--> /go/sugardefender
    [PAGINA] audifort-hearing-support-report/index.html
       |--> /go/audifort
+   [PAGINA] cardioslim-tea-cardio-support-report/index.html
+      |--> /go/cardioslim
    [PAGINA] circo2-nitric-oxide-report/index.html
       |--> /go/circo2
+   [PAGINA] claire/index.html
+      |--> /go/javaburn
+      |--> /go/kerassentials
+      |--> /go/neotonics
+      |--> /go/prodentim
    [PAGINA] cleansesana-gut-reboot/index.html
       |--> /go/cleansesana
+   [PAGINA] femicore-pelvic-health-report/index.html
+      |--> /go/femicore
+   [PAGINA] fimavyn-metabolic-activation-report/index.html
+      |--> /go/fimavyn
+   [PAGINA] glucotrust-blutzucker-bericht/index.html
+      |--> /go/glucotrust
+   [PAGINA] index.html
+      |--> /go/kerassentials
+      |--> /go/nanodefensepro
+   [PAGINA] java-burn-coffee-ritual-report/index.html
+      |--> /go/javaburn
+   [PAGINA] joint-eternal-mobility-report/index.html
+      |--> /go/jointeternal
+   [PAGINA] kerassentials-nail-fungus-report/index.html
+      |--> /go/kerassentials
    [PAGINA] lymphtonic-drainage-report/index.html
       |--> /go/lymphtonic
    [PAGINA] morning-routine/index.html
       |--> /go/nagano
    [PAGINA] nagano-tonic-review/index.html
       |--> /go/nagano
+   [PAGINA] nanodefense-pro-nanotechnology-report/index.html
+      |--> /go/nanodefensepro
+   [PAGINA] neotonics-skin-gut-report/index.html
+      |--> /go/neotonics
    [PAGINA] neurovera-brain-clarity-report/index.html
       |--> /go/neurovera
+   [PAGINA] phytomem-memory-formula-report/index.html
+      |--> /go/phytomem
    [PAGINA] prodentim-report/index.html
       |--> /go/prodentim
+   [PAGINA] prostavive-prostate-health-report/index.html
+      |--> /go/prostavive
+   [PAGINA] quick/nagano-fast-track/index.html
+      |--> /go/nagano
+   [PAGINA] quiz/metabolic-assessment/index.html
+      |--> /go/nagano
+   [PAGINA] showcase/advanced-amino/index.html
+      |--> /go/amino
+   [PAGINA] showcase/advanced-collagen/index.html
+      |--> /go/collagen
+   [PAGINA] showcase/advanced-joint/index.html
+      |--> /go/jointsupport
+   [PAGINA] showcase/advanced-memory/index.html
+      |--> /go/memory
+   [PAGINA] showcase/all-day-slimming-tea/index.html
+      |--> /go/slimmingtea
+   [PAGINA] showcase/audifort/index.html
+      |--> /go/audifort
+   [PAGINA] showcase/circo2/index.html
+      |--> /go/circo2
+   [PAGINA] showcase/corevital/index.html
+      |--> /go/corevital
+   [PAGINA] showcase/femicore/index.html
+      |--> /go/femicore
+   [PAGINA] showcase/fimavyn/index.html
+      |--> /go/fimavyn
+   [PAGINA] showcase/glucotrust/index.html
+      |--> /go/glucotrust/
+   [PAGINA] showcase/java-burn/index.html
+      |--> /go/javaburn
+   [PAGINA] showcase/joint-eternal/index.html
+      |--> /go/jointeternal
+   [PAGINA] showcase/lymphtonic/index.html
+      |--> /go/lymphtonic
+   [PAGINA] showcase/nagano-tonic/index.html
+      |--> /go/nagano
+   [PAGINA] showcase/neotonics/index.html
+      |--> /go/neotonics
+   [PAGINA] showcase/phytomem/index.html
+      |--> /go/phytomem
+   [PAGINA] showcase/prodentim/index.html
+      |--> /go/prodentim
+   [PAGINA] showcase/prostavive/index.html
+      |--> /go/prostavive
+   [PAGINA] showcase/spartamax/index.html
+      |--> /go/spartamax
+   [PAGINA] showcase/sugar-defender/index.html
+      |--> /go/sugardefender
+   [PAGINA] spartamax-vitality-gummies-report/index.html
+      |--> /go/spartamax
+   [PAGINA] special/japanese-morning-ritual/index.html
+      |--> /go/nagano
+   [PAGINA] staging/corevital-burn/index.html
+      |--> /go/corevital
    [PAGINA] sugar-defender-guide/index.html
       |--> /go/sugardefender
+   [PAGINA] verify/nagano-official-warning/index.html
+      |--> /go/nagano
    [PAGINA] visiflora-vision-report/index.html
       |--> /go/visiflora
 
 ======================================================================
 3. RESULTADO DA BUSCA POR LINKS CRUS / VAZADOS NAS PAGINAS PUBLICAS:
 ======================================================================
-ALERTA: Foram encontrados 10 links crus/externos fora da pasta /go/:
-   [ARQUIVO] vercel.json:7
+ALERTA: Foram encontrados 63 links crus/externos fora da pasta /go/:
+   [ARQUIVO] official_audifort.html:358
+      Link: https://audifort.pay.clickbank.net/?cbitems=1&cbfid=60510&template=two&exitoffer=exit
+      Linha: href="https://audifort.pay.clickbank.net/?cbitems=1&cbfid=60510&template=two&exitoffer=exit"...
+
+   [ARQUIVO] official_audifort.html:410
+      Link: https://audifort.pay.clickbank.net/?cbitems=3&cbfid=60511&template=six&exitoffer=exit
+      Linha: href="https://audifort.pay.clickbank.net/?cbitems=3&cbfid=60511&template=six&exitoffer=exit"...
+
+   [ARQUIVO] official_audifort.html:462
+      Link: https://audifort.pay.clickbank.net/?cbitems=2&cbfid=63748&template=three&exitoffer=exit
+      Linha: href="https://audifort.pay.clickbank.net/?cbitems=2&cbfid=63748&template=three&exitoffer=exit"...
+
+   [ARQUIVO] official_audifort.html:848
+      Link: https://audifort.pay.clickbank.net/?cbitems=1&cbfid=60510&template=two&exitoffer=exit
+      Linha: href="https://audifort.pay.clickbank.net/?cbitems=1&cbfid=60510&template=two&exitoffer=exit"...
+
+   [ARQUIVO] official_audifort.html:900
+      Link: https://audifort.pay.clickbank.net/?cbitems=3&cbfid=60511&template=six&exitoffer=exit
+      Linha: href="https://audifort.pay.clickbank.net/?cbitems=3&cbfid=60511&template=six&exitoffer=exit"...
+
+   [ARQUIVO] official_audifort.html:952
+      Link: https://audifort.pay.clickbank.net/?cbitems=2&cbfid=63748&template=three&exitoffer=exit
+      Linha: href="https://audifort.pay.clickbank.net/?cbitems=2&cbfid=63748&template=three&exitoffer=exit"...
+
+   [ARQUIVO] official_audifort.html:1171
+      Link: https://audifort.pay.clickbank.net/?cbitems=1&cbfid=60510&template=two&exitoffer=exit
+      Linha: href="https://audifort.pay.clickbank.net/?cbitems=1&cbfid=60510&template=two&exitoffer=exit"...
+
+   [ARQUIVO] official_audifort.html:1223
+      Link: https://audifort.pay.clickbank.net/?cbitems=3&cbfid=60511&template=six&exitoffer=exit
+      Linha: href="https://audifort.pay.clickbank.net/?cbitems=3&cbfid=60511&template=six&exitoffer=exit"...
+
+   [ARQUIVO] official_audifort.html:1275
+      Link: https://audifort.pay.clickbank.net/?cbitems=2&cbfid=63748&template=three&exitoffer=exit
+      Linha: href="https://audifort.pay.clickbank.net/?cbitems=2&cbfid=63748&template=three&exitoffer=exit"...
+
+   [ARQUIVO] official_cardioslim.html:43
+      Link: https://scripts.clickbank.net/hop.min.js
+      Linha: <script src="https://scripts.clickbank.net/hop.min.js" defer></script>...
+
+   [ARQUIVO] official_cardioslim.html:62
+      Link: https://cardioslim.pay.clickbank.net/?cbitems=1&amp;template=cs2uaaa&amp;cbfid=61212&amp;vtid=CSThome
+      Linha: <style data-emotion-css="49a6w1 r2ag0e 119qg5r 2jofpk 15c2jr8 1k461u6">.page-background{position:fixed;height:100vh;top:...
+
+   [ARQUIVO] official_cardioslim.html:62
+      Link: https://cardioslim.pay.clickbank.net/?cbitems=3&amp;template=cs6aaa&amp;cbfid=61212&amp;vtid=CSThome
+      Linha: <style data-emotion-css="49a6w1 r2ag0e 119qg5r 2jofpk 15c2jr8 1k461u6">.page-background{position:fixed;height:100vh;top:...
+
+   [ARQUIVO] official_cardioslim.html:62
+      Link: https://cardioslim.pay.clickbank.net/?cbitems=2&amp;template=cst3aaa&amp;cbfid=61212&amp;vtid=CSThome
+      Linha: <style data-emotion-css="49a6w1 r2ag0e 119qg5r 2jofpk 15c2jr8 1k461u6">.page-background{position:fixed;height:100vh;top:...
+
+   [ARQUIVO] official_cardioslim.html:62
+      Link: https://cardioslim.pay.clickbank.net/?cbitems=3&amp;template=cs6aaa&amp;cbfid=61224&amp;vtid=CSThomeMOB
+      Linha: <style data-emotion-css="49a6w1 r2ag0e 119qg5r 2jofpk 15c2jr8 1k461u6">.page-background{position:fixed;height:100vh;top:...
+
+   [ARQUIVO] official_cardioslim.html:62
+      Link: https://cardioslim.pay.clickbank.net/?cbitems=2&amp;template=cst3aaa&amp;cbfid=61224&amp;vtid=CSThomeMOB
+      Linha: <style data-emotion-css="49a6w1 r2ag0e 119qg5r 2jofpk 15c2jr8 1k461u6">.page-background{position:fixed;height:100vh;top:...
+
+   [ARQUIVO] official_cardioslim.html:62
+      Link: https://cardioslim.pay.clickbank.net/?cbitems=1&amp;template=cs2uaaa&amp;cbfid=61224&amp;vtid=CSThomeMOB
+      Linha: <style data-emotion-css="49a6w1 r2ag0e 119qg5r 2jofpk 15c2jr8 1k461u6">.page-background{position:fixed;height:100vh;top:...
+
+   [ARQUIVO] official_cleansesana.html:821
+      Link: https://cleansesana.com/cleansesana-pdp-fe-1
+      Linha: </style><style>:root{--sticky-header-height:0px}[id]{scroll-margin-top:var(--sticky-header-height)}.flex{display:flex}.f...
+
+   [ARQUIVO] official_cleansesana.html:828
+      Link: https://cleansesana.com/impressum-ds24
+      Linha: </script></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->...
+
+   [ARQUIVO] official_cleansesana.html:828
+      Link: https://cleansesana.com/datenschutz-ds24
+      Linha: </script></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->...
+
+   [ARQUIVO] official_cleansesana.html:828
+      Link: https://cleansesana.com/disclaimer-ds24
+      Linha: </script></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->...
+
+   [ARQUIVO] official_cleansesana.html:828
+      Link: https://cleansesana.com/agb-ds24
+      Linha: </script></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->...
+
+   [ARQUIVO] official_cleansesana.html:828
+      Link: https://cleansesana.com/versand-ds24
+      Linha: </script></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->...
+
+   [ARQUIVO] official_cleansesana.html:828
+      Link: https://cleansesana.com/rueckerstattung-und-rueckgabe-ds24
+      Linha: </script></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->...
+
+   [ARQUIVO] official_cleansesana.html:828
+      Link: https://cleansesana.com/kontakt-ds24
+      Linha: </script></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->...
+
+   [ARQUIVO] official_femicore.html:1626
+      Link: https://scripts.clickbank.net/hop.min.js
+      Linha: s.src = "https://scripts.clickbank.net/hop.min.js";...
+
+   [ARQUIVO] official_neurovera.html:18
+      Link: https://theneurovera.com/index.php
+      Linha: <meta property="og:url" name="url" content="https://theneurovera.com/index.php">...
+
+   [ARQUIVO] official_neurovera.html:338
+      Link: https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-1-fe-49&template=Nrv_1b_49&cbfid=62257&vtid=home&utm_source=affiliate&utm_term=&utm_campaign=&utm_content=&utm_medium=
+      Linha: <a href="https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-1-fe-49&template=Nrv_1b_49&cbfid=62257&vtid=home&utm_sour...
+
+   [ARQUIVO] official_neurovera.html:375
+      Link: https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-6-fe-174&template=Nvr_6b_174&cbfid=62261&vtid=home&utm_source=affiliate&utm_term=&utm_campaign=&utm_content=&utm_medium=
+      Linha: <a href="https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-6-fe-174&template=Nvr_6b_174&cbfid=62261&vtid=home&utm_so...
+
+   [ARQUIVO] official_neurovera.html:414
+      Link: https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-3-fe-117&template=Nrv_3b_117&cbfid=62259&vtid=home&utm_source=affiliate&utm_term=&utm_campaign=&utm_content=&utm_medium=
+      Linha: <a href="https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-3-fe-117&template=Nrv_3b_117&cbfid=62259&vtid=home&utm_so...
+
+   [ARQUIVO] official_neurovera.html:556
+      Link: https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-1-fe-49&template=Nrv_1b_49&cbfid=62257&vtid=home&utm_source=affiliate&utm_term=&utm_campaign=&utm_content=&utm_medium=
+      Linha: <a href="https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-1-fe-49&template=Nrv_1b_49&cbfid=62257&vtid=home&utm_sour...
+
+   [ARQUIVO] official_neurovera.html:595
+      Link: https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-6-fe-174&template=Nvr_6b_174&cbfid=62261&vtid=home&utm_source=affiliate&utm_term=&utm_campaign=&utm_content=&utm_medium=
+      Linha: <a href="https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-6-fe-174&template=Nvr_6b_174&cbfid=62261&vtid=home&utm_so...
+
+   [ARQUIVO] official_neurovera.html:635
+      Link: https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-3-fe-117&template=Nrv_3b_117&cbfid=62259&vtid=home&utm_source=affiliate&utm_term=&utm_campaign=&utm_content=&utm_medium=
+      Linha: <a href="https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-3-fe-117&template=Nrv_3b_117&cbfid=62259&vtid=home&utm_so...
+
+   [ARQUIVO] official_visiflora.html:59
+      Link: https://scripts.clickbank.net/hop.min.js
+      Linha: <script src="https://scripts.clickbank.net/hop.min.js" defer></script></head>...
+
+   [ARQUIVO] official_visiflora.html:1216
+      Link: https://visiflora.pay.clickbank.net/?cbitems=1&template=ac1nn&exitoffer=ext2&cbfid=63114&vtid=tsl&
+      Linha: <a href="https://visiflora.pay.clickbank.net/?cbitems=1&template=ac1nn&exitoffer=ext2&cbfid=63114&vtid=tsl&" class="pric...
+
+   [ARQUIVO] official_visiflora.html:1245
+      Link: https://visiflora.pay.clickbank.net/?cbitems=3&template=ac3n&exitoffer=ext2&cbfid=63170&vtid=tsl&
+      Linha: <a href="https://visiflora.pay.clickbank.net/?cbitems=3&template=ac3n&exitoffer=ext2&cbfid=63170&vtid=tsl&" class="prici...
+
+   [ARQUIVO] official_visiflora.html:1274
+      Link: https://visiflora.pay.clickbank.net/?cbitems=2&template=ac2n&exitoffer=ext2&cbfid=63169&vtid=tsl&
+      Linha: <a href="https://visiflora.pay.clickbank.net/?cbitems=2&template=ac2n&exitoffer=ext2&cbfid=63169&vtid=tsl&" class="prici...
+
+   [ARQUIVO] vercel.json:17
+      Link: https://69fc860owaqedt88jellbmeu3l.hop.clickbank.net
+      Linha: "destination": "https://69fc860owaqedt88jellbmeu3l.hop.clickbank.net",...
+
+   [ARQUIVO] vercel.json:22
+      Link: https://69fc860owaqedt88jellbmeu3l.hop.clickbank.net
+      Linha: "destination": "https://69fc860owaqedt88jellbmeu3l.hop.clickbank.net",...
+
+   [ARQUIVO] vercel.json:27
       Link: https://19a86z9ovajqhs57bex45l0flv.hop.clickbank.net
       Linha: "destination": "https://19a86z9ovajqhs57bex45l0flv.hop.clickbank.net",...
 
-   [ARQUIVO] vercel.json:12
+   [ARQUIVO] vercel.json:32
       Link: https://6f9834zioammkt802al5tm4pf5.hop.clickbank.net
       Linha: "destination": "https://6f9834zioammkt802al5tm4pf5.hop.clickbank.net",...
 
-   [ARQUIVO] vercel.json:17
+   [ARQUIVO] vercel.json:37
       Link: https://6fd8bc8jpfkil09mti3fybx058.hop.clickbank.net
       Linha: "destination": "https://6fd8bc8jpfkil09mti3fybx058.hop.clickbank.net",...
 
-   [ARQUIVO] vercel.json:22
-      Link: https://hop.clickbank.net/?affiliate=eusimar72&vendor=FEMICORE
-      Linha: "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=FEMICORE",...
+   [ARQUIVO] vercel.json:42
+      Link: https://0f72a06krdfg8n52tbm1tdusai.hop.clickbank.net
+      Linha: "destination": "https://0f72a06krdfg8n52tbm1tdusai.hop.clickbank.net",...
 
-   [ARQUIVO] vercel.json:22
-      Link: https://hop.clickbank.net/?affiliate=eusimar72&vendor=FEMICORE
-      Linha: "destination": "https://hop.clickbank.net/?affiliate=eusimar72&vendor=FEMICORE",...
+   [ARQUIVO] vercel.json:47
+      Link: https://1adc598rkgejfr0fleuao7jm4c.hop.clickbank.net
+      Linha: "destination": "https://1adc598rkgejfr0fleuao7jm4c.hop.clickbank.net",...
 
-   [ARQUIVO] vercel.json:27
+   [ARQUIVO] vercel.json:52
+      Link: https://c25f303qn6ign-5duwwht5-s57.hop.clickbank.net
+      Linha: "destination": "https://c25f303qn6ign-5duwwht5-s57.hop.clickbank.net",...
+
+   [ARQUIVO] vercel.json:62
       Link: https://51062z5fucqiis5oqcr2mm151a.hop.clickbank.net
       Linha: "destination": "https://51062z5fucqiis5oqcr2mm151a.hop.clickbank.net",...
 
-   [ARQUIVO] vercel.json:42
+   [ARQUIVO] vercel.json:77
       Link: https://cleansesana.com/cleansesana-pdp-fe#aff=eusimar72
       Linha: "destination": "https://cleansesana.com/cleansesana-pdp-fe#aff=eusimar72",...
 
-   [ARQUIVO] vercel.json:47
+   [ARQUIVO] vercel.json:82
       Link: https://06fe0-8qxlbmeo9jfi-fx24x4f.hop.clickbank.net
       Linha: "destination": "https://06fe0-8qxlbmeo9jfi-fx24x4f.hop.clickbank.net",...
 
-   [ARQUIVO] vercel.json:52
+   [ARQUIVO] vercel.json:87
       Link: https://1bb1cc1ek8qf8sbh84dll9uk5s.hop.clickbank.net
       Linha: "destination": "https://1bb1cc1ek8qf8sbh84dll9uk5s.hop.clickbank.net",...
 
-   [ARQUIVO] vercel.json:57
+   [ARQUIVO] vercel.json:92
       Link: https://8e01330llbokexfevijb-nq74a.hop.clickbank.net
       Linha: "destination": "https://8e01330llbokexfevijb-nq74a.hop.clickbank.net",...
+
+   [ARQUIVO] vercel.json:97
+      Link: https://fed7803okemiewb5p6zakhpmdh.hop.clickbank.net
+      Linha: "destination": "https://fed7803okemiewb5p6zakhpmdh.hop.clickbank.net",...
+
+   [ARQUIVO] vercel.json:102
+      Link: https://fed7803okemiewb5p6zakhpmdh.hop.clickbank.net
+      Linha: "destination": "https://fed7803okemiewb5p6zakhpmdh.hop.clickbank.net",...
+
+   [ARQUIVO] vercel.json:122
+      Link: https://964c53zqs8lllzb6dngayqzeq4.hop.clickbank.net
+      Linha: "destination": "https://964c53zqs8lllzb6dngayqzeq4.hop.clickbank.net",...
+
+   [ARQUIVO] vercel.json:127
+      Link: https://6319020gpebhb02coila-kru3j.hop.clickbank.net
+      Linha: "destination": "https://6319020gpebhb02coila-kru3j.hop.clickbank.net",...
+
+   [ARQUIVO] vercel.json:132
+      Link: https://fdec819gulieco3cyb76w71v3h.hop.clickbank.net
+      Linha: "destination": "https://fdec819gulieco3cyb76w71v3h.hop.clickbank.net",...
+
+   [ARQUIVO] showcase/cardioslim/index.html:428
+      Link: https://cardioslim.pay.clickbank.net/?cbitems=1&amp;template=cs2uaaa&amp;cbfid=61212&amp;vtid=CSThome
+      Linha: <a class="w-full inline-block bg-slate-900 hover:bg-slate-800 text-white font-black py-4 rounded-xl text-base font-headi...
+
+   [ARQUIVO] showcase/cardioslim/index.html:471
+      Link: https://cardioslim.pay.clickbank.net/?cbitems=3&amp;template=cs6aaa&amp;cbfid=61212&amp;vtid=CSThome
+      Linha: <a class="pulse-btn w-full inline-block bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 ...
+
+   [ARQUIVO] showcase/cardioslim/index.html:511
+      Link: https://cardioslim.pay.clickbank.net/?cbitems=2&amp;template=cst3aaa&amp;cbfid=61212&amp;vtid=CSThome
+      Linha: <a class="w-full inline-block bg-slate-900 hover:bg-slate-800 text-white font-black py-4 rounded-xl text-base font-headi...
+
+   [ARQUIVO] showcase/neurovera/index.html:359
+      Link: https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-1-fe-49&amp;template=Nrv_1b_49&amp;cbfid=62257&amp;vtid=home&amp;utm_source=affiliate
+      Linha: <a class="w-full inline-block bg-slate-900 hover:bg-slate-800 text-white font-black py-4 rounded-xl text-base font-headi...
+
+   [ARQUIVO] showcase/neurovera/index.html:402
+      Link: https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-6-fe-174&amp;template=Nvr_6b_174&amp;cbfid=62261&amp;vtid=home&amp;utm_source=affiliate
+      Linha: <a class="pulse-btn w-full inline-block bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 ...
+
+   [ARQUIVO] showcase/neurovera/index.html:442
+      Link: https://neurovera.pay.clickbank.net/?cbitems=NROVR-60-3-fe-117&amp;template=Nrv_3b_117&amp;cbfid=62259&amp;vtid=home&amp;utm_source=affiliate
+      Linha: <a class="w-full inline-block bg-slate-900 hover:bg-slate-800 text-white font-black py-4 rounded-xl text-base font-headi...
+
+   [ARQUIVO] showcase/visiflora/index.html:369
+      Link: https://visiflora.pay.clickbank.net/?cbitems=1&amp;template=ac1nn&amp;exitoffer=ext2&amp;cbfid=63114&amp;vtid=tsl&amp;
+      Linha: <a class="w-full inline-block bg-slate-900 hover:bg-slate-800 text-white font-black py-4 rounded-xl text-base font-headi...
+
+   [ARQUIVO] showcase/visiflora/index.html:412
+      Link: https://visiflora.pay.clickbank.net/?cbitems=3&amp;template=ac3n&amp;exitoffer=ext2&amp;cbfid=63170&amp;vtid=tsl&amp;
+      Linha: <a class="pulse-btn w-full inline-block bg-gradient-to-r from-amber-400 via-amber-500 to-amber-600 hover:from-amber-500 ...
+
+   [ARQUIVO] showcase/visiflora/index.html:452
+      Link: https://visiflora.pay.clickbank.net/?cbitems=2&amp;template=ac2n&amp;exitoffer=ext2&amp;cbfid=63169&amp;vtid=tsl&amp;
+      Linha: <a class="w-full inline-block bg-slate-900 hover:bg-slate-800 text-white font-black py-4 rounded-xl text-base font-headi...
 
 ======================================================================
