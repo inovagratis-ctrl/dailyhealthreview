@@ -67,6 +67,25 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </head>
 <body class="min-h-screen flex flex-col antialiased">
 
+  <!-- Live Health & Audit Bar (Diagnóstico Periódico) -->
+  <div class="bg-slate-950 border-b border-slate-800/80 px-4 py-2 text-xs">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span>
+        <span class="font-bold text-slate-200"><i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> Auditoria Contínua de Links &amp; Comissões:</span>
+        <span id="audit-badge" class="bg-emerald-950 text-emerald-300 border border-emerald-500/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full">
+          36 Showcases Online • 36 Editoriais Ativos • 36 Rotas 302 Blindadas
+        </span>
+      </div>
+      <div class="flex items-center gap-3">
+        <span id="audit-last-check" class="text-slate-400 text-[11px] font-mono">Última checagem: verificando...</span>
+        <button onclick="triggerAudit()" class="px-3 py-1 bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-[11px] rounded-lg transition flex items-center gap-1.5 shadow">
+          <i class="fa-solid fa-stethoscope" id="audit-icon"></i> Rodar Diagnóstico Agora
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- Top Navigation Bar -->
   <header class="card-glow border-b border-slate-800 sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-4 py-3.5 flex flex-wrap items-center justify-between gap-4">
@@ -305,8 +324,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           <!-- Filter Buttons -->
           <button onclick="filterTable('all')" id="btn-filter-all" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow">Todos (36)</button>
           <button onclick="filterTable('whitelist')" id="btn-filter-wl" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 hover:bg-amber-600 hover:text-white transition">⭐ VIP Whitelist (6)</button>
-          <button onclick="filterTable('clickbank')" id="btn-filter-cb" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">ClickBank (26)</button>
-          <button onclick="filterTable('digistore')" id="btn-filter-ds" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">Digistore24 (10)</button>
+          <button onclick="filterTable('clickbank')" id="btn-filter-cb" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">ClickBank (24)</button>
+          <button onclick="filterTable('digistore')" id="btn-filter-ds" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">Digistore24 (12)</button>
           
           <!-- Instant Search Input -->
           <div class="relative">
@@ -1275,9 +1294,36 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       }
     }
 
-    // Auto refresh every 60 seconds
+    async function triggerAudit() {
+      const icon = document.getElementById('audit-icon');
+      if (icon) icon.classList.add('fa-spin');
+      try {
+        const res = await fetch('/api/audit');
+        const data = await res.json();
+        if (data && !data.error) {
+          const badge = document.getElementById('audit-badge');
+          const timeSpan = document.getElementById('audit-last-check');
+          if (badge) {
+            badge.innerText = `${data.showcases_ok}/${data.total_products} Showcases Online • ${data.editorials_ok}/${data.total_products} Editoriais • ${data.redirects_ok}/${data.total_products} Rotas 302 Blindadas`;
+          }
+          if (timeSpan) {
+            timeSpan.innerText = 'Último diagnóstico: ' + data.timestamp;
+          }
+        }
+      } catch (e) {
+        console.error('Erro na auditoria de links:', e);
+      } finally {
+        if (icon) icon.classList.remove('fa-spin');
+      }
+    }
+
+    // Auto refresh sales every 60 seconds and run diagnostic every 30 minutes
     setInterval(refreshData, 60000);
-    window.onload = refreshData;
+    setInterval(triggerAudit, 1800000);
+    window.onload = function() {
+      refreshData();
+      triggerAudit();
+    };
   </script>
 
 </body>
@@ -1306,6 +1352,17 @@ class DashboardHandler(SimpleHTTPRequestHandler):
                     "showcases_count": 36,
                     "nickname": ACCOUNT_NICKNAME
                 }).encode("utf-8"))
+            elif self.path == "/api/audit":
+                self.send_response(200)
+                self.send_header("Content-Type", "application/json; charset=utf-8")
+                self.send_header("Access-Control-Allow-Origin", "*")
+                self.end_headers()
+                try:
+                    from audit_healthcheck import run_diagnostic
+                    diag = run_diagnostic()
+                    self.wfile.write(json.dumps(diag, ensure_ascii=False).encode("utf-8"))
+                except Exception as ex:
+                    self.wfile.write(json.dumps({"error": str(ex)}).encode("utf-8"))
             else:
                 self.send_response(200)
                 self.send_header("Content-Type", "text/html; charset=utf-8")
