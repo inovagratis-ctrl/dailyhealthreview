@@ -158,6 +158,139 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
     </div>
 
+    <!-- VIP Whitelist Commission Groups Banner (ClickBank Approved) -->
+    <div class="card-glow rounded-2xl p-6 shadow-xl border border-amber-500/40 bg-gradient-to-br from-amber-950/40 via-slate-900/90 to-indigo-950/40">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-5 border-b border-amber-500/20 pb-4">
+        <div>
+          <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded-full inline-flex items-center gap-1.5 mb-2">
+            <i class="fa-solid fa-crown text-amber-400"></i> ClickBank Commission Groups VIP • eusimar72
+          </span>
+          <h2 class="text-lg sm:text-xl font-black text-white flex items-center gap-2">
+            6 Ofertas Aprovadas com Comissionamento Exclusivo Whitelist
+          </h2>
+          <p class="text-xs text-slate-300 mt-1">Sua conta pertence aos grupos prioritários de comissão dos maiores vendors dos EUA, garantindo até 65% de comissão e até $160 CPA.</p>
+        </div>
+        <div class="flex items-center gap-2">
+          <button onclick="filterTable('whitelist')" class="px-3.5 py-2 bg-amber-500 hover:bg-amber-400 text-slate-950 font-black text-xs rounded-xl shadow-lg transition flex items-center gap-1.5 whitespace-nowrap">
+            <i class="fa-solid fa-star"></i> Filtrar os 6 VIPs na Tabela
+          </button>
+        </div>
+      </div>
+
+      <!-- 6 VIP Grid Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        
+        <!-- VIP Card 1: Yu Sleep -->
+        <div class="bg-slate-900/90 border border-indigo-500/40 rounded-xl p-4 hover:border-indigo-400 transition shadow">
+          <div class="flex items-start justify-between mb-2">
+            <span class="text-xs font-black text-white flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-indigo-400"></span> Yu Sleep™ Super Affiliates
+            </span>
+            <span class="bg-indigo-500/20 text-indigo-300 text-[10px] font-bold px-2 py-0.5 rounded border border-indigo-500/40">Vendor: yusleep</span>
+          </div>
+          <div class="text-emerald-400 font-extrabold text-xs mb-3">
+            65% Front-End • 50% Upsells (ou até $160 CPA)
+          </div>
+          <div class="grid grid-cols-3 gap-1.5 text-[10px] font-mono">
+            <a href="https://dailyhealthreviewus.com/showcase/yusleep" target="_blank" class="bg-emerald-950/80 hover:bg-emerald-900 text-emerald-300 border border-emerald-500/30 text-center py-1.5 rounded transition font-bold">Showcase</a>
+            <a href="https://dailyhealthreviewus.com/yusleep-report" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-cyan-300 text-center py-1.5 rounded transition">Editorial</a>
+            <a href="https://dailyhealthreviewus.com/go/yusleep" target="_blank" class="bg-amber-950/80 hover:bg-amber-900 text-amber-300 border border-amber-500/30 text-center py-1.5 rounded transition font-bold">/go/yusleep</a>
+          </div>
+        </div>
+
+        <!-- VIP Card 2: PrimeBiome -->
+        <div class="bg-slate-900/90 border border-emerald-500/40 rounded-xl p-4 hover:border-emerald-400 transition shadow">
+          <div class="flex items-start justify-between mb-2">
+            <span class="text-xs font-black text-white flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> PrimeBiome™ 65% VIP
+            </span>
+            <span class="bg-emerald-500/20 text-emerald-300 text-[10px] font-bold px-2 py-0.5 rounded border border-emerald-500/40">Vendor: primebiome</span>
+          </div>
+          <div class="text-emerald-400 font-extrabold text-xs mb-3">
+            65% Comissões (Revenue River Default Commish)
+          </div>
+          <div class="grid grid-cols-3 gap-1.5 text-[10px] font-mono">
+            <a href="https://dailyhealthreviewus.com/showcase/primebiome" target="_blank" class="bg-emerald-950/80 hover:bg-emerald-900 text-emerald-300 border border-emerald-500/30 text-center py-1.5 rounded transition font-bold">Showcase</a>
+            <a href="https://dailyhealthreviewus.com/primebiome-gut-skin-axis-report" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-cyan-300 text-center py-1.5 rounded transition">Editorial</a>
+            <a href="https://dailyhealthreviewus.com/go/primebiome" target="_blank" class="bg-amber-950/80 hover:bg-amber-900 text-amber-300 border border-amber-500/30 text-center py-1.5 rounded transition font-bold">/go/primebiome</a>
+          </div>
+        </div>
+
+        <!-- VIP Card 3: All Day Slimming Tea -->
+        <div class="bg-slate-900/90 border border-amber-500/40 rounded-xl p-4 hover:border-amber-400 transition shadow">
+          <div class="flex items-start justify-between mb-2">
+            <span class="text-xs font-black text-white flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span> All Day Slimming Tea™
+            </span>
+            <span class="bg-amber-500/20 text-amber-300 text-[10px] font-bold px-2 py-0.5 rounded border border-amber-500/40">Vendor: allslimtea</span>
+          </div>
+          <div class="text-emerald-400 font-extrabold text-xs mb-3">
+            65% Front-End • 55% 1º Upsell • 50% Upsells
+          </div>
+          <div class="grid grid-cols-3 gap-1.5 text-[10px] font-mono">
+            <a href="https://dailyhealthreviewus.com/showcase/all-day-slimming-tea" target="_blank" class="bg-emerald-950/80 hover:bg-emerald-900 text-emerald-300 border border-emerald-500/30 text-center py-1.5 rounded transition font-bold">Showcase</a>
+            <a href="https://dailyhealthreviewus.com/all-day-slimming-tea-report" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-cyan-300 text-center py-1.5 rounded transition">Editorial</a>
+            <a href="https://dailyhealthreviewus.com/go/slimmingtea" target="_blank" class="bg-amber-950/80 hover:bg-amber-900 text-amber-300 border border-amber-500/30 text-center py-1.5 rounded transition font-bold">/go/slimmingtea</a>
+          </div>
+        </div>
+
+        <!-- VIP Card 4: Cardio Slim -->
+        <div class="bg-slate-900/90 border border-blue-500/40 rounded-xl p-4 hover:border-blue-400 transition shadow">
+          <div class="flex items-start justify-between mb-2">
+            <span class="text-xs font-black text-white flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-blue-400"></span> Cardio Slim™ Whitelisted
+            </span>
+            <span class="bg-blue-500/20 text-blue-300 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-500/40">Vendor: cardioslim</span>
+          </div>
+          <div class="text-emerald-400 font-extrabold text-xs mb-3">
+            Whitelisted VIP Rates (Até $210 CPA • AOV $300+)
+          </div>
+          <div class="grid grid-cols-3 gap-1.5 text-[10px] font-mono">
+            <a href="https://dailyhealthreviewus.com/showcase/cardioslim" target="_blank" class="bg-emerald-950/80 hover:bg-emerald-900 text-emerald-300 border border-emerald-500/30 text-center py-1.5 rounded transition font-bold">Showcase</a>
+            <a href="https://dailyhealthreviewus.com/cardioslim-tea-cardio-support-report" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-cyan-300 text-center py-1.5 rounded transition">Editorial</a>
+            <a href="https://dailyhealthreviewus.com/go/cardioslim" target="_blank" class="bg-amber-950/80 hover:bg-amber-900 text-amber-300 border border-amber-500/30 text-center py-1.5 rounded transition font-bold">/go/cardioslim</a>
+          </div>
+        </div>
+
+        <!-- VIP Card 5: FemiCore -->
+        <div class="bg-slate-900/90 border border-rose-500/40 rounded-xl p-4 hover:border-rose-400 transition shadow">
+          <div class="flex items-start justify-between mb-2">
+            <span class="text-xs font-black text-white flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-rose-400"></span> FemiCore™ 65% VIP
+            </span>
+            <span class="bg-rose-500/20 text-rose-300 text-[10px] font-bold px-2 py-0.5 rounded border border-rose-500/40">Vendor: femicore</span>
+          </div>
+          <div class="text-emerald-400 font-extrabold text-xs mb-3">
+            65% Comissões (Revenue River VIP)
+          </div>
+          <div class="grid grid-cols-3 gap-1.5 text-[10px] font-mono">
+            <a href="https://dailyhealthreviewus.com/showcase/femicore" target="_blank" class="bg-emerald-950/80 hover:bg-emerald-900 text-emerald-300 border border-emerald-500/30 text-center py-1.5 rounded transition font-bold">Showcase</a>
+            <a href="https://dailyhealthreviewus.com/femicore-pelvic-health-report" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-cyan-300 text-center py-1.5 rounded transition">Editorial</a>
+            <a href="https://dailyhealthreviewus.com/go/femicore" target="_blank" class="bg-amber-950/80 hover:bg-amber-900 text-amber-300 border border-amber-500/30 text-center py-1.5 rounded transition font-bold">/go/femicore</a>
+          </div>
+        </div>
+
+        <!-- VIP Card 6: Neotonics -->
+        <div class="bg-slate-900/90 border border-purple-500/40 rounded-xl p-4 hover:border-purple-400 transition shadow">
+          <div class="flex items-start justify-between mb-2">
+            <span class="text-xs font-black text-white flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-purple-400"></span> Neotonics™ 65% VIP
+            </span>
+            <span class="bg-purple-500/20 text-purple-300 text-[10px] font-bold px-2 py-0.5 rounded border border-purple-500/40">Vendor: neotonics</span>
+          </div>
+          <div class="text-emerald-400 font-extrabold text-xs mb-3">
+            65% Comissões (Revenue River VIP)
+          </div>
+          <div class="grid grid-cols-3 gap-1.5 text-[10px] font-mono">
+            <a href="https://dailyhealthreviewus.com/showcase/neotonics" target="_blank" class="bg-emerald-950/80 hover:bg-emerald-900 text-emerald-300 border border-emerald-500/30 text-center py-1.5 rounded transition font-bold">Showcase</a>
+            <a href="https://dailyhealthreviewus.com/neotonics-skin-gut-report" target="_blank" class="bg-slate-800 hover:bg-slate-700 text-cyan-300 text-center py-1.5 rounded transition">Editorial</a>
+            <a href="https://dailyhealthreviewus.com/go/neotonics" target="_blank" class="bg-amber-950/80 hover:bg-amber-900 text-amber-300 border border-amber-500/30 text-center py-1.5 rounded transition font-bold">/go/neotonics</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
     <!-- Active Campaigns / Product Links Table -->
     <div class="card-glow rounded-2xl p-6 shadow-xl border border-slate-800">
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
@@ -171,6 +304,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         <div class="flex flex-wrap items-center gap-2">
           <!-- Filter Buttons -->
           <button onclick="filterTable('all')" id="btn-filter-all" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow">Todos (36)</button>
+          <button onclick="filterTable('whitelist')" id="btn-filter-wl" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 hover:bg-amber-600 hover:text-white transition">⭐ VIP Whitelist (6)</button>
           <button onclick="filterTable('clickbank')" id="btn-filter-cb" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">ClickBank (26)</button>
           <button onclick="filterTable('digistore')" id="btn-filter-ds" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">Digistore24 (10)</button>
           
@@ -361,10 +495,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             </tr>
 
             <!-- 8. Cardio Slim Tea -->
-            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank">
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank" data-whitelist="true">
               <td class="p-3.5 text-slate-500 font-mono">08</td>
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-blue-400"></span> Cardio Slim Tea™ (VIP Whitelist)
+                <span class="w-2.5 h-2.5 rounded-full bg-blue-400"></span> Cardio Slim Tea™ <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[9px] font-black px-1.5 py-0.5 rounded ml-1">VIP WHITELIST</span>
               </td>
               <td class="p-3.5"><span class="badge-cb text-[10px] font-bold px-2 py-0.5 rounded">ClickBank</span></td>
               <td class="p-3.5 text-slate-300">Saúde Cardiovascular, Pressão 120/80 &amp; Homocisteína</td>
@@ -407,14 +541,14 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             </tr>
 
             <!-- 10. Neotonics -->
-            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank">
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank" data-whitelist="true">
               <td class="p-3.5 text-slate-500 font-mono">10</td>
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-rose-400"></span> Neotonics™ (Skin &amp; Gut)
+                <span class="w-2.5 h-2.5 rounded-full bg-purple-400"></span> Neotonics™ (Skin &amp; Gut) <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[9px] font-black px-1.5 py-0.5 rounded ml-1">VIP WHITELIST 65%</span>
               </td>
               <td class="p-3.5"><span class="badge-cb text-[10px] font-bold px-2 py-0.5 rounded">ClickBank</span></td>
               <td class="p-3.5 text-slate-300">Renovação Celular da Pele &amp; Microbioma</td>
-              <td class="p-3.5 text-emerald-400 font-bold">VIP Group Bump (AOV $240+, EPC $3.00+)</td>
+              <td class="p-3.5 text-emerald-400 font-bold">65% RevShare (Revenue River VIP)</td>
               <td class="p-3.5">
                 <a href="https://dailyhealthreviewus.com/neotonics-skin-gut-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
                   /neotonics-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
@@ -499,14 +633,14 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             </tr>
 
             <!-- 14. All Day Slimming Tea -->
-            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank">
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank" data-whitelist="true">
               <td class="p-3.5 text-slate-500 font-mono">14</td>
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> All Day Slimming Tea™
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span> All Day Slimming Tea™ <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[9px] font-black px-1.5 py-0.5 rounded ml-1">VIP WHITELIST 65%</span>
               </td>
               <td class="p-3.5"><span class="badge-cb text-[10px] font-bold px-2 py-0.5 rounded">ClickBank</span></td>
               <td class="p-3.5 text-slate-300">Metabolismo Matinal/Noturno &amp; Desintoxicação</td>
-              <td class="p-3.5 text-emerald-400 font-bold">65% FE / 50% Upsells (VIP Aprovado)</td>
+              <td class="p-3.5 text-emerald-400 font-bold">65% FE • 55% 1º Upsell • 50% Upsells</td>
               <td class="p-3.5">
                 <a href="https://dailyhealthreviewus.com/all-day-slimming-tea-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
                   /slimming-tea-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
@@ -522,14 +656,14 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             </tr>
 
             <!-- 15. FemiCore -->
-            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank">
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank" data-whitelist="true">
               <td class="p-3.5 text-slate-500 font-mono">15</td>
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-rose-400"></span> FemiCore™
+                <span class="w-2.5 h-2.5 rounded-full bg-rose-400"></span> FemiCore™ <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[9px] font-black px-1.5 py-0.5 rounded ml-1">VIP WHITELIST 65%</span>
               </td>
               <td class="p-3.5"><span class="badge-cb text-[10px] font-bold px-2 py-0.5 rounded">ClickBank</span></td>
               <td class="p-3.5 text-slate-300">Saúde da Bexiga Feminina &amp; Microbioma Pélvico</td>
-              <td class="p-3.5 text-emerald-400 font-bold">$120.00 a $145.00</td>
+              <td class="p-3.5 text-emerald-400 font-bold">65% RevShare (Revenue River VIP)</td>
               <td class="p-3.5">
                 <a href="https://dailyhealthreviewus.com/femicore-pelvic-health-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
                   /femicore-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
@@ -982,10 +1116,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             </tr>
 
             <!-- 35. Yu Sleep -->
-            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank">
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank" data-whitelist="true">
               <td class="p-3.5 text-slate-500 font-mono">35</td>
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-indigo-400"></span> Yu Sleep™ Deep Rest
+                <span class="w-2.5 h-2.5 rounded-full bg-indigo-400"></span> Yu Sleep™ Deep Rest <span class="bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 text-[9px] font-black px-1.5 py-0.5 rounded ml-1">SUPER AFFILIATE VIP</span>
               </td>
               <td class="p-3.5"><span class="badge-cb text-[10px] font-bold px-2 py-0.5 rounded">ClickBank</span></td>
               <td class="p-3.5 text-slate-300">Gotas Sublinguais / Cereja Azeda &amp; Despertares 3h</td>
@@ -1005,14 +1139,14 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             </tr>
 
             <!-- 36. PrimeBiome -->
-            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank">
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="clickbank" data-whitelist="true">
               <td class="p-3.5 text-slate-500 font-mono">36</td>
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> PrimeBiome™ Gut &amp; Skin
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> PrimeBiome™ Gut &amp; Skin <span class="bg-amber-500/20 text-amber-300 border border-amber-500/40 text-[9px] font-black px-1.5 py-0.5 rounded ml-1">VIP WHITELIST 65%</span>
               </td>
               <td class="p-3.5"><span class="badge-cb text-[10px] font-bold px-2 py-0.5 rounded">ClickBank</span></td>
               <td class="p-3.5 text-slate-300">Gomas Probióticas / Eixo Intestino-Pele &amp; Rugas</td>
-              <td class="p-3.5 text-emerald-400 font-bold">$125.00 a $165.00 (65%)</td>
+              <td class="p-3.5 text-emerald-400 font-bold">65% RevShare (Revenue River VIP)</td>
               <td class="p-3.5">
                 <a href="https://dailyhealthreviewus.com/primebiome-gut-skin-axis-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
                   /primebiome-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
@@ -1076,28 +1210,34 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       });
     }
 
-    // Filter by platform
+    // Filter by platform and whitelist
     function filterTable(platform) {
       const rows = document.querySelectorAll('.product-row');
       const btnAll = document.getElementById('btn-filter-all');
+      const btnWl = document.getElementById('btn-filter-wl');
       const btnCb = document.getElementById('btn-filter-cb');
       const btnDs = document.getElementById('btn-filter-ds');
       
       // Reset button styles
-      [btnAll, btnCb, btnDs].forEach(b => {
-        b.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700';
+      [btnAll, btnWl, btnCb, btnDs].forEach(b => {
+        if (b) b.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700';
       });
 
       if (platform === 'all') {
-        btnAll.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow';
+        if (btnAll) btnAll.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow';
         rows.forEach(r => r.style.display = '');
+      } else if (platform === 'whitelist') {
+        if (btnWl) btnWl.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500 text-slate-950 font-black shadow';
+        rows.forEach(r => {
+          r.style.display = (r.getAttribute('data-whitelist') === 'true') ? '' : 'none';
+        });
       } else if (platform === 'clickbank') {
-        btnCb.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-600 text-white shadow';
+        if (btnCb) btnCb.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-600 text-white shadow';
         rows.forEach(r => {
           r.style.display = (r.getAttribute('data-platform') === 'clickbank') ? '' : 'none';
         });
       } else if (platform === 'digistore') {
-        btnDs.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-600 text-white shadow';
+        if (btnDs) btnDs.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-600 text-white shadow';
         rows.forEach(r => {
           r.style.display = (r.getAttribute('data-platform') === 'digistore') ? '' : 'none';
         });
