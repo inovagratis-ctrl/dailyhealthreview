@@ -1162,8 +1162,8 @@ class DashboardHandler(SimpleHTTPRequestHandler):
                 self.wfile.write(json.dumps({
                     "status": "ONLINE",
                     "port": PORT,
-                    "products_count": 25,
-                    "showcases_count": 25,
+                    "products_count": 36,
+                    "showcases_count": 36,
                     "nickname": ACCOUNT_NICKNAME
                 }).encode("utf-8"))
             else:
@@ -1177,11 +1177,11 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             print(f"Erro em do_GET: {e}")
 
 def start_server():
-    server = HTTPServer(('127.0.0.1', PORT), DashboardHandler)
+    server = HTTPServer(('0.0.0.0', PORT), DashboardHandler)
     print("\n=======================================================")
     print("[+] CLICKBANK & DIGISTORE LIVE SALES DASHBOARD ATIVO!")
     print("[+] API Status: ONLINE (Conectada a ClickBank REST 1.3)")
-    print(f"[+] 25 PRODUTOS & SHOWCASES ATUALIZADOS")
+    print(f"[+] 36 PRODUTOS & SHOWCASES ATUALIZADOS")
     print(f"[+] Acesse no seu navegador: http://localhost:{PORT}")
     print("=======================================================\n")
     server.serve_forever()
