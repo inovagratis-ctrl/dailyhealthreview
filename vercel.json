@@ -228,6 +228,16 @@
       "permanent": false
     },
     {
+      "source": "/go/livpure",
+      "destination": "https://00bb409gwihe9v8cnuxlxzcu4l.hop.clickbank.net",
+      "permanent": false
+    },
+    {
+      "source": "/go/liv-pure",
+      "destination": "https://00bb409gwihe9v8cnuxlxzcu4l.hop.clickbank.net",
+      "permanent": false
+    },
+    {
       "source": "/01_Pagina_Inicial_Portal_Home.html",
       "destination": "/",
       "permanent": true
