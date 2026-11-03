@@ -83,5 +83,9 @@
 /privacy/terms-of-service.html /terms 301
 /privacy/affiliate-disclosure.html /disclosure 301
 /terms/privacy-policy.html /privacy 301
-/disclosure/privacy-policy.html /privacy 301
+# Claire Evans Recipes Rewrites
+/claire/flourless-blueberry-cake /claire/flourless-blueberry-cake/index.html 200
+/claire/cottage-cheese-cloud-bread /claire/cottage-cheese-cloud-bread/index.html 200
+/claire/tart-cherry-sleep-mocktail /claire/tart-cherry-sleep-mocktail/index.html 200
+/claire/golden-ginger-chia-gut-reset /claire/golden-ginger-chia-gut-reset/index.html 200
 
