@@ -26,13 +26,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     body {
       font-family: 'Plus Jakarta Sans', sans-serif;
       color: #2D3748;
-      background-color: #FBF9F5;
+      background-color: #FAF8F5;
     }
     .font-serif-luxury {
       font-family: 'Cormorant Garamond', Georgia, serif;
@@ -101,7 +101,7 @@
       
       <!-- Brand Logo with Botanical Leaf Icon -->
       <a href="/claire" class="flex items-center gap-2.5 group">
-        <!-- SVG Olive / Botanical Branch -->
+        <!-- SVG Botanical Branch -->
         <svg class="w-6 h-6 text-[#728B70] transition transform group-hover:rotate-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
           <path d="M12 2C6.5 2 2 6.5 2 12c0 2.5 1 5 3 7l7-7 7 7c2-2 3-4.5 3-7 0-5.5-4.5-10-10-10z" fill="#728B70" fill-opacity="0.15"/>
           <path d="M12 2v20M8 7c1.5-1 3.5-1 5 0M6 12c2-1 4-1 6 0M8 17c1.5-1 3.5-1 5 0"/>
@@ -128,8 +128,10 @@
               <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
           </button>
-          <a href="/claire" class="text-[11px] font-bold uppercase tracking-wider text-stone-700 bg-stone-100 hover:bg-stone-200 px-3 py-1.5 rounded-full transition">
-            Claire's Hub
+          
+          <a href="/claire" class="inline-flex items-center gap-2 text-xs font-semibold text-stone-700 bg-stone-100 hover:bg-stone-200 px-3 py-1.5 rounded-full transition">
+            <img src="/images/claire-evans.jpg" alt="Claire Evans" class="w-5 h-5 rounded-full object-cover">
+            <span>Claire's Hub</span>
           </a>
         </div>
 
@@ -172,13 +174,27 @@
             </span>
           </div>
 
+          <!-- Author Byline with Claire's Photo -->
+          <div class="flex items-center gap-3 pt-1 pb-1">
+            <img 
+              src="/images/claire-evans.jpg" 
+              alt="Claire Evans" 
+              class="w-9 h-9 rounded-full object-cover border-2 border-white shadow-sm"
+            >
+            <div class="text-xs">
+              <span class="font-bold text-stone-900">Claire Evans</span>
+              <span class="text-stone-400 mx-1">•</span>
+              <span class="text-stone-500">51 &amp; Glowing Naturally</span>
+            </div>
+          </div>
+
           <!-- Subtitle -->
           <p class="text-stone-600 text-sm sm:text-base leading-relaxed pt-1">
             Naturally sweet, tender and bursting with blueberries.
           </p>
 
           <!-- Metrics Bar (Prep, Cook, Servings with Dividers) -->
-          <div class="flex items-center gap-4 sm:gap-6 pt-3 pb-2 text-stone-700">
+          <div class="flex items-center gap-4 sm:gap-6 pt-2 pb-2 text-stone-700">
             <!-- Prep -->
             <div class="flex items-center gap-2">
               <svg class="w-4 h-4 text-stone-500" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
@@ -236,7 +252,7 @@
         <div class="lg:col-span-7">
           <div class="relative rounded-2xl overflow-hidden shadow-lg border border-stone-200/80 bg-white">
             <img 
-              src="./images/Cena_05_Close_Fatiando_Bolo_Assado.jpg" 
+              src="/claire/flourless-blueberry-cake/images/Cena_05_Close_Fatiando_Bolo_Assado.jpg" 
               alt="Flourless Blueberry Banana Cake sliced on rustic board with fresh blueberries" 
               class="w-full h-auto object-cover max-h-[460px] sm:max-h-[520px]"
             >
@@ -453,11 +469,11 @@
         <!-- Right: Process Photos Grid -->
         <div class="lg:col-span-4 space-y-4">
           <div class="rounded-xl overflow-hidden border border-stone-200 shadow-xs">
-            <img src="./images/Cena_02_Claire_Massa_Iogurte_Mel.jpg" alt="Whisking the wet ingredients" class="w-full h-44 object-cover">
+            <img src="/claire/flourless-blueberry-cake/images/Cena_02_Claire_Massa_Iogurte_Mel.jpg" alt="Whisking the wet ingredients" class="w-full h-44 object-cover">
             <p class="text-[11px] text-stone-500 p-2 text-center bg-stone-50 font-medium">Whisking bananas, eggs &amp; Greek yogurt</p>
           </div>
           <div class="rounded-xl overflow-hidden border border-stone-200 shadow-xs">
-            <img src="./images/Cena_03_Close_Salpicando_Mirtilos.jpg" alt="Folding in fresh blueberries" class="w-full h-44 object-cover">
+            <img src="/claire/flourless-blueberry-cake/images/Cena_03_Close_Salpicando_Mirtilos.jpg" alt="Folding in fresh blueberries" class="w-full h-44 object-cover">
             <p class="text-[11px] text-stone-500 p-2 text-center bg-stone-50 font-medium">Folding juicy blueberries into the loaf</p>
           </div>
         </div>
@@ -467,47 +483,117 @@
     </section>
 
     <!-- ======================================================== -->
-    <!-- 5. ELEGANT EDITORIAL ROUTINE CARD (AFFILIATE BRIDGE)      -->
+    <!-- 5. REFINED EDITORIAL WELLNESS PAIRING (AFFILIATE BRIDGE)  -->
     <!-- ======================================================== -->
-    <aside class="my-10 bg-[#FAF8F5] rounded-2xl border border-stone-200/90 shadow-sm p-6 sm:p-8 no-print">
-      <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.15em] text-[#728B70] mb-2">
-        <i class="fa-solid fa-sparkles text-xs"></i>
-        <span>Claire's Daily Wellness Pairing</span>
-      </div>
+    <aside class="my-12 bg-white rounded-2xl border border-stone-200/90 shadow-sm p-6 sm:p-9 no-print relative overflow-hidden">
+      <!-- Decorative subtle warm top line -->
+      <div class="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#728B70] via-[#14283A] to-[#E5A823]"></div>
 
-      <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 mt-4">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 sm:gap-8 items-center">
         
-        <!-- Clean Product Bottle -->
-        <div class="w-28 sm:w-36 flex-shrink-0">
-          <img 
-            src="./images/neotonics_bottle.png" 
-            alt="Neotonics daily gut-skin chewable" 
-            class="w-full h-auto max-h-36 object-contain mx-auto drop-shadow-sm"
-          >
+        <!-- Left: Product Bottle & Claire Avatar Overlay -->
+        <div class="md:col-span-4 flex items-center justify-center">
+          <div class="relative inline-block">
+            <!-- Neotonics Clean Bottle -->
+            <img 
+              src="/claire/flourless-blueberry-cake/images/neotonics_bottle.png" 
+              alt="Neotonics daily gut-skin chewable" 
+              class="w-32 sm:w-40 h-auto object-contain mx-auto drop-shadow-md transform hover:scale-105 transition duration-300"
+            >
+            <!-- Claire Verified Badge Overlay -->
+            <div class="absolute -bottom-2 -right-2 bg-white rounded-full p-1 shadow-md border border-stone-200 flex items-center gap-1.5 pr-2.5">
+              <img src="/images/claire-evans.jpg" alt="Claire" class="w-7 h-7 rounded-full object-cover">
+              <span class="text-[10px] font-bold text-stone-800">Claire's Pick</span>
+            </div>
+          </div>
         </div>
 
-        <!-- Editorial Story & Action -->
-        <div class="text-left text-sm text-stone-700 leading-relaxed flex-grow">
-          <h3 class="font-serif-luxury text-2xl font-bold text-[#14283A] mb-2">
+        <!-- Right: Copy, Social Proof & Minimalist Button -->
+        <div class="md:col-span-8 text-left space-y-3">
+          
+          <!-- Category Pill -->
+          <div class="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-[0.16em] text-[#728B70] bg-[#F3F6F2] px-3 py-1 rounded-full">
+            <i class="fa-solid fa-sparkles text-[10px]"></i>
+            <span>Claire's Daily Wellness Pairing</span>
+          </div>
+
+          <!-- Headline -->
+          <h3 class="font-serif-luxury text-2xl sm:text-3xl font-bold text-[#14283A] leading-tight">
             The 60-Second Ritual I Pair With This Loaf
           </h3>
-          <p class="text-xs sm:text-sm text-stone-600 mb-3">
-            <em>"While this blueberry loaf floods your cells with antioxidants, our cellular turnover slows down by over 50% after 40. That's why I pair my morning slice with one daily <strong>Neotonics</strong> probiotic chewable. It delivers 500 million specialized cellular probiotics that support the gut-skin axis to keep mature skin firm and plump from within."</em>
+
+          <!-- Rating Stars -->
+          <div class="flex items-center gap-2 text-xs text-stone-500">
+            <div class="flex text-[#E5A823] text-xs">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <span class="font-semibold text-stone-800">4.9/5</span>
+            <span class="text-stone-300">|</span>
+            <span>Over 18,700 women 40+</span>
+          </div>
+
+          <!-- Editorial Quote -->
+          <p class="text-stone-600 text-xs sm:text-sm leading-relaxed italic border-l-2 border-[#728B70]/60 pl-3.5 my-2">
+            "While this blueberry loaf floods your cells with antioxidants, our cellular turnover slows down by over 50% after 40. That's why I pair my morning slice with one daily Neotonics probiotic chewable. It delivers 500 million specialized cellular probiotics that support the gut-skin axis to keep mature skin firm and plump from within."
           </p>
 
-          <a 
-            href="/go/neotonics" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            class="inline-flex items-center gap-2 bg-[#14283A] hover:bg-[#0D1C2A] text-white text-xs font-bold uppercase tracking-[0.1em] px-5 py-3 rounded-lg shadow-sm transition"
-          >
-            <span>Learn More About Claire's Morning Chewable</span>
-            <i class="fa-solid fa-arrow-right text-[10px]"></i>
-          </a>
+          <!-- Action Button -->
+          <div class="pt-2">
+            <a 
+              href="/go/neotonics" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              class="inline-flex items-center justify-center gap-2 bg-[#14283A] hover:bg-[#0D1C2A] text-white text-xs sm:text-sm font-bold uppercase tracking-[0.1em] px-6 py-3.5 rounded-lg shadow-sm transition transform hover:-translate-y-0.5"
+            >
+              <span>Learn More About Claire's Morning Chewable</span>
+              <i class="fa-solid fa-arrow-right text-[11px]"></i>
+            </a>
+            <span class="block text-[11px] text-stone-400 mt-1.5">
+              60-Day 100% money-back guarantee • Official presentation
+            </span>
+          </div>
+
         </div>
 
       </div>
     </aside>
+
+    <!-- ======================================================== -->
+    <!-- 6. "MEET CLAIRE" AUTHOR CARD (STANDARD IN TOP FOOD BLOGS) -->
+    <!-- ======================================================== -->
+    <section class="my-10 bg-white rounded-2xl border border-stone-200/90 shadow-sm p-6 sm:p-8 no-print">
+      <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 text-center sm:text-left">
+        <img 
+          src="/images/claire-evans.jpg" 
+          alt="Claire Evans (@claire.matureskin)" 
+          class="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover border-4 border-stone-100 shadow-sm flex-shrink-0"
+        >
+        <div class="space-y-2 flex-grow">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h4 class="font-serif-luxury text-2xl font-bold text-[#14283A]">Hi, I'm Claire!</h4>
+              <p class="text-xs font-semibold text-[#728B70]">51 &amp; Glowing Naturally • Cellular Health Mentor</p>
+            </div>
+            <a 
+              href="https://instagram.com/claire.matureskin" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-1.5 text-xs font-semibold text-rose-600 bg-rose-50 border border-rose-200 px-3 py-1 rounded-full hover:bg-rose-100 transition self-center sm:self-auto"
+            >
+              <i class="fa-brands fa-instagram"></i>
+              <span>@claire.matureskin</span>
+            </a>
+          </div>
+          <p class="text-xs sm:text-sm text-stone-600 leading-relaxed">
+            I’m passionate about helping women over 40 reclaim their radiant skin, gut vitality, and natural collagen through wholesome kitchen recipes and science-backed daily cellular protocols. Welcome to my kitchen!
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Social Share Strip -->
     <div class="border-y border-stone-200 py-4 my-8 flex items-center justify-between no-print">
@@ -536,7 +622,7 @@
   </main>
 
   <!-- ======================================================== -->
-  <!-- 6. CLEAN MINIMALIST FOOTER                                -->
+  <!-- 7. CLEAN MINIMALIST FOOTER                                -->
   <!-- ======================================================== -->
   <footer class="bg-white border-t border-stone-200 text-stone-500 text-xs py-10 px-4 text-center no-print">
     <div class="max-w-4xl mx-auto space-y-3">
@@ -565,7 +651,7 @@
   </footer>
 
   <!-- ======================================================== -->
-  <!-- 7. INTERACTIVE JAVASCRIPT FOR SERVINGS & BOOKMARK        -->
+  <!-- 8. INTERACTIVE JAVASCRIPT FOR SERVINGS & BOOKMARK        -->
   <!-- ======================================================== -->
   <script>
     let currentServings = 6;
