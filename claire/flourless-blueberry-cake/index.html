@@ -86,11 +86,11 @@
     "recipeCategory": "Breakfast & Baking",
     "recipeCuisine": "American",
     "recipeIngredient": [
-      "3 ripe medium bananas",
-      "3 large eggs",
-      "1/2 cup Greek yogurt",
-      "1/3 cup honey",
-      "1 1/2 cups fresh blueberries"
+      "3 ripe medium bananas (~350g, peeled)",
+      "3 large pasture-raised eggs",
+      "1/2 cup (120g) plain Greek yogurt",
+      "1 1/2 cups (225g) fresh blueberries",
+      "Optional: 1 tbsp (15ml) raw organic honey"
     ]
   }
   </script>
@@ -347,37 +347,37 @@
       <!-- Card Body: Checkboxes on Left + Botanical Drawing & Quote on Right -->
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-8">
 
-        <!-- Left 7 Cols: Checkboxes & Ingredients List -->
+        <!-- Left 7 Cols: Checkboxes & Ingredients List (True 4 Core Ingredients + Dual Metric) -->
         <div class="lg:col-span-7">
           <ul class="space-y-4 text-stone-700 text-sm sm:text-base">
             <li class="flex items-center gap-3.5">
               <input type="checkbox" id="ing-1" class="w-5 h-5 rounded border-stone-300 text-[#14283A] focus:ring-stone-400 cursor-pointer">
               <label for="ing-1" class="cursor-pointer select-none">
-                <span id="ing-qty-1" class="font-medium">Ripe bananas (about 3 medium)</span>
+                <span id="ing-qty-1" class="font-medium">Ripe bananas (3 medium, ~350g, peeled)</span>
               </label>
             </li>
             <li class="flex items-center gap-3.5">
               <input type="checkbox" id="ing-2" class="w-5 h-5 rounded border-stone-300 text-[#14283A] focus:ring-stone-400 cursor-pointer">
               <label for="ing-2" class="cursor-pointer select-none">
-                <span id="ing-qty-2" class="font-medium">Eggs (3 large)</span>
+                <span id="ing-qty-2" class="font-medium">Eggs (3 large, pasture-raised)</span>
               </label>
             </li>
             <li class="flex items-center gap-3.5">
               <input type="checkbox" id="ing-3" class="w-5 h-5 rounded border-stone-300 text-[#14283A] focus:ring-stone-400 cursor-pointer">
               <label for="ing-3" class="cursor-pointer select-none">
-                <span id="ing-qty-3" class="font-medium">Greek yogurt (1/2 cup)</span>
+                <span id="ing-qty-3" class="font-medium">Plain Greek yogurt (1/2 cup / 120g)</span>
               </label>
             </li>
             <li class="flex items-center gap-3.5">
               <input type="checkbox" id="ing-4" class="w-5 h-5 rounded border-stone-300 text-[#14283A] focus:ring-stone-400 cursor-pointer">
               <label for="ing-4" class="cursor-pointer select-none">
-                <span id="ing-qty-4" class="font-medium">Honey (1/3 cup)</span>
+                <span id="ing-qty-4" class="font-medium">Fresh blueberries (1 1/2 cups / 225g)</span>
               </label>
             </li>
-            <li class="flex items-center gap-3.5">
+            <li class="flex items-center gap-3.5 pt-1 text-stone-500 text-xs sm:text-sm">
               <input type="checkbox" id="ing-5" class="w-5 h-5 rounded border-stone-300 text-[#14283A] focus:ring-stone-400 cursor-pointer">
               <label for="ing-5" class="cursor-pointer select-none">
-                <span id="ing-qty-5" class="font-medium">Fresh blueberries (1 1/2 cups)</span>
+                <span id="ing-qty-5" class="italic">Optional: Raw honey or maple syrup (1 tbsp / 15ml for extra sweetness)</span>
               </label>
             </li>
           </ul>
@@ -674,6 +674,9 @@
             <span class="block text-[11px] text-stone-400 mt-1.5">
               60-Day 100% money-back guarantee • Official presentation
             </span>
+            <p class="text-[10px] text-stone-400 mt-3 pt-2.5 border-t border-stone-100 leading-normal">
+              <span class="font-semibold text-stone-500">Affiliate Disclosure:</span> When you explore Claire's daily pairing through our link, Daily Health Review may earn a small referral commission at no additional cost to you. We only feature protocols Claire personally trusts.
+            </p>
           </div>
 
         </div>
@@ -798,23 +801,27 @@
 
       // Update Bananas
       const bananas = Math.round(3 * factor * 10) / 10;
-      document.getElementById('ing-qty-1').innerText = `Ripe bananas (about ${bananas} medium)`;
+      const bananaGrams = Math.round(350 * factor);
+      document.getElementById('ing-qty-1').innerText = `Ripe bananas (${bananas} medium, ~${bananaGrams}g, peeled)`;
 
       // Update Eggs
-      const eggs = Math.round(3 * factor * 10) / 10;
-      document.getElementById('ing-qty-2').innerText = `Eggs (${eggs} large)`;
+      const eggs = Math.round(3 * factor);
+      document.getElementById('ing-qty-2').innerText = `Eggs (${eggs} large, pasture-raised)`;
 
       // Update Yogurt
       const yogurt = formatFraction(0.5 * factor);
-      document.getElementById('ing-qty-3').innerText = `Greek yogurt (${yogurt} cup)`;
-
-      // Update Honey
-      const honey = formatFraction(0.333 * factor);
-      document.getElementById('ing-qty-4').innerText = `Honey (${honey} cup)`;
+      const yogurtGrams = Math.round(120 * factor);
+      document.getElementById('ing-qty-3').innerText = `Plain Greek yogurt (${yogurt} cup / ${yogurtGrams}g)`;
 
       // Update Blueberries
       const berries = formatFraction(1.5 * factor);
-      document.getElementById('ing-qty-5').innerText = `Fresh blueberries (${berries} cups)`;
+      const berriesGrams = Math.round(225 * factor);
+      document.getElementById('ing-qty-4').innerText = `Fresh blueberries (${berries} cups / ${berriesGrams}g)`;
+
+      // Update Optional Honey
+      const honeyTbsp = formatFraction(1 * factor);
+      const honeyMl = Math.round(15 * factor);
+      document.getElementById('ing-qty-5').innerText = `Optional: Raw honey or maple syrup (${honeyTbsp} tbsp / ${honeyMl}ml for extra sweetness)`;
     }
 
     function formatFraction(val) {
