@@ -40,10 +40,52 @@ def run_diagnostic():
         "total_products": len(blocks),
         "showcases_ok": 0,
         "editorials_ok": 0,
+        "advertorials_ok": 0,
         "redirects_ok": 0,
         "affiliate_tags_ok": 0,
         "issues": [],
         "products": []
+    }
+
+    ADVERTORIAL_MAP = {
+        "fimavyn": "fimavyn-metabolic-drops-secret",
+        "corevital": "corevital-berberine-burn-secret",
+        "collagen": "advanced-collagen-firmness-secret",
+        "jointeternal": "joint-eternal-mobility-secret",
+        "joint-eternal": "joint-eternal-mobility-secret",
+        "advanced-joint": "advanced-joint-cucumbers-secret",
+        "prostavive": "prostavive-prostate-flow-secret",
+        "javaburn": "javaburn-morning-coffee-secret",
+        "cardioslim": "cardioslim-tea-cardio-secret",
+        "spartamax": "spartamax-male-vitality-secret",
+        "neotonics": "neotonics-gut-skin-secret",
+        "glucotrust": "glucotrust-sleep-glucose-secret",
+        "phytomem": "phytomem-memory-recall-secret",
+        "advanced-amino": "advanced-amino-cellular-secret",
+        "slimming-tea": "alldayslimming-tea-detox-secret",
+        "all-day-slimming": "alldayslimming-tea-detox-secret",
+        "femicore": "femicore-pelvic-floor-secret",
+        "lymphtonic": "lymphtonic-drainage-secret",
+        "audifort": "audifort-hearing-clarity-secret",
+        "neurovera": "neurovera-nerve-calm-secret",
+        "visiflora": "visiflora-eye-retina-secret",
+        "circo2": "circo2-nitric-oxide-secret",
+        "memory": "advanced-memory-brain-secret",
+        "cleansesana": "cleansesana-colon-waste-secret",
+        "nagano": "nagano-japanese-tonic-secret",
+        "sugar-defender": "sugar-defender-glucose-secret",
+        "prodentim": "prodentim-purple-mineral-secret",
+        "kerassentials": "kerassentials-nail-clear-secret",
+        "nanodefense": "nanodefense-nanotech-drops-secret",
+        "synaptigen": "synaptigen-synapse-clarity-secret",
+        "metanail": "metanail-20in1-complex-secret",
+        "jointgenesis": "jointgenesis-synovial-fluid-secret",
+        "synevra": "synevra-lift-and-lock-secret",
+        "nitricboost": "nitricboost-male-stamina-secret",
+        "livpure": "livpure-liver-purification-secret",
+        "dentabiome": "dentabiome-postbiotic-mouth-secret",
+        "yusleep": "yusleep-deep-rest-secret",
+        "primebiome": "primebiome-gut-dermal-secret"
     }
 
     for b in blocks:
@@ -102,12 +144,25 @@ def run_diagnostic():
             else:
                 report["issues"].append(f"Sem ID de afiliado no destino: {title} ({target_dest})")
 
+        # 5. Check Story Advertorial (Arma 5)
+        secret_slug = ADVERTORIAL_MAP.get(pid)
+        adv_ok = False
+        if secret_slug:
+            adv_file = os.path.join(base_dir, secret_slug, "index.html")
+            adv_ok = os.path.exists(adv_file)
+        if adv_ok:
+            report["advertorials_ok"] += 1
+        else:
+            report["issues"].append(f"Story Advertorial ausente: {title} ({secret_slug})")
+
         report["products"].append({
             "id": pid,
             "title": title,
             "price": price,
             "showcase_ok": sc_ok,
             "editorial_ok": rev_ok,
+            "advertorial_ok": adv_ok,
+            "secret_slug": secret_slug,
             "go_route": go_route,
             "dest_url": target_dest or "N/A",
             "aff_ok": has_aff
@@ -128,6 +183,7 @@ def run_diagnostic():
         f.write(f"Total de Produtos Auditados : {report['total_products']}\n")
         f.write(f"Showcases 100% Online       : {report['showcases_ok']} / {report['total_products']}\n")
         f.write(f"Editoriais 100% Online      : {report['editorials_ok']} / {report['total_products']}\n")
+        f.write(f"Story Advertorials (Arma 5) : {report['advertorials_ok']} / {report['total_products']}\n")
         f.write(f"Rotas 302 Ativas            : {report['redirects_ok']} / {report['total_products']}\n")
         f.write(f"Links com Rastreamento Ativo: {report['affiliate_tags_ok']} / {report['total_products']}\n")
         f.write(f"Total de Alertas / Pendências: {len(report['issues'])}\n")
