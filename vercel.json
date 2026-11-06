@@ -70,7 +70,17 @@
     },
     {
       "source": "/arteries",
-      "destination": "https://whop.com/dailyhealthreviewus",
+      "destination": "https://whop.com/checkout/plan_R3KhepBcIF5ue",
+      "permanent": false
+    },
+    {
+      "source": "/clean-arteries",
+      "destination": "https://whop.com/dailyhealthreviewus/clean-arteries-protocol",
+      "permanent": false
+    },
+    {
+      "source": "/go/arteries",
+      "destination": "https://whop.com/checkout/plan_R3KhepBcIF5ue",
       "permanent": false
     },
     {
