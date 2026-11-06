@@ -25,7 +25,17 @@
     },
     {
       "source": "/somatic",
-      "destination": "https://whop.com/dailyhealthreviewus",
+      "destination": "https://whop.com/checkout/plan_MTM6NIMtBjqIh",
+      "permanent": false
+    },
+    {
+      "source": "/somatic-reset",
+      "destination": "https://whop.com/dailyhealthreviewus/somatic-reset",
+      "permanent": false
+    },
+    {
+      "source": "/go/somatic",
+      "destination": "https://whop.com/checkout/plan_MTM6NIMtBjqIh",
       "permanent": false
     },
     {
