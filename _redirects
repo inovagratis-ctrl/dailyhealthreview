@@ -1,5 +1,8 @@
 # Cloudflare Pages Redirects and Rewrites Configuration
 # Affiliate Bridge Redirects (Temporary 302/307)
+/protocol https://whop.com/dailyhealthreviewus/the-28-day-anti-aging-cell-renewal-protocoltm 302
+/claire/protocol https://whop.com/dailyhealthreviewus/the-28-day-anti-aging-cell-renewal-protocoltm 302
+/go/protocol https://whop.com/dailyhealthreviewus/the-28-day-anti-aging-cell-renewal-protocoltm 302
 /go/lymphtonic https://19a86z9ovajqhs57bex45l0flv.hop.clickbank.net 302
 /go/audifort https://6f9834zioammkt802al5tm4pf5.hop.clickbank.net 302
 /go/neurovera https://6fd8bc8jpfkil09mti3fybx058.hop.clickbank.net 302

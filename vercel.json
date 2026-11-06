@@ -14,6 +14,21 @@
   ],
   "redirects": [
     {
+      "source": "/protocol",
+      "destination": "https://whop.com/dailyhealthreviewus/the-28-day-anti-aging-cell-renewal-protocoltm",
+      "permanent": false
+    },
+    {
+      "source": "/claire/protocol",
+      "destination": "https://whop.com/dailyhealthreviewus/the-28-day-anti-aging-cell-renewal-protocoltm",
+      "permanent": false
+    },
+    {
+      "source": "/go/protocol",
+      "destination": "https://whop.com/dailyhealthreviewus/the-28-day-anti-aging-cell-renewal-protocoltm",
+      "permanent": false
+    },
+    {
       "source": "/go/corevital",
       "destination": "https://fee3bcwkoenpkxc8wj3htv7tas.hop.clickbank.net",
       "permanent": false
