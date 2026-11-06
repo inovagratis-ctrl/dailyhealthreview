@@ -55,7 +55,17 @@
     },
     {
       "source": "/heart",
-      "destination": "https://whop.com/dailyhealthreviewus",
+      "destination": "https://whop.com/checkout/plan_TplaHGlAQH4BO",
+      "permanent": false
+    },
+    {
+      "source": "/blood-pressure",
+      "destination": "https://whop.com/dailyhealthreviewus/blood-pressure-protocol",
+      "permanent": false
+    },
+    {
+      "source": "/go/heart",
+      "destination": "https://whop.com/checkout/plan_TplaHGlAQH4BO",
       "permanent": false
     },
     {
