@@ -40,7 +40,17 @@
     },
     {
       "source": "/cleanse",
-      "destination": "https://whop.com/dailyhealthreviewus",
+      "destination": "https://whop.com/checkout/plan_1jcKUJYSZyL0k",
+      "permanent": false
+    },
+    {
+      "source": "/parasite-cleanse",
+      "destination": "https://whop.com/dailyhealthreviewus/parasite-cleanse-blueprint",
+      "permanent": false
+    },
+    {
+      "source": "/go/cleanse",
+      "destination": "https://whop.com/checkout/plan_1jcKUJYSZyL0k",
       "permanent": false
     },
     {
