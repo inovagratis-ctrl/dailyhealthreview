@@ -19,6 +19,31 @@
       "permanent": false
     },
     {
+      "source": "/apothecary",
+      "destination": "https://whop.com/dailyhealthreviewus",
+      "permanent": false
+    },
+    {
+      "source": "/somatic",
+      "destination": "https://whop.com/dailyhealthreviewus",
+      "permanent": false
+    },
+    {
+      "source": "/cleanse",
+      "destination": "https://whop.com/dailyhealthreviewus",
+      "permanent": false
+    },
+    {
+      "source": "/heart",
+      "destination": "https://whop.com/dailyhealthreviewus",
+      "permanent": false
+    },
+    {
+      "source": "/arteries",
+      "destination": "https://whop.com/dailyhealthreviewus",
+      "permanent": false
+    },
+    {
       "source": "/claire/protocol",
       "destination": "https://whop.com/dailyhealthreviewus/the-28-day-anti-aging-cell-renewal-protocoltm",
       "permanent": false
