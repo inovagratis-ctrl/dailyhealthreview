@@ -1,0 +1,942 @@
+[
+  {
+    "id": "fimavyn",
+    "name": "FIMAVYN",
+    "platform": "BuyGoods",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/fimavyn"
+    ],
+    "showcase_prices": [
+      "$69",
+      "$120",
+      "$177",
+      "$30",
+      "$9.99"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/fimavyn"
+    ],
+    "editorial_prices": [
+      "$69",
+      "$120",
+      "$59",
+      "$177",
+      "$9.99"
+    ],
+    "go_route": "/go/fimavyn",
+    "final_dest": "https://fimavyn.com/text.html",
+    "aff_ok": false
+  },
+  {
+    "id": "corevital",
+    "name": "CoreVital Burn",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "https://dailyhealthreviewus.com/showcase/corevital",
+      "/go/corevital"
+    ],
+    "showcase_prices": [
+      "$29.90",
+      "$120",
+      "$49.95",
+      "$119.95",
+      "$179.40"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "mailto:support@corevitalnutra.com",
+      "/Imagens_Oficiais/corevital_burn_approved_label.png",
+      "/go/corevital"
+    ],
+    "editorial_prices": [
+      "$39.98",
+      "$119.95",
+      "$39.98/bottle"
+    ],
+    "go_route": "/go/corevital",
+    "final_dest": "https://corevitalnutra.com/burn/clickbank/",
+    "aff_ok": true
+  },
+  {
+    "id": "advanced-collagen",
+    "name": "Advanced Collagen PLUS",
+    "platform": "Digistore24",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/collagen"
+    ],
+    "showcase_prices": [
+      "$249.00",
+      "$41.50",
+      "$15",
+      "$134.85",
+      "$49.95"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/collagen"
+    ],
+    "editorial_prices": [
+      "$44.95",
+      "$41.50",
+      "$249.00",
+      "$50.70",
+      "$134.85"
+    ],
+    "go_route": "/go/collagen",
+    "final_dest": "https://www.advancedbionutritionals.com/DS24/Collagen/This-Simple-10-Second-Kitchen-Test/HD.htm#aff=eusimar72",
+    "aff_ok": true
+  },
+  {
+    "id": "joint-eternal",
+    "name": "JointEternal",
+    "platform": "Digistore24",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/jointeternal"
+    ],
+    "showcase_prices": [
+      "$147",
+      "$59",
+      "$120",
+      "$19.99",
+      "$177"
+    ],
+    "editorial_ok": false,
+    "editorial_ctas": [],
+    "editorial_prices": [],
+    "go_route": "/go/jointeternal",
+    "final_dest": "https://www.digistore24.com/redir/508842/eusimar72/",
+    "aff_ok": true
+  },
+  {
+    "id": "advanced-joint",
+    "name": "Advanced Joint Support",
+    "platform": "Digistore24",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/jointsupport"
+    ],
+    "showcase_prices": [
+      "$249.00",
+      "$50.70",
+      "$134.85",
+      "$49.95",
+      "$50"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/jointsupport"
+    ],
+    "editorial_prices": [
+      "$21.00",
+      "$72.00",
+      "$347.70",
+      "$57.95",
+      "$188.85"
+    ],
+    "go_route": "/go/jointsupport",
+    "final_dest": "https://www.advancedbionutritionals.com/DS24/Advanced-Joint/Beat-Joint-Pain-With-Cucumbers.htm#aff=eusimar72",
+    "aff_ok": true
+  },
+  {
+    "id": "prostavive",
+    "name": "ProstaVive",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/prostavive"
+    ],
+    "showcase_prices": [
+      "$714",
+      "$1",
+      "$19.99",
+      "$891",
+      "$49.95"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/prostavive"
+    ],
+    "editorial_prices": [
+      "$37",
+      "$59",
+      "$120",
+      "$960",
+      "$177"
+    ],
+    "go_route": "/go/prostavive",
+    "final_dest": "https://fdec819gulieco3cyb76w71v3h.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "java-burn",
+    "name": "Java Burn",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/javaburn"
+    ],
+    "showcase_prices": [
+      "$1",
+      "$19.99",
+      "$207",
+      "$394",
+      "$888"
+    ],
+    "editorial_ok": false,
+    "editorial_ctas": [],
+    "editorial_prices": [],
+    "go_route": "/go/javaburn",
+    "final_dest": "https://6319020gpebhb02coila-kru3j.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "cardioslim",
+    "name": "Cardio Slim Tea",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [],
+    "showcase_prices": [
+      "$600",
+      "$158",
+      "$49",
+      "$207",
+      "$294"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/cardioslim"
+    ],
+    "editorial_prices": [
+      "$69",
+      "$600",
+      "$140",
+      "$158",
+      "$79"
+    ],
+    "go_route": "/go/cardioslim",
+    "final_dest": "https://964c53zqs8lllzb6dngayqzeq4.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "spartamax",
+    "name": "SpartaMax",
+    "platform": "Digistore24",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/spartamax",
+      "https://dailyhealthreviewus.com/showcase/spartamax"
+    ],
+    "showcase_prices": [
+      "$19.99",
+      "$149",
+      "$600",
+      "$177",
+      "$447"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "https://dailyhealthreviewus.com/spartamax-vitality-gummies-report",
+      "/go/spartamax"
+    ],
+    "editorial_prices": [
+      "$59",
+      "$69",
+      "$197",
+      "$9.99",
+      "$79"
+    ],
+    "go_route": "/go/spartamax",
+    "final_dest": "https://getspartamax.com/#aff=eusimar72",
+    "aff_ok": true
+  },
+  {
+    "id": "neotonics",
+    "name": "Neotonics",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/neotonics"
+    ],
+    "showcase_prices": [
+      "$594",
+      "$69",
+      "$19.99",
+      "$120",
+      "$297"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/neotonics"
+    ],
+    "editorial_prices": [
+      "$160",
+      "$59",
+      "$69",
+      "$177",
+      "$79"
+    ],
+    "go_route": "/go/neotonics",
+    "final_dest": "https://1adc598rkgejfr0fleuao7jm4c.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "glucotrust",
+    "name": "GlucoTrust",
+    "platform": "Digistore24",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/glucotrust/"
+    ],
+    "showcase_prices": [
+      "$69",
+      "$177",
+      "$300",
+      "$49/bottle",
+      "$49"
+    ],
+    "editorial_ok": false,
+    "editorial_ctas": [],
+    "editorial_prices": [],
+    "go_route": "/go/glucotrust",
+    "final_dest": "https://www.checkout-ds24.com/redir/600906/eusimar72/",
+    "aff_ok": true
+  },
+  {
+    "id": "phytomem",
+    "name": "Phytomem One",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/phytomem"
+    ],
+    "showcase_prices": [
+      "$177",
+      "$200",
+      "$158",
+      "$434",
+      "$49/bottle"
+    ],
+    "editorial_ok": false,
+    "editorial_ctas": [],
+    "editorial_prices": [],
+    "go_route": "/go/phytomem",
+    "final_dest": "https://c25f303qn6ign-5duwwht5-s57.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "advanced-amino",
+    "name": "Advanced Amino Formula",
+    "platform": "Digistore24",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/amino"
+    ],
+    "showcase_prices": [
+      "$199.50",
+      "$33.25/bottle",
+      "$12",
+      "$40",
+      "$107.85"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/amino"
+    ],
+    "editorial_prices": [],
+    "go_route": "/go/amino",
+    "final_dest": "https://www.digistore24.com/redir/472629/eusimar72/",
+    "aff_ok": true
+  },
+  {
+    "id": "all-day-slimming-tea",
+    "name": "All Day Slimming Tea",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/slimmingtea"
+    ],
+    "showcase_prices": [
+      "$594",
+      "$128",
+      "$19.99",
+      "$120",
+      "$198"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/slimmingtea"
+    ],
+    "editorial_prices": [],
+    "go_route": "/go/slimmingtea",
+    "final_dest": "https://fed7803okemiewb5p6zakhpmdh.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "femicore",
+    "name": "FemiCore",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/femicore"
+    ],
+    "showcase_prices": [
+      "$537",
+      "$330",
+      "$1",
+      "$19.99",
+      "$780"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/femicore"
+    ],
+    "editorial_prices": [],
+    "go_route": "/go/femicore",
+    "final_dest": "https://0f72a06krdfg8n52tbm1tdusai.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "lymphtonic",
+    "name": "Lymph Tonic",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/lymphtonic"
+    ],
+    "showcase_prices": [
+      "$49/bottle",
+      "$207",
+      "$158",
+      "$294"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/lymphtonic"
+    ],
+    "editorial_prices": [
+      "$49",
+      "$158",
+      "$79",
+      "$69"
+    ],
+    "go_route": "/go/lymphtonic",
+    "final_dest": "https://19a86z9ovajqhs57bex45l0flv.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "audifort",
+    "name": "Audifort",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/audifort"
+    ],
+    "showcase_prices": [
+      "$537",
+      "$330",
+      "$1",
+      "$19.99",
+      "$780"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/audifort"
+    ],
+    "editorial_prices": [
+      "$49",
+      "$158",
+      "$79",
+      "$69"
+    ],
+    "go_route": "/go/audifort",
+    "final_dest": "https://6f9834zioammkt802al5tm4pf5.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "neurovera",
+    "name": "NeuroVera",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [],
+    "showcase_prices": [
+      "$594",
+      "$117",
+      "$420",
+      "$297",
+      "$180"
+    ],
+    "editorial_ok": false,
+    "editorial_ctas": [],
+    "editorial_prices": [],
+    "go_route": "/go/neurovera",
+    "final_dest": "https://6fd8bc8jpfkil09mti3fybx058.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "visiflora",
+    "name": "VisiFlora",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [],
+    "showcase_prices": [
+      "$67",
+      "$594",
+      "$97",
+      "$198",
+      "$297"
+    ],
+    "editorial_ok": false,
+    "editorial_ctas": [],
+    "editorial_prices": [],
+    "go_route": "/go/visiflora",
+    "final_dest": "https://51062z5fucqiis5oqcr2mm151a.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "circo2",
+    "name": "CircO2",
+    "platform": "Digistore24",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/circo2"
+    ],
+    "showcase_prices": [
+      "$249.00",
+      "$41.50",
+      "$134.85",
+      "$49.95",
+      "$50"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/circo2"
+    ],
+    "editorial_prices": [],
+    "go_route": "/go/circo2",
+    "final_dest": "https://www.digistore24.com/redir/538693/eusimar72/",
+    "aff_ok": true
+  },
+  {
+    "id": "advanced-memory",
+    "name": "Advanced Memory Formula",
+    "platform": "Digistore24",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/memory"
+    ],
+    "showcase_prices": [
+      "$249.00",
+      "$50.70",
+      "$134.85",
+      "$49.95",
+      "$50"
+    ],
+    "editorial_ok": false,
+    "editorial_ctas": [],
+    "editorial_prices": [],
+    "go_route": "/go/memory",
+    "final_dest": "https://www.digistore24.com/redir/599473/eusimar72/",
+    "aff_ok": true
+  },
+  {
+    "id": "cleansesana",
+    "name": "CleanseSana",
+    "platform": "Digistore24",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "https://dailyhealthreviewus.com/showcase/cleansesana",
+      "https://www.checkout-ds24.com/product/665413",
+      "https://www.checkout-ds24.com/product/665414",
+      "https://www.checkout-ds24.com/product/665412"
+    ],
+    "showcase_prices": [
+      "$147",
+      "$69",
+      "$197",
+      "$39/bottle",
+      "$234"
+    ],
+    "editorial_ok": false,
+    "editorial_ctas": [],
+    "editorial_prices": [],
+    "go_route": "/go/cleansesana",
+    "final_dest": "https://cleansesana.com/cleansesana-pdp-fe#aff=eusimar72",
+    "aff_ok": true
+  },
+  {
+    "id": "nagano-tonic",
+    "name": "Nagano Tonic",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/nagano"
+    ],
+    "showcase_prices": [
+      "$762",
+      "$119",
+      "$127",
+      "$19.99",
+      "$49.95"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/nagano"
+    ],
+    "editorial_prices": [
+      "$39/bottle"
+    ],
+    "go_route": "/go/nagano",
+    "final_dest": "https://06fe0-8qxlbmeo9jfi-fx24x4f.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "sugar-defender",
+    "name": "Sugar Defender",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/sugardefender"
+    ],
+    "showcase_prices": [
+      "$537",
+      "$330",
+      "$1",
+      "$19.99",
+      "$780"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/sugardefender"
+    ],
+    "editorial_prices": [],
+    "go_route": "/go/sugardefender",
+    "final_dest": "https://1bb1cc1ek8qf8sbh84dll9uk5s.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "prodentim",
+    "name": "ProDentim",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/prodentim"
+    ],
+    "showcase_prices": [
+      "$594",
+      "$69",
+      "$120",
+      "$297",
+      "$177"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/prodentim"
+    ],
+    "editorial_prices": [],
+    "go_route": "/go/prodentim",
+    "final_dest": "https://8e01330llbokexfevijb-nq74a.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "kerassentials",
+    "name": "Kerassentials",
+    "platform": "Digistore24",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/kerassentials"
+    ],
+    "showcase_prices": [
+      "$300",
+      "$294",
+      "$109",
+      "$177"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/kerassentials"
+    ],
+    "editorial_prices": [
+      "$59",
+      "$69",
+      "$177",
+      "$109",
+      "$49"
+    ],
+    "go_route": "/go/kerassentials",
+    "final_dest": "https://mykerassentials24.com/text2.php#aff=eusimar72",
+    "aff_ok": true
+  },
+  {
+    "id": "nanodefense",
+    "name": "NanoDefense Pro",
+    "platform": "Digistore24",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/nanodefensepro"
+    ],
+    "showcase_prices": [
+      "$300",
+      "$294",
+      "$164",
+      "$177"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/nanodefensepro"
+    ],
+    "editorial_prices": [
+      "$59",
+      "$69",
+      "$177",
+      "$55",
+      "$54"
+    ],
+    "go_route": "/go/nanodefensepro",
+    "final_dest": "https://nanodefensepro24.com/text.php#aff=eusimar72",
+    "aff_ok": true
+  },
+  {
+    "id": "synaptigen",
+    "name": "Synaptigen",
+    "platform": "Digistore24",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/synaptigen"
+    ],
+    "showcase_prices": [
+      "$69",
+      "$177",
+      "$300",
+      "$79",
+      "$89"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/synaptigen"
+    ],
+    "editorial_prices": [
+      "$247",
+      "$69",
+      "$207",
+      "$158",
+      "$79"
+    ],
+    "go_route": "/go/synaptigen",
+    "final_dest": "https://synaptigen24.com/text.php#aff=eusimar72",
+    "aff_ok": true
+  },
+  {
+    "id": "metanail",
+    "name": "Metanail Complex",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/metanail"
+    ],
+    "showcase_prices": [
+      "$187",
+      "$97",
+      "$434",
+      "$194",
+      "$294"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/metanail"
+    ],
+    "editorial_prices": [
+      "$187",
+      "$69",
+      "$97",
+      "$79",
+      "$434"
+    ],
+    "go_route": "/go/metanail",
+    "final_dest": "https://0073349hoglif-b7fgd1xgno6d.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "jointgenesis",
+    "name": "Joint Genesis",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/jointgenesis"
+    ],
+    "showcase_prices": [
+      "$234",
+      "$58",
+      "$438",
+      "$147"
+    ],
+    "editorial_ok": false,
+    "editorial_ctas": [],
+    "editorial_prices": [],
+    "go_route": "/go/jointgenesis",
+    "final_dest": "https://2f8a5c1kyapodw8dtg-rtcww4w.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "synevra",
+    "name": "Synevra",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/synevra"
+    ],
+    "showcase_prices": [
+      "$69",
+      "$196",
+      "$158",
+      "$434",
+      "$49"
+    ],
+    "editorial_ok": false,
+    "editorial_ctas": [],
+    "editorial_prices": [],
+    "go_route": "/go/synevra",
+    "final_dest": "https://8c500-yjt6pgjy4i5ari275n5t.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "nitricboost",
+    "name": "Nitric Boost Ultra",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/nitricboost"
+    ],
+    "showcase_prices": [
+      "$69",
+      "$19.99",
+      "$73.50",
+      "$177",
+      "$900"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/nitricboost",
+      "/showcase/nitricboost"
+    ],
+    "editorial_prices": [
+      "$59",
+      "$69",
+      "$420",
+      "$73.50",
+      "$177"
+    ],
+    "go_route": "/go/nitricboost",
+    "final_dest": "https://d549316ruicd8samq8xf6o8o6r.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "livpure",
+    "name": "Liv Pure",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/livpure"
+    ],
+    "showcase_prices": [
+      "$600",
+      "$158",
+      "$49",
+      "$207",
+      "$294"
+    ],
+    "editorial_ok": false,
+    "editorial_ctas": [],
+    "editorial_prices": [],
+    "go_route": "/go/livpure",
+    "final_dest": "https://00bb409gwihe9v8cnuxlxzcu4l.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "dentabiome",
+    "name": "DentaBiome",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/dentabiome"
+    ],
+    "showcase_prices": [
+      "$207",
+      "$158",
+      "$294",
+      "$900"
+    ],
+    "editorial_ok": false,
+    "editorial_ctas": [],
+    "editorial_prices": [],
+    "go_route": "/go/dentabiome",
+    "final_dest": "https://671272-iwcbjcy41kk86g4thhf.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "yusleep",
+    "name": "Yu Sleep",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/yusleep"
+    ],
+    "showcase_prices": [
+      "$59",
+      "$69",
+      "$120",
+      "$177",
+      "$49"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/yusleep",
+      "/showcase/yusleep"
+    ],
+    "editorial_prices": [
+      "$59",
+      "$69",
+      "$39/bottle",
+      "$39",
+      "$360"
+    ],
+    "go_route": "/go/yusleep",
+    "final_dest": "https://531ddc6kudhqaw4l-jo6qadvc7.hop.clickbank.net",
+    "aff_ok": true
+  },
+  {
+    "id": "primebiome",
+    "name": "PrimeBiome",
+    "platform": "ClickBank",
+    "showcase_ok": true,
+    "showcase_ctas": [
+      "/go/primebiome"
+    ],
+    "showcase_prices": [
+      "$358.00",
+      "$69",
+      "$1",
+      "$207",
+      "$780"
+    ],
+    "editorial_ok": true,
+    "editorial_ctas": [
+      "/go/primebiome",
+      "/showcase/primebiome"
+    ],
+    "editorial_prices": [
+      "$69",
+      "$207",
+      "$780",
+      "$158",
+      "$9.99"
+    ],
+    "go_route": "/go/primebiome",
+    "final_dest": "https://8feeba4gyffmgnd9whq0p3wdii.hop.clickbank.net",
+    "aff_ok": true
+  }
+]

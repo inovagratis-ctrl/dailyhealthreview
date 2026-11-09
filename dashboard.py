@@ -4,7 +4,7 @@ import json
 import time
 import urllib.request
 import urllib.error
-from http.server import HTTPServer, SimpleHTTPRequestHandler
+from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 import webbrowser
 import threading
 
@@ -22,7 +22,7 @@ def fetch_clickbank_orders():
         "User-Agent": "DailyHealthReview-Dashboard/1.0"
     })
     try:
-        with urllib.request.urlopen(req, timeout=8) as resp:
+        with urllib.request.urlopen(req, timeout=3) as resp:
             data_raw = resp.read().decode("utf-8")
             if not data_raw or data_raw.strip() == "null":
                 return {"success": True, "orders": [], "total_amount": 0.0, "total_count": 0}
@@ -2009,7 +2009,9 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             print(f"Erro em do_GET: {e}")
 
 def start_server():
-    server = HTTPServer(('0.0.0.0', PORT), DashboardHandler)
+    server = ThreadingHTTPServer(('0.0.0.0', PORT), DashboardHandler)
+    server.daemon_threads = True
+    server.allow_reuse_address = True
     print("\n=======================================================")
     print("[+] CLICKBANK & DIGISTORE LIVE SALES DASHBOARD ATIVO!")
     print("[+] API Status: ONLINE (Conectada a ClickBank REST 1.3)")

@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
 Disallow: /go/
+Disallow: /articles/
+Disallow: /official_*
+Disallow: /*TEMPLATE*
 
 Sitemap: https://dailyhealthreviewus.com/sitemap.xml

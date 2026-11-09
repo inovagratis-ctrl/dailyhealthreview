@@ -1,0 +1,93 @@
+{
+  "project_name": "Claire Evans - Ageless Kitchen 32s Video",
+  "flow_engine": "Google Veo / Google Cloud Vertex AI / Gemini VideoFX",
+  "target_format": {
+    "aspect_ratio": "9:16",
+    "resolution": "1080x1920",
+    "frame_rate": 30,
+    "total_scenes": 4,
+    "scene_duration_seconds": 8.0,
+    "total_duration_seconds": 32.0
+  },
+  "consistent_character_spec": {
+    "name": "Claire Evans",
+    "age": 51,
+    "appearance": "Chic shoulder-length platinum blonde bob with sleek side part, warm hazel-green eyes with gentle crow's feet and smile lines, glowing natural mature skin",
+    "wardrobe": "Rich warm terracotta wine-colored textured linen apron over a lightweight off-white cotton top with sleeves rolled up, delicate thin gold chain necklace, small gold hoop earrings",
+    "character_reference_image": "Claire_Character_Blueprint.jpg"
+  },
+  "scenes": [
+    {
+      "scene_number": 1,
+      "time_range": "00:00 - 00:08",
+      "duration_sec": 8.0,
+      "shot_type": "Medium close-up portrait, eye-level, gentle handheld drift",
+      "subject": "Claire Evans in her warm terracotta linen apron and gold necklace",
+      "action": "Claire stands at the kitchen island, holding a clear glass mixing bowl containing one boiled peeled potato and a halved ripe avocado. She gently presses a stainless steel masher into the bowl, looking directly into the camera with an authentic, joyful smile and natural lip-sync speech.",
+      "environment": "Sunlit luxury kitchen with white marble countertops, warm oak upper cabinets, soft morning light streaming through a large window in the background",
+      "lighting_and_atmosphere": "Soft cinematic directional daylight, shallow depth of field, warm organic color palette",
+      "dialogue": {
+        "speaker": "Claire Evans",
+        "voice_style": "Warm, articulate, mature, friendly American woman (50+)",
+        "speech_en": "If you're over fifty and want glowing skin without giving up warm bread, try this simple kitchen secret...",
+        "speech_pt": "Se você tem mais de 50 anos e quer uma pele radiante sem abrir mão do pão quentinho, experimente este segredo simples de cozinha..."
+      },
+      "screen_captions": ["WANT GLOWING SKIN?", "DITCH INFLAMMATORY BREAD", "TRY THIS SECRET"],
+      "google_veo_prompt": "Cinematic vertical 9:16 medium portrait of an elegant 51-year-old blonde woman named Claire, wearing a rich terracotta wine-colored linen apron and delicate gold necklace, standing in a bright sunlit marble kitchen. She holds a glass bowl with a boiled potato and halved avocado, gently mashing it with a stainless steel masher while speaking warmly and smiling directly at the camera. Natural facial expressions, soft window lighting, 8k resolution, authentic UGC lifestyle video."
+    },
+    {
+      "scene_number": 2,
+      "time_range": "00:08 - 00:16",
+      "duration_sec": 8.0,
+      "shot_type": "Overhead top-down macro shot, slow downward push-in",
+      "subject": "Culinary ingredients blending in clear glass bowl",
+      "action": "Inside the glass bowl on the white marble counter, mashed green avocado and potato are combined with a cracked farm egg, a dollop of thick Greek yogurt, a pinch of sea salt, and golden turmeric powder. A stainless steel whisk vigorously mixes the ingredients in smooth circular strokes, transforming them into a silky, pastel green-gold batter.",
+      "environment": "Clean white marble kitchen countertop with subtle grey veining, culinary preparation setup",
+      "lighting_and_atmosphere": "Bright diffused morning light, high-speed macro food texture, glistening fresh textures",
+      "dialogue": {
+        "speaker": "Claire Evans (Voiceover)",
+        "voice_style": "Instructional, enthusiastic, clear, mouthwatering cadence",
+        "speech_en": "Blend ripe avocado with tender sweet potato, probiotic Greek yogurt, an egg, and a touch of golden turmeric...",
+        "speech_pt": "Misture abacate maduro com batata-doce macia, iogurte grego probiótico, um ovo e um toque de cúrcuma dourada..."
+      },
+      "screen_captions": ["AVOCADO & SWEET POTATO", "PROBIOTIC GREEK YOGURT", "GOLDEN TURMERIC BLEND"],
+      "google_veo_prompt": "Vertical 9:16 macro top-down culinary shot over a clear glass bowl on a white marble counter. A stainless steel whisk rapidly beats together mashed avocado, cracked fresh egg, thick Greek yogurt, and vibrant golden yellow turmeric powder into a silky smooth pastel green-gold batter. Dynamic appetizing food preparation, crisp focus, soft natural daylight."
+    },
+    {
+      "scene_number": 3,
+      "time_range": "00:16 - 00:24",
+      "duration_sec": 8.0,
+      "shot_type": "Medium close culinary shot, smooth cinematic tracking shot",
+      "subject": "Baking tray with shaped seeded rolls sliding into modern oven",
+      "action": "A stainless steel baking tray lined with parchment paper holds four shaped round dough buns, glistening with a glossy golden egg wash and generously coated with toasted sesame and chia seeds. Hands wearing the terracotta apron sleeves slide the tray onto a rack inside a preheated warm stainless steel oven, and smoothly close the glass oven door, revealing the glowing amber interior light.",
+      "environment": "Modern luxury kitchen wall oven with warm amber interior lighting and brushed stainless steel finish",
+      "lighting_and_atmosphere": "Warm incandescent oven interior glow contrasting with cool ambient kitchen daylight, cinematic depth",
+      "dialogue": {
+        "speaker": "Claire Evans (Voiceover)",
+        "voice_style": "Warm, inspiring, anticipatory tone",
+        "speech_en": "Shape into mini buns, top with toasted seeds for healthy fats, and bake until they turn crisp and golden brown...",
+        "speech_pt": "Molde em mini pãezinhos, cubra com sementes tostadas ricas em gorduras boas e asse até dourarem perfeitamente..."
+      },
+      "screen_captions": ["SHAPE MINI BUNS", "TOP WITH SEEDS", "BAKE UNTIL GOLDEN BROWN"],
+      "google_veo_prompt": "Vertical 9:16 cinematic culinary shot in a luxury modern kitchen. A stainless steel baking tray with four round dough buns brushed with glossy egg yolk and sprinkled with sesame and chia seeds is slid into a warm, lit modern oven. The glass oven door is gently closed, revealing the glowing amber heating elements and baking buns inside. Smooth cinematic camera motion."
+    },
+    {
+      "scene_number": 4,
+      "time_range": "00:24 - 00:32",
+      "duration_sec": 8.0,
+      "shot_type": "Split-action: 4s Extreme macro payoff cutting to 4s Medium creator CTA portrait",
+      "subject": "Freshly baked bread interior cut open, then Claire Evans closing CTA",
+      "action": "First 4 seconds: Extreme macro close-up of hands gently breaking open a freshly baked steaming golden bun, revealing an extraordinarily soft, airy, pillowy green-gold crumb. Next 4 seconds: Cut smoothly to Claire Evans smiling with radiant joyful energy, holding the golden bun in one hand, speaking and pointing downward with her other hand directly toward the bottom of the screen.",
+      "environment": "Modern sunlit kitchen background, cutting board with freshly baked buns in foreground",
+      "lighting_and_atmosphere": "Warm golden food highlights, steam rising gently, bright engaging creator lighting",
+      "dialogue": {
+        "speaker": "Claire Evans",
+        "voice_style": "Triumphant payoff, energetic call-to-action, warm inviting smile",
+        "speech_en": "You get pillowy soft buns that fight inflammation with zero refined flour! Tap the link in my bio to see my full ageless rituals!",
+        "speech_pt": "Você tem pãezinhos incrivelmente macios que combatem a inflamação com zero farinha refinada! Toque no link da minha bio para ver todos os meus rituais anti-idade!"
+      },
+      "screen_captions": ["PILLOWY SOFT & WARM", "ZERO REFINED FLOUR", "TAP LINK IN BIO", "FOR AGELESS RITUALS"],
+      "google_veo_prompt": "Vertical 9:16 video sequence: First, macro shot of two hands breaking open a warm steaming golden baked bun showing the soft fluffy airy green interior crumb. Then smooth cut to Claire, the elegant 51-year-old blonde woman in her terracotta linen apron, holding the golden bun, smiling joyfully directly at the camera and pointing downward with her finger toward the bio link. Vibrant engaging social media creator CTA."
+    }
+  ]
+}

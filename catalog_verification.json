@@ -1,0 +1,1017 @@
+[
+  {
+    "num": 1,
+    "id": "nagano",
+    "title": "Nagano Lean Body Tonic\u2122",
+    "card_price": "$39/bottle",
+    "guarantee": "180-Day Guarantee",
+    "showcase_route": "/showcase/nagano-tonic",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/nagano"
+    ],
+    "showcase_prices_found": [
+      "$127",
+      "$234",
+      "$39.95",
+      "$381"
+    ],
+    "review_route": "/nagano-tonic-review",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\nagano-tonic-review\\index.html",
+    "review_ctas": [
+      "/go/nagano"
+    ],
+    "go_route": "/go/nagano",
+    "destination_url": "https://06fe0-8qxlbmeo9jfi-fx24x4f.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 2,
+    "id": "advanced-joint",
+    "title": "Advanced Joint Support\u2122",
+    "card_price": "$41.50/bottle",
+    "guarantee": "90-Day Guarantee",
+    "showcase_route": "/showcase/advanced-joint",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/jointsupport"
+    ],
+    "showcase_prices_found": [
+      "$134.85",
+      "$50",
+      "$49.95",
+      "$15.00"
+    ],
+    "review_route": "/advanced-joint-support-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\advanced-joint-support-report\\index.html",
+    "review_ctas": [
+      "/go/jointsupport"
+    ],
+    "go_route": "/go/jointsupport",
+    "destination_url": "https://www.advancedbionutritionals.com/DS24/Advanced-Joint/Beat-Joint-Pain-With-Cucumbers.htm#aff=eusimar72",
+    "has_aff_id": true,
+    "aff_type": "DIGISTORE/AFF_PARAM (eusimar72)"
+  },
+  {
+    "num": 3,
+    "id": "prodentim",
+    "title": "ProDentim\u00ae Oral Health",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/prodentim",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/prodentim"
+    ],
+    "showcase_prices_found": [
+      "$120",
+      "$49",
+      "$99",
+      "$294"
+    ],
+    "review_route": "/prodentim-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\prodentim-report\\index.html",
+    "review_ctas": [
+      "/go/prodentim"
+    ],
+    "go_route": "/go/prodentim",
+    "destination_url": "https://8e01330llbokexfevijb-nq74a.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 4,
+    "id": "corevital",
+    "title": "CoreVital Burn\u2122",
+    "card_price": "$29.90/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/corevital",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/corevital",
+      "https://dailyhealthreviewus.com/showcase/corevital"
+    ],
+    "showcase_prices_found": [
+      "$120",
+      "$119.95",
+      "$179.40",
+      "$49.95"
+    ],
+    "review_route": "/showcase/corevital",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\showcase/corevital\\index.html",
+    "review_ctas": [
+      "/go/corevital",
+      "https://dailyhealthreviewus.com/showcase/corevital"
+    ],
+    "go_route": "/go/corevital",
+    "destination_url": "https://corevitalnutra.com/burn/clickbank/",
+    "has_aff_id": true,
+    "aff_type": "COREVITAL_APPROVED_PATH"
+  },
+  {
+    "num": 5,
+    "id": "cardioslim",
+    "title": "Cardio Slim Tea\u2122",
+    "card_price": "$49/pouch",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/cardioslim",
+    "showcase_exists": true,
+    "showcase_ctas": [],
+    "showcase_prices_found": [
+      "$49",
+      "$49/pouch",
+      "$158",
+      "$207"
+    ],
+    "review_route": "/cardioslim-tea-cardio-support-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\cardioslim-tea-cardio-support-report\\index.html",
+    "review_ctas": [
+      "/go/cardioslim"
+    ],
+    "go_route": "/go/cardioslim",
+    "destination_url": "https://964c53zqs8lllzb6dngayqzeq4.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 6,
+    "id": "sugar-defender",
+    "title": "Sugar Defender\u00ae",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/sugar-defender",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/sugardefender"
+    ],
+    "showcase_prices_found": [
+      "$1",
+      "$200",
+      "$19.99",
+      "$358"
+    ],
+    "review_route": "/sugar-defender-guide",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\sugar-defender-guide\\index.html",
+    "review_ctas": [
+      "/go/sugardefender"
+    ],
+    "go_route": "/go/sugardefender",
+    "destination_url": "https://1bb1cc1ek8qf8sbh84dll9uk5s.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 7,
+    "id": "cleansesana",
+    "title": "CleanseSana\u00ae Colon Cleanse",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/cleansesana",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "https://dailyhealthreviewus.com/showcase/cleansesana",
+      "https://www.checkout-ds24.com/product/665412",
+      "https://www.checkout-ds24.com/product/665414",
+      "https://www.checkout-ds24.com/product/665413"
+    ],
+    "showcase_prices_found": [
+      "$234",
+      "$49",
+      "$197",
+      "$69"
+    ],
+    "review_route": "/cleansesana-gut-reboot",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\cleansesana-gut-reboot\\index.html",
+    "review_ctas": [
+      "https://dailyhealthreviewus.com/cleansesana-gut-reboot",
+      "/go/cleansesana"
+    ],
+    "go_route": "/go/cleansesana",
+    "destination_url": "https://cleansesana.com/cleansesana-pdp-fe#aff=eusimar72",
+    "has_aff_id": true,
+    "aff_type": "DIGISTORE/AFF_PARAM (eusimar72)"
+  },
+  {
+    "num": 8,
+    "id": "advanced-amino",
+    "title": "Advanced Amino Formula\u2122",
+    "card_price": "$41.50/bottle",
+    "guarantee": "90-Day Guarantee",
+    "showcase_route": "/showcase/advanced-amino",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/amino"
+    ],
+    "showcase_prices_found": [
+      "$33.25/bottle",
+      "$39.95",
+      "$12",
+      "$40"
+    ],
+    "review_route": "/advanced-amino-formula-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\advanced-amino-formula-report\\index.html",
+    "review_ctas": [
+      "/go/amino"
+    ],
+    "go_route": "/go/amino",
+    "destination_url": "https://www.digistore24.com/redir/472629/eusimar72/",
+    "has_aff_id": true,
+    "aff_type": "DIGISTORE/AFF_PARAM (eusimar72)"
+  },
+  {
+    "num": 9,
+    "id": "collagen",
+    "title": "Advanced Collagen PLUS\u2122",
+    "card_price": "$41.50/pouch",
+    "guarantee": "90-Day Guarantee",
+    "showcase_route": "/showcase/advanced-collagen",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/collagen"
+    ],
+    "showcase_prices_found": [
+      "$134.85",
+      "$50",
+      "$49.95",
+      "$15"
+    ],
+    "review_route": "/advanced-collagen-plus-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\advanced-collagen-plus-report\\index.html",
+    "review_ctas": [
+      "/go/collagen"
+    ],
+    "go_route": "/go/collagen",
+    "destination_url": "https://www.advancedbionutritionals.com/DS24/Collagen/This-Simple-10-Second-Kitchen-Test/HD.htm#aff=eusimar72",
+    "has_aff_id": true,
+    "aff_type": "DIGISTORE/AFF_PARAM (eusimar72)"
+  },
+  {
+    "num": 10,
+    "id": "memory",
+    "title": "Advanced Memory Formula\u2122",
+    "card_price": "$41.50/bottle",
+    "guarantee": "90-Day Guarantee",
+    "showcase_route": "/showcase/advanced-memory",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/memory"
+    ],
+    "showcase_prices_found": [
+      "$134.85",
+      "$50",
+      "$49.95",
+      "$15.00"
+    ],
+    "review_route": "/advanced-memory-formula-guide",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\advanced-memory-formula-guide\\index.html",
+    "review_ctas": [
+      "/go/memory"
+    ],
+    "go_route": "/go/memory",
+    "destination_url": "https://www.digistore24.com/redir/599473/eusimar72/",
+    "has_aff_id": true,
+    "aff_type": "DIGISTORE/AFF_PARAM (eusimar72)"
+  },
+  {
+    "num": 11,
+    "id": "circo2",
+    "title": "CirCO2\u00ae Nitric Oxide",
+    "card_price": "$41.50/box",
+    "guarantee": "90-Day Guarantee",
+    "showcase_route": "/showcase/circo2",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/circo2"
+    ],
+    "showcase_prices_found": [
+      "$134.85",
+      "$50",
+      "$49.95",
+      "$41.50"
+    ],
+    "review_route": "/circo2-nitric-oxide-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\circo2-nitric-oxide-report\\index.html",
+    "review_ctas": [
+      "/go/circo2"
+    ],
+    "go_route": "/go/circo2",
+    "destination_url": "https://www.digistore24.com/redir/538693/eusimar72/",
+    "has_aff_id": true,
+    "aff_type": "DIGISTORE/AFF_PARAM (eusimar72)"
+  },
+  {
+    "num": 12,
+    "id": "audifort",
+    "title": "Audifort\u2122 Ear Support",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/audifort",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/audifort"
+    ],
+    "showcase_prices_found": [
+      "$1",
+      "$200",
+      "$19.99",
+      "$358"
+    ],
+    "review_route": "/audifort-hearing-support-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\audifort-hearing-support-report\\index.html",
+    "review_ctas": [
+      "/go/audifort"
+    ],
+    "go_route": "/go/audifort",
+    "destination_url": "https://6f9834zioammkt802al5tm4pf5.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 13,
+    "id": "femicore",
+    "title": "FemiCore\u2122 Pelvic Health",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/femicore",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/femicore"
+    ],
+    "showcase_prices_found": [
+      "$1",
+      "$200",
+      "$19.99",
+      "$358"
+    ],
+    "review_route": "/femicore-pelvic-health-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\femicore-pelvic-health-report\\index.html",
+    "review_ctas": [
+      "/go/femicore"
+    ],
+    "go_route": "/go/femicore",
+    "destination_url": "https://0f72a06krdfg8n52tbm1tdusai.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 14,
+    "id": "neotonics",
+    "title": "Neotonics\u00ae Gut & Skin",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/neotonics",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/neotonics"
+    ],
+    "showcase_prices_found": [
+      "$120",
+      "$19.99",
+      "$99",
+      "$294"
+    ],
+    "review_route": "/neotonics-skin-gut-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\neotonics-skin-gut-report\\index.html",
+    "review_ctas": [
+      "/go/neotonics"
+    ],
+    "go_route": "/go/neotonics",
+    "destination_url": "https://1adc598rkgejfr0fleuao7jm4c.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 15,
+    "id": "lymphtonic",
+    "title": "LymphTonic\u2122 Drainage",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/lymphtonic",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/lymphtonic"
+    ],
+    "showcase_prices_found": [
+      "$49/bottle",
+      "$207",
+      "$294",
+      "$158"
+    ],
+    "review_route": "/lymphtonic-drainage-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\lymphtonic-drainage-report\\index.html",
+    "review_ctas": [
+      "/go/lymphtonic"
+    ],
+    "go_route": "/go/lymphtonic",
+    "destination_url": "https://19a86z9ovajqhs57bex45l0flv.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 16,
+    "id": "visiflora",
+    "title": "VisiFlora\u00ae Eye & Vision",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/visiflora",
+    "showcase_exists": true,
+    "showcase_ctas": [],
+    "showcase_prices_found": [
+      "$67",
+      "$97",
+      "$200",
+      "$50"
+    ],
+    "review_route": "/visiflora-vision-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\visiflora-vision-report\\index.html",
+    "review_ctas": [
+      "/go/visiflora"
+    ],
+    "go_route": "/go/visiflora",
+    "destination_url": "https://51062z5fucqiis5oqcr2mm151a.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 17,
+    "id": "neurovera",
+    "title": "NeuroVera\u2122 Nerve Health",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/neurovera",
+    "showcase_exists": true,
+    "showcase_ctas": [],
+    "showcase_prices_found": [
+      "$49",
+      "$420",
+      "$117",
+      "$180"
+    ],
+    "review_route": "/neurovera-brain-clarity-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\neurovera-brain-clarity-report\\index.html",
+    "review_ctas": [
+      "/go/neurovera"
+    ],
+    "go_route": "/go/neurovera",
+    "destination_url": "https://6fd8bc8jpfkil09mti3fybx058.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 18,
+    "id": "phytomem",
+    "title": "PhytoMem\u2122 Cognition",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/phytomem",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/phytomem"
+    ],
+    "showcase_prices_found": [
+      "$200",
+      "$49/bottle",
+      "$434",
+      "$177"
+    ],
+    "review_route": "/phytomem-memory-formula-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\phytomem-memory-formula-report\\index.html",
+    "review_ctas": [
+      "/go/phytomem"
+    ],
+    "go_route": "/go/phytomem",
+    "destination_url": "https://c25f303qn6ign-5duwwht5-s57.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 19,
+    "id": "joint-eternal",
+    "title": "Joint Eternal\u2122",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/joint-eternal",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/jointeternal"
+    ],
+    "showcase_prices_found": [
+      "$120",
+      "$234",
+      "$59",
+      "$19.99"
+    ],
+    "review_route": "/joint-eternal-mobility-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\joint-eternal-mobility-report\\index.html",
+    "review_ctas": [
+      "/go/jointeternal"
+    ],
+    "go_route": "/go/jointeternal",
+    "destination_url": "https://www.digistore24.com/redir/508842/eusimar72/",
+    "has_aff_id": true,
+    "aff_type": "DIGISTORE/AFF_PARAM (eusimar72)"
+  },
+  {
+    "num": 20,
+    "id": "prostavive",
+    "title": "ProstaVive\u2122 Men's Health",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/prostavive",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/prostavive"
+    ],
+    "showcase_prices_found": [
+      "$1",
+      "$234",
+      "$39.95",
+      "$19.99"
+    ],
+    "review_route": "/prostavive-prostate-health-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\prostavive-prostate-health-report\\index.html",
+    "review_ctas": [
+      "/go/prostavive"
+    ],
+    "go_route": "/go/prostavive",
+    "destination_url": "https://fdec819gulieco3cyb76w71v3h.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 21,
+    "id": "slimming-tea",
+    "title": "All Day Slimming Tea\u00ae",
+    "card_price": "$49/pouch",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/all-day-slimming-tea",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/slimmingtea"
+    ],
+    "showcase_prices_found": [
+      "$120",
+      "$128",
+      "$19.99",
+      "$40"
+    ],
+    "review_route": "/all-day-slimming-tea-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\all-day-slimming-tea-report\\index.html",
+    "review_ctas": [
+      "/go/slimmingtea"
+    ],
+    "go_route": "/go/slimmingtea",
+    "destination_url": "https://fed7803okemiewb5p6zakhpmdh.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 22,
+    "id": "spartamax",
+    "title": "SpartaMax\u2122 Male Vitality",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/spartamax",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/spartamax",
+      "https://dailyhealthreviewus.com/showcase/spartamax"
+    ],
+    "showcase_prices_found": [
+      "$19.99",
+      "$270",
+      "$177",
+      "$894"
+    ],
+    "review_route": "/spartamax-vitality-gummies-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\spartamax-vitality-gummies-report\\index.html",
+    "review_ctas": [
+      "/go/spartamax",
+      "https://dailyhealthreviewus.com/spartamax-vitality-gummies-report"
+    ],
+    "go_route": "/go/spartamax",
+    "destination_url": "https://getspartamax.com/#aff=eusimar72",
+    "has_aff_id": true,
+    "aff_type": "DIGISTORE/AFF_PARAM (eusimar72)"
+  },
+  {
+    "num": 23,
+    "id": "fimavyn",
+    "title": "Fimavyn\u2122 Metabolic Drops",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/fimavyn",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/fimavyn"
+    ],
+    "showcase_prices_found": [
+      "$120",
+      "$49/bottle",
+      "$69",
+      "$177"
+    ],
+    "review_route": "/fimavyn-metabolic-activation-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\fimavyn-metabolic-activation-report\\index.html",
+    "review_ctas": [
+      "/go/fimavyn"
+    ],
+    "go_route": "/go/fimavyn",
+    "destination_url": "https://fimavyn.com/text.html",
+    "has_aff_id": false,
+    "aff_type": "BUYGOODS_PENDING_ACTIVATION"
+  },
+  {
+    "num": 24,
+    "id": "glucotrust",
+    "title": "GlucoTrust\u2122 Glucose Support",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/glucotrust",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/glucotrust/"
+    ],
+    "showcase_prices_found": [
+      "$49",
+      "$49/bottle",
+      "$69",
+      "$300"
+    ],
+    "review_route": "/glucotrust-blutzucker-bericht",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\glucotrust-blutzucker-bericht\\index.html",
+    "review_ctas": [
+      "/go/glucotrust"
+    ],
+    "go_route": "/go/glucotrust",
+    "destination_url": "https://www.checkout-ds24.com/redir/600906/eusimar72/",
+    "has_aff_id": true,
+    "aff_type": "DIGISTORE/AFF_PARAM (eusimar72)"
+  },
+  {
+    "num": 25,
+    "id": "javaburn",
+    "title": "Java Burn\u2122 Coffee Booster",
+    "card_price": "$39/pouch",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/java-burn",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/javaburn"
+    ],
+    "showcase_prices_found": [
+      "$1",
+      "$591",
+      "$49",
+      "$394"
+    ],
+    "review_route": "/java-burn-coffee-ritual-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\java-burn-coffee-ritual-report\\index.html",
+    "review_ctas": [
+      "/go/javaburn"
+    ],
+    "go_route": "/go/javaburn",
+    "destination_url": "https://6319020gpebhb02coila-kru3j.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 26,
+    "id": "kerassentials",
+    "title": "Kerassentials\u00ae Nail & Skin Oil",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/kerassentials",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/kerassentials"
+    ],
+    "showcase_prices_found": [
+      "$109",
+      "$177",
+      "$294",
+      "$300"
+    ],
+    "review_route": "/kerassentials-nail-fungus-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\kerassentials-nail-fungus-report\\index.html",
+    "review_ctas": [
+      "/go/kerassentials"
+    ],
+    "go_route": "/go/kerassentials",
+    "destination_url": "https://mykerassentials24.com/text2.php#aff=eusimar72",
+    "has_aff_id": true,
+    "aff_type": "DIGISTORE/AFF_PARAM (eusimar72)"
+  },
+  {
+    "num": 27,
+    "id": "nanodefense",
+    "title": "NanoDefense Pro\u2122 Nanotech Drops",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/nanodefense",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/nanodefensepro"
+    ],
+    "showcase_prices_found": [
+      "$177",
+      "$164",
+      "$294",
+      "$300"
+    ],
+    "review_route": "/nanodefense-pro-nanotechnology-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\nanodefense-pro-nanotechnology-report\\index.html",
+    "review_ctas": [
+      "/go/nanodefensepro"
+    ],
+    "go_route": "/go/nanodefensepro",
+    "destination_url": "https://nanodefensepro24.com/text.php#aff=eusimar72",
+    "has_aff_id": true,
+    "aff_type": "DIGISTORE/AFF_PARAM (eusimar72)"
+  },
+  {
+    "num": 28,
+    "id": "synaptigen",
+    "title": "Synaptigen\u2122 Cognitive Clarity",
+    "card_price": "$49/bottle",
+    "guarantee": "180-Day Guarantee",
+    "showcase_route": "/showcase/synaptigen",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/synaptigen"
+    ],
+    "showcase_prices_found": [
+      "$69",
+      "$300",
+      "$177",
+      "$237"
+    ],
+    "review_route": "/synaptigen-memory-formula-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\synaptigen-memory-formula-report\\index.html",
+    "review_ctas": [
+      "/go/synaptigen"
+    ],
+    "go_route": "/go/synaptigen",
+    "destination_url": "https://synaptigen24.com/text.php#aff=eusimar72",
+    "has_aff_id": true,
+    "aff_type": "DIGISTORE/AFF_PARAM (eusimar72)"
+  },
+  {
+    "num": 29,
+    "id": "metanail",
+    "title": "Metanail Complex\u2122 20-in-1",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/metanail",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/metanail"
+    ],
+    "showcase_prices_found": [
+      "$194",
+      "$97",
+      "$187",
+      "$434"
+    ],
+    "review_route": "/metanail-complex-nail-fungus-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\metanail-complex-nail-fungus-report\\index.html",
+    "review_ctas": [
+      "/go/metanail"
+    ],
+    "go_route": "/go/metanail",
+    "destination_url": "https://0073349hoglif-b7fgd1xgno6d.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 30,
+    "id": "jointgenesis",
+    "title": "BioDynamix Joint Genesis\u2122",
+    "card_price": "$39/bottle",
+    "guarantee": "180-Day Guarantee",
+    "showcase_route": "/showcase/jointgenesis",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/jointgenesis"
+    ],
+    "showcase_prices_found": [
+      "$438",
+      "$234",
+      "$147",
+      "$58"
+    ],
+    "review_route": "/joint-genesis-synovial-fluid-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\joint-genesis-synovial-fluid-report\\index.html",
+    "review_ctas": [
+      "/go/jointgenesis"
+    ],
+    "go_route": "/go/jointgenesis",
+    "destination_url": "https://2f8a5c1kyapodw8dtg-rtcww4w.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 31,
+    "id": "synevra",
+    "title": "Synevra Lift & Lock System",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/synevra",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/synevra"
+    ],
+    "showcase_prices_found": [
+      "$49",
+      "$434",
+      "$69",
+      "$196"
+    ],
+    "review_route": "/synevra-lift-and-lock-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\synevra-lift-and-lock-report\\index.html",
+    "review_ctas": [
+      "/go/synevra"
+    ],
+    "go_route": "/go/synevra",
+    "destination_url": "https://8c500-yjt6pgjy4i5ari275n5t.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 32,
+    "id": "nitricboost",
+    "title": "Nitric Boost Ultra\u2122",
+    "card_price": "$49/jar",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/nitricboost",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/nitricboost"
+    ],
+    "showcase_prices_found": [
+      "$900",
+      "$19.99",
+      "$69",
+      "$177"
+    ],
+    "review_route": "/nitric-boost-ultra-erection-formula-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\nitric-boost-ultra-erection-formula-report\\index.html",
+    "review_ctas": [
+      "/showcase/nitricboost",
+      "/go/nitricboost"
+    ],
+    "go_route": "/go/nitricboost",
+    "destination_url": "https://d549316ruicd8samq8xf6o8o6r.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 33,
+    "id": "livpure",
+    "title": "Liv Pure\u2122",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/livpure",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/livpure"
+    ],
+    "showcase_prices_found": [
+      "$49",
+      "$158",
+      "$207",
+      "$294"
+    ],
+    "review_route": "/liv-pure-liver-fat-burning-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\liv-pure-liver-fat-burning-report\\index.html",
+    "review_ctas": [
+      "/showcase/livpure",
+      "/go/livpure"
+    ],
+    "go_route": "/go/livpure",
+    "destination_url": "https://00bb409gwihe9v8cnuxlxzcu4l.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 34,
+    "id": "dentabiome",
+    "title": "DentaBiome\u2122",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/dentabiome",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/dentabiome"
+    ],
+    "showcase_prices_found": [
+      "$900",
+      "$294",
+      "$158",
+      "$207"
+    ],
+    "review_route": "/dentabiome-oral-postbiotic-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\dentabiome-oral-postbiotic-report\\index.html",
+    "review_ctas": [
+      "/showcase/dentabiome",
+      "/go/dentabiome"
+    ],
+    "go_route": "/go/dentabiome",
+    "destination_url": "https://671272-iwcbjcy41kk86g4thhf.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 35,
+    "id": "yusleep",
+    "title": "Yu Sleep\u2122 Deep Rest",
+    "card_price": "$39/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/yusleep",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/yusleep"
+    ],
+    "showcase_prices_found": [
+      "$120",
+      "$49",
+      "$59",
+      "$69"
+    ],
+    "review_route": "/yusleep-deep-rest-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\yusleep-deep-rest-report\\index.html",
+    "review_ctas": [
+      "/go/yusleep",
+      "/showcase/yusleep"
+    ],
+    "go_route": "/go/yusleep",
+    "destination_url": "https://531ddc6kudhqaw4l-jo6qadvc7.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  },
+  {
+    "num": 36,
+    "id": "primebiome",
+    "title": "PrimeBiome\u2122 Gut & Skin",
+    "card_price": "$49/bottle",
+    "guarantee": "60-Day Guarantee",
+    "showcase_route": "/showcase/primebiome",
+    "showcase_exists": true,
+    "showcase_ctas": [
+      "/go/primebiome"
+    ],
+    "showcase_prices_found": [
+      "$1",
+      "$49",
+      "$358.00",
+      "$69"
+    ],
+    "review_route": "/primebiome-gut-skin-axis-report",
+    "review_exists": true,
+    "review_file": "C:\\Users\\Eusimar\\.gemini\\antigravity\\scratch\\Projeto_ClickBank_DailyHealthReview\\primebiome-gut-skin-axis-report\\index.html",
+    "review_ctas": [
+      "/go/primebiome",
+      "/showcase/primebiome"
+    ],
+    "go_route": "/go/primebiome",
+    "destination_url": "https://8feeba4gyffmgnd9whq0p3wdii.hop.clickbank.net",
+    "has_aff_id": true,
+    "aff_type": "CLICKBANK_ENCRYPTED_HOPLINK"
+  }
+]

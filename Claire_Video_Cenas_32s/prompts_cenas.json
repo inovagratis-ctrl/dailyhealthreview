@@ -1,0 +1,61 @@
+{
+  "project": "Claire Evans - Ageless Kitchen Video",
+  "creator_handle": "@claire.matureskin",
+  "aspect_ratio": "9:16",
+  "resolution": "720x1280 (or 1080x1920)",
+  "total_duration_seconds": 32,
+  "scenes_count": 4,
+  "scene_duration_seconds": 8,
+  "character_consistency": {
+    "name": "Claire Evans",
+    "age": 51,
+    "hair": "Shoulder-length platinum blonde bob, side-parted, sleek and natural",
+    "eyes": "Warm hazel-green with natural soft smile lines",
+    "skin": "Mature, radiant, healthy glow, subtle crow's feet and smile lines",
+    "accessories": "Delicate thin gold necklace, small classic gold hoop earrings",
+    "outfit_styles": {
+      "style_a_culinary_chic": "Relaxed sage-green or beige organic linen button-up shirt with sleeves casually rolled to the elbows, natural linen apron with brass eyelets",
+      "style_b_minimalist_clean": "Crisp off-white soft crewneck cotton tee with a neutral sand-colored minimalist cross-back linen apron",
+      "style_c_warm_wellness": "Lightweight oatmeal cashmere ribbed long-sleeve knit, effortless morning kitchen aesthetic"
+    }
+  },
+  "scenes": [
+    {
+      "scene_id": 1,
+      "name": "Hook & Secret",
+      "timestamp": "00:00 - 00:08",
+      "duration": 8,
+      "spoken_audio": "If you're over fifty and want glowing skin without giving up warm bread, try this simple kitchen secret...",
+      "captions": ["WANT GLOWING SKIN?", "DITCH INFLAMMATORY BREAD", "TRY THIS SECRET"],
+      "image_prompt": "A photorealistic vertical 9:16 portrait of Claire (51yo, platinum blonde bob, delicate gold necklace) wearing a relaxed casual linen shirt with rolled-up sleeves and a clean modern neutral bib apron. Standing in a sunlit bright modern kitchen with white marble countertops. Holding a clear glass mixing bowl containing one boiled potato and a halved ripe avocado, smiling directly at camera with an authentic welcoming expression, holding a stainless potato masher. Cinematic soft natural light, shallow depth of field --ar 9:16 --style raw"
+    },
+    {
+      "scene_id": 2,
+      "name": "Blend & Glow",
+      "timestamp": "00:08 - 00:16",
+      "duration": 8,
+      "spoken_audio": "Blend ripe avocado with tender sweet potato, probiotic Greek yogurt, an egg, and a touch of golden turmeric...",
+      "captions": ["AVOCADO & SWEET POTATO", "PROBIOTIC GREEK YOGURT", "GOLDEN TURMERIC BLEND"],
+      "image_prompt": "A vertical 9:16 top-down macro shot over a clear glass bowl on white marble. Inside, mashed avocado and potato combined with cracked farm egg, thick Greek yogurt, baking powder, and a vibrant sprinkle of golden yellow turmeric spice. Stainless whisk actively blending into a silky green-gold batter. Warm morning lighting, appetizing food texture --ar 9:16 --style raw"
+    },
+    {
+      "scene_id": 3,
+      "name": "Shape & Bake",
+      "timestamp": "00:16 - 00:24",
+      "duration": 8,
+      "spoken_audio": "Shape into mini buns, top with toasted seeds for healthy fats, and bake until they turn crisp and golden brown...",
+      "captions": ["SHAPE MINI BUNS", "TOP WITH SEEDS", "BAKE UNTIL GOLDEN BROWN"],
+      "image_prompt": "A vertical 9:16 culinary shot in modern kitchen. Claire's hands sliding a stainless steel baking tray lined with parchment paper into a warm lit oven. On tray are four shaped round buns brushed with golden egg wash and generously sprinkled with sesame and chia seeds. Gentle oven interior glow, cinematic lighting --ar 9:16 --style raw"
+    },
+    {
+      "scene_id": 4,
+      "name": "Payoff & CTA",
+      "timestamp": "00:24 - 00:32",
+      "duration": 8,
+      "spoken_audio": "You get pillowy soft buns that fight inflammation with zero refined flour! Tap the link in my bio to see my full ageless rituals!",
+      "captions": ["PILLOWY SOFT & WARM", "ZERO REFINED FLOUR", "TAP LINK IN BIO", "FOR AGELESS RITUALS"],
+      "image_prompt_payoff": "A vertical 9:16 extreme macro close-up of warm freshly baked golden buns on cutting board. One bun is sliced open, showing steaming airy fluffy green-gold interior crumb and toasted sesame seed crust. Delicious gourmet food photography --ar 9:16 --style raw",
+      "image_prompt_cta": "A vertical 9:16 medium portrait of Claire in her casual linen shirt and apron, holding one golden bun, smiling with vibrant warm energy directly at camera and pointing downward toward the bio link. Sunlit kitchen background, engaging creator CTA aesthetic --ar 9:16 --style raw"
+    }
+  ]
+}
