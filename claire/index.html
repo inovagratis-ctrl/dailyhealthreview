@@ -682,81 +682,205 @@
 
   </section>
 
+    <!-- ======================================================== -->
+  <!-- 6. CLAIRE'S DIGITAL PROTOCOLS (WHOP 6-PRODUCT CAROUSEL)   -->
   <!-- ======================================================== -->
-  <!-- 6. CLAIRE'S DIGITAL PROTOCOLS (WHOP ESTEIRA - $27)        -->
-  <!-- ======================================================== -->
-  <section id="protocols" class="bg-stone-900 text-white py-16 px-4 sm:px-8">
-    <div class="max-w-6xl mx-auto text-center">
+  <section id="protocols" class="bg-stone-900 text-white py-16 px-4 sm:px-8 relative overflow-hidden">
+    <div class="max-w-6xl mx-auto">
       
-      <span class="text-xs uppercase tracking-widest font-extrabold text-amber-300 block mb-1">
-        Claire's Digital Masterclass Suite
-      </span>
-      <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-3">
-        The Ageless Longevity Blueprint Protocols
-      </h2>
-      <p class="text-stone-300 text-sm sm:text-base max-w-2xl mx-auto mb-10 leading-relaxed">
-        Step-by-step printable meal blueprints, pantry guides, and circadian timing sheets to reset your biological clock from home. One-time payment, instant lifetime portal access.
-      </p>
-
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
-        
-        <!-- Whop 1 -->
-        <div class="bg-stone-800/90 rounded-2xl p-6 border border-stone-700 flex flex-col justify-between">
-          <div>
-            <span class="text-xs font-bold text-amber-400 block mb-1">28-Day Protocol</span>
-            <h3 class="font-serif-luxury text-2xl font-bold text-white mb-2">
-              Anti-Aging Cell Renewal Protocol™
-            </h3>
-            <p class="text-stone-300 text-xs leading-relaxed mb-4">
-              Daily meal schedules, botanical pairings, and the exact routine that brought my skin cell turnover back to youth velocity.
-            </p>
-          </div>
-          <div class="pt-4 border-t border-stone-700 flex items-center justify-between">
-            <span class="font-bold text-lg text-amber-300">$27 USD</span>
-            <a href="/protocol" target="_blank" rel="noopener noreferrer" class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-4 py-2 rounded-lg transition">
-              Get Protocol &rarr;
-            </a>
-          </div>
+      <!-- Section Header with Arrows -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 text-center md:text-left gap-4">
+        <div>
+          <span class="text-xs uppercase tracking-widest font-extrabold text-amber-300 block mb-1">
+            Claire's Digital Masterclass Suite
+          </span>
+          <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-2">
+            The Ageless Longevity Blueprint Protocols
+          </h2>
+          <p class="text-stone-300 text-xs sm:text-sm max-w-xl leading-relaxed">
+            Step-by-step printable meal blueprints, pantry guides, and circadian timing sheets to reset your biological clock from home. <strong class="text-amber-300">$27 one-time payment</strong>, instant lifetime portal access.
+          </p>
         </div>
 
-        <!-- Whop 2 -->
-        <div class="bg-stone-800/90 rounded-2xl p-6 border border-stone-700 flex flex-col justify-between">
-          <div>
-            <span class="text-xs font-bold text-emerald-400 block mb-1">Botanical Medicine</span>
-            <h3 class="font-serif-luxury text-2xl font-bold text-white mb-2">
-              The Home Apothecary Bible™
-            </h3>
-            <p class="text-stone-300 text-xs leading-relaxed mb-4">
-              Forgotten herbal infusions, soothing tinctures, and traditional kitchen remedies for joint aches, restful sleep, and gut resilience.
-            </p>
-          </div>
-          <div class="pt-4 border-t border-stone-700 flex items-center justify-between">
-            <span class="font-bold text-lg text-emerald-300">$27 USD</span>
-            <a href="/apothecary" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2 rounded-lg transition">
-              Get Bible &rarr;
-            </a>
-          </div>
+        <!-- Carousel Navigation Controls -->
+        <div class="flex items-center justify-center md:justify-end gap-3 flex-shrink-0">
+          <button onclick="prevSlide()" id="carousel-prev-btn" class="w-10 h-10 rounded-full bg-stone-800 hover:bg-stone-700 border border-stone-700 text-white flex items-center justify-center transition shadow-md disabled:opacity-40 disabled:cursor-not-allowed" aria-label="Previous Protocols">
+            <i class="fa-solid fa-chevron-left text-sm"></i>
+          </button>
+          <span id="carousel-indicator" class="text-xs font-bold text-amber-300 px-2 tracking-wider">
+            1 / 2
+          </span>
+          <button onclick="nextSlide()" id="carousel-next-btn" class="w-10 h-10 rounded-full bg-stone-800 hover:bg-stone-700 border border-stone-700 text-white flex items-center justify-center transition shadow-md" aria-label="Next Protocols">
+            <i class="fa-solid fa-chevron-right text-sm"></i>
+          </button>
         </div>
+      </div>
 
-        <!-- Whop 3 -->
-        <div class="bg-stone-800/90 rounded-2xl p-6 border border-stone-700 flex flex-col justify-between">
-          <div>
-            <span class="text-xs font-bold text-rose-400 block mb-1">21-Day Reset</span>
-            <h3 class="font-serif-luxury text-2xl font-bold text-white mb-2">
-              Somatic Nervous System &amp; Cortisol Reset™
-            </h3>
-            <p class="text-stone-300 text-xs leading-relaxed mb-4">
-              9-minute vagus nerve somatic releases that stop cortisol-driven belly fat, calm 3 AM panic waking, and restore adrenal peace.
-            </p>
+      <!-- Carousel Track Container -->
+      <div class="overflow-hidden relative rounded-2xl">
+        <div id="carousel-track" class="flex transition-transform duration-500 ease-out" style="transform: translateX(0%);">
+          
+          <!-- SLIDE 1 (Products 1, 2, 3) -->
+          <div class="w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            
+            <!-- Whop 1: Cell Renewal -->
+            <div class="bg-stone-800/90 rounded-2xl p-6 border border-stone-700 flex flex-col justify-between hover:border-amber-500/50 transition">
+              <div>
+                <span class="text-[11px] uppercase tracking-wider font-extrabold text-amber-400 block mb-1">
+                  🧬 28-Day Cellular Protocol
+                </span>
+                <h3 class="font-serif-luxury text-2xl font-bold text-white mb-2 leading-snug">
+                  Anti-Aging Cell Renewal Protocol™
+                </h3>
+                <p class="text-stone-300 text-xs leading-relaxed mb-4">
+                  Daily meal schedules, botanical pairings, and the exact cellular routine that brought my skin cell turnover back to youth velocity.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-stone-700 flex items-center justify-between">
+                <div>
+                  <span class="font-bold text-lg text-amber-300 block leading-tight">$27 USD</span>
+                  <span class="text-[10px] text-stone-400 uppercase">One-time payment</span>
+                </div>
+                <a href="/protocol" target="_blank" rel="noopener noreferrer" class="bg-amber-600 hover:bg-amber-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow">
+                  Get Protocol &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Whop 2: Apothecary Bible -->
+            <div class="bg-stone-800/90 rounded-2xl p-6 border border-stone-700 flex flex-col justify-between hover:border-emerald-500/50 transition">
+              <div>
+                <span class="text-[11px] uppercase tracking-wider font-extrabold text-emerald-400 block mb-1">
+                  🌿 Botanical Medicine
+                </span>
+                <h3 class="font-serif-luxury text-2xl font-bold text-white mb-2 leading-snug">
+                  The Home Apothecary Bible™
+                </h3>
+                <p class="text-stone-300 text-xs leading-relaxed mb-4">
+                  Forgotten herbal infusions, soothing tinctures, and traditional kitchen remedies for joint aches, restful sleep, and gut resilience.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-stone-700 flex items-center justify-between">
+                <div>
+                  <span class="font-bold text-lg text-emerald-300 block leading-tight">$27 USD</span>
+                  <span class="text-[10px] text-stone-400 uppercase">One-time payment</span>
+                </div>
+                <a href="/apothecary" target="_blank" rel="noopener noreferrer" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow">
+                  Get Bible &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Whop 3: Somatic Reset -->
+            <div class="bg-stone-800/90 rounded-2xl p-6 border border-stone-700 flex flex-col justify-between hover:border-rose-500/50 transition">
+              <div>
+                <span class="text-[11px] uppercase tracking-wider font-extrabold text-rose-400 block mb-1">
+                  🧘🏼‍♀️ 21-Day Vagus Reset
+                </span>
+                <h3 class="font-serif-luxury text-2xl font-bold text-white mb-2 leading-snug">
+                  Somatic Nervous System &amp; Cortisol Reset™
+                </h3>
+                <p class="text-stone-300 text-xs leading-relaxed mb-4">
+                  9-minute vagus nerve somatic releases that stop cortisol-driven belly fat, calm 3 AM panic waking, and restore adrenal peace.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-stone-700 flex items-center justify-between">
+                <div>
+                  <span class="font-bold text-lg text-rose-300 block leading-tight">$27 USD</span>
+                  <span class="text-[10px] text-stone-400 uppercase">One-time payment</span>
+                </div>
+                <a href="/somatic" target="_blank" rel="noopener noreferrer" class="bg-rose-700 hover:bg-rose-600 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow">
+                  Get Reset &rarr;
+                </a>
+              </div>
+            </div>
+
           </div>
-          <div class="pt-4 border-t border-stone-700 flex items-center justify-between">
-            <span class="font-bold text-lg text-rose-300">$27 USD</span>
-            <a href="/somatic" target="_blank" rel="noopener noreferrer" class="bg-rose-700 hover:bg-rose-600 text-white text-xs font-bold px-4 py-2 rounded-lg transition">
-              Get Reset &rarr;
-            </a>
+
+          <!-- SLIDE 2 (Products 4, 5, 6) -->
+          <div class="w-full flex-shrink-0 grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+            
+            <!-- Whop 4: Parasite Cleanse & Lymphatic -->
+            <div class="bg-stone-800/90 rounded-2xl p-6 border border-stone-700 flex flex-col justify-between hover:border-teal-500/50 transition">
+              <div>
+                <span class="text-[11px] uppercase tracking-wider font-extrabold text-teal-400 block mb-1">
+                  🫖 14-Day Deep Drainage
+                </span>
+                <h3 class="font-serif-luxury text-2xl font-bold text-white mb-2 leading-snug">
+                  Parasite Cleanse &amp; Lymphatic Blueprint™
+                </h3>
+                <p class="text-stone-300 text-xs leading-relaxed mb-4">
+                  Clinical drainage sequence of botanical flushes, herbal binders, and liver teas to eliminate waste stagnation and lower-belly puffiness.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-stone-700 flex items-center justify-between">
+                <div>
+                  <span class="font-bold text-lg text-teal-300 block leading-tight">$27 USD</span>
+                  <span class="text-[10px] text-stone-400 uppercase">One-time payment</span>
+                </div>
+                <a href="/cleanse" target="_blank" rel="noopener noreferrer" class="bg-teal-700 hover:bg-teal-600 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow">
+                  Get Blueprint &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Whop 5: Blood Pressure Protocol -->
+            <div class="bg-stone-800/90 rounded-2xl p-6 border border-stone-700 flex flex-col justify-between hover:border-blue-500/50 transition">
+              <div>
+                <span class="text-[11px] uppercase tracking-wider font-extrabold text-blue-400 block mb-1">
+                  🫀 9-Minute Vascular Ease
+                </span>
+                <h3 class="font-serif-luxury text-2xl font-bold text-white mb-2 leading-snug">
+                  Arterial Elasticity &amp; Blood Pressure Protocol™
+                </h3>
+                <p class="text-stone-300 text-xs leading-relaxed mb-4">
+                  Daily nitric-oxide kitchen elixirs and simple morning breathwork routines to soften stiff arteries and support natural healthy pressure.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-stone-700 flex items-center justify-between">
+                <div>
+                  <span class="font-bold text-lg text-blue-300 block leading-tight">$27 USD</span>
+                  <span class="text-[10px] text-stone-400 uppercase">One-time payment</span>
+                </div>
+                <a href="/heart" target="_blank" rel="noopener noreferrer" class="bg-blue-700 hover:bg-blue-600 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow">
+                  Get Protocol &rarr;
+                </a>
+              </div>
+            </div>
+
+            <!-- Whop 6: Clean Arteries Protocol -->
+            <div class="bg-stone-800/90 rounded-2xl p-6 border border-stone-700 flex flex-col justify-between hover:border-red-500/50 transition">
+              <div>
+                <span class="text-[11px] uppercase tracking-wider font-extrabold text-red-400 block mb-1">
+                  ❤️ 28-Day Vascular Restoration
+                </span>
+                <h3 class="font-serif-luxury text-2xl font-bold text-white mb-2 leading-snug">
+                  Clean Arteries &amp; Endothelial Protocol™
+                </h3>
+                <p class="text-stone-300 text-xs leading-relaxed mb-4">
+                  Targeted botanical synergies and meal schedules to support clean endothelial linings, prevent arterial stiffness, and boost circulation.
+                </p>
+              </div>
+              <div class="pt-4 border-t border-stone-700 flex items-center justify-between">
+                <div>
+                  <span class="font-bold text-lg text-red-300 block leading-tight">$27 USD</span>
+                  <span class="text-[10px] text-stone-400 uppercase">One-time payment</span>
+                </div>
+                <a href="/arteries" target="_blank" rel="noopener noreferrer" class="bg-red-700 hover:bg-red-600 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow">
+                  Get Protocol &rarr;
+                </a>
+              </div>
+            </div>
+
           </div>
+
         </div>
+      </div>
 
+      <!-- Carousel Pagination Dots -->
+      <div class="flex items-center justify-center gap-2 mt-8">
+        <button onclick="goToSlide(0)" id="dot-0" class="h-2 rounded-full transition-all duration-300 w-8 bg-amber-400" aria-label="Page 1"></button>
+        <button onclick="goToSlide(1)" id="dot-1" class="h-2 rounded-full transition-all duration-300 w-2.5 bg-stone-700" aria-label="Page 2"></button>
       </div>
 
     </div>
@@ -860,6 +984,69 @@
         }
       });
     }
+  
+    // ==========================================
+    // 6-PRODUCT WHOP CAROUSEL LOGIC (3 PER SLIDE)
+    // ==========================================
+    let currentSlide = 0;
+    const totalSlides = 2;
+
+    function updateCarousel() {
+      const track = document.getElementById('carousel-track');
+      const indicator = document.getElementById('carousel-indicator');
+      const prevBtn = document.getElementById('carousel-prev-btn');
+      const nextBtn = document.getElementById('carousel-next-btn');
+      const dot0 = document.getElementById('dot-0');
+      const dot1 = document.getElementById('dot-1');
+
+      if (!track) return;
+
+      track.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+      if (indicator) {
+        indicator.innerText = `${currentSlide + 1} / ${totalSlides}`;
+      }
+
+      if (prevBtn) {
+        prevBtn.disabled = (currentSlide === 0);
+      }
+      if (nextBtn) {
+        nextBtn.disabled = (currentSlide === totalSlides - 1);
+      }
+
+      if (dot0 && dot1) {
+        if (currentSlide === 0) {
+          dot0.className = "h-2 rounded-full transition-all duration-300 w-8 bg-amber-400";
+          dot1.className = "h-2 rounded-full transition-all duration-300 w-2.5 bg-stone-700";
+        } else {
+          dot0.className = "h-2 rounded-full transition-all duration-300 w-2.5 bg-stone-700";
+          dot1.className = "h-2 rounded-full transition-all duration-300 w-8 bg-amber-400";
+        }
+      }
+    }
+
+    function nextSlide() {
+      if (currentSlide < totalSlides - 1) {
+        currentSlide++;
+        updateCarousel();
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlide > 0) {
+        currentSlide--;
+        updateCarousel();
+      }
+    }
+
+    function goToSlide(index) {
+      currentSlide = index;
+      updateCarousel();
+    }
+
+    // Initialize on load
+    document.addEventListener('DOMContentLoaded', updateCarousel);
+
   </script>
 
 </body>
