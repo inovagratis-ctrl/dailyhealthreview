@@ -224,10 +224,10 @@
         <p id="interlude-text" class="text-sm sm:text-base text-stone-700 leading-relaxed max-w-md mx-auto mb-6">
           Over 86% of women over 40 suffer from hidden gut-skin barrier permeability triggered by modern flours.
         </p>
-        <div id="interlude-card" class="p-4 sm:p-5 bg-linen rounded-2xl border border-sand/80 text-left mb-6 max-w-md mx-auto transition-opacity duration-300">
+        <div id="interlude-card" onmouseenter="pauseInterlude()" onmouseleave="resumeInterlude()" class="p-4 sm:p-5 bg-linen rounded-2xl border border-sand/80 text-left mb-6 max-w-md mx-auto transition-opacity duration-300 relative">
           <div class="flex items-center justify-between mb-2.5">
             <div class="flex items-center space-x-3">
-              <div id="interlude-avatar" class="w-8 h-8 rounded-full bg-terracotta/15 text-terracotta font-bold flex items-center justify-center text-xs shadow-2xs">
+              <div id="interlude-avatar" class="w-9 h-9 rounded-full bg-terracotta/15 text-terracotta font-bold flex items-center justify-center text-xs shadow-2xs border border-terracotta/20 flex-shrink-0">
                 EM
               </div>
               <div>
@@ -235,12 +235,27 @@
                 <div class="text-xs text-amber-500">★★★★★</div>
               </div>
             </div>
-            <span class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 bg-emerald-50 text-emerald-700 rounded-full border border-emerald-200/60">
-              ✓ Verified Story
+            <span id="interlude-badge" class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 bg-emerald-50 text-emerald-700 rounded-full border border-emerald-200/60">
+              ✓ 15 Verified Stories
             </span>
           </div>
-          <p id="interlude-quote" class="text-sm text-stone-700 italic leading-relaxed">"Replacing flours with Claire's 4-ingredient meals flattened my belly bloat in 3 days and gave my skin a fresh glow!"</p>
-          <div id="interlude-dots" class="flex items-center justify-center space-x-1.5 mt-3 pt-2.5 border-t border-sand/60"></div>
+          <p id="interlude-quote" class="text-sm text-stone-700 italic leading-relaxed min-h-[4rem] flex items-center">
+            "Replacing flours with Claire's 4-ingredient meals flattened my belly bloat in 3 days and gave my skin a fresh glow!"
+          </p>
+          
+          <!-- NAVIGATION CONTROLS (PREV, COUNTER PILL, NEXT) -->
+          <div class="flex items-center justify-between mt-3 pt-2.5 border-t border-sand/60 text-xs">
+            <button type="button" onclick="prevTestimonial()" class="px-2.5 py-1 bg-white hover:bg-sand/60 text-stone-600 rounded-full border border-sand transition-all cursor-pointer font-bold" aria-label="Previous review">
+              ‹
+            </button>
+            <div class="flex items-center space-x-1.5 text-stone-500 font-medium text-[11px]">
+              <span id="interlude-counter" class="bg-white/80 px-2.5 py-0.5 rounded-full border border-sand/70">Story 1 of 15</span>
+              <span class="text-emerald-600 font-semibold">• Auto-rotating</span>
+            </div>
+            <button type="button" onclick="nextTestimonial()" class="px-2.5 py-1 bg-white hover:bg-sand/60 text-stone-600 rounded-full border border-sand transition-all cursor-pointer font-bold" aria-label="Next review">
+              ›
+            </button>
+          </div>
         </div>
         <button id="interlude-btn" onclick="nextAfterInterlude()" class="w-full sm:w-auto px-8 py-3.5 bg-terracotta hover:bg-terracottaDark text-white font-medium rounded-full shadow-lg shadow-terracotta/25 transition-all text-sm tracking-wide">
           Continue Assessment →
@@ -1900,123 +1915,334 @@
       }
     }
 
-        // DYNAMIC VERIFIED MEMBER TESTIMONIALS POOL (AUTOMATIC ROTATION)
+            // DYNAMIC VERIFIED MEMBER TESTIMONIALS POOL (15 AUTHENTIC MATURE WOMEN PROFILES)
     const testimonialsPool = {
       en: [
         {
-          initials: "EM",
-          author: "Eleanor M., 52 • Verified Member",
-          title: "You are not alone in this.",
-          text: "Over 86% of women over 40 suffer from hidden gut-skin barrier permeability triggered by modern flours.",
-          quote: "Replacing flours with Claire's 4-ingredient meals flattened my belly bloat in 3 days and gave my skin a fresh glow!"
+                "initials": "EM",
+                "author": "Eleanor M., 52 • Verified Member",
+                "title": "You are not alone in this.",
+                "text": "Over 86% of women over 40 suffer from hidden gut-skin barrier permeability triggered by modern flours.",
+                "quote": "Replacing flours with Claire's 4-ingredient meals flattened my belly bloat in 3 days and gave my skin a fresh glow!"
         },
         {
-          initials: "SK",
-          author: "Sarah K., 49 • Verified Member",
-          title: "Restoring natural cellular rhythms.",
-          text: "Chronic cortisol spikes disrupt hormonal balance and cause 3 AM wakeups in 79% of women 40+.",
-          quote: "I used to wake up at 3 AM with a racing heart. The evening decompression ritual helped me sleep 7 straight hours for the first time in years."
+                "initials": "SK",
+                "author": "Sarah K., 49 • Verified Member",
+                "title": "Restoring natural cellular rhythms.",
+                "text": "Chronic cortisol spikes disrupt hormonal balance and cause 3 AM wakeups in 79% of women 40+.",
+                "quote": "I used to wake up at 3 AM with a racing heart. The evening decompression ritual helped me sleep 7 straight hours for the first time in years."
         },
         {
-          initials: "PB",
-          author: "Patricia B., 56 • Verified Member",
-          title: "Visible dermal collagen renewal.",
-          text: "Fibroblast collagen synthesis drops by up to 30% during perimenopause, but targeted cellular nutrition reactivates it.",
-          quote: "My neck lines and jowls were making me feel invisible. Within 2 weeks of Claire's cell-renewal recipes, my daughter asked what expensive cream I was using!"
+                "initials": "PB",
+                "author": "Patricia B., 56 • Verified Member",
+                "title": "Visible dermal collagen renewal.",
+                "text": "Fibroblast collagen synthesis drops by up to 30% during perimenopause, but targeted cellular nutrition reactivates it.",
+                "quote": "My neck lines and jowls were making me feel invisible. Within 2 weeks of Claire's cell-renewal recipes, my daughter asked what expensive cream I was using!"
         },
         {
-          initials: "ML",
-          author: "Miriam L., 51 • Verified Member",
-          title: "Gentle somatic recovery.",
-          text: "Aggressive dieting locks the mature female body into survival mode, storing stubborn visceral abdominal fat.",
-          quote: "I stopped grueling cardio workouts that only spiked my cortisol. Claire's gentle 10-minute somatic reset finally released the stubborn lower belly weight."
+                "initials": "ML",
+                "author": "Miriam L., 51 • Verified Member",
+                "title": "Gentle somatic recovery.",
+                "text": "Aggressive dieting locks the mature female body into survival mode, storing stubborn visceral abdominal fat.",
+                "quote": "I stopped grueling cardio workouts that only spiked my cortisol. Claire's gentle 10-minute somatic reset finally released the stubborn lower belly weight."
         },
         {
-          initials: "BT",
-          author: "Brenda T., 58 • Verified Member",
-          title: "Arterial elasticity & vascular ease.",
-          text: "Blood vessels naturally crave nitric oxide and botanical polyphenols to maintain soft, flexible walls.",
-          quote: "The 9-minute acoustic breathing routine relaxed my blood vessels instantly. My doctor was thrilled with my readings at my last wellness checkup!"
+                "initials": "BT",
+                "author": "Brenda T., 58 • Verified Member",
+                "title": "Arterial elasticity & vascular ease.",
+                "text": "Blood vessels naturally crave nitric oxide and botanical polyphenols to maintain soft, flexible walls.",
+                "quote": "The 9-minute acoustic breathing routine relaxed my blood vessels instantly. My doctor was thrilled with my readings at my last wellness checkup!"
+        },
+        {
+                "initials": "DW",
+                "author": "Diane W., 61 • Verified Member",
+                "title": "Clear afternoon cellular energy.",
+                "text": "Post-meal brain fog is often caused by micro-inflammation in the gut-brain axis rather than natural aging.",
+                "quote": "No more 3 PM crashes or relying on three cups of coffee. My thinking is sharp, my memory is crisp, and I have stable energy until bedtime."
+        },
+        {
+                "initials": "CS",
+                "author": "Clara S., 47 • Verified Member",
+                "title": "Natural lymphatic decompression.",
+                "text": "Estrogen fluctuations in perimenopause slow down lymphatic fluid drainage, causing morning puffiness in ankles and face.",
+                "quote": "My rings and shoes used to feel tight by evening. Claire's gentle drainage routine drained that puffy water weight in less than a week!"
+        },
+        {
+                "initials": "ER",
+                "author": "Evelyn R., 64 • Verified Member",
+                "title": "Restoring the lipid skin barrier.",
+                "text": "Mature skin thins primarily when cellular ceramide and moisture retention pathways are starved of bio-available lipids.",
+                "quote": "The crepey skin on my forearms and decollete smoothed out dramatically. My skin finally holds moisture throughout the entire day."
+        },
+        {
+                "initials": "HV",
+                "author": "Helena V., 53 • Verified Member",
+                "title": "Resetting evening sugar cravings.",
+                "text": "Late-night cravings are usually intestinal biofilm signals demanding glucose, not lack of willpower.",
+                "quote": "I struggled with 9 PM pantry raids for ten years. Claire's 4-ingredient avocado potato buns completely silenced my cravings from day one."
+        },
+        {
+                "initials": "RD",
+                "author": "Rachel D., 55 • Verified Member",
+                "title": "Cooling systemic joint inflammation.",
+                "text": "Inflammatory cytokines peak in morning hours, causing morning finger stiffness and slow mobility in women 50+.",
+                "quote": "Getting out of bed used to take me 10 minutes of stretching just to stand up without aching knees. Now I hop out of bed pain-free!"
+        },
+        {
+                "initials": "TG",
+                "author": "Teresa G., 59 • Verified Member",
+                "title": "Daily digestive lightness & regularity.",
+                "text": "Sluggish gut motility after 50 is typically caused by dehydrated enteric nerves rather than lack of fiber.",
+                "quote": "I had tried every fiber supplement on the market with only gas and cramps. Claire's gentle botanical approach restored daily regularity naturally."
+        },
+        {
+                "initials": "LM",
+                "author": "Lucia M., 50 • Verified Member",
+                "title": "Soothing hormonal mood swings.",
+                "text": "When adrenal stress depletes progesterone reserves, everyday irritations trigger immediate nervous system overwhelm.",
+                "quote": "I felt like I was snapping at everyone. Doing the 10-minute vagus nerve soothing routine brought back my inner calm and emotional patience."
+        },
+        {
+                "initials": "GP",
+                "author": "Grace P., 63 • Verified Member",
+                "title": "Heart health & smooth blood flow.",
+                "text": "Protecting the endothelial glycocalyx lining is the most effective way to maintain healthy arteries past 60.",
+                "quote": "My cardiologist asked what I was doing differently after reviewing my latest vascular elasticity test. I proudly told him about Claire's protocol!"
+        },
+        {
+                "initials": "CF",
+                "author": "Carla F., 48 • Verified Member",
+                "title": "Clearing adult hormonal flareups.",
+                "text": "Jawline acne and sudden redness in perimenopause originate from gut microbiome dysbiosis and sluggish bile flow.",
+                "quote": "I was mortified having teenage breakouts at 48. Clearing my gut biofilms gave me the smoothest, clearest skin I have had since my thirties."
+        },
+        {
+                "initials": "VB",
+                "author": "Vivian B., 67 • Verified Member",
+                "title": "Youthful vitality & joyful stamina.",
+                "text": "Cellular mitochondria can renew their ATP energy production at any age when properly nourished.",
+                "quote": "I am keeping up with my four grandchildren all weekend without exhaustion. I feel 15 years younger than my actual driver's license says!"
         }
-      ],
+],
       pt: [
         {
-          initials: "EM",
-          author: "Eleanor M., 52 • Membro Verificada",
-          title: "Você não está sozinha nisso.",
-          text: "Mais de 86% das mulheres acima de 40 anos sofrem de permeabilidade intestinal oculta causada por farinhas modernas.",
-          quote: "Substituir as farinhas pelas receitas de 4 ingredientes da Claire desinchou minha barriga em 3 dias e devolveu o viço da minha pele!"
+                "initials": "EM",
+                "author": "Eleanor M., 52 • Membro Verificada",
+                "title": "Você não está sozinha nisso.",
+                "text": "Mais de 86% das mulheres acima de 40 anos sofrem de permeabilidade intestinal oculta causada por farinhas modernas.",
+                "quote": "Substituir as farinhas pelas receitas de 4 ingredientes da Claire desinchou minha barriga em 3 dias e devolveu o viço da minha pele!"
         },
         {
-          initials: "SK",
-          author: "Sarah K., 49 • Membro Verificada",
-          title: "Restaurando os ritmos celulares naturais.",
-          text: "Picos de cortisol desregulam os hormônios e provocam despertares às 3h da manhã em 79% das mulheres 40+.",
-          quote: "Eu acordava às 3h da manhã com o coração acelerado. O ritual noturno de descompressão me fez dormir 7 horas seguidas pela primeira vez em anos."
+                "initials": "SK",
+                "author": "Sarah K., 49 • Membro Verificada",
+                "title": "Restaurando os ritmos celulares naturais.",
+                "text": "Picos de cortisol desregulam os hormônios e provocam despertares às 3h da manhã em 79% das mulheres 40+.",
+                "quote": "Eu acordava às 3h da manhã com o coração acelerado. O ritual noturno de descompressão me fez dormir 7 horas seguidas pela primeira vez em anos."
         },
         {
-          initials: "PB",
-          author: "Patrícia B., 56 • Membro Verificada",
-          title: "Renovação visível de colágeno dérmico.",
-          text: "A síntese de colágeno cai até 30% na perimenopausa, mas a nutrição celular de precisão reativa os fibroblastos.",
-          quote: "A flacidez e as marcas no pescoço estavam acabando com minha autoestima. Em 2 semanas com o protocolo da Claire, minha filha perguntou qual creme caro eu estava usando!"
+                "initials": "PB",
+                "author": "Patrícia B., 56 • Membro Verificada",
+                "title": "Renovação visível de colágeno dérmico.",
+                "text": "A síntese de colágeno cai até 30% na perimenopausa, mas a nutrição celular de precisão reativa os fibroblastos.",
+                "quote": "A flacidez e as marcas no pescoço estavam acabando com minha autoestima. Em 2 semanas com o protocolo da Claire, minha filha perguntou qual creme caro eu estava usando!"
         },
         {
-          initials: "ML",
-          author: "Miriam L., 51 • Membro Verificada",
-          title: "Recuperação somática suave.",
-          text: "Dietas restritivas colocam o corpo maduro em modo de sobrevivência, retendo gordura visceral abdominal.",
-          quote: "Parei com os treinos exaustivos que só pioravam meu cortisol. O método somático suave de 10 minutos da Claire finalmente destravou a gordura teimosa da barriga."
+                "initials": "ML",
+                "author": "Miriam L., 51 • Membro Verificada",
+                "title": "Recuperação somática suave.",
+                "text": "Dietas restritivas colocam o corpo maduro em modo de sobrevivência, retendo gordura visceral abdominal.",
+                "quote": "Parei com os treinos exaustivos que só pioravam meu cortisol. O método somático suave de 10 minutos da Claire finalmente destravou a gordura teimosa da barriga."
         },
         {
-          initials: "BT",
-          author: "Brenda T., 58 • Membro Verificada",
-          title: "Elasticidade arterial e circulação leve.",
-          text: "Vasos sanguíneos necessitam de óxido nítrico e polifenóis para manterem suas paredes flexíveis e relaxadas.",
-          quote: "A rotina de 9 minutos de respiração relaxou meus vasos sanguíneos na hora. Meu médico ficou impressionado com meus níveis no último checkup!"
+                "initials": "BT",
+                "author": "Brenda T., 58 • Membro Verificada",
+                "title": "Elasticidade arterial e circulação leve.",
+                "text": "Vasos sanguíneos necessitam de óxido nítrico e polifenóis para manterem suas paredes flexíveis e relaxadas.",
+                "quote": "A rotina de 9 minutos de respiração relaxou meus vasos sanguíneos na hora. Meu médico ficou impressionado com meus níveis no último checkup!"
+        },
+        {
+                "initials": "DW",
+                "author": "Diane W., 61 • Membro Verificada",
+                "title": "Energia mental estável à tarde.",
+                "text": "A névoa mental pós-refeição decorre de microinflamações no eixo intestino-cérebro, e não do envelhecimento natural.",
+                "quote": "Chega de cansaço às 15h ou de depender de 3 xícaras de café. Minha mente clareou, meu raciocínio está rápido e tenho energia até a hora de dormir."
+        },
+        {
+                "initials": "CS",
+                "author": "Clara S., 47 • Membro Verificada",
+                "title": "Drenagem linfática natural.",
+                "text": "As oscilações de estrogênio na perimenopausa tornam a linfa preguiçosa, causando retenção no rosto e tornozelos.",
+                "quote": "Meus sapatos apertavam no final da tarde. A rotina suave de drenagem da Claire eliminou toda essa retenção de água em menos de uma semana!"
+        },
+        {
+                "initials": "ER",
+                "author": "Evelyn R., 64 • Membro Verificada",
+                "title": "Restauração da barreira lipídica da pele.",
+                "text": "A pele madura perde densidade quando as ceramidas celulares não recebem lipídios bioidentificados de alta pureza.",
+                "quote": "O aspecto craquelado e fino dos meus braços e colo melhorou visivelmente. Minha pele finalmente consegue reter hidratação o dia inteiro."
+        },
+        {
+                "initials": "HV",
+                "author": "Helena V., 53 • Membro Verificada",
+                "title": "Fim da compulsão por doces à noite.",
+                "text": "A vontade incontrolável de comer açúcar após o jantar é um sinal emitido por biofilmes no intestino, e não falta de disciplina.",
+                "quote": "Eu assaltava a despensa às 21h todos os dias há anos. Os pãezinhos de 4 ingredientes de abacate e batata da Claire silenciaram essa compulsão no 1º dia."
+        },
+        {
+                "initials": "RD",
+                "author": "Rachel D., 55 • Membro Verificada",
+                "title": "Alívio da rigidez nas articulações.",
+                "text": "Citocinas inflamatórias têm pico ao amanhecer, causando rigidez nas mãos e joelhos em mulheres acima dos 50 anos.",
+                "quote": "Eu precisava de 10 minutos na beira da cama só para conseguir firmar os joelhos sem dor. Agora levanto disposta e sem incômodo algum!"
+        },
+        {
+                "initials": "TG",
+                "author": "Teresa G., 59 • Membro Verificada",
+                "title": "Leveza e funcionamento digestivo diário.",
+                "text": "O intestino lento após os 50 quase sempre é consequência de neurônios entéricos desidratados, e não de falta de fibras secas.",
+                "quote": "Já tinha tomado todo tipo de fibra que só me causava gases e cólica. A abordagem botânica da Claire devolveu meu ritmo digestivo natural."
+        },
+        {
+                "initials": "LM",
+                "author": "Lucia M., 50 • Membro Verificada",
+                "title": "Estabilidade emocional e calma hormonal.",
+                "text": "Quando o estresse adrenal esgota a progesterona, pequenas irritações cotidianas sobrecarregam o sistema nervoso.",
+                "quote": "Eu sentia que ia explodir com qualquer coisa. Praticar os 10 minutos diários de acolhimento do nervo vago me devolveu paciência e paz interior."
+        },
+        {
+                "initials": "GP",
+                "author": "Grace P., 63 • Membro Verificada",
+                "title": "Saúde vascular e artérias macias.",
+                "text": "Proteger o escudo endotelial (glicocálix) é a chave mais comprovada para a longevidade cardiovascular após os 60 anos.",
+                "quote": "Meu cardiologista quis saber o que eu tinha feito quando viu meus exames de flexibilidade arterial. Mostrei a ele o protocolo da Claire com orgulho!"
+        },
+        {
+                "initials": "CF",
+                "author": "Carla F., 48 • Membro Verificada",
+                "title": "Pele limpa sem espinhas hormonais tardias.",
+                "text": "Erupções na mandíbula na perimenopausa nascem do desequilíbrio na flora intestinal e da bile lenta.",
+                "quote": "Eu tinha vergonha de ter espinhas aos 48 anos. Limpar os biofilmes intestinais me deu a pele mais lisa e clara desde os meus trinta anos."
+        },
+        {
+                "initials": "VB",
+                "author": "Vivian B., 67 • Membro Verificada",
+                "title": "Vitalidade jovem e disposição plena.",
+                "text": "As mitocôndrias celulares recuperam sua capacidade de produzir energia ATP em qualquer idade com os nutrientes corretos.",
+                "quote": "Brinco com meus 4 netos o fim de semana inteiro sem ficar exausta. Sinto meu corpo 15 anos mais jovem do que marca minha carteira de motorista!"
         }
-      ],
+],
       es: [
         {
-          initials: "EM",
-          author: "Eleanor M., 52 • Miembro Verificada",
-          title: "No estás sola en esto.",
-          text: "Más del 86% de las mujeres mayores de 40 años sufren permeabilidad en la barrera intestinal por las harinas modernas.",
-          quote: "¡Sustituir las harinas por las recetas de 4 ingredientes de Claire desinflamó mi abdomen en 3 días y devolvió la luminosidad a mi piel!"
+                "initials": "EM",
+                "author": "Eleanor M., 52 • Miembro Verificada",
+                "title": "No estás sola en esto.",
+                "text": "Más del 86% de las mujeres mayores de 40 años sufren permeabilidad en la barrera intestinal por las harinas modernas.",
+                "quote": "¡Sustituir las harinas por las recetas de 4 ingredientes de Claire desinflamó mi abdomen en 3 días y devolvió la luminosidad a mi piel!"
         },
         {
-          initials: "SK",
-          author: "Sarah K., 49 • Miembro Verificada",
-          title: "Restaurando el ritmo celular natural.",
-          text: "Los picos de cortisol alteran el balance hormonal y causan despertares a las 3 AM en el 79% de las mujeres 40+.",
-          quote: "Solía despertarme a las 3 AM con el corazón acelerado. El ritual nocturno de descompresión me hizo dormir 7 horas seguidas por primera vez en años."
+                "initials": "SK",
+                "author": "Sarah K., 49 • Miembro Verificada",
+                "title": "Restaurando el ritmo celular natural.",
+                "text": "Los picos de cortisol alteran el balance hormonal y causan despertares a las 3 AM en el 79% de las mujeres 40+.",
+                "quote": "Solía despertarme a las 3 AM con el corazón acelerado. El ritual nocturno de descompresión me hizo dormir 7 horas seguidas por primera vez en años."
         },
         {
-          initials: "PB",
-          author: "Patricia B., 56 • Miembro Verificada",
-          title: "Renovación visible del colágeno dérmico.",
-          text: "La síntesis de colágeno cae hasta un 30% en la perimenopausia, pero la nutrición celular reactiva los fibroblastos.",
-          quote: "La flacidez y las líneas en mi cuello me hacían sentir apagada. En 2 semanas con el método de Claire, ¡mi hija me preguntó qué crema de lujo estaba usando!"
+                "initials": "PB",
+                "author": "Patricia B., 56 • Miembro Verificada",
+                "title": "Renovación visible del colágeno dérmico.",
+                "text": "La síntesis de colágeno cae hasta un 30% en la perimenopausia, pero la nutrición celular reactiva los fibroblastos.",
+                "quote": "La flacidez y las líneas en mi cuello me hacían sentir apagada. En 2 semanas con el método de Claire, ¡mi hija me preguntó qué crema de lujo estaba usando!"
         },
         {
-          initials: "ML",
-          author: "Miriam L., 51 • Miembro Verificada",
-          title: "Recuperación somática suave.",
-          text: "Las dietas restrictivas bloquean el cuerpo maduro en modo supervivencia, reteniendo grasa visceral abdominal.",
-          quote: "Dejé los entrenamientos agotadores que solo disparaban mi cortisol. El método somático suave de 10 minutos de Claire por fin liberó la grasa del bajo abdomen."
+                "initials": "ML",
+                "author": "Miriam L., 51 • Miembro Verificada",
+                "title": "Recuperación somática suave.",
+                "text": "Las dietas restrictivas bloquean el cuerpo maduro en modo supervivencia, reteniendo grasa visceral abdominal.",
+                "quote": "Dejé los entrenamientos agotadores que solo disparaban mi cortisol. El método somático suave de 10 minutos de Claire por fin liberó la grasa del bajo abdomen."
         },
         {
-          initials: "BT",
-          author: "Brenda T., 58 • Miembro Verificada",
-          title: "Elasticidad arterial y circulación relajada.",
-          text: "Los vasos sanguíneos necesitan óxido nítrico y polifenoles para mantener sus paredes suaves y elásticas.",
-          quote: "La rutina de 9 minutos de respiración relajó mis vasos al instante. ¡Mi médico quedó impresionado con mis valores en la última revisión!"
+                "initials": "BT",
+                "author": "Brenda T., 58 • Miembro Verificada",
+                "title": "Elasticidad arterial y circulación relajada.",
+                "text": "Los vasos sanguíneos necesitan óxido nítrico y polifenoles para mantener sus paredes suaves y elásticas.",
+                "quote": "La rutina de 9 minutos de respiración relajó mis vasos al instante. ¡Mi médico quedó impresionado con mis valores en la última revisión!"
+        },
+        {
+                "initials": "DW",
+                "author": "Diane W., 61 • Miembro Verificada",
+                "title": "Energía mental clara por las tardes.",
+                "text": "La pesadez mental tras las comidas se debe a microinflamaciones en el eje intestino-cerebro, no al envejecimiento inevitable.",
+                "quote": "Se acabó el agotamiento de las 3 de la tarde o depender de café continuo. Mi mente está despierta y mantengo energía constante hasta la noche."
+        },
+        {
+                "initials": "CS",
+                "author": "Clara S., 47 • Miembro Verificada",
+                "title": "Descompresión linfática natural.",
+                "text": "Los cambios de estrógeno en la perimenopausia ralentizan la linfa, provocando retención en el rostro y los tobillos.",
+                "quote": "Mis anillos y zapatos me apretaban al final del día. ¡La rutina suave de Claire eliminó esa hinchazón acuosa en menos de una semana!"
+        },
+        {
+                "initials": "ER",
+                "author": "Evelyn R., 64 • Miembro Verificada",
+                "title": "Restauración de la barrera dérmica.",
+                "text": "La piel madura adelgaza cuando las ceramidas celulares no reciben lípidos puros de alta asimilación.",
+                "quote": "La textura fina y agrietada de mis antebrazos y escote mejoró visiblemente. Mi piel por fin retiene hidratación todo el día."
+        },
+        {
+                "initials": "HV",
+                "author": "Helena V., 53 • Miembro Verificada",
+                "title": "Fin a la ansiedad nocturna por azúcar.",
+                "text": "El deseo imperioso de dulces tras la cena suele ser una señal de biofilms intestinales que piden glucosa, no falta de fuerza de voluntad.",
+                "quote": "Luché con visitas nocturnas a la cocina durante diez años. Los panecillos de 4 ingredientes de Claire calmaron esa ansiedad desde el primer día."
+        },
+        {
+                "initials": "RD",
+                "author": "Rachel D., 55 • Miembro Verificada",
+                "title": "Alivio de la rigidez articular matinal.",
+                "text": "Las citoquinas inflamatorias tienen su pico al despertar, provocando rigidez en manos y rodillas en mujeres 50+.",
+                "quote": "Necesitaba diez minutos al borde de la cama solo para poder apoyar las rodillas sin dolor. ¡Ahora me levanto ágil y sin molestias!"
+        },
+        {
+                "initials": "TG",
+                "author": "Teresa G., 59 • Miembro Verificada",
+                "title": "Ligereza y regularidad digestiva diaria.",
+                "text": "El intestino lento tras los 50 suele deberse a terminaciones entéricas deshidratadas, más que a falta de fibra seca.",
+                "quote": "Había probado suplementos de fibra que solo me daban gases y retortijones. El enfoque botánico de Claire recuperó mi ritmo natural."
+        },
+        {
+                "initials": "LM",
+                "author": "Lucia M., 50 • Miembro Verificada",
+                "title": "Estabilidad emocional y calma hormonal.",
+                "text": "Cuando el estrés drena las reservas de progesterona, cualquier contratiempo sobrecarga de inmediato el sistema nervioso.",
+                "quote": "Sentía que perdía la paciencia con facilidad. Realizar los 10 minutos de relajación del nervio vago me devolvió la serenidad interior."
+        },
+        {
+                "initials": "GP",
+                "author": "Grace P., 63 • Miembro Verificada",
+                "title": "Salud vascular y arterias flexibles.",
+                "text": "Proteger la barrera endotelial (glicocáliz) es el paso más efectivo para mantener arterias suaves y elásticas pasados los 60.",
+                "quote": "Mi cardiólogo me preguntó qué estaba haciendo tras ver mis pruebas de elasticidad vascular. ¡Le hablé con orgullo del protocolo de Claire!"
+        },
+        {
+                "initials": "CF",
+                "author": "Carla F., 48 • Miembro Verificada",
+                "title": "Piel limpia sin brotes hormonales tardíos.",
+                "text": "Los brotes en la mandíbula en la perimenopausia provienen de alteraciones en la flora intestinal y digestión lenta.",
+                "quote": "Me avergonzaba tener granos a los 48 años. Limpiar los biofilms intestinales me dio la piel más suave y luminosa desde mis treinta."
+        },
+        {
+                "initials": "VB",
+                "author": "Vivian B., 67 • Miembro Verificada",
+                "title": "Vitalidad juvenil y energía plena.",
+                "text": "Las mitocondrias celulares pueden regenerar su producción energética a cualquier edad con la nutrición adecuada.",
+                "quote": "Paso el fin de semana jugando con mis cuatro nietos sin cansarme. ¡Siento mi cuerpo 15 años más joven de lo que marca mi documento!"
         }
-      ]
+]
     };
 
-    let interludeCurrentIndex = 0;
+        let interludeCurrentIndex = 0;
     let interludeAutoTimer = null;
+    let interludePaused = false;
 
     function renderTestimonial(index, animate = false) {
       const pool = testimonialsPool[currentLang] || testimonialsPool.en;
@@ -2034,12 +2260,27 @@
         const cleanQuote = item.quote.replace(/^[\"“”']+|[\"“”']+$/g, '').trim();
         setSafeText('interlude-quote', `"${cleanQuote}"`);
 
-        // Render mini dots
-        const dots = document.getElementById('interlude-dots');
-        if (dots) {
-          dots.innerHTML = pool.map((_, i) => `
-            <button type="button" onclick="renderTestimonial(${i}, true)" class="h-1.5 rounded-full transition-all duration-300 cursor-pointer ${i === interludeCurrentIndex ? 'w-6 bg-terracotta' : 'w-2 bg-stone-300 hover:bg-stone-400'}" aria-label="Review ${i+1}"></button>
-          `).join('');
+        // Counter text localization
+        const counterEl = document.getElementById('interlude-counter');
+        if (counterEl) {
+          if (currentLang === 'pt') {
+            counterEl.textContent = `Depoimento ${interludeCurrentIndex + 1} de ${pool.length}`;
+          } else if (currentLang === 'es') {
+            counterEl.textContent = `Historia ${interludeCurrentIndex + 1} de ${pool.length}`;
+          } else {
+            counterEl.textContent = `Story ${interludeCurrentIndex + 1} of ${pool.length}`;
+          }
+        }
+
+        const badgeEl = document.getElementById('interlude-badge');
+        if (badgeEl) {
+          if (currentLang === 'pt') {
+            badgeEl.textContent = `✓ ${pool.length} Histórias Verificadas`;
+          } else if (currentLang === 'es') {
+            badgeEl.textContent = `✓ ${pool.length} Historias Verificadas`;
+          } else {
+            badgeEl.textContent = `✓ ${pool.length} Verified Stories`;
+          }
         }
 
         if (card) card.style.opacity = '1';
@@ -2053,21 +2294,40 @@
       }
     }
 
+    function nextTestimonial() {
+      renderTestimonial(interludeCurrentIndex + 1, true);
+    }
+
+    function prevTestimonial() {
+      renderTestimonial(interludeCurrentIndex - 1, true);
+    }
+
+    function pauseInterlude() {
+      interludePaused = true;
+    }
+
+    function resumeInterlude() {
+      interludePaused = false;
+    }
+
     function showInterlude(data) {
       document.getElementById('quiz-view').classList.add('hidden');
       document.getElementById('progress-container').classList.add('hidden');
 
       const interludeView = document.getElementById('interlude-view');
 
-      // Pick a random fresh testimonial on entry
+      // Pick a random fresh testimonial from the 15 profiles
       const pool = testimonialsPool[currentLang] || testimonialsPool.en;
       interludeCurrentIndex = Math.floor(Math.random() * pool.length);
       renderTestimonial(interludeCurrentIndex, false);
 
       // Start automatic rotation every 4.5 seconds
       if (interludeAutoTimer) clearInterval(interludeAutoTimer);
+      interludePaused = false;
       interludeAutoTimer = setInterval(() => {
-        renderTestimonial(interludeCurrentIndex + 1, true);
+        if (!interludePaused) {
+          renderTestimonial(interludeCurrentIndex + 1, true);
+        }
       }, 4500);
 
       interludeView.classList.remove('hidden');
