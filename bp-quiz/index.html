@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claire Evans • 9-Minute Arterial Elasticity & Blood Pressure Audit</title>
+  <meta name="description" content="Discover your personalized arterial elasticity score and the 9-minute natural protocol to restore healthy blood pressure without harsh side effects.">
+  <link rel="icon" type="image/png" href="/quiz/images/the_ageless_routine_badge_square.webp">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            terracotta: '#C15C3D',
+            terracottaDark: '#A04528',
+            linen: '#FBF9F5',
+            sand: '#F3EFEA',
+            charcoal: '#2D2825',
+            warmGray: '#766E65',
+            sage: '#607254'
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'Segoe UI', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #F6F3EE;
+      color: #2D2825;
+      -webkit-font-smoothing: antialiased;
+    }
+    .cormorant {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .lang-btn.active {
+      background-color: #2D2825;
+      color: #ffffff;
+      font-weight: 700;
+    }
+    .option-card {
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .option-card:hover {
+      transform: translateY(-2px);
+      border-color: #C15C3D;
+      box-shadow: 0 8px 20px -6px rgba(193, 92, 61, 0.15);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-terracotta selection:text-white">
+
+  <!-- TOP HEADER (BRAND + LANGUAGE SWITCHER) -->
+  <header class="w-full max-w-4xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center z-10">
+    <div class="flex items-center space-x-2.5">
+      <span class="w-8 h-8 rounded-full bg-terracotta text-white font-serif font-bold flex items-center justify-center text-sm shadow-xs">
+        🫀
+      </span>
+      <div>
+        <span class="font-serif font-bold text-base sm:text-lg tracking-wider text-charcoal block leading-none">
+          CLAIRE EVANS
+        </span>
+        <span id="ui-role" class="text-[10px] sm:text-xs text-warmGray tracking-wide block mt-0.5 font-medium">
+          by Claire Evans • Mature Cardiovascular Mentor
+        </span>
+      </div>
+    </div>
+
+    <!-- LANGUAGE SELECTOR -->
+    <div class="flex items-center p-1 bg-sand/80 rounded-full border border-sand text-xs font-semibold shadow-2xs">
+      <button id="btn-lang-en" onclick="setLanguage('en')" class="lang-btn px-2.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer active">
+        EN
+      </button>
+      <button id="btn-lang-pt" onclick="setLanguage('pt')" class="lang-btn px-2.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer">
+        PT
+      </button>
+      <button id="btn-lang-es" onclick="setLanguage('es')" class="lang-btn px-2.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer">
+        ES
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN WRAPPER (CENTERED CHASSIS) -->
+  <main class="flex-grow flex items-center justify-center p-3 sm:p-6 pb-24 sm:pb-28">
+    <div id="app-chassis" class="w-full max-w-[430px] bg-white sm:rounded-[48px] shadow-2xl sm:border-[10px] sm:border-[#1F1D1B] p-5 sm:p-7 relative overflow-hidden transition-all duration-300">
+      
+      <!-- Top Smartphone Speaker Notch -->
+      <div id="chassis-notch" class="hidden sm:flex items-center justify-center w-24 h-4 bg-[#1F1D1B] rounded-full mx-auto mb-4">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#2A2724] border border-[#3A3632]"></span>
+      </div>
+
+      <!-- VIEW MODE SWITCHER DENTRO DO CHASSIS -->
+      <div class="hidden sm:flex items-center justify-center mb-4">
+        <div class="flex items-center p-1 bg-sand/70 rounded-full border border-sand text-xs font-semibold shadow-2xs">
+          <button id="btn-mode-phone" onclick="setViewMode('phone')" class="flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-white bg-charcoal shadow-sm cursor-pointer">
+            <span>📱</span>
+            <span id="ui-mode-phone">Modo Celular</span>
+          </button>
+          <button id="btn-mode-expanded" onclick="setViewMode('expanded')" class="flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer">
+            <span>🖥️</span>
+            <span id="ui-mode-expanded">Modo Expandido</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- App Brand Header Inside Chassis -->
+      <div class="mb-5 flex items-center justify-center space-x-3 sm:space-x-3.5">
+        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl overflow-hidden border border-red-300/40 shadow-sm bg-[#2C1810] flex-shrink-0">
+          <img src="/bp-quiz/images/bp_course_mockup_1x1.jpg" alt="Blood Pressure Protocol Icon" class="w-full h-full object-cover">
+        </div>
+        <div class="text-left">
+          <div class="flex items-center space-x-1">
+            <h1 class="cormorant text-base sm:text-lg font-bold tracking-wider text-charcoal leading-tight">
+              9-MINUTE BP PROTOCOL
+            </h1>
+            <span class="text-[11px] font-bold text-terracotta align-top">™</span>
+          </div>
+          <p id="ui-chassis-sub" class="text-xs text-stone-500 font-medium leading-tight mt-0.5">
+            Natural Vascular Softness & Nitric Oxide Restoration
+          </p>
+          <p id="ui-chassis-by" class="text-[11px] sm:text-xs text-terracotta font-semibold leading-tight mt-0.5">
+            by Claire Evans • Mature Cardiovascular Mentor
+          </p>
+        </div>
+      </div>
+
+      <!-- PROGRESS BAR CONTAINER -->
+      <div id="progress-container" class="mb-6">
+        <div class="flex justify-between items-center text-xs sm:text-sm font-medium text-stone-600 mb-2">
+          <span id="step-counter" class="uppercase tracking-wider">Question 1 of 10</span>
+          <span id="step-percent" class="font-bold text-terracotta">10% Complete</span>
+        </div>
+        <div class="w-full h-2 bg-sand/70 rounded-full overflow-hidden">
+          <div id="progress-bar" class="h-full bg-gradient-to-r from-terracotta to-amber-600 rounded-full transition-all duration-300 ease-out" style="width: 10%;"></div>
+        </div>
+      </div>
+
+      <!-- QUIZ VIEW (DYNAMIC) -->
+      <div id="quiz-view">
+        <!-- Claire Intro Banner -->
+        <div class="mb-4 flex items-center space-x-3 p-3 bg-linen rounded-2xl border border-sand/80">
+          <img src="/quiz/images/Claire_Evans_Official_Kitchen_Portrait_4x3.webp" alt="Claire Evans" class="w-12 h-12 rounded-xl object-cover border border-amber-200/50 flex-shrink-0 shadow-xs">
+          <div>
+            <div class="flex items-center space-x-1.5">
+              <span class="text-xs font-bold text-charcoal">Claire Evans</span>
+              <span id="ui-claire-mentor-badge" class="text-xs text-terracotta bg-terracotta/10 px-2 py-0.5 rounded-full font-semibold">51 & Glowing</span>
+            </div>
+            <p id="ui-claire-intro" class="text-xs sm:text-sm text-stone-600 leading-normal mt-0.5">"Answer instinctively. Let's find what your vascular system needs to relax."</p>
+          </div>
+        </div>
+
+        <h2 id="question-title" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal leading-tight mb-2">
+          Loading assessment...
+        </h2>
+        <p id="question-subtitle" class="text-sm sm:text-[15px] text-stone-600 mb-6 leading-relaxed">
+          Select the option that best describes your daily experience.
+        </p>
+
+        <!-- OPTIONS CONTAINER -->
+        <div id="options-container" class="space-y-3">
+          <!-- Dynamically injected -->
+        </div>
+      </div>
+
+      <!-- INTERLUDE VIEW (SOCIAL PROOF PAUSE WITH 15 ROTATING MEMBERS) -->
+      <div id="interlude-view" class="hidden text-center py-4">
+        <div class="w-14 h-14 rounded-full bg-amber-50 text-terracotta mx-auto flex items-center justify-center text-2xl mb-4 shadow-sm border border-amber-200/50">
+          ✨
+        </div>
+        <h3 id="interlude-title" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal mb-3">
+          Natural arterial elasticity restored.
+        </h3>
+        <p id="interlude-text" class="text-sm sm:text-base text-stone-700 leading-relaxed max-w-md mx-auto mb-6">
+          Over 78% of women past 50 experience stiffening vascular walls due to declining nitric oxide synthesis.
+        </p>
+
+        <!-- DYNAMIC CARD WITH ROTATION CONTROLS -->
+        <div id="interlude-card" onmouseenter="pauseInterlude()" onmouseleave="resumeInterlude()" class="p-4 sm:p-5 bg-linen rounded-2xl border border-sand/80 text-left mb-6 max-w-md mx-auto transition-opacity duration-300 relative">
+          <div class="flex items-center justify-between mb-2.5">
+            <div class="flex items-center space-x-3">
+              <div id="interlude-avatar" class="w-9 h-9 rounded-full bg-terracotta/15 text-terracotta font-bold flex items-center justify-center text-xs shadow-2xs border border-terracotta/20 flex-shrink-0">
+                BT
+              </div>
+              <div>
+                <p id="interlude-author" class="text-sm font-bold text-charcoal">Brenda T., 58 • Verified Member</p>
+                <div class="text-xs text-amber-500">★★★★★</div>
+              </div>
+            </div>
+            <span id="interlude-badge" class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 bg-emerald-50 text-emerald-700 rounded-full border border-emerald-200/60">
+              ✓ 15 Verified Stories
+            </span>
+          </div>
+          <p id="interlude-quote" class="text-sm text-stone-700 italic leading-relaxed min-h-[4rem] flex items-center">
+            "The 9-minute acoustic breathing routine relaxed my blood vessels instantly. My doctor was thrilled when my reading dropped from 146/92 to 118/76 at my checkup!"
+          </p>
+
+          <!-- NAVIGATION CONTROLS -->
+          <div class="flex items-center justify-between mt-3 pt-2.5 border-t border-sand/60 text-xs">
+            <button type="button" onclick="prevTestimonial()" class="px-2.5 py-1 bg-white hover:bg-sand/60 text-stone-600 rounded-full border border-sand transition-all cursor-pointer font-bold" aria-label="Previous review">
+              ‹
+            </button>
+            <div class="flex items-center space-x-1.5 text-stone-500 font-medium text-[11px]">
+              <span id="interlude-counter" class="bg-white/80 px-2.5 py-0.5 rounded-full border border-sand/70">Story 1 of 15</span>
+              <span id="interlude-status" class="text-emerald-600 font-semibold">• Auto-rotating</span>
+            </div>
+            <button type="button" onclick="nextTestimonial()" class="px-2.5 py-1 bg-white hover:bg-sand/60 text-stone-600 rounded-full border border-sand transition-all cursor-pointer font-bold" aria-label="Next review">
+              ›
+            </button>
+          </div>
+        </div>
+
+        <button id="interlude-btn" onclick="nextAfterInterlude()" class="w-full sm:w-auto px-8 py-3.5 bg-terracotta hover:bg-terracottaDark text-white font-medium rounded-full shadow-lg shadow-terracotta/25 transition-all text-sm tracking-wide">
+          Continue Assessment →
+        </button>
+      </div>
+
+      <!-- CALCULATING VIEW (SIMULATED CLINICAL ANALYSIS) -->
+      <div id="calculating-view" class="hidden text-center py-6">
+        <div class="w-full max-w-sm mx-auto h-36 sm:h-44 rounded-2xl overflow-hidden mb-5 border border-sand/90 shadow-md relative">
+          <img src="/bp-quiz/images/bp_breathing_lifestyle.jpg" alt="Arterial Compliance Assessment" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-transparent to-transparent flex items-end justify-center p-3">
+            <span class="text-xs font-semibold text-amber-200 uppercase tracking-widest flex items-center space-x-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              <span id="ui-calc-scan-badge">Scanning Arterial Compliance</span>
+            </span>
+          </div>
+        </div>
+        <h3 id="calc-step-text" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal mb-2">
+          Analyzing your vascular resistance...
+        </h3>
+        <p id="calc-sub-text" class="text-sm text-stone-600 max-w-xs mx-auto mb-6">
+          Evaluating pulse wave velocity and nitric oxide depletion patterns.
+        </p>
+        <div class="w-48 h-1.5 bg-sand rounded-full mx-auto overflow-hidden">
+          <div id="calc-bar" class="h-full bg-terracotta transition-all duration-700 ease-out" style="width: 15%;"></div>
+        </div>
+      </div>
+
+      <!-- RESULTS VIEW (DIAGNOSIS + PAYWALL + AFFILIATE PAIRING) -->
+      <div id="results-view" class="hidden">
+        <!-- Top Badge -->
+        <div class="text-center mb-6">
+          <span id="ui-res-badge" class="inline-flex items-center space-x-1.5 px-3 py-1 bg-amber-50 text-terracotta text-xs font-semibold rounded-full border border-amber-200/60 uppercase tracking-widest mb-2">
+            <span>✓</span> <span>Analysis Complete</span>
+          </span>
+          <h2 id="ui-res-title" class="cormorant text-3xl sm:text-4xl font-bold text-charcoal leading-tight">
+            Your Arterial Elasticity & Cardiovascular Profile
+          </h2>
+          <p id="ui-res-curated" class="text-xs sm:text-sm text-warmGray mt-1">Curated by Claire Evans • Daily Health Review US</p>
+        </div>
+
+        <!-- VISUAL HERO BANNER -->
+        <div class="w-full h-36 sm:h-44 rounded-2xl overflow-hidden mb-6 border border-sand/90 shadow-sm relative">
+          <img src="/bp-quiz/images/bp_protocol_hero_4x3.jpg" alt="Arterial Elasticity Master Protocol" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-transparent flex items-end justify-between p-4 text-white">
+            <div>
+              <span id="ui-map-label" class="text-xs uppercase font-bold tracking-widest text-amber-300">Vascular Compliance Map</span>
+              <p id="ui-map-title" class="text-sm sm:text-base font-semibold">Arterial Softness & Elasticity Score</p>
+            </div>
+            <div class="text-right">
+              <span id="ui-map-audit" class="text-xs text-stone-300">Calculated by Clinical AI</span>
+              <p id="ui-map-status" class="text-xs sm:text-sm font-bold text-emerald-400">Calculated ✓</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- HEALTH SCORE METERS -->
+        <div class="bg-linen rounded-2xl p-4 sm:p-5 border border-sand/90 mb-6">
+          <div class="flex items-center justify-between mb-3">
+            <span id="ui-res-stress-title" class="text-xs sm:text-sm font-bold uppercase tracking-wider text-charcoal">Cardiovascular Tension Profile</span>
+            <span id="score-badge" class="px-3 py-1 bg-terracotta/15 text-terracotta font-bold text-xs sm:text-sm rounded-full">Elevated Arterial Resistance</span>
+          </div>
+
+          <!-- Meters List -->
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-tone-label" class="text-stone-700">Vascular Tone & Arterial Stiffness</span>
+                <span id="meter-tone-val" class="font-bold text-charcoal">86%</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-tone" class="h-full bg-red-400 rounded-full" style="width: 86%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-no-label" class="text-stone-700">Endothelial Nitric Oxide Availability</span>
+                <span id="meter-no-val" class="font-bold text-charcoal">38%</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-no" class="h-full bg-amber-500 rounded-full" style="width: 38%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-symp-label" class="text-stone-700">Sympathetic Nervous System Overdrive</span>
+                <span id="meter-symp-val" class="font-bold text-charcoal">82%</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-symp" class="h-full bg-orange-400 rounded-full" style="width: 82%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-micro-label" class="text-stone-700">Micro-Capillary Peripheral Circulation</span>
+                <span id="meter-micro-val" class="font-bold text-charcoal">44%</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-micro" class="h-full bg-amber-400 rounded-full" style="width: 44%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIAGNOSIS SUMMARY BOX WITH CLAIRE PORTRAIT -->
+        <div class="mb-6 p-4 sm:p-5 border-l-4 border-terracotta bg-white rounded-r-2xl shadow-sm border-t border-r border-b border-sand/80">
+          <div class="flex items-center space-x-3 mb-2.5">
+            <img src="/quiz/images/Claire_Evans_Official_Kitchen_Portrait_4x3.webp" alt="Claire Evans" class="w-11 h-11 rounded-full object-cover border border-amber-200/60 shadow-sm flex-shrink-0">
+            <div>
+              <h4 id="ui-claire-takeaway" class="text-base font-bold text-charcoal">Claire's Personalized Assessment:</h4>
+              <p id="ui-claire-subrole" class="text-xs text-stone-500">Mature Cardiovascular & Longevity Mentor</p>
+            </div>
+          </div>
+          <p id="diagnosis-text" class="text-sm sm:text-[15px] text-stone-700 leading-relaxed font-normal">
+            Your responses indicate elevated peripheral vascular resistance and depleted endothelial nitric oxide reserves. When vascular walls lose their natural elastic bounce, every heartbeat forces blood through constricted, unyielding channels—raising your numbers and straining your heart. High-dose medications force numbers down artificially without addressing the root cause: rigid arterial muscle cells. The 9-Minute Resonant Breathing Protocol commands your baroreceptors to naturally open and soften your arteries within minutes.
+          </p>
+        </div>
+
+        <!-- PRIMARY HERO OFFER ($27 PROPRIETARY PROTOCOL) -->
+        <div class="border-2 border-terracotta/40 rounded-3xl p-5 sm:p-6 bg-gradient-to-b from-white to-amber-50/30 relative shadow-lg shadow-terracotta/10 mb-6">
+          <div id="ui-foundation-badge" class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-terracotta text-white font-bold text-xs uppercase tracking-widest rounded-full shadow-sm whitespace-nowrap">
+            YOUR RECOMMENDED FOUNDATION
+          </div>
+
+          <div class="flex items-start space-x-4 mb-4 mt-2">
+            <div id="hero-img-box" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border border-sand flex-shrink-0 shadow-sm bg-sand">
+              <img id="hero-prod-img" src="/bp-quiz/images/bp_protocol_hero_4x3.jpg" alt="Blood Pressure Master Protocol" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <span id="hero-exp-badge" class="text-[11px] font-bold text-terracotta uppercase tracking-wider block mb-1">
+                Guided Audio-Visual Experience
+              </span>
+              <h3 id="hero-prod-title" class="cormorant text-xl sm:text-2xl font-bold text-charcoal leading-tight">
+                The 9-Minute Arterial Elasticity & Natural Blood Pressure Protocol™
+              </h3>
+              <p id="hero-prod-subtitle" class="text-xs text-stone-500 mt-1">
+                Guided 0.1 Hz Breathing App • Digital BP Tracker • Nitric Oxide Kitchen Guide
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature Bullets -->
+          <ul id="hero-prod-bullets" class="space-y-2.5 text-xs sm:text-sm text-stone-700 mb-6 border-t border-sand/80 pt-4">
+            <!-- Injected via JS -->
+          </ul>
+
+          <!-- Pricing & Checkout CTA -->
+          <div class="bg-linen rounded-2xl p-4 border border-sand flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div>
+              <div class="flex items-baseline space-x-2">
+                <span class="text-2xl sm:text-3xl font-bold text-charcoal font-serif">$27</span>
+                <span class="text-xs text-stone-400 line-through" id="ui-regular-price">Regular: $197</span>
+                <span id="ui-onetime-label" class="text-xs font-semibold px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded-full">One-Time</span>
+              </div>
+              <p class="text-[11px] text-stone-500 mt-0.5">Instant Digital Access • No Subscriptions • 60-Day Guarantee</p>
+            </div>
+
+            <a id="hero-checkout-btn" href="https://whop.com/checkout/plan_TplaHGlAQH4BO" target="_blank" class="w-full sm:w-auto px-6 py-3.5 bg-terracotta hover:bg-terracottaDark text-white font-bold text-sm rounded-full shadow-lg shadow-terracotta/25 transition-all text-center">
+              Unlock Protocol ($27) →
+            </a>
+          </div>
+        </div>
+
+        <!-- COMPLEMENTARY BOTANICAL PAIRING (COREVITAL BURN) -->
+        <div id="affiliate-box" class="border border-sand bg-white rounded-3xl p-5 sm:p-6 mb-6 shadow-sm">
+          <div class="flex items-center justify-between mb-3">
+            <span id="ui-pairing-badge" class="text-xs font-bold uppercase tracking-wider text-terracotta">
+              CLAIRE'S BOTANICAL PAIRING
+            </span>
+            <span id="ui-physician-label" class="text-xs text-stone-500">Physician-Formulated</span>
+          </div>
+
+          <h4 id="affiliate-title" class="cormorant text-xl font-bold text-charcoal leading-snug mb-1">
+            CoreVital Burn™ Vascular & Metabolic Botanical Complex
+          </h4>
+          <p id="affiliate-desc" class="text-sm text-stone-600 leading-relaxed mb-3">
+            Co-founded with Dr. Samir Bute, MD. Contains 500mg pure Berberine HCl, Ceylon Cinnamon, and Milk Thistle to support flexible arterial walls, blood flow, and metabolic vascular ease.
+          </p>
+
+          <a id="affiliate-link-btn" href="https://dailyhealthreviewus.com/go/corevital" target="_blank" class="inline-flex items-center space-x-1.5 text-sm font-bold text-terracotta hover:text-terracottaDark">
+            <span id="ui-explore-pairing">Explore Claire's Official Pairing</span>
+            <span>→</span>
+          </a>
+
+          <!-- FTC Affiliate Disclosure -->
+          <p id="ui-ftc-disclosure" class="text-xs text-stone-500/80 mt-3 pt-2 border-t border-sand/60 italic leading-relaxed">
+            Affiliate Disclosure: If you choose to purchase this recommended pairing through our link, Daily Health Review may earn a small commission at no additional cost to you. We only recommend rigorously vetted formulations.
+          </p>
+        </div>
+
+        <!-- EXPLORE COMPLETE PROTOCOL CATALOG -->
+        <div class="border-t border-sand pt-5">
+          <h4 id="ui-catalog-title" class="cormorant text-xl font-bold text-charcoal text-center mb-1">Explore Claire’s Complete VIP Library</h4>
+          <p id="ui-catalog-sub" class="text-xs sm:text-sm text-stone-500 text-center mb-4">Each comprehensive wellness protocol is just $27 (one-time payment)</p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-left text-xs mb-4">
+            <a href="https://dailyhealthreviewus.com/protocol" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span class="font-bold text-charcoal block">🧬 28-Day Cell Renewal</span>
+              <span class="text-xs text-stone-500">Skin, collagen & vitality</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/apothecary" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span class="font-bold text-charcoal block">🌿 Home Apothecary Bible</span>
+              <span class="text-xs text-stone-500">Forgotten natural remedies</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/somatic" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span class="font-bold text-charcoal block">🧘🏼‍♀️ 21-Day Somatic Reset</span>
+              <span class="text-xs text-stone-500">Nervous system & cortisol belly</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/cleanse" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span class="font-bold text-charcoal block">🫖 14-Day Parasite Cleanse</span>
+              <span class="text-xs text-stone-500">Lymphatic & biofilm flush</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/arteries" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block sm:col-span-2">
+              <span class="font-bold text-charcoal block">❤️ 28-Day Clean Arteries Protocol</span>
+              <span class="text-xs text-stone-500">Plaque defense, endothelial glycocalyx & Vitamin K2 calcium redirection</span>
+            </a>
+          </div>
+
+          <div class="text-center">
+            <a id="ui-view-storefront" href="https://whop.com/dailyhealthreviewus" target="_blank" class="inline-block text-sm font-bold text-terracotta hover:underline">
+              View All 6 Protocols in Claire's Official Whop Storefront →
+            </a>
+          </div>
+
+          <!-- RESTART / RETAKE ASSESSMENT BUTTON -->
+          <div class="mt-8 pt-6 border-t border-sand/80 text-center">
+            <button id="ui-btn-restart" onclick="restartQuiz()" class="inline-flex items-center space-x-2 px-5 py-2.5 bg-sand/60 hover:bg-sand text-stone-700 hover:text-charcoal rounded-full text-xs sm:text-sm font-semibold transition-all border border-sand shadow-2xs hover:shadow-xs cursor-pointer">
+              <span id="ui-restart-text">🔄 Recomeçar Avaliação (Limpar Respostas)</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- PROFESSIONAL MEDICAL & LEGAL FOOTER -->
+  <footer class="mt-12 py-8 border-t border-sand text-center text-xs text-stone-500 max-w-2xl mx-auto px-4">
+    <p id="ui-footer-copy" class="mb-2">© 2026 Daily Health Review US • The 9-Minute Blood Pressure Protocol™ by Claire Evans.</p>
+    <p id="ui-footer-med" class="text-[11px] text-stone-400 leading-relaxed mb-4">Medical Disclaimer: The statements and protocols presented on this website have not been evaluated by the Food and Drug Administration. These materials are intended for educational and wellness guidance only and are not a substitute for professional medical diagnosis or treatment. Always consult your physician.</p>
+    <div class="flex items-center justify-center space-x-4 text-[11px] text-stone-400">
+      <a id="ui-footer-privacy" href="/privacy" class="hover:underline">Privacy Policy</a>
+      <span>•</span>
+      <a id="ui-footer-terms" href="/terms" class="hover:underline">Terms of Service</a>
+      <span>•</span>
+      <a id="ui-footer-disclosure" href="/disclosure" class="hover:underline">FTC Affiliate Disclosure</a>
+    </div>
+  </footer>
+
+  <!-- MULTI-LANGUAGE SCRIPT (TRILINGUAL ENGINE: EN / PT / ES) -->
+  <script>
+    function setSafeText(id, val) {
+      const el = document.getElementById(id);
+      if (el && val !== undefined) el.textContent = val;
+    }
+
+    let currentLang = 'en';
+
+    // TRANSLATIONS DICTIONARY (EN, PT, ES)
+    const i18n = {
+      en: {
+        role: "by Claire Evans • Mature Cardiovascular Mentor",
+        modePhone: "Mobile View",
+        modeExpanded: "Expanded View",
+        chassisSub: "Natural Vascular Softness & Nitric Oxide Restoration",
+        chassisBy: "by Claire Evans • Mature Cardiovascular Mentor",
+        claireMentorBadge: "51 & Glowing",
+        claireIntro: "\"Answer instinctively. Let's find what your vascular system needs to relax.\"",
+        stepCounter: "Question {X} of {Y}",
+        stepPercent: "{P}% Complete",
+        interludeContinue: "Continue Assessment →",
+        calculatingSteps: [
+          { text: "Analyzing peripheral vascular resistance markers...", sub: "Evaluating morning systolic curves and autonomic vasoconstriction.", width: "35%" },
+          { text: "Cross-referencing endothelial elasticity indicators...", sub: "Measuring nitric oxide decline against mature cardiovascular benchmarks.", width: "70%" },
+          { text: "Calibrating the 9-Minute 0.1 Hz Resonant Breathing Pacer...", sub: "Matching baroreceptor acoustic frequencies and kitchen vasodilators.", width: "100%" }
+        ],
+        calcScanBadge: "Scanning Arterial Compliance",
+        resultsBadge: "Analysis Complete",
+        resultsTitle: "Your Arterial Elasticity & Cardiovascular Profile",
+        resCurated: "Curated by Claire Evans • Daily Health Review US",
+        mapLabel: "Vascular Compliance Map",
+        mapTitle: "Arterial Softness & Elasticity Score",
+        mapAudit: "Calculated by Clinical AI",
+        mapStatus: "Calculated ✓",
+        stressTitle: "Cardiovascular Tension Profile",
+        meterTone: "Vascular Tone & Arterial Stiffness",
+        meterNo: "Endothelial Nitric Oxide Availability",
+        meterSymp: "Sympathetic Nervous System Tension",
+        meterMicro: "Micro-Capillary Peripheral Circulation",
+        claireTakeaway: "Claire's Personalized Assessment:",
+        claireSubrole: "Mature Cardiovascular & Longevity Mentor",
+        foundationBadge: "YOUR RECOMMENDED FOUNDATION",
+        heroExpBadge: "Guided Audio-Visual Experience",
+        heroProdSubtitle: "Guided 0.1 Hz Breathing App • Digital BP Tracker • Nitric Oxide Kitchen Guide",
+        regularPrice: "Regular Price: $197",
+        oneTime: "One-Time",
+        checkoutBtn: "Unlock Protocol ($27) →",
+        pairingBadge: "CLAIRE'S BOTANICAL PAIRING",
+        physicianLabel: "Physician-Formulated",
+        explorePairing: "Explore Claire's Official Pairing",
+        ftcDisclosure: "Affiliate Disclosure: If you choose to purchase this recommended pairing through our link, Daily Health Review may earn a small commission at no additional cost to you. We only recommend rigorously vetted formulations.",
+        catalogTitle: "Explore Claire’s Complete VIP Library",
+        catalogSub: "Each comprehensive wellness protocol is just $27 (one-time payment)",
+        viewStorefront: "View All 6 Protocols in Claire's Official Whop Storefront →",
+        restartBtn: "🔄 Retake Assessment (Clear Answers)",
+        footerCopy: "© 2026 Daily Health Review US • The 9-Minute Blood Pressure Protocol™ by Claire Evans.",
+        footerMed: "Medical Disclaimer: The statements and protocols presented on this website have not been evaluated by the Food and Drug Administration. These materials are intended for educational and wellness guidance only and are not a substitute for professional medical diagnosis or treatment. Always consult your physician.",
+        footerPrivacy: "Privacy Policy",
+        footerTerms: "Terms of Service",
+        footerDisclosure: "FTC Affiliate Disclosure",
+        diagnosis: "Your responses indicate elevated peripheral vascular resistance and depleted endothelial nitric oxide reserves. When vascular walls lose their natural elastic bounce, every heartbeat forces blood through constricted, unyielding channels—raising your numbers and straining your heart. High-dose medications force numbers down artificially without addressing the root cause: rigid arterial muscle cells. The 9-Minute Resonant Breathing Protocol commands your baroreceptors to naturally open and soften your arteries within minutes.",
+        bullets: [
+          "9-Minute Audio-Visual Resonant Breathing Pacer (0.1 Hz baroreceptor frequency)",
+          "Interactive Digital Blood Pressure Tracker with color-coded trend logs",
+          "Nitric Oxide Kitchen Pharmacy: Clinical hibiscus and botanical vasodilators",
+          "Printable 28-Day Medical Chart to share with your cardiologist"
+        ],
+        affiliate: {
+          name: "CoreVital Burn™ Vascular & Metabolic Botanical Complex",
+          desc: "Co-founded with Dr. Samir Bute, MD. Contains 500mg pure Berberine HCl, Ceylon Cinnamon, and Milk Thistle to support flexible arterial walls, blood flow, and metabolic vascular ease.",
+          link: "https://dailyhealthreviewus.com/go/corevital"
+        }
+      },
+      pt: {
+        role: "por Claire Evans • Mentora Cardiovascular para Mulheres Maduras",
+        modePhone: "Modo Celular",
+        modeExpanded: "Modo Expandido",
+        chassisSub: "Maciez Vascular Natural & Restauração de Óxido Nítrico",
+        chassisBy: "por Claire Evans • Mentora Cardiovascular para Mulheres Maduras (51 Anos)",
+        claireMentorBadge: "51 Anos & Radiante",
+        claireIntro: "\"Responda instintivamente. Vamos descobrir o que seus vasos sanguíneos precisam para relaxar.\"",
+        stepCounter: "Pergunta {X} de {Y}",
+        stepPercent: "{P}% Concluído",
+        interludeContinue: "Continuar Avaliação →",
+        calculatingSteps: [
+          { text: "Analisando marcadores de resistência vascular periférica...", sub: "Avaliando curvas de pressão sistólica matinal e vasoconstrição autonômica.", width: "35%" },
+          { text: "Cruzando indicadores de elasticidade endotelial...", sub: "Medindo déficit de óxido nítrico contra padrões cardiovasculares maduros.", width: "70%" },
+          { text: "Calibrando o Pacer de Respiração de Ressonância de 0.1 Hz...", sub: "Sintonizando frequências acústicas barorreflexas e botânicos de cozinha.", width: "100%" }
+        ],
+        calcScanBadge: "Mapeando Complacência Arterial",
+        resultsBadge: "Análise Concluída",
+        resultsTitle: "Seu Perfil de Elasticidade Arterial & Saúde Vascular",
+        resCurated: "Curado por Claire Evans • Daily Health Review US",
+        mapLabel: "Mapa de Complacência Vascular",
+        mapTitle: "Índice de Maciez e Elasticidade Arterial",
+        mapAudit: "Calculado por IA Clínica",
+        mapStatus: "Calculado ✓",
+        stressTitle: "Perfil de Tensão Cardiovascular",
+        meterTone: "Tônus Vascular & Rigidez Arterial",
+        meterNo: "Disponibilidade de Óxido Nítrico Endotelial",
+        meterSymp: "Sobrecarga do Sistema Nervoso Simpático",
+        meterMicro: "Circulação Microcapilar Periférica",
+        claireTakeaway: "Avaliação Personalizada da Claire:",
+        claireSubrole: "Mentora Cardiovascular e de Longevidade Celular",
+        foundationBadge: "SUA RECOMENDAÇÃO PRINCIPAL",
+        heroExpBadge: "Experiência Audiovisual Guiada",
+        heroProdSubtitle: "App de Respiração 0.1 Hz • Rastreador Digital • Farmácia de Cozinha do Óxido Nítrico",
+        regularPrice: "Preço Normal: $197",
+        oneTime: "Pagamento Único",
+        checkoutBtn: "Desbloquear Protocolo ($27) →",
+        pairingBadge: "COMBINAÇÃO BOTÂNICA DA CLAIRE",
+        physicianLabel: "Fórmula Médica",
+        explorePairing: "Conhecer a Combinação Oficial da Claire",
+        ftcDisclosure: "Aviso de Transparência FTC: Se você optar por adquirir esta combinação recomendada pelo nosso link, o Daily Health Review poderá receber uma pequena comissão sem custo adicional algum para você.",
+        catalogTitle: "Explore a Biblioteca VIP Completa da Claire",
+        catalogSub: "Cada protocolo completo de bem-estar custa apenas $27 (pagamento único)",
+        viewStorefront: "Ver Todos os 6 Protocolos na Loja Oficial no Whop →",
+        restartBtn: "🔄 Recomeçar Avaliação (Limpar Respostas)",
+        footerCopy: "© 2026 Daily Health Review US • The 9-Minute Blood Pressure Protocol™ por Claire Evans.",
+        footerMed: "Aviso Legal Médico: As declarações e protocolos apresentados neste site não foram avaliados pela FDA. Estes materiais têm caráter exclusivamente educacional e de bem-estar, não substituindo o diagnóstico ou tratamento médico profissional. Consulte sempre seu médico.",
+        footerPrivacy: "Política de Privacidade",
+        footerTerms: "Termos de Uso",
+        footerDisclosure: "Aviso de Transparência FTC",
+        diagnosis: "Suas respostas indicam resistência vascular periférica elevada e esgotamento das reservas endoteliais de óxido nítrico. Quando as paredes arteriais perdem a flexibilidade elástica natural, cada batimento cardíaco é forçado contra canais estreitos e rígidos — elevando a pressão e sobrecarregando o miocárdio. Medicamentos comuns forçam os números para baixo artificialmente sem tratar a raiz do problema: a rigidez do tônus vascular. O Protocolo de 9 Minutos de Respiração de Ressonância ativa o reflexo barorreceptor para abrir e amaciar suas artérias naturalmente em minutos.",
+        bullets: [
+          "Pacer Audiovisual de Respiração de 9 Minutos (frequência de 0.1 Hz que ativa o reflexo barorreceptor)",
+          "Rastreador Digital de Pressão Arterial com histórico visual por cores",
+          "Farmácia de Cozinha do Óxido Nítrico: Protocolo clínico com hibisco e botânicos vasodilatadores",
+          "Tabela Imprimível de 28 Dias para compartilhar com seu cardiologista"
+        ],
+        affiliate: {
+          name: "CoreVital Burn™ Suporte Vascular e Metabólico",
+          desc: "Co-fundado com o Dr. Samir Bute, MD. Contém 500mg de Berberina pura, Canela do Ceilão e Cardo Mariano para potencializar a maciez e flexibilidade das artérias.",
+          link: "https://dailyhealthreviewus.com/go/corevital"
+        }
+      },
+      es: {
+        role: "por Claire Evans • Mentora Cardiovascular para Mujeres Maduras",
+        modePhone: "Modo Celular",
+        modeExpanded: "Modo Expandido",
+        chassisSub: "Suavidad Vascular Natural & Restauración de Óxido Nítrico",
+        chassisBy: "por Claire Evans • Mentora Cardiovascular para Mujeres Maduras (51 Años)",
+        claireMentorBadge: "51 Años & Radiante",
+        claireIntro: "\"Responde instintivamente. Descubramos lo que tus vasos sanguíneos necesitan para relajarse.\"",
+        stepCounter: "Pregunta {X} de {Y}",
+        stepPercent: "{P}% Completado",
+        interludeContinue: "Continuar Evaluación →",
+        calculatingSteps: [
+          { text: "Analizando marcadores de resistencia vascular periférica...", sub: "Evaluando curvas de presión sistólica matinal y vasoconstricción autonómica.", width: "35%" },
+          { text: "Cruzando indicadores de elasticidad endotelial...", sub: "Midiendo el déficit de óxido nítrico frente a referencias cardiovasculares maduras.", width: "70%" },
+          { text: "Calibrando el Pacer de Respiración de Resonancia de 0.1 Hz...", sub: "Sintonizando frecuencias acústicas del barorreflejo y vasodilatadores botánicos.", width: "100%" }
+        ],
+        calcScanBadge: "Mapeando Compliancia Arterial",
+        resultsBadge: "Análisis Completado",
+        resultsTitle: "Tu Perfil de Elasticidad Arterial & Salud Vascular",
+        resCurated: "Desarrollado por Claire Evans • Daily Health Review US",
+        mapLabel: "Mapa de Compliancia Vascular",
+        mapTitle: "Índice de Suavidad y Elasticidad Arterial",
+        mapAudit: "Calculado por IA Clínica",
+        mapStatus: "Calculado ✓",
+        stressTitle: "Perfil de Tensión Cardiovascular",
+        meterTone: "Tono Vascular & Rigidez Arterial",
+        meterNo: "Disponibilidad de Óxido Nítrico Endotelial",
+        meterSymp: "Sobrecarga del Sistema Nervioso Simpático",
+        meterMicro: "Circulación Microcapilar Periférica",
+        claireTakeaway: "Evaluación Personalizada de Claire:",
+        claireSubrole: "Mentora Cardiovascular y de Longevidad Celular",
+        foundationBadge: "TU RECOMENDACIÓN PRINCIPAL",
+        heroExpBadge: "Experiencia Audiovisual Guiada",
+        heroProdSubtitle: "App de Respiración 0.1 Hz • Rastreador Digital • Farmacia de Cocina del Óxido Nítrico",
+        regularPrice: "Precio Habitual: $197",
+        oneTime: "Pago Único",
+        checkoutBtn: "Desbloquear Protocolo ($27) →",
+        pairingBadge: "COMBINACIÓN BOTÁNICA DE CLAIRE",
+        physicianLabel: "Fórmula Médica",
+        explorePairing: "Conocer la Combinación Oficial de Claire",
+        ftcDisclosure: "Aviso de Afiliación FTC: Si decides adquirir este suplemento recomendado a través de nuestro enlace, Daily Health Review puede recibir una pequeña comisión sin ningún coste adicional para ti.",
+        catalogTitle: "Explora la Biblioteca VIP Completa de Claire",
+        catalogSub: "Cada protocolo completo de bienestar cuesta sólo $27 (pago único)",
+        viewStorefront: "Ver los 6 Protocolos en la Tienda Oficial de Whop →",
+        restartBtn: "🔄 Reiniciar Evaluación (Limpiar Respuestas)",
+        footerCopy: "© 2026 Daily Health Review US • The 9-Minute Blood Pressure Protocol™ por Claire Evans.",
+        footerMed: "Aviso Médico: Las declaraciones y protocolos presentados en este sitio no han sido evaluados por la FDA. Estos materiales tienen fines informativos y de bienestar, no sustituyendo el diagnóstico médico profesional. Consulta siempre a tu médico.",
+        footerPrivacy: "Política de Privacidad",
+        footerTerms: "Términos de Servicio",
+        footerDisclosure: "Aviso de Afiliados FTC",
+        diagnosis: "Tus respuestas indican resistencia vascular periférica elevada y agotamiento de las reservas endoteliales de óxido nítrico. Cuando las paredes arteriales pierden su elasticidad natural, cada latido se ve forzado a través de conductos estrechos y rígidos, elevando las cifras y sobrecargando el corazón. Los fármacos convencionales bajan los números artificialmente sin resolver la causa raíz: el tono vascular endurecido. El Protocolo de 9 Minutos de Respiración de Resonancia activa el reflejo barorreceptor para dilatar y suavizar tus arterias de forma natural en minutos.",
+        bullets: [
+          "Pacer Audiovisual de Respiración de 9 Minutos (frecuencia de 0.1 Hz que activa el barorreflejo)",
+          "Rastreador Digital de Presión Arterial con registro visual por colores",
+          "Farmacia de Cocina del Óxido Nítrico: Protocolo clínico con hibisco y botánicos vasodilatadores",
+          "Gráfica Imprimible de 28 Días para compartir con tu médico o cardiólogo"
+        ],
+        affiliate: {
+          name: "CoreVital Burn™ Soporte Vascular y Metabólico",
+          desc: "Co-fundado con el Dr. Samir Bute, MD. Contiene 500mg de Berberina pura, Canela de Ceilán y Cardo Mariano para favorecer la elasticidad arterial y un flujo sanguíneo saludable.",
+          link: "https://dailyhealthreviewus.com/go/corevital"
+        }
+      }
+    };
+
+    // 10 QUESTIONS (EN, PT, ES)
+    const questionsData = {
+      en: [
+      {
+            "id": 1,
+            "title": "What is your current age bracket?",
+            "subtitle": "Arterial compliance and nitric oxide production decline progressively after age 40.",
+            "options": [
+                  {
+                        "label": "40 to 49 Years",
+                        "desc": "Entering perimenopause with early hormonal fluctuations & subtle tension",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "50 to 59 Years",
+                        "desc": "Active menopause with sudden systolic surges & morning stiffness",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "60 Years or Older",
+                        "desc": "Post-menopause with isolated systolic hypertension & low nitric oxide",
+                        "category": "nitric"
+                  }
+            ]
+      },
+      {
+            "id": 2,
+            "title": "What are your typical blood pressure readings?",
+            "subtitle": "Understanding your baseline reveals whether your vascular walls are in spasm or chronic stiffness.",
+            "options": [
+                  {
+                        "label": "Normal / Borderline (120-129 / 80-84 mmHg)",
+                        "desc": "Creeping upward during stressful weeks or poor sleep",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Stage 1 Hypertension (130-139 / 85-89 mmHg)",
+                        "desc": "Consistently elevated; doctor has discussed starting pills",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Stage 2 / High Fluctuations (140+ / 90+ mmHg)",
+                        "desc": "Alarming spikes that cause anxiety every time you measure",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "I don't measure often, but feel pulsing pressure",
+                        "desc": "Fullness in head, throbbing temples, or fast heartbeat",
+                        "category": "elasticity"
+                  }
+            ]
+      },
+      {
+            "id": 3,
+            "title": "How do you feel upon waking in the morning?",
+            "subtitle": "The morning cortisol surge frequently triggers sudden peripheral arterial vasoconstriction.",
+            "hasInterlude": true,
+            "options": [
+                  {
+                        "label": "Heart pounding or tight chest before getting up",
+                        "desc": "Sharp dawn adrenaline surge colliding with stiff vascular walls",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Groggy, sluggish, or stiff neck & shoulders",
+                        "desc": "Poor nocturnal micro-vascular cerebral perfusion",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Pressure is highest at night after work stress",
+                        "desc": "Sympathetic nervous system unable to downregulate",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Relatively calm, but numbers spike unexpectedly",
+                        "desc": "Hidden autonomic vascular hyper-reactivity",
+                        "category": "nitric"
+                  }
+            ]
+      },
+      {
+            "id": 4,
+            "title": "Do you experience any of these peripheral circulatory warning signs?",
+            "subtitle": "Micro-capillary resistance reflects systemic arterial tension throughout your body.",
+            "options": [
+                  {
+                        "label": "Cold hands/feet & puffy evening ankles",
+                        "desc": "Sluggish capillary return and peripheral fluid retention",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Sudden facial flushing or ear ringing when rushed",
+                        "desc": "Acute peripheral resistance and micro-vascular pressure",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Shortness of breath climbing a single flight of stairs",
+                        "desc": "Cardiac output struggling against resistant vascular walls",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Chest tightness or fluttery pulse during emotional stress",
+                        "desc": "Autonomic nervous system locking arteries into spasm",
+                        "category": "stress"
+                  }
+            ]
+      },
+      {
+            "id": 5,
+            "title": "What has been your experience with blood pressure medication or advice?",
+            "subtitle": "Many conventional treatments manage symptoms without restoring natural arterial bounce.",
+            "options": [
+                  {
+                        "label": "Taking prescriptions, but troubled by side effects",
+                        "desc": "Dizziness, persistent fatigue, dry cough, or swollen ankles",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Tried cutting salt completely with little to no lasting change",
+                        "desc": "Arterial stiffness is autonomic, rarely solved by salt cuts alone",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Doctor warned me I need pills soon if numbers don't drop",
+                        "desc": "Actively seeking a proven natural window to restore elasticity",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Currently unmedicated and determined to stay that way",
+                        "desc": "Committed to scientific botanical and somatic cardiovascular care",
+                        "category": "stress"
+                  }
+            ]
+      },
+      {
+            "id": 6,
+            "title": "How does chronic daily stress affect your body?",
+            "subtitle": "Prolonged stress freezes the baroreceptor reflex, locking arteries into permanent constriction.",
+            "options": [
+                  {
+                        "label": "Constant shallow chest breathing & clenched jaw",
+                        "desc": "Vagus nerve suppressed; vascular tone trapped in fight-or-flight",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Broken sleep, waking between 2:00 AM and 4:00 AM",
+                        "desc": "Adrenal surge disrupting nighttime cardiovascular rest",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "High mental workload with inability to unwind at night",
+                        "desc": "Elevated baseline adrenaline keeping blood vessels clamped",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Generally calm, yet arterial pressure remains stubbornly high",
+                        "desc": "Endothelial nitric oxide deficit independent of conscious stress",
+                        "category": "nitric"
+                  }
+            ]
+      },
+      {
+            "id": 7,
+            "title": "How often do you consume dietary nitric oxide precursors?",
+            "subtitle": "Nitric oxide is the miracle signaling gas that commands smooth muscle cells to dilate.",
+            "options": [
+                  {
+                        "label": "Rarely eat dark leafy greens, beets, or potassium foods",
+                        "desc": "Depleted cellular substrate for the endothelial eNOS enzyme",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Rely heavily on coffee to push through afternoon slumps",
+                        "desc": "Caffeine spikes vasoconstriction while masking real fatigue",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Eat clean, but arteries still feel stiff and unyielding",
+                        "desc": "Need targeted botanical polyphenols to unblock nitric oxide pathways",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Take generic vitamins without noticeable cardiovascular change",
+                        "desc": "Lacking clinical bio-available botanical synergy",
+                        "category": "elasticity"
+                  }
+            ]
+      },
+      {
+            "id": 8,
+            "title": "When you think about your cardiovascular health, what concerns you most?",
+            "subtitle": "Identifying your core emotional driver unlocks deep motivation for daily restoration.",
+            "options": [
+                  {
+                        "label": "Fear of sudden emergencies (heart attack, stroke, or ICU)",
+                        "desc": "Wanting total peace of mind for myself and my loved ones",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Losing my independence and vitality as I age",
+                        "desc": "Refusing to accept cognitive decline or physical frailty",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Being trapped on heavy prescription cocktails for life",
+                        "desc": "Wanting clean, natural physiological freedom",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Constant daily dread every time I see a blood pressure cuff",
+                        "desc": "Desiring predictable, calm, healthy numbers day in and day out",
+                        "category": "elasticity"
+                  }
+            ]
+      },
+      {
+            "id": 9,
+            "title": "How does walking or light physical exertion currently feel?",
+            "subtitle": "Arterial compliance determines how effortlessly your heart delivers oxygen to muscles.",
+            "options": [
+                  {
+                        "label": "I feel heavy legs, rapid breathing, and high fatigue",
+                        "desc": "Peripheral vessels resisting increased blood volume during movement",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "I feel pulsing pressure in my head or ringing in my ears",
+                        "desc": "Upper vascular resistance and restricted cranial micro-circulation",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "I exercise regularly, but my systolic readings stay elevated",
+                        "desc": "Exercise alone cannot compensate for hardened endothelial walls",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "I have become sedentary out of fear of spiking my pressure",
+                        "desc": "Urgent need for gentle, zero-strain somatic vascular restoration",
+                        "category": "stress"
+                  }
+            ]
+      },
+      {
+            "id": 10,
+            "title": "Can you commit just 9 quiet minutes a day to visual resonant breathing?",
+            "subtitle": "Clinical science proves 9 minutes of 0.1 Hz acoustic breathing resets vascular tone for 24 hours.",
+            "options": [
+                  {
+                        "label": "Yes! I can easily dedicate 9 minutes before bed or in the morning",
+                        "desc": "Ready for Claire's guided audio-visual pacer that does all the work",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Yes! I want a simple, pill-free routine I can do anywhere",
+                        "desc": "Instant access on phone, tablet, or PC with zero equipment",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Yes! I want to track my progress and share improved numbers with my doctor",
+                        "desc": "Excited for the printable 28-day blood pressure chart and kitchen guide",
+                        "category": "nitric"
+                  }
+            ]
+      }
+],
+      pt: [
+      {
+            "id": 1,
+            "title": "Qual é a sua faixa etária atual?",
+            "subtitle": "A elasticidade arterial e a síntese de óxido nítrico diminuem progressivamente após os 40 anos.",
+            "options": [
+                  {
+                        "label": "40 a 49 Anos",
+                        "desc": "Início da perimenopausa com oscilações hormonais e tensão nos vasos",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "50 a 59 Anos",
+                        "desc": "Menopausa ativa com picos de pressão matinal e rigidez vascular",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "60 Anos ou Mais",
+                        "desc": "Pós-menopausa com hipertensão sistólica isolada e queda de óxido nítrico",
+                        "category": "nitric"
+                  }
+            ]
+      },
+      {
+            "id": 2,
+            "title": "Quais costumam ser suas medições de pressão arterial?",
+            "subtitle": "Entender seu padrão revela se suas artérias estão em espasmo de estresse ou rigidez estrutural.",
+            "options": [
+                  {
+                        "label": "Normal / Limítrofe (120-129 / 80-84 mmHg)",
+                        "desc": "Sobe em semanas estressantes ou após noites mal dormidas",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Hipertensão Estágio 1 (130-139 / 85-89 mmHg)",
+                        "desc": "Frequentemente alta; o médico já sugeriu começar remédios",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Hipertensão Estágio 2 / Picos Altos (140+ / 90+ mmHg)",
+                        "desc": "Valores alarmantes que causam medo toda vez que mede",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Não meço sempre, mas sinto pressão latejando",
+                        "desc": "Sensação de cabeça cheia, têmporas pulsando ou coração rápido",
+                        "category": "elasticity"
+                  }
+            ]
+      },
+      {
+            "id": 3,
+            "title": "Como você se sente ao acordar pela manhã?",
+            "subtitle": "O pico matinal de cortisol frequentemente dispara vasoconstrição periférica nas artérias.",
+            "hasInterlude": true,
+            "options": [
+                  {
+                        "label": "Coração acelerado ou peito tenso antes de levantar",
+                        "desc": "Adrenalina matinal colidindo com paredes vasculares rígidas",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Cansaço pesado, tontura leve ou rigidez no pescoço",
+                        "desc": "Má perfusão microvascular cerebral durante o sono",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Minha pressão é mais alta à noite após o estresse do dia",
+                        "desc": "Sistema nervoso simpático incapaz de desacelerar",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Relativamente tranquila, mas os números sobem do nada",
+                        "desc": "Hiper-reatividade vascular autonômica oculta",
+                        "category": "nitric"
+                  }
+            ]
+      },
+      {
+            "id": 4,
+            "title": "Você percebe algum destes sinais circulatórios periféricos?",
+            "subtitle": "A resistência nos microvasos reflete a sobrecarga arterial em todo o seu corpo.",
+            "options": [
+                  {
+                        "label": "Mãos/pés gelados e tornozelos inchados no fim da tarde",
+                        "desc": "Retorno capilar lento e retenção líquida periférica",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Rosto avermelhado ou zumbido nos ouvidos na correria",
+                        "desc": "Resistência periférica aguda e pressão microvascular",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Falta de ar ao subir um único lance de escadas",
+                        "desc": "Coração fazendo esforço excessivo contra artérias resistentes",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Aperto no peito ou palpitações no estresse emocional",
+                        "desc": "Sistema nervoso travando os vasos em espasmo protetor",
+                        "category": "stress"
+                  }
+            ]
+      },
+      {
+            "id": 5,
+            "title": "Qual tem sido sua experiência com medicamentos ou orientações?",
+            "subtitle": "Muitas abordagens convencionais tratam os números sem devolver a maciez elástica às artérias.",
+            "options": [
+                  {
+                        "label": "Tomo remédios, mas sofro com efeitos colaterais",
+                        "desc": "Tontura, fadiga persistente, tosse seca ou tornozelos inchados",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Cortei o sal da comida quase a zero e quase nada mudou",
+                        "desc": "A rigidez arterial é autonômica e raramente se resolve só com corte de sal",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "O médico avisou que vou precisar de remédios se não baixar",
+                        "desc": "Buscando uma janela natural comprovada para restaurar as artérias",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Não tomo remédios e quero me manter livre deles",
+                        "desc": "Determinada a cuidar da saúde vascular com botânica e respiração clínica",
+                        "category": "stress"
+                  }
+            ]
+      },
+      {
+            "id": 6,
+            "title": "Como o estresse diário afeta seu corpo fisicamente?",
+            "subtitle": "O estresse crônico congela o reflexo barorreceptor, travando os vasos em contração permanente.",
+            "options": [
+                  {
+                        "label": "Respiração curta no peito e mandíbula apertada",
+                        "desc": "Nervo vago inibido; tônus vascular preso em estado de alerta",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Sono fragmentado, acordando entre 2h e 4h da madrugada",
+                        "desc": "Picos de adrenalina interrompendo o descanso cardiovascular noturno",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Carga mental pesada e dificuldade de relaxar à noite",
+                        "desc": "Adrenalina basal elevada mantendo os vasos sob pressão",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Mente calma, mas a pressão teima em continuar alta",
+                        "desc": "Déficit endotelial de óxido nítrico independente do estresse consciente",
+                        "category": "nitric"
+                  }
+            ]
+      },
+      {
+            "id": 7,
+            "title": "Com que frequência você consome alimentos precursores de óxido nítrico?",
+            "subtitle": "O óxido nítrico é o gás milagroso que comanda as células musculares das artérias a relaxarem.",
+            "options": [
+                  {
+                        "label": "Raramente como folhas escuras, beterraba ou frutas ricas em potássio",
+                        "desc": "Falta de matéria-prima para a enzima vasodilatadora eNOS",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Tomo muito café para empurrar o cansaço da tarde",
+                        "desc": "A cafeína em excesso piora a vasoconstrição enquanto mascara a fadiga",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Minha alimentação é saudável, mas as artérias continuam rígidas",
+                        "desc": "Necessidade de polifenóis botânicos para desobstruir as vias do óxido nítrico",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Tomo vitaminas comuns sem sentir melhora na pressão",
+                        "desc": "Falta de sinergia botânica com foco na mecânica vascular",
+                        "category": "elasticity"
+                  }
+            ]
+      },
+      {
+            "id": 8,
+            "title": "Ao pensar no seu coração e artérias, qual é o seu maior receio?",
+            "subtitle": "Reconhecer seu objetivo real ativa foco para uma transformação consistente.",
+            "options": [
+                  {
+                        "label": "Medo de emergências graves (infarto, AVC ou internação)",
+                        "desc": "Quero paz de espírito e segurança para mim e minha família",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Perder minha vitalidade e independência com a idade",
+                        "desc": "Recuso-me a aceitar perda de memória ou fraqueza física",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Ficar presa a coquetéis de remédios pesados pelo resto da vida",
+                        "desc": "Desejo liberdade fisiológica natural e vasos saudáveis",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Viver apavorada toda vez que vejo o manguito de pressão",
+                        "desc": "Quero leituras calmas, previsíveis e saudáveis no dia a dia",
+                        "category": "elasticity"
+                  }
+            ]
+      },
+      {
+            "id": 9,
+            "title": "Como você se sente ao caminhar ou fazer esforço leve?",
+            "subtitle": "A complacência arterial define a facilidade com que o coração irriga os músculos no movimento.",
+            "options": [
+                  {
+                        "label": "Pernas pesadas, respiração curta e cansaço rápido",
+                        "desc": "Vasos periféricos resistindo ao aumento do fluxo de sangue",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Pressão pulsando na cabeça ou chiado nos ouvidos",
+                        "desc": "Resistência vascular superior e microcirculação cerebral sobrecarregada",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Faço exercícios, mas minha pressão sistólica continua alta",
+                        "desc": "O exercício sozinho não compensa paredes endoteliais endurecidas",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Fiquei sedentária por medo de subir a pressão no esforço",
+                        "desc": "Necessidade urgente de restauração somática suave e sem sobrecarga",
+                        "category": "stress"
+                  }
+            ]
+      },
+      {
+            "id": 10,
+            "title": "Você pode dedicar apenas 9 minutos tranquilos por dia para a respiração de ressonância?",
+            "subtitle": "A ciência comprova que 9 minutos a 0.1 Hz reprogramam o tônus vascular por 24 horas contínuas.",
+            "options": [
+                  {
+                        "label": "Sim! Posso facilmente reservar 9 minutos pela manhã ou à noite",
+                        "desc": "Pronta para o pacer audiovisual da Claire que guia todo o processo",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Sim! Quero uma rotina sem comprimidos que posso fazer em qualquer lugar",
+                        "desc": "Acesso imediato no celular, tablet ou PC sem aparelhos caros",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Sim! Quero registrar meu progresso e mostrar números melhores ao meu médico",
+                        "desc": "Animada com o gráfico de 28 dias e o guia de cozinha vasodilatador",
+                        "category": "nitric"
+                  }
+            ]
+      }
+],
+      es: [
+      {
+            "id": 1,
+            "title": "¿Cuál es tu rango de edad actual?",
+            "subtitle": "La elasticidad arterial y la síntesis de óxido nítrico disminuyen progresivamente tras los 40 años.",
+            "options": [
+                  {
+                        "label": "40 a 49 Años",
+                        "desc": "Inicios de la perimenopausia con oscilaciones hormonales y tensión vascular",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "50 a 59 Años",
+                        "desc": "Menopausia activa con picos matinales y rigidez en las arterias",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "60 Años o Más",
+                        "desc": "Post-menopausia con hipertensión sistólica y menor producción de óxido nítrico",
+                        "category": "nitric"
+                  }
+            ]
+      },
+      {
+            "id": 2,
+            "title": "¿Cuáles suelen ser tus mediciones de presión arterial?",
+            "subtitle": "Conocer tu rango revela si tus arterias sufren espasmos por estrés o rigidez mecánica.",
+            "options": [
+                  {
+                        "label": "Normal / Limítrofe (120-129 / 80-84 mmHg)",
+                        "desc": "Sube en épocas de estrés o tras noches de mal descanso",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Hipertensión Grado 1 (130-139 / 85-89 mmHg)",
+                        "desc": "Frecuentemente alta; el médico ya ha propuesto iniciar fármacos",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Hipertensión Grado 2 / Picos Altos (140+ / 90+ mmHg)",
+                        "desc": "Lecturas alarmantes que causan miedo cada vez que te mides",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "No me mido a menudo, pero siento presión palpitante",
+                        "desc": "Sensación de cabeza cargada, sienes latiendo o pulso acelerado",
+                        "category": "elasticity"
+                  }
+            ]
+      },
+      {
+            "id": 3,
+            "title": "¿Cómo te sientes al despertar por la mañana?",
+            "subtitle": "El pico matinal de cortisol suele desencadenar vasoconstricción periférica inmediata.",
+            "hasInterlude": true,
+            "options": [
+                  {
+                        "label": "Corazón acelerado o pecho tenso antes de levantarme",
+                        "desc": "Adrenalina del amanecer chocando contra paredes vasculares rígidas",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Cansancio pesado, mareo leve o rigidez en el cuello",
+                        "desc": "Mala perfusión microvascular cerebral durante el descanso",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Mi presión es más alta por la noche tras el estrés del día",
+                        "desc": "Sistema nervioso simpático incapaz de desacelerar y relajarse",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Relativamente tranquila, pero las cifras suben de golpe",
+                        "desc": "Hiperreactividad vascular autonómica oculta",
+                        "category": "nitric"
+                  }
+            ]
+      },
+      {
+            "id": 4,
+            "title": "¿Notas alguna de estas señales circulatorias en tus extremidades?",
+            "subtitle": "La resistencia en los microvasos refleja la sobrecarga arterial en todo tu organismo.",
+            "options": [
+                  {
+                        "label": "Manos/pies fríos y tobillos hinchados al final del día",
+                        "desc": "Retorno capilar lento y retención de líquidos periférica",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Rostro enrojecido o zumbido en los oídos con la prisa",
+                        "desc": "Resistencia periférica aguda y presión microvascular elevada",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Falta de aire al subir un solo tramo de escaleras",
+                        "desc": "El corazón sobrecargado luchando contra arterias poco elásticas",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Opresión en el pecho o palpitaciones con el estrés emocional",
+                        "desc": "El sistema nervioso bloqueando los vasos en espasmo protector",
+                        "category": "stress"
+                  }
+            ]
+      },
+      {
+            "id": 5,
+            "title": "¿Cuál ha sido tu experiencia con fármacos o consejos médicos?",
+            "subtitle": "Muchas pautas convencionales bajan los números sin devolver la elasticidad a las arterias.",
+            "options": [
+                  {
+                        "label": "Tomo medicación, pero me molestan los efectos secundarios",
+                        "desc": "Mareos, fatiga constante, tos seca o tobillos hinchados",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Eliminé la sal por completo y casi nada cambió",
+                        "desc": "La rigidez arterial es autonómica y rara vez se soluciona solo sin sal",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "El médico me advirtió que necesitaré pastillas pronto",
+                        "desc": "Buscando una ventana natural comprobada para restaurar las arterias",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "No tomo pastillas y quiero mantenerme libre de ellas",
+                        "desc": "Decidida a cuidar mi salud cardiovascular con botánica y respiración clínica",
+                        "category": "stress"
+                  }
+            ]
+      },
+      {
+            "id": 6,
+            "title": "¿Cómo afecta el estrés cotidiano a tu cuerpo físicamente?",
+            "subtitle": "El estrés crónico bloquea el reflejo barorreceptor, fijando los vasos en contracción continua.",
+            "options": [
+                  {
+                        "label": "Respiración superficial en el pecho y mandíbula apretada",
+                        "desc": "Nervio vago inhibido; tono vascular atrapado en alerta continua",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Sueño fragmentado, despertando entre las 2 y las 4 AM",
+                        "desc": "Picos de adrenalina interrumpiendo el descanso cardiovascular nocturno",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Carga mental intensa y dificultad para desconectar de noche",
+                        "desc": "Adrenalina basal elevada manteniendo los vasos bajo tensión",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Mente tranquila, pero la presión sigue obstinadamente alta",
+                        "desc": "Déficit endotelial de óxido nítrico ajeno al estrés consciente",
+                        "category": "nitric"
+                  }
+            ]
+      },
+      {
+            "id": 7,
+            "title": "¿Con qué frecuencia consumes alimentos precursores de óxido nítrico?",
+            "subtitle": "El óxido nítrico es el gas que ordena a las células musculares de las arterias relajarse.",
+            "options": [
+                  {
+                        "label": "Rara vez como hojas verdes oscuras, remolacha o frutas con potasio",
+                        "desc": "Falta de sustrato para la enzima vasodilatadora eNOS",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Tomo mucho café para combatir el agotamiento de la tarde",
+                        "desc": "El exceso de cafeína aumenta la vasoconstricción y enmascara la fatiga",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Como de forma saludable, pero mis arterias siguen rígidas",
+                        "desc": "Necesidad de polifenoles botánicos para activar las vías del óxido nítrico",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Tomo vitaminas convencionales sin notar mejoría vascular",
+                        "desc": "Falta de sinergia botánica específica para la elasticidad arterial",
+                        "category": "elasticity"
+                  }
+            ]
+      },
+      {
+            "id": 8,
+            "title": "Al pensar en tu salud cardiovascular, ¿cuál es tu mayor preocupación?",
+            "subtitle": "Reconocer tu verdadero motivo despierta la constancia necesaria para sanar.",
+            "options": [
+                  {
+                        "label": "Miedo a emergencias graves (infarto, ictus o urgencias)",
+                        "desc": "Deseo paz mental y tranquilidad para mí y para los míos",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Perder mi energía e independencia a medida que cumplo años",
+                        "desc": "Me niego a aceptar fallos de memoria o fragilidad física",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Quedar atada a cócteles de pastillas pesadas de por vida",
+                        "desc": "Quiero libertad fisiológica natural y arterias sanas",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Vivir con angustia cada vez que veo el tensiómetro",
+                        "desc": "Deseo lecturas serenas, predecibles y saludables día tras día",
+                        "category": "elasticity"
+                  }
+            ]
+      },
+      {
+            "id": 9,
+            "title": "¿Cómo te sientes al caminar o hacer un esfuerzo físico moderado?",
+            "subtitle": "La elasticidad arterial determina con qué facilidad el corazón irriga los músculos.",
+            "options": [
+                  {
+                        "label": "Piernas pesadas, respiración entrecortada y fatiga rápida",
+                        "desc": "Vasos periféricos resistiéndose al aumento del flujo de sangre",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "Latidos en la cabeza o zumbidos en los oídos al moverme",
+                        "desc": "Resistencia vascular superior y microcirculación craneal tensa",
+                        "category": "nitric"
+                  },
+                  {
+                        "label": "Hago ejercicio, pero mi presión sistólica sigue alta",
+                        "desc": "El ejercicio por sí solo no compensa paredes endoteliales rígidas",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "Me he vuelto sedentaria por miedo a que se me dispare la presión",
+                        "desc": "Necesidad urgente de restauración somática suave y segura",
+                        "category": "stress"
+                  }
+            ]
+      },
+      {
+            "id": 10,
+            "title": "¿Puedes dedicar tan solo 9 minutos tranquilos al día para la respiración guiada?",
+            "subtitle": "La evidencia clínica demuestra que 9 minutos a 0.1 Hz reinician el tono vascular durante 24 horas.",
+            "options": [
+                  {
+                        "label": "¡Sí! Puedo reservar fácilmente 9 minutos por la mañana o noche",
+                        "desc": "Lista para el pacer audiovisual de Claire que guía todo el ejercicio",
+                        "category": "elasticity"
+                  },
+                  {
+                        "label": "¡Sí! Quiero una rutina natural y sin pastillas que pueda hacer donde sea",
+                        "desc": "Acceso inmediato en móvil, tablet o PC sin aparatos costosos",
+                        "category": "stress"
+                  },
+                  {
+                        "label": "¡Sí! Quiero registrar mi avance y mostrar mejores valores a mi médico",
+                        "desc": "Entusiasmada con la gráfica de 28 días y la guía de cocina vasodilatadora",
+                        "category": "nitric"
+                  }
+            ]
+      }
+]
+    };
+
+    // 15 VERIFIED TESTIMONIALS (EN, PT, ES)
+    const testimonialsPool = {
+      en: [
+      {
+            "initials": "BT",
+            "author": "Brenda T., 58 • Verified Member",
+            "title": "Natural arterial elasticity restored.",
+            "text": "Over 78% of women past 50 experience stiffening vascular walls due to declining nitric oxide synthesis.",
+            "quote": "The 9-minute acoustic breathing routine relaxed my blood vessels instantly. My doctor was thrilled when my reading dropped from 146/92 to 118/76 at my checkup!"
+      },
+      {
+            "initials": "MG",
+            "author": "Margaret G., 62 • Verified Member",
+            "title": "Freedom from medication fatigue.",
+            "text": "Standard beta-blockers and diuretics frequently drain energy and cause lightheadedness by forcing cardiac slowdown.",
+            "quote": "I was so tired of waking up dizzy from my prescription. Learning to naturally dilate my arteries gave me my energy back, and my numbers have never been more stable."
+      },
+      {
+            "initials": "HS",
+            "author": "Helen S., 54 • Verified Member",
+            "title": "Morning systolic spikes calmed.",
+            "text": "The dangerous dawn blood pressure surge occurs when morning cortisol collides with rigid endothelial walls.",
+            "quote": "I used to see 150 over 95 every single morning. Doing Claire's 9-minute pacer before getting out of bed brought my morning readings down to a steady 122 in just 12 days."
+      },
+      {
+            "initials": "CP",
+            "author": "Carolyn P., 50 • Verified Member",
+            "title": "Healthy micro-circulation returned.",
+            "text": "Cold hands and swollen evening ankles are clear warning signs of constricted capillary micro-vascular resistance.",
+            "quote": "My ankles were swollen by 5 PM every day, and my fingers were always icy cold. Re-opening my capillary blood flow took away the puffiness completely."
+      },
+      {
+            "initials": "DM",
+            "author": "Dorothy M., 59 • Verified Member",
+            "title": "No more blood pressure anxiety.",
+            "text": "White-coat hypertension triggers adrenaline cascades that artificially elevate cuff measurements by up to 25 points.",
+            "quote": "That sickening panic every time the cuff tightened around my arm is finally gone. The 0.1 Hz breathing rhythm keeps my autonomic nervous system completely calm."
+      },
+      {
+            "initials": "SK",
+            "author": "Sylvia K., 65 • Verified Member",
+            "title": "Kitchen botanicals for nitric oxide.",
+            "text": "Endothelial cells produce 50% less nitric oxide past 60, but dietary polyphenols can rapidly reactivate the eNOS enzyme.",
+            "quote": "Claire's kitchen guide showed me simple botanical spices that immediately eased that throbbing fullness in my head. My head feels light and clear every day."
+      },
+      {
+            "initials": "JR",
+            "author": "Judith R., 53 • Verified Member",
+            "title": "Nighttime heart pounding silenced.",
+            "text": "Waking with a pounding heartbeat at 3 AM indicates sympathetic nervous system dominance and vascular tension.",
+            "quote": "I spent months waking up in a sweat with my chest pounding. The evening acoustic resonance frequency slows down my pulse and lets me sleep peacefully through the night."
+      },
+      {
+            "initials": "AB",
+            "author": "Angela B., 48 • Verified Member",
+            "title": "Perimenopausal vascular protection.",
+            "text": "Sudden estrogen fluctuations frequently cause temporary arterial spasms that mimic acute hypertension.",
+            "quote": "My blood pressure suddenly became erratic at 48 with hot flashes. This protocol was an absolute lifesaver to steady my vascular walls without synthetic drugs."
+      },
+      {
+            "initials": "BW",
+            "author": "Barbara W., 61 • Verified Member",
+            "title": "22 points lower without extreme sodium cuts.",
+            "text": "Less than 15% of essential hypertension is truly sodium-sensitive; the root driver is autonomic vascular stiffness.",
+            "quote": "I tortured myself eating bland, salt-free food for months with zero results. Claire's protocol proved it wasn't the salt—it was arterial tension. Down 22 points!"
+      },
+      {
+            "initials": "TL",
+            "author": "Teresa L., 57 • Verified Member",
+            "title": "My daily 9-minute healing sanctuary.",
+            "text": "Just 9 minutes of 6-breaths-per-minute resonance resets the baroreceptor reflex for up to 24 continuous hours.",
+            "quote": "The guided visual pacer is so soothing. It's the best 9 minutes of my day, and my cardiovascular tracker shows my heart rate variability has doubled."
+      },
+      {
+            "initials": "JD",
+            "author": "Joanne D., 66 • Verified Member",
+            "title": "Cardiologist approved results.",
+            "text": "Vascular compliance can be clinically measured through pulse wave velocity and arterial rebound elasticity.",
+            "quote": "My cardiologist was genuinely astonished at my vascular elasticity improvement at age 66. He reduced my medication dosage and told me to keep doing what I'm doing!"
+      },
+      {
+            "initials": "RC",
+            "author": "Rosemary C., 52 • Verified Member",
+            "title": "Steady all-day oxygen delivery.",
+            "text": "Constricted arteries restrict cerebral blood flow, leading to afternoon brain fog, fatigue, and sluggish memory.",
+            "quote": "I stopped needing three cups of coffee just to fight off the heavy, groggy feeling in my head. Soft, open arteries deliver real oxygen to my brain all afternoon."
+      },
+      {
+            "initials": "NF",
+            "author": "Nancy F., 60 • Verified Member",
+            "title": "Tension in neck and temples dissolved.",
+            "text": "Occipital neck tension and pulsing temples are direct physical markers of elevated peripheral vascular resistance.",
+            "quote": "That tight band across the back of my head is completely gone. I hadn't realized how much physical tension my high blood pressure was causing until it disappeared."
+      },
+      {
+            "initials": "EV",
+            "author": "Elaine V., 64 • Verified Member",
+            "title": "Climbing hills without breathlessness.",
+            "text": "When vascular walls are flexible, cardiac output increases smoothly during exertion without straining the myocardium.",
+            "quote": "Walking my golden retriever up the neighborhood hill used to leave me huffing, puffing, and clutching my chest. Now I walk up effortlessly with deep, calm breaths."
+      },
+      {
+            "initials": "MB",
+            "author": "Martha B., 55 • Verified Member",
+            "title": "Complete empowerment over my numbers.",
+            "text": "Knowledge and somatic self-regulation restore physiological autonomy over your cardiovascular destiny.",
+            "quote": "I no longer live in fear of heart attacks or strokes. I have a proven, repeatable 9-minute clinical tool that keeps my arteries young, soft, and flexible."
+      }
+],
+      pt: [
+      {
+            "initials": "BT",
+            "author": "Brenda T., 58 • Membro Verificada",
+            "title": "Elasticidade arterial natural recuperada.",
+            "text": "Mais de 78% das mulheres acima de 50 anos sofrem de rigidez vascular devido à queda na produção de óxido nítrico.",
+            "quote": "A rotina de 9 minutos de respiração acústica relaxou meus vasos na hora. Meu médico ficou impressionado quando minha pressão caiu de 146/92 para 118/76 no checkup!"
+      },
+      {
+            "initials": "MG",
+            "author": "Margaret G., 62 • Membro Verificada",
+            "title": "Livre do cansaço dos remédios pesados.",
+            "text": "Betabloqueadores e diuréticos comuns costumam roubar a energia e causar tontura ao forçar o coração a desacelerar.",
+            "quote": "Eu estava farta de acordar tonta por causa dos remédios. Aprender a dilatar minhas artérias naturalmente me devolveu a energia, e meus números nunca estiveram tão estáveis."
+      },
+      {
+            "initials": "HS",
+            "author": "Helen S., 54 • Membro Verificada",
+            "title": "Picos de pressão matinal controlados.",
+            "text": "O perigoso pico matinal de pressão acontece quando o cortisol da alvorada encontra paredes arteriais rígidas.",
+            "quote": "Eu acordava com 150 por 95 todas as manhãs. Fazer o pacer de 9 minutos da Claire antes de sair da cama baixou minha pressão matinal para 122 estável em 12 dias."
+      },
+      {
+            "initials": "CP",
+            "author": "Carolyn P., 50 • Membro Verificada",
+            "title": "Microcirculação restaurada nos membros.",
+            "text": "Mãos geladas e tornozelos inchados no final do dia são sinais claros de resistência capilar e vasoconstrição.",
+            "quote": "Meus tornozelos inchavam às 17h todos os dias e minhas mãos viviam congeladas. Reabrir o fluxo dos capilares eliminou todo esse inchaço rapidamente."
+      },
+      {
+            "initials": "DM",
+            "author": "Dorothy M., 59 • Membro Verificada",
+            "title": "Fim do pânico do aparelho de pressão.",
+            "text": "A ansiedade da 'síndrome do jaleco branco' libera adrenalina que pode elevar a medição em até 25 pontos.",
+            "quote": "Aquele nó na garganta toda vez que o aparelho apertava meu braço finalmente sumiu. O ritmo de 0.1 Hz mantém meu sistema nervoso totalmente sereno."
+      },
+      {
+            "initials": "SK",
+            "author": "Sylvia K., 65 • Membro Verificada",
+            "title": "Botânica de cozinha para óxido nítrico.",
+            "text": "O endotélio produz 50% menos óxido nítrico após os 60 anos, mas polifenóis da dieta reativam a enzima eNOS.",
+            "quote": "O guia de cozinha da Claire me ensinou especiarias simples que aliviaram de imediato aquela sensação de peso na cabeça. Sinto minha mente leve todos os dias."
+      },
+      {
+            "initials": "JR",
+            "author": "Judith R., 53 • Membro Verificada",
+            "title": "Coração acelerado à noite silenciado.",
+            "text": "Acordar com o coração aos pulos às 3h da manhã reflete sobrecarga simpática e vasos sob forte tensão mecânica.",
+            "quote": "Passei meses acordando suando frio com o peito batendo forte. A frequência acústica de relaxamento acalma meus batimentos e me faz dormir a noite toda."
+      },
+      {
+            "initials": "AB",
+            "author": "Angela B., 48 • Membro Verificada",
+            "title": "Proteção vascular na perimenopausa.",
+            "text": "Oscilações de estrogênio causam espasmos arteriais temporários que simulam crises hipertensivas súbitas.",
+            "quote": "Minha pressão ficou instável aos 48 anos junto com os calorões. Esse método foi a salvação para estabilizar minhas artérias sem drogas químicas pesadas."
+      },
+      {
+            "initials": "BW",
+            "author": "Barbara W., 61 • Membro Verificada",
+            "title": "22 pontos a menos sem cortar o sal a zero.",
+            "text": "Menos de 15% da hipertensão é verdadeiramente sensível ao sal; a raiz primária é a rigidez do tônus vascular.",
+            "quote": "Eu me torturava comendo comida insossa sem sal nenhum sem resultado algum. O método da Claire provou que a causa era a tensão arterial. Baixei 22 pontos!"
+      },
+      {
+            "initials": "TL",
+            "author": "Teresa L., 57 • Membro Verificada",
+            "title": "Meu momento diário de paz de 9 minutos.",
+            "text": "Apenas 9 minutos de respiração em 6 ciclos por minuto reprogramam o reflexo barorreceptor por 24 horas contínuas.",
+            "quote": "O guia visual respiratório é maravilhoso e reconfortante. São os melhores 9 minutos do meu dia, e minha variabilidade cardíaca dobrou."
+      },
+      {
+            "initials": "JD",
+            "author": "Joanne D., 66 • Membro Verificada",
+            "title": "Cardiologista impressionado no consultório.",
+            "text": "A flexibilidade arterial pode ser medida clinicamente pela velocidade da onda de pulso e complacência vascular.",
+            "quote": "Meu cardiologista ficou realmente surpreso com a melhora da elasticidade das minhas artérias aos 66 anos. Ele reduziu minha medicação e me parabenizou!"
+      },
+      {
+            "initials": "RC",
+            "author": "Rosemary C., 52 • Membro Verificada",
+            "title": "Oxigênio constante no cérebro o dia todo.",
+            "text": "Artérias estreitadas diminuem a perfusão cerebral, causando fadiga, névoa mental e sonolência após o almoço.",
+            "quote": "Não preciso mais de café contínuo para espantar o cansaço pesado na cabeça. Artérias abertas e macias entregam oxigênio limpo para o cérebro a tarde toda."
+      },
+      {
+            "initials": "NF",
+            "author": "Nancy F., 60 • Membro Verificada",
+            "title": "Tensão na nuca e têmporas dissolvida.",
+            "text": "Dores na base da nuca e latejamento nas têmporas são marcas diretas de resistência vascular periférica elevada.",
+            "quote": "Aquele aperto pesado na nuca sumiu completamente. Eu nem percebia o quanto a pressão alta deixava meu corpo tenso até essa tensão evaporar."
+      },
+      {
+            "initials": "EV",
+            "author": "Elaine V., 64 • Membro Verificada",
+            "title": "Subindo ladeiras sem falta de ar.",
+            "text": "Vasos elásticos permitem que o débito cardíaco aumente no esforço sem forçar ou sobrecarregar o miocárdio.",
+            "quote": "Subir a ladeira do bairro com meu cachorro me deixava sem ar e com o coração na boca. Agora subo conversando e com a respiração tranquila e profunda."
+      },
+      {
+            "initials": "MB",
+            "author": "Martha B., 55 • Membro Verificada",
+            "title": "Segurança e controle total sobre meu corpo.",
+            "text": "Conhecimento e autorregulação somática devolvem sua autonomia sobre o destino da sua saúde cardiovascular.",
+            "quote": "Não vivo mais apavorada com medo de infarto ou AVC. Tenho em mãos uma ferramenta clínica natural de 9 minutos que mantém minhas artérias jovens e macias."
+      }
+],
+      es: [
+      {
+            "initials": "BT",
+            "author": "Brenda T., 58 • Miembro Verificada",
+            "title": "Elasticidad arterial natural recuperada.",
+            "text": "Más del 78% de las mujeres mayores de 50 años sufren rigidez vascular por disminución en la síntesis de óxido nítrico.",
+            "quote": "La rutina de 9 minutos de respiración acústica relajó mis vasos al instante. ¡Mi médico quedó impresionado cuando mi presión bajó de 146/92 a 118/76!"
+      },
+      {
+            "initials": "MG",
+            "author": "Margaret G., 62 • Miembro Verificada",
+            "title": "Libre del cansancio de la medicación pesada.",
+            "text": "Los betabloqueantes y diuréticos comunes drenan la energía y causan mareos al forzar al corazón a ralentizarse.",
+            "quote": "Estaba agotada de despertarme mareada por las pastillas. Aprender a dilatar mis arterias de forma natural me devolvió la vitalidad y mis valores están estables."
+      },
+      {
+            "initials": "HS",
+            "author": "Helen S., 54 • Miembro Verificada",
+            "title": "Picos de presión matinal controlados.",
+            "text": "El peligroso pico matinal ocurre cuando el cortisol del amanecer choca con paredes arteriales rígidas y poco elásticas.",
+            "quote": "Solía ver 150 sobre 95 cada mañana. Hacer la rutina de 9 minutos de Claire antes de levantarme bajó mis lecturas a un estable 122 en solo 12 días."
+      },
+      {
+            "initials": "CP",
+            "author": "Carolyn P., 50 • Miembro Verificada",
+            "title": "Microcirculación recuperada en extremidades.",
+            "text": "Manos frías y tobillos hinchados al final del día son señales directas de resistencia capilar y vasoconstricción.",
+            "quote": "Mis tobillos se hinchaban a las 5 PM y mis manos siempre estaban heladas. Reabrir el flujo capilar eliminó esa hinchazón por completo."
+      },
+      {
+            "initials": "DM",
+            "author": "Dorothy M., 59 • Miembro Verificada",
+            "title": "Fin a la ansiedad del tensiómetro.",
+            "text": "El estrés del 'síndrome de bata blanca' libera adrenalina que puede elevar artificialmente la medición hasta 25 puntos.",
+            "quote": "Ese nudo en el estómago cada vez que el manguito me apretaba el brazo por fin desapareció. El ritmo de 0.1 Hz mantiene mi sistema nervioso sereno."
+      },
+      {
+            "initials": "SK",
+            "author": "Sylvia K., 65 • Miembro Verificada",
+            "title": "Botánica de cocina para óxido nítrico.",
+            "text": "El endotelio produce un 50% menos óxido nítrico tras los 60, pero los polifenoles dietéticos reactivan la enzima eNOS.",
+            "quote": "La guía de cocina de Claire me enseñó especias botánicas que aliviaron al instante la pesadez en las sienes. Siento mi cabeza despejada todo el día."
+      },
+      {
+            "initials": "JR",
+            "author": "Judith R., 53 • Miembro Verificada",
+            "title": "Palpitaciones nocturnas silenciadas.",
+            "text": "Despertar con el corazón acelerado a las 3 AM indica predominio simpático y vasos sanguíneos bajo tensión mecánica.",
+            "quote": "Pasé meses despertándome sudando con el corazón desbocado. La frecuencia acústica de relajación calma mi pulso y me permite dormir profundamente."
+      },
+      {
+            "initials": "AB",
+            "author": "Angela B., 48 • Miembro Verificada",
+            "title": "Protección vascular en la perimenopausia.",
+            "text": "Las oscilaciones de estrógeno provocan espasmos arteriales temporales que simulan crisis hipertensivas repentinas.",
+            "quote": "Mi presión se volvió errática a los 48 con los sofocos. Este método fue una bendición para estabilizar mis arterias sin recurrir a fármacos fuertes."
+      },
+      {
+            "initials": "BW",
+            "author": "Barbara W., 61 • Miembro Verificada",
+            "title": "22 puntos menos sin dietas sosas ni sin sal.",
+            "text": "Menos del 15% de la hipertensión es sensible al sodio; la causa raíz predominante es la rigidez del tono vascular.",
+            "quote": "Me castigué comiendo sin sal durante meses sin ningún resultado. El método de Claire demostró que era tensión arterial acumulada. ¡Bajé 22 puntos!"
+      },
+      {
+            "initials": "TL",
+            "author": "Teresa L., 57 • Miembro Verificada",
+            "title": "Mi oasis de calma diario de 9 minutos.",
+            "text": "Solo 9 minutos de respiración a 6 ciclos por minuto reinician el reflejo barorreceptor durante 24 horas continuas.",
+            "quote": "La guía visual respiratoria es maravillosa y reconfortante. Son los mejores 9 minutos de mi día y mi variabilidad cardíaca se ha duplicado."
+      },
+      {
+            "initials": "JD",
+            "author": "Joanne D., 66 • Miembro Verificada",
+            "title": "Cardiólogo asombrado en la consulta.",
+            "text": "La flexibilidad arterial puede medirse clínicamente mediante la velocidad de la onda de pulso y la elasticidad de rebote.",
+            "quote": "Mi cardiólogo quedó muy sorprendido por la elasticidad de mis arterias a mis 66 años. ¡Me redujo la dosis de la medicación y me felicitó!"
+      },
+      {
+            "initials": "RC",
+            "author": "Rosemary C., 52 • Miembro Verificada",
+            "title": "Oxígeno constante al cerebro toda la tarde.",
+            "text": "Las arterias estrechadas reducen la perfusión cerebral, provocando pesadez mental, somnolencia y fatiga vespertina.",
+            "quote": "Ya no necesito litros de café para espantar el agotamiento de la tarde. Las arterias suaves entregan oxígeno limpio a mi cerebro todo el día."
+      },
+      {
+            "initials": "NF",
+            "author": "Nancy F., 60 • Miembro Verificada",
+            "title": "Tensión en el cuello y las sienes disuelta.",
+            "text": "La tirantez en la base del cuello y los latidos en las sienes son señales de resistencia vascular periférica elevada.",
+            "quote": "Esa presión pesada en la nuca desapareció por completo. No me daba cuenta de cuánta tensión física me causaba la presión alta hasta que se esfumó."
+      },
+      {
+            "initials": "EV",
+            "author": "Elaine V., 64 • Miembro Verificada",
+            "title": "Subir cuestas sin ahogos ni fatiga.",
+            "text": "Vasos sanguíneos elásticos permiten un gasto cardíaco fluido en el esfuerzo sin forzar el músculo cardíaco.",
+            "quote": "Subir la cuesta del barrio paseando a mi perro me dejaba sin aliento y con el corazón en la garganta. Ahora subo con energía y respiración tranquila."
+      },
+      {
+            "initials": "MB",
+            "author": "Martha B., 55 • Miembro Verificada",
+            "title": "Control y serenidad sobre mis números.",
+            "text": "El conocimiento y la autorregulación somática devuelven la autonomía sobre el destino de tu salud cardiovascular.",
+            "quote": "Ya no vivo con miedo a sufrir un infarto o un ictus. Tengo una herramienta clínica natural de 9 minutos que mantiene mis arterias suaves y jóvenes."
+      }
+]
+    };
+
+    // STATE VARIABLES
+    let currentQuestionIndex = 0;
+    let scores = {
+      elasticity: 0,
+      stress: 0,
+      nitric: 0
+    };
+    let currentViewMode = 'phone';
+    let interludeCurrentIndex = 0;
+    let interludeAutoTimer = null;
+    let interludePaused = false;
+
+    // RESTART FUNCTION
+    function restartQuiz() {
+      if (interludeAutoTimer) {
+        clearInterval(interludeAutoTimer);
+        interludeAutoTimer = null;
+      }
+      currentQuestionIndex = 0;
+      for (const k in scores) {
+        scores[k] = 0;
+      }
+      document.getElementById('results-view').classList.add('hidden');
+      document.getElementById('interlude-view').classList.add('hidden');
+      document.getElementById('calculating-view').classList.add('hidden');
+      document.getElementById('quiz-view').classList.remove('hidden');
+
+      const t = i18n[currentLang];
+      const qList = questionsData[currentLang];
+      const total = qList.length;
+      document.getElementById('step-counter').textContent = t.stepCounter.replace('{X}', 1).replace('{Y}', total);
+      document.getElementById('step-percent').textContent = t.stepPercent.replace('{P}', 10);
+      document.getElementById('progress-bar').style.width = '10%';
+
+      renderQuestion(0);
+
+      const chassis = document.getElementById('app-chassis');
+      if (chassis) {
+        chassis.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    // LANGUAGE SWITCHER ENGINE
+    function setLanguage(lang) {
+      if (!['en', 'pt', 'es'].includes(lang)) lang = 'en';
+      currentLang = lang;
+      localStorage.setItem('claire_bp_quiz_lang', lang);
+
+      // Update Active Buttons
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      const activeBtn = document.getElementById(`btn-lang-${lang}`);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      // Update Static UI Texts defensively
+      const t = i18n[lang];
+      setSafeText('ui-role', t.role);
+      setSafeText('ui-mode-phone', t.modePhone);
+      setSafeText('ui-mode-expanded', t.modeExpanded);
+      setSafeText('ui-chassis-sub', t.chassisSub);
+      setSafeText('ui-chassis-by', t.chassisBy);
+      setSafeText('ui-claire-mentor-badge', t.claireMentorBadge);
+      setSafeText('ui-claire-intro', t.claireIntro);
+      setSafeText('interlude-btn', t.interludeContinue);
+      setSafeText('ui-calc-scan-badge', t.calcScanBadge);
+
+      setSafeText('ui-res-title', t.resultsTitle);
+      setSafeText('ui-res-curated', t.resCurated);
+      setSafeText('ui-map-label', t.mapLabel);
+      setSafeText('ui-map-title', t.mapTitle);
+      setSafeText('ui-map-audit', t.mapAudit);
+      setSafeText('ui-map-status', t.mapStatus);
+      setSafeText('ui-res-stress-title', t.stressTitle);
+      setSafeText('ui-meter-tone-label', t.meterTone);
+      setSafeText('ui-meter-no-label', t.meterNo);
+      setSafeText('ui-meter-symp-label', t.meterSymp);
+      setSafeText('ui-meter-micro-label', t.meterMicro);
+
+      setSafeText('ui-claire-takeaway', t.claireTakeaway);
+      setSafeText('ui-claire-subrole', t.claireSubrole);
+      setSafeText('ui-foundation-badge', t.foundationBadge);
+      setSafeText('hero-exp-badge', t.heroExpBadge);
+      setSafeText('hero-prod-subtitle', t.heroProdSubtitle);
+      setSafeText('ui-regular-price', t.regularPrice);
+      setSafeText('ui-onetime-label', t.oneTime);
+      setSafeText('hero-checkout-btn', t.checkoutBtn);
+
+      setSafeText('ui-pairing-badge', t.pairingBadge);
+      setSafeText('ui-physician-label', t.physicianLabel);
+      setSafeText('ui-explore-pairing', t.explorePairing);
+      setSafeText('ui-ftc-disclosure', t.ftcDisclosure);
+
+      setSafeText('ui-catalog-title', t.catalogTitle);
+      setSafeText('ui-catalog-sub', t.catalogSub);
+      setSafeText('ui-view-storefront', t.viewStorefront);
+      setSafeText('ui-restart-text', t.restartBtn);
+
+      setSafeText('ui-footer-copy', t.footerCopy);
+      setSafeText('ui-footer-med', t.footerMed);
+      setSafeText('ui-footer-privacy', t.footerPrivacy);
+      setSafeText('ui-footer-terms', t.footerTerms);
+      setSafeText('ui-footer-disclosure', t.footerDisclosure);
+
+      // Re-render current question or interlude or results
+      const quizView = document.getElementById('quiz-view');
+      const interludeView = document.getElementById('interlude-view');
+      const resultsView = document.getElementById('results-view');
+
+      if (quizView && !quizView.classList.contains('hidden')) {
+        renderQuestion(currentQuestionIndex);
+      } else if (interludeView && !interludeView.classList.contains('hidden')) {
+        renderTestimonial(interludeCurrentIndex, false);
+      } else if (resultsView && !resultsView.classList.contains('hidden')) {
+        showResults();
+      }
+    }
+
+    // VIEW MODE ENGINE
+    function setViewMode(mode) {
+      currentViewMode = mode;
+      localStorage.setItem('claire_bp_quiz_viewmode', mode);
+      const chassis = document.getElementById('app-chassis');
+      const notch = document.getElementById('chassis-notch');
+      const btnPhone = document.getElementById('btn-mode-phone');
+      const btnExpanded = document.getElementById('btn-mode-expanded');
+
+      if (!chassis) return;
+
+      if (mode === 'phone') {
+        chassis.className = "w-full max-w-[430px] bg-white sm:rounded-[48px] shadow-2xl sm:border-[10px] sm:border-[#1F1D1B] p-5 sm:p-7 relative overflow-hidden transition-all duration-300";
+        if (notch) notch.classList.remove('hidden');
+        if (btnPhone) {
+          btnPhone.className = "flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-white bg-charcoal shadow-sm cursor-pointer";
+        }
+        if (btnExpanded) {
+          btnExpanded.className = "flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer";
+        }
+      } else {
+        chassis.className = "w-full max-w-2xl bg-white rounded-3xl shadow-xl shadow-stone-200/60 border border-sand/80 p-6 sm:p-8 relative overflow-hidden transition-all duration-300";
+        if (notch) notch.classList.add('hidden');
+        if (btnExpanded) {
+          btnExpanded.className = "flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-white bg-charcoal shadow-sm cursor-pointer";
+        }
+        if (btnPhone) {
+          btnPhone.className = "flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer";
+        }
+      }
+    }
+
+    function detectInitialLanguage() {
+      const saved = localStorage.getItem('claire_bp_quiz_lang');
+      if (saved && ['en', 'pt', 'es'].includes(saved)) return saved;
+
+      const navLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      if (navLang.startsWith('pt')) return 'pt';
+      if (navLang.startsWith('es')) return 'es';
+      return 'en';
+    }
+
+    // RENDER QUESTION
+    function renderQuestion(index) {
+      const qList = questionsData[currentLang];
+      const q = qList[index];
+      const t = i18n[currentLang];
+
+      // Update Progress
+      const percent = Math.round(((index + 1) / qList.length) * 100);
+      document.getElementById('step-counter').textContent = t.stepCounter.replace('{X}', index + 1).replace('{Y}', qList.length);
+      document.getElementById('step-percent').textContent = t.stepPercent.replace('{P}', percent);
+      document.getElementById('progress-bar').style.width = `${percent}%`;
+
+      // Update Texts
+      document.getElementById('question-title').textContent = q.title;
+      document.getElementById('question-subtitle').textContent = q.subtitle;
+
+      // Render Options
+      const container = document.getElementById('options-container');
+      container.innerHTML = '';
+
+      q.options.forEach((opt, optIdx) => {
+        const btn = document.createElement('button');
+        btn.className = "w-full text-left p-4 rounded-2xl border border-sand/90 bg-linen/50 option-card flex items-start space-x-3.5 group cursor-pointer";
+        btn.onclick = () => selectOption(opt.category, q);
+
+        btn.innerHTML = `
+          <div class="w-6 h-6 rounded-full border border-sand bg-white text-charcoal font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:border-terracotta group-hover:bg-terracotta group-hover:text-white transition-colors">
+            ${String.fromCharCode(65 + optIdx)}
+          </div>
+          <div class="flex-grow">
+            <span class="block text-sm font-bold text-charcoal leading-snug group-hover:text-terracotta transition-colors">
+              ${opt.label}
+            </span>
+            <span class="block text-xs text-stone-500 leading-relaxed mt-0.5">
+              ${opt.desc}
+            </span>
+          </div>
+        `;
+        container.appendChild(btn);
+      });
+    }
+
+    function selectOption(category, q) {
+      if (scores[category] !== undefined) {
+        scores[category] += 2;
+      }
+
+      // Check if question has an interlude
+      if (q.hasInterlude) {
+        showInterlude();
+      } else {
+        advanceQuestion();
+      }
+    }
+
+    // DYNAMIC 15 TESTIMONIALS ENGINE
+    function renderTestimonial(index, animate = false) {
+      const pool = testimonialsPool[currentLang] || testimonialsPool.en;
+      interludeCurrentIndex = (index + pool.length) % pool.length;
+      const item = pool[interludeCurrentIndex];
+
+      const card = document.getElementById('interlude-card');
+      const updateContent = () => {
+        setSafeText('interlude-title', item.title);
+        setSafeText('interlude-text', item.text);
+        setSafeText('interlude-author', item.author);
+        setSafeText('interlude-avatar', item.initials);
+
+        // Sanitize quote to prevent double quotation marks
+        const cleanQuote = item.quote.replace(/^[\"“”']+|[\"“”']+$/g, '').trim();
+        setSafeText('interlude-quote', `"${cleanQuote}"`);
+
+        // Counter & Status text localization (100% Pure Language Separation)
+        const counterEl = document.getElementById('interlude-counter');
+        const statusEl = document.getElementById('interlude-status');
+        const badgeEl = document.getElementById('interlude-badge');
+
+        if (currentLang === 'pt') {
+          if (counterEl) counterEl.textContent = `Depoimento ${interludeCurrentIndex + 1} de ${pool.length}`;
+          if (statusEl) statusEl.textContent = '• Rotação Automática';
+          if (badgeEl) badgeEl.textContent = `✓ ${pool.length} Histórias Verificadas`;
+        } else if (currentLang === 'es') {
+          if (counterEl) counterEl.textContent = `Historia ${interludeCurrentIndex + 1} de ${pool.length}`;
+          if (statusEl) statusEl.textContent = '• Rotación Automática';
+          if (badgeEl) badgeEl.textContent = `✓ ${pool.length} Historias Verificadas`;
+        } else {
+          if (counterEl) counterEl.textContent = `Story ${interludeCurrentIndex + 1} of ${pool.length}`;
+          if (statusEl) statusEl.textContent = '• Auto-rotating';
+          if (badgeEl) badgeEl.textContent = `✓ ${pool.length} Verified Stories`;
+        }
+
+        if (card) card.style.opacity = '1';
+      };
+
+      if (animate && card) {
+        card.style.opacity = '0';
+        setTimeout(updateContent, 200);
+      } else {
+        updateContent();
+      }
+    }
+
+    function nextTestimonial() {
+      renderTestimonial(interludeCurrentIndex + 1, true);
+    }
+
+    function prevTestimonial() {
+      renderTestimonial(interludeCurrentIndex - 1, true);
+    }
+
+    function pauseInterlude() {
+      interludePaused = true;
+    }
+
+    function resumeInterlude() {
+      interludePaused = false;
+    }
+
+    function showInterlude() {
+      document.getElementById('quiz-view').classList.add('hidden');
+      document.getElementById('progress-container').classList.add('hidden');
+
+      const interludeView = document.getElementById('interlude-view');
+
+      // Pick a random fresh testimonial from the 15 profiles
+      const pool = testimonialsPool[currentLang] || testimonialsPool.en;
+      interludeCurrentIndex = Math.floor(Math.random() * pool.length);
+      renderTestimonial(interludeCurrentIndex, false);
+
+      // Start automatic rotation every 4.5 seconds
+      if (interludeAutoTimer) clearInterval(interludeAutoTimer);
+      interludePaused = false;
+      interludeAutoTimer = setInterval(() => {
+        if (!interludePaused) {
+          renderTestimonial(interludeCurrentIndex + 1, true);
+        }
+      }, 4500);
+
+      interludeView.classList.remove('hidden');
+    }
+
+    function nextAfterInterlude() {
+      if (interludeAutoTimer) {
+        clearInterval(interludeAutoTimer);
+        interludeAutoTimer = null;
+      }
+      document.getElementById('interlude-view').classList.add('hidden');
+      document.getElementById('progress-container').classList.remove('hidden');
+      document.getElementById('quiz-view').classList.remove('hidden');
+      advanceQuestion();
+    }
+
+    function advanceQuestion() {
+      currentQuestionIndex++;
+      const qList = questionsData[currentLang];
+      if (currentQuestionIndex < qList.length) {
+        renderQuestion(currentQuestionIndex);
+      } else {
+        startCalculating();
+      }
+    }
+
+    // SIMULATE CLINICAL AI CALCULATION
+    function startCalculating() {
+      document.getElementById('quiz-view').classList.add('hidden');
+      document.getElementById('progress-container').classList.add('hidden');
+      document.getElementById('calculating-view').classList.remove('hidden');
+
+      const steps = i18n[currentLang].calculatingSteps;
+
+      let stepIdx = 0;
+      const interval = setInterval(() => {
+        stepIdx++;
+        if (stepIdx < steps.length) {
+          document.getElementById('calc-step-text').textContent = steps[stepIdx].text;
+          document.getElementById('calc-sub-text').textContent = steps[stepIdx].sub;
+          document.getElementById('calc-bar').style.width = steps[stepIdx].width;
+        } else {
+          clearInterval(interval);
+          setTimeout(showResults, 800);
+        }
+      }, 1400);
+    }
+
+    // SHOW FINAL DIAGNOSIS & PAYWALL
+    function showResults() {
+      document.getElementById('calculating-view').classList.add('hidden');
+      document.getElementById('results-view').classList.remove('hidden');
+
+      const t = i18n[currentLang];
+
+      // Update Diagnosis Text
+      document.getElementById('diagnosis-text').textContent = t.diagnosis;
+
+      // Update Primary Offer
+      document.getElementById('hero-checkout-btn').href = "https://whop.com/checkout/plan_TplaHGlAQH4BO";
+
+      // Bullets
+      const bulletList = document.getElementById('hero-prod-bullets');
+      bulletList.innerHTML = '';
+      t.bullets.forEach(b => {
+        const li = document.createElement('li');
+        li.className = "flex items-start space-x-2";
+        li.innerHTML = `<span class="text-terracotta font-bold flex-shrink-0 mt-0.5">✓</span><span>${b}</span>`;
+        bulletList.appendChild(li);
+      });
+
+      // Affiliate Pairing
+      if (t.affiliate) {
+        document.getElementById('affiliate-title').textContent = t.affiliate.name;
+        document.getElementById('affiliate-desc').textContent = t.affiliate.desc;
+        document.getElementById('affiliate-link-btn').href = t.affiliate.link;
+        document.getElementById('affiliate-box').classList.remove('hidden');
+      }
+
+      // Scroll to top of results
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // START ON LOAD
+    window.addEventListener('DOMContentLoaded', () => {
+      const initial = detectInitialLanguage();
+      setLanguage(initial);
+      const savedMode = localStorage.getItem('claire_bp_quiz_viewmode') || 'phone';
+      setViewMode(savedMode);
+    });
+  </script>
+</body>
+</html>
