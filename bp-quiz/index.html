@@ -46,8 +46,9 @@
       font-family: 'Cormorant Garamond', Georgia, serif;
     }
     .lang-btn.active {
-      background-color: #2D2825;
+      background-color: #C86D51;
       color: #ffffff;
+      border-color: #C86D51;
       font-weight: 700;
     }
     .option-card {
@@ -62,33 +63,43 @@
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-terracotta selection:text-white">
 
-  <!-- TOP HEADER (BRAND + LANGUAGE SWITCHER) -->
-  <header class="w-full max-w-4xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center z-10">
-    <div class="flex items-center space-x-2.5">
-      <span class="w-8 h-8 rounded-full bg-terracotta text-white font-serif font-bold flex items-center justify-center text-sm shadow-xs">
-        🫀
-      </span>
-      <div>
-        <span class="font-serif font-bold text-base sm:text-lg tracking-wider text-charcoal block leading-none">
-          CLAIRE EVANS
-        </span>
-        <span id="ui-role" class="text-[10px] sm:text-xs text-warmGray tracking-wide block mt-0.5 font-medium">
-          by Claire Evans • Mature Cardiovascular Mentor
-        </span>
-      </div>
-    </div>
+  <!-- TOP HEADER -->
+  <header class="w-full bg-white/85 backdrop-blur-md border-b border-sand/80 sticky top-0 z-50 py-3 px-4">
+    <div class="max-w-2xl mx-auto flex items-center justify-between">
+      
+      <!-- Brand & Avatar -->
+      <a href="/bp-quiz/" class="flex items-center space-x-2.5 group">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl overflow-hidden border border-amber-300/40 shadow-sm bg-[#1A2619] flex-shrink-0">
+          <img src="/bp-quiz/images/bp_course_mockup_1x1.jpg" alt="Blood Pressure Protocol Icon" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <span class="block text-xs uppercase tracking-widest font-bold text-terracotta group-hover:text-charcoal transition-colors">9-MINUTE BP PROTOCOL™</span>
+          <span id="ui-role" class="block text-xs text-stone-600">by Claire Evans • Mature Cardiovascular Mentor</span>
+        </div>
+      </a>
 
-    <!-- LANGUAGE SELECTOR -->
-    <div class="flex items-center p-1 bg-sand/80 rounded-full border border-sand text-xs font-semibold shadow-2xs">
-      <button id="btn-lang-en" onclick="setLanguage('en')" class="lang-btn px-2.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer active">
-        EN
-      </button>
-      <button id="btn-lang-pt" onclick="setLanguage('pt')" class="lang-btn px-2.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer">
-        PT
-      </button>
-      <button id="btn-lang-es" onclick="setLanguage('es')" class="lang-btn px-2.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer">
-        ES
-      </button>
+      <!-- Controls: Badge + Language Switcher -->
+      <div class="flex items-center space-x-2">
+        <!-- Language Switcher Pills -->
+        <div class="flex items-center p-0.5 bg-sand/70 rounded-full border border-sand text-xs font-semibold">
+          <button onclick="setLanguage('en')" id="btn-lang-en" class="lang-btn px-2.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal font-semibold cursor-pointer active" title="English">
+            <span class="text-[10px] text-stone-400 font-bold mr-0.5">US</span>EN
+          </button>
+          <button onclick="setLanguage('pt')" id="btn-lang-pt" class="lang-btn px-2.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal font-semibold cursor-pointer" title="Português">
+            <span class="text-[10px] text-stone-400 font-bold mr-0.5">BR</span>PT
+          </button>
+          <button onclick="setLanguage('es')" id="btn-lang-es" class="lang-btn px-2.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal font-semibold cursor-pointer" title="Español">
+            <span class="text-[10px] text-stone-400 font-bold mr-0.5">ES</span>ES
+          </button>
+        </div>
+
+        <!-- 60-Sec Badge -->
+        <div class="hidden sm:flex items-center space-x-1.5 text-xs font-semibold px-2.5 py-1 bg-sand/60 rounded-full text-charcoal border border-sand">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span id="ui-badge">60-Sec Audit</span>
+        </div>
+      </div>
+
     </div>
   </header>
 
@@ -115,9 +126,9 @@
         </div>
       </div>
 
-      <!-- App Brand Header Inside Chassis -->
+      <!-- App Brand Header Inside Chassis (Clean App Icon + High-Res Vector HTML Typography) -->
       <div class="mb-5 flex items-center justify-center space-x-3 sm:space-x-3.5">
-        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl overflow-hidden border border-red-300/40 shadow-sm bg-[#2C1810] flex-shrink-0">
+        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl overflow-hidden border border-amber-300/40 shadow-sm bg-[#1A2619] flex-shrink-0">
           <img src="/bp-quiz/images/bp_course_mockup_1x1.jpg" alt="Blood Pressure Protocol Icon" class="w-full h-full object-cover">
         </div>
         <div class="text-left">
@@ -1851,6 +1862,7 @@
       // Update Static UI Texts defensively
       const t = i18n[lang];
       setSafeText('ui-role', t.role);
+        setSafeText('ui-badge', t.badge);
       setSafeText('ui-mode-phone', t.modePhone);
       setSafeText('ui-mode-expanded', t.modeExpanded);
       setSafeText('ui-chassis-sub', t.chassisSub);
