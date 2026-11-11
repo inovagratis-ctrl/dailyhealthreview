@@ -462,8 +462,16 @@
 
     </div>
   </main>
-
-  
+  <footer class="mt-12 py-8 border-t border-sand text-center text-xs text-stone-500 max-w-2xl mx-auto px-4">
+    <p id="ui-footer-copy" class="mb-2">© 2026 Daily Health Review US • The Ageless Routine™ by Claire Evans.</p>
+    <p id="ui-footer-med" class="text-[11px] text-stone-400 leading-relaxed mb-4">Medical Disclaimer: The statements and protocols presented on this website have not been evaluated by the Food and Drug Administration. These materials are intended for educational and wellness guidance only and are not a substitute for professional medical diagnosis or treatment. Always consult your physician.</p>
+    <div class="flex items-center justify-center space-x-4 text-[11px] text-stone-400">
+      <a id="ui-footer-privacy" href="/privacy" class="hover:underline">Privacy Policy</a>
+      <span>•</span>
+      <a id="ui-footer-terms" href="/terms" class="hover:underline">Terms of Service</a>
+      <span>•</span>
+      <a id="ui-footer-disclosure" href="/disclosure" class="hover:underline">FTC Affiliate Disclosure</a>
+    </div>
   </footer>
 
   <!-- MULTI-LANGUAGE SCRIPT (TRILINGUAL ENGINE: EN / PT / ES) -->
@@ -555,7 +563,7 @@
         resultsBadge: "Análise Concluída",
         resultsTitle: "Protocolo de Renovação Celular • Seu Diagnóstico",
         resCurated: "Desenvolvido por Claire Evans • Daily Health Review US",
-        mapLabel: "Mapa de Vitalidade Personalizado",
+        mapLabel: "Mapa de Vitalidad Personalizado",
         mapTitle: "Índice de Recuperação e Renovação Celular",
         mapAudit: "Análise Inteligente",
         mapStatus: "Concluído ✓",
@@ -589,6 +597,7 @@
         catTitle5: "❤️ Artérias Limpas 28 Dias",
         catDesc5: "Defesa de placas, glicocálix e redirecionamento de cálcio",
         viewStorefront: "Ver Todos os 6 Protocolos na Loja Oficial no Whop →",
+        restartBtn: "🔄 Recomeçar Avaliação (Limpar Respostas)",
         footerCopy: "© 2026 Daily Health Review US • The Ageless Routine™ por Claire Evans.",
         footerMed: "Aviso Legal Médico: As declarações e protocolos apresentados neste site não foram avaliados pela FDA. Estes materiais têm caráter exclusivamente educacional e de bem-estar, não substituindo o diagnóstico ou tratamento médico profissional. Consulte sempre seu médico.",
         footerPrivacy: "Política de Privacidade",
@@ -616,7 +625,7 @@
         resultsBadge: "Análisis Completado",
         resultsTitle: "Protocolo de Renovación Celular • Tu Diagnóstico",
         resCurated: "Desarrollado por Claire Evans • Daily Health Review US",
-        mapLabel: "Mapa de Vitalidade Personalizado",
+        mapLabel: "Mapa de Vitalidad Personalizado",
         mapTitle: "Puntuación Personalizada de Bienestar y Recuperación",
         mapAudit: "Personalizado por IA",
         mapStatus: "Calculado ✓",
@@ -650,6 +659,7 @@
         catTitle5: "❤️ Arterias Limpias 28 Días",
         catDesc5: "Defensa contra placas, glicocálix y redirección de calcio",
         viewStorefront: "Ver los 6 Protocolos en la Tienda Oficial de Whop →",
+        restartBtn: "🔄 Reiniciar Evaluación (Limpiar Respuestas)",
         footerCopy: "© 2026 Daily Health Review US • The Ageless Routine™ por Claire Evans.",
         footerMed: "Aviso Médico: Las declaraciones y protocolos presentados en este sitio no han sido evaluados por la FDA. Estos materiales tienen fines informativos y de bienestar, no sustituyendo el diagnóstico médico profesional. Consulta siempre a tu médico.",
         footerPrivacy: "Política de Privacidad",
@@ -664,7 +674,7 @@
     {
       "id": 1,
       "title": "What is your current age bracket?",
-      "subtitle": "Cellular renewal and dermal collagen renovação decelerate sharply after 40.",
+      "subtitle": "Cellular renewal and dermal collagen turnover decelerate sharply after 40.",
       "options": [
         {
           "label": "40 to 49 Years",
@@ -695,7 +705,7 @@
         },
         {
           "label": "Skin feels dry, tight, and looks dull",
-          "desc": "Sluggish cellular renovação and compromised lipid barrier",
+          "desc": "Sluggish cellular turnover and compromised lipid barrier",
           "category": "skin"
         },
         {
@@ -1694,6 +1704,12 @@
       currentLang = lang;
       localStorage.setItem('claire_quiz_lang', lang);
 
+      // Helper to safely set text without crashing if element is absent
+      const setSafeText = (id, val) => {
+        const el = document.getElementById(id);
+        if (el && val !== undefined) el.textContent = val;
+      };
+
       // Update Active Buttons
       document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
       const activeBtn = document.getElementById(`btn-lang-${lang}`);
@@ -1701,75 +1717,84 @@
 
       // Update Static UI Texts
       const t = i18n[lang];
-      document.getElementById('ui-role').textContent = t.role;
-      document.getElementById('ui-badge').textContent = t.badge;
-      if (document.getElementById('ui-claire-intro')) document.getElementById('ui-claire-intro').textContent = t.claireIntro;
-      document.getElementById('interlude-btn').textContent = t.interludeContinue;
-      document.getElementById('ui-res-badge').querySelector('span:last-child').textContent = t.resultsBadge;
-      document.getElementById('ui-res-title').textContent = t.resultsTitle;
-      document.getElementById('ui-res-stress-title').textContent = t.stressTitle;
-      document.getElementById('ui-meter-cortisol-label').textContent = t.meterCortisol;
-      document.getElementById('ui-meter-gut-label').textContent = t.meterGut;
-      document.getElementById('ui-meter-heart-label').textContent = t.meterHeart;
-      document.getElementById('ui-meter-skin-label').textContent = t.meterSkin;
-      document.getElementById('ui-claire-takeaway').textContent = t.claireTakeaway;
-      document.getElementById('ui-foundation-badge').textContent = t.foundationBadge;
-      document.getElementById('ui-regular-price').textContent = t.regularPrice;
-      document.getElementById('ui-onetime-label').textContent = t.oneTime;
-      document.getElementById('hero-checkout-btn').textContent = t.checkoutBtn;
-      document.getElementById('ui-pairing-badge').textContent = t.pairingBadge;
-      document.getElementById('ui-physician-label').textContent = t.physicianLabel;
-      document.getElementById('ui-explore-pairing').textContent = t.explorePairing;
-      document.getElementById('ui-ftc-disclosure').textContent = t.ftcDisclosure;
-      document.getElementById('ui-catalog-title').textContent = t.catalogTitle;
-      document.getElementById('ui-catalog-sub').textContent = t.catalogSub;
-      document.getElementById('ui-cat-desc-1').textContent = t.catDesc1;
-      document.getElementById('ui-cat-desc-2').textContent = t.catDesc2;
-      document.getElementById('ui-cat-desc-3').textContent = t.catDesc3;
-      document.getElementById('ui-cat-desc-4').textContent = t.catDesc4;
-      document.getElementById('ui-cat-desc-5').textContent = t.catDesc5;
-      document.getElementById('ui-view-storefront').textContent = t.viewStorefront;
-      document.getElementById('ui-footer-copy').textContent = t.footerCopy;
-      document.getElementById('ui-footer-med').textContent = t.footerMed;
-      if (document.getElementById('ui-mode-phone')) document.getElementById('ui-mode-phone').textContent = t.modePhone;
-      if (document.getElementById('ui-mode-expanded')) document.getElementById('ui-mode-expanded').textContent = t.modeExpanded;
-      if (document.getElementById('ui-chassis-sub')) document.getElementById('ui-chassis-sub').textContent = t.chassisSub;
-      if (document.getElementById('ui-chassis-by')) document.getElementById('ui-chassis-by').textContent = t.chassisBy;
-      if (document.getElementById('ui-claire-mentor-badge')) document.getElementById('ui-claire-mentor-badge').textContent = t.claireMentorBadge;
-      if (document.getElementById('ui-calc-scan-badge')) document.getElementById('ui-calc-scan-badge').textContent = t.calcScanBadge;
-      if (document.getElementById('ui-res-curated')) document.getElementById('ui-res-curated').textContent = t.resCurated;
-      if (document.getElementById('ui-map-label')) document.getElementById('ui-map-label').textContent = t.mapLabel;
-      if (document.getElementById('ui-map-title')) document.getElementById('ui-map-title').textContent = t.mapTitle;
-      if (document.getElementById('ui-map-audit')) document.getElementById('ui-map-audit').textContent = t.mapAudit;
-      if (document.getElementById('ui-map-status')) document.getElementById('ui-map-status').textContent = t.mapStatus;
-      if (document.getElementById('ui-claire-subrole')) document.getElementById('ui-claire-subrole').textContent = t.claireSubrole;
-      if (document.getElementById('hero-exp-badge')) document.getElementById('hero-exp-badge').textContent = t.heroExpBadge;
-      if (document.getElementById('hero-prod-subtitle')) document.getElementById('hero-prod-subtitle').textContent = t.heroProdSubtitle;
-      if (document.getElementById('ui-cat-title-1')) document.getElementById('ui-cat-title-1').textContent = t.catTitle1;
-      if (document.getElementById('ui-cat-title-2')) document.getElementById('ui-cat-title-2').textContent = t.catTitle2;
-      if (document.getElementById('ui-cat-title-3')) document.getElementById('ui-cat-title-3').textContent = t.catTitle3;
-      if (document.getElementById('ui-cat-title-4')) document.getElementById('ui-cat-title-4').textContent = t.catTitle4;
-      if (document.getElementById('ui-cat-title-5')) document.getElementById('ui-cat-title-5').textContent = t.catTitle5;
-      if (document.getElementById('ui-footer-privacy')) document.getElementById('ui-footer-privacy').textContent = t.footerPrivacy;
-      if (document.getElementById('ui-footer-terms')) document.getElementById('ui-footer-terms').textContent = t.footerTerms;
-      if (document.getElementById('ui-footer-disclosure')) document.getElementById('ui-footer-disclosure').textContent = t.footerDisclosure;
+      setSafeText('ui-role', t.role);
+      setSafeText('ui-badge', t.badge);
+      setSafeText('ui-badge-text', t.badge);
+      setSafeText('ui-claire-intro', t.claireIntro);
+      setSafeText('interlude-btn', t.interludeContinue);
+      
+      const resBadge = document.getElementById('ui-res-badge');
+      if (resBadge) {
+        const lastSpan = resBadge.querySelector('span:last-child');
+        if (lastSpan) lastSpan.textContent = t.resultsBadge;
+      }
+      
+      setSafeText('ui-res-title', t.resultsTitle);
+      setSafeText('ui-res-stress-title', t.stressTitle);
+      setSafeText('ui-meter-cortisol-label', t.meterCortisol);
+      setSafeText('ui-meter-gut-label', t.meterGut);
+      setSafeText('ui-meter-heart-label', t.meterHeart);
+      setSafeText('ui-meter-skin-label', t.meterSkin);
+      setSafeText('ui-claire-takeaway', t.claireTakeaway);
+      setSafeText('ui-foundation-badge', t.foundationBadge);
+      setSafeText('ui-regular-price', t.regularPrice);
+      setSafeText('ui-onetime-label', t.oneTime);
+      setSafeText('hero-checkout-btn', t.checkoutBtn);
+      setSafeText('ui-pairing-badge', t.pairingBadge);
+      setSafeText('ui-physician-label', t.physicianLabel);
+      setSafeText('ui-explore-pairing', t.explorePairing);
+      setSafeText('ui-ftc-disclosure', t.ftcDisclosure);
+      setSafeText('ui-catalog-title', t.catalogTitle);
+      setSafeText('ui-catalog-sub', t.catalogSub);
+      setSafeText('ui-cat-desc-1', t.catDesc1);
+      setSafeText('ui-cat-desc-2', t.catDesc2);
+      setSafeText('ui-cat-desc-3', t.catDesc3);
+      setSafeText('ui-cat-desc-4', t.catDesc4);
+      setSafeText('ui-cat-desc-5', t.catDesc5);
+      setSafeText('ui-view-storefront', t.viewStorefront);
+      setSafeText('ui-restart-text', t.restartBtn);
+      setSafeText('ui-footer-copy', t.footerCopy);
+      setSafeText('ui-footer-med', t.footerMed);
+      setSafeText('ui-mode-phone', t.modePhone);
+      setSafeText('ui-mode-expanded', t.modeExpanded);
+      setSafeText('ui-chassis-sub', t.chassisSub);
+      setSafeText('ui-chassis-by', t.chassisBy);
+      setSafeText('ui-claire-mentor-badge', t.claireMentorBadge);
+      setSafeText('ui-calc-scan-badge', t.calcScanBadge);
+      setSafeText('ui-res-curated', t.resCurated);
+      setSafeText('ui-map-label', t.mapLabel);
+      setSafeText('ui-map-title', t.mapTitle);
+      setSafeText('ui-map-audit', t.mapAudit);
+      setSafeText('ui-map-status', t.mapStatus);
+      setSafeText('ui-claire-subrole', t.claireSubrole);
+      setSafeText('hero-exp-badge', t.heroExpBadge);
+      setSafeText('hero-prod-subtitle', t.heroProdSubtitle);
+      setSafeText('ui-cat-title-1', t.catTitle1);
+      setSafeText('ui-cat-title-2', t.catTitle2);
+      setSafeText('ui-cat-title-3', t.catTitle3);
+      setSafeText('ui-cat-title-4', t.catTitle4);
+      setSafeText('ui-cat-title-5', t.catTitle5);
+      setSafeText('ui-footer-privacy', t.footerPrivacy);
+      setSafeText('ui-footer-terms', t.footerTerms);
+      setSafeText('ui-footer-disclosure', t.footerDisclosure);
 
       // Re-render current question, interlude, or results
-      if (!document.getElementById('quiz-view').classList.contains('hidden')) {
+      const quizView = document.getElementById('quiz-view');
+      const interludeView = document.getElementById('interlude-view');
+      const resultsView = document.getElementById('results-view');
+
+      if (quizView && !quizView.classList.contains('hidden')) {
         renderQuestion(currentQuestionIndex);
-      } else if (!document.getElementById('interlude-view').classList.contains('hidden')) {
+      } else if (interludeView && !interludeView.classList.contains('hidden')) {
         const qList = questionsData[currentLang];
         const q = qList[currentQuestionIndex];
         if (q && q.hasInterlude && q.interludeData) {
           showInterlude(q.interludeData);
         }
-      } else if (!document.getElementById('results-view').classList.contains('hidden')) {
+      } else if (resultsView && !resultsView.classList.contains('hidden')) {
         showResults();
       }
     }
-
-    // DESKTOP VIEW MODE TOGGLE (PHONE CHASSIS VS EXPANDED)
-    let currentViewMode = 'phone';
 
     function setViewMode(mode) {
       currentViewMode = mode;
