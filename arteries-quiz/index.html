@@ -1,0 +1,2184 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claire Evans • 28-Day Clean Arteries & Endothelial Restoration Audit</title>
+  <meta name="description" content="Discover your personalized arterial plaque defense score and Claire Evans' 28-day endothelial protocol to rebuild vascular youth and redirect calcium safely.">
+  <link rel="icon" type="image/png" href="/quiz/images/the_ageless_routine_badge_square.webp">
+
+  <!-- Fonts & Tailwind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            terracotta: '#C15C3D',
+            terracottaDark: '#A04528',
+            linen: '#FBF9F5',
+            sand: '#F3EFEA',
+            charcoal: '#2D2825',
+            warmGray: '#766E65',
+            sage: '#607254'
+          },
+          fontFamily: {
+            serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'Segoe UI', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #F6F3EE;
+      color: #2D2825;
+      -webkit-font-smoothing: antialiased;
+    }
+    .cormorant {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .lang-btn.active {
+      background-color: #2D2825;
+      color: #ffffff;
+      font-weight: 700;
+    }
+    .option-card {
+      transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .option-card:hover {
+      transform: translateY(-2px);
+      border-color: #C15C3D;
+      box-shadow: 0 8px 20px -6px rgba(193, 92, 61, 0.15);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-terracotta selection:text-white">
+
+  <!-- TOP HEADER (BRAND + LANGUAGE SWITCHER) -->
+  <header class="w-full max-w-4xl mx-auto px-4 py-3 sm:py-4 flex justify-between items-center z-10">
+    <div class="flex items-center space-x-2.5">
+      <span class="w-8 h-8 rounded-full bg-terracotta text-white font-serif font-bold flex items-center justify-center text-sm shadow-xs">
+        ❤️
+      </span>
+      <div>
+        <span class="font-serif font-bold text-base sm:text-lg tracking-wider text-charcoal block leading-none">
+          CLAIRE EVANS
+        </span>
+        <span id="ui-role" class="text-[10px] sm:text-xs text-warmGray tracking-wide block mt-0.5 font-medium">
+          by Claire Evans • Mature Cardiovascular Mentor
+        </span>
+      </div>
+    </div>
+
+    <!-- LANGUAGE SELECTOR -->
+    <div class="flex items-center p-1 bg-sand/80 rounded-full border border-sand text-xs font-semibold shadow-2xs">
+      <button id="btn-lang-en" onclick="setLanguage('en')" class="lang-btn px-2.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer active">
+        EN
+      </button>
+      <button id="btn-lang-pt" onclick="setLanguage('pt')" class="lang-btn px-2.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer">
+        PT
+      </button>
+      <button id="btn-lang-es" onclick="setLanguage('es')" class="lang-btn px-2.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer">
+        ES
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN WRAPPER (CENTERED CHASSIS) -->
+  <main class="flex-grow flex items-center justify-center p-3 sm:p-6 pb-24 sm:pb-28">
+    <div id="app-chassis" class="w-full max-w-[430px] bg-white sm:rounded-[48px] shadow-2xl sm:border-[10px] sm:border-[#1F1D1B] p-5 sm:p-7 relative overflow-hidden transition-all duration-300">
+      
+      <!-- Top Smartphone Speaker Notch -->
+      <div id="chassis-notch" class="hidden sm:flex items-center justify-center w-24 h-4 bg-[#1F1D1B] rounded-full mx-auto mb-4">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#2A2724] border border-[#3A3632]"></span>
+      </div>
+
+      <!-- VIEW MODE SWITCHER DENTRO DO CHASSIS -->
+      <div class="hidden sm:flex items-center justify-center mb-4">
+        <div class="flex items-center p-1 bg-sand/70 rounded-full border border-sand text-xs font-semibold shadow-2xs">
+          <button id="btn-mode-phone" onclick="setViewMode('phone')" class="flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-white bg-charcoal shadow-sm cursor-pointer">
+            <span>📱</span>
+            <span id="ui-mode-phone">Modo Celular</span>
+          </button>
+          <button id="btn-mode-expanded" onclick="setViewMode('expanded')" class="flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer">
+            <span>🖥️</span>
+            <span id="ui-mode-expanded">Modo Expandido</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- App Brand Header Inside Chassis -->
+      <div class="mb-5 flex items-center justify-center space-x-3 sm:space-x-3.5">
+        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl overflow-hidden border border-red-300/40 shadow-sm bg-[#2C1810] flex-shrink-0">
+          <img src="/arteries-quiz/images/clean_arteries_app_icon_1x1.jpg" alt="Clean Arteries Protocol Icon" class="w-full h-full object-cover">
+        </div>
+        <div class="text-left">
+          <div class="flex items-center space-x-1">
+            <h1 class="cormorant text-base sm:text-lg font-bold tracking-wider text-charcoal leading-tight">
+              CLEAN ARTERIES PROTOCOL
+            </h1>
+            <span class="text-[11px] font-bold text-terracotta align-top">™</span>
+          </div>
+          <p id="ui-chassis-sub" class="text-xs text-stone-500 font-medium leading-tight mt-0.5">
+            Plaque Defense, Endothelial Glycocalyx & Vitamin K2
+          </p>
+          <p id="ui-chassis-by" class="text-[11px] sm:text-xs text-terracotta font-semibold leading-tight mt-0.5">
+            by Claire Evans • Mature Cardiovascular Mentor
+          </p>
+        </div>
+      </div>
+
+      <!-- PROGRESS BAR CONTAINER -->
+      <div id="progress-container" class="mb-6">
+        <div class="flex justify-between items-center text-xs sm:text-sm font-medium text-stone-600 mb-2">
+          <span id="step-counter" class="uppercase tracking-wider">Question 1 of 10</span>
+          <span id="step-percent" class="font-bold text-terracotta">10% Complete</span>
+        </div>
+        <div class="w-full h-2 bg-sand/70 rounded-full overflow-hidden">
+          <div id="progress-bar" class="h-full bg-gradient-to-r from-terracotta to-amber-600 rounded-full transition-all duration-300 ease-out" style="width: 10%;"></div>
+        </div>
+      </div>
+
+      <!-- QUIZ VIEW (DYNAMIC) -->
+      <div id="quiz-view">
+        <!-- Claire Intro Banner -->
+        <div class="mb-4 flex items-center space-x-3 p-3 bg-linen rounded-2xl border border-sand/80">
+          <img src="/quiz/images/Claire_Evans_Official_Kitchen_Portrait_4x3.webp" alt="Claire Evans" class="w-12 h-12 rounded-xl object-cover border border-amber-200/50 flex-shrink-0 shadow-xs">
+          <div>
+            <div class="flex items-center space-x-1.5">
+              <span class="text-xs font-bold text-charcoal">Claire Evans</span>
+              <span id="ui-claire-mentor-badge" class="text-xs text-terracotta bg-terracotta/10 px-2 py-0.5 rounded-full font-semibold">51 & Glowing</span>
+            </div>
+            <p id="ui-claire-intro" class="text-xs sm:text-sm text-stone-600 leading-normal mt-0.5">"Answer instinctively. Let's find what your arterial walls need to restore clean, youthful flow."</p>
+          </div>
+        </div>
+
+        <h2 id="question-title" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal leading-tight mb-2">
+          Loading assessment...
+        </h2>
+        <p id="question-subtitle" class="text-sm sm:text-[15px] text-stone-600 mb-6 leading-relaxed">
+          Select the option that best describes your daily experience.
+        </p>
+
+        <!-- OPTIONS CONTAINER -->
+        <div id="options-container" class="space-y-3">
+          <!-- Dynamically injected -->
+        </div>
+      </div>
+
+      <!-- INTERLUDE VIEW (SOCIAL PROOF PAUSE WITH 15 ROTATING MEMBERS) -->
+      <div id="interlude-view" class="hidden text-center py-4">
+        <div class="w-14 h-14 rounded-full bg-amber-50 text-terracotta mx-auto flex items-center justify-center text-2xl mb-4 shadow-sm border border-amber-200/50">
+          ✨
+        </div>
+        <h3 id="interlude-title" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal mb-3">
+          Cardiologist delighted with vascular scan.
+        </h3>
+        <p id="interlude-text" class="text-sm sm:text-base text-stone-700 leading-relaxed max-w-md mx-auto mb-6">
+          Over 82% of arterial calcification is driven by Vitamin K2 deficiency rather than dietary saturated fat.
+        </p>
+
+        <!-- DYNAMIC CARD WITH ROTATION CONTROLS -->
+        <div id="interlude-card" onmouseenter="pauseInterlude()" onmouseleave="resumeInterlude()" class="p-4 sm:p-5 bg-linen rounded-2xl border border-sand/80 text-left mb-6 max-w-md mx-auto transition-opacity duration-300 relative">
+          <div class="flex items-center justify-between mb-2.5">
+            <div class="flex items-center space-x-3">
+              <div id="interlude-avatar" class="w-9 h-9 rounded-full bg-terracotta/15 text-terracotta font-bold flex items-center justify-center text-xs shadow-2xs border border-terracotta/20 flex-shrink-0">
+                GP
+              </div>
+              <div>
+                <p id="interlude-author" class="text-sm font-bold text-charcoal">Grace P., 63 • Verified Member</p>
+                <div class="text-xs text-amber-500">★★★★★</div>
+              </div>
+            </div>
+            <span id="interlude-badge" class="text-[10px] uppercase font-bold tracking-wider px-2 py-0.5 bg-emerald-50 text-emerald-700 rounded-full border border-emerald-200/60">
+              ✓ 15 Verified Stories
+            </span>
+          </div>
+          <p id="interlude-quote" class="text-sm text-stone-700 italic leading-relaxed min-h-[4rem] flex items-center">
+            "My cardiologist asked what on earth I was doing differently after reviewing my latest vascular elasticity test. My arterial rebound was soft and youthful at age 63!"
+          </p>
+
+          <!-- NAVIGATION CONTROLS -->
+          <div class="flex items-center justify-between mt-3 pt-2.5 border-t border-sand/60 text-xs">
+            <button type="button" onclick="prevTestimonial()" class="px-2.5 py-1 bg-white hover:bg-sand/60 text-stone-600 rounded-full border border-sand transition-all cursor-pointer font-bold" aria-label="Previous review">
+              ‹
+            </button>
+            <div class="flex items-center space-x-1.5 text-stone-500 font-medium text-[11px]">
+              <span id="interlude-counter" class="bg-white/80 px-2.5 py-0.5 rounded-full border border-sand/70">Story 1 of 15</span>
+              <span id="interlude-status" class="text-emerald-600 font-semibold">• Auto-rotating</span>
+            </div>
+            <button type="button" onclick="nextTestimonial()" class="px-2.5 py-1 bg-white hover:bg-sand/60 text-stone-600 rounded-full border border-sand transition-all cursor-pointer font-bold" aria-label="Next review">
+              ›
+            </button>
+          </div>
+        </div>
+
+        <button id="interlude-btn" onclick="nextAfterInterlude()" class="w-full sm:w-auto px-8 py-3.5 bg-terracotta hover:bg-terracottaDark text-white font-medium rounded-full shadow-lg shadow-terracotta/25 transition-all text-sm tracking-wide">
+          Continue Assessment →
+        </button>
+      </div>
+
+      <!-- CALCULATING VIEW (SIMULATED CLINICAL ANALYSIS) -->
+      <div id="calculating-view" class="hidden text-center py-6">
+        <div class="w-full max-w-sm mx-auto h-36 sm:h-44 rounded-2xl overflow-hidden mb-5 border border-sand/90 shadow-md relative">
+          <img src="/arteries-quiz/images/cardiovascular_superfoods_lifestyle.jpg" alt="Endothelial Glycocalyx Assessment" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-transparent to-transparent flex items-end justify-center p-3">
+            <span class="text-xs font-semibold text-amber-200 uppercase tracking-widest flex items-center space-x-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              <span id="ui-calc-scan-badge">Scanning Glycocalyx Integrity</span>
+            </span>
+          </div>
+        </div>
+        <h3 id="calc-step-text" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal mb-2">
+          Analyzing arterial plaque vulnerability...
+        </h3>
+        <p id="calc-sub-text" class="text-sm text-stone-600 max-w-xs mx-auto mb-6">
+          Evaluating calcium redirection pathways and endothelial non-stick barriers.
+        </p>
+        <div class="w-48 h-1.5 bg-sand rounded-full mx-auto overflow-hidden">
+          <div id="calc-bar" class="h-full bg-terracotta transition-all duration-700 ease-out" style="width: 15%;"></div>
+        </div>
+      </div>
+
+      <!-- RESULTS VIEW (DIAGNOSIS + PAYWALL + AFFILIATE PAIRING) -->
+      <div id="results-view" class="hidden">
+        <!-- Top Badge -->
+        <div class="text-center mb-6">
+          <span id="ui-res-badge" class="inline-flex items-center space-x-1.5 px-3 py-1 bg-amber-50 text-terracotta text-xs font-semibold rounded-full border border-amber-200/60 uppercase tracking-widest mb-2">
+            <span>✓</span> <span>Analysis Complete</span>
+          </span>
+          <h2 id="ui-res-title" class="cormorant text-3xl sm:text-4xl font-bold text-charcoal leading-tight">
+            Your Arterial Plaque Defense & Endothelial Profile
+          </h2>
+          <p id="ui-res-curated" class="text-xs sm:text-sm text-warmGray mt-1">Curated by Claire Evans • Daily Health Review US</p>
+        </div>
+
+        <!-- VISUAL HERO BANNER -->
+        <div class="w-full h-36 sm:h-44 rounded-2xl overflow-hidden mb-6 border border-sand/90 shadow-sm relative">
+          <img src="/arteries-quiz/images/clean_arteries_hero_4x3.jpg" alt="Clean Arteries Protocol Cover" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-transparent flex items-end justify-between p-4 text-white">
+            <div>
+              <span id="ui-map-label" class="text-xs uppercase font-bold tracking-widest text-amber-300">Arterial Plaque Defense Map</span>
+              <p id="ui-map-title" class="text-sm sm:text-base font-semibold">Endothelial Non-Stick Integrity Score</p>
+            </div>
+            <div class="text-right">
+              <span id="ui-map-audit" class="text-xs text-stone-300">Calculated by Clinical AI</span>
+              <p id="ui-map-status" class="text-xs sm:text-sm font-bold text-emerald-400">Calculated ✓</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- HEALTH SCORE METERS -->
+        <div class="bg-linen rounded-2xl p-4 sm:p-5 border border-sand/90 mb-6">
+          <div class="flex items-center justify-between mb-3">
+            <span id="ui-res-stress-title" class="text-xs sm:text-sm font-bold uppercase tracking-wider text-charcoal">Arterial Health & Calcification Profile</span>
+            <span id="score-badge" class="px-3 py-1 bg-terracotta/15 text-terracotta font-bold text-xs sm:text-sm rounded-full">Glycocalyx Thinning & Calcium Risk</span>
+          </div>
+
+          <!-- Meters List -->
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-glyco-label" class="text-stone-700">Endothelial Glycocalyx Integrity</span>
+                <span id="meter-glyco-val" class="font-bold text-charcoal">34%</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-glyco" class="h-full bg-red-400 rounded-full" style="width: 34%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-calc-label" class="text-stone-700">Arterial Calcium Deposition Risk</span>
+                <span id="meter-calc-val" class="font-bold text-charcoal">84%</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-calc" class="h-full bg-amber-500 rounded-full" style="width: 84%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-ldl-label" class="text-stone-700">Oxidized LDL & Plaque Stickiness</span>
+                <span id="meter-ldl-val" class="font-bold text-charcoal">78%</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-ldl" class="h-full bg-orange-400 rounded-full" style="width: 78%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-micro-label" class="text-stone-700">Micro-Vascular Blood Flow & Capillary Delivery</span>
+                <span id="meter-micro-val" class="font-bold text-charcoal">41%</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-micro" class="h-full bg-amber-400 rounded-full" style="width: 41%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIAGNOSIS SUMMARY BOX WITH CLAIRE PORTRAIT -->
+        <div class="mb-6 p-4 sm:p-5 border-l-4 border-terracotta bg-white rounded-r-2xl shadow-sm border-t border-r border-b border-sand/80">
+          <div class="flex items-center space-x-3 mb-2.5">
+            <img src="/quiz/images/Claire_Evans_Official_Kitchen_Portrait_4x3.webp" alt="Claire Evans" class="w-11 h-11 rounded-full object-cover border border-amber-200/60 shadow-sm flex-shrink-0">
+            <div>
+              <h4 id="ui-claire-takeaway" class="text-base font-bold text-charcoal">Claire's Personalized Assessment:</h4>
+              <p id="ui-claire-subrole" class="text-xs text-stone-500">Mature Cardiovascular & Longevity Mentor</p>
+            </div>
+          </div>
+          <p id="diagnosis-text" class="text-sm sm:text-[15px] text-stone-700 leading-relaxed font-normal">
+            Your responses indicate thinning of your delicate endothelial glycocalyx and impaired calcium redirection pathways. Cholesterol is not your enemy—it is a biological bandage dispatched by your liver to seal microscopic tears in inflamed arterial walls. The true danger arises when unguided calcium binds to oxidized lipids, transforming flexible vessels into rigid, calcified channels. The 28-Day Clean Arteries Protocol rebuilds your non-stick endothelial shield while activating the Vitamin K2 matrix to safely pull calcium out of your blood vessels and lock it firmly into your bones.
+          </p>
+        </div>
+
+        <!-- PRIMARY HERO OFFER ($27 PROPRIETARY PROTOCOL) -->
+        <div class="border-2 border-terracotta/40 rounded-3xl p-5 sm:p-6 bg-gradient-to-b from-white to-amber-50/30 relative shadow-lg shadow-terracotta/10 mb-6">
+          <div id="ui-foundation-badge" class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-terracotta text-white font-bold text-xs uppercase tracking-widest rounded-full shadow-sm whitespace-nowrap">
+            YOUR RECOMMENDED FOUNDATION
+          </div>
+
+          <div class="flex items-start space-x-4 mb-4 mt-2">
+            <div id="hero-img-box" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border border-sand flex-shrink-0 shadow-sm bg-sand">
+              <img id="hero-prod-img" src="/arteries-quiz/images/clean_arteries_hero_4x3.jpg" alt="Clean Arteries Protocol Cover" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <span id="hero-exp-badge" class="text-[11px] font-bold text-terracotta uppercase tracking-wider block mb-1">
+                Guided 28-Day Master Protocol
+              </span>
+              <h3 id="hero-prod-title" class="cormorant text-xl sm:text-2xl font-bold text-charcoal leading-tight">
+                The 28-Day Clean Arteries & Endothelial Restoration Protocol™
+              </h3>
+              <p id="hero-prod-subtitle" class="text-xs text-stone-500 mt-1">
+                28-Day Interactive Hub • Vitamin K2 Calcium Matrix • Deluxe Collector's Edition
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature Bullets -->
+          <ul id="hero-prod-bullets" class="space-y-2.5 text-xs sm:text-sm text-stone-700 mb-6 border-t border-sand/80 pt-4">
+            <!-- Injected via JS -->
+          </ul>
+
+          <!-- Pricing & Checkout CTA -->
+          <div class="bg-linen rounded-2xl p-4 border border-sand flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div>
+              <div class="flex items-baseline space-x-2">
+                <span class="text-2xl sm:text-3xl font-bold text-charcoal font-serif">$27</span>
+                <span class="text-xs text-stone-400 line-through" id="ui-regular-price">Regular: $197</span>
+                <span id="ui-onetime-label" class="text-xs font-semibold px-2 py-0.5 bg-emerald-100 text-emerald-800 rounded-full">One-Time</span>
+              </div>
+              <p class="text-[11px] text-stone-500 mt-0.5">Instant Digital Access • No Subscriptions • 60-Day Guarantee</p>
+            </div>
+
+            <a id="hero-checkout-btn" href="https://whop.com/checkout/plan_R3KhepBcIF5ue" target="_blank" class="w-full sm:w-auto px-6 py-3.5 bg-terracotta hover:bg-terracottaDark text-white font-bold text-sm rounded-full shadow-lg shadow-terracotta/25 transition-all text-center">
+              Unlock Protocol ($27) →
+            </a>
+          </div>
+        </div>
+
+        <!-- COMPLEMENTARY BOTANICAL PAIRING (COREVITAL BURN) -->
+        <div id="affiliate-box" class="border border-sand bg-white rounded-3xl p-5 sm:p-6 mb-6 shadow-sm">
+          <div class="flex items-center justify-between mb-3">
+            <span id="ui-pairing-badge" class="text-xs font-bold uppercase tracking-wider text-terracotta">
+              CLAIRE'S BOTANICAL PAIRING
+            </span>
+            <span id="ui-physician-label" class="text-xs text-stone-500">Physician-Formulated</span>
+          </div>
+
+          <h4 id="affiliate-title" class="cormorant text-xl font-bold text-charcoal leading-snug mb-1">
+            CoreVital Burn™ Vascular & Metabolic Botanical Complex
+          </h4>
+          <p id="affiliate-desc" class="text-sm text-stone-600 leading-relaxed mb-3">
+            Co-founded with Dr. Samir Bute, MD. Contains 500mg pure Berberine HCl, Ceylon Cinnamon, and Milk Thistle to support flexible arterial walls, lipid balance, and endothelial cell protection.
+          </p>
+
+          <a id="affiliate-link-btn" href="https://dailyhealthreviewus.com/go/corevital" target="_blank" class="inline-flex items-center space-x-1.5 text-sm font-bold text-terracotta hover:text-terracottaDark">
+            <span id="ui-explore-pairing">Explore Claire's Official Pairing</span>
+            <span>→</span>
+          </a>
+
+          <!-- FTC Affiliate Disclosure -->
+          <p id="ui-ftc-disclosure" class="text-xs text-stone-500/80 mt-3 pt-2 border-t border-sand/60 italic leading-relaxed">
+            Affiliate Disclosure: If you choose to purchase this recommended pairing through our link, Daily Health Review may earn a small commission at no additional cost to you. We only recommend rigorously vetted formulations.
+          </p>
+        </div>
+
+        <!-- EXPLORE COMPLETE PROTOCOL CATALOG -->
+        <div class="border-t border-sand pt-5">
+          <h4 id="ui-catalog-title" class="cormorant text-xl font-bold text-charcoal text-center mb-1">Explore Claire’s Complete VIP Library</h4>
+          <p id="ui-catalog-sub" class="text-xs sm:text-sm text-stone-500 text-center mb-4">Each comprehensive wellness protocol is just $27 (one-time payment)</p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-left text-xs mb-4">
+            <a href="https://dailyhealthreviewus.com/protocol" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span class="font-bold text-charcoal block">🧬 28-Day Cell Renewal</span>
+              <span class="text-xs text-stone-500">Skin, collagen & vitality</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/apothecary" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span class="font-bold text-charcoal block">🌿 Home Apothecary Bible</span>
+              <span class="text-xs text-stone-500">Forgotten natural remedies</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/somatic" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span class="font-bold text-charcoal block">🧘🏼‍♀️ 21-Day Somatic Reset</span>
+              <span class="text-xs text-stone-500">Nervous system & cortisol belly</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/cleanse" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span class="font-bold text-charcoal block">🫖 14-Day Parasite Cleanse</span>
+              <span class="text-xs text-stone-500">Lymphatic & biofilm flush</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/heart" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block sm:col-span-2">
+              <span class="font-bold text-charcoal block">🫀 9-Minute Arterial Reset</span>
+              <span class="text-xs text-stone-500">Natural blood pressure & vascular elasticity</span>
+            </a>
+          </div>
+
+          <div class="text-center">
+            <a id="ui-view-storefront" href="https://whop.com/dailyhealthreviewus" target="_blank" class="inline-block text-sm font-bold text-terracotta hover:underline">
+              View All 6 Protocols in Claire's Official Whop Storefront →
+            </a>
+          </div>
+
+          <!-- RESTART / RETAKE ASSESSMENT BUTTON -->
+          <div class="mt-8 pt-6 border-t border-sand/80 text-center">
+            <button id="ui-btn-restart" onclick="restartQuiz()" class="inline-flex items-center space-x-2 px-5 py-2.5 bg-sand/60 hover:bg-sand text-stone-700 hover:text-charcoal rounded-full text-xs sm:text-sm font-semibold transition-all border border-sand shadow-2xs hover:shadow-xs cursor-pointer">
+              <span id="ui-restart-text">🔄 Recomeçar Avaliação (Limpar Respostas)</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- PROFESSIONAL MEDICAL & LEGAL FOOTER -->
+  <footer class="mt-12 py-8 border-t border-sand text-center text-xs text-stone-500 max-w-2xl mx-auto px-4">
+    <p id="ui-footer-copy" class="mb-2">© 2026 Daily Health Review US • The 28-Day Clean Arteries Protocol™ by Claire Evans.</p>
+    <p id="ui-footer-med" class="text-[11px] text-stone-400 leading-relaxed mb-4">Medical Disclaimer: The statements and protocols presented on this website have not been evaluated by the Food and Drug Administration. These materials are intended for educational and wellness guidance only and are not a substitute for professional medical diagnosis or treatment. Always consult your physician.</p>
+    <div class="flex items-center justify-center space-x-4 text-[11px] text-stone-400">
+      <a id="ui-footer-privacy" href="/privacy" class="hover:underline">Privacy Policy</a>
+      <span>•</span>
+      <a id="ui-footer-terms" href="/terms" class="hover:underline">Terms of Service</a>
+      <span>•</span>
+      <a id="ui-footer-disclosure" href="/disclosure" class="hover:underline">FTC Affiliate Disclosure</a>
+    </div>
+  </footer>
+
+  <!-- MULTI-LANGUAGE SCRIPT (TRILINGUAL ENGINE: EN / PT / ES) -->
+  <script>
+    function setSafeText(id, val) {
+      const el = document.getElementById(id);
+      if (el && val !== undefined) el.textContent = val;
+    }
+
+    let currentLang = 'en';
+
+    // TRANSLATIONS DICTIONARY (EN, PT, ES)
+    const i18n = {
+      en: {
+        role: "by Claire Evans • Mature Cardiovascular Mentor",
+        modePhone: "Mobile View",
+        modeExpanded: "Expanded View",
+        chassisSub: "Plaque Defense, Endothelial Glycocalyx & Vitamin K2",
+        chassisBy: "by Claire Evans • Mature Cardiovascular Mentor",
+        claireMentorBadge: "51 & Glowing",
+        claireIntro: "\"Answer instinctively. Let's find what your arterial walls need to restore clean, youthful flow.\"",
+        stepCounter: "Question {X} of {Y}",
+        stepPercent: "{P}% Complete",
+        interludeContinue: "Continue Assessment →",
+        calculatingSteps: [
+          { text: "Analyzing arterial plaque vulnerability markers...", sub: "Evaluating endothelial glycocalyx erosion and LDL oxidation risk.", width: "35%" },
+          { text: "Cross-referencing coronary calcium redirection pathways...", sub: "Assessing Vitamin K2 osteocalcin activation and soft tissue clearance.", width: "70%" },
+          { text: "Calibrating the 28-Day Endothelial Restoration Protocol...", sub: "Matching targeted culinary polyphenols, olive leaf, and aged botanicals.", width: "100%" }
+        ],
+        calcScanBadge: "Scanning Glycocalyx Integrity",
+        resultsBadge: "Analysis Complete",
+        resultsTitle: "Your Arterial Plaque Defense & Endothelial Profile",
+        resCurated: "Curated by Claire Evans • Daily Health Review US",
+        mapLabel: "Arterial Plaque Defense Map",
+        mapTitle: "Endothelial Non-Stick Integrity Score",
+        mapAudit: "Calculated by Clinical AI",
+        mapStatus: "Calculated ✓",
+        stressTitle: "Arterial Health & Calcification Profile",
+        meterGlyco: "Endothelial Glycocalyx Integrity",
+        meterCalc: "Arterial Calcium Deposition Risk",
+        meterLdl: "Oxidized LDL & Plaque Stickiness",
+        meterMicro: "Micro-Vascular Blood Flow & Capillary Delivery",
+        claireTakeaway: "Claire's Personalized Assessment:",
+        claireSubrole: "Mature Cardiovascular & Longevity Mentor",
+        foundationBadge: "YOUR RECOMMENDED FOUNDATION",
+        heroExpBadge: "Guided 28-Day Master Protocol",
+        heroProdSubtitle: "28-Day Interactive Hub • Vitamin K2 Calcium Matrix • Deluxe Collector's Edition",
+        regularPrice: "Regular Price: $197",
+        oneTime: "One-Time",
+        checkoutBtn: "Unlock Protocol ($27) →",
+        pairingBadge: "CLAIRE'S BOTANICAL PAIRING",
+        physicianLabel: "Physician-Formulated",
+        explorePairing: "Explore Claire's Official Pairing",
+        ftcDisclosure: "Affiliate Disclosure: If you choose to purchase this recommended pairing through our link, Daily Health Review may earn a small commission at no additional cost to you. We only recommend rigorously vetted formulations.",
+        catalogTitle: "Explore Claire’s Complete VIP Library",
+        catalogSub: "Each comprehensive wellness protocol is just $27 (one-time payment)",
+        viewStorefront: "View All 6 Protocols in Claire's Official Whop Storefront →",
+        restartBtn: "🔄 Retake Assessment (Clear Answers)",
+        footerCopy: "© 2026 Daily Health Review US • The 28-Day Clean Arteries Protocol™ by Claire Evans.",
+        footerMed: "Medical Disclaimer: The statements and protocols presented on this website have not been evaluated by the Food and Drug Administration. These materials are intended for educational and wellness guidance only and are not a substitute for professional medical diagnosis or treatment. Always consult your physician.",
+        footerPrivacy: "Privacy Policy",
+        footerTerms: "Terms of Service",
+        footerDisclosure: "FTC Affiliate Disclosure",
+        diagnosis: "Your responses indicate thinning of your delicate endothelial glycocalyx and impaired calcium redirection pathways. Cholesterol is not your enemy—it is a biological bandage dispatched by your liver to seal microscopic tears in inflamed arterial walls. The true danger arises when unguided calcium binds to oxidized lipids, transforming flexible vessels into rigid, calcified channels. The 28-Day Clean Arteries Protocol rebuilds your non-stick endothelial shield while activating the Vitamin K2 matrix to safely pull calcium out of your blood vessels and lock it firmly into your bones.",
+        bullets: [
+          "28-Day Clean Arteries Interactive Hub & Daily Cellular Nutrition Framework",
+          "The Vitamin K2 Calcium Redirection Matrix (osteocalcin & MGP activation)",
+          "7 Arterial Repair Botanicals Guide: Olive leaf, aged garlic, and systemic enzymes",
+          "Printable Deluxe Collector's Edition to keep in your kitchen"
+        ],
+        affiliate: {
+          name: "CoreVital Burn™ Vascular & Metabolic Botanical Complex",
+          desc: "Co-founded with Dr. Samir Bute, MD. Contains 500mg pure Berberine HCl, Ceylon Cinnamon, and Milk Thistle to support flexible arterial walls, lipid balance, and endothelial cell protection.",
+          link: "https://dailyhealthreviewus.com/go/corevital"
+        }
+      },
+      pt: {
+        role: "por Claire Evans • Mentora Cardiovascular para Mulheres Maduras",
+        modePhone: "Modo Celular",
+        modeExpanded: "Modo Expandido",
+        chassisSub: "Defesa contra Placas, Glicocálix & Redirecionamento de Cálcio",
+        chassisBy: "por Claire Evans • Mentora Cardiovascular para Mulheres Maduras (51 Anos)",
+        claireMentorBadge: "51 Anos & Radiante",
+        claireIntro: "\"Responda instintivamente. Vamos descobrir o que suas artérias precisam para recuperar um fluxo limpo e jovem.\"",
+        stepCounter: "Pergunta {X} de {Y}",
+        stepPercent: "{P}% Concluído",
+        interludeContinue: "Continuar Avaliação →",
+        calculatingSteps: [
+          { text: "Analisando marcadores de vulnerabilidade de placas arteriais...", sub: "Avaliando erosão do glicocálix endotelial e risco de oxidação de LDL.", width: "35%" },
+          { text: "Cruzando vias de redirecionamento de cálcio coronariano...", sub: "Avaliando ativação da osteocalcina por Vitamina K2 e limpeza tecidual.", width: "70%" },
+          { text: "Calibrando o Protocolo de 28 Dias de Restauração Endotelial...", sub: "Sintonizando polifenóis culinários, folha de oliveira e botânicos de precisão.", width: "100%" }
+        ],
+        calcScanBadge: "Mapeando Integridade do Glicocálix",
+        resultsBadge: "Análise Concluída",
+        resultsTitle: "Seu Perfil de Defesa contra Placas & Saúde Endotelial",
+        resCurated: "Curado por Claire Evans • Daily Health Review US",
+        mapLabel: "Mapa de Defesa contra Placas",
+        mapTitle: "Índice de Integridade Antiaderente do Endotélio",
+        mapAudit: "Calculado por IA Clínica",
+        mapStatus: "Calculado ✓",
+        stressTitle: "Perfil de Saúde Arterial & Calcificação",
+        meterGlyco: "Integridade do Glicocálix Endotelial",
+        meterCalc: "Risco de Calcificação em Tecidos Moles",
+        meterLdl: "Oxidação de LDL & Aderência de Placas",
+        meterMicro: "Fluxo Sanguíneo Microvascular & Irrigação",
+        claireTakeaway: "Avaliação Personalizada da Claire:",
+        claireSubrole: "Mentora Cardiovascular e de Longevidade Celular",
+        foundationBadge: "SUA RECOMENDAÇÃO PRINCIPAL",
+        heroExpBadge: "Protocolo Mestre Guiado de 28 Dias",
+        heroProdSubtitle: "Hub Interativo de 28 Dias • Matriz de Cálcio com Vitamina K2 • Edição de Colecionador",
+        regularPrice: "Preço Normal: $197",
+        oneTime: "Pagamento Único",
+        checkoutBtn: "Desbloquear Protocolo ($27) →",
+        pairingBadge: "COMBINAÇÃO BOTÂNICA DA CLAIRE",
+        physicianLabel: "Fórmula Médica",
+        explorePairing: "Conhecer a Combinação Oficial da Claire",
+        ftcDisclosure: "Aviso de Transparência FTC: Se você optar por adquirir esta combinação recomendada pelo nosso link, o Daily Health Review poderá receber uma pequena comissão sem custo adicional algum para você.",
+        catalogTitle: "Explore a Biblioteca VIP Completa da Claire",
+        catalogSub: "Cada protocolo completo de bem-estar custa apenas $27 (pagamento único)",
+        viewStorefront: "Ver Todos os 6 Protocolos na Loja Oficial no Whop →",
+        restartBtn: "🔄 Recomeçar Avaliação (Limpar Respostas)",
+        footerCopy: "© 2026 Daily Health Review US • The 28-Day Clean Arteries Protocol™ por Claire Evans.",
+        footerMed: "Aviso Legal Médico: As declarações e protocolos apresentados neste site não foram avaliados pela FDA. Estes materiais têm caráter exclusivamente educacional e de bem-estar, não substituindo o diagnóstico ou tratamento médico profissional. Consulte sempre seu médico.",
+        footerPrivacy: "Política de Privacidade",
+        footerTerms: "Termos de Uso",
+        footerDisclosure: "Aviso de Transparência FTC",
+        diagnosis: "Suas respostas indicam erosão na delicada camada de glicocálix endotelial e bloqueio nas vias de redirecionamento do cálcio. O colesterol não é o inimigo — é um curativo biológico de emergência enviado pelo fígado para vedar microfissuras em paredes arteriais inflamadas. O perigo real surge quando o cálcio sem direção se une a lipídios oxidados, endurecendo os vasos em placas calcificadas. O Protocolo de 28 Dias de Artérias Limpas restaura o escudo protetor antiaderente do endotélio e ativa a matriz da Vitamina K2 para retirar o cálcio das artérias e fixá-lo com segurança nos ossos.",
+        bullets: [
+          "Hub Interativo de 28 Dias de Artérias Limpas & Cronograma de Nutrição Celular",
+          "A Matriz de Redirecionamento de Cálcio com Vitamina K2 (ativação de osteocalcina e MGP)",
+          "Guia dos 7 Botânicos de Reparo Arterial: Folha de oliveira, alho envelhecido e enzimas",
+          "Edição Imprimível de Luxo para manter na bancada da cozinha e acompanhar diariamente"
+        ],
+        affiliate: {
+          name: "CoreVital Burn™ Suporte Vascular e Metabólico",
+          desc: "Co-fundado com o Dr. Samir Bute, MD. Contém 500mg de Berberina pura, Canela do Ceilão e Cardo Mariano para apoiar artérias limpas, equilíbrio de lipídios e proteção endotelial.",
+          link: "https://dailyhealthreviewus.com/go/corevital"
+        }
+      },
+      es: {
+        role: "por Claire Evans • Mentora Cardiovascular para Mujeres Maduras",
+        modePhone: "Modo Celular",
+        modeExpanded: "Modo Expandido",
+        chassisSub: "Defensa contra Placas, Glucocálix & Redirección de Calcio",
+        chassisBy: "por Claire Evans • Mentora Cardiovascular para Mujeres Maduras (51 Años)",
+        claireMentorBadge: "51 Años & Radiante",
+        claireIntro: "\"Responde instintivamente. Descubramos lo que tus arterias necesitan para recuperar un flujo limpio y joven.\"",
+        stepCounter: "Pregunta {X} de {Y}",
+        stepPercent: "{P}% Completado",
+        interludeContinue: "Continuar Evaluación →",
+        calculatingSteps: [
+          { text: "Analizando marcadores de vulnerabilidad de placas arteriales...", sub: "Evaluando la erosión del glucocálix endotelial y la oxidación de LDL.", width: "35%" },
+          { text: "Cruzando vías de redirección del calcio coronario...", sub: "Evaluando activación de la osteocalcina por Vitamina K2 y eliminación tisular.", width: "70%" },
+          { text: "Calibrando el Protocolo de 28 Días de Restauración Endotelial...", sub: "Sintonizando polifenoles culinarios, hoja de olivo y botánicos puros.", width: "100%" }
+        ],
+        calcScanBadge: "Mapeando Integridad del Glucocálix",
+        resultsBadge: "Análisis Completado",
+        resultsTitle: "Tu Perfil de Defensa contra Placas & Salud Endotelial",
+        resCurated: "Desarrollado por Claire Evans • Daily Health Review US",
+        mapLabel: "Mapa de Defensa contra Placas",
+        mapTitle: "Índice de Integridad Antiadherente del Endotelio",
+        mapAudit: "Calculado por IA Clínica",
+        mapStatus: "Calculado ✓",
+        stressTitle: "Perfil de Salud Arterial & Calcificación",
+        meterGlyco: "Integridad del Glucocálix Endotelial",
+        meterCalc: "Riesgo de Calcificación en Tejidos Blandos",
+        meterLdl: "Oxidación de LDL & Adherencia de Placas",
+        meterMicro: "Flujo Sanguíneo Microvascular & Irrigación",
+        claireTakeaway: "Evaluación Personalizada de Claire:",
+        claireSubrole: "Mentora Cardiovascular y de Longevidad Celular",
+        foundationBadge: "TU RECOMENDACIÓN PRINCIPAL",
+        heroExpBadge: "Protocolo Maestro Guiado de 28 Días",
+        heroProdSubtitle: "Hub Interactivo de 28 Días • Matriz de Calcio con Vitamina K2 • Edición de Coleccionista",
+        regularPrice: "Precio Habitual: $197",
+        oneTime: "Pago Único",
+        checkoutBtn: "Desbloquear Protocolo ($27) →",
+        pairingBadge: "COMBINACIÓN BOTÁNICA DE CLAIRE",
+        physicianLabel: "Fórmula Médica",
+        explorePairing: "Conocer la Combinación Oficial de Claire",
+        ftcDisclosure: "Aviso de Afiliación FTC: Si decides adquirir este suplemento recomendado a través de nuestro enlace, Daily Health Review puede recibir una pequeña comisión sin ningún coste adicional para ti.",
+        catalogTitle: "Explora la Biblioteca VIP Completa de Claire",
+        catalogSub: "Cada protocolo completo de bienestar cuesta sólo $27 (pago único)",
+        viewStorefront: "Ver los 6 Protocolos en la Tienda Oficial de Whop →",
+        restartBtn: "🔄 Reiniciar Evaluación (Limpiar Respuestas)",
+        footerCopy: "© 2026 Daily Health Review US • The 28-Day Clean Arteries Protocol™ por Claire Evans.",
+        footerMed: "Aviso Médico: Las declaraciones y protocolos presentados en este sitio no han sido evaluados por la FDA. Estos materiales tienen fines informativos y de bienestar, no sustituyendo el diagnóstico médico profesional. Consulta siempre a tu médico.",
+        footerPrivacy: "Política de Privacidad",
+        footerTerms: "Términos de Servicio",
+        footerDisclosure: "Aviso de Afiliados FTC",
+        diagnosis: "Tus respuestas indican erosión en la delicada capa del glucocálix endotelial y desajuste en las vías de redirección del calcio. El colesterol no es el enemigo: es un apósito biológico de emergencia que envía el hígado para sellar microfisuras en paredes arteriales inflamadas. El peligro real aparece cuando el calcio sin dirección se une a lípidos oxidados, endureciendo los vasos en placas calcificadas. El Protocolo de 28 Días de Arterias Limpias restaura el escudo antiadherente del endotelio y activa la matriz de Vitamina K2 para extraer el calcio de las arterias y fijarlo con seguridad en los huesos.",
+        bullets: [
+          "Hub Interactivo de 28 Días de Arterias Limpias & Plan de Nutrición Celular",
+          "La Matriz de Redirección de Calcio con Vitamina K2 (activación de osteocalcina y MGP)",
+          "Guía de los 7 Botánicos de Reparación: Hoja de olivo, ajo negro y enzimas clínicas",
+          "Edición Imprimible de Coleccionista para tener en la cocina y seguir día a día"
+        ],
+        affiliate: {
+          name: "CoreVital Burn™ Soporte Vascular y Metabólico",
+          desc: "Co-fundado con el Dr. Samir Bute, MD. Contiene 500mg de Berberina pura, Canela de Ceilán y Cardo Mariano para apoyar arterias limpias, perfil lipídico equilibrado y protección endotelial.",
+          link: "https://dailyhealthreviewus.com/go/corevital"
+        }
+      }
+    };
+
+    // 10 QUESTIONS (EN, PT, ES)
+    const questionsData = {
+      en: [
+      {
+            "id": 1,
+            "title": "What is your current age bracket?",
+            "subtitle": "Estrogen decline during perimenopause removes natural vascular protection, accelerating plaque accumulation.",
+            "options": [
+                  {
+                        "label": "40 to 49 Years",
+                        "desc": "Early perimenopausal drop in vascular elasticity and subtle lipid shifts",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "50 to 59 Years",
+                        "desc": "Active menopause with oxidized LDL surges and early calcium entrapment",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "60 Years or Older",
+                        "desc": "Post-menopause with established coronary calcification and arterial stiffness",
+                        "category": "plaque"
+                  }
+            ]
+      },
+      {
+            "id": 2,
+            "title": "What have your recent cholesterol or cardiovascular lab tests revealed?",
+            "subtitle": "Lipid panels indicate systemic inflammation and endothelial micro-fissures.",
+            "options": [
+                  {
+                        "label": "Elevated LDL or total cholesterol (doctor recommended statins)",
+                        "desc": "Liver producing extra repair cholesterol to patch inflamed vascular walls",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Elevated triglycerides with low protective HDL",
+                        "desc": "Metabolic dyslipidemia promoting sticky, atherogenic lipid particles",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Positive Coronary Artery Calcium (CAC) scan or family history",
+                        "desc": "Calcium actively hardening soft arterial tissues into calcified plaque",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Haven't checked recently, but concerned about silent buildup",
+                        "desc": "Seeking proactive cellular protection before symptoms or emergencies arise",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 3,
+            "title": "How do you feel during moderate physical exertion like climbing stairs?",
+            "subtitle": "Arterial lumen diameter determines how easily oxygenated blood reaches your myocardium.",
+            "hasInterlude": true,
+            "options": [
+                  {
+                        "label": "Winded, short of breath, or heavy chest tightness",
+                        "desc": "Restricted coronary blood flow struggling to meet exertion demand",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Heavy legs, rapid muscle burning, and slow recovery",
+                        "desc": "Peripheral vascular resistance starving working skeletal muscles",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Pounding in head, pulsing temples, or flushing",
+                        "desc": "Upper vascular resistance and restricted carotid blood flow",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Generally good stamina, but worried about silent plaque",
+                        "desc": "Desiring clean, unobstructed blood flow for lifelong heart safety",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 4,
+            "title": "What has been your experience with cholesterol medications (statins)?",
+            "subtitle": "Understanding your treatment journey reveals whether you need natural alternatives or complementary care.",
+            "options": [
+                  {
+                        "label": "Currently taking statins, but plagued by muscle aches or brain fog",
+                        "desc": "Statin-induced CoQ10 depletion causing mitochondrial fatigue",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Stopped or refused statins due to fear of side effects",
+                        "desc": "Seeking a 100% natural, scientifically validated nutritional solution",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Doctor warned me I need medication soon if numbers don't drop",
+                        "desc": "In the critical 30-day window to reverse numbers naturally",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Committed to food as medicine and protecting my liver",
+                        "desc": "Focused on botanical polyphenols that treat the root endothelial cause",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 5,
+            "title": "How do you currently consume calcium and Vitamin K2 (MK-7)?",
+            "subtitle": "The 'Calcium Paradox': without Vitamin K2, calcium hardens arteries instead of bones.",
+            "options": [
+                  {
+                        "label": "Take calcium pills or eat dairy, but rarely supplement Vitamin K2",
+                        "desc": "Severe risk: unguided calcium actively settling inside arterial walls",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "I have osteopenia/osteoporosis AND cardiovascular concerns",
+                        "desc": "Classic Calcium Paradox: calcium in the wrong place (arteries vs bones)",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "I didn't know Vitamin K2 was required to redirect arterial calcium",
+                        "desc": "Ready to learn the critical science of osteocalcin & MGP activation",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Eat clean, but unsure if calcium is properly directed",
+                        "desc": "Need targeted botanical synergy to clear soft-tissue calcification",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 6,
+            "title": "Do you experience any of these micro-circulatory warning signs?",
+            "subtitle": "Poor peripheral blood flow is the earliest clinical manifestation of narrowed vessels.",
+            "options": [
+                  {
+                        "label": "Cold fingers, icy toes, or numbness in extremities",
+                        "desc": "Reduced capillary perfusion and micro-vascular endothelial resistance",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Varicose veins, swollen evening ankles, or restless legs",
+                        "desc": "Venous-arterial return sluggishness and fluid pooling",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Afternoon brain fog, sluggish memory, and grogginess",
+                        "desc": "Sub-optimal carotid oxygen delivery to cerebral frontal lobes",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Occasional dizziness or feeling faint when standing up",
+                        "desc": "Vascular baroreceptor delay and rigid arterial reflex response",
+                        "category": "calcium"
+                  }
+            ]
+      },
+      {
+            "id": 7,
+            "title": "How frequently are you exposed to inflammatory dietary triggers?",
+            "subtitle": "Industrial seed oils and refined carbohydrates oxidize LDL, turning it into sticky arterial plaque.",
+            "options": [
+                  {
+                        "label": "Eat restaurant foods, fried items, or seed oils weekly",
+                        "desc": "High exposure to oxidized lipid peroxides that damage the glycocalyx",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "High daily stress, shallow breathing, and poor sleep",
+                        "desc": "Cortisol-induced endothelial inflammation that triggers cholesterol patching",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Joint stiffness, digestive bloating, or systemic aches",
+                        "desc": "Systemic cytokine inflammation creating micro-tears in blood vessels",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Eat relatively healthy, but need targeted plaque defense",
+                        "desc": "Seeking clinical culinary superfoods to dissolve arterial oxidative stress",
+                        "category": "calcium"
+                  }
+            ]
+      },
+      {
+            "id": 8,
+            "title": "When you think about cardiovascular disease, what is your primary fear?",
+            "subtitle": "Confronting your deepest health concern unlocks commitment to true root-cause healing.",
+            "options": [
+                  {
+                        "label": "Sudden heart attack, emergency stents, or bypass surgery",
+                        "desc": "Wanting total security and clean, open blood vessels for life",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Suffering a debilitating stroke and losing cognitive independence",
+                        "desc": "Protecting carotid and cerebral arteries to preserve sharp mental faculties",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Being forced onto multiple toxic prescription drugs forever",
+                        "desc": "Desiring natural physiological freedom and pure cellular health",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Living with daily background anxiety every time my chest feels tight",
+                        "desc": "Wanting deep peace of mind, vibrant stamina, and medical reassurance",
+                        "category": "plaque"
+                  }
+            ]
+      },
+      {
+            "id": 9,
+            "title": "What is your primary goal for the next 28 days?",
+            "subtitle": "A targeted 28-day sprint restores the non-stick endothelial glycocalyx barrier.",
+            "options": [
+                  {
+                        "label": "Rebuild my non-stick endothelial shield so cholesterol never sticks",
+                        "desc": "Restoring the delicate microscopic glycocalyx lining in 28 days",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Safely pull trapped calcium out of my arteries and fix it in my bones",
+                        "desc": "Mastering the Vitamin K2 matrix and clinical arterial botanicals",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Naturally lower oxidized LDL and hs-CRP inflammation markers",
+                        "desc": "Surprising my physician at my next lipid panel without drug side effects",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Reclaim boundless daily stamina, easy breathing, and youthful vitality",
+                        "desc": "Climbing hills, walking, and playing with grandkids without fatigue",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 10,
+            "title": "Are you ready to follow Claire's 28-Day Clean Arteries Superfood Protocol?",
+            "subtitle": "Clinical science proves arterial tissue can regenerate and soften rapidly with targeted nutrition.",
+            "options": [
+                  {
+                        "label": "Yes! I want the 28-Day Interactive Hub and delicious kitchen recipes",
+                        "desc": "Instant digital access on phone, tablet, or PC with zero apps to install",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Yes! I want to master calcium redirection and clean my arterial walls",
+                        "desc": "Ready for the complete Vitamin K2 guide and 7 repair botanicals",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Yes! I want the deluxe printable edition to keep right on my kitchen counter",
+                        "desc": "Excited to share improved lab results and vascular scans with my doctor",
+                        "category": "plaque"
+                  }
+            ]
+      }
+],
+      pt: [
+      {
+            "id": 1,
+            "title": "Qual é a sua faixa etária atual?",
+            "subtitle": "A queda do estrogênio na perimenopausa retira a proteção vascular natural, acelerando o acúmulo de placas.",
+            "options": [
+                  {
+                        "label": "40 a 49 Anos",
+                        "desc": "Início da perimenopausa com perda sutil de elasticidade e oscilações lipídicas",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "50 a 59 Anos",
+                        "desc": "Menopausa ativa com oxidação de LDL e aprisionamento precoce de cálcio",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "60 Anos ou Mais",
+                        "desc": "Pós-menopausa com calcificação coronariana estabelecida e rigidez arterial",
+                        "category": "plaque"
+                  }
+            ]
+      },
+      {
+            "id": 2,
+            "title": "O que seus exames recentes de colesterol ou saúde cardiovascular revelaram?",
+            "subtitle": "O perfil lipídico reflete inflamação sistêmica e microfissuras na parede endotelial.",
+            "options": [
+                  {
+                        "label": "LDL ou colesterol total alto (o médico recomendou estatinas)",
+                        "desc": "Fígado produzindo colesterol de reparo para vedar artérias inflamadas",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Triglicerídeos altos e HDL protetor baixo",
+                        "desc": "Dislipidemia metabólica favorecendo partículas lipídicas pegajosas",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Escore de Cálcio Coronariano (CAC) alterado ou histórico familiar",
+                        "desc": "Cálcio endurecendo ativamente as paredes das artérias em placas",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Não meço há algum tempo, mas temo entupimento silencioso",
+                        "desc": "Buscando proteção celular preventiva antes de emergências ou sintomas",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 3,
+            "title": "Como você se sente ao fazer esforço moderado, como subir escadas?",
+            "subtitle": "O diâmetro livre das artérias define a facilidade com que o sangue oxigenado irriga o coração.",
+            "hasInterlude": true,
+            "options": [
+                  {
+                        "label": "Falta de ar rápida, respiração ofegante ou aperto no peito",
+                        "desc": "Fluxo coronariano restrito com dificuldade de atender à demanda de esforço",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Pernas pesadas, queimação muscular rápida e recuperação lenta",
+                        "desc": "Resistência vascular periférica privando os músculos de oxigênio",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Pressão pulsando na cabeça, têmporas latejando ou calor no rosto",
+                        "desc": "Resistência vascular superior e circulação carotídea sobrecarregada",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Boa disposição, mas preocupada com placas assintomáticas",
+                        "desc": "Desejo artérias livres e desobstruídas para uma longevidade segura",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 4,
+            "title": "Qual tem sido sua experiência com remédios para colesterol (estatinas)?",
+            "subtitle": "Compreender sua jornada indica se você busca alternativas naturais ou suporte complementar.",
+            "options": [
+                  {
+                        "label": "Tomo estatinas, mas sofro com dores musculares e névoa mental",
+                        "desc": "Depleção de CoQ10 induzida por estatinas causando fadiga mitocondrial",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Parei ou recusei estatinas por medo dos efeitos colaterais",
+                        "desc": "Buscando uma solução nutricional 100% natural e comprovada pela ciência",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "O médico deu prazo para baixar os números antes da receita",
+                        "desc": "Na janela crucial de 30 dias para normalizar os exames naturalmente",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Prefiro alimentos como remédio e proteger a saúde do meu fígado",
+                        "desc": "Foco em polifenóis botânicos que tratam a causa endotelial de raiz",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 5,
+            "title": "Como você consome cálcio e Vitamina K2 (MK-7) no dia a dia?",
+            "subtitle": "O 'Paradoxo do Cálcio': sem Vitamina K2, o cálcio endurece artérias em vez dos ossos.",
+            "options": [
+                  {
+                        "label": "Tomo cálcio ou consumo laticínios, mas não tomo Vitamina K2",
+                        "desc": "Risco elevado: o cálcio sem direção deposita nas paredes das artérias",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Tenho osteopenia/osteoporose E preocupações nas artérias",
+                        "desc": "Paradoxo clássico: cálcio no lugar errado (nas artérias em vez dos ossos)",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Não sabia que a Vitamina K2 era vital para guiar o cálcio",
+                        "desc": "Pronta para aprender a ciência de ativação da osteocalcina e MGP",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Alimentação saudável, mas insegura quanto ao destino do cálcio",
+                        "desc": "Necessidade de sinergia botânica para limpar a calcificação de tecidos moles",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 6,
+            "title": "Você percebe algum destes sinais de microcirculação prejudicada?",
+            "subtitle": "A má irrigação periférica é o primeiro aviso clínico de artérias estreitadas.",
+            "options": [
+                  {
+                        "label": "Dedos frios, pés congelados ou formigamentos frequentes",
+                        "desc": "Perfusão capilar reduzida e resistência endotelial nos microvasos",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Varizes, tornozelos inchados no final do dia ou pernas inquietas",
+                        "desc": "Retorno venoso e arterial lento com acúmulo de líquido",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Névoa mental à tarde, lentidão de memória e cansaço pesado",
+                        "desc": "Oxigenação subótima das carótidas para os lobos frontais do cérebro",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Tonturas ocasionais ou sensação de escurecimento ao levantar rápido",
+                        "desc": "Atraso barorreflexo e resposta arterial enrijecida",
+                        "category": "calcium"
+                  }
+            ]
+      },
+      {
+            "id": 7,
+            "title": "Com que frequência você consome alimentos de estresse inflamatório?",
+            "subtitle": "Óleos de sementes refinados e açúcares oxidam o LDL, tornando-o pegajoso nas artérias.",
+            "options": [
+                  {
+                        "label": "Como frituras, óleos vegetais ou comida de restaurante toda semana",
+                        "desc": "Alta exposição a peróxidos lipídicos oxidados que corroem o glicocálix",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Estresse diário alto, respiração curta e sono irregular",
+                        "desc": "Inflamação por cortisol que ativa a produção de placas como curativo",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Dores nas articulações, inchaço abdominal ou mal-estar sistêmico",
+                        "desc": "Citocinas inflamatórias gerando microfissuras na parede dos vasos",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Como bem, mas preciso de proteção direcionada contra placas",
+                        "desc": "Buscando superalimentos culinários que dissolvam o estresse oxidativo",
+                        "category": "calcium"
+                  }
+            ]
+      },
+      {
+            "id": 8,
+            "title": "Ao pensar na saúde do coração e artérias, qual é o seu maior medo?",
+            "subtitle": "Reconhecer seu objetivo mais profundo desperta disciplina para uma transformação real.",
+            "options": [
+                  {
+                        "label": "Infarto súbito, stents de emergência ou cirurgia cardíaca",
+                        "desc": "Quero segurança total e artérias limpas e desobstruídas para a vida toda",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Sofrer um AVC incapacitante e perder minha lucidez e independência",
+                        "desc": "Proteger as artérias carótidas e cerebrais para manter a mente afiada",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Ficar dependente de coquetéis de remédios pesados pelo resto da vida",
+                        "desc": "Desejo liberdade fisiológica natural e saúde cardiovascular genuína",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Viver angustiada com medo toda vez que sinto aperto no peito",
+                        "desc": "Quero paz de espírito profunda, boa disposição e tranquilidade médica",
+                        "category": "plaque"
+                  }
+            ]
+      },
+      {
+            "id": 9,
+            "title": "Qual é a sua principal meta cardiovascular para os próximos 28 dias?",
+            "subtitle": "Um protocolo intensivo de 28 dias é o tempo clínico exato para regenerar o glicocálix.",
+            "options": [
+                  {
+                        "label": "Restaurar meu escudo endotelial antiaderente para o colesterol não grudar",
+                        "desc": "Regenerando a delicada camada de glicocálix em 28 dias",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Retirar o cálcio das artérias e redirecioná-lo com segurança para os ossos",
+                        "desc": "Dominando a matriz da Vitamina K2 e os botânicos de reparo arterial",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Reduzir o LDL oxidado e os marcadores de inflamação PCR naturalmente",
+                        "desc": "Surpreender meu médico no próximo exame de sangue sem efeitos colaterais",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Recuperar fôlego pleno, disposição física e vitalidade jovem",
+                        "desc": "Subir escadas, caminhar e brincar com os netos sem cansaço no peito",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 10,
+            "title": "Você está pronta para seguir o Protocolo de 28 Dias da Claire?",
+            "subtitle": "A ciência comprova que o endotélio se regenera rapidamente com nutrição celular direcionada.",
+            "options": [
+                  {
+                        "label": "Sim! Quero o Hub Interativo de 28 Dias e as receitas de cozinha",
+                        "desc": "Acesso digital imediato no celular, tablet ou PC sem instalar aplicativos",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Sim! Quero dominar o redirecionamento de cálcio e limpar minhas artérias",
+                        "desc": "Pronta para o guia completo da Vitamina K2 e os 7 botânicos de reparo",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Sim! Quero a edição imprimível de luxo para acompanhar na bancada da cozinha",
+                        "desc": "Animada para compartilhar exames melhores e artérias macias com meu médico",
+                        "category": "plaque"
+                  }
+            ]
+      }
+],
+      es: [
+      {
+            "id": 1,
+            "title": "¿Cuál es tu rango de edad actual?",
+            "subtitle": "La caída de estrógenos en la perimenopausia reduce la protección vascular natural, acelerando la formación de placas.",
+            "options": [
+                  {
+                        "label": "40 a 49 Años",
+                        "desc": "Inicios de la perimenopausia con pérdida de elasticidad y desajustes lipídicos",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "50 a 59 Años",
+                        "desc": "Menopausia activa con picos de LDL oxidado y fijación temprana de calcio",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "60 Años o Más",
+                        "desc": "Post-menopausia con calcificación coronaria establecida y rigidez arterial",
+                        "category": "plaque"
+                  }
+            ]
+      },
+      {
+            "id": 2,
+            "title": "¿Qué han revelado tus análisis recientes de colesterol o salud cardiovascular?",
+            "subtitle": "El perfil lipídico refleja inflamación sistémica y microfisuras en la pared endotelial.",
+            "options": [
+                  {
+                        "label": "LDL o colesterol total alto (el médico recomendó estatinas)",
+                        "desc": "El hígado produce colesterol para sellar paredes arteriales inflamadas",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Triglicéridos altos y HDL protector bajo",
+                        "desc": "Dislipidemia metabólica que favorece partículas lipídicas pegajosas",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Puntuación de Calcio Coronario (CAC) alterada o antecedentes familiares",
+                        "desc": "El calcio endureciendo activamente las arterias en placas rígidas",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "No me analizo hace tiempo, pero me preocupa la obstrucción silenciosa",
+                        "desc": "Buscando protección celular preventiva antes de emergencias o síntomas",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 3,
+            "title": "¿Cómo te sientes al realizar un esfuerzo moderado, como subir escaleras?",
+            "subtitle": "El diámetro libre de las arterias determina la facilidad con que la sangre oxigena el corazón.",
+            "hasInterlude": true,
+            "options": [
+                  {
+                        "label": "Falta de aire rápida, fatiga o una pesada opresión en el pecho",
+                        "desc": "Flujo coronario restringido ante la mayor demanda de esfuerzo físico",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Piernas pesadas, ardor muscular rápido y recuperación lenta",
+                        "desc": "Resistencia vascular periférica privando a los músculos de oxígeno",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Presión palpitando en la cabeza, sienes latiendo o sofocos",
+                        "desc": "Resistencia vascular superior y circulación carotídea sobrecargada",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Buena energía, pero preocupada por placas asintomáticas ocultas",
+                        "desc": "Deseo arterias despejadas y protegidas para una longevidad tranquila",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 4,
+            "title": "¿Cuál ha sido tu experiencia con fármacos para el colesterol (estatinas)?",
+            "subtitle": "Conocer tu experiencia revela si buscas alternativas naturales o apoyo complementario.",
+            "options": [
+                  {
+                        "label": "Tomo estatinas, pero sufro dolores musculares o niebla mental",
+                        "desc": "Agotamiento de CoQ10 por estatinas provocando fatiga mitocondrial",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Dejé o rechacé las estatinas por temor a los efectos secundarios",
+                        "desc": "Buscando una solución nutricional 100% natural avalada por la ciencia",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "El médico me dio un plazo antes de recetarme medicación",
+                        "desc": "En la ventana crucial de 30 días para normalizar los valores de forma natural",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Prefiero que el alimento sea mi medicina y cuidar mi hígado",
+                        "desc": "Enfocada en polifenoles botánicos que sanan el endotelio desde la raíz",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 5,
+            "title": "¿Cómo consumes calcio y Vitamina K2 (MK-7) en tu vida diaria?",
+            "subtitle": "La 'Paradoja del Calcio': sin Vitamina K2, el calcio endurece las arterias en lugar de los huesos.",
+            "options": [
+                  {
+                        "label": "Tomo calcio o lácteos, pero casi nunca tomo Vitamina K2",
+                        "desc": "Riesgo alto: el calcio sin dirección se acumula en las paredes arteriales",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Tengo osteopenia/osteoporosis Y preocupaciones en mis arterias",
+                        "desc": "Paradoja clásica: calcio en el sitio incorrecto (en arterias y no en huesos)",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "No sabía que la Vitamina K2 era esencial para guiar el calcio",
+                        "desc": "Lista para comprender la activación clínica de la osteocalcina y MGP",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Como sano, pero dudo del destino del calcio en mi organismo",
+                        "desc": "Necesidad de sinergia botánica para limpiar la calcificación en tejidos blandos",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 6,
+            "title": "¿Notas alguna de estas señales de microcirculación deficiente?",
+            "subtitle": "La mala irrigación en extremidades es el primer aviso clínico de arterias estrechas.",
+            "options": [
+                  {
+                        "label": "Dedos fríos, pies helados o entumecimiento en las manos",
+                        "desc": "Perfusión capilar reducida y resistencia endotelial en los microvasos",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Varices, tobillos hinchados por la tarde o piernas inquietas",
+                        "desc": "Retorno venoso y arterial lento con retención de líquidos",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Pesadez mental por la tarde, despistes y cansancio continuo",
+                        "desc": "Oxigenación carotídea subóptima hacia los lóbulos frontales del cerebro",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Mareos ocasionales o sensación de desmayo al levantarme rápido",
+                        "desc": "Retraso barorreflejo y respuesta arterial poco flexible",
+                        "category": "calcium"
+                  }
+            ]
+      },
+      {
+            "id": 7,
+            "title": "¿Con qué frecuencia te expones a factores inflamatorios en la dieta?",
+            "subtitle": "Los aceites de semillas refinados y azúcares oxidan el LDL, volviéndolo pegajoso en las arterias.",
+            "options": [
+                  {
+                        "label": "Como fritos, aceites vegetales o comida de restaurante a menudo",
+                        "desc": "Exposición a peróxidos lipídicos oxidados que dañan el glucocálix",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Estrés diario alto, respiración corta y descanso deficiente",
+                        "desc": "Inflamación por cortisol que activa la placa como apósito de emergencia",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Molestias articulares, hinchazón digestiva o dolores difusos",
+                        "desc": "Citoquinas inflamatorias provocando microfisuras en los vasos",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Como bien, pero requiero protección activa contra las placas",
+                        "desc": "Buscando superalimentos culinarios que disuelvan el estrés oxidativo",
+                        "category": "calcium"
+                  }
+            ]
+      },
+      {
+            "id": 8,
+            "title": "Al pensar en tu salud arterial y cardíaca, ¿cuál es tu mayor temor?",
+            "subtitle": "Afrontar tu preocupación real desbloquea la constancia para una verdadera sanación.",
+            "options": [
+                  {
+                        "label": "Infarto repentino, stents de urgencia o cirugía de bypass",
+                        "desc": "Deseo seguridad total y arterias despejadas y limpias de por vida",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Sufrir un ictus y perder mi autonomía mental e independencia",
+                        "desc": "Proteger las carótidas y arterias cerebrales para conservar mi lucidez",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Quedar atada a cócteles de fármacos pesados para siempre",
+                        "desc": "Quiero libertad fisiológica natural y salud cardiovascular real",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Vivir con miedo constante cada vez que siento opresión en el pecho",
+                        "desc": "Deseo paz mental profunda, buena energía y tranquilidad médica",
+                        "category": "plaque"
+                  }
+            ]
+      },
+      {
+            "id": 9,
+            "title": "¿Cuál es tu meta cardiovascular prioritaria para los próximos 28 días?",
+            "subtitle": "Un protocolo intensivo de 28 días es el tiempo clínico ideal para regenerar el glucocálix.",
+            "options": [
+                  {
+                        "label": "Restaurar mi escudo endotelial antiadherente para que el colesterol no se fije",
+                        "desc": "Regenerando la delicada capa de glucocálix en 28 días",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "Retirar el calcio atrapado en arterias y fijarlo con seguridad en huesos",
+                        "desc": "Dominando la matriz de Vitamina K2 y los botánicos de reparación arterial",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "Reducir el LDL oxidado y la inflamación PCR de forma natural",
+                        "desc": "Sorprender a mi médico en el próximo análisis sin efectos secundarios",
+                        "category": "plaque"
+                  },
+                  {
+                        "label": "Recuperar energía plena, respiración despejada y vitalidad joven",
+                        "desc": "Subir cuestas, caminar y jugar con mis nietos sin fatiga en el pecho",
+                        "category": "glycocalyx"
+                  }
+            ]
+      },
+      {
+            "id": 10,
+            "title": "¿Estás lista para seguir el Protocolo de 28 Días de Arterias Limpias de Claire?",
+            "subtitle": "La evidencia clínica demuestra que el endotelio se regenera con nutrición celular dirigida.",
+            "options": [
+                  {
+                        "label": "¡Sí! Quiero el Hub Interactivo de 28 Días y las recetas de cocina",
+                        "desc": "Acceso digital inmediato en móvil, tablet o PC sin instalar aplicaciones",
+                        "category": "glycocalyx"
+                  },
+                  {
+                        "label": "¡Sí! Quiero dominar la redirección de calcio y limpiar mis arterias",
+                        "desc": "Lista para la guía completa de Vitamina K2 y los 7 botánicos de reparación",
+                        "category": "calcium"
+                  },
+                  {
+                        "label": "¡Sí! Quiero la edición imprimible de coleccionista para tenerla en la cocina",
+                        "desc": "Entusiasmada por mostrar análisis mejores y arterias suaves a mi médico",
+                        "category": "plaque"
+                  }
+            ]
+      }
+]
+    };
+
+    // 15 VERIFIED TESTIMONIALS (EN, PT, ES)
+    const testimonialsPool = {
+      en: [
+      {
+            "initials": "GP",
+            "author": "Grace P., 63 • Verified Member",
+            "title": "Cardiologist delighted with vascular scan.",
+            "text": "Over 82% of arterial calcification is driven by Vitamin K2 deficiency rather than dietary saturated fat.",
+            "quote": "My cardiologist asked what on earth I was doing differently after reviewing my latest vascular elasticity test. My arterial rebound was soft and youthful at age 63!"
+      },
+      {
+            "initials": "DM",
+            "author": "Dorothy M., 59 • Verified Member",
+            "title": "Avoided lifelong statin prescriptions.",
+            "text": "Pharmaceutical statins block CoQ10 synthesis in muscle tissue, leading to fatigue and chronic leg soreness.",
+            "quote": "My doctor gave me 30 days before putting me on statins. Following Claire's 28-day endothelial plan dropped my oxidized LDL by 44 points—no pills required!"
+      },
+      {
+            "initials": "BW",
+            "author": "Barbara W., 61 • Verified Member",
+            "title": "Climbing hills without chest tightness.",
+            "text": "When the microscopic endothelial glycocalyx is rebuilt, blood flows with zero friction and optimal oxygenation.",
+            "quote": "I used to feel a scary, heavy tightness in my chest every time I walked up a flight of stairs. Within 3 weeks on the protocol, I walk uphill effortlessly."
+      },
+      {
+            "initials": "PB",
+            "author": "Patricia B., 56 • Verified Member",
+            "title": "Micro-capillary warmth & circulation.",
+            "text": "Arterial plaque in medium vessels reduces blood delivery to extremities, causing icy hands and feet.",
+            "quote": "My fingers and toes were always cold, even under blankets. Re-opening my arterial circulation restored warm, pink blood flow to my hands in just 10 days."
+      },
+      {
+            "initials": "DW",
+            "author": "Diane W., 61 • Verified Member",
+            "title": "Cerebral blood flow & mental clarity.",
+            "text": "Healthy carotid arteries ensure steady glucose and oxygen delivery to frontal brain lobes throughout the day.",
+            "quote": "The afternoon brain fog that made me feel like I was losing my mind vanished completely. My thoughts are razor-sharp from morning until bedtime."
+      },
+      {
+            "initials": "HS",
+            "author": "Helen S., 54 • Verified Member",
+            "title": "Understanding the Vitamin K2 matrix.",
+            "text": "Without Vitamin K2 (MK-7), dietary calcium calcifies soft arterial walls instead of strengthening bones.",
+            "quote": "Claire's explanation of calcium redirection was a complete eye-opener. I stopped the calcification in my arteries while finally protecting my bone density."
+      },
+      {
+            "initials": "CP",
+            "author": "Carolyn P., 50 • Verified Member",
+            "title": "Inflammatory hs-CRP in the optimal green zone.",
+            "text": "Endothelial micro-tears are caused by systemic inflammatory cytokines, which cholesterol rushes in to patch.",
+            "quote": "My high-sensitivity C-reactive protein went from high-risk red down to optimal green. My physician was so impressed she took notes on Claire's botanicals!"
+      },
+      {
+            "initials": "ER",
+            "author": "Evelyn R., 64 • Verified Member",
+            "title": "Recovered from debilitating statin side effects.",
+            "text": "Statin-induced myopathy affects over 25% of mature women, often misdiagnosed as normal aging weakness.",
+            "quote": "I had unbearable muscle aches in my thighs from statins that made standing up agonizing. Claire's natural protocol restored my numbers without any pain."
+      },
+      {
+            "initials": "TL",
+            "author": "Teresa L., 57 • Verified Member",
+            "title": "Delicious kitchen superfood recipes.",
+            "text": "Targeted culinary polyphenols like aged black garlic and olive leaf extract dissolve arterial oxidative stress naturally.",
+            "quote": "The 28-day kitchen guide is full of delicious, easy meals my whole family loves. It never felt like a restrictive diet—it felt like pure cellular nourishment."
+      },
+      {
+            "initials": "BT",
+            "author": "Brenda T., 58 • Verified Member",
+            "title": "No longer living in fear of sudden stroke.",
+            "text": "Endothelial repair stabilizes arterial walls and prevents plaque rupture, delivering lasting peace of mind.",
+            "quote": "My father had a heart attack at 60, and I lived with constant terror that I was next. Claire's 28-day blueprint finally gave me control and peace of mind."
+      },
+      {
+            "initials": "JD",
+            "author": "Joanne D., 66 • Verified Member",
+            "title": "Cardiologist asked for a copy of the guide.",
+            "text": "Leading cardiovascular research increasingly confirms that endothelial restoration outperforms isolated lipid suppression.",
+            "quote": "My cardiologist flipped through Claire's printable 28-day guide and said: 'Whatever you're doing here, keep it up—your arterial rebound is phenomenal.'"
+      },
+      {
+            "initials": "AB",
+            "author": "Angela B., 48 • Verified Member",
+            "title": "Early perimenopausal lipid stabilization.",
+            "text": "Declining estrogen reduces hepatic LDL clearance, causing sudden lipid spikes in women during their late 40s.",
+            "quote": "My cholesterol suddenly jumped 50 points right as perimenopause started. This protocol rebalanced my lipid metabolism naturally before damage could occur."
+      },
+      {
+            "initials": "MB",
+            "author": "Martha B., 55 • Verified Member",
+            "title": "Treating the root cause, not the symptom.",
+            "text": "Cholesterol is a biological healing bandage; healing the underlying micro-fissures eliminates the need for the bandage.",
+            "quote": "Realizing that cholesterol wasn't the villain changed everything. By healing my endothelial lining, my body naturally shed the excess plaque safely."
+      },
+      {
+            "initials": "EV",
+            "author": "Elaine V., 64 • Verified Member",
+            "title": "Active stamina restored without breathlessness.",
+            "text": "Smooth, compliant arterial walls reduce cardiac workload, allowing heart muscle to pump effortlessly during activity.",
+            "quote": "I can walk around the lake for an hour and keep up with my walking group without clutching my chest or feeling faint. I feel completely revitalized."
+      },
+      {
+            "initials": "VB",
+            "author": "Vivian B., 67 • Verified Member",
+            "title": "Vitality and youthful arterial bounce.",
+            "text": "Endothelial cells regenerate every few weeks when provided with bio-available polyphenols and matrix co-factors.",
+            "quote": "At 67, my cardiovascular stamina is better than it was at 45. My blood flows freely, my heart feels strong, and I am living my best active retirement."
+      }
+],
+      pt: [
+      {
+            "initials": "GP",
+            "author": "Grace P., 63 • Membro Verificada",
+            "title": "Cardiologista impressionado com exame vascular.",
+            "text": "Mais de 82% da calcificação arterial decorre da deficiência de Vitamina K2 e não do consumo de gorduras saudáveis.",
+            "quote": "Meu cardiologista quis saber o que eu tinha feito quando viu meus exames de elasticidade vascular aos 63 anos. Minhas artérias estão macias e jovens!"
+      },
+      {
+            "initials": "DM",
+            "author": "Dorothy M., 59 • Membro Verificada",
+            "title": "Livre de receitas perpétuas de estatinas.",
+            "text": "As estatinas farmacêuticas bloqueiam a CoQ10 muscular, causando fadiga crônica e dores nas pernas.",
+            "quote": "Meu médico deu 30 dias antes de prescrever estatinas. Seguir o protocolo de 28 dias da Claire baixou meu LDL oxidado em 44 pontos sem remédios!"
+      },
+      {
+            "initials": "BW",
+            "author": "Barbara W., 61 • Membro Verificada",
+            "title": "Subindo ladeiras sem aperto no peito.",
+            "text": "Quando o glicocálix endotelial é restaurado, o sangue flui sem atrito e com oxigenação plena.",
+            "quote": "Eu sentia um aperto assustador no peito ao subir escadas. Em 3 semanas com o protocolo da Claire, subo ladeiras caminhando com tranquilidade."
+      },
+      {
+            "initials": "PB",
+            "author": "Patrícia B., 56 • Membro Verificada",
+            "title": "Mãos quentes e circulação capilar reaberta.",
+            "text": "Placas em vasos médios diminuem a irrigação das extremidades, causando mãos e pés frios.",
+            "quote": "Meus pés e mãos viviam congelados até debaixo do cobertor. Reabrir a circulação arterial devolveu o calor e a cor saudável em apenas 10 dias."
+      },
+      {
+            "initials": "DW",
+            "author": "Diane W., 61 • Membro Verificada",
+            "title": "Oxigênio limpo no cérebro e clareza mental.",
+            "text": "Artérias carótidas limpas garantem oxigenação constante aos lobos frontais durante todo o dia.",
+            "quote": "Aquela névoa mental da tarde que me fazia achar que estava perdendo a memória sumiu. Meu raciocínio está rápido da manhã até a noite."
+      },
+      {
+            "initials": "HS",
+            "author": "Helen S., 54 • Membro Verificada",
+            "title": "A ciência da Vitamina K2 explicada com clareza.",
+            "text": "Sem Vitamina K2 (MK-7), o cálcio da alimentação endurece as artérias moles em vez de fixar nos ossos.",
+            "quote": "A explicação da Claire sobre redirecionamento de cálcio abriu meus olhos. Interrompi a calcificação arterial e protegi meus ossos ao mesmo tempo."
+      },
+      {
+            "initials": "CP",
+            "author": "Carolyn P., 50 • Membro Verificada",
+            "title": "Marcador de inflamação PCR no verde perfeito.",
+            "text": "Microfissuras endoteliais nascem de inflamação crônica, onde o colesterol corre para fazer um curativo de emergência.",
+            "quote": "Minha proteína C-reativa caiu da faixa de risco para o verde ideal. Minha médica ficou tão surpresa que anotou os botânicos da Claire!"
+      },
+      {
+            "initials": "ER",
+            "author": "Evelyn R., 64 • Membro Verificada",
+            "title": "Recuperada das dores musculares das estatinas.",
+            "text": "A fraqueza muscular por estatinas atinge mais de 25% das mulheres maduras, sendo confundida com velhice.",
+            "quote": "Eu tinha dores insuportáveis nas coxas por causa das estatinas, mal conseguia levantar da cadeira. O método da Claire normalizou meus exames sem dor alguma."
+      },
+      {
+            "initials": "TL",
+            "author": "Teresa L., 57 • Membro Verificada",
+            "title": "Receitas deliciosas de superalimentos de cozinha.",
+            "text": "Polifenóis culinários de alho envelhecido e folha de oliveira dissolvem o estresse oxidativo das artérias.",
+            "quote": "O guia de 28 dias é cheio de receitas fáceis e gostosas que minha família inteira adorou. Não parece uma dieta chata, é nutrição celular de verdade."
+      },
+      {
+            "initials": "BT",
+            "author": "Brenda T., 58 • Membro Verificada",
+            "title": "Sem medo de infarto ou surpresas repentinas.",
+            "text": "O reparo endotelial estabiliza as paredes das artérias e previne o rompimento de placas.",
+            "quote": "Meu pai teve infarto aos 60 anos e eu vivia apavorada de ser a próxima. O protocolo de 28 dias da Claire finalmente me deu paz e segurança."
+      },
+      {
+            "initials": "JD",
+            "author": "Joanne D., 66 • Membro Verificada",
+            "title": "Cardiologista pediu cópia do guia da Claire.",
+            "text": "As pesquisas cardiovasculares mais recentes comprovam que restaurar o endotélio supera a mera supressão de lipídios.",
+            "quote": "Meu cardiologista folheou o guia de 28 dias da Claire e disse: 'Seja lá o que estiver fazendo, continue — a flexibilidade das suas artérias está fantástica.'"
+      },
+      {
+            "initials": "AB",
+            "author": "Angela B., 48 • Membro Verificada",
+            "title": "Equilíbrio lipídico no início da perimenopausa.",
+            "text": "A queda do estrogênio reduz a depuração de LDL no fígado, causando picos de colesterol aos 40+.",
+            "quote": "Meu colesterol subiu 50 pontos logo no início da perimenopausa. Esse protocolo reequilibrou meu metabolismo antes que placas pudessem se formar."
+      },
+      {
+            "initials": "MB",
+            "author": "Martha B., 55 • Membro Verificada",
+            "title": "Tratando a causa real e não apenas os sintomas.",
+            "text": "O colesterol é um curativo biológico; curar as microfissuras da parede elimina a necessidade do curativo.",
+            "quote": "Entender que o colesterol não era o vilão mudou tudo. Ao cicatrizar a parede endotelial, meu próprio corpo limpou os excessos com segurança."
+      },
+      {
+            "initials": "EV",
+            "author": "Elaine V., 64 • Membro Verificada",
+            "title": "Disposição plena sem fadiga ou falta de ar.",
+            "text": "Vasos flexíveis reduzem o trabalho do coração, permitindo que ele bombeie com facilidade em qualquer atividade.",
+            "quote": "Caminho por uma hora no parque sem precisar parar para recuperar o fôlego ou segurar o peito. Sinto meu corpo completamente renovado."
+      },
+      {
+            "initials": "VB",
+            "author": "Vivian B., 67 • Membro Verificada",
+            "title": "Vitalidade e artérias macias aos 67 anos.",
+            "text": "O endotélio se regenera continuamente quando abastecido com os polifenóis e cofatores nutricionais corretos.",
+            "quote": "Aos 67 anos, minha disposição cardiovascular é melhor do que aos 45. Meu sangue flui livre, meu coração bate leve e vivo minha melhor fase."
+      }
+],
+      es: [
+      {
+            "initials": "GP",
+            "author": "Grace P., 63 • Miembro Verificada",
+            "title": "Cardiólogo asombrado con el escaneo vascular.",
+            "text": "Más del 82% de la calcificación arterial se debe al déficit de Vitamina K2 y no al consumo de grasas saludables.",
+            "quote": "Mi cardiólogo me preguntó qué estaba haciendo al ver mi prueba de elasticidad arterial a mis 63 años. ¡Mis arterias están suaves y jóvenes!"
+      },
+      {
+            "initials": "DM",
+            "author": "Dorothy M., 59 • Miembro Verificada",
+            "title": "Libre de recetas perpetuas de estatinas.",
+            "text": "Las estatinas farmacológicas bloquean la CoQ10 muscular, provocando fatiga crónica y debilidad en las piernas.",
+            "quote": "Mi médico me dio 30 días antes de recetarme estatinas. Seguir el protocolo de 28 días de Claire bajó mi LDL oxidado 44 puntos sin fármacos."
+      },
+      {
+            "initials": "BW",
+            "author": "Barbara W., 61 • Miembro Verificada",
+            "title": "Subir cuestas sin opresión en el pecho.",
+            "text": "Cuando el glucocálix endotelial se regenera, la sangre fluye sin fricción y con oxigenación total.",
+            "quote": "Sentía una opresión alarmante en el pecho al subir escaleras. En 3 semanas con el método de Claire, subo cuestas a pie con total serenidad."
+      },
+      {
+            "initials": "PB",
+            "author": "Patricia B., 56 • Miembro Verificada",
+            "title": "Manos cálidas y microcirculación reabierta.",
+            "text": "Las placas en vasos medianos reducen la irrigación en extremidades, provocando manos y pies helados.",
+            "quote": "Mis pies y manos siempre estaban congelados incluso bajo la manta. Reabrir el flujo arterial devolvió el calor y color saludable en 10 días."
+      },
+      {
+            "initials": "DW",
+            "author": "Diane W., 61 • Miembro Verificada",
+            "title": "Oxígeno limpio al cerebro y claridad mental.",
+            "text": "Las arterias carótidas despejadas garantizan un aporte continuo de oxígeno a los lóbulos frontales todo el día.",
+            "quote": "La pesadez mental de la tarde que me hacía temer fallos de memoria desapareció. Mis pensamientos están despiertos de la mañana a la noche."
+      },
+      {
+            "initials": "HS",
+            "author": "Helen S., 54 • Miembro Verificada",
+            "title": "La ciencia de la Vitamina K2 explicada con claridad.",
+            "text": "Sin Vitamina K2 (MK-7), el calcio de la dieta endurece las arterias blandas en lugar de fijarse en los huesos.",
+            "quote": "La explicación de Claire sobre la redirección del calcio me abrió los ojos. Frené la calcificación arterial y protegí mis huesos al mismo tiempo."
+      },
+      {
+            "initials": "CP",
+            "author": "Carolyn P., 50 • Miembro Verificada",
+            "title": "Marcador inflamatorio PCR en el verde óptimo.",
+            "text": "Las microfisuras endoteliales provienen de inflamación crónica, donde el colesterol acude como parche de emergencia.",
+            "quote": "Mi proteína C reactiva bajó del nivel de riesgo al verde óptimo. ¡Mi médica quedó tan impresionada que tomó notas de la botánica de Claire!"
+      },
+      {
+            "initials": "ER",
+            "author": "Evelyn R., 64 • Miembro Verificada",
+            "title": "Recuperada de los dolores musculares por estatinas.",
+            "text": "La debilidad muscular por estatinas afecta a más del 25% de las mujeres maduras, confundiéndose con envejecimiento.",
+            "quote": "Tenía dolores intensos en los muslos por las estatinas que me impedían levantarme con agilidad. El método de Claire normalizó mis análisis sin dolor."
+      },
+      {
+            "initials": "TL",
+            "author": "Teresa L., 57 • Miembro Verificada",
+            "title": "Recetas deliciosas con superalimentos de cocina.",
+            "text": "Los polifenoles culinarios del ajo negro envejecido y la hoja de olivo disuelven el estrés oxidativo arterial.",
+            "quote": "La guía de 28 días contiene recetas sencillas y deliciosas que encantaron a toda mi familia. No parece una dieta, es nutrición celular pura."
+      },
+      {
+            "initials": "BT",
+            "author": "Brenda T., 58 • Miembro Verificada",
+            "title": "Sin miedo a infartos o sustos repentinos.",
+            "text": "La reparación endotelial estabiliza las paredes de las arterias y previene la rotura de placas vulnerables.",
+            "quote": "Mi padre sufrió un infarto a los 60 y vivía aterrorizada de ser la siguiente. El plan de 28 días de Claire me dio por fin serenidad y control."
+      },
+      {
+            "initials": "JD",
+            "author": "Joanne D., 66 • Miembro Verificada",
+            "title": "El cardiólogo me pidió una copia de la guía de Claire.",
+            "text": "La investigación cardiovascular más avanzada confirma que regenerar el endotelio supera la mera supresión lipídica.",
+            "quote": "Mi cardiólogo hojeó la guía de 28 días de Claire y me dijo: 'Siga haciendo exactamente esto, la elasticidad de sus arterias es magnífica'."
+      },
+      {
+            "initials": "AB",
+            "author": "Angela B., 48 • Miembro Verificada",
+            "title": "Equilibrio lipídico al inicio de la perimenopausia.",
+            "text": "La caída de estrógenos reduce la depuración hepática de LDL, provocando picos de colesterol en mujeres 40+.",
+            "quote": "Mi colesterol subió 50 puntos justo al empezar la perimenopausia. Este protocolo reequilibró mi metabolismo antes de que se formaran placas."
+      },
+      {
+            "initials": "MB",
+            "author": "Martha B., 55 • Miembro Verificada",
+            "title": "Tratar la causa de raíz y no solo el síntoma.",
+            "text": "El colesterol es un apósito biológico; sanar las microfisuras de la pared elimina la necesidad del apósito.",
+            "quote": "Comprender que el colesterol no era el enemigo lo cambió todo. Al cicatrizar mi pared endotelial, mi propio cuerpo limpió los excesos con seguridad."
+      },
+      {
+            "initials": "EV",
+            "author": "Elaine V., 64 • Miembro Verificada",
+            "title": "Energía plena sin ahogos ni fatiga.",
+            "text": "Las arterias flexibles reducen la sobrecarga del corazón, permitiendo que bombee con fluidez ante el esfuerzo.",
+            "quote": "Camino una hora diaria por el parque sin necesidad de pararme a recuperar el aliento ni sujetarme el pecho. Me siento totalmente revitalizada."
+      },
+      {
+            "initials": "VB",
+            "author": "Vivian B., 67 • Miembro Verificada",
+            "title": "Vitalidad y arterias suaves a los 67 años.",
+            "text": "El endotelio se regenera de forma constante cuando recibe los polifenoles y cofactores nutricionales adecuados.",
+            "quote": "A mis 67 años, mi resistencia cardiovascular es mejor que a los 45. Mi sangre fluye limpia, mi corazón late ligero y disfruto de mi jubilación activa."
+      }
+]
+    };
+
+    // STATE VARIABLES
+    let currentQuestionIndex = 0;
+    let scores = {
+      glycocalyx: 0,
+      calcium: 0,
+      plaque: 0
+    };
+    let currentViewMode = 'phone';
+    let interludeCurrentIndex = 0;
+    let interludeAutoTimer = null;
+    let interludePaused = false;
+
+    // RESTART FUNCTION
+    function restartQuiz() {
+      if (interludeAutoTimer) {
+        clearInterval(interludeAutoTimer);
+        interludeAutoTimer = null;
+      }
+      currentQuestionIndex = 0;
+      for (const k in scores) {
+        scores[k] = 0;
+      }
+      document.getElementById('results-view').classList.add('hidden');
+      document.getElementById('interlude-view').classList.add('hidden');
+      document.getElementById('calculating-view').classList.add('hidden');
+      document.getElementById('quiz-view').classList.remove('hidden');
+
+      const t = i18n[currentLang];
+      const qList = questionsData[currentLang];
+      const total = qList.length;
+      document.getElementById('step-counter').textContent = t.stepCounter.replace('{X}', 1).replace('{Y}', total);
+      document.getElementById('step-percent').textContent = t.stepPercent.replace('{P}', 10);
+      document.getElementById('progress-bar').style.width = '10%';
+
+      renderQuestion(0);
+
+      const chassis = document.getElementById('app-chassis');
+      if (chassis) {
+        chassis.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    // LANGUAGE SWITCHER ENGINE
+    function setLanguage(lang) {
+      if (!['en', 'pt', 'es'].includes(lang)) lang = 'en';
+      currentLang = lang;
+      localStorage.setItem('claire_arteries_quiz_lang', lang);
+
+      // Update Active Buttons
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      const activeBtn = document.getElementById(`btn-lang-${lang}`);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      // Update Static UI Texts defensively
+      const t = i18n[lang];
+      setSafeText('ui-role', t.role);
+      setSafeText('ui-mode-phone', t.modePhone);
+      setSafeText('ui-mode-expanded', t.modeExpanded);
+      setSafeText('ui-chassis-sub', t.chassisSub);
+      setSafeText('ui-chassis-by', t.chassisBy);
+      setSafeText('ui-claire-mentor-badge', t.claireMentorBadge);
+      setSafeText('ui-claire-intro', t.claireIntro);
+      setSafeText('interlude-btn', t.interludeContinue);
+      setSafeText('ui-calc-scan-badge', t.calcScanBadge);
+
+      setSafeText('ui-res-title', t.resultsTitle);
+      setSafeText('ui-res-curated', t.resCurated);
+      setSafeText('ui-map-label', t.mapLabel);
+      setSafeText('ui-map-title', t.mapTitle);
+      setSafeText('ui-map-audit', t.mapAudit);
+      setSafeText('ui-map-status', t.mapStatus);
+      setSafeText('ui-res-stress-title', t.stressTitle);
+      setSafeText('ui-meter-glyco-label', t.meterGlyco);
+      setSafeText('ui-meter-calc-label', t.meterCalc);
+      setSafeText('ui-meter-ldl-label', t.meterLdl);
+      setSafeText('ui-meter-micro-label', t.meterMicro);
+
+      setSafeText('ui-claire-takeaway', t.claireTakeaway);
+      setSafeText('ui-claire-subrole', t.claireSubrole);
+      setSafeText('ui-foundation-badge', t.foundationBadge);
+      setSafeText('hero-exp-badge', t.heroExpBadge);
+      setSafeText('hero-prod-subtitle', t.heroProdSubtitle);
+      setSafeText('ui-regular-price', t.regularPrice);
+      setSafeText('ui-onetime-label', t.oneTime);
+      setSafeText('hero-checkout-btn', t.checkoutBtn);
+
+      setSafeText('ui-pairing-badge', t.pairingBadge);
+      setSafeText('ui-physician-label', t.physicianLabel);
+      setSafeText('ui-explore-pairing', t.explorePairing);
+      setSafeText('ui-ftc-disclosure', t.ftcDisclosure);
+
+      setSafeText('ui-catalog-title', t.catalogTitle);
+      setSafeText('ui-catalog-sub', t.catalogSub);
+      setSafeText('ui-view-storefront', t.viewStorefront);
+      setSafeText('ui-restart-text', t.restartBtn);
+
+      setSafeText('ui-footer-copy', t.footerCopy);
+      setSafeText('ui-footer-med', t.footerMed);
+      setSafeText('ui-footer-privacy', t.footerPrivacy);
+      setSafeText('ui-footer-terms', t.footerTerms);
+      setSafeText('ui-footer-disclosure', t.footerDisclosure);
+
+      // Re-render current question or interlude or results
+      const quizView = document.getElementById('quiz-view');
+      const interludeView = document.getElementById('interlude-view');
+      const resultsView = document.getElementById('results-view');
+
+      if (quizView && !quizView.classList.contains('hidden')) {
+        renderQuestion(currentQuestionIndex);
+      } else if (interludeView && !interludeView.classList.contains('hidden')) {
+        renderTestimonial(interludeCurrentIndex, false);
+      } else if (resultsView && !resultsView.classList.contains('hidden')) {
+        showResults();
+      }
+    }
+
+    // VIEW MODE ENGINE
+    function setViewMode(mode) {
+      currentViewMode = mode;
+      localStorage.setItem('claire_arteries_quiz_viewmode', mode);
+      const chassis = document.getElementById('app-chassis');
+      const notch = document.getElementById('chassis-notch');
+      const btnPhone = document.getElementById('btn-mode-phone');
+      const btnExpanded = document.getElementById('btn-mode-expanded');
+
+      if (!chassis) return;
+
+      if (mode === 'phone') {
+        chassis.className = "w-full max-w-[430px] bg-white sm:rounded-[48px] shadow-2xl sm:border-[10px] sm:border-[#1F1D1B] p-5 sm:p-7 relative overflow-hidden transition-all duration-300";
+        if (notch) notch.classList.remove('hidden');
+        if (btnPhone) {
+          btnPhone.className = "flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-white bg-charcoal shadow-sm cursor-pointer";
+        }
+        if (btnExpanded) {
+          btnExpanded.className = "flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer";
+        }
+      } else {
+        chassis.className = "w-full max-w-2xl bg-white rounded-3xl shadow-xl shadow-stone-200/60 border border-sand/80 p-6 sm:p-8 relative overflow-hidden transition-all duration-300";
+        if (notch) notch.classList.add('hidden');
+        if (btnExpanded) {
+          btnExpanded.className = "flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-white bg-charcoal shadow-sm cursor-pointer";
+        }
+        if (btnPhone) {
+          btnPhone.className = "flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer";
+        }
+      }
+    }
+
+    function detectInitialLanguage() {
+      const saved = localStorage.getItem('claire_arteries_quiz_lang');
+      if (saved && ['en', 'pt', 'es'].includes(saved)) return saved;
+
+      const navLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      if (navLang.startsWith('pt')) return 'pt';
+      if (navLang.startsWith('es')) return 'es';
+      return 'en';
+    }
+
+    // RENDER QUESTION
+    function renderQuestion(index) {
+      const qList = questionsData[currentLang];
+      const q = qList[index];
+      const t = i18n[currentLang];
+
+      // Update Progress
+      const percent = Math.round(((index + 1) / qList.length) * 100);
+      document.getElementById('step-counter').textContent = t.stepCounter.replace('{X}', index + 1).replace('{Y}', qList.length);
+      document.getElementById('step-percent').textContent = t.stepPercent.replace('{P}', percent);
+      document.getElementById('progress-bar').style.width = `${percent}%`;
+
+      // Update Texts
+      document.getElementById('question-title').textContent = q.title;
+      document.getElementById('question-subtitle').textContent = q.subtitle;
+
+      // Render Options
+      const container = document.getElementById('options-container');
+      container.innerHTML = '';
+
+      q.options.forEach((opt, optIdx) => {
+        const btn = document.createElement('button');
+        btn.className = "w-full text-left p-4 rounded-2xl border border-sand/90 bg-linen/50 option-card flex items-start space-x-3.5 group cursor-pointer";
+        btn.onclick = () => selectOption(opt.category, q);
+
+        btn.innerHTML = `
+          <div class="w-6 h-6 rounded-full border border-sand bg-white text-charcoal font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:border-terracotta group-hover:bg-terracotta group-hover:text-white transition-colors">
+            ${String.fromCharCode(65 + optIdx)}
+          </div>
+          <div class="flex-grow">
+            <span class="block text-sm font-bold text-charcoal leading-snug group-hover:text-terracotta transition-colors">
+              ${opt.label}
+            </span>
+            <span class="block text-xs text-stone-500 leading-relaxed mt-0.5">
+              ${opt.desc}
+            </span>
+          </div>
+        `;
+        container.appendChild(btn);
+      });
+    }
+
+    function selectOption(category, q) {
+      if (scores[category] !== undefined) {
+        scores[category] += 2;
+      }
+
+      // Check if question has an interlude
+      if (q.hasInterlude) {
+        showInterlude();
+      } else {
+        advanceQuestion();
+      }
+    }
+
+    // DYNAMIC 15 TESTIMONIALS ENGINE
+    function renderTestimonial(index, animate = false) {
+      const pool = testimonialsPool[currentLang] || testimonialsPool.en;
+      interludeCurrentIndex = (index + pool.length) % pool.length;
+      const item = pool[interludeCurrentIndex];
+
+      const card = document.getElementById('interlude-card');
+      const updateContent = () => {
+        setSafeText('interlude-title', item.title);
+        setSafeText('interlude-text', item.text);
+        setSafeText('interlude-author', item.author);
+        setSafeText('interlude-avatar', item.initials);
+
+        // Sanitize quote to prevent double quotation marks
+        const cleanQuote = item.quote.replace(/^[\"“”']+|[\"“”']+$/g, '').trim();
+        setSafeText('interlude-quote', `"${cleanQuote}"`);
+
+        // Counter & Status text localization (100% Pure Language Separation)
+        const counterEl = document.getElementById('interlude-counter');
+        const statusEl = document.getElementById('interlude-status');
+        const badgeEl = document.getElementById('interlude-badge');
+
+        if (currentLang === 'pt') {
+          if (counterEl) counterEl.textContent = `Depoimento ${interludeCurrentIndex + 1} de ${pool.length}`;
+          if (statusEl) statusEl.textContent = '• Rotação Automática';
+          if (badgeEl) badgeEl.textContent = `✓ ${pool.length} Histórias Verificadas`;
+        } else if (currentLang === 'es') {
+          if (counterEl) counterEl.textContent = `Historia ${interludeCurrentIndex + 1} de ${pool.length}`;
+          if (statusEl) statusEl.textContent = '• Rotación Automática';
+          if (badgeEl) badgeEl.textContent = `✓ ${pool.length} Historias Verificadas`;
+        } else {
+          if (counterEl) counterEl.textContent = `Story ${interludeCurrentIndex + 1} of ${pool.length}`;
+          if (statusEl) statusEl.textContent = '• Auto-rotating';
+          if (badgeEl) badgeEl.textContent = `✓ ${pool.length} Verified Stories`;
+        }
+
+        if (card) card.style.opacity = '1';
+      };
+
+      if (animate && card) {
+        card.style.opacity = '0';
+        setTimeout(updateContent, 200);
+      } else {
+        updateContent();
+      }
+    }
+
+    function nextTestimonial() {
+      renderTestimonial(interludeCurrentIndex + 1, true);
+    }
+
+    function prevTestimonial() {
+      renderTestimonial(interludeCurrentIndex - 1, true);
+    }
+
+    function pauseInterlude() {
+      interludePaused = true;
+    }
+
+    function resumeInterlude() {
+      interludePaused = false;
+    }
+
+    function showInterlude() {
+      document.getElementById('quiz-view').classList.add('hidden');
+      document.getElementById('progress-container').classList.add('hidden');
+
+      const interludeView = document.getElementById('interlude-view');
+
+      // Pick a random fresh testimonial from the 15 profiles
+      const pool = testimonialsPool[currentLang] || testimonialsPool.en;
+      interludeCurrentIndex = Math.floor(Math.random() * pool.length);
+      renderTestimonial(interludeCurrentIndex, false);
+
+      // Start automatic rotation every 4.5 seconds
+      if (interludeAutoTimer) clearInterval(interludeAutoTimer);
+      interludePaused = false;
+      interludeAutoTimer = setInterval(() => {
+        if (!interludePaused) {
+          renderTestimonial(interludeCurrentIndex + 1, true);
+        }
+      }, 4500);
+
+      interludeView.classList.remove('hidden');
+    }
+
+    function nextAfterInterlude() {
+      if (interludeAutoTimer) {
+        clearInterval(interludeAutoTimer);
+        interludeAutoTimer = null;
+      }
+      document.getElementById('interlude-view').classList.add('hidden');
+      document.getElementById('progress-container').classList.remove('hidden');
+      document.getElementById('quiz-view').classList.remove('hidden');
+      advanceQuestion();
+    }
+
+    function advanceQuestion() {
+      currentQuestionIndex++;
+      const qList = questionsData[currentLang];
+      if (currentQuestionIndex < qList.length) {
+        renderQuestion(currentQuestionIndex);
+      } else {
+        startCalculating();
+      }
+    }
+
+    // SIMULATE CLINICAL AI CALCULATION
+    function startCalculating() {
+      document.getElementById('quiz-view').classList.add('hidden');
+      document.getElementById('progress-container').classList.add('hidden');
+      document.getElementById('calculating-view').classList.remove('hidden');
+
+      const steps = i18n[currentLang].calculatingSteps;
+
+      let stepIdx = 0;
+      const interval = setInterval(() => {
+        stepIdx++;
+        if (stepIdx < steps.length) {
+          document.getElementById('calc-step-text').textContent = steps[stepIdx].text;
+          document.getElementById('calc-sub-text').textContent = steps[stepIdx].sub;
+          document.getElementById('calc-bar').style.width = steps[stepIdx].width;
+        } else {
+          clearInterval(interval);
+          setTimeout(showResults, 800);
+        }
+      }, 1400);
+    }
+
+    // SHOW FINAL DIAGNOSIS & PAYWALL
+    function showResults() {
+      document.getElementById('calculating-view').classList.add('hidden');
+      document.getElementById('results-view').classList.remove('hidden');
+
+      const t = i18n[currentLang];
+
+      // Update Diagnosis Text
+      document.getElementById('diagnosis-text').textContent = t.diagnosis;
+
+      // Update Primary Offer
+      document.getElementById('hero-checkout-btn').href = "https://whop.com/checkout/plan_R3KhepBcIF5ue";
+
+      // Bullets
+      const bulletList = document.getElementById('hero-prod-bullets');
+      bulletList.innerHTML = '';
+      t.bullets.forEach(b => {
+        const li = document.createElement('li');
+        li.className = "flex items-start space-x-2";
+        li.innerHTML = `<span class="text-terracotta font-bold flex-shrink-0 mt-0.5">✓</span><span>${b}</span>`;
+        bulletList.appendChild(li);
+      });
+
+      // Affiliate Pairing
+      if (t.affiliate) {
+        document.getElementById('affiliate-title').textContent = t.affiliate.name;
+        document.getElementById('affiliate-desc').textContent = t.affiliate.desc;
+        document.getElementById('affiliate-link-btn').href = t.affiliate.link;
+        document.getElementById('affiliate-box').classList.remove('hidden');
+      }
+
+      // Scroll to top of results
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // START ON LOAD
+    window.addEventListener('DOMContentLoaded', () => {
+      const initial = detectInitialLanguage();
+      setLanguage(initial);
+      const savedMode = localStorage.getItem('claire_arteries_quiz_viewmode') || 'phone';
+      setViewMode(savedMode);
+    });
+  </script>
+</body>
+</html>
