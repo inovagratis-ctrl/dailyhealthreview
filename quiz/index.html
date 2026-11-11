@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7PQXFY9F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BE7PQXFY9F');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Claire Evans’ 60-Second Cellular Vitality & Routine Audit™</title>
+  <meta name="description" content="Discover what your body needs after 40 to release midlife visceral tension, soothe cortisol spikes, and restore youthful cellular vitality in 60 seconds.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            linen: '#FBF9F5',
+            terracotta: '#C86D51',
+            terracottaDark: '#A85238',
+            olive: '#5A6855',
+            sand: '#F2ECE4',
+            charcoal: '#2D2825',
+            warmGray: '#7A726C',
+            cream: '#FFFDF9'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #F8F5F0;
+      color: #2D2825;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .cormorant {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    .option-card {
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .option-card:hover, .option-card:active {
+      transform: translateY(-2px);
+      border-color: #C86D51;
+      background-color: #FFFDF9;
+      box-shadow: 0 8px 20px -4px rgba(200, 109, 81, 0.12);
+    }
+    .pulse-ring {
+      animation: pulse 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.9; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.08); }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-terracotta selection:text-white">
+
+  <!-- TOP HEADER -->
+  <header class="w-full bg-white/80 backdrop-blur-md border-b border-sand/70 sticky top-0 z-50 py-3.5 px-4">
+    <div class="max-w-2xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-2.5">
+        <div class="w-9 h-9 rounded-full overflow-hidden border border-sand shadow-sm bg-sand/50 flex-shrink-0">
+          <img src="https://assets-2-prod.whop.com/public/uploads/2026-11-06/ce574bd1-7a0d-4d05-8a09-f2f18bab47eb/image.png" alt="Claire Evans" class="w-full h-full object-cover">
+        </div>
+        <div>
+          <span class="block text-xs uppercase tracking-widest font-semibold text-terracotta">CLAIRE EVANS</span>
+          <span class="block text-[11px] text-warmGray">Cellular Longevity & Midlife Mentor</span>
+        </div>
+      </div>
+      <div class="flex items-center space-x-1.5 text-xs font-semibold px-2.5 py-1 bg-sand/60 rounded-full text-charcoal border border-sand">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span id="header-badge">60-Sec Audit</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <main class="flex-grow flex items-center justify-center p-4 sm:p-6">
+    <div class="w-full max-w-xl bg-white rounded-3xl shadow-xl shadow-stone-200/60 border border-sand/80 p-6 sm:p-8 relative overflow-hidden">
+      
+      <!-- PROGRESS BAR CONTAINER -->
+      <div id="progress-container" class="mb-6">
+        <div class="flex justify-between items-center text-xs font-medium text-warmGray mb-2">
+          <span id="step-counter" class="uppercase tracking-wider">Question 1 of 10</span>
+          <span id="step-percent" class="font-bold text-terracotta">10% Complete</span>
+        </div>
+        <div class="w-full h-2 bg-sand/70 rounded-full overflow-hidden">
+          <div id="progress-bar" class="h-full bg-gradient-to-r from-terracotta to-amber-600 rounded-full transition-all duration-300 ease-out" style="width: 10%;"></div>
+        </div>
+      </div>
+
+      <!-- QUIZ VIEW (DYNAMIC) -->
+      <div id="quiz-view">
+        <h2 id="question-title" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal leading-tight mb-2">
+          Loading assessment...
+        </h2>
+        <p id="question-subtitle" class="text-xs sm:text-sm text-warmGray mb-6">
+          Select the option that best describes your daily experience.
+        </p>
+
+        <!-- OPTIONS CONTAINER -->
+        <div id="options-container" class="space-y-3">
+          <!-- Dynamically injected -->
+        </div>
+      </div>
+
+      <!-- INTERLUDE VIEW (SOCIAL PROOF / VALIDATION) -->
+      <div id="interlude-view" class="hidden text-center py-4">
+        <div class="w-14 h-14 rounded-full bg-amber-50 text-terracotta mx-auto flex items-center justify-center text-2xl mb-4 shadow-sm border border-amber-200/50">
+          ✨
+        </div>
+        <h3 id="interlude-title" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal mb-3">
+          You are not alone in this.
+        </h3>
+        <p id="interlude-text" class="text-sm text-warmGray leading-relaxed max-w-md mx-auto mb-6">
+          Over 84% of women over 40 produce elevated resting cortisol without realizing it—triggering visceral lower belly bloating regardless of how cleanly they eat.
+        </p>
+        <div class="p-4 bg-linen rounded-2xl border border-sand/80 text-left mb-6 max-w-md mx-auto">
+          <div class="flex items-center space-x-3 mb-2">
+            <div class="w-8 h-8 rounded-full bg-terracotta/10 text-terracotta font-bold flex items-center justify-center text-xs">
+              BK
+            </div>
+            <div>
+              <p class="text-xs font-bold text-charcoal">Brenda K., 53 • Verified Member</p>
+              <div class="text-[11px] text-amber-500">★★★★★</div>
+            </div>
+          </div>
+          <p class="text-xs text-warmGray italic">"Understanding that my 3 PM bloat was cortisol—not carbs—changed everything. Claire's 10-minute routine gave me a flat stomach again."</p>
+        </div>
+        <button onclick="nextAfterInterlude()" class="w-full sm:w-auto px-8 py-3.5 bg-terracotta hover:bg-terracottaDark text-white font-medium rounded-full shadow-lg shadow-terracotta/25 transition-all text-sm tracking-wide">
+          Continue Assessment →
+        </button>
+      </div>
+
+      <!-- CALCULATING VIEW (SIMULATED AI ANALYSIS) -->
+      <div id="calculating-view" class="hidden text-center py-10">
+        <div class="relative w-24 h-24 mx-auto mb-6 flex items-center justify-center">
+          <div class="absolute inset-0 rounded-full border-4 border-sand"></div>
+          <div class="absolute inset-0 rounded-full border-4 border-terracotta border-t-transparent animate-spin"></div>
+          <div class="text-3xl pulse-ring">🧬</div>
+        </div>
+        <h3 id="calc-step-text" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal mb-2">
+          Analyzing your cellular indicators...
+        </h3>
+        <p id="calc-sub-text" class="text-xs sm:text-sm text-warmGray max-w-xs mx-auto mb-6">
+          Cross-referencing metabolic stress curves with midlife hormonal patterns.
+        </p>
+        <div class="w-48 h-1.5 bg-sand rounded-full mx-auto overflow-hidden">
+          <div id="calc-bar" class="h-full bg-terracotta transition-all duration-700 ease-out" style="width: 15%;"></div>
+        </div>
+      </div>
+
+      <!-- RESULTS VIEW (DIAGNOSIS + PAYWALL + AFFILIATE PAIRING) -->
+      <div id="results-view" class="hidden">
+        <!-- Top Badge -->
+        <div class="text-center mb-6">
+          <span class="inline-flex items-center space-x-1.5 px-3 py-1 bg-amber-50 text-terracotta text-xs font-semibold rounded-full border border-amber-200/60 uppercase tracking-widest mb-2">
+            <span>✓</span> <span>Analysis Complete</span>
+          </span>
+          <h2 class="cormorant text-3xl sm:text-4xl font-bold text-charcoal leading-tight">
+            Your Midlife Vitality & Cellular Profile
+          </h2>
+          <p class="text-xs sm:text-sm text-warmGray mt-1">Curated by Claire Evans • Daily Health Review US</p>
+        </div>
+
+        <!-- HEALTH SCORE METERS -->
+        <div class="bg-linen rounded-2xl p-4 sm:p-5 border border-sand/90 mb-6">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs font-bold uppercase tracking-wider text-charcoal">Cellular Stress Profile</span>
+            <span id="score-badge" class="px-2.5 py-0.5 bg-terracotta/15 text-terracotta font-bold text-xs rounded-full">Elevated Cortisol & Biofilm Load</span>
+          </div>
+
+          <!-- Meters List -->
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between text-xs mb-1">
+                <span class="text-warmGray">Visceral Cortisol Tension</span>
+                <span id="meter-cortisol-val" class="font-bold text-charcoal">84% (High)</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-cortisol" class="h-full bg-red-400 rounded-full" style="width: 84%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs mb-1">
+                <span class="text-warmGray">Gut Biofilm & Drainage Burden</span>
+                <span id="meter-gut-val" class="font-bold text-charcoal">76% (Moderate-High)</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-gut" class="h-full bg-amber-500 rounded-full" style="width: 76%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs mb-1">
+                <span class="text-warmGray">Vascular Elasticity & Endothelial Health</span>
+                <span id="meter-heart-val" class="font-bold text-charcoal">68% (Needs Support)</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-heart" class="h-full bg-orange-400 rounded-full" style="width: 68%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs mb-1">
+                <span class="text-warmGray">Cellular Collagen & Skin Regeneration</span>
+                <span id="meter-skin-val" class="font-bold text-charcoal">62% (Slowed Turnover)</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-skin" class="h-full bg-amber-400 rounded-full" style="width: 62%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIAGNOSIS SUMMARY BOX -->
+        <div class="mb-6 p-4 border-l-4 border-terracotta bg-white rounded-r-xl shadow-sm">
+          <h4 class="text-sm font-bold text-charcoal mb-1">Claire's Clinical Takeaway:</h4>
+          <p id="diagnosis-text" class="text-xs sm:text-sm text-warmGray leading-relaxed">
+            Your responses indicate that your nervous system is trapped in low-grade fight-or-flight. This signals your adrenals to continuously produce cortisol, storing stubborn visceral fluid around the lower midsection while impairing evening melatonin release. Strenuous cardio will only exacerbate this. Your body requires targeted, restorative 10-minute somatic decompression.
+          </p>
+        </div>
+
+        <!-- PRIMARY HERO OFFER ($27 PROPRIETARY PROTOCOL) -->
+        <div class="border-2 border-terracotta/40 rounded-3xl p-5 sm:p-6 bg-gradient-to-b from-white to-amber-50/30 relative shadow-lg shadow-terracotta/10 mb-6">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-0.5 bg-terracotta text-white font-bold text-[10px] sm:text-xs uppercase tracking-widest rounded-full shadow-sm">
+            YOUR RECOMMENDED FOUNDATION
+          </div>
+
+          <div class="flex items-start space-x-4 mb-4 mt-2">
+            <div id="hero-img-box" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border border-sand flex-shrink-0 shadow-sm bg-sand">
+              <img id="hero-prod-img" src="" alt="Protocol Cover" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <span class="text-[10px] font-bold uppercase tracking-wider text-terracotta">21-Day Guided Experience</span>
+              <h3 id="hero-prod-title" class="cormorant text-xl sm:text-2xl font-bold text-charcoal leading-tight">
+                The 21-Day Somatic Nervous System & Cortisol Belly Reset™
+              </h3>
+              <p class="text-xs text-warmGray mt-0.5">Interactive Web App + Deluxe Printable Book + Audio Guides</p>
+            </div>
+          </div>
+
+          <!-- Feature Bullets -->
+          <ul id="hero-prod-bullets" class="space-y-1.5 text-xs text-charcoal mb-5">
+            <li class="flex items-center space-x-2">
+              <span class="text-terracotta font-bold">✓</span>
+              <span>10-Minute Daily Somatic Micro-Movements to unwind visceral belly tension</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-terracotta font-bold">✓</span>
+              <span>Vagus Nerve Acoustic Reset Audios for deep uninterrupted sleep</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-terracotta font-bold">✓</span>
+              <span>Compatible with iPhone, iPad, Android, Mac & PC (Zero apps to install)</span>
+            </li>
+            <li class="flex items-center space-x-2">
+              <span class="text-terracotta font-bold">✓</span>
+              <span>Ironclad 60-Day 100% Money-Back Guarantee</span>
+            </li>
+          </ul>
+
+          <!-- Pricing & Button -->
+          <div class="flex items-center justify-between pt-3 border-t border-sand/80">
+            <div>
+              <span class="block text-[11px] text-warmGray line-through">Regular Price: $197</span>
+              <span class="text-2xl font-bold text-charcoal">$27.00 <span class="text-xs font-normal text-warmGray">One-Time</span></span>
+            </div>
+            <a id="hero-checkout-btn" href="#" target="_blank" class="px-6 py-3.5 bg-terracotta hover:bg-terracottaDark text-white font-bold text-sm rounded-full shadow-lg shadow-terracotta/25 transition-all text-center">
+              Claim VIP Access ($27) →
+            </a>
+          </div>
+        </div>
+
+        <!-- AFFILIATE BOTANICAL PAIRING BOX -->
+        <div id="affiliate-box" class="bg-linen rounded-2xl p-5 border border-sand/90 mb-6">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-[10px] font-bold uppercase tracking-widest text-olive bg-olive/10 px-2 py-0.5 rounded-full">CLAIRE'S BOTANICAL PAIRING</span>
+            <span class="text-[10px] text-warmGray">Physician-Formulated</span>
+          </div>
+
+          <h4 id="affiliate-title" class="cormorant text-xl font-bold text-charcoal leading-snug mb-1">
+            CleanseSana™ Biofilm & Deep Drainage Botanical Complex
+          </h4>
+          <p id="affiliate-desc" class="text-xs text-warmGray leading-relaxed mb-3">
+            Pair your daily somatic movements with this clinical herbal tincture to accelerate the breakdown of stored gut biofilms and support natural liver drainage pathways.
+          </p>
+
+          <a id="affiliate-link-btn" href="#" target="_blank" class="inline-flex items-center space-x-1.5 text-xs font-bold text-terracotta hover:text-terracottaDark">
+            <span>Explore Claire's Official Pairing</span>
+            <span>→</span>
+          </a>
+
+          <!-- FTC Affiliate Disclosure -->
+          <p class="text-[10px] text-warmGray/70 mt-3 pt-2 border-t border-sand/60 italic">
+            Affiliate Disclosure: If you choose to purchase this recommended pairing through our link, Daily Health Review may earn a small commission at no additional cost to you. We only recommend rigorously vetted formulations.
+          </p>
+        </div>
+
+        <!-- EXPLORE COMPLETE PROTOCOL CATALOG (ALL 6 PRODUCTS) -->
+        <div class="border-t border-sand pt-5">
+          <h4 class="cormorant text-xl font-bold text-charcoal text-center mb-1">Explore Claire’s Complete VIP Library</h4>
+          <p class="text-xs text-warmGray text-center mb-4">Each comprehensive clinical protocol is just $27 (one-time payment)</p>
+
+          <div class="grid grid-cols-2 gap-2.5 text-left text-xs mb-4">
+            <a href="https://dailyhealthreviewus.com/protocol" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span class="font-bold text-charcoal block">🧬 28-Day Cell Renewal</span>
+              <span class="text-[10px] text-warmGray">Skin, collagen & vitality</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/apothecary" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span class="font-bold text-charcoal block">🌿 Home Apothecary Bible</span>
+              <span class="text-[10px] text-warmGray">Forgotten natural remedies</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/cleanse" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span class="font-bold text-charcoal block">🫖 14-Day Parasite Cleanse</span>
+              <span class="text-[10px] text-warmGray">Lymphatic & biofilm flush</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/heart" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span class="font-bold text-charcoal block">🫀 9-Minute Arterial Reset</span>
+              <span class="text-[10px] text-warmGray">Natural blood pressure care</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/arteries" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block col-span-2">
+              <span class="font-bold text-charcoal block">❤️ 28-Day Clean Arteries Protocol</span>
+              <span class="text-[10px] text-warmGray">Plaque defense, endothelial glycocalyx & Vitamin K2 calcium redirection</span>
+            </a>
+          </div>
+
+          <div class="text-center">
+            <a href="https://whop.com/dailyhealthreviewus" target="_blank" class="inline-block text-xs font-bold text-terracotta hover:underline">
+              View All 6 Protocols in Claire's Official Whop Storefront →
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="w-full text-center py-6 px-4 text-[11px] text-warmGray border-t border-sand/80 bg-white/50">
+    <div class="max-w-2xl mx-auto space-y-2">
+      <p>© 2026 Daily Health Review US • Claire Evans Official Coaching & Wellness.</p>
+      <p class="max-w-lg mx-auto text-[10px] text-warmGray/80 leading-relaxed">
+        Medical Disclaimer: The statements and protocols presented on this website have not been evaluated by the Food and Drug Administration. These materials are intended for educational and wellness guidance only and are not a substitute for professional medical diagnosis or treatment. Always consult your physician.
+      </p>
+      <div class="flex justify-center space-x-4 text-[11px] text-terracotta pt-1">
+        <a href="/privacy" class="hover:underline">Privacy Policy</a>
+        <span>•</span>
+        <a href="/terms" class="hover:underline">Terms of Service</a>
+        <span>•</span>
+        <a href="/disclosure" class="hover:underline">FTC Affiliate Disclosure</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- QUIZ JAVASCRIPT LOGIC -->
+  <script>
+    // 10 CLINICAL QUESTIONS MAPPING TO OUR 6 PRODUCTS
+    const questions = [
+      {
+        id: 1,
+        title: "What is your current age bracket?",
+        subtitle: "Hormonal shifts, cellular turnover, and cortisol metabolism evolve through each midlife stage.",
+        options: [
+          { label: "40 to 49 Years", desc: "Perimenopause transition, fluctuating energy & new midsection changes", category: "somatic" },
+          { label: "50 to 59 Years", desc: "Hormonal shift, slower collagen synthesis & stubborn abdominal tension", category: "somatic" },
+          { label: "60 Years or Older", desc: "Active longevity, vascular elasticity, and deep cellular rejuvenation", category: "arteries" }
+        ]
+      },
+      {
+        id: 2,
+        title: "How do you feel during the first 10 minutes after waking up?",
+        subtitle: "Morning vitality reveals how well your autonomic nervous system recovered overnight.",
+        options: [
+          { label: "Exhausted & Drained", desc: "Heavy limbs and morning fog, even after 7 to 8 hours of sleep", category: "somatic" },
+          { label: "Stiff & Puffy", desc: "Fluid retention in hands, swollen eyelids, and tight facial tissue", category: "skin" },
+          { label: "Energetic Initially, Crashing by 2:00 PM", desc: "Midday brain fog and sudden energy drop", category: "somatic" },
+          { label: "Anxious / Racing Pulse", desc: "Waking up with nervous anticipation or heart palpitations", category: "heart" }
+        ]
+      },
+      {
+        id: 3,
+        title: "How does your midsection behave throughout the day?",
+        subtitle: "Midlife lower belly expansion is rarely calories—it is almost always hormonal or visceral.",
+        options: [
+          { label: "Flat in the Morning, Expands by 3:00 PM", desc: "Like a tight balloon in the lower abdomen by afternoon", category: "somatic" },
+          { label: "Firm, Stubborn Lower Belly Pooch", desc: "Visceral tension below the navel that never budges with dieting", category: "somatic" },
+          { label: "All-Over Upper & Lower Bloating", desc: "Fermentation, heavy fullness, and digestive discomfort after meals", category: "cleanse" }
+        ]
+      },
+      {
+        id: 4,
+        title: "What happens between 2:00 AM and 4:00 AM when you sleep?",
+        subtitle: "The 3:00 AM nocturnal awakening is a clinical hallmark of an adrenaline-cortisol rebound.",
+        options: [
+          { label: "I Wake Up Alert with Racing Thoughts", desc: "Mind starts spinning and it takes over an hour to fall back asleep", category: "somatic" },
+          { label: "I Suffer from Restless Legs or Temperature Spikes", desc: "Tossing, turning, night sweats, or physical restlessness", category: "somatic" },
+          { label: "Light, Fragmented Sleep", desc: "Waking up 3 to 4 times throughout the night at the slightest sound", category: "somatic" },
+          { label: "I Usually Sleep Deeply", desc: "Nocturnal rest is relatively solid", category: "skin" }
+        ],
+        hasInterlude: true,
+        interludeData: {
+          title: "You are not alone in this.",
+          text: "Over 84% of women over 40 produce elevated resting cortisol without realizing it—triggering visceral lower belly bloating and 3:00 AM wakeups regardless of how cleanly they eat.",
+          author: "Brenda K., 53 • Verified Member",
+          quote: "Understanding that my 3 PM bloat was cortisol—not carbs—changed everything. Claire's 10-minute routine gave me a flat stomach again."
+        }
+      },
+      {
+        id: 5,
+        title: "How does your digestive tract respond after lunch and dinner?",
+        subtitle: "Trapped biofilms in the small intestine siphon nutrients and release inflammatory ammonia.",
+        options: [
+          { label: "Gas & Sluggish Fermentation", desc: "Food sits in the stomach like a heavy rock for hours", category: "cleanse" },
+          { label: "Intense Sugar or Carb Cravings", desc: "Urgent cravings for sweets, bread, or snacks late in the evening", category: "cleanse" },
+          { label: "Irregular Elimination", desc: "Straining, constipation, or unpredictable bathroom habits", category: "cleanse" },
+          { label: "Relatively Smooth Digestion", desc: "No significant digestive discomfort", category: "skin" }
+        ]
+      },
+      {
+        id: 6,
+        title: "What is your primary observation regarding your skin and facial tone?",
+        subtitle: "Cellular glycation and declining estrogen directly impact dermal collagen and elasticity.",
+        options: [
+          { label: "Loss of Firmness Around Jawline & Neck", desc: "Skin feels less tight and resilient against gravity", category: "skin" },
+          { label: "Dryness, Fine Lines & Dull Morning Complexion", desc: "Moisturizers sit on the surface without restoring genuine glow", category: "skin" },
+          { label: "Dark Under-Eye Puffiness & Uneven Tone", desc: "Lymphatic pooling and sluggish microcirculation", category: "skin" },
+          { label: "Satisfied with Skin, Focused on Long-Term Youth", desc: "Preserving cellular turnover and youthful collagen", category: "apothecary" }
+        ]
+      },
+      {
+        id: 7,
+        title: "Do you ever notice heart flutters, chest tension, or blood pressure spikes?",
+        subtitle: "Vascular stiffness occurs when endothelial cells lose the ability to synthesize natural Nitric Oxide.",
+        options: [
+          { label: "Elevated Readings or Stress-Induced Spikes", desc: "Doctor has flagged borderline or high numbers, especially when stressed", category: "heart" },
+          { label: "Cold Extremities & Heavy Leg Fatigue", desc: "Sluggish circulation, cold fingers/toes, or feeling winded on stairs", category: "arteries" },
+          { label: "Tight Sensation in Chest When Overwhelmed", desc: "Physical tension around the sternum during busy days", category: "heart" },
+          { label: "Normal Cardiovascular Numbers", desc: "Focused on proactive arterial longevity and plaque defense", category: "arteries" }
+        ]
+      },
+      {
+        id: 8,
+        title: "What is your philosophy on pharmaceutical pills vs. forgotten botanicals?",
+        subtitle: "Our bodies thrive when given whole-food, bioavailable synergistic plant compounds.",
+        options: [
+          { label: "I Want to Avoid Synthetic Chemicals", desc: "Prefer proven botanical formulas, teas, and natural home remedies", category: "apothecary" },
+          { label: "I Prefer Gentle Micro-Movements Over Hard Cardio", desc: "10-minute restorative somatic routines fit my body much better", category: "somatic" },
+          { label: "I Believe in Root-Cause Cellular Nutrition", desc: "Targeting mitochondria, endothelium, and cellular turnover", category: "skin" },
+          { label: "All of the Above!", desc: "I want an all-natural, holistic lifestyle that honors mature biology", category: "apothecary" }
+        ],
+        hasInterlude: true,
+        interludeData: {
+          title: "Your biological map is taking shape.",
+          text: "Claire Evans' protocols have already guided over 14,000 mature women across North America to reclaim their energy, flatten their midsection, and restore radiant skin without extreme measures.",
+          author: "Patricia M., 48 • Verified Member",
+          quote: "The Castor oil and lymphatic routines were a revelation. Zero detox crashes, just restorative sleep and glowing skin."
+        }
+      },
+      {
+        id: 9,
+        title: "What has been your biggest frustration with wellness programs in the past?",
+        subtitle: "Traditional fitness was designed for 25-year-old men, not the delicate hormonal balance of women 40+.",
+        options: [
+          { label: "Lack of Time & Complicated Schedules", desc: "Cannot spend 1 to 2 hours every day cooking or driving to gyms", category: "somatic" },
+          { label: "Draconian Diets That Backfire", desc: "Cutting calories only made my cravings worse and slowed my metabolism", category: "cleanse" },
+          { label: "Subscription Traps & Hidden Charges", desc: "Tired of companies charging $39/month without clear results", category: "somatic" }
+        ]
+      },
+      {
+        id: 10,
+        title: "Are you ready to commit 5 to 10 minutes a day to a simple, guided ritual?",
+        subtitle: "True lasting transformation happens in micro-steps that gently retrain your cells.",
+        options: [
+          { label: "Yes! 10 Minutes a Day Is Exactly What I Need", desc: "Ready to follow Claire's daily video & checklist format", category: "somatic" },
+          { label: "Yes, Provided It Runs Conveniently on My Phone", desc: "I want one-tap interactive guides with zero complicated apps", category: "somatic" },
+          { label: "Absolutely! I Am Ready to Prioritize Myself", desc: "Ready to unlock my customized cellular protocol now", category: "somatic" }
+        ]
+      }
+    ];
+
+    // CATALOG DATA (OUR 6 PROPRIETARY WHOP PRODUCTS)
+    const productCatalog = {
+      somatic: {
+        id: "prod_OoO4RshdJLeru",
+        title: "The 21-Day Somatic Nervous System & Cortisol Belly Reset™",
+        image: "https://dailyhealthreviewus.com/images/claire_blueprint.jpg",
+        checkoutUrl: "https://whop.com/checkout/plan_MTM6NIMtBjqIh",
+        bridgeUrl: "https://dailyhealthreviewus.com/somatic",
+        diagnosis: "Your responses indicate your autonomic nervous system is locked into chronic sympathetic drive. When cortisol stays elevated, your adrenal glands signal your body to deposit stubborn visceral fluid directly around the lower abdomen, disrupt restorative sleep between 2:00 AM and 4:00 AM, and resist traditional dieting. Strenuous workouts only spike cortisol further. Your cells require gentle, 10-minute daily somatic micro-movements to soothe the vagus nerve and flatten your midsection naturally.",
+        bullets: [
+          "10-Minute Daily Somatic Micro-Movements to release visceral abdominal tension",
+          "Vagus Nerve & Parasympathetic Acoustic Reset Audios for deep sleep",
+          "Cortisol-Balancing Nutrition & Evening Decompression Framework",
+          "Instant access on iPhone, iPad, Android & PC (No apps to download)"
+        ],
+        affiliate: {
+          name: "CleanseSana™ Biofilm & Deep Drainage Botanical Complex",
+          desc: "Pair your daily somatic micro-movements with this clinical herbal tincture to dissolve trapped intestinal biofilms and accelerate liver drainage pathways.",
+          link: "https://dailyhealthreviewus.com/go/cleansesana"
+        }
+      },
+      cleanse: {
+        id: "prod_BJBAi0mN2mxkX",
+        title: "The 14-Day Herbal Parasite Cleanse & Lymphatic Decongestion Blueprint™",
+        image: "https://dailyhealthreviewus.com/images/claire_blueprint.jpg",
+        checkoutUrl: "https://whop.com/checkout/plan_1jcKUJYSZyL0k",
+        bridgeUrl: "https://dailyhealthreviewus.com/cleanse",
+        diagnosis: "Your assessment highlights accumulated digestive biofilms and sluggish lymphatic drainage. When microscopic organisms set up residence in the gut lining, they produce sticky protective shields that trap waste, spark intense evening sugar cravings, and cause afternoon abdominal distention. Claire's 'Drainage First' protocol opens your liver and lymphatic pathways safely before gently dissolving biofilms with ancient botanicals.",
+        bullets: [
+          "The 'Drainage First' 14-Day Protocol: Zero detox headaches or crashes",
+          "Green Black Walnut, Wormwood & Fresh Clove botanical timing matrix",
+          "Transdermal Castor Oil Compress & Lymphatic Pump Video Routines",
+          "Interactive Cleanse Web App with daily tincture trackers & symptom logs"
+        ],
+        affiliate: {
+          name: "CleanseSana™ Clinical Colon & Biofilm Flush",
+          desc: "Claire's physician-formulated botanical partner to amplify the elimination of dormant intestinal waste and heavy metals naturally.",
+          link: "https://dailyhealthreviewus.com/go/cleansesana"
+        }
+      },
+      skin: {
+        id: "prod_q7xs0KDHABai4",
+        title: "The 28-Day Anti-Aging Cell Renewal Protocol™",
+        image: "https://dailyhealthreviewus.com/images/claire_blueprint.jpg",
+        checkoutUrl: "https://whop.com/checkout/plan_KjhczhHJw9Syv",
+        bridgeUrl: "https://dailyhealthreviewus.com/protocol",
+        diagnosis: "Your answers point toward sluggish dermal turnover and cellular glycation. After 40, natural skin turnover slows from 28 days to over 50 days, allowing dead, oxidized cells to accumulate while dermal collagen matrices thin out. Claire's cellular renewal protocol accelerates cellular turnover from within, restoring firmness along the jawline, brightening skin tone, and deeply nourishing the extracellular matrix without invasive procedures.",
+        bullets: [
+          "28-Day Step-by-Step Cellular Skin Turnover Framework",
+          "Nutritional Autophagy & Collagen Synthesis Kitchen Recipes",
+          "Interactive Daily App Hub + High-Res Printable Book",
+          "Audio Companion Guides with Claire Evans"
+        ],
+        affiliate: {
+          name: "Neotonics™ Gut-Skin Microbiome Gummies",
+          desc: "Targeted postbiotic and botanical gummies that support dermal cell turnover through the gut-skin axis. Over 500 million beneficial cultures in every serving.",
+          link: "https://dailyhealthreviewus.com/go/neotonics"
+        }
+      },
+      heart: {
+        id: "prod_bOHgJftyH7gRE",
+        title: "The 9-Minute Arterial Elasticity & Natural Blood Pressure Protocol™",
+        image: "https://dailyhealthreviewus.com/images/claire_blueprint.jpg",
+        checkoutUrl: "https://whop.com/checkout/plan_TplaHGlAQH4BO",
+        bridgeUrl: "https://dailyhealthreviewus.com/heart",
+        diagnosis: "Your responses reveal elevated vascular tension and impaired endothelial Nitric Oxide production. Over decades of stress and shallow breathing, blood vessels lose their soft elasticity and stiffen like rigid pipes, causing pressure numbers to climb. Claire's 9-minute acoustic cardiac resonance breathing rhythm stimulates immediate endothelial vasodilation to soften blood vessels and restore natural vascular pliability safely.",
+        bullets: [
+          "9-Minute Guided Vasodilation Pacer: Visual & acoustic 0.1 Hz breathing orb",
+          "Interactive Digital Blood Pressure Tracker with color-coded feedback",
+          "Nitric Oxide Kitchen Pharmacy: Clinical hibiscus calyx & electrolyte guide",
+          "Deluxe 28-Day Printable Doctor Tracking Chart"
+        ],
+        affiliate: {
+          name: "CoreVital Burn™ Physician-Formulated Botanical Complex",
+          desc: "Co-founded by Dr. Samir Bute, MD. Features 500mg pure Berberine HCl, Milk Thistle, and Ceylon Cinnamon to optimize vascular flexibility and metabolic health.",
+          link: "https://dailyhealthreviewus.com/go/corevital"
+        }
+      },
+      arteries: {
+        id: "prod_41bmPxUTWMZl4",
+        title: "The 28-Day Clean Arteries & Endothelial Restoration Protocol™",
+        image: "https://dailyhealthreviewus.com/images/claire_blueprint.jpg",
+        checkoutUrl: "https://whop.com/checkout/plan_R3KhepBcIF5ue",
+        bridgeUrl: "https://dailyhealthreviewus.com/arteries",
+        diagnosis: "Your evaluation indicates your vascular glycocalyx shield needs protective rejuvenation. Cholesterol is not grease clogging pipes—it is an emergency patch over micro-tears in inflamed arterial walls where wandering calcium hardens into brittle plaque. Claire's 28-day protocol combines high-polyphenol clinical foods with Vitamin K2 nutritional science to redirect calcium away from soft arterial tissues and lock it safely back into bones.",
+        bullets: [
+          "28-Day Master Vascular Protocol: Daily clinical polyphenol nutrition",
+          "Vitamin K2 Calcium Traffic Matrix: Nutritional arterial decalcification",
+          "7 Arterial Repair Botanicals Guide: Wild olive leaf, aged garlic & hawthorn",
+          "Interactive Calendar App + High-Resolution Printable Kitchen Edition"
+        ],
+        affiliate: {
+          name: "CoreVital Burn™ Cardiovascular & Metabolic Support",
+          desc: "Physician-co-founded with Dr. Samir Bute, MD. Supports clean blood vessels, healthy lipid ratios, and cellular vitality with 5 clean botanicals.",
+          link: "https://dailyhealthreviewus.com/go/corevital"
+        }
+      },
+      apothecary: {
+        id: "prod_AJ4fYQOAnoRAK",
+        title: "The Home Apothecary & Forgotten Botanical Remedies Bible™",
+        image: "https://dailyhealthreviewus.com/images/claire_blueprint.jpg",
+        checkoutUrl: "https://whop.com/checkout/plan_TQUatv6T9pQQU",
+        bridgeUrl: "https://dailyhealthreviewus.com/apothecary",
+        diagnosis: "Your answers show a strong desire for natural, non-toxic cellular independence. Rather than relying on harsh synthetic drugstore chemicals that irritate the liver and gut lining, you are ready to harness the forgotten wisdom of master herbalism. This comprehensive guide turns your kitchen into a healing apothecary with over 120 time-tested tinctures, salves, and tonics.",
+        bullets: [
+          "Over 120 Forgotten Botanical Formulas & Tincture Masterclasses",
+          "Searchable Interactive Apothecary Web App for instant ailment lookup",
+          "Deluxe 200+ Page Printable Collector's Edition with full-color illustrations",
+          "Lifelong digital access with zero recurring subscriptions"
+        ],
+        affiliate: {
+          name: "ProDentim™ Advanced Oral Microbiome Chewables",
+          desc: "3.5 billion beneficial probiotic strains that repopulate healthy mouth flora, support gum strength, and whiten teeth naturally without harsh toothpastes.",
+          link: "https://dailyhealthreviewus.com/go/prodentim"
+        }
+      }
+    };
+
+    // STATE VARIABLES
+    let currentQuestionIndex = 0;
+    let scores = {
+      somatic: 0,
+      cleanse: 0,
+      skin: 0,
+      heart: 0,
+      arteries: 0,
+      apothecary: 0
+    };
+
+    // RENDER QUESTION
+    function renderQuestion(index) {
+      const q = questions[index];
+      
+      // Update Progress
+      const percent = Math.round(((index + 1) / questions.length) * 100);
+      document.getElementById('step-counter').textContent = `Question ${index + 1} of ${questions.length}`;
+      document.getElementById('step-percent').textContent = `${percent}% Complete`;
+      document.getElementById('progress-bar').style.width = `${percent}%`;
+
+      // Update Texts
+      document.getElementById('question-title').textContent = q.title;
+      document.getElementById('question-subtitle').textContent = q.subtitle;
+
+      // Render Options
+      const container = document.getElementById('options-container');
+      container.innerHTML = '';
+
+      q.options.forEach((opt, optIdx) => {
+        const btn = document.createElement('button');
+        btn.className = "w-full text-left p-4 rounded-2xl border border-sand/90 bg-linen/50 option-card flex items-start space-x-3.5 group cursor-pointer";
+        btn.onclick = () => selectOption(opt.category, q);
+
+        btn.innerHTML = `
+          <div class="w-6 h-6 rounded-full border border-sand bg-white text-charcoal font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:border-terracotta group-hover:bg-terracotta group-hover:text-white transition-colors">
+            ${String.fromCharCode(65 + optIdx)}
+          </div>
+          <div class="flex-grow">
+            <span class="block text-sm font-bold text-charcoal leading-snug group-hover:text-terracotta transition-colors">${opt.label}</span>
+            <span class="block text-xs text-warmGray mt-0.5">${opt.desc}</span>
+          </div>
+        `;
+        container.appendChild(btn);
+      });
+    }
+
+    // HANDLE OPTION CLICK
+    function selectOption(category, q) {
+      if (scores[category] !== undefined) {
+        scores[category] += 2;
+      }
+
+      // Check if question has an interlude
+      if (q.hasInterlude) {
+        showInterlude(q.interludeData);
+      } else {
+        advanceQuestion();
+      }
+    }
+
+    function showInterlude(data) {
+      document.getElementById('quiz-view').classList.add('hidden');
+      document.getElementById('progress-container').classList.add('hidden');
+      
+      const interludeView = document.getElementById('interlude-view');
+      document.getElementById('interlude-title').textContent = data.title;
+      document.getElementById('interlude-text').textContent = data.text;
+      
+      interludeView.classList.remove('hidden');
+    }
+
+    function nextAfterInterlude() {
+      document.getElementById('interlude-view').classList.add('hidden');
+      document.getElementById('progress-container').classList.remove('hidden');
+      document.getElementById('quiz-view').classList.remove('hidden');
+      advanceQuestion();
+    }
+
+    function advanceQuestion() {
+      currentQuestionIndex++;
+      if (currentQuestionIndex < questions.length) {
+        renderQuestion(currentQuestionIndex);
+      } else {
+        startCalculating();
+      }
+    }
+
+    // SIMULATE SCIENTIFIC AI CALCULATION
+    function startCalculating() {
+      document.getElementById('quiz-view').classList.add('hidden');
+      document.getElementById('progress-container').classList.add('hidden');
+      document.getElementById('calculating-view').classList.remove('hidden');
+
+      const steps = [
+        { text: "Analyzing cellular stress indicators...", sub: "Evaluating cortisol and visceral adrenaline pathways.", width: "35%" },
+        { text: "Cross-referencing metabolic curves...", sub: "Comparing midlife hormonal biomarkers with clinical datasets.", width: "70%" },
+        { text: "Calibrating your customized Claire Evans protocol...", sub: "Matching root-cause botanicals and restorative micro-movements.", width: "100%" }
+      ];
+
+      let stepIdx = 0;
+      const interval = setInterval(() => {
+        stepIdx++;
+        if (stepIdx < steps.length) {
+          document.getElementById('calc-step-text').textContent = steps[stepIdx].text;
+          document.getElementById('calc-sub-text').textContent = steps[stepIdx].sub;
+          document.getElementById('calc-bar').style.width = steps[stepIdx].width;
+        } else {
+          clearInterval(interval);
+          setTimeout(showResults, 800);
+        }
+      }, 1400);
+    }
+
+    // SHOW FINAL DIAGNOSIS & PAYWALL
+    function showResults() {
+      document.getElementById('calculating-view').classList.add('hidden');
+      document.getElementById('results-view').classList.remove('hidden');
+
+      // Determine winning category
+      let highestCategory = "somatic";
+      let highestScore = -1;
+      for (const [cat, score] of Object.entries(scores)) {
+        if (score > highestScore) {
+          highestScore = score;
+          highestCategory = cat;
+        }
+      }
+
+      // Fallback
+      if (!productCatalog[highestCategory]) {
+        highestCategory = "somatic";
+      }
+
+      const prod = productCatalog[highestCategory];
+
+      // Update Diagnosis Text
+      document.getElementById('diagnosis-text').textContent = prod.diagnosis;
+
+      // Update Primary Offer
+      document.getElementById('hero-prod-title').textContent = prod.title;
+      document.getElementById('hero-checkout-btn').href = prod.checkoutUrl;
+
+      // Bullets
+      const bulletList = document.getElementById('hero-prod-bullets');
+      bulletList.innerHTML = '';
+      prod.bullets.forEach(b => {
+        const li = document.createElement('li');
+        li.className = "flex items-start space-x-2";
+        li.innerHTML = `<span class="text-terracotta font-bold flex-shrink-0 mt-0.5">✓</span><span>${b}</span>`;
+        bulletList.appendChild(li);
+      });
+
+      // Update Affiliate Pairing
+      if (prod.affiliate) {
+        document.getElementById('affiliate-title').textContent = prod.affiliate.name;
+        document.getElementById('affiliate-desc').textContent = prod.affiliate.desc;
+        document.getElementById('affiliate-link-btn').href = prod.affiliate.link;
+        document.getElementById('affiliate-box').classList.remove('hidden');
+      } else {
+        document.getElementById('affiliate-box').classList.add('hidden');
+      }
+
+      // Scroll to top of results
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // START ON LOAD
+    window.addEventListener('DOMContentLoaded', () => {
+      renderQuestion(0);
+    });
+  </script>
+</body>
+</html>
