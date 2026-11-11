@@ -250,7 +250,7 @@
             </button>
             <div class="flex items-center space-x-1.5 text-stone-500 font-medium text-[11px]">
               <span id="interlude-counter" class="bg-white/80 px-2.5 py-0.5 rounded-full border border-sand/70">Story 1 of 15</span>
-              <span class="text-emerald-600 font-semibold">• Auto-rotating</span>
+              <span id="interlude-status" class="text-emerald-600 font-semibold">• Rotação Automática</span>
             </div>
             <button type="button" onclick="nextTestimonial()" class="px-2.5 py-1 bg-white hover:bg-sand/60 text-stone-600 rounded-full border border-sand transition-all cursor-pointer font-bold" aria-label="Next review">
               ›
@@ -2260,27 +2260,23 @@
         const cleanQuote = item.quote.replace(/^[\"“”']+|[\"“”']+$/g, '').trim();
         setSafeText('interlude-quote', `"${cleanQuote}"`);
 
-        // Counter text localization
+        // Counter & Status text localization (100% Pure Language Separation)
         const counterEl = document.getElementById('interlude-counter');
-        if (counterEl) {
-          if (currentLang === 'pt') {
-            counterEl.textContent = `Depoimento ${interludeCurrentIndex + 1} de ${pool.length}`;
-          } else if (currentLang === 'es') {
-            counterEl.textContent = `Historia ${interludeCurrentIndex + 1} de ${pool.length}`;
-          } else {
-            counterEl.textContent = `Story ${interludeCurrentIndex + 1} of ${pool.length}`;
-          }
-        }
-
+        const statusEl = document.getElementById('interlude-status');
         const badgeEl = document.getElementById('interlude-badge');
-        if (badgeEl) {
-          if (currentLang === 'pt') {
-            badgeEl.textContent = `✓ ${pool.length} Histórias Verificadas`;
-          } else if (currentLang === 'es') {
-            badgeEl.textContent = `✓ ${pool.length} Historias Verificadas`;
-          } else {
-            badgeEl.textContent = `✓ ${pool.length} Verified Stories`;
-          }
+
+        if (currentLang === 'pt') {
+          if (counterEl) counterEl.textContent = `Depoimento ${interludeCurrentIndex + 1} de ${pool.length}`;
+          if (statusEl) statusEl.textContent = '• Rotação Automática';
+          if (badgeEl) badgeEl.textContent = `✓ ${pool.length} Histórias Verificadas`;
+        } else if (currentLang === 'es') {
+          if (counterEl) counterEl.textContent = `Historia ${interludeCurrentIndex + 1} de ${pool.length}`;
+          if (statusEl) statusEl.textContent = '• Rotación Automática';
+          if (badgeEl) badgeEl.textContent = `✓ ${pool.length} Historias Verificadas`;
+        } else {
+          if (counterEl) counterEl.textContent = `Story ${interludeCurrentIndex + 1} of ${pool.length}`;
+          if (statusEl) statusEl.textContent = '• Auto-rotating';
+          if (badgeEl) badgeEl.textContent = `✓ ${pool.length} Verified Stories`;
         }
 
         if (card) card.style.opacity = '1';
