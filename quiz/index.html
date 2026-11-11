@@ -102,14 +102,14 @@
         </div>
         <div>
           <span class="block text-xs uppercase tracking-widest font-bold text-terracotta group-hover:text-charcoal transition-colors">THE AGELESS ROUTINE™</span>
-          <span id="ui-role" class="block text-[11px] text-warmGray">by Claire Evans • Cellular Longevity Mentor</span>
+          <span id="ui-role" class="block text-xs text-stone-600">by Claire Evans • Cellular Longevity Mentor</span>
         </div>
       </a>
 
       <!-- Controls: Badge + Language Switcher -->
       <div class="flex items-center space-x-2">
         <!-- Language Switcher Pills -->
-        <div class="flex items-center p-0.5 bg-sand/70 rounded-full border border-sand text-[11px]">
+        <div class="flex items-center p-0.5 bg-sand/70 rounded-full border border-sand text-xs">
           <button onclick="setLanguage('en')" id="btn-lang-en" class="lang-btn px-2 py-0.5 rounded-full transition-all text-warmGray hover:text-charcoal" title="English">
             🇺🇸 EN
           </button>
@@ -147,7 +147,7 @@
       
       <!-- PROGRESS BAR CONTAINER -->
       <div id="progress-container" class="mb-6">
-        <div class="flex justify-between items-center text-xs font-medium text-warmGray mb-2">
+        <div class="flex justify-between items-center text-xs sm:text-sm font-medium text-stone-600 mb-2">
           <span id="step-counter" class="uppercase tracking-wider">Question 1 of 10</span>
           <span id="step-percent" class="font-bold text-terracotta">10% Complete</span>
         </div>
@@ -164,16 +164,16 @@
           <div>
             <div class="flex items-center space-x-1.5">
               <span class="text-xs font-bold text-charcoal">Claire Evans</span>
-              <span id="ui-claire-mentor-badge" class="text-[10px] text-terracotta bg-terracotta/10 px-1.5 py-0.5 rounded-full font-semibold">51 & Glowing</span>
+              <span id="ui-claire-mentor-badge" class="text-xs text-terracotta bg-terracotta/10 px-2 py-0.5 rounded-full font-semibold">51 & Glowing</span>
             </div>
-            <p id="ui-claire-intro" class="text-[11px] text-warmGray leading-tight mt-0.5">"Answer instinctively. Let's find what your body needs to thrive."</p>
+            <p id="ui-claire-intro" class="text-xs sm:text-sm text-stone-600 leading-normal mt-0.5">"Answer instinctively. Let's find what your body needs to thrive."</p>
           </div>
         </div>
 
         <h2 id="question-title" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal leading-tight mb-2">
           Loading assessment...
         </h2>
-        <p id="question-subtitle" class="text-xs sm:text-sm text-warmGray mb-6">
+        <p id="question-subtitle" class="text-sm sm:text-[15px] text-stone-600 mb-6 leading-relaxed">
           Select the option that best describes your daily experience.
         </p>
 
@@ -191,7 +191,7 @@
         <h3 id="interlude-title" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal mb-3">
           You are not alone in this.
         </h3>
-        <p id="interlude-text" class="text-sm text-warmGray leading-relaxed max-w-md mx-auto mb-6">
+        <p id="interlude-text" class="text-sm sm:text-base text-stone-700 leading-relaxed max-w-md mx-auto mb-6">
           Over 84% of women over 40 produce elevated resting cortisol without realizing it.
         </p>
         <div class="p-4 bg-linen rounded-2xl border border-sand/80 text-left mb-6 max-w-md mx-auto">
@@ -200,11 +200,11 @@
               BK
             </div>
             <div>
-              <p id="interlude-author" class="text-xs font-bold text-charcoal">Brenda K., 53 • Verified Member</p>
-              <div class="text-[11px] text-amber-500">★★★★★</div>
+              <p id="interlude-author" class="text-sm font-bold text-charcoal">Brenda K., 53 • Verified Member</p>
+              <div class="text-xs text-amber-500">★★★★★</div>
             </div>
           </div>
-          <p id="interlude-quote" class="text-xs text-warmGray italic">"Understanding that my 3 PM bloat was cortisol—not carbs—changed everything."</p>
+          <p id="interlude-quote" class="text-sm text-stone-700 italic leading-relaxed">"Understanding that my 3 PM bloat was cortisol—not carbs—changed everything."</p>
         </div>
         <button id="interlude-btn" onclick="nextAfterInterlude()" class="w-full sm:w-auto px-8 py-3.5 bg-terracotta hover:bg-terracottaDark text-white font-medium rounded-full shadow-lg shadow-terracotta/25 transition-all text-sm tracking-wide">
           Continue Assessment →
@@ -216,7 +216,7 @@
         <div class="w-full max-w-sm mx-auto h-36 sm:h-44 rounded-2xl overflow-hidden mb-5 border border-sand/90 shadow-md relative">
           <img src="/quiz/images/Cellular_Regeneration_Metabolic_Vitality_4x3.webp" alt="Cellular Regeneration AI Assessment" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-transparent to-transparent flex items-end justify-center p-3">
-            <span class="text-[11px] font-semibold text-amber-200 uppercase tracking-widest flex items-center space-x-2">
+            <span class="text-xs font-semibold text-amber-200 uppercase tracking-widest flex items-center space-x-2">
               <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
               <span id="ui-calc-scan-badge">Scanning Cellular Vitality</span>
             </span>
@@ -225,7 +225,7 @@
         <h3 id="calc-step-text" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal mb-2">
           Analyzing your cellular indicators...
         </h3>
-        <p id="calc-sub-text" class="text-xs sm:text-sm text-warmGray max-w-xs mx-auto mb-6">
+        <p id="calc-sub-text" class="text-sm text-stone-600 max-w-xs mx-auto mb-6">
           Cross-referencing metabolic stress curves with midlife hormonal patterns.
         </p>
         <div class="w-48 h-1.5 bg-sand rounded-full mx-auto overflow-hidden">
@@ -251,12 +251,12 @@
           <img src="/quiz/images/Cellular_Regeneration_Metabolic_Vitality_4x3.webp" alt="Cellular Vitality Profile" class="w-full h-full object-cover">
           <div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-transparent flex items-end justify-between p-4 text-white">
             <div>
-              <span id="ui-map-label" class="text-[10px] uppercase font-bold tracking-widest text-amber-300">Personalized Vitality Map</span>
-              <p id="ui-map-title" class="text-xs sm:text-sm font-medium">Personalized Wellness & Recovery Score</p>
+              <span id="ui-map-label" class="text-xs uppercase font-bold tracking-widest text-amber-300">Personalized Vitality Map</span>
+              <p id="ui-map-title" class="text-sm sm:text-base font-semibold">Personalized Wellness & Recovery Score</p>
             </div>
             <div class="text-right">
-              <span id="ui-map-audit" class="text-[10px] text-stone-300">Personalized by AI</span>
-              <p id="ui-map-status" class="text-xs font-bold text-emerald-400">Calculated ✓</p>
+              <span id="ui-map-audit" class="text-xs text-stone-300">Personalized by AI</span>
+              <p id="ui-map-status" class="text-xs sm:text-sm font-bold text-emerald-400">Calculated ✓</p>
             </div>
           </div>
         </div>
@@ -264,15 +264,15 @@
         <!-- HEALTH SCORE METERS -->
         <div class="bg-linen rounded-2xl p-4 sm:p-5 border border-sand/90 mb-6">
           <div class="flex items-center justify-between mb-3">
-            <span id="ui-res-stress-title" class="text-xs font-bold uppercase tracking-wider text-charcoal">Cellular Stress Profile</span>
-            <span id="score-badge" class="px-2.5 py-0.5 bg-terracotta/15 text-terracotta font-bold text-xs rounded-full">Elevated Cortisol & Biofilm Load</span>
+            <span id="ui-res-stress-title" class="text-xs sm:text-sm font-bold uppercase tracking-wider text-charcoal">Cellular Stress Profile</span>
+            <span id="score-badge" class="px-3 py-1 bg-terracotta/15 text-terracotta font-bold text-xs sm:text-sm rounded-full">Elevated Cortisol & Biofilm Load</span>
           </div>
 
           <!-- Meters List -->
           <div class="space-y-3">
             <div>
-              <div class="flex justify-between text-xs mb-1">
-                <span id="ui-meter-cortisol-label" class="text-warmGray">Stress & Cortisol Rhythm</span>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-cortisol-label" class="text-stone-700">Stress & Cortisol Rhythm</span>
                 <span id="meter-cortisol-val" class="font-bold text-charcoal">84%</span>
               </div>
               <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
@@ -281,8 +281,8 @@
             </div>
 
             <div>
-              <div class="flex justify-between text-xs mb-1">
-                <span id="ui-meter-gut-label" class="text-warmGray">Digestive Balance & Comfort</span>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-gut-label" class="text-stone-700">Digestive Balance & Comfort</span>
                 <span id="meter-gut-val" class="font-bold text-charcoal">76%</span>
               </div>
               <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
@@ -291,8 +291,8 @@
             </div>
 
             <div>
-              <div class="flex justify-between text-xs mb-1">
-                <span id="ui-meter-heart-label" class="text-warmGray">Circulatory Vitality & Rhythm</span>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-heart-label" class="text-stone-700">Circulatory Vitality & Rhythm</span>
                 <span id="meter-heart-val" class="font-bold text-charcoal">68%</span>
               </div>
               <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
@@ -301,8 +301,8 @@
             </div>
 
             <div>
-              <div class="flex justify-between text-xs mb-1">
-                <span id="ui-meter-skin-label" class="text-warmGray">Skin Radiance & Collagen Turnover</span>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-skin-label" class="text-stone-700">Skin Radiance & Collagen Turnover</span>
                 <span id="meter-skin-val" class="font-bold text-charcoal">62%</span>
               </div>
               <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
@@ -317,18 +317,18 @@
           <div class="flex items-center space-x-3 mb-2.5">
             <img src="/quiz/images/Claire_Evans_Official_Kitchen_Portrait_4x3.webp" alt="Claire Evans" class="w-11 h-11 rounded-full object-cover border border-amber-200/60 shadow-sm flex-shrink-0">
             <div>
-              <h4 id="ui-claire-takeaway" class="text-sm font-bold text-charcoal">Claire's Personalized Assessment:</h4>
-              <p id="ui-claire-subrole" class="text-[11px] text-warmGray">Cellular Longevity & Mature Skin Mentor</p>
+              <h4 id="ui-claire-takeaway" class="text-base font-bold text-charcoal">Claire's Personalized Assessment:</h4>
+              <p id="ui-claire-subrole" class="text-xs text-stone-500">Cellular Longevity & Mature Skin Mentor</p>
             </div>
           </div>
-          <p id="diagnosis-text" class="text-xs sm:text-sm text-warmGray leading-relaxed">
+          <p id="diagnosis-text" class="text-sm sm:text-[15px] text-stone-700 leading-relaxed font-normal">
             Your responses indicate that your nervous system is trapped in low-grade fight-or-flight...
           </p>
         </div>
 
         <!-- PRIMARY HERO OFFER ($27 PROPRIETARY PROTOCOL) -->
         <div class="border-2 border-terracotta/40 rounded-3xl p-5 sm:p-6 bg-gradient-to-b from-white to-amber-50/30 relative shadow-lg shadow-terracotta/10 mb-6">
-          <div id="ui-foundation-badge" class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-0.5 bg-terracotta text-white font-bold text-[10px] sm:text-xs uppercase tracking-widest rounded-full shadow-sm whitespace-nowrap">
+          <div id="ui-foundation-badge" class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-terracotta text-white font-bold text-xs uppercase tracking-widest rounded-full shadow-sm whitespace-nowrap">
             YOUR RECOMMENDED FOUNDATION
           </div>
 
@@ -337,24 +337,24 @@
               <img id="hero-prod-img" src="https://assets-2-prod.whop.com/public/uploads/2026-11-06/ce574bd1-7a0d-4d05-8a09-f2f18bab47eb/image.png" alt="Protocol Cover" class="w-full h-full object-cover">
             </div>
             <div>
-              <span id="hero-exp-badge" class="text-[10px] font-bold uppercase tracking-wider text-terracotta">Guided VIP Experience</span>
+              <span id="hero-exp-badge" class="text-xs font-bold uppercase tracking-wider text-terracotta">Guided VIP Experience</span>
               <h3 id="hero-prod-title" class="cormorant text-xl sm:text-2xl font-bold text-charcoal leading-tight">
                 The 21-Day Somatic Nervous System & Cortisol Belly Reset™
               </h3>
-              <p id="hero-prod-subtitle" class="text-xs text-warmGray mt-0.5">Interactive Web App + Deluxe Printable Book + Audio Guides</p>
+              <p id="hero-prod-subtitle" class="text-xs sm:text-sm text-stone-500 mt-0.5">Interactive Web App + Deluxe Printable Book + Audio Guides</p>
             </div>
           </div>
 
           <!-- Feature Bullets -->
-          <ul id="hero-prod-bullets" class="space-y-1.5 text-xs text-charcoal mb-5">
+          <ul id="hero-prod-bullets" class="space-y-2 text-sm text-stone-800 mb-5">
             <!-- Injected -->
           </ul>
 
           <!-- Pricing & Button -->
           <div class="flex flex-col sm:flex-row items-center justify-between pt-3 border-t border-sand/80 gap-3">
             <div class="text-center sm:text-left">
-              <span id="ui-regular-price" class="block text-[11px] text-warmGray line-through">Regular Price: $197</span>
-              <span class="text-2xl font-bold text-charcoal">$27.00 <span id="ui-onetime-label" class="text-xs font-normal text-warmGray">One-Time</span></span>
+              <span id="ui-regular-price" class="block text-xs text-stone-500 line-through">Regular Price: $197</span>
+              <span class="text-2xl font-bold text-charcoal">$27.00 <span id="ui-onetime-label" class="text-xs font-normal text-stone-500">One-Time</span></span>
             </div>
             <a id="hero-checkout-btn" href="#" target="_blank" class="w-full sm:w-auto px-6 py-3.5 bg-terracotta hover:bg-terracottaDark text-white font-bold text-sm rounded-full shadow-lg shadow-terracotta/25 transition-all text-center">
               Claim VIP Access ($27) →
@@ -365,24 +365,24 @@
         <!-- AFFILIATE BOTANICAL PAIRING BOX -->
         <div id="affiliate-box" class="bg-linen rounded-2xl p-5 border border-sand/90 mb-6">
           <div class="flex items-center justify-between mb-2">
-            <span id="ui-pairing-badge" class="text-[10px] font-bold uppercase tracking-widest text-olive bg-olive/10 px-2 py-0.5 rounded-full">CLAIRE'S BOTANICAL PAIRING</span>
-            <span id="ui-physician-label" class="text-[10px] text-warmGray">Physician-Formulated</span>
+            <span id="ui-pairing-badge" class="text-xs font-bold uppercase tracking-widest text-olive bg-olive/10 px-2.5 py-0.5 rounded-full">CLAIRE'S BOTANICAL PAIRING</span>
+            <span id="ui-physician-label" class="text-xs text-stone-500">Physician-Formulated</span>
           </div>
 
           <h4 id="affiliate-title" class="cormorant text-xl font-bold text-charcoal leading-snug mb-1">
             CleanseSana™ Biofilm & Deep Drainage Botanical Complex
           </h4>
-          <p id="affiliate-desc" class="text-xs text-warmGray leading-relaxed mb-3">
+          <p id="affiliate-desc" class="text-sm text-stone-600 leading-relaxed mb-3">
             Pair your daily somatic movements with this physician-formulated botanical blend to accelerate the breakdown of stored gut biofilms and support natural liver drainage pathways.
           </p>
 
-          <a id="affiliate-link-btn" href="#" target="_blank" class="inline-flex items-center space-x-1.5 text-xs font-bold text-terracotta hover:text-terracottaDark">
+          <a id="affiliate-link-btn" href="#" target="_blank" class="inline-flex items-center space-x-1.5 text-sm font-bold text-terracotta hover:text-terracottaDark">
             <span id="ui-explore-pairing">Explore Claire's Official Pairing</span>
             <span>→</span>
           </a>
 
           <!-- FTC Affiliate Disclosure -->
-          <p id="ui-ftc-disclosure" class="text-[10px] text-warmGray/70 mt-3 pt-2 border-t border-sand/60 italic">
+          <p id="ui-ftc-disclosure" class="text-xs text-stone-500/80 mt-3 pt-2 border-t border-sand/60 italic leading-relaxed">
             Affiliate Disclosure: If you choose to purchase this recommended pairing through our link, Daily Health Review may earn a small commission at no additional cost to you. We only recommend rigorously vetted formulations.
           </p>
         </div>
@@ -390,33 +390,33 @@
         <!-- EXPLORE COMPLETE PROTOCOL CATALOG (ALL 6 PRODUCTS) -->
         <div class="border-t border-sand pt-5">
           <h4 id="ui-catalog-title" class="cormorant text-xl font-bold text-charcoal text-center mb-1">Explore Claire’s Complete VIP Library</h4>
-          <p id="ui-catalog-sub" class="text-xs text-warmGray text-center mb-4">Each comprehensive wellness protocol is just $27 (one-time payment)</p>
+          <p id="ui-catalog-sub" class="text-xs sm:text-sm text-stone-500 text-center mb-4">Each comprehensive wellness protocol is just $27 (one-time payment)</p>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-left text-xs mb-4">
             <a href="https://dailyhealthreviewus.com/protocol" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
               <span id="ui-cat-title-1" class="font-bold text-charcoal block">🧬 28-Day Cell Renewal</span>
-              <span id="ui-cat-desc-1" class="text-[10px] text-warmGray">Skin, collagen & vitality</span>
+              <span id="ui-cat-desc-1" class="text-xs text-stone-500">Skin, collagen & vitality</span>
             </a>
             <a href="https://dailyhealthreviewus.com/apothecary" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
               <span id="ui-cat-title-2" class="font-bold text-charcoal block">🌿 Home Apothecary Bible</span>
-              <span id="ui-cat-desc-2" class="text-[10px] text-warmGray">Forgotten natural remedies</span>
+              <span id="ui-cat-desc-2" class="text-xs text-stone-500">Forgotten natural remedies</span>
             </a>
             <a href="https://dailyhealthreviewus.com/cleanse" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
               <span id="ui-cat-title-3" class="font-bold text-charcoal block">🫖 14-Day Parasite Cleanse</span>
-              <span id="ui-cat-desc-3" class="text-[10px] text-warmGray">Lymphatic & biofilm flush</span>
+              <span id="ui-cat-desc-3" class="text-xs text-stone-500">Lymphatic & biofilm flush</span>
             </a>
             <a href="https://dailyhealthreviewus.com/heart" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
               <span id="ui-cat-title-4" class="font-bold text-charcoal block">🫀 9-Minute Arterial Reset</span>
-              <span id="ui-cat-desc-4" class="text-[10px] text-warmGray">Natural blood pressure care</span>
+              <span id="ui-cat-desc-4" class="text-xs text-stone-500">Natural blood pressure care</span>
             </a>
             <a href="https://dailyhealthreviewus.com/arteries" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block sm:col-span-2">
               <span id="ui-cat-title-5" class="font-bold text-charcoal block">❤️ 28-Day Clean Arteries Protocol</span>
-              <span id="ui-cat-desc-5" class="text-[10px] text-warmGray">Plaque defense, endothelial glycocalyx & Vitamin K2 calcium redirection</span>
+              <span id="ui-cat-desc-5" class="text-xs text-stone-500">Plaque defense, endothelial glycocalyx & Vitamin K2 calcium redirection</span>
             </a>
           </div>
 
           <div class="text-center">
-            <a id="ui-view-storefront" href="https://whop.com/dailyhealthreviewus" target="_blank" class="inline-block text-xs font-bold text-terracotta hover:underline">
+            <a id="ui-view-storefront" href="https://whop.com/dailyhealthreviewus" target="_blank" class="inline-block text-sm font-bold text-terracotta hover:underline">
               View All 6 Protocols in Claire's Official Whop Storefront →
             </a>
           </div>
@@ -440,13 +440,13 @@
   </div>
 
   <!-- FOOTER -->
-  <footer class="w-full text-center py-6 px-4 text-[11px] text-warmGray border-t border-sand/80 bg-white/50">
+  <footer class="w-full text-center py-6 px-4 text-xs sm:text-sm text-stone-500 border-t border-sand/80 bg-white/50">
     <div class="max-w-2xl mx-auto space-y-2">
       <p id="ui-footer-copy">© 2026 Daily Health Review US • Claire Evans Official Coaching & Wellness.</p>
-      <p id="ui-footer-med" class="max-w-lg mx-auto text-[10px] text-warmGray/80 leading-relaxed">
+      <p id="ui-footer-med" class="max-w-lg mx-auto text-xs text-stone-500/90 leading-relaxed">
         Medical Disclaimer: The statements and protocols presented on this website have not been evaluated by the Food and Drug Administration. These materials are intended for educational and wellness guidance only and are not a substitute for professional medical diagnosis or treatment. Always consult your physician.
       </p>
-      <div class="flex justify-center space-x-4 text-[11px] text-terracotta pt-1">
+      <div class="flex justify-center space-x-4 text-xs sm:text-sm text-terracotta pt-1">
         <a id="ui-footer-privacy" href="/privacy" class="hover:underline">Privacy Policy</a>
         <span>•</span>
         <a id="ui-footer-terms" href="/terms" class="hover:underline">Terms of Service</a>
