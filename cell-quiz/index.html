@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BE7PQXFY9F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-BE7PQXFY9F');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Claire Evans • 60-Second Cellular Vitality & Dermal-Gut Assessment</title>
-  <meta name="description" content="Discover your 28-day cellular renewal profile. Eliminate midlife bloat, support collagen turnover, and balance your gut-skin axis with Claire Evans (age 51).">
-  <link rel="icon" type="image/png" href="images/the_ageless_routine_badge_square.png">
-  <link rel="apple-touch-icon" href="images/the_ageless_routine_badge_square.png">
+  <title>Claire Evans • 60-Second Cell Renewal & Gut-Skin Audit</title>
+  <meta name="description" content="Discover what your body needs after 40 to release midlife visceral tension, soothe cortisol spikes, and restore youthful cellular vitality with The Ageless Routine™ by Claire Evans.">
+  <link rel="icon" type="image/png" href="/quiz/images/the_ageless_routine_badge_square.png">
+  <link rel="apple-touch-icon" href="/quiz/images/the_ageless_routine_badge_square.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +26,9 @@
         extend: {
           colors: {
             linen: '#FBF9F5',
-            terracotta: '#8A3A2C',
-            terracottaLight: '#C86D51',
-            olive: '#4A6B53',
+            terracotta: '#C86D51',
+            terracottaDark: '#A85238',
+            olive: '#5A6855',
             sand: '#F2ECE4',
             charcoal: '#2D2825',
             warmGray: '#7A726C',
@@ -36,947 +44,1932 @@
   </script>
 
   <style>
+    * {
+      font-variant-numeric: lining-nums;
+      -moz-font-feature-settings: "lnum" 1;
+      -webkit-font-feature-settings: "lnum" 1;
+      font-feature-settings: "lnum" 1;
+    }
     body {
       background-color: #F8F5F0;
       color: #2D2825;
       font-family: 'Plus Jakarta Sans', sans-serif;
       -webkit-font-smoothing: antialiased;
+      font-variant-numeric: lining-nums;
+      font-feature-settings: "lnum" 1;
     }
-    .cormorant { font-family: 'Cormorant Garamond', serif; }
-    .fade-in { animation: fadeIn 0.35s ease-out forwards; }
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(8px); }
-      to { opacity: 1; transform: translateY(0); }
+    .cormorant {
+      font-family: 'Cormorant Garamond', serif;
+      font-variant-numeric: lining-nums;
+      -moz-font-feature-settings: "lnum" 1;
+      -webkit-font-feature-settings: "lnum" 1;
+      font-feature-settings: "lnum" 1;
     }
-    .pulse-glow {
-      box-shadow: 0 0 25px rgba(200, 109, 81, 0.35);
+    .option-card {
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .option-card:hover, .option-card:active {
+      transform: translateY(-2px);
+      border-color: #C86D51;
+      background-color: #FFFDF9;
+      box-shadow: 0 8px 20px -4px rgba(200, 109, 81, 0.12);
+    }
+    .pulse-ring {
+      animation: pulse 2.2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 0.9; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(1.08); }
+    }
+    .lang-btn.active {
+      background-color: #C86D51;
+      color: #ffffff;
+      border-color: #C86D51;
+      font-weight: 700;
     }
   </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-terracotta selection:text-white">
 
   <!-- TOP HEADER -->
-  <header class="w-full bg-cream border-b border-sand/80 py-3.5 px-4 sticky top-0 z-40 backdrop-blur-md bg-cream/95">
-    <div class="max-w-3xl mx-auto flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-9 h-9 rounded-full bg-terracotta/10 border border-terracotta/30 flex items-center justify-center text-terracotta font-serif font-bold text-lg">
-          CE
+  <header class="w-full bg-white/85 backdrop-blur-md border-b border-sand/80 sticky top-0 z-50 py-3 px-4">
+    <div class="max-w-2xl mx-auto flex items-center justify-between">
+      
+      <!-- Brand & Avatar -->
+      <a href="/quiz/" class="flex items-center space-x-2.5 group">
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-2xl overflow-hidden border border-amber-300/40 shadow-sm bg-[#1A2619] flex-shrink-0">
+          <img src="/quiz/images/the_ageless_routine_badge_square.webp" alt="The Ageless Routine App Icon" class="w-full h-full object-cover">
         </div>
         <div>
-          <span class="block text-xs uppercase tracking-widest font-bold text-terracotta">Claire Evans</span>
-          <span class="block text-[11px] text-warmGray">Cellular Longevity & Mature Skin</span>
+          <span class="block text-xs uppercase tracking-widest font-bold text-terracotta group-hover:text-charcoal transition-colors">CELL RENEWAL PROTOCOL™</span>
+          <span id="ui-role" class="block text-xs text-stone-600">by Claire Evans • Cellular Longevity Mentor</span>
+        </div>
+      </a>
+
+      <!-- Controls: Badge + Language Switcher -->
+      <div class="flex items-center space-x-2">
+        <!-- Language Switcher Pills -->
+        <div class="flex items-center p-0.5 bg-sand/70 rounded-full border border-sand text-xs">
+          <button onclick="setLanguage('en')" id="btn-lang-en" class="lang-btn px-2 py-0.5 rounded-full transition-all text-warmGray hover:text-charcoal" title="English">
+            🇺🇸 EN
+          </button>
+          <button onclick="setLanguage('pt')" id="btn-lang-pt" class="lang-btn px-2 py-0.5 rounded-full transition-all text-warmGray hover:text-charcoal" title="Português">
+            🇧🇷 PT
+          </button>
+          <button onclick="setLanguage('es')" id="btn-lang-es" class="lang-btn px-2 py-0.5 rounded-full transition-all text-warmGray hover:text-charcoal" title="Español">
+            🇪🇸 ES
+          </button>
+        </div>
+
+        <!-- 60-Sec Badge -->
+        <div class="hidden sm:flex items-center space-x-1.5 text-xs font-semibold px-2.5 py-1 bg-sand/60 rounded-full text-charcoal border border-sand">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span id="ui-badge">60-Sec Audit</span>
         </div>
       </div>
 
-      <!-- LANGUAGE TOGGLE -->
-      <div class="flex items-center bg-sand/60 rounded-full p-1 border border-sand">
-        <button onclick="setLang('en')" id="btn-lang-en" class="px-2.5 py-1 text-xs font-bold rounded-full transition-all bg-terracotta text-white shadow-sm">EN</button>
-        <button onclick="setLang('pt')" id="btn-lang-pt" class="px-2.5 py-1 text-xs font-bold rounded-full transition-all text-warmGray hover:text-charcoal">PT</button>
-        <button onclick="setLang('es')" id="btn-lang-es" class="px-2.5 py-1 text-xs font-bold rounded-full transition-all text-warmGray hover:text-charcoal">ES</button>
-      </div>
     </div>
   </header>
 
   <!-- MAIN CONTAINER -->
-  <main class="flex-grow max-w-2xl mx-auto w-full px-4 py-6 sm:py-10">
-
-    <!-- ================= SCREEN 0: INTRO SCREEN ================= -->
-    <div id="screen-intro" class="fade-in text-center">
-      <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-olive/10 border border-olive/20 text-olive text-xs font-bold uppercase tracking-wider mb-5">
-        <span class="w-2 h-2 rounded-full bg-olive animate-pulse"></span>
-        <span id="ui-intro-badge">Clinical Assessment • Women 40+</span>
+  <main class="flex-grow flex items-center justify-center p-3 sm:p-6 pb-24 sm:pb-28">
+    <div id="app-chassis" class="w-full max-w-[430px] bg-white sm:rounded-[48px] shadow-2xl sm:border-[10px] sm:border-[#1F1D1B] p-5 sm:p-7 relative overflow-hidden transition-all duration-300">
+      
+      <!-- Top Smartphone Speaker Notch (Dynamic Island Mockup) -->
+      <div id="chassis-notch" class="hidden sm:flex items-center justify-center w-24 h-4 bg-[#1F1D1B] rounded-full mx-auto mb-4">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#2A2724] border border-[#3A3632]"></span>
       </div>
 
-      <h1 id="ui-intro-title" class="cormorant text-3xl sm:text-5xl font-bold text-charcoal leading-tight mb-4">
-        What If Your Skin & Midsection Bloat Aren't Aging... But an Inflamed Gut-Skin Axis?
-      </h1>
-
-      <p id="ui-intro-desc" class="text-sm sm:text-base text-warmGray leading-relaxed mb-6 max-w-xl mx-auto">
-        After 40, conventional restriction and calorie counting accelerate dermal dehydration and cortisol spikes. Take this 60-second cellular audit to pinpoint your primary bio-markers.
-      </p>
-
-      <!-- Claire Mini Card -->
-      <div class="bg-cream border border-sand rounded-2xl p-4 sm:p-5 mb-8 text-left flex items-center gap-4 shadow-sm">
-        <img src="images/Claire_Evans_Official_Kitchen_Portrait_4x3.webp" alt="Claire Evans" class="w-16 h-16 sm:w-20 sm:h-20 rounded-full object-cover border-2 border-terracotta/30 flex-shrink-0">
-        <div>
-          <div class="flex items-center gap-1.5">
-            <span class="font-bold text-charcoal text-sm sm:text-base">Claire Evans</span>
-            <span class="text-[11px] bg-terracotta/10 text-terracotta px-2 py-0.5 rounded-full font-bold">51 & Glowing</span>
+      <!-- App Brand Header Inside Chassis (Clean App Icon + High-Res Vector HTML Typography) -->
+      <div class="mb-5 flex items-center justify-center space-x-3 sm:space-x-3.5">
+        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl overflow-hidden border border-amber-300/40 shadow-sm bg-[#1A2619] flex-shrink-0">
+          <img src="/quiz/images/the_ageless_routine_badge_square.webp" alt="The Ageless Routine App Icon" class="w-full h-full object-cover">
+        </div>
+        <div class="text-left">
+          <div class="flex items-center space-x-1">
+            <h1 class="cormorant text-base sm:text-lg font-bold tracking-wider text-charcoal leading-tight">
+              CELL RENEWAL PROTOCOL
+            </h1>
+            <span class="text-[11px] font-bold text-terracotta align-top">™</span>
           </div>
-          <p id="ui-intro-claire-quote" class="text-xs sm:text-sm text-warmGray mt-1 italic">
-            "Your cells don't need deprivation. They need 4-ingredient anti-inflammatory nourishment and gut-barrier repair."
+          <p id="ui-chassis-sub" class="text-xs text-stone-500 font-medium leading-tight mt-0.5">
+            28-Day Anti-Aging Cellular Nutrition for Women 40+
+          </p>
+          <p id="ui-chassis-by" class="text-[11px] sm:text-xs text-terracotta font-semibold leading-tight mt-0.5">
+            by Claire Evans • Mature Skin Mentor (Age 51)
           </p>
         </div>
       </div>
-
-      <button onclick="startQuiz()" class="w-full sm:w-auto px-8 py-4 bg-terracotta hover:bg-terracottaDark text-white font-bold text-base rounded-full shadow-lg hover:shadow-xl transition-all pulse-glow transform hover:-translate-y-0.5">
-        <span id="ui-btn-start">START 60-SECOND CELLULAR AUDIT →</span>
-      </button>
-
-      <p class="text-[11px] text-warmGray mt-4">
-        🔒 100% Free Assessment • Over 14,200 Women Evaluated
-      </p>
-    </div>
-
-    <!-- ================= SCREEN 1: QUESTION CARDS ================= -->
-    <div id="screen-quiz" class="hidden fade-in">
-      <!-- Progress Bar -->
-      <div class="mb-6">
-        <div class="flex justify-between items-center text-xs text-warmGray mb-2 font-medium">
-          <span id="ui-step-counter">Question 1 of 10</span>
-          <span id="ui-step-percent" class="font-bold text-terracotta">10% Complete</span>
-        </div>
-        <div class="w-full bg-sand rounded-full h-2 overflow-hidden">
-          <div id="ui-progress-fill" class="bg-terracotta h-full transition-all duration-300" style="width: 10%;"></div>
-        </div>
-      </div>
-
-      <!-- Question Box -->
-      <div class="bg-cream border border-sand/80 rounded-2xl p-5 sm:p-7 shadow-sm">
-        <span id="ui-q-category" class="text-[11px] font-bold uppercase tracking-wider text-olive block mb-2">Category</span>
-        <h2 id="ui-q-title" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal mb-4">Question Title</h2>
-        <p id="ui-q-desc" class="text-xs sm:text-sm text-warmGray mb-6">Question description helper</p>
-
-        <!-- Options Container -->
-        <div id="ui-options-list" class="space-y-3">
-          <!-- Rendered dynamically -->
-        </div>
-      </div>
-
-      <div class="mt-4 flex justify-between items-center text-xs text-warmGray">
-        <button id="ui-btn-back" onclick="prevQuestion()" class="hover:text-charcoal underline hidden">← Back</button>
-        <span class="text-[11px] text-warmGray/80">Anonymous & Confidential</span>
-      </div>
-    </div>
-
-    <!-- ================= SCREEN 2: CALCULATING SCREEN ================= -->
-    <div id="screen-calculating" class="hidden text-center py-12 fade-in">
-      <div class="w-16 h-16 border-4 border-sand border-t-terracotta rounded-full animate-spin mx-auto mb-6"></div>
-      <h3 id="ui-calc-title" class="cormorant text-3xl font-bold text-charcoal mb-3">Synthesizing Cellular Profile...</h3>
-      <p id="ui-calc-subtitle" class="text-sm text-warmGray max-w-md mx-auto mb-6">
-        Cross-referencing dermal collagen turnover, gut-skin axis permeability, and cortisol markers.
-      </p>
-
-      <div class="max-w-sm mx-auto space-y-3 text-left text-xs bg-cream p-5 rounded-2xl border border-sand">
-        <div id="calc-step-1" class="flex items-center gap-2 text-warmGray transition-all">
-          <span class="w-4 h-4 rounded-full border border-warmGray flex items-center justify-center text-[10px]">1</span>
-          <span id="ui-calc-s1">Analyzing digestive fermentation & gut barrier...</span>
-        </div>
-        <div id="calc-step-2" class="flex items-center gap-2 text-warmGray transition-all opacity-40">
-          <span class="w-4 h-4 rounded-full border border-warmGray flex items-center justify-center text-[10px]">2</span>
-          <span id="ui-calc-s2">Assessing collagen cross-linking & glycation load...</span>
-        </div>
-        <div id="calc-step-3" class="flex items-center gap-2 text-warmGray transition-all opacity-40">
-          <span class="w-4 h-4 rounded-full border border-warmGray flex items-center justify-center text-[10px]">3</span>
-          <span id="ui-calc-s3">Structuring personalized 28-day roadmap...</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- ================= SCREEN 3: RESULTS & PAYWALL ================= -->
-    <div id="screen-results" class="hidden fade-in space-y-8">
       
-      <!-- Diagnostic Report Header -->
-      <div class="bg-cream border border-sand rounded-3xl p-6 sm:p-8 shadow-sm">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-terracotta/10 text-terracotta text-xs font-bold uppercase tracking-wider mb-4">
-          <span id="ui-res-badge">Clinical Assessment Result</span>
+      <!-- PROGRESS BAR CONTAINER -->
+      <div id="progress-container" class="mb-6">
+        <div class="flex justify-between items-center text-xs sm:text-sm font-medium text-stone-600 mb-2">
+          <span id="step-counter" class="uppercase tracking-wider">Question 1 of 10</span>
+          <span id="step-percent" class="font-bold text-terracotta">10% Complete</span>
+        </div>
+        <div class="w-full h-2 bg-sand/70 rounded-full overflow-hidden">
+          <div id="progress-bar" class="h-full bg-gradient-to-r from-terracotta to-amber-600 rounded-full transition-all duration-300 ease-out" style="width: 10%;"></div>
+        </div>
+      </div>
+
+      <!-- QUIZ VIEW (DYNAMIC) -->
+      <div id="quiz-view">
+        <!-- Claire Intro Banner -->
+        <div class="mb-4 flex items-center space-x-3 p-3 bg-linen rounded-2xl border border-sand/80">
+          <img src="/quiz/images/Claire_Evans_Official_Kitchen_Portrait_4x3.webp" alt="Claire Evans" class="w-12 h-12 rounded-xl object-cover border border-amber-200/50 flex-shrink-0 shadow-xs">
+          <div>
+            <div class="flex items-center space-x-1.5">
+              <span class="text-xs font-bold text-charcoal">Claire Evans</span>
+              <span id="ui-claire-mentor-badge" class="text-xs text-terracotta bg-terracotta/10 px-2 py-0.5 rounded-full font-semibold">51 & Glowing</span>
+            </div>
+            <p id="ui-claire-intro" class="text-xs sm:text-sm text-stone-600 leading-normal mt-0.5">"Answer instinctively. Let's find what your body needs to thrive."</p>
+          </div>
         </div>
 
-        <h2 id="ui-res-title" class="cormorant text-3xl sm:text-4xl font-bold text-charcoal mb-3">
-          Your Cellular Profile: Stage 2 Dermal-Gut Permeability
+        <h2 id="question-title" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal leading-tight mb-2">
+          Loading assessment...
         </h2>
-
-        <p id="ui-res-lead" class="text-sm sm:text-base text-warmGray leading-relaxed mb-6">
-          Your answers reveal that your stubborn midsection bloat and skin dehydration are not biological aging—they are driven by sub-clinical glycation and an inflamed gut-skin barrier.
+        <p id="question-subtitle" class="text-sm sm:text-[15px] text-stone-600 mb-6 leading-relaxed">
+          Select the option that best describes your daily experience.
         </p>
 
-        <!-- Metric Bars -->
-        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
-          <div class="bg-sand/40 border border-sand rounded-xl p-3.5 text-center">
-            <span id="ui-m1-label" class="block text-[11px] uppercase tracking-wider font-bold text-warmGray">Gut Permeability</span>
-            <span class="block text-xl font-bold text-terracotta mt-1">High (84%)</span>
-            <span id="ui-m1-sub" class="block text-[10px] text-warmGray">Needs Sealing</span>
-          </div>
-          <div class="bg-sand/40 border border-sand rounded-xl p-3.5 text-center">
-            <span id="ui-m2-label" class="block text-[11px] uppercase tracking-wider font-bold text-warmGray">Collagen Turnover</span>
-            <span class="block text-xl font-bold text-terracotta mt-1">Sluggish (41%)</span>
-            <span id="ui-m2-sub" class="block text-[10px] text-warmGray">Needs Proline / Ghee</span>
-          </div>
-          <div class="bg-sand/40 border border-sand rounded-xl p-3.5 text-center">
-            <span id="ui-m3-label" class="block text-[11px] uppercase tracking-wider font-bold text-warmGray">Evening Cortisol</span>
-            <span class="block text-xl font-bold text-olive mt-1">Elevated</span>
-            <span id="ui-m3-sub" class="block text-[10px] text-warmGray">Blocks Deep Repair</span>
-          </div>
-        </div>
-
-        <!-- Biological 4-Phase Roadmap -->
-        <div class="border-t border-sand/80 pt-6">
-          <h3 id="ui-phases-title" class="font-bold text-charcoal text-base mb-3">Your 28-Day Biological Trajectory:</h3>
-          <div class="space-y-3 text-xs sm:text-sm">
-            <div class="flex items-start gap-3 bg-white/70 p-3 rounded-xl border border-sand/60">
-              <span class="w-6 h-6 rounded-full bg-terracotta text-white flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">1</span>
-              <div>
-                <strong id="ui-ph1-name" class="text-charcoal block">Days 1–7: Gut Soothing & Sealing</strong>
-                <span id="ui-ph1-desc" class="text-warmGray">Eliminate hidden fermentation flours; de-bloat abdominal wall in 72 hours.</span>
-              </div>
-            </div>
-            <div class="flex items-start gap-3 bg-white/70 p-3 rounded-xl border border-sand/60">
-              <span class="w-6 h-6 rounded-full bg-terracotta text-white flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">2</span>
-              <div>
-                <strong id="ui-ph2-name" class="text-charcoal block">Days 8–14: Cortisol & Mitochondrial Reset</strong>
-                <span id="ui-ph2-desc" class="text-warmGray">End the 3 PM energy slump; stabilize morning blood sugar with clean fats.</span>
-              </div>
-            </div>
-            <div class="flex items-start gap-3 bg-white/70 p-3 rounded-xl border border-sand/60">
-              <span class="w-6 h-6 rounded-full bg-terracotta text-white flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">3</span>
-              <div>
-                <strong id="ui-ph3-name" class="text-charcoal block">Days 15–21: Active Dermal Collagen Stimulation</strong>
-                <span id="ui-ph3-desc" class="text-warmGray">Flood mature skin cells with bioavailable amino acids and wild polyphenols.</span>
-              </div>
-            </div>
-            <div class="flex items-start gap-3 bg-white/70 p-3 rounded-xl border border-sand/60">
-              <span class="w-6 h-6 rounded-full bg-terracotta text-white flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">4</span>
-              <div>
-                <strong id="ui-ph4-name" class="text-charcoal block">Days 22–28: Hormonal Longevity & Radiance</strong>
-                <span id="ui-ph4-desc" class="text-warmGray">Consolidate overnight cellular autophagy; enjoy lasting lightness and clear skin.</span>
-              </div>
-            </div>
-          </div>
+        <!-- OPTIONS CONTAINER -->
+        <div id="options-container" class="space-y-3">
+          <!-- Dynamically injected -->
         </div>
       </div>
 
-      <!-- THE OFFICIAL PRODUCT OFFER / PAYWALL -->
-      <div class="bg-cream border-2 border-terracotta/40 rounded-3xl p-6 sm:p-8 shadow-xl relative overflow-hidden">
-        
-        <!-- Top Badge -->
-        <div class="bg-terracotta text-white text-center py-1.5 px-4 text-xs font-bold uppercase tracking-widest -mx-6 sm:-mx-8 -mt-6 sm:-mt-8 mb-6">
-          ★ Exclusive Diagnostic Offer • Limited Whop VIP Access ★
+      <!-- INTERLUDE VIEW (SOCIAL PROOF / VALIDATION) -->
+      <div id="interlude-view" class="hidden text-center py-4">
+        <div class="w-14 h-14 rounded-full bg-amber-50 text-terracotta mx-auto flex items-center justify-center text-2xl mb-4 shadow-sm border border-amber-200/50">
+          ✨
         </div>
-
-        <!-- 16:9 Showcase Image -->
-        <div class="rounded-2xl overflow-hidden border border-sand/80 shadow-md mb-6 aspect-video bg-sand/30">
-          <img src="images/Pacote%20Trilingue%20de%20Renovação%20Celular.png" alt="Claire Evans Protocol" class="w-full h-full object-cover">
-        </div>
-
-        <h3 id="ui-prod-title" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal mb-2 text-center">
-          The 28-Day Anti-Aging Cell Renewal Protocol™
+        <h3 id="interlude-title" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal mb-3">
+          You are not alone in this.
         </h3>
-        <p id="ui-prod-subtitle" class="text-center text-xs sm:text-sm text-warmGray mb-6">
-          The Official 30-Page Magazine Guide & 4-Ingredient Recipe Collection by Claire Evans (Age 51)
+        <p id="interlude-text" class="text-sm sm:text-base text-stone-700 leading-relaxed max-w-md mx-auto mb-6">
+          Over 86% of women over 40 suffer from hidden gut-skin barrier permeability triggered by modern flours.
         </p>
+        <div class="p-4 bg-linen rounded-2xl border border-sand/80 text-left mb-6 max-w-md mx-auto">
+          <div class="flex items-center space-x-3 mb-2">
+            <div id="interlude-avatar" class="w-8 h-8 rounded-full bg-terracotta/10 text-terracotta font-bold flex items-center justify-center text-xs">
+              BK
+            </div>
+            <div>
+              <p id="interlude-author" class="text-sm font-bold text-charcoal">Eleanor M., 52 • Verified Member</p>
+              <div class="text-xs text-amber-500">★★★★★</div>
+            </div>
+          </div>
+          <p id="interlude-quote" class="text-sm text-stone-700 italic leading-relaxed">"Replacing flours with Claire's 4-ingredient meals flattened my belly bloat in 3 days and gave my skin a fresh glow!"</p>
+        </div>
+        <button id="interlude-btn" onclick="nextAfterInterlude()" class="w-full sm:w-auto px-8 py-3.5 bg-terracotta hover:bg-terracottaDark text-white font-medium rounded-full shadow-lg shadow-terracotta/25 transition-all text-sm tracking-wide">
+          Continue Assessment →
+        </button>
+      </div>
 
-        <!-- What's included checklist -->
-        <div class="bg-sand/30 border border-sand rounded-2xl p-5 mb-6 space-y-2.5 text-xs sm:text-sm text-charcoal">
-          <div class="flex items-center gap-2.5">
-            <span class="text-olive font-bold">✓</span>
-            <span id="ui-inc-1"><strong>Deluxe 30-Page Protocol Guide (PDF):</strong> Step-by-step 4 biological phases.</span>
-          </div>
-          <div class="flex items-center gap-2.5">
-            <span class="text-olive font-bold">✓</span>
-            <span id="ui-inc-2"><strong>12 Signature 4-Ingredient Recipes:</strong> Flourless, gluten-free, ready in &lt;15 min.</span>
-          </div>
-          <div class="flex items-center gap-2.5">
-            <span class="text-olive font-bold">✓</span>
-            <span id="ui-inc-3"><strong>The 4-Ingredient Cellular Pantry:</strong> Clean proteins, fats & bioactive herbs.</span>
-          </div>
-          <div class="flex items-center gap-2.5">
-            <span class="text-olive font-bold">✓</span>
-            <span id="ui-inc-4"><strong>Therapeutic Elixirs & Evening Rituals:</strong> De-bloating teas & sleep routines.</span>
-          </div>
-          <div class="flex items-center gap-2.5">
-            <span class="text-olive font-bold">✓</span>
-            <span id="ui-inc-5"><strong>Printable 28-Day Daily Planners:</strong> Habit checklist sheets (Days 1–28).</span>
-          </div>
-          <div class="flex items-center gap-2.5 bg-terracotta/10 p-2 rounded-lg text-terracotta font-medium">
-            <span class="font-bold">★</span>
-            <span id="ui-inc-6"><strong>TRILINGUAL ACCESS:</strong> Full editions in US English, Portuguese (BR) & Spanish (ES).</span>
+      <!-- CALCULATING VIEW (SIMULATED AI ANALYSIS) -->
+      <div id="calculating-view" class="hidden text-center py-6">
+        <div class="w-full max-w-sm mx-auto h-36 sm:h-44 rounded-2xl overflow-hidden mb-5 border border-sand/90 shadow-md relative">
+          <img src="/quiz/images/Cellular_Regeneration_Metabolic_Vitality_4x3.webp" alt="Cellular Regeneration AI Assessment" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-transparent to-transparent flex items-end justify-center p-3">
+            <span class="text-xs font-semibold text-amber-200 uppercase tracking-widest flex items-center space-x-2">
+              <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+              <span id="ui-calc-scan-badge">Scanning Cellular Vitality</span>
+            </span>
           </div>
         </div>
-
-        <!-- Pricing & Guarantee Box -->
-        <div class="text-center mb-6">
-          <div class="flex items-center justify-center gap-3 mb-1">
-            <span class="text-sm text-warmGray line-through">$97.00 USD</span>
-            <span class="text-3xl sm:text-4xl font-extrabold text-terracotta">$27 USD</span>
-          </div>
-          <span class="inline-block text-[11px] font-bold bg-olive/10 text-olive px-3 py-1 rounded-full uppercase tracking-wider">
-            One-Time Payment • Lifetime VIP Vault Access
-          </span>
-        </div>
-
-        <!-- Checkout CTA Button -->
-        <a id="ui-checkout-btn" href="https://whop.com/checkout/plan_KjhczhHJw9Syv" target="_blank" class="block w-full py-4 bg-terracotta hover:bg-terracottaDark text-white font-bold text-center text-base sm:text-lg rounded-full shadow-lg hover:shadow-xl transition-all pulse-glow transform hover:-translate-y-0.5">
-          <span id="ui-btn-unlock">UNLOCK MY 28-DAY CELL RENEWAL PROTOCOL ($27) →</span>
-        </a>
-
-        <!-- Risk Free Badge -->
-        <div class="mt-4 pt-4 border-t border-sand/80 flex items-center justify-center gap-2 text-xs text-warmGray text-center">
-          <span>🛡️</span>
-          <span id="ui-guarantee-text"><strong>100% Risk-Free 60-Day Guarantee:</strong> If you don't feel noticeably lighter and radiant, receive a full refund.</span>
+        <h3 id="calc-step-text" class="cormorant text-2xl sm:text-3xl font-bold text-charcoal mb-2">
+          Analyzing your cellular indicators...
+        </h3>
+        <p id="calc-sub-text" class="text-sm text-stone-600 max-w-xs mx-auto mb-6">
+          Cross-referencing metabolic stress curves with midlife hormonal patterns.
+        </p>
+        <div class="w-48 h-1.5 bg-sand rounded-full mx-auto overflow-hidden">
+          <div id="calc-bar" class="h-full bg-terracotta transition-all duration-700 ease-out" style="width: 15%;"></div>
         </div>
       </div>
 
-      <!-- FAQ Section -->
-      <div class="bg-cream border border-sand rounded-2xl p-6 text-left">
-        <h4 id="ui-faq-title" class="font-bold text-charcoal text-base mb-4">Frequently Asked Questions</h4>
-        <div class="space-y-4 text-xs sm:text-sm">
-          <div>
-            <strong id="ui-faq-q1" class="text-charcoal block mb-1">How do I access the protocol after purchasing?</strong>
-            <p id="ui-faq-a1" class="text-warmGray">Instantly upon checkout, your Whop account unlocks the Cell Renewal VIP Vault. You can view the 30-page guides right in your browser or download high-definition PDFs to any phone, iPad, or computer.</p>
-          </div>
-          <div>
-            <strong id="ui-faq-q2" class="text-charcoal block mb-1">Are the recipes complicated or time-consuming?</strong>
-            <p id="ui-faq-a2" class="text-warmGray">No! Every recipe strictly uses 4 wholesome, easily found ingredients with zero flour and under 15 minutes of active kitchen prep.</p>
-          </div>
-          <div>
-            <strong id="ui-faq-q3" class="text-charcoal block mb-1">Which languages are included?</strong>
-            <p id="ui-faq-a3" class="text-warmGray">You receive all 3 complete editions: US English, Portuguese (BR), and Spanish (ES) in pristine high definition.</p>
+      <!-- RESULTS VIEW (DIAGNOSIS + PAYWALL + AFFILIATE PAIRING) -->
+      <div id="results-view" class="hidden">
+        <!-- Top Badge -->
+        <div class="text-center mb-6">
+          <span id="ui-res-badge" class="inline-flex items-center space-x-1.5 px-3 py-1 bg-amber-50 text-terracotta text-xs font-semibold rounded-full border border-amber-200/60 uppercase tracking-widest mb-2">
+            <span>✓</span> <span>Analysis Complete</span>
+          </span>
+          <h2 id="ui-res-title" class="cormorant text-3xl sm:text-4xl font-bold text-charcoal leading-tight">
+            Your Midlife Vitality & Cellular Profile
+          </h2>
+          <p id="ui-res-curated" class="text-xs sm:text-sm text-warmGray mt-1">Curated by Claire Evans • Daily Health Review US</p>
+        </div>
+
+        <!-- VISUAL CELLULAR BANNER -->
+        <div class="w-full h-36 sm:h-44 rounded-2xl overflow-hidden mb-6 border border-sand/90 shadow-sm relative">
+          <img src="/quiz/images/Cellular_Regeneration_Metabolic_Vitality_4x3.webp" alt="Cellular Vitality Profile" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-transparent flex items-end justify-between p-4 text-white">
+            <div>
+              <span id="ui-map-label" class="text-xs uppercase font-bold tracking-widest text-amber-300">Personalized Vitality Map</span>
+              <p id="ui-map-title" class="text-sm sm:text-base font-semibold">Personalized Wellness & Recovery Score</p>
+            </div>
+            <div class="text-right">
+              <span id="ui-map-audit" class="text-xs text-stone-300">Personalized by AI</span>
+              <p id="ui-map-status" class="text-xs sm:text-sm font-bold text-emerald-400">Calculated ✓</p>
+            </div>
           </div>
         </div>
+
+        <!-- HEALTH SCORE METERS -->
+        <div class="bg-linen rounded-2xl p-4 sm:p-5 border border-sand/90 mb-6">
+          <div class="flex items-center justify-between mb-3">
+            <span id="ui-res-stress-title" class="text-xs sm:text-sm font-bold uppercase tracking-wider text-charcoal">Cellular Stress Profile</span>
+            <span id="score-badge" class="px-3 py-1 bg-terracotta/15 text-terracotta font-bold text-xs sm:text-sm rounded-full">Elevated Cortisol & Biofilm Load</span>
+          </div>
+
+          <!-- Meters List -->
+          <div class="space-y-3">
+            <div>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-cortisol-label" class="text-stone-700">Stress & Cortisol Rhythm</span>
+                <span id="meter-cortisol-val" class="font-bold text-charcoal">84%</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-cortisol" class="h-full bg-red-400 rounded-full" style="width: 84%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-gut-label" class="text-stone-700">Digestive Balance & Comfort</span>
+                <span id="meter-gut-val" class="font-bold text-charcoal">76%</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-gut" class="h-full bg-amber-500 rounded-full" style="width: 76%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-heart-label" class="text-stone-700">Circulatory Vitality & Rhythm</span>
+                <span id="meter-heart-val" class="font-bold text-charcoal">68%</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-heart" class="h-full bg-orange-400 rounded-full" style="width: 68%;"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs sm:text-sm mb-1.5 font-medium">
+                <span id="ui-meter-skin-label" class="text-stone-700">Skin Radiance & Collagen Turnover</span>
+                <span id="meter-skin-val" class="font-bold text-charcoal">62%</span>
+              </div>
+              <div class="w-full h-2 bg-sand rounded-full overflow-hidden">
+                <div id="meter-skin" class="h-full bg-amber-400 rounded-full" style="width: 62%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- DIAGNOSIS SUMMARY BOX WITH CLAIRE PORTRAIT -->
+        <div class="mb-6 p-4 sm:p-5 border-l-4 border-terracotta bg-white rounded-r-2xl shadow-sm border-t border-r border-b border-sand/80">
+          <div class="flex items-center space-x-3 mb-2.5">
+            <img src="/quiz/images/Claire_Evans_Official_Kitchen_Portrait_4x3.webp" alt="Claire Evans" class="w-11 h-11 rounded-full object-cover border border-amber-200/60 shadow-sm flex-shrink-0">
+            <div>
+              <h4 id="ui-claire-takeaway" class="text-base font-bold text-charcoal">Claire's Personalized Assessment:</h4>
+              <p id="ui-claire-subrole" class="text-xs text-stone-500">Cellular Longevity & Mature Skin Mentor</p>
+            </div>
+          </div>
+          <p id="diagnosis-text" class="text-sm sm:text-[15px] text-stone-700 leading-relaxed font-normal">
+            Your responses indicate that your nervous system is trapped in low-grade fight-or-flight...
+          </p>
+        </div>
+
+        <!-- PRIMARY HERO OFFER ($27 PROPRIETARY PROTOCOL) -->
+        <div class="border-2 border-terracotta/40 rounded-3xl p-5 sm:p-6 bg-gradient-to-b from-white to-amber-50/30 relative shadow-lg shadow-terracotta/10 mb-6">
+          <div id="ui-foundation-badge" class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-terracotta text-white font-bold text-xs uppercase tracking-widest rounded-full shadow-sm whitespace-nowrap">
+            YOUR RECOMMENDED FOUNDATION
+          </div>
+
+          <div class="flex items-start space-x-4 mb-4 mt-2">
+            <div id="hero-img-box" class="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl overflow-hidden border border-sand flex-shrink-0 shadow-sm bg-sand">
+              <img id="hero-prod-img" src="/cell-quiz/images/Protocolo%20de%20Renovação%20Celular%20Antienvelhecimento.png" alt="Protocol Cover" class="w-full h-full object-cover">
+            </div>
+            <div>
+              <span id="hero-exp-badge" class="text-xs font-bold uppercase tracking-wider text-terracotta">Guided VIP Experience</span>
+              <h3 id="hero-prod-title" class="cormorant text-xl sm:text-2xl font-bold text-charcoal leading-tight">
+                The 21-Day Somatic Nervous System & Cortisol Belly Reset™
+              </h3>
+              <p id="hero-prod-subtitle" class="text-xs sm:text-sm text-stone-500 mt-0.5">Official 30-Page Magazine Guide • 4-Ingredient Recipes • Daily Trackers</p>
+            </div>
+          </div>
+
+          <!-- Feature Bullets -->
+          <ul id="hero-prod-bullets" class="space-y-2 text-sm text-stone-800 mb-5">
+            <!-- Injected -->
+          </ul>
+
+          <!-- Pricing & Button -->
+          <div class="flex flex-col sm:flex-row items-center justify-between pt-3 border-t border-sand/80 gap-3">
+            <div class="text-center sm:text-left">
+              <span id="ui-regular-price" class="block text-xs text-stone-500 line-through">Regular Price: $197</span>
+              <span class="text-2xl font-bold text-charcoal">$27.00 <span id="ui-onetime-label" class="text-xs font-normal text-stone-500">One-Time</span></span>
+            </div>
+            <a id="hero-checkout-btn" href="#" target="_blank" class="w-full sm:w-auto px-6 py-3.5 bg-terracotta hover:bg-terracottaDark text-white font-bold text-sm rounded-full shadow-lg shadow-terracotta/25 transition-all text-center">
+              Claim VIP Access ($27) →
+            </a>
+          </div>
+        </div>
+
+        <!-- AFFILIATE BOTANICAL PAIRING BOX -->
+        <div id="affiliate-box" class="bg-linen rounded-2xl p-5 border border-sand/90 mb-6">
+          <div class="flex items-center justify-between mb-2">
+            <span id="ui-pairing-badge" class="text-xs font-bold uppercase tracking-widest text-olive bg-olive/10 px-2.5 py-0.5 rounded-full">CLAIRE'S BOTANICAL PAIRING</span>
+            <span id="ui-physician-label" class="text-xs text-stone-500">Physician-Formulated</span>
+          </div>
+
+          <h4 id="affiliate-title" class="cormorant text-xl font-bold text-charcoal leading-snug mb-1">
+            CleanseSana™ Biofilm & Deep Drainage Botanical Complex
+          </h4>
+          <p id="affiliate-desc" class="text-sm text-stone-600 leading-relaxed mb-3">
+            Pair your daily somatic movements with this physician-formulated botanical blend to accelerate the breakdown of stored gut biofilms and support natural liver drainage pathways.
+          </p>
+
+          <a id="affiliate-link-btn" href="#" target="_blank" class="inline-flex items-center space-x-1.5 text-sm font-bold text-terracotta hover:text-terracottaDark">
+            <span id="ui-explore-pairing">Explore Claire's Official Pairing</span>
+            <span>→</span>
+          </a>
+
+          <!-- FTC Affiliate Disclosure -->
+          <p id="ui-ftc-disclosure" class="text-xs text-stone-500/80 mt-3 pt-2 border-t border-sand/60 italic leading-relaxed">
+            Affiliate Disclosure: If you choose to purchase this recommended pairing through our link, Daily Health Review may earn a small commission at no additional cost to you. We only recommend rigorously vetted formulations.
+          </p>
+        </div>
+
+        <!-- EXPLORE COMPLETE PROTOCOL CATALOG (ALL 6 PRODUCTS) -->
+        <div class="border-t border-sand pt-5">
+          <h4 id="ui-catalog-title" class="cormorant text-xl font-bold text-charcoal text-center mb-1">Explore Claire’s Complete VIP Library</h4>
+          <p id="ui-catalog-sub" class="text-xs sm:text-sm text-stone-500 text-center mb-4">Each comprehensive wellness protocol is just $27 (one-time payment)</p>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-left text-xs mb-4">
+            <a href="https://dailyhealthreviewus.com/protocol" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span id="ui-cat-title-1" class="font-bold text-charcoal block">🧬 28-Day Cell Renewal</span>
+              <span id="ui-cat-desc-1" class="text-xs text-stone-500">Skin, collagen & vitality</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/apothecary" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span id="ui-cat-title-2" class="font-bold text-charcoal block">🌿 Home Apothecary Bible</span>
+              <span id="ui-cat-desc-2" class="text-xs text-stone-500">Forgotten natural remedies</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/cleanse" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span id="ui-cat-title-3" class="font-bold text-charcoal block">🫖 14-Day Parasite Cleanse</span>
+              <span id="ui-cat-desc-3" class="text-xs text-stone-500">Lymphatic & biofilm flush</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/heart" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block">
+              <span id="ui-cat-title-4" class="font-bold text-charcoal block">🫀 9-Minute Arterial Reset</span>
+              <span id="ui-cat-desc-4" class="text-xs text-stone-500">Natural blood pressure care</span>
+            </a>
+            <a href="https://dailyhealthreviewus.com/arteries" target="_blank" class="p-3 bg-white rounded-xl border border-sand hover:border-terracotta transition-all block sm:col-span-2">
+              <span id="ui-cat-title-5" class="font-bold text-charcoal block">❤️ 28-Day Clean Arteries Protocol</span>
+              <span id="ui-cat-desc-5" class="text-xs text-stone-500">Plaque defense, endothelial glycocalyx & Vitamin K2 calcium redirection</span>
+            </a>
+          </div>
+
+          <div class="text-center">
+            <a id="ui-view-storefront" href="https://whop.com/dailyhealthreviewus" target="_blank" class="inline-block text-sm font-bold text-terracotta hover:underline">
+              View All 6 Protocols in Claire's Official Whop Storefront →
+            </a>
+          </div>
+        </div>
+
       </div>
 
     </div>
-
   </main>
 
+  <!-- DESKTOP FLOATING VIEW MODE SWITCHER (MOBILE FRAME VS EXPANDED) -->
+  <div class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 hidden sm:flex items-center p-1 bg-white/95 backdrop-blur-md rounded-full shadow-2xl border border-sand/90 text-xs font-semibold">
+    <button id="btn-mode-phone" onclick="setViewMode('phone')" class="flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-white bg-charcoal shadow-sm">
+      <span>📱</span>
+      <span id="ui-mode-phone">Mobile View</span>
+    </button>
+    <button id="btn-mode-expanded" onclick="setViewMode('expanded')" class="flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-warmGray hover:text-charcoal">
+      <span>🖥️</span>
+      <span id="ui-mode-expanded">Expanded View</span>
+    </button>
+  </div>
+
   <!-- FOOTER -->
-  <footer class="w-full bg-cream border-t border-sand py-6 px-4 text-center text-xs text-warmGray mt-12">
+  <footer class="w-full text-center py-6 px-4 text-xs sm:text-sm text-stone-500 border-t border-sand/80 bg-white/50">
     <div class="max-w-2xl mx-auto space-y-2">
-      <p class="font-medium text-charcoal">Claire Evans • Daily Health Review US</p>
-      <p class="text-[11px] leading-relaxed text-warmGray/80">
-        Disclaimer: This assessment and nutritional protocol are for educational and lifestyle guidance only and do not replace personalized medical advice. Always consult your physician.
+      <p id="ui-footer-copy">© 2026 Daily Health Review US • Claire Evans Official Coaching & Wellness.</p>
+      <p id="ui-footer-med" class="max-w-lg mx-auto text-xs text-stone-500/90 leading-relaxed">
+        Medical Disclaimer: The statements and protocols presented on this website have not been evaluated by the Food and Drug Administration. These materials are intended for educational and wellness guidance only and are not a substitute for professional medical diagnosis or treatment. Always consult your physician.
       </p>
-      <div class="pt-2 flex justify-center gap-4 text-[11px] text-terracotta underline">
-        <a href="/privacy" target="_blank">Privacy Policy</a>
-        <a href="/disclaimer" target="_blank">Medical Disclaimer</a>
-        <a href="/terms" target="_blank">Terms of Use</a>
+      <div class="flex justify-center space-x-4 text-xs sm:text-sm text-terracotta pt-1">
+        <a id="ui-footer-privacy" href="/privacy" class="hover:underline">Privacy Policy</a>
+        <span>•</span>
+        <a id="ui-footer-terms" href="/terms" class="hover:underline">Terms of Service</a>
+        <span>•</span>
+        <a id="ui-footer-disclosure" href="/disclosure" class="hover:underline">FTC Affiliate Disclosure</a>
       </div>
     </div>
   </footer>
 
-  <!-- SCRIPT DATA & LOGIC -->
+  <!-- MULTI-LANGUAGE SCRIPT (TRILINGUAL ENGINE: EN / PT / ES) -->
   <script>
     let currentLang = 'en';
-    let currentStep = 0;
-    const userAnswers = [];
 
-    const quizData = {
+    // TRANSLATIONS DICTIONARY (EN, PT, ES)
+    const i18n = {
       en: {
-        intro: {
-          badge: "Clinical Assessment • Women 40+",
-          title: "What If Your Skin & Midsection Bloat Aren't Aging... But an Inflamed Gut-Skin Axis?",
-          desc: "After 40, conventional restriction and calorie counting accelerate dermal dehydration and cortisol spikes. Take this 60-second cellular audit to pinpoint your primary bio-markers.",
-          quote: '"Your cells don\'t need deprivation. They need 4-ingredient anti-inflammatory nourishment and gut-barrier repair."',
-          btnStart: "START 60-SECOND CELLULAR AUDIT →"
-        },
-        questions: [
-          {
-            category: "Demographics & Hormones",
-            title: "What is your current age bracket?",
-            desc: "Cellular turnover slows by up to 50% during midlife hormonal transitions.",
-            options: [
-              { icon: "🌸", text: "40 to 49 Years", sub: "Entering early perimenopausal hormonal shifts" },
-              { icon: "🌿", text: "50 to 59 Years", sub: "Active menopause & dermal density decline" },
-              { icon: "✨", text: "60+ Years", sub: "Post-menopausal longevity & vitality focus" }
-            ]
-          },
-          {
-            category: "Dermal Elasticity",
-            title: "How does your facial skin behave upon waking in the morning?",
-            desc: "Pillow marks and morning dullness reveal micro-circulation and collagen density.",
-            options: [
-              { icon: "🪞", text: "Skin feels dry, tight, and looks dull", sub: "Slow cellular hydration turnover" },
-              { icon: "⏳", text: "Pillow marks linger for hours", sub: "Diminished dermal elastin and collagen recoil" },
-              { icon: "💧", text: "Puffiness around the eyes and jawline", sub: "Sub-clinical lymphatic fluid congestion" }
-            ]
-          },
-          {
-            category: "Gut-Skin Permeability",
-            title: "How does your midsection react after eating bread, pasta, or baked goods?",
-            desc: "Refined flours trigger gas fermentation and cross-link collagen fibers (glycation).",
-            options: [
-              { icon: "🎈", text: "My belly balloons visibly within 2 hours", sub: "Active intestinal wall fermentation" },
-              { icon: "⚡", text: "I feel heavy, sluggish, and brain-fogged", sub: "Systemic post-meal insulin and cortisol spike" },
-              { icon: "🌿", text: "Mild bloating by evening, but noticeable", sub: "Delayed gastrointestinal transit" }
-            ]
-          },
-          {
-            category: "Gut-Skin Connection",
-            title: "Have you noticed your skin looks older whenever your digestion is sluggish?",
-            desc: "The gut-skin axis directly mirrors intestinal permeability on the surface of your face.",
-            options: [
-              { icon: "🔍", text: "Yes! Whenever I'm constipated, my skin breaks out or dries out", sub: "Classic gut-skin axis dysregulation" },
-              { icon: "✨", text: "I suspect a connection but never knew how to fix it", sub: "Needs targeted mucosal barrier sealing" },
-              { icon: "🌱", text: "I rarely linked digestion to my wrinkles and skin tone", sub: "Discovering cellular nutritional science" }
-            ]
-          },
-          {
-            category: "Mitochondrial Energy",
-            title: "Do you experience an energy drop between 2:00 PM and 4:00 PM?",
-            desc: "The afternoon slump indicates mitochondrial fatigue and glucose volatility.",
-            options: [
-              { icon: "☕", text: "Severe drop—I crave coffee, chocolate, or a nap", sub: "Adrenal fatigue and mitochondrial exhaustion" },
-              { icon: "🥱", text: "Moderate fatigue and heavy eyelids", sub: "Sub-optimal cellular ATP synthesis" },
-              { icon: "⚡", text: "My energy fluctuates unpredictably", sub: "Blood sugar instability" }
-            ]
-          },
-          {
-            category: "Fluid Retention",
-            title: "Do you notice fluid retention in your fingers, ankles, or under-eyes?",
-            desc: "Lymphatic stagnation prevents nocturnal cellular detox.",
-            options: [
-              { icon: "💍", text: "Yes—rings are noticeably tighter by late afternoon", sub: "Sodium-potassium electrolyte imbalance" },
-              { icon: "🧦", text: "Sock marks on ankles and heavy legs", sub: "Sluggish venous and lymphatic drainage" },
-              { icon: "🌿", text: "Mostly morning facial puffiness", sub: "Need evening lymphatic drainage rituals" }
-            ]
-          },
-          {
-            category: "Glycation & Night Cravings",
-            title: "Do you feel evening cravings for carbohydrates or sweets after dinner?",
-            desc: "Evening glucose spikes accelerate AGEs (Advanced Glycation End-products) that stiffen collagen.",
-            options: [
-              { icon: "🍫", text: "Yes, I regularly crave sweets or biscuits after 8 PM", sub: "High evening cortisol and leptin resistance" },
-              { icon: "🥨", text: "I crave salty or savory snacks while relaxing", sub: "Adrenal mineral depletion" },
-              { icon: "🌙", text: "I try to resist, but hunger wakes me up", sub: "Nocturnal glucose dips" }
-            ]
-          },
-          {
-            category: "Circadian Rhythm & Sleep",
-            title: "What typically happens between 2:00 AM and 4:00 AM when you sleep?",
-            desc: "This window is prime time for liver glycogen processing and nocturnal autophagy.",
-            options: [
-              { icon: "👁️", text: "I wake up alert with my mind racing", sub: "Sudden nighttime cortisol and histamine release" },
-              { icon: "🌡️", text: "I wake up hot or sweating, tossing and turning", sub: "Estrogen-vasomotor thermal fluctuation" },
-              { icon: "😴", text: "I sleep through, but wake up unrefreshed", sub: "Deprived of deep REM cellular repair" }
-            ]
-          },
-          {
-            category: "Culinary Lifestyle",
-            title: "What is your biggest obstacle to eating healthy and feeling radiant?",
-            desc: "Complicated diets fail because mature women lack time for elaborate prep.",
-            options: [
-              { icon: "⏱️", text: "Complex recipes with too many rare ingredients", sub: "Needs strictly 4-ingredient simplicity" },
-              { icon: "🥗", text: "Restrictive diets leave me hungry and irritable", sub: "Needs nourishing whole fats and clean protein" },
-              { icon: "📝", text: "Lack of a structured daily meal-by-meal plan", sub: "Needs week-by-week ceramic plate roadmap" }
-            ]
-          },
-          {
-            category: "Commitment to Results",
-            title: "Are you ready to commit 15 minutes a day for 28 days to transform your skin & vitality?",
-            desc: "Cellular renewal takes strictly 28 days of targeted nourishment.",
-            options: [
-              { icon: "🌟", text: "Yes! I am 100% ready to feel light and radiant again", sub: "Full biological commitment" },
-              { icon: "💖", text: "Yes, provided the meals are easy, flourless, and delicious", sub: "Perfect fit for Claire's 4-ingredient protocol" },
-              { icon: "🌿", text: "I want to start immediately and see visible results in 7 days", sub: "Ready for Phase 1 Gut Soothing" }
-            ]
-          }
+        role: "by Claire Evans • Cellular Longevity Mentor",
+        badge: "60-Sec Audit",
+        modePhone: "Mobile View",
+        modeExpanded: "Expanded View",
+        chassisSub: "28-Day Anti-Aging Cellular Nutrition for Women 40+",
+        chassisBy: "by Claire Evans • Mature Skin Mentor (Age 51)",
+        claireMentorBadge: "51 & Glowing",
+        claireIntro: "\"Answer instinctively. Let's find what your body needs to thrive.\"",
+        stepCounter: "Question {X} of {Y}",
+        stepPercent: "{P}% Complete",
+        interludeContinue: "Continue Assessment →",
+        calculatingSteps: [
+          { text: "Analyzing cellular stress indicators...", sub: "Evaluating cortisol and visceral adrenaline pathways.", width: "35%" },
+          { text: "Cross-referencing metabolic curves...", sub: "Analyzing your responses against mature wellness benchmarks.", width: "70%" },
+          { text: "Calibrating The Ageless Routine™ protocol...", sub: "Matching root-cause botanicals and restorative micro-movements.", width: "100%" }
         ],
-        calc: {
-          title: "Synthesizing Cellular Profile...",
-          subtitle: "Cross-referencing dermal collagen turnover, gut-skin axis permeability, and cortisol markers.",
-          s1: "Analyzing digestive fermentation & gut barrier...",
-          s2: "Assessing collagen cross-linking & glycation load...",
-          s3: "Structuring personalized 28-day roadmap..."
-        },
-        results: {
-          badge: "Clinical Assessment Result",
-          title: "Your Cellular Profile: Stage 2 Dermal-Gut Permeability",
-          lead: "Your answers reveal that your stubborn midsection bloat and skin dehydration are not biological aging—they are driven by sub-clinical glycation and an inflamed gut-skin barrier.",
-          m1: "Gut Permeability",
-          m1Sub: "Needs Sealing",
-          m2: "Collagen Turnover",
-          m2Sub: "Needs Proline / Ghee",
-          m3: "Evening Cortisol",
-          m3Sub: "Blocks Deep Repair",
-          phasesTitle: "Your 28-Day Biological Trajectory:",
-          ph1Name: "Days 1–7: Gut Soothing & Sealing",
-          ph1Desc: "Eliminate hidden fermentation flours; visibly flatten belly bloat in 72 hours.",
-          ph2Name: "Days 8–14: Cortisol & Mitochondrial Reset",
-          ph2Desc: "End the 3 PM energy slump; stabilize morning blood sugar with clean fats.",
-          ph3Name: "Days 15–21: Active Dermal Collagen Stimulation",
-          ph3Desc: "Flood mature skin cells with bioavailable amino acids and wild polyphenols.",
-          ph4Name: "Days 22–28: Hormonal Longevity & Radiance",
-          ph4Desc: "Consolidate overnight cellular autophagy; enjoy lasting lightness and clear skin.",
-          prodTitle: "The 28-Day Anti-Aging Cell Renewal Protocol™",
-          prodSubtitle: "The Official 30-Page Magazine Guide & 4-Ingredient Recipe Collection by Claire Evans (Age 51)",
-          inc1: "Deluxe 30-Page Protocol Guide (PDF): Step-by-step 4 biological phases.",
-          inc2: "12 Signature 4-Ingredient Recipes: Flourless, gluten-free, ready in <15 min.",
-          inc3: "The 4-Ingredient Cellular Pantry: Clean proteins, fats & bioactive herbs.",
-          inc4: "Therapeutic Elixirs & Evening Rituals: De-bloating teas & sleep routines.",
-          inc5: "Printable 28-Day Daily Planners: Habit checklist sheets (Days 1–28).",
-          inc6: "TRILINGUAL ACCESS: Full editions in US English, Portuguese (BR) & Spanish (ES).",
-          btnUnlock: "UNLOCK MY 28-DAY CELL RENEWAL PROTOCOL ($27) →",
-          guarantee: "100% Risk-Free 60-Day Guarantee: If you don't feel noticeably lighter and radiant, receive a full refund."
-        }
+        calcScanBadge: "Scanning Cellular Vitality",
+        resultsBadge: "Analysis Complete",
+        resultsTitle: "The Ageless Routine™ • Your Cellular Profile",
+        resCurated: "Curated by Claire Evans • Daily Health Review US",
+        mapLabel: "Personalized Vitality Map",
+        mapTitle: "Personalized Wellness & Recovery Score",
+        mapAudit: "Personalized by AI",
+        mapStatus: "Calculated ✓",
+        stressTitle: "Cellular Stress Profile",
+        meterCortisol: "Stress & Cortisol Rhythm",
+        meterGut: "Digestive Balance & Comfort",
+        meterHeart: "Circulatory Vitality & Rhythm",
+        meterSkin: "Skin Radiance & Collagen Turnover",
+        claireTakeaway: "Claire's Personalized Assessment:",
+        claireSubrole: "Cellular Longevity & Mature Skin Mentor",
+        foundationBadge: "YOUR RECOMMENDED FOUNDATION",
+        heroExpBadge: "Guided VIP Experience",
+        heroProdSubtitle: "Official 30-Page Magazine Guide • 4-Ingredient Recipes • Daily Trackers",
+        regularPrice: "Regular Price: $197",
+        oneTime: "One-Time",
+        checkoutBtn: "Claim VIP Access ($27) →",
+        pairingBadge: "CLAIRE'S BOTANICAL PAIRING",
+        physicianLabel: "Physician-Formulated",
+        explorePairing: "Explore Claire's Official Pairing",
+        ftcDisclosure: "Affiliate Disclosure: If you choose to purchase this recommended pairing through our link, Daily Health Review may earn a small commission at no additional cost to you. We only recommend rigorously vetted formulations.",
+        catalogTitle: "Explore Claire’s Complete VIP Library",
+        catalogSub: "Each comprehensive wellness protocol is just $27 (one-time payment)",
+        catTitle1: "🧬 28-Day Cell Renewal",
+        catDesc1: "Skin, collagen & vitality",
+        catTitle2: "🌿 Home Apothecary Bible",
+        catDesc2: "Forgotten natural remedies",
+        catTitle3: "🫖 14-Day Parasite Cleanse",
+        catDesc3: "Lymphatic & biofilm flush",
+        catTitle4: "🫀 9-Minute Arterial Reset",
+        catDesc4: "Natural blood pressure care",
+        catTitle5: "❤️ 28-Day Clean Arteries Protocol",
+        catDesc5: "Plaque defense, endothelial glycocalyx & Vitamin K2 calcium redirection",
+        viewStorefront: "View All 6 Protocols in Claire's Official Whop Storefront →",
+        footerCopy: "© 2026 Daily Health Review US • The Ageless Routine™ by Claire Evans.",
+        footerMed: "Medical Disclaimer: The statements and protocols presented on this website have not been evaluated by the Food and Drug Administration. These materials are intended for educational and wellness guidance only and are not a substitute for professional medical diagnosis or treatment. Always consult your physician.",
+        footerPrivacy: "Privacy Policy",
+        footerTerms: "Terms of Service",
+        footerDisclosure: "FTC Affiliate Disclosure"
       },
-
       pt: {
-        intro: {
-          badge: "Avaliação Clínica • Mulheres 40+",
-          title: "E Se o Inchaço Abdominal e a Flacidez na Pele Não Forem Velhice... Mas um Eixo Intestino-Pele Inflamado?",
-          desc: "Após os 40 anos, dietas restritivas e contagem de calorias desidratam a pele e disparam o cortisol. Faça este diagnóstico celular de 60 segundos para mapear seus bio-marcadores.",
-          quote: '"Suas células não precisam de privação. Elas precisam de nutrição celular de 4 ingredientes e selamento intestinal."',
-          btnStart: "INICIAR AVALIAÇÃO CELULAR DE 60 SEGUNDOS →"
-        },
-        questions: [
-          {
-            category: "Faixa Etária & Hormônios",
-            title: "Qual é a sua faixa etária atual?",
-            desc: "A renovação celular desacelera em até 50% nas transições hormonais da maturidade.",
-            options: [
-              { icon: "🌸", text: "40 a 49 Anos", sub: "Primeiros sinais da perimenopausa e oscilações" },
-              { icon: "🌿", text: "50 a 59 Anos", sub: "Menopausa ativa e queda na densidade da pele" },
-              { icon: "✨", text: "60+ Anos", sub: "Foco em longevidade, firmeza e vitalidade plena" }
-            ]
-          },
-          {
-            category: "Elasticidade Dérmica",
-            title: "Como a pele do seu rosto se comporta ao acordar pela manhã?",
-            desc: "Marcas de travesseiro e opacidade revelam a microcirculação e densidade do colágeno.",
-            options: [
-              { icon: "🪞", text: "Pele ressecada, repuxando e sem viço", sub: "Renovação de hidratação celular lenta" },
-              { icon: "⏳", text: "Marcas de travesseiro demoram horas para sumir", sub: "Queda na elastina dérmica e efeito mola" },
-              { icon: "💧", text: "Inchaço ao redor dos olhos e na mandíbula", sub: "Retenção de líquidos e drenagem linfática lenta" }
-            ]
-          },
-          {
-            category: "Permeabilidade Intestino-Pele",
-            title: "Como seu abdômen reage após comer pães, massas ou farinhas?",
-            desc: "Farinhas refinadas fermentam no trato digestivo e endurecem as fibras de colágeno (glicação).",
-            options: [
-              { icon: "🎈", text: "Minha barriga estufa visivelmente em até 2 horas", sub: "Fermentação ativa na parede intestinal" },
-              { icon: "⚡", text: "Sinto peso gástrico, fadiga e névoa mental", sub: "Pico de insulina inflamatória pós-refeição" },
-              { icon: "🌿", text: "Inchaço moderado ao final do dia, mas constante", sub: "Trânsito gastrointestinal lento" }
-            ]
-          },
-          {
-            category: "Conexão Intestino-Rosto",
-            title: "Você já notou que sua pele fica mais opaca e enrugada quando o intestino trava?",
-            desc: "O eixo intestino-pele reflete diretamente a saúde da mucosa na superfície do rosto.",
-            options: [
-              { icon: "🔍", text: "Sim! Se o intestino prende, a pele resseca ou inflama", sub: "Desregulação clássica do eixo intestino-pele" },
-              { icon: "✨", text: "Suspeitava disso, mas não sabia como tratar de dentro para fora", sub: "Necessita de selamento com caldo de colágeno" },
-              { icon: "🌱", text: "Raramente ligava digestão às minhas rugas e flacidez", sub: "Descobrindo a ciência da nutrição celular" }
-            ]
-          },
-          {
-            category: "Energia Mitocondrial",
-            title: "Você sente uma queda brusca de energia entre 14h e 16h da tarde?",
-            desc: "O cansaço da tarde é um indicador clássico de sobrecarga mitocondrial e cortisol desregulado.",
-            options: [
-              { icon: "☕", text: "Queda forte—preciso de café, doce ou um cochilo", sub: "Fadiga adrenal e esgotamento celular" },
-              { icon: "🥱", text: "Cansaço moderado e olhos pesados", sub: "Síntese celular de ATP abaixo do ideal" },
-              { icon: "⚡", text: "Minha energia oscila muito ao longo do dia", sub: "Instabilidade glicêmica" }
-            ]
-          },
-          {
-            category: "Retenção de Líquidos",
-            title: "Você percebe retenção de líquidos nos dedos, tornozelos ou olhos?",
-            desc: "A estagnação linfática impede a desintoxicação celular noturna.",
-            options: [
-              { icon: "💍", text: "Sim—anéis ficam apertados no fim da tarde", sub: "Desbalanço hidroeletrolítico de sódio e potássio" },
-              { icon: "🧦", text: "Marcas de meias nos tornozelos e pernas pesadas", sub: "Drenagem venosa e linfática lenta" },
-              { icon: "🌿", text: "Principalmente inchaço facial ao despertar", sub: "Necessita de massagem facial linfática noturna" }
-            ]
-          },
-          {
-            category: "Glicação & Fissura por Açúcar",
-            title: "Você sente vontade incontrolável de comer carboidratos ou doces à noite?",
-            desc: "Açúcar à noite acelera os AGEs que destroem o colágeno e a elastina.",
-            options: [
-              { icon: "🍫", text: "Sim, tenho forte vontade de doce após o jantar", sub: "Cortisol noturno alto e resistência à leptina" },
-              { icon: "🥨", text: "Sinto vontade de petiscos salgados e pães", sub: "Depleção mineral adrenal" },
-              { icon: "🌙", text: "Tento segurar, mas a fome me acorda de madrugada", sub: "Quedas glicêmicas noturnas" }
-            ]
-          },
-          {
-            category: "Sono & Autofagia Noturna",
-            title: "O que costuma acontecer entre 2h e 4h da madrugada no seu sono?",
-            desc: "Essa janela de horário é quando o fígado processa toxinas e a pele ativa a regeneração celular.",
-            options: [
-              { icon: "👁️", text: "Acordo de repente com pensamentos acelerados", sub: "Pico de cortisol e histamina noturna" },
-              { icon: "🌡️", text: "Acordo com calorões ou suando, virando de um lado pro outro", sub: "Oscilação vasomotora hormonal" },
-              { icon: "😴", text: "Durmo a noite toda, mas acordo sem descanso celular", sub: "Falta de sono REM profundo reparador" }
-            ]
-          },
-          {
-            category: "Estilo Culinário",
-            title: "Qual é o seu maior obstáculo para comer de forma saudável e desinflamar?",
-            desc: "Dietas complicadas falham porque mulheres maduras não têm tempo para receitas demoradas.",
-            options: [
-              { icon: "⏱️", text: "Receitas complexas com ingredientes caros ou difíceis", sub: "Precisa de praticidade estrita de 4 ingredientes" },
-              { icon: "🥗", text: "Dietas que passam fome me deixam irritada e fraca", sub: "Precisa de gorduras boas e proteínas densas" },
-              { icon: "📝", text: "Falta de um cardápio organizado passo a passo", sub: "Precisa de roteiro visual prato a prato" }
-            ]
-          },
-          {
-            category: "Compromisso com o Resultado",
-            title: "Você está disposta a dedicar 15 minutos por dia durante 28 dias para renovar sua pele?",
-            desc: "A renovação celular requer exatamente 28 dias de nutrição limpa sem farinhas.",
-            options: [
-              { icon: "🌟", text: "Sim! Estou 100% pronta para me sentir leve e radiante", sub: "Compromisso biológico total" },
-              { icon: "💖", text: "Sim, desde que as refeições sejam fáceis e gostosas", sub: "Encaixe perfeito com o método da Claire" },
-              { icon: "🌿", text: "Quero começar já e ver minha barriga desinchar em 7 dias", sub: "Pronta para a Fase 1 de Desinflamação" }
-            ]
-          }
+        role: "por Claire Evans • Mentora de Longevidade Celular",
+        badge: "Avaliação de 60s",
+        modePhone: "Modo Celular",
+        modeExpanded: "Modo Expandido",
+        chassisSub: "Bem-Estar Personalizado para Mulheres 40+",
+        chassisBy: "por Claire Evans • Vitalidade Madura",
+        claireMentorBadge: "51 Anos & Radiante",
+        claireIntro: "\"Responda instintivamente. Vamos descobrir o que seu corpo precisa para florescer.\"",
+        stepCounter: "Pergunta {X} de {Y}",
+        stepPercent: "{P}% Concluído",
+        interludeContinue: "Continuar Avaliação →",
+        calculatingSteps: [
+          { text: "Analisando marcadores de estresse celular...", sub: "Avaliando vias de cortisol e tensão visceral adrenal.", width: "35%" },
+          { text: "Cruzando curvas metabólicas pós-40...", sub: "Comparando respostas com padrões de vitalidade madura.", width: "70%" },
+          { text: "Calibrando The Ageless Routine™ para o seu corpo...", sub: "Combinando ativos botânicos e micro-movimentos restauradores.", width: "100%" }
         ],
-        calc: {
-          title: "Sintetizando seu Perfil Celular...",
-          subtitle: "Cruzando taxas de renovação dérmica, permeabilidade do intestino e marcadores de cortisol.",
-          s1: "Analisando fermentação gástrica e barreira intestinal...",
-          s2: "Avaliando sobrecarga de glicação no colágeno...",
-          s3: "Estruturando roteiro personalizado de 28 dias..."
+        calcScanBadge: "Escaneando Vitalidade Celular",
+        resultsBadge: "Análise Concluída",
+        resultsTitle: "The Ageless Routine™ • Seu Perfil de Vitalidade Celular",
+        resCurated: "Desenvolvido por Claire Evans • Daily Health Review US",
+        mapLabel: "Mapa de Vitalidade Personalizado",
+        mapTitle: "Score Personalizado de Bem-Estar e Recuperação",
+        mapAudit: "Personalizado por IA",
+        mapStatus: "Calculado ✓",
+        stressTitle: "Perfil de Estresse Celular",
+        meterCortisol: "Ritmo de Estresse e Cortisol",
+        meterGut: "Equilíbrio Digestivo e Conforto",
+        meterHeart: "Vitalidade Circulatória e Ritmo",
+        meterSkin: "Radiância da Pele e Colágeno",
+        claireTakeaway: "Avaliação Personalizada da Claire:",
+        claireSubrole: "Mentora de Longevidade Celular e Pele Madura",
+        foundationBadge: "SUA RECOMENDAÇÃO PRINCIPAL",
+        heroExpBadge: "Experiência VIP Guiada",
+        heroProdSubtitle: "Guia Editorial de 30 Páginas • Receitas de 4 Ingredientes • Planners Diários",
+        regularPrice: "Valor Normal: $197",
+        oneTime: "Pagamento Único",
+        checkoutBtn: "Garantir Acesso VIP ($27) →",
+        pairingBadge: "COMBINAÇÃO BOTÂNICA DA CLAIRE",
+        physicianLabel: "Fórmula Médica",
+        explorePairing: "Conhecer a Combinação Oficial da Claire",
+        ftcDisclosure: "Aviso de Transparência: Se você optar por adquirir este suplemento parceiro através do nosso link, a Daily Health Review poderá receber uma pequena comissão sem nenhum custo adicional para você.",
+        catalogTitle: "Conheça a Biblioteca Completa da Claire Evans",
+        catalogSub: "Cada protocolo completo de bem-estar custa apenas $27 (pagamento único)",
+        catTitle1: "🧬 Renovação Celular 28 Dias",
+        catDesc1: "Pele, colágeno e renovação dérmica",
+        catTitle2: "🌿 Bíblia do Boticário Caseiro",
+        catDesc2: "Remédios e tinturas botânicas esquecidas",
+        catTitle3: "🫖 Detox Parasitas 14 Dias",
+        catDesc3: "Drenagem linfática e quebra de biofilmes",
+        catTitle4: "🫀 Elasticidade Arterial 9 Minutos",
+        catDesc4: "Pressão arterial e relaxamento vascular",
+        catTitle5: "❤️ Artérias Limpas 28 Dias",
+        catDesc5: "Defesa de placas, glicocálix e redirecionamento de cálcio",
+        viewStorefront: "Ver Todos os 6 Protocolos na Loja Oficial no Whop →",
+        footerCopy: "© 2026 Daily Health Review US • The Ageless Routine™ por Claire Evans.",
+        footerMed: "Aviso Legal Médico: As declarações e protocolos apresentados neste site não foram avaliados pela FDA. Estes materiais têm caráter exclusivamente educacional e de bem-estar, não substituindo o diagnóstico ou tratamento médico profissional. Consulte sempre seu médico.",
+        footerPrivacy: "Política de Privacidade",
+        footerTerms: "Termos de Uso",
+        footerDisclosure: "Aviso de Transparência FTC"
+      },
+      es: {
+        role: "por Claire Evans • Mentora de Longevidad Celular",
+        badge: "Evaluación de 60s",
+        modePhone: "Modo Celular",
+        modeExpanded: "Modo Expandido",
+        chassisSub: "Bienestar Personalizado para Mujeres 40+",
+        chassisBy: "por Claire Evans • Vitalidad Madura",
+        claireMentorBadge: "51 Años & Radiante",
+        claireIntro: "\"Responde instintivamente. Descubramos lo que tu cuerpo necesita para florecer.\"",
+        stepCounter: "Pregunta {X} de {Y}",
+        stepPercent: "{P}% Completado",
+        interludeContinue: "Continuar Evaluación →",
+        calculatingSteps: [
+          { text: "Analizando biomarcadores de estrés celular...", sub: "Evaluando vías de cortisol y tensión visceral adrenal.", width: "35%" },
+          { text: "Cruzando curvas metabólicas hormonales...", sub: "Comparando tus respuestas con referencias de bienestar maduro.", width: "70%" },
+          { text: "Calibrando The Ageless Routine™ para tu cuerpo...", sub: "Asignando botánicos puros y micro-movimientos restauradores.", width: "100%" }
+        ],
+        calcScanBadge: "Escaneando Vitalidad Celular",
+        resultsBadge: "Análisis Completado",
+        resultsTitle: "The Ageless Routine™ • Tu Perfil de Vitalidad Celular",
+        resCurated: "Desarrollado por Claire Evans • Daily Health Review US",
+        mapLabel: "Mapa de Vitalidade Personalizado",
+        mapTitle: "Puntuación Personalizada de Bienestar y Recuperación",
+        mapAudit: "Personalizado por IA",
+        mapStatus: "Calculado ✓",
+        stressTitle: "Perfil de Estrés Celular",
+        meterCortisol: "Ritmo de Estrés y Cortisol",
+        meterGut: "Equilibrio Digestivo y Confort",
+        meterHeart: "Vitalidad Circulatoria y Ritmo",
+        meterSkin: "Radiancia Cutánea y Colágeno",
+        claireTakeaway: "Evaluación Personalizada de Claire:",
+        claireSubrole: "Mentora de Longevidad Celular y Piel Madura",
+        foundationBadge: "TU RECOMENDACIÓN PRINCIPAL",
+        heroExpBadge: "Experiencia VIP Guiada",
+        heroProdSubtitle: "Guía Editorial de 30 Páginas • Recetas de 4 Ingredientes • Planners Diarios",
+        regularPrice: "Precio Habitual: $197",
+        oneTime: "Pago Único",
+        checkoutBtn: "Obtener Acceso VIP ($27) →",
+        pairingBadge: "COMBINACIÓN BOTÁNICA DE CLAIRE",
+        physicianLabel: "Fórmula Médica",
+        explorePairing: "Conocer la Combinación Oficial de Claire",
+        ftcDisclosure: "Aviso de Afiliación: Si decides adquirir este suplemento recomendado a través de nuestro enlace, Daily Health Review puede recibir una pequeña comisión sin ningún coste adicional para ti.",
+        catalogTitle: "Explora la Biblioteca VIP Completa de Claire",
+        catalogSub: "Cada protocolo completo de bienestar cuesta sólo $27 (pago único)",
+        catTitle1: "🧬 Renovación Celular 28 Días",
+        catDesc1: "Piel, colágeno y renovación celular",
+        catTitle2: "🌿 Biblia de la Botica Casera",
+        catDesc2: "Remedios y tinturas botánicas olvidadas",
+        catTitle3: "🫖 Limpieza Parasitaria 14 Días",
+        catDesc3: "Drenaje linfático y eliminación de biofilms",
+        catTitle4: "🫀 Elasticidad Arterial 9 Minutos",
+        catDesc4: "Presión arterial y relajación vascular",
+        catTitle5: "❤️ Arterias Limpias 28 Días",
+        catDesc5: "Defensa contra placas, glicocálix y redirección de calcio",
+        viewStorefront: "Ver los 6 Protocolos en la Tienda Oficial de Whop →",
+        footerCopy: "© 2026 Daily Health Review US • The Ageless Routine™ por Claire Evans.",
+        footerMed: "Aviso Médico: Las declaraciones y protocolos presentados en este sitio no han sido evaluados por la FDA. Estos materiales tienen fines informativos y de bienestar, no sustituyendo el diagnóstico médico profesional. Consulta siempre a tu médico.",
+        footerPrivacy: "Política de Privacidad",
+        footerTerms: "Términos de Servicio",
+        footerDisclosure: "Aviso de Afiliados FTC"
+      }
+    };
+
+    // 10 QUESTIONS IN 3 LANGUAGES
+    const questionsData = {
+  "en": [
+    {
+      "id": 1,
+      "title": "What is your current age bracket?",
+      "subtitle": "Cellular renewal and dermal collagen turnover decelerate sharply after 40.",
+      "options": [
+        {
+          "label": "40 to 49 Years",
+          "desc": "Entering early perimenopausal hormonal and dermal shifts",
+          "category": "skin"
         },
-        results: {
-          badge: "Resultado da Avaliação Clínica",
-          title: "Seu Perfil Celular: Estágio 2 de Permeabilidade Intestino-Pele",
-          lead: "Suas respostas revelam que o inchaço abdominal e a perda de viço na pele não são envelhecimento definitivo—são reflexo de glicação e microinflamação na mucosa digestiva.",
-          m1: "Permeabilidade Intestinal",
-          m1Sub: "Precisa de Selamento",
-          m2: "Renovação do Colágeno",
-          m2Sub: "Lenta (Precisa de Prolina)",
-          m3: "Cortisol Noturno",
-          m3Sub: "Bloqueia o Reparo Dérmico",
-          phasesTitle: "Sua Trajetória Biológica em 28 Dias:",
-          ph1Name: "Dias 1 a 7: Desinflamação e Selamento Intestinal",
-          ph1Desc: "Corte das farinhas fermentáveis; barriga visivelmente reta em 72 horas.",
-          ph2Name: "Dias 8 a 14: Reset de Cortisol e Energia Mitocondrial",
-          ph2Desc: "Fim do cansaço das 15h; glicemia estável com manteiga ghee e gorduras boas.",
-          ph3Name: "Dias 15 a 21: Estímulo Ativo do Colágeno Dérmico",
-          ph3Desc: "Banho de aminoácidos biodisponíveis para devolver elasticidade ao rosto.",
-          ph4Name: "Dias 22 a 28: Consolidação Hormonal e Longevidade",
-          ph4Desc: "Ativação da autofagia noturna; leveza estomacal e pele luminosa duradoura.",
-          prodTitle: "O Protocolo de 28 Dias de Renovação Celular™",
-          prodSubtitle: "Guia Oficial de 30 Páginas em Revista + Coleção de Receitas de 4 Ingredientes por Claire Evans (51 anos)",
-          inc1: "Guia Editorial Completo de 30 Páginas (PDF HD): Passo a passo das 4 fases.",
-          inc2: "12 Receitas Exclusivas de 4 Ingredientes: Sem farinhas, prontas em menos de 15 min.",
-          inc3: "Despensa Celular de 4 Ingredientes: Lista inteligente de proteínas, gorduras e ervas.",
-          inc4: "Elixires Terapêuticos e Rituais Noturnos: Chás metabólicos e higiene de sono.",
-          inc5: "Planners Diários Imprimíveis: Checklists de acompanhamento (Dias 1 a 28).",
-          inc6: "ACESSO TRILINGUE COMPLETO: Edições completas em Português, Inglês e Espanhol.",
-          btnUnlock: "DESBLOQUEAR MEU PROTOCOLO DE 28 DIAS (R$ 139 / $27 USD) →",
-          guarantee: "Garantia Blindada de 60 Dias: Se você não se sentir mais leve e com a pele visivelmente radiante, receba 100% do seu dinheiro de volta."
+        {
+          "label": "50 to 59 Years",
+          "desc": "Active menopause, dermal elasticity decline, and visceral bloat",
+          "category": "skin"
+        },
+        {
+          "label": "60 Years or Older",
+          "desc": "Post-menopausal longevity, deep cell repair, and skin firmness",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "How does your facial skin behave upon waking in the morning?",
+      "subtitle": "Pillow creases and morning dullness reveal collagen density and micro-circulation.",
+      "options": [
+        {
+          "label": "Pillow marks linger for hours",
+          "desc": "Diminished dermal elastin and sluggish collagen recoil",
+          "category": "skin"
+        },
+        {
+          "label": "Skin feels dry, tight, and looks dull",
+          "desc": "Sluggish cellular turnover and compromised lipid barrier",
+          "category": "skin"
+        },
+        {
+          "label": "Puffiness around the eyes and jawline",
+          "desc": "Sub-clinical lymphatic fluid retention and cortisol",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "How does your midsection react after eating bread, pasta, or baked goods?",
+      "subtitle": "Refined flours trigger gas fermentation and cross-link collagen fibers (glycation).",
+      "hasInterlude": true,
+      "interludeData": {
+        "title": "You are not alone in this.",
+        "text": "Over 86% of women over 40 suffer from hidden gut-skin barrier permeability triggered by modern flours.",
+        "author": "Eleanor M., 52 \u2022 Verified Member",
+        "quote": "\"Replacing flours with Claire's 4-ingredient meals flattened my belly bloat in 3 days and gave my skin a fresh glow!\""
+      },
+      "options": [
+        {
+          "label": "My belly balloons visibly within 2 hours",
+          "desc": "Active intestinal wall fermentation and visceral pressure",
+          "category": "skin"
+        },
+        {
+          "label": "I feel heavy, sluggish, and brain-fogged",
+          "desc": "Systemic post-meal insulin and cortisol spike",
+          "category": "skin"
+        },
+        {
+          "label": "Mild bloating by evening, but persistent",
+          "desc": "Delayed gastrointestinal transit and low enzymes",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Have you noticed your skin looks older whenever your digestion is sluggish?",
+      "subtitle": "The gut-skin axis mirrors internal mucosal inflammation directly on your face.",
+      "options": [
+        {
+          "label": "Yes! When digestion slows, my skin dries out or breaks out",
+          "desc": "Classic gut-skin axis dysregulation",
+          "category": "skin"
+        },
+        {
+          "label": "I suspect a connection but never knew how to heal it",
+          "desc": "Needs targeted gut-barrier collagen sealing",
+          "category": "skin"
+        },
+        {
+          "label": "I rarely linked digestion to my wrinkles and skin tone",
+          "desc": "Discovering cellular nutritional science",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Do you experience an energy drop between 2:00 PM and 4:00 PM?",
+      "subtitle": "The afternoon slump indicates mitochondrial fatigue and glucose volatility.",
+      "options": [
+        {
+          "label": "Severe crash\u2014I crave coffee, sweets, or a nap",
+          "desc": "Mitochondrial exhaustion and adrenal stress",
+          "category": "skin"
+        },
+        {
+          "label": "Moderate fatigue and heavy eyelids",
+          "desc": "Sub-optimal cellular ATP synthesis",
+          "category": "skin"
+        },
+        {
+          "label": "My energy fluctuates unpredictably throughout the day",
+          "desc": "Blood sugar instability and insulin spikes",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Do you notice fluid retention in your fingers, ankles, or under-eyes?",
+      "subtitle": "Lymphatic stagnation prevents nocturnal cellular detox and causes puffiness.",
+      "options": [
+        {
+          "label": "Yes\u2014rings are noticeably tighter by late afternoon",
+          "desc": "Sodium-potassium cellular electrolyte imbalance",
+          "category": "skin"
+        },
+        {
+          "label": "Sock marks on ankles and heavy legs",
+          "desc": "Sluggish venous and lymphatic drainage",
+          "category": "skin"
+        },
+        {
+          "label": "Mostly morning facial and eyelid puffiness",
+          "desc": "Requires evening lymphatic drainage rituals",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Do you feel evening cravings for carbohydrates or sweets after dinner?",
+      "subtitle": "Evening glucose spikes accelerate AGEs (Advanced Glycation End-products) that stiffen collagen.",
+      "options": [
+        {
+          "label": "Yes, I regularly crave sweets or biscuits after 8 PM",
+          "desc": "High evening cortisol and leptin resistance",
+          "category": "skin"
+        },
+        {
+          "label": "I crave salty, crunchy, or savory snacks",
+          "desc": "Adrenal mineral depletion and stress",
+          "category": "skin"
+        },
+        {
+          "label": "I try to resist, but hunger wakes me up at night",
+          "desc": "Nocturnal glucose dips and cortisol surge",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "What typically happens between 2:00 AM and 4:00 AM when you sleep?",
+      "subtitle": "This window is prime time for liver detox and nocturnal cellular autophagy.",
+      "options": [
+        {
+          "label": "I wake up alert with my mind racing",
+          "desc": "Sudden nighttime cortisol and histamine release",
+          "category": "skin"
+        },
+        {
+          "label": "I wake up hot or sweating, tossing and turning",
+          "desc": "Estrogen-vasomotor thermal fluctuation",
+          "category": "skin"
+        },
+        {
+          "label": "I sleep through, but wake up unrefreshed",
+          "desc": "Deprived of deep REM cellular repair",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "What is your biggest obstacle to eating healthy and feeling radiant?",
+      "subtitle": "Complicated diets fail because mature women lack time for elaborate prep.",
+      "options": [
+        {
+          "label": "Complex recipes with too many rare ingredients",
+          "desc": "Needs strictly 4-ingredient culinary simplicity",
+          "category": "skin"
+        },
+        {
+          "label": "Restrictive diets leave me hungry and irritable",
+          "desc": "Needs nourishing whole fats and clean protein",
+          "category": "skin"
+        },
+        {
+          "label": "Lack of a structured daily meal-by-meal plan",
+          "desc": "Needs week-by-week ceramic plate roadmap",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Are you ready to commit 15 minutes a day for 28 days to transform your skin & vitality?",
+      "subtitle": "Cellular renewal takes strictly 28 days of targeted nourishment without flours.",
+      "options": [
+        {
+          "label": "Yes! I am 100% ready to feel light and radiant again",
+          "desc": "Full biological commitment",
+          "category": "skin"
+        },
+        {
+          "label": "Yes, provided the meals are easy, flourless, and delicious",
+          "desc": "Perfect fit for Claire's 4-ingredient protocol",
+          "category": "skin"
+        },
+        {
+          "label": "I want to start immediately and see visible results in 7 days",
+          "desc": "Ready for Phase 1 Gut Soothing",
+          "category": "skin"
+        }
+      ]
+    }
+  ],
+  "pt": [
+    {
+      "id": 1,
+      "title": "Qual \u00e9 a sua faixa et\u00e1ria atual?",
+      "subtitle": "A renova\u00e7\u00e3o celular e o turn-over de col\u00e1geno desaceleram fortemente ap\u00f3s os 40 anos.",
+      "options": [
+        {
+          "label": "40 a 49 Anos",
+          "desc": "In\u00edcio da perimenopausa e primeiras altera\u00e7\u00f5es na firmeza da pele",
+          "category": "skin"
+        },
+        {
+          "label": "50 a 59 Anos",
+          "desc": "Menopausa ativa, flacidez d\u00e9rmica e incha\u00e7o abdominal resistente",
+          "category": "skin"
+        },
+        {
+          "label": "60 Anos ou Mais",
+          "desc": "P\u00f3s-menopausa, foco em longevidade celular, t\u00f4nus e vi\u00e7o",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Como a pele do seu rosto se comporta ao acordar pela manh\u00e3?",
+      "subtitle": "Marcas de travesseiro e opacidade revelam a densidade do col\u00e1geno e microcircula\u00e7\u00e3o.",
+      "options": [
+        {
+          "label": "Marcas de travesseiro demoram horas para sumir",
+          "desc": "Queda na elastina d\u00e9rmica e efeito mola da pele",
+          "category": "skin"
+        },
+        {
+          "label": "Pele ressecada, repuxando e com tom opaco",
+          "desc": "Renova\u00e7\u00e3o celular lenta e barreira lip\u00eddica fr\u00e1gil",
+          "category": "skin"
+        },
+        {
+          "label": "Incha\u00e7o ao redor dos olhos e na mand\u00edbula",
+          "desc": "Reten\u00e7\u00e3o de l\u00edquidos linf\u00e1ticos e cortisol matinal",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Como a sua barriga reage ap\u00f3s comer p\u00e3es, massas ou farinhas?",
+      "subtitle": "Farinhas refinadas fermentam no trato digestivo e endurecem as fibras de col\u00e1geno (glica\u00e7\u00e3o).",
+      "hasInterlude": true,
+      "interludeData": {
+        "title": "Voc\u00ea n\u00e3o est\u00e1 sozinha nisso.",
+        "text": "Mais de 86% das mulheres acima de 40 anos sofrem de permeabilidade intestinal oculta causada por farinhas modernas.",
+        "author": "Eleanor M., 52 \u2022 Membro Verificada",
+        "quote": "\"Substituir as farinhas pelas receitas de 4 ingredientes da Claire desinchou minha barriga em 3 dias e devolveu o brilho da minha pele!\""
+      },
+      "options": [
+        {
+          "label": "Minha barriga estufa visivelmente em at\u00e9 2 horas",
+          "desc": "Fermenta\u00e7\u00e3o ativa na parede intestinal e gases",
+          "category": "skin"
+        },
+        {
+          "label": "Sinto peso g\u00e1strico, moleza e n\u00e9voa mental",
+          "desc": "Pico de insulina inflamat\u00f3ria e cortisol p\u00f3s-refei\u00e7\u00e3o",
+          "category": "skin"
+        },
+        {
+          "label": "Incha\u00e7o constante ao final da tarde",
+          "desc": "Tr\u00e2nsito gastrointestinal lento e digest\u00e3o pesada",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Voc\u00ea j\u00e1 notou que sua pele fica mais opaca e enrugada quando o intestino trava?",
+      "subtitle": "O eixo intestino-pele reflete a inflama\u00e7\u00e3o da mucosa digestiva diretamente no rosto.",
+      "options": [
+        {
+          "label": "Sim! Se o intestino prende, a pele resseca ou inflama",
+          "desc": "Desregula\u00e7\u00e3o cl\u00e1ssica do eixo intestino-pele",
+          "category": "skin"
+        },
+        {
+          "label": "Suspeitava disso, mas n\u00e3o sabia como tratar de dentro para fora",
+          "desc": "Necessita de selamento com caldo de col\u00e1geno",
+          "category": "skin"
+        },
+        {
+          "label": "Raramente ligava digest\u00e3o \u00e0s minhas rugas e flacidez",
+          "desc": "Descobrindo a ci\u00eancia da nutri\u00e7\u00e3o celular",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Voc\u00ea sente uma queda brusca de energia entre 14h e 16h da tarde?",
+      "subtitle": "O cansa\u00e7o da tarde \u00e9 um indicador cl\u00e1ssico de sobrecarga mitocondrial e cortisol desregulado.",
+      "options": [
+        {
+          "label": "Queda forte\u2014preciso de caf\u00e9, doce ou um cochilo",
+          "desc": "Fadiga adrenal e esgotamento celular",
+          "category": "skin"
+        },
+        {
+          "label": "Cansa\u00e7o moderado e olhos pesados",
+          "desc": "S\u00edntese celular de ATP abaixo do ideal",
+          "category": "skin"
+        },
+        {
+          "label": "Minha energia oscila muito ao longo do dia",
+          "desc": "Instabilidade glic\u00eamica e picos de insulina",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Voc\u00ea percebe reten\u00e7\u00e3o de l\u00edquidos nos dedos, tornozelos ou olhos?",
+      "subtitle": "A estagna\u00e7\u00e3o linf\u00e1tica impede a desintoxica\u00e7\u00e3o celular noturna e causa incha\u00e7o.",
+      "options": [
+        {
+          "label": "Sim\u2014an\u00e9is ficam apertados no fim da tarde",
+          "desc": "Desbalan\u00e7o hidroeletrol\u00edtico celular",
+          "category": "skin"
+        },
+        {
+          "label": "Marcas de meias nos tornozelos e pernas pesadas",
+          "desc": "Drenagem venosa e linf\u00e1tica lenta",
+          "category": "skin"
+        },
+        {
+          "label": "Principalmente incha\u00e7o facial ao despertar",
+          "desc": "Necessita de massagem facial linf\u00e1tica noturna",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Voc\u00ea sente vontade incontrol\u00e1vel de comer carboidratos ou doces \u00e0 noite?",
+      "subtitle": "A\u00e7\u00facar \u00e0 noite acelera os AGEs que destroem o col\u00e1geno e a elasticidade.",
+      "options": [
+        {
+          "label": "Sim, tenho forte vontade de doce ap\u00f3s o jantar",
+          "desc": "Cortisol noturno alto e resist\u00eancia \u00e0 leptina",
+          "category": "skin"
+        },
+        {
+          "label": "Sinto vontade de petiscos salgados e p\u00e3es",
+          "desc": "Deple\u00e7\u00e3o mineral adrenal e estresse",
+          "category": "skin"
+        },
+        {
+          "label": "Tento segurar, mas a fome me acorda de madrugada",
+          "desc": "Quedas glic\u00eamicas noturnas",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "O que costuma acontecer entre 2h e 4h da madrugada no seu sono?",
+      "subtitle": "Essa janela de hor\u00e1rio \u00e9 quando o f\u00edgado processa toxinas e a pele ativa a autofagia celular.",
+      "options": [
+        {
+          "label": "Acordo de repente com pensamentos acelerados",
+          "desc": "Pico de cortisol e histamina noturna",
+          "category": "skin"
+        },
+        {
+          "label": "Acordo com calor\u00f5es ou suando, virando de um lado pro outro",
+          "desc": "Oscila\u00e7\u00e3o vasomotora hormonal",
+          "category": "skin"
+        },
+        {
+          "label": "Durmo a noite toda, mas acordo sem descanso celular",
+          "desc": "Falta de sono REM profundo reparador",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Qual \u00e9 o seu maior obst\u00e1culo para comer de forma saud\u00e1vel e desinflamar?",
+      "subtitle": "Dietas complicadas falham porque mulheres maduras n\u00e3o t\u00eam tempo para receitas demoradas.",
+      "options": [
+        {
+          "label": "Receitas complexas com ingredientes caros ou dif\u00edceis",
+          "desc": "Precisa de praticidade estrita de 4 ingredientes",
+          "category": "skin"
+        },
+        {
+          "label": "Dietas que passam fome me deixam irritada e fraca",
+          "desc": "Precisa de gorduras boas e prote\u00ednas densas",
+          "category": "skin"
+        },
+        {
+          "label": "Falta de um card\u00e1pio organizado passo a passo",
+          "desc": "Precisa de roteiro visual prato a prato",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Voc\u00ea est\u00e1 disposta a dedicar 15 minutos por dia durante 28 dias para renovar sua pele?",
+      "subtitle": "A renova\u00e7\u00e3o celular requer exatamente 28 dias de nutri\u00e7\u00e3o limpa sem farinhas.",
+      "options": [
+        {
+          "label": "Sim! Estou 100% pronta para me sentir leve e radiante",
+          "desc": "Compromisso biol\u00f3gico total",
+          "category": "skin"
+        },
+        {
+          "label": "Sim, desde que as refei\u00e7\u00f5es sejam f\u00e1ceis e gostosas",
+          "desc": "Encaixe perfeito com o m\u00e9todo da Claire",
+          "category": "skin"
+        },
+        {
+          "label": "Quero come\u00e7ar j\u00e1 e ver minha barriga desinchar em 7 dias",
+          "desc": "Pronta para a Fase 1 de Desinflama\u00e7\u00e3o",
+          "category": "skin"
+        }
+      ]
+    }
+  ],
+  "es": [
+    {
+      "id": 1,
+      "title": "\u00bfCu\u00e1l es tu rango de edad actual?",
+      "subtitle": "La renovaci\u00f3n celular y el col\u00e1geno d\u00e9rmico se ralentizan bruscamente tras los 40.",
+      "options": [
+        {
+          "label": "40 a 49 A\u00f1os",
+          "desc": "Inicio de la perimenopausia y primeros cambios en la piel",
+          "category": "skin"
+        },
+        {
+          "label": "50 a 59 A\u00f1os",
+          "desc": "Menopausia activa, p\u00e9rdida de elasticidad e hinchaz\u00f3n abdominal",
+          "category": "skin"
+        },
+        {
+          "label": "60 A\u00f1os o M\u00e1s",
+          "desc": "Posmenopausia, longevidad celular y firmeza cut\u00e1nea",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "\u00bfC\u00f3mo se comporta la piel de tu rostro al despertar por la ma\u00f1ana?",
+      "subtitle": "Las marcas de la almohada y la opacidad reflejan la densidad de col\u00e1geno.",
+      "options": [
+        {
+          "label": "Las marcas de almohada tardan horas en desaparecer",
+          "desc": "Disminuci\u00f3n de elastina d\u00e9rmica y efecto rebote",
+          "category": "skin"
+        },
+        {
+          "label": "Piel seca, tirante y con tono apagado",
+          "desc": "Renovaci\u00f3n celular lenta y barrera lip\u00eddica d\u00e9bil",
+          "category": "skin"
+        },
+        {
+          "label": "Hinchaz\u00f3n en los ojos y contorno mandibular",
+          "desc": "Retenci\u00f3n linf\u00e1tica y cortisol matutino elevado",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "\u00bfC\u00f3mo reacciona tu abdomen tras consumir harinas, pan o pastas?",
+      "subtitle": "Las harinas refinadas fermentan en el intestino y rigidizan las fibras de col\u00e1geno.",
+      "hasInterlude": true,
+      "interludeData": {
+        "title": "No est\u00e1s sola en esto.",
+        "text": "M\u00e1s del 86% de las mujeres mayores de 40 a\u00f1os sufren permeabilidad en la barrera intestinal por las harinas modernas.",
+        "author": "Eleanor M., 52 \u2022 Miembro Verificada",
+        "quote": "\"\u00a1Sustituir las harinas por las recetas de 4 ingredientes de Claire desinflam\u00f3 mi abdomen en 3 d\u00edas y devolvi\u00f3 la luminosidad a mi piel!\""
+      },
+      "options": [
+        {
+          "label": "Mi vientre se abulta visiblemente en menos de 2 horas",
+          "desc": "Fermentaci\u00f3n activa en la pared intestinal y gases",
+          "category": "skin"
+        },
+        {
+          "label": "Siento pesadez g\u00e1strica, fatiga y niebla mental",
+          "desc": "Pico de insulina inflamatoria postprandial",
+          "category": "skin"
+        },
+        {
+          "label": "Hinchaz\u00f3n constante al atardecer",
+          "desc": "Tr\u00e1nsito gastrointestinal lento y digesti\u00f3n pesada",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "\u00bfNotas que tu piel se ve m\u00e1s cansada y sin brillo cuando tu digesti\u00f3n es lenta?",
+      "subtitle": "El eje intestino-piel refleja la inflamaci\u00f3n de la mucosa digestiva directamente en el rostro.",
+      "options": [
+        {
+          "label": "\u00a1S\u00ed! Si tengo estre\u00f1imiento, mi piel se apaga o sufre brotes",
+          "desc": "Desregulaci\u00f3n cl\u00e1sica del eje intestino-piel",
+          "category": "skin"
+        },
+        {
+          "label": "Sospechaba una relaci\u00f3n, pero no sab\u00eda c\u00f3mo resolverla",
+          "desc": "Requiere sellado intestinal con col\u00e1geno",
+          "category": "skin"
+        },
+        {
+          "label": "Rara vez asociaba la digesti\u00f3n con mis arrugas",
+          "desc": "Descubriendo la nutrici\u00f3n celular",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "\u00bfSufres una ca\u00edda brusca de energ\u00eda entre las 14:00 y las 16:00?",
+      "subtitle": "El baj\u00f3n vespertino indica sobrecarga mitocondrial y cortisol elevado.",
+      "options": [
+        {
+          "label": "Ca\u00edda severa: necesito caf\u00e9, dulce o una siesta",
+          "desc": "Fatiga adrenal y agotamiento celular",
+          "category": "skin"
+        },
+        {
+          "label": "Cansancio moderado y ojos pesados",
+          "desc": "S\u00edntesis celular de ATP sub\u00f3ptima",
+          "category": "skin"
+        },
+        {
+          "label": "Mi energ\u00eda fluct\u00faa de forma impredecible",
+          "desc": "Inestabilidad gluc\u00e9mica y picos de insulina",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "\u00bfSientes retenci\u00f3n de l\u00edquidos en dedos, tobillos o debajo de los ojos?",
+      "subtitle": "El estancamiento linf\u00e1tico bloquea la desintoxicaci\u00f3n celular nocturna.",
+      "options": [
+        {
+          "label": "S\u00ed: los anillos me aprietan al atardecer",
+          "desc": "Desequilibrio hidroelectrol\u00edtico celular",
+          "category": "skin"
+        },
+        {
+          "label": "Marcas de calcetines y piernas pesadas",
+          "desc": "Drenaje venoso y linf\u00e1tico lento",
+          "category": "skin"
+        },
+        {
+          "label": "Principalmente hinchaz\u00f3n facial al despertar",
+          "desc": "Requiere rituales de masaje linf\u00e1tico nocturno",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "\u00bfSientes deseos intensos de comer carbohidratos o dulces despu\u00e9s de cenar?",
+      "subtitle": "El az\u00facar nocturno dispara los AGEs que rompen las fibras de col\u00e1geno.",
+      "options": [
+        {
+          "label": "S\u00ed, suelo desear dulces o galletas despu\u00e9s de cenar",
+          "desc": "Cortisol nocturno alto y resistencia a la leptina",
+          "category": "skin"
+        },
+        {
+          "label": "Deseo snacks salados o pan",
+          "desc": "Depleci\u00f3n mineral adrenal y estr\u00e9s",
+          "category": "skin"
+        },
+        {
+          "label": "Intento contenerme, pero el hambre me despierta",
+          "desc": "Bajones gluc\u00e9micos nocturnos",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "\u00bfQu\u00e9 suele ocurrir entre las 2:00 y las 4:00 de la madrugada?",
+      "subtitle": "Es la ventana biol\u00f3gica donde el h\u00edgado limpia toxinas y la piel activa la autofagia.",
+      "options": [
+        {
+          "label": "Me despierto con pensamientos acelerados",
+          "desc": "Pico nocturno de cortisol e histamina",
+          "category": "skin"
+        },
+        {
+          "label": "Me despierto con sofocos o calor, dando vueltas",
+          "desc": "Fluctuaci\u00f3n t\u00e9rmica hormonal",
+          "category": "skin"
+        },
+        {
+          "label": "Duermo, pero me levanto como si no hubiera descansado",
+          "desc": "Falta de sue\u00f1o REM profundo reparador",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "\u00bfCu\u00e1l es tu mayor obst\u00e1culo para comer sano y sentirte radiante?",
+      "subtitle": "Las dietas complicadas fracasan porque las mujeres maduras no tienen horas libres para cocinar.",
+      "options": [
+        {
+          "label": "Recetas complejas con ingredientes dif\u00edciles",
+          "desc": "Necesita simplicidad de 4 ingredientes",
+          "category": "skin"
+        },
+        {
+          "label": "Las dietas restrictivas me dejan d\u00e9bil y de mal humor",
+          "desc": "Necesita grasas buenas y prote\u00edna densa",
+          "category": "skin"
+        },
+        {
+          "label": "Falta de un plan diario organizado paso a paso",
+          "desc": "Necesita men\u00fas claros plato a plato",
+          "category": "skin"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "\u00bfEst\u00e1s dispuesta a dedicar 15 minutos al d\u00eda durante 28 d\u00edas a tu renovaci\u00f3n d\u00e9rmica?",
+      "subtitle": "La renovaci\u00f3n celular profunda toma exactamente 28 d\u00edas sin harinas.",
+      "options": [
+        {
+          "label": "\u00a1S\u00ed! Estoy 100% lista para sentirme ligera y radiante",
+          "desc": "Compromisso biol\u00f3gico total",
+          "category": "skin"
+        },
+        {
+          "label": "S\u00ed, siempre que las comidas sean r\u00e1pidas y deliciosas",
+          "desc": "Ajuste ideal al m\u00e9todo de Claire",
+          "category": "skin"
+        },
+        {
+          "label": "Quiero empezar ya y ver mi vientre deshinchado en 7 d\u00edas",
+          "desc": "Lista para la Fase 1 de Desinflamaci\u00f3n",
+          "category": "skin"
+        }
+      ]
+    }
+  ]
+};
+
+    const catalogData = {
+      en: {
+        somatic: {
+          title: "The 21-Day Somatic Nervous System & Cortisol Belly Reset™",
+          checkoutUrl: "https://whop.com/checkout/plan_MTM6NIMtBjqIh",
+          diagnosis: "Your responses indicate your autonomic nervous system is locked into chronic sympathetic drive. When cortisol stays elevated, your adrenals signal your body to deposit stubborn visceral fluid directly around the lower abdomen, disrupt restorative sleep between 2:00 AM and 4:00 AM, and resist traditional dieting. Strenuous workouts only spike cortisol further. Your cells require gentle, 10-minute daily somatic micro-movements to soothe the vagus nerve and flatten your midsection naturally.",
+          bullets: [
+            "10-Minute Daily Somatic Micro-Movements to release visceral abdominal tension",
+            "Vagus Nerve & Parasympathetic Acoustic Reset Audios for deep sleep",
+            "Cortisol-Balancing Nutrition & Evening Decompression Framework",
+            "Instant access on iPhone, iPad, Android & PC (No apps to download)"
+          ],
+          affiliate: {
+            name: "CleanseSana™ Biofilm & Deep Drainage Botanical Complex",
+            desc: "Pair your daily somatic micro-movements with this physician-formulated botanical blend to dissolve trapped intestinal biofilms and accelerate liver drainage pathways.",
+            link: "https://dailyhealthreviewus.com/go/cleansesana"
+          }
+        },
+        cleanse: {
+          title: "The 14-Day Herbal Parasite Cleanse & Lymphatic Decongestion Blueprint™",
+          checkoutUrl: "https://whop.com/checkout/plan_1jcKUJYSZyL0k",
+          diagnosis: "Your assessment highlights accumulated digestive biofilms and sluggish lymphatic drainage. When microscopic organisms set up residence in the gut lining, they produce sticky protective shields that trap waste, spark intense evening sugar cravings, and cause afternoon abdominal distention. Claire's 'Drainage First' protocol opens your liver and lymphatic pathways safely before gently dissolving biofilms with ancient botanicals.",
+          bullets: [
+            "The 'Drainage First' 14-Day Protocol: Zero detox headaches or crashes",
+            "Green Black Walnut, Wormwood & Fresh Clove botanical timing matrix",
+            "Transdermal Castor Oil Compress & Lymphatic Pump Video Routines",
+            "Interactive Cleanse Web App with daily tincture trackers & symptom logs"
+          ],
+          affiliate: {
+            name: "CleanseSana™ Pure Colon & Digestive Cleanse",
+            desc: "Claire's physician-formulated botanical partner to amplify the elimination of dormant intestinal waste and heavy metals naturally.",
+            link: "https://dailyhealthreviewus.com/go/cleansesana"
+          }
+        },
+        skin: {
+          title: "The 28-Day Anti-Aging Cell Renewal Protocol™",
+          checkoutUrl: "https://whop.com/checkout/plan_KjhczhHJw9Syv",
+          diagnosis: "Your answers point toward sluggish dermal turnover and cellular glycation. After 40, natural skin turnover slows from 28 days to over 50 days, allowing dead, oxidized cells to accumulate while dermal collagen matrices thin out. Claire's cellular renewal protocol accelerates cellular turnover from within, restoring firmness along the jawline, brightening skin tone, and deeply nourishing the extracellular matrix without invasive procedures.",
+          bullets: [
+            "28-Day Step-by-Step Cellular Skin Turnover Framework",
+            "Nutritional Autophagy & Collagen Synthesis Kitchen Recipes",
+            "Interactive Daily App Hub + High-Res Printable Book",
+            "Audio Companion Guides with Claire Evans"
+          ],
+          affiliate: {
+            name: "Neotonics™ Gut-Skin Microbiome Gummies",
+            desc: "Targeted postbiotic and botanical gummies that support dermal cell turnover through the gut-skin axis. Over 500 million beneficial cultures in every serving.",
+            link: "https://dailyhealthreviewus.com/go/neotonics"
+          }
+        },
+        heart: {
+          title: "The 9-Minute Arterial Elasticity & Natural Blood Pressure Protocol™",
+          checkoutUrl: "https://whop.com/checkout/plan_TplaHGlAQH4BO",
+          diagnosis: "Your responses reveal elevated vascular tension and impaired endothelial Nitric Oxide production. Over decades of stress and shallow breathing, blood vessels lose their soft elasticity and stiffen like rigid pipes, causing pressure numbers to climb. Claire's 9-minute acoustic cardiac resonance breathing rhythm stimulates immediate endothelial vasodilation to soften blood vessels and restore natural vascular pliability safely.",
+          bullets: [
+            "9-Minute Guided Vasodilation Pacer: Visual & acoustic 0.1 Hz breathing orb",
+            "Interactive Digital Blood Pressure Tracker with color-coded feedback",
+            "Nitric Oxide Kitchen Pharmacy: Restorative hibiscus calyx & electrolyte guide",
+            "Deluxe 28-Day Printable Doctor Tracking Chart"
+          ],
+          affiliate: {
+            name: "CoreVital Burn™ Physician-Formulated Botanical Complex",
+            desc: "Co-founded by Dr. Samir Bute, MD. Features 500mg pure Berberine HCl, Milk Thistle, and Ceylon Cinnamon to optimize vascular flexibility and metabolic health.",
+            link: "https://dailyhealthreviewus.com/go/corevital"
+          }
+        },
+        arteries: {
+          title: "The 28-Day Clean Arteries & Endothelial Restoration Protocol™",
+          checkoutUrl: "https://whop.com/checkout/plan_R3KhepBcIF5ue",
+          diagnosis: "Your evaluation indicates your vascular glycocalyx shield needs protective rejuvenation. Cholesterol is not grease clogging pipes—it is an emergency patch over micro-tears in inflamed arterial walls where wandering calcium hardens into brittle plaque. Claire's 28-day protocol combines high-polyphenol restorative foods with Vitamin K2 nutritional science to redirect calcium away from soft arterial tissues and lock it safely back into bones.",
+          bullets: [
+            "28-Day Master Vascular Protocol: Daily restorative polyphenol nutrition",
+            "Vitamin K2 Calcium Traffic Matrix: Nutritional arterial decalcification",
+            "7 Arterial Repair Botanicals Guide: Wild olive leaf, aged garlic & hawthorn",
+            "Interactive Calendar App + High-Resolution Printable Kitchen Edition"
+          ],
+          affiliate: {
+            name: "CoreVital Burn™ Cardiovascular & Metabolic Support",
+            desc: "Physician-co-founded with Dr. Samir Bute, MD. Supports clean blood vessels, healthy lipid ratios, and cellular vitality with 5 clean botanicals.",
+            link: "https://dailyhealthreviewus.com/go/corevital"
+          }
+        },
+        apothecary: {
+          title: "The Home Apothecary & Forgotten Botanical Remedies Bible™",
+          checkoutUrl: "https://whop.com/checkout/plan_TQUatv6T9pQQU",
+          diagnosis: "Your answers show a strong desire for natural, non-toxic cellular independence. Rather than relying on harsh synthetic drugstore chemicals that irritate the liver and gut lining, you are ready to harness the forgotten wisdom of master herbalism. This comprehensive guide turns your kitchen into a healing apothecary with over 120 time-tested tinctures, salves, and tonics.",
+          bullets: [
+            "Over 120 Forgotten Botanical Formulas & Tincture Masterclasses",
+            "Searchable Interactive Apothecary Web App for instant ailment lookup",
+            "Deluxe 200+ Page Printable Collector's Edition with full-color illustrations",
+            "Lifelong digital access with zero recurring subscriptions"
+          ],
+          affiliate: {
+            name: "ProDentim™ Advanced Oral Microbiome Chewables",
+            desc: "3.5 billion beneficial probiotic strains that repopulate healthy mouth flora, support gum strength, and whiten teeth naturally without harsh toothpastes.",
+            link: "https://dailyhealthreviewus.com/go/prodentim"
+          }
         }
       },
-
-      es: {
-        intro: {
-          badge: "Evaluación Clínica • Mujeres 40+",
-          title: "¿Y Si la Hinchazón Abdominal y la Flacidez Facial No Son Envejecimiento... Sino un Eje Intestino-Piel Inflamado?",
-          desc: "Después de los 40 años, las dietas restrictivas y contar calorías aceleran la deshidratación dérmica y el cortisol. Realiza este diagnóstico celular de 60 segundos.",
-          quote: '"Tus células no necesitan privación. Necesitan nutrición celular de 4 ingredientes y sellado intestinal."',
-          btnStart: "INICIAR EVALUACIÓN CELULAR DE 60 SEGUNDOS →"
-        },
-        questions: [
-          {
-            category: "Rango de Edad & Hormonas",
-            title: "¿Cuál es tu rango de edad actual?",
-            desc: "La renovación celular se ralentiza hasta un 50% en las transiciones hormonales maduras.",
-            options: [
-              { icon: "🌸", text: "40 a 49 Años", sub: "Primeros cambios de la perimenopausia" },
-              { icon: "🌿", text: "50 a 59 Años", sub: "Menopausia activa y disminución de densidad dérmica" },
-              { icon: "✨", text: "60+ Años", sub: "Enfoque en longevidad, firmeza y vitalidad plena" }
-            ]
-          },
-          {
-            category: "Elasticidad Dérmica",
-            title: "¿Cómo se comporta la piel de tu rostro al despertar por la mañana?",
-            desc: "Las marcas de la almohada y la opacidad reflejan la densidad de colágeno.",
-            options: [
-              { icon: "🪞", text: "Piel seca, tirante y con tono apagado", sub: "Renovación celular lenta" },
-              { icon: "⏳", text: "Las marcas de almohada tardan horas en desaparecer", sub: "Disminución de elastina dérmica" },
-              { icon: "💧", text: "Hinchazón en los ojos y contorno mandibular", sub: "Retención de líquidos y drenaje lento" }
-            ]
-          },
-          {
-            category: "Permeabilidad Intestino-Piel",
-            title: "¿Cómo reacciona tu abdomen tras consumir harinas, pan o pastas?",
-            desc: "Las harinas refinadas fermentan en el intestino y rigidizan las fibras de colágeno.",
-            options: [
-              { icon: "🎈", text: "Mi vientre se abulta visiblemente en menos de 2 horas", sub: "Fermentación activa en la pared intestinal" },
-              { icon: "⚡", text: "Siento pesadez gástrica y niebla mental", sub: "Pico de insulina inflamatoria postprandial" },
-              { icon: "🌿", text: "Hinchazón moderada hacia la noche, pero constante", sub: "Tránsito gastrointestinal lento" }
-            ]
-          },
-          {
-            category: "Conexión Intestino-Rostro",
-            title: "¿Notas que tu piel se ve más cansada y sin brillo cuando tu digestión es lenta?",
-            desc: "El eje intestino-piel refleja de inmediato la permeabilidad de la mucosa digestiva.",
-            options: [
-              { icon: "🔍", text: "¡Sí! Si tengo estreñimiento, mi piel se apaga o sufre brotes", sub: "Desregulación clásica del eje intestino-piel" },
-              { icon: "✨", text: "Sospechaba una relación, pero no sabía cómo resolverla", sub: "Requiere sellado intestinal con colágeno" },
-              { icon: "🌱", text: "Rara vez asociaba la digestión con mis arrugas", sub: "Descubriendo la nutrición celular" }
-            ]
-          },
-          {
-            category: "Energía Mitocondrial",
-            title: "¿Sufres una caída brusca de energía entre las 14:00 y las 16:00?",
-            desc: "El bajón vespertino indica sobrecarga mitocondrial y cortisol elevado.",
-            options: [
-              { icon: "☕", text: "Caída severa: necesito café, dulce o una siesta", sub: "Fatiga adrenal y agotamiento celular" },
-              { icon: "🥱", text: "Cansancio moderado y ojos pesados", sub: "Síntesis celular de ATP subóptima" },
-              { icon: "⚡", text: "Mi energía fluctúa de forma impredecible", sub: "Inestabilidad glucémica" }
-            ]
-          },
-          {
-            category: "Retención de Líquidos",
-            title: "¿Sientes retención de líquidos en dedos, tobillos o debajo de los ojos?",
-            desc: "El estancamiento linfático bloquea la autofagia nocturna.",
-            options: [
-              { icon: "💍", text: "Sí: los anillos me aprietan al atardecer", sub: "Desequilibrio electrolítico" },
-              { icon: "🧦", text: "Marcas de calcetines y piernas pesadas", sub: "Drenaje venoso y linfático lento" },
-              { icon: "🌿", text: "Principalmente hinchazón facial al despertar", sub: "Requiere rituales de masaje linfático" }
-            ]
-          },
-          {
-            category: "Glicación & Ansiedad Nocturna",
-            title: "¿Sientes deseos intensos de comer carbohidratos o dulces después de cenar?",
-            desc: "El azúcar nocturno dispara los AGEs que rompen las fibras de colágeno.",
-            options: [
-              { icon: "🍫", text: "Sí, suelo desear dulces o galletas después de cenar", sub: "Cortisol nocturno alto y resistencia a la leptina" },
-              { icon: "🥨", text: "Deseo snacks salados o pan", sub: "Depleción mineral adrenal" },
-              { icon: "🌙", text: "Intento contenerme, pero el hambre me despierta", sub: "Bajones glucémicos nocturnos" }
-            ]
-          },
-          {
-            category: "Sueño & Autofagia Nocturna",
-            title: "¿Qué suele ocurrir entre las 2:00 y las 4:00 de la madrugada?",
-            desc: "Es la ventana biológica donde el hígado limpia toxinas y la piel sintetiza colágeno.",
-            options: [
-              { icon: "👁️", text: "Me despierto con pensamientos acelerados", sub: "Pico nocturno de cortisol e histamina" },
-              { icon: "🌡️", text: "Me despierto con sofocos o calor, dando vueltas", sub: "Fluctuación térmica hormonal" },
-              { icon: "😴", text: "Duermo, pero me levanto como si no hubiera descansado", sub: "Falta de sueño REM profundo reparador" }
-            ]
-          },
-          {
-            category: "Estilo Culinario",
-            title: "¿Cuál es tu mayor obstáculo para comer sano y sentirte radiante?",
-            desc: "Las dietas complicadas fracasan porque las mujeres maduras no tienen horas libres para cocinar.",
-            options: [
-              { icon: "⏱️", text: "Recetas complejas con ingredientes difíciles", sub: "Necesita simplicidad de 4 ingredientes" },
-              { icon: "🥗", text: "Las dietas restrictivas me dejan débil y de mal humor", sub: "Necesita grasas buenas y proteína densa" },
-              { icon: "📝", text: "Falta de un plan diario organizado paso a paso", sub: "Necesita menús claros plato a plato" }
-            ]
-          },
-          {
-            category: "Compromiso con el Cambio",
-            title: "¿Estás dispuesta a dedicar 15 minutos al día durante 28 días a tu renovación dérmica?",
-            desc: "La renovación celular profunda toma exactamente 28 días sin harinas.",
-            options: [
-              { icon: "🌟", text: "¡Sí! Estoy 100% lista para sentirme ligera y radiante", sub: "Compromiso biológico total" },
-              { icon: "💖", text: "Sí, siempre que las comidas sean rápidas y deliciosas", sub: "Ajuste ideal al método de Claire" },
-              { icon: "🌿", text: "Quiero empezar ya y ver mi vientre deshinchado en 7 días", sub: "Lista para la Fase 1 de Desinflamación" }
-            ]
+      pt: {
+        somatic: {
+          title: "The 21-Day Somatic Nervous System & Cortisol Belly Reset™",
+          checkoutUrl: "https://whop.com/checkout/plan_MTM6NIMtBjqIh",
+          diagnosis: "Suas respostas indicam que seu sistema nervoso autônomo está travado em estado de alerta crônico. Quando o cortisol permanece elevado, as glândulas adrenais ordenam que o corpo retenha gordura visceral ao redor do abdômen, perturbe o sono profundo entre 2h e 4h da madrugada e resista a dietas comuns. Treinos pesados só pioram o cortisol. Suas células necessitam de micro-movimentos somáticos suaves de 10 minutos por dia para acalmar o nervo vago e desinchar a barriga naturalmente.",
+          bullets: [
+            "10 Minutos Diários de Micro-Movimentos Somáticos para aliviar a tensão abdominal",
+            "Áudios de Ressonância Acústica para acalmar o nervo vago e aprofundar o sono",
+            "Nutrição para Equilíbrio de Cortisol e Ritual Noturno de Descompressão",
+            "Acesso imediato no celular, tablet ou computador (Sem precisar baixar apps)"
+          ],
+          affiliate: {
+            name: "CleanseSana™ Complexo Botânico de Drenagem e Quebra de Biofilmes",
+            desc: "Combine seus micro-movimentos somáticos com esta tintura botânica pura para dissolver biofilmes aprisionados no intestino e apoiar a drenagem hepática.",
+            link: "https://dailyhealthreviewus.com/go/cleansesana"
           }
-        ],
-        calc: {
-          title: "Sintetizando tu Perfil Celular...",
-          subtitle: "Cruzando tasas de renovación dérmica, permeabilidad intestinal y marcadores de cortisol.",
-          s1: "Analizando fermentación digestiva y barrera intestinal...",
-          s2: "Evaluando sobrecarga de glicación en el colágeno...",
-          s3: "Estructurando hoja de ruta personalizada de 28 días..."
         },
-        results: {
-          badge: "Resultado de la Evaluación Clínica",
-          title: "Tu Perfil Celular: Etapa 2 de Permeabilidad Intestino-Piel",
-          lead: "Tus respuestas revelan que la hinchazón abdominal y la pérdida de firmeza dérmica no son vejez: son fruto de glicación y microinflamación en la mucosa digestiva.",
-          m1: "Permeabilidad Intestinal",
-          m1Sub: "Requiere Sellado",
-          m2: "Renovación de Colágeno",
-          m2Sub: "Lenta (Requiere Prolina)",
-          m3: "Cortisol Nocturno",
-          m3Sub: "Bloquea la Reparación",
-          phasesTitle: "Tu Trayectoria Biológica en 28 Días:",
-          ph1Name: "Días 1 a 7: Desinflamación y Sellado Intestinal",
-          ph1Desc: "Elimina harinas fermentables; abdomen notablemente plano en 72 horas.",
-          ph2Name: "Días 8 a 14: Reset de Cortisol y Energía Mitocondrial",
-          ph2Desc: "Fin del cansancio de las 15:00; glucemia estable con ghee y grasas buenas.",
-          ph3Name: "Días 15 a 21: Estímulo Activo de Colágeno Dérmico",
-          ph3Desc: "Nutrición con aminoácidos biodisponibles y polifenoles para mayor firmeza.",
-          ph4Name: "Días 22 a 28: Consolidación Hormonal y Longevidad",
-          ph4Desc: "Activación de autofagia nocturna; ligereza estomacal y piel radiante y firme.",
-          prodTitle: "El Protocolo de 28 Días de Renovación Celular™",
-          prodSubtitle: "Guía Oficial de 30 Páginas en Revista + Colección de Recetas de 4 Ingredientes por Claire Evans (51 años)",
-          inc1: "Guía Editorial Completa de 30 Páginas (PDF HD): Paso a paso de las 4 fases.",
-          inc2: "12 Recetas Exclusivas de 4 Ingredientes: Sin harinas, listas en menos de 15 min.",
-          inc3: "Despensa Celular de 4 Ingredientes: Lista inteligente de proteínas, grasas y hierbas.",
-          inc4: "Elixires Terapéuticos y Rituales Nocturnos: Infusiones digestivas y sueño reparador.",
-          inc5: "Planners Diarios Imprimibles: Checklists de seguimiento (Días 1 a 28).",
-          inc6: "ACCESO TRILINGÜE COMPLETO: Ediciones completas en Español, Inglés y Portugués.",
-          btnUnlock: "DESBLOQUEAR MI PROTOCOLO DE 28 DÍAS ($27 USD) →",
-          guarantee: "Garantía Blindada de 60 Días: Si no te sientes visiblemente más ligera y radiante, recibe el 100% de tu dinero."
+        cleanse: {
+          title: "The 14-Day Herbal Parasite Cleanse & Lymphatic Decongestion Blueprint™",
+          checkoutUrl: "https://whop.com/checkout/plan_1jcKUJYSZyL0k",
+          diagnosis: "Sua avaliação revelou sobrecarga de biofilmes digestivos e drenagem linfática preguiçosa. Quando microorganismos constroem biofilmes na mucosa intestinal, eles sequestram nutrientes, disparam desejos noturnos por doces e causam inchaço no meio da tarde. O protocolo 'Drenagem Primeiro' da Claire abre os canais hepáticos e linfáticos com segurança antes de eliminar biofilmes com botânicos ancestrais.",
+          bullets: [
+            "Protocolo de 14 Dias 'Drenagem Primeiro': Zero dores de cabeça ou crises de detox",
+            "Matriz de dosagem de Noz-Negra, Losna e Cravo-da-Índia fresco",
+            "Aulas práticas de Compressa com Óleo de Rícino e Bombeamento Linfático",
+            "Web App Interativo com rastreadores de tinturas e registro diário de sintomas"
+          ],
+          affiliate: {
+            name: "CleanseSana™ Fórmula Botânica Avançada de Drenagem",
+            desc: "Parceiro botânico formulado por médicos para acelerar a eliminação de resíduos intestinais e metais pesados com suavidade.",
+            link: "https://dailyhealthreviewus.com/go/cleansesana"
+          }
+        },
+        skin: {
+          title: "The 28-Day Anti-Aging Cell Renewal Protocol™",
+          checkoutUrl: "https://whop.com/checkout/plan_KjhczhHJw9Syv",
+          diagnosis: "Sua avaliação aponta para desaceleração na renovação celular e glicação dérmica. Após os 40 anos, a renovação da pele cai de 28 para mais de 50 dias, acumulando células opacas enquanto as fibras de colágeno perdem firmeza. O protocolo celular da Claire acelera a renovação de dentro para fora, devolvendo sustentação na mandíbula, uniformizando o tom e nutrindo a matriz dérmica sem agulhas.",
+          bullets: [
+            "Cronograma de 28 Dias de Renovação Dérmica e Turn-over Celular",
+            "Receitas e Chás Nutricionais de Autofagia e Síntese de Colágeno",
+            "Web App Interativo Diário + Livro de Colecionador em Alta Resolução",
+            "Áudios de Acompanhamento Guiados por Claire Evans"
+          ],
+          affiliate: {
+            name: "Neotonics™ Gomas Probióticas para o Eixo Intestino-Pele",
+            desc: "Gomas com probióticos e botânicos comprovados que aceleram a renovação celular através do microbioma. Mais de 500 milhões de culturas benéficas.",
+            link: "https://dailyhealthreviewus.com/go/neotonics"
+          }
+        },
+        heart: {
+          title: "The 9-Minute Arterial Elasticity & Natural Blood Pressure Protocol™",
+          checkoutUrl: "https://whop.com/checkout/plan_TplaHGlAQH4BO",
+          diagnosis: "Suas respostas mostram tensão vascular aumentada e produção prejudicada de Óxido Nítrico endotelial. Com o estresse e a respiração curta, os vasos sanguíneos perdem a flexibilidade e endurecem como canos rígidos, elevando a pressão. O ritmo respiratório de 9 minutos por ressonância cardíaca da Claire induz vasodilatação endotelial imediata para amaciar as artérias com segurança.",
+          bullets: [
+            "Respiração Guiada de 9 Minutos: Pacer visual e acústico de 0.1 Hz",
+            "Rastreador Digital de Pressão Arterial com diagnóstico visual por cores",
+            "Farmácia de Cozinha do Óxido Nítrico: Protocolo botânico de hibisco e minerais",
+            "Planilha Imprimível de 28 Dias para acompanhamento com seu cardiologista"
+          ],
+          affiliate: {
+            name: "CoreVital Burn™ Complexo Botânico Formulado por Médicos",
+            desc: "Co-fundado pelo Dr. Samir Bute, MD. Contém 500mg de Berberina pura, Cardo Mariano e Canela do Ceilão para otimizar a flexibilidade vascular e saúde metabólica.",
+            link: "https://dailyhealthreviewus.com/go/corevital"
+          }
+        },
+        arteries: {
+          title: "The 28-Day Clean Arteries & Endothelial Restoration Protocol™",
+          checkoutUrl: "https://whop.com/checkout/plan_R3KhepBcIF5ue",
+          diagnosis: "Sua avaliação indica que o escudo endotelial (glicocálix) necessita de restauração protetora. O colesterol não é gordura entupindo canos — é um curativo de emergência sobre micro-fissuras nas artérias inflamadas onde o cálcio endurece em placas. O protocolo de 28 dias combina polifenóis botânicos e a ciência da Vitamina K2 para retirar o cálcio das artérias e fixá-lo nos ossos.",
+          bullets: [
+            "Protocolo Vascular Mestre de 28 Dias: Nutrição rica em polifenóis",
+            "Matriz da Vitamina K2: Redirecionamento nutricional do cálcio para os ossos",
+            "Guia de 7 Botânicos de Reparo Arterial: Folha de Oliveira, Alho Envelhecido e Enzimas",
+            "Calendário Web Interativo + Edição de Luxo para Imprimir na Cozinha"
+          ],
+          affiliate: {
+            name: "CoreVital Burn™ Suporte Vascular e Metabólico",
+            desc: "Desenvolvido com o Dr. Samir Bute, MD. Apoia vasos sanguíneos limpos, equilíbrio de lipídios e energia celular com 5 botânicos limpos.",
+            link: "https://dailyhealthreviewus.com/go/corevital"
+          }
+        },
+        apothecary: {
+          title: "The Home Apothecary & Forgotten Botanical Remedies Bible™",
+          checkoutUrl: "https://whop.com/checkout/plan_TQUatv6T9pQQU",
+          diagnosis: "Suas respostas mostram um forte desejo de independência celular natural. Em vez de depender de remédios sintéticos que irritam o estômago e sobrecarregam o fígado, você está pronta para resgatar a sabedoria da botânica pura. Este guia transforma sua cozinha em um herbanário com mais de 120 tinturas, pomadas e tônicos caseiros.",
+          bullets: [
+            "Mais de 120 Fórmulas Botânicas e Aulas de Tinturas e Pomadas",
+            "Web App com Buscador Interativo para consultar sintomas na hora",
+            "Edição de Colecionador com mais de 200 páginas e ilustrações coloridas",
+            "Acesso vitalício para sempre sem mensalidades ou assinaturas"
+          ],
+          affiliate: {
+            name: "ProDentim™ Probiótico Mastigável para o Microbioma Oral",
+            desc: "3,5 bilhões de cepas probióticas que restauram a flora benéfica da boca, fortalecem gengivas e clareiam os dentes sem cremes químicos abrasivos.",
+            link: "https://dailyhealthreviewus.com/go/prodentim"
+          }
+        }
+      },
+      es: {
+        somatic: {
+          title: "The 21-Day Somatic Nervous System & Cortisol Belly Reset™",
+          checkoutUrl: "https://whop.com/checkout/plan_MTM6NIMtBjqIh",
+          diagnosis: "Tus respuestas revelan que tu sistema nervioso autónomo está atrapado en alerta crónica. Cuando el cortisol permanece alto, las glándulas adrenales ordenan al cuerpo acumular grasa visceral en el abdomen, alteran el descanso profundo entre las 2:00 y las 4:00 AM y frenan la quema metabólica. El ejercicio extenuante solo dispara más el cortisol. Tus células necesitan 10 minutos de micro-movimientos somáticos suaves para relajar el nervio vago y desinflamar el vientre.",
+          bullets: [
+            "10 Minutos Diarios de Micro-Movimientos Somáticos para liberar la tensión abdominal",
+            "Audios de Resonancia Acústica para calmar el nervio vago y profundizar el sueño",
+            "Nutrición para Equilibrar el Cortisol y Rutina Nocturna de Descompresión",
+            "Acceso inmediato en móvil, tablet o PC (Sin descargar aplicaciones pesadas)"
+          ],
+          affiliate: {
+            name: "CleanseSana™ Complejo Botánico de Drenaje y Biofilms",
+            desc: "Combina tus micro-movimientos diarios con esta tintura botánica pura para disolver biofilms intestinales y optimizar el drenaje hepático.",
+            link: "https://dailyhealthreviewus.com/go/cleansesana"
+          }
+        },
+        cleanse: {
+          title: "The 14-Day Herbal Parasite Cleanse & Lymphatic Decongestion Blueprint™",
+          checkoutUrl: "https://whop.com/checkout/plan_1jcKUJYSZyL0k",
+          diagnosis: "Tu evaluación muestra acumulación de biofilms digestivos y drenaje linfático lento. Cuando los microorganismos forman biofilms en el intestino, secuestran nutrientes, provocan antojos nocturnos de azúcar e hinchazón vespertina. El protocolo 'Drenaje Primero' de Claire abre las vías linfáticas y hepáticas de forma segura antes de eliminar biofilms con botánicos puros.",
+          bullets: [
+            "Protocolo de 14 Días 'Drenaje Primero': Cero dolores de cabeza ni crisis de detox",
+            "Matriz botánica de Nogal Negro, Ajenjo y Clavo de olor fresco",
+            "Rutinas en vídeo de Compresas de Aceite de Ricino y Bombeo Linfático",
+            "Web App interactiva con rastreadores de tinturas y registro de síntomas"
+          ],
+          affiliate: {
+            name: "CleanseSana™ Fórmula Botánica Avanzada de Drenaje",
+            desc: "Aliado botánico médico formulado para acelerar la eliminación de residuos intestinales y metales pesados de manera suave.",
+            link: "https://dailyhealthreviewus.com/go/cleansesana"
+          }
+        },
+        skin: {
+          title: "The 28-Day Anti-Aging Cell Renewal Protocol™",
+          checkoutUrl: "https://whop.com/checkout/plan_KjhczhHJw9Syv",
+          diagnosis: "Tus respuestas indican ralentización en la renovación celular y glicación dérmica. A partir de los 40, la renovación de la piel se alarga de 28 a más de 50 días, acumulando células apagadas mientras el colágeno pierde firmeza. El protocolo de Claire acelera la regeneración desde el interior, devolviendo firmeza a la mandíbula, iluminando el tono y nutriendo la matriz celular sin agujas.",
+          bullets: [
+            "Guía Editorial Completa de 30 Páginas (PDF en Alta Resolución)",
+            "12 Recetas Exclusivas de 4 Ingredientes (sin harinas, en <15 min)",
+            "Despensa Celular de 4 Ingredientes y Guía de Compras",
+            "Elixires Terapéuticos Diarios y Rituales Nocturnos de Reparación",
+            "Planners Diarios Imprimibles de Seguimiento (Días 1 a 28)",
+            "ACCESO TRILINGÜE COMPLETO: Ediciones en Español, Inglés y Portugués"
+          ],
+          affiliate: {
+            name: "Neotonics™ Gomitas Probióticas para el Eje Intestino-Piel",
+            desc: "Gomitas formuladas para activar la renovación celular a través del microbioma. Más de 500 millones de cultivos activos por porción.",
+            link: "https://dailyhealthreviewus.com/go/neotonics"
+          }
+        },
+        heart: {
+          title: "The 9-Minute Arterial Elasticity & Natural Blood Pressure Protocol™",
+          checkoutUrl: "https://whop.com/checkout/plan_TplaHGlAQH4BO",
+          diagnosis: "Tus respuestas reflejan tensión vascular elevada y menor síntesis endotelial de Óxido Nítrico. Con el estrés continuado, los vasos sanguíneos pierden flexibilidad y se vuelven rígidos, elevando la presión. El pacer respiratorio de 9 minutos de resonancia cardíaca de Claire estimula vasodilatación inmediata para suavizar las arterias con seguridad.",
+          bullets: [
+            "Respiración Guiada de 9 Minutos: Pacer visual y acústico de 0.1 Hz",
+            "Rastreador Digital de Presión Arterial con código visual por colores",
+            "Farmacia de Cocina del Óxido Nítrico: Protocolo clínico de hibisco y minerales",
+            "Gráfica Imprimible de 28 Días para compartir con tu médico"
+          ],
+          affiliate: {
+            name: "CoreVital Burn™ Complejo Botánico Formulado por Médicos",
+            desc: "Co-fundado con el Dr. Samir Bute, MD. Contiene 500mg de Berberina pura, Cardo Mariano y Canela de Ceilán para apoyar la flexibilidad vascular.",
+            link: "https://dailyhealthreviewus.com/go/corevital"
+          }
+        },
+        arteries: {
+          title: "The 28-Day Clean Arteries & Endothelial Restoration Protocol™",
+          checkoutUrl: "https://whop.com/checkout/plan_R3KhepBcIF5ue",
+          diagnosis: "Tu evaluación indica que la capa endotelial (glicocálix) necesita restauración protectora. El colesterol no es grasa atascada—es un parche de emergencia sobre micro-fisuras arteriales donde el calcio se endurece en placas. El protocolo de 28 días combina polifenoles clínicos y la ciencia de la Vitamina K2 para extraer el calcio de los tejidos blandos y fijarlo en los huesos.",
+          bullets: [
+            "Protocolo Vascular Maestro de 28 Días: Nutrición rica en polifenoles",
+            "Matriz de Vitamina K2: Redirección nutricional del calcio arterial a los huesos",
+            "Guía de 7 Botánicos de Reparación: Hoja de Olivo, Ajo Envejecido y Enzimas",
+            "Calendario Web Interactivo + Edición Imprimible de Lujo para la Cocina"
+          ],
+          affiliate: {
+            name: "CoreVital Burn™ Soporte Vascular y Metabólico",
+            desc: "Desarrollado con el Dr. Samir Bute, MD. Favorece vasos sanguíneos limpios, perfil lipídico equilibrado y vitalidad celular.",
+            link: "https://dailyhealthreviewus.com/go/corevital"
+          }
+        },
+        apothecary: {
+          title: "The Home Apothecary & Forgotten Botanical Remedies Bible™",
+          checkoutUrl: "https://whop.com/checkout/plan_TQUatv6T9pQQU",
+          diagnosis: "Tus respuestas reflejan un claro deseo de independencia celular natural. En vez de recurrir a químicos sintéticos que irritan el estómago y sobrecargan el hígado, estás lista para recuperar la sabiduría de la botánica pura. Esta guía convierte tu cocina en un herbolario con más de 120 tinturas, bálsamos y tónicos ancestrales.",
+          bullets: [
+            "Más de 120 Fórmulas Botánicas y Clases Prácticas de Tinturas y Ungüentos",
+            "Web App con Buscador Rápido para consultar dolencias y remedios al instante",
+            "Edición de Coleccionista de más de 200 páginas con ilustraciones a todo color",
+            "Acceso vitalicio para siempre sin cuotas ni suscripciones recurrentes"
+          ],
+          affiliate: {
+            name: "ProDentim™ Probiótico Masticable para el Microbioma Oral",
+            desc: "3.500 millones de cepas probióticas que repueblan la flora bucal beneficiosa, refuerzan las encías y aclaran los dientes de forma natural.",
+            link: "https://dailyhealthreviewus.com/go/prodentim"
+          }
         }
       }
     };
 
-    function setLang(lang) {
+    // STATE VARIABLES
+    let currentQuestionIndex = 0;
+    let scores = {
+      somatic: 0,
+      cleanse: 0,
+      skin: 0,
+      heart: 0,
+      arteries: 0,
+      apothecary: 0
+    };
+
+    // LANGUAGE SWITCHER ENGINE
+    function setLanguage(lang) {
+      if (!['en', 'pt', 'es'].includes(lang)) lang = 'en';
       currentLang = lang;
-      ['en', 'pt', 'es'].forEach(l => {
-        const btn = document.getElementById(`btn-lang-${l}`);
-        if (l === lang) {
-          btn.className = "px-2.5 py-1 text-xs font-bold rounded-full transition-all bg-terracotta text-white shadow-sm";
-        } else {
-          btn.className = "px-2.5 py-1 text-xs font-bold rounded-full transition-all text-warmGray hover:text-charcoal";
+      localStorage.setItem('claire_quiz_lang', lang);
+
+      // Update Active Buttons
+      document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+      const activeBtn = document.getElementById(`btn-lang-${lang}`);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      // Update Static UI Texts
+      const t = i18n[lang];
+      document.getElementById('ui-role').textContent = t.role;
+      document.getElementById('ui-badge').textContent = t.badge;
+      if (document.getElementById('ui-claire-intro')) document.getElementById('ui-claire-intro').textContent = t.claireIntro;
+      document.getElementById('interlude-btn').textContent = t.interludeContinue;
+      document.getElementById('ui-res-badge').querySelector('span:last-child').textContent = t.resultsBadge;
+      document.getElementById('ui-res-title').textContent = t.resultsTitle;
+      document.getElementById('ui-res-stress-title').textContent = t.stressTitle;
+      document.getElementById('ui-meter-cortisol-label').textContent = t.meterCortisol;
+      document.getElementById('ui-meter-gut-label').textContent = t.meterGut;
+      document.getElementById('ui-meter-heart-label').textContent = t.meterHeart;
+      document.getElementById('ui-meter-skin-label').textContent = t.meterSkin;
+      document.getElementById('ui-claire-takeaway').textContent = t.claireTakeaway;
+      document.getElementById('ui-foundation-badge').textContent = t.foundationBadge;
+      document.getElementById('ui-regular-price').textContent = t.regularPrice;
+      document.getElementById('ui-onetime-label').textContent = t.oneTime;
+      document.getElementById('hero-checkout-btn').textContent = t.checkoutBtn;
+      document.getElementById('ui-pairing-badge').textContent = t.pairingBadge;
+      document.getElementById('ui-physician-label').textContent = t.physicianLabel;
+      document.getElementById('ui-explore-pairing').textContent = t.explorePairing;
+      document.getElementById('ui-ftc-disclosure').textContent = t.ftcDisclosure;
+      document.getElementById('ui-catalog-title').textContent = t.catalogTitle;
+      document.getElementById('ui-catalog-sub').textContent = t.catalogSub;
+      document.getElementById('ui-cat-desc-1').textContent = t.catDesc1;
+      document.getElementById('ui-cat-desc-2').textContent = t.catDesc2;
+      document.getElementById('ui-cat-desc-3').textContent = t.catDesc3;
+      document.getElementById('ui-cat-desc-4').textContent = t.catDesc4;
+      document.getElementById('ui-cat-desc-5').textContent = t.catDesc5;
+      document.getElementById('ui-view-storefront').textContent = t.viewStorefront;
+      document.getElementById('ui-footer-copy').textContent = t.footerCopy;
+      document.getElementById('ui-footer-med').textContent = t.footerMed;
+      if (document.getElementById('ui-mode-phone')) document.getElementById('ui-mode-phone').textContent = t.modePhone;
+      if (document.getElementById('ui-mode-expanded')) document.getElementById('ui-mode-expanded').textContent = t.modeExpanded;
+      if (document.getElementById('ui-chassis-sub')) document.getElementById('ui-chassis-sub').textContent = t.chassisSub;
+      if (document.getElementById('ui-chassis-by')) document.getElementById('ui-chassis-by').textContent = t.chassisBy;
+      if (document.getElementById('ui-claire-mentor-badge')) document.getElementById('ui-claire-mentor-badge').textContent = t.claireMentorBadge;
+      if (document.getElementById('ui-calc-scan-badge')) document.getElementById('ui-calc-scan-badge').textContent = t.calcScanBadge;
+      if (document.getElementById('ui-res-curated')) document.getElementById('ui-res-curated').textContent = t.resCurated;
+      if (document.getElementById('ui-map-label')) document.getElementById('ui-map-label').textContent = t.mapLabel;
+      if (document.getElementById('ui-map-title')) document.getElementById('ui-map-title').textContent = t.mapTitle;
+      if (document.getElementById('ui-map-audit')) document.getElementById('ui-map-audit').textContent = t.mapAudit;
+      if (document.getElementById('ui-map-status')) document.getElementById('ui-map-status').textContent = t.mapStatus;
+      if (document.getElementById('ui-claire-subrole')) document.getElementById('ui-claire-subrole').textContent = t.claireSubrole;
+      if (document.getElementById('hero-exp-badge')) document.getElementById('hero-exp-badge').textContent = t.heroExpBadge;
+      if (document.getElementById('hero-prod-subtitle')) document.getElementById('hero-prod-subtitle').textContent = t.heroProdSubtitle;
+      if (document.getElementById('ui-cat-title-1')) document.getElementById('ui-cat-title-1').textContent = t.catTitle1;
+      if (document.getElementById('ui-cat-title-2')) document.getElementById('ui-cat-title-2').textContent = t.catTitle2;
+      if (document.getElementById('ui-cat-title-3')) document.getElementById('ui-cat-title-3').textContent = t.catTitle3;
+      if (document.getElementById('ui-cat-title-4')) document.getElementById('ui-cat-title-4').textContent = t.catTitle4;
+      if (document.getElementById('ui-cat-title-5')) document.getElementById('ui-cat-title-5').textContent = t.catTitle5;
+      if (document.getElementById('ui-footer-privacy')) document.getElementById('ui-footer-privacy').textContent = t.footerPrivacy;
+      if (document.getElementById('ui-footer-terms')) document.getElementById('ui-footer-terms').textContent = t.footerTerms;
+      if (document.getElementById('ui-footer-disclosure')) document.getElementById('ui-footer-disclosure').textContent = t.footerDisclosure;
+
+      // Re-render current question, interlude, or results
+      if (!document.getElementById('quiz-view').classList.contains('hidden')) {
+        renderQuestion(currentQuestionIndex);
+      } else if (!document.getElementById('interlude-view').classList.contains('hidden')) {
+        const qList = questionsData[currentLang];
+        const q = qList[currentQuestionIndex];
+        if (q && q.hasInterlude && q.interludeData) {
+          showInterlude(q.interludeData);
         }
-      });
-
-      renderLangStrings();
-      if (document.getElementById('screen-quiz').classList.contains('hidden') === false) {
-        renderQuestion(currentStep);
+      } else if (!document.getElementById('results-view').classList.contains('hidden')) {
+        showResults();
       }
     }
 
-    function renderLangStrings() {
-      const d = quizData[currentLang];
-      
-      // Intro
-      document.getElementById('ui-intro-badge').textContent = d.intro.badge;
-      document.getElementById('ui-intro-title').textContent = d.intro.title;
-      document.getElementById('ui-intro-desc').textContent = d.intro.desc;
-      document.getElementById('ui-intro-claire-quote').textContent = d.intro.quote;
-      document.getElementById('ui-btn-start').textContent = d.intro.btnStart;
+    // DESKTOP VIEW MODE TOGGLE (PHONE CHASSIS VS EXPANDED)
+    let currentViewMode = 'phone';
 
-      // Calc
-      document.getElementById('ui-calc-title').textContent = d.calc.title;
-      document.getElementById('ui-calc-subtitle').textContent = d.calc.subtitle;
-      document.getElementById('ui-calc-s1').textContent = d.calc.s1;
-      document.getElementById('ui-calc-s2').textContent = d.calc.s2;
-      document.getElementById('ui-calc-s3').textContent = d.calc.s3;
+    function setViewMode(mode) {
+      currentViewMode = mode;
+      localStorage.setItem('claire_quiz_viewmode', mode);
+      const chassis = document.getElementById('app-chassis');
+      const notch = document.getElementById('chassis-notch');
+      const btnPhone = document.getElementById('btn-mode-phone');
+      const btnExpanded = document.getElementById('btn-mode-expanded');
 
-      // Results
-      document.getElementById('ui-res-badge').textContent = d.results.badge;
-      document.getElementById('ui-res-title').textContent = d.results.title;
-      document.getElementById('ui-res-lead').textContent = d.results.lead;
-      document.getElementById('ui-m1-label').textContent = d.results.m1;
-      document.getElementById('ui-m1-sub').textContent = d.results.m1Sub;
-      document.getElementById('ui-m2-label').textContent = d.results.m2;
-      document.getElementById('ui-m2-sub').textContent = d.results.m2Sub;
-      document.getElementById('ui-m3-label').textContent = d.results.m3;
-      document.getElementById('ui-m3-sub').textContent = d.results.m3Sub;
+      if (!chassis) return;
 
-      document.getElementById('ui-phases-title').textContent = d.results.phasesTitle;
-      document.getElementById('ui-ph1-name').textContent = d.results.ph1Name;
-      document.getElementById('ui-ph1-desc').textContent = d.results.ph1Desc;
-      document.getElementById('ui-ph2-name').textContent = d.results.ph2Name;
-      document.getElementById('ui-ph2-desc').textContent = d.results.ph2Desc;
-      document.getElementById('ui-ph3-name').textContent = d.results.ph3Name;
-      document.getElementById('ui-ph3-desc').textContent = d.results.ph3Desc;
-      document.getElementById('ui-ph4-name').textContent = d.results.ph4Name;
-      document.getElementById('ui-ph4-desc').textContent = d.results.ph4Desc;
-
-      document.getElementById('ui-prod-title').textContent = d.results.prodTitle;
-      document.getElementById('ui-prod-subtitle').textContent = d.results.prodSubtitle;
-      document.getElementById('ui-inc-1').innerHTML = "<strong>" + d.results.inc1.split(':')[0] + ":</strong>" + d.results.inc1.split(':')[1];
-      document.getElementById('ui-inc-2').innerHTML = "<strong>" + d.results.inc2.split(':')[0] + ":</strong>" + d.results.inc2.split(':')[1];
-      document.getElementById('ui-inc-3').innerHTML = "<strong>" + d.results.inc3.split(':')[0] + ":</strong>" + d.results.inc3.split(':')[1];
-      document.getElementById('ui-inc-4').innerHTML = "<strong>" + d.results.inc4.split(':')[0] + ":</strong>" + d.results.inc4.split(':')[1];
-      document.getElementById('ui-inc-5').innerHTML = "<strong>" + d.results.inc5.split(':')[0] + ":</strong>" + d.results.inc5.split(':')[1];
-      document.getElementById('ui-inc-6').innerHTML = "<strong>" + d.results.inc6.split(':')[0] + ":</strong>" + d.results.inc6.split(':')[1];
-
-      document.getElementById('ui-btn-unlock').textContent = d.results.btnUnlock;
-      document.getElementById('ui-guarantee-text').textContent = d.results.guarantee;
-    }
-
-    function startQuiz() {
-      document.getElementById('screen-intro').classList.add('hidden');
-      document.getElementById('screen-quiz').classList.remove('hidden');
-      currentStep = 0;
-      renderQuestion(0);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function renderQuestion(idx) {
-      const q = quizData[currentLang].questions[idx];
-      const total = quizData[currentLang].questions.length;
-      const pct = Math.round(((idx + 1) / total) * 100);
-
-      document.getElementById('ui-step-counter').textContent = 
-        currentLang === 'pt' ? `Pergunta ${idx + 1} de ${total}` : 
-        currentLang === 'es' ? `Pregunta ${idx + 1} de ${total}` : 
-        `Question ${idx + 1} of ${total}`;
-
-      document.getElementById('ui-step-percent').textContent = `${pct}% Complete`;
-      document.getElementById('ui-progress-fill').style.width = `${pct}%`;
-
-      document.getElementById('ui-q-category').textContent = q.category;
-      document.getElementById('ui-q-title').textContent = q.title;
-      document.getElementById('ui-q-desc').textContent = q.desc;
-
-      const btnBack = document.getElementById('ui-btn-back');
-      if (idx > 0) {
-        btnBack.classList.remove('hidden');
+      if (mode === 'phone') {
+        chassis.className = "w-full max-w-[430px] bg-white sm:rounded-[48px] shadow-2xl sm:border-[10px] sm:border-[#1F1D1B] p-5 sm:p-7 relative overflow-hidden transition-all duration-300";
+        if (notch) notch.classList.remove('hidden');
+        if (btnPhone) {
+          btnPhone.className = "flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-white bg-charcoal shadow-sm";
+        }
+        if (btnExpanded) {
+          btnExpanded.className = "flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-warmGray hover:text-charcoal";
+        }
       } else {
-        btnBack.classList.add('hidden');
+        chassis.className = "w-full max-w-2xl bg-white rounded-3xl shadow-xl shadow-stone-200/60 border border-sand/80 p-6 sm:p-8 relative overflow-hidden transition-all duration-300";
+        if (notch) notch.classList.add('hidden');
+        if (btnExpanded) {
+          btnExpanded.className = "flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-white bg-charcoal shadow-sm";
+        }
+        if (btnPhone) {
+          btnPhone.className = "flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-warmGray hover:text-charcoal";
+        }
       }
+    }
 
-      const list = document.getElementById('ui-options-list');
-      list.innerHTML = '';
+    // AUTOMATIC NATIVE DETECTION (RISK-FREE ZERO DELAY)
+    function detectInitialLanguage() {
+      // 1. Saved choice
+      const saved = localStorage.getItem('claire_quiz_lang');
+      if (saved && ['en', 'pt', 'es'].includes(saved)) {
+        return saved;
+      }
+      // 2. Browser native language
+      const navLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      if (navLang.startsWith('pt')) return 'pt';
+      if (navLang.startsWith('es')) return 'es';
+      return 'en';
+    }
 
-      q.options.forEach((opt, oIdx) => {
+    // RENDER QUESTION
+    function renderQuestion(index) {
+      const qList = questionsData[currentLang];
+      const q = qList[index];
+      const t = i18n[currentLang];
+      
+      // Update Progress
+      const percent = Math.round(((index + 1) / qList.length) * 100);
+      document.getElementById('step-counter').textContent = t.stepCounter.replace('{X}', index + 1).replace('{Y}', qList.length);
+      document.getElementById('step-percent').textContent = t.stepPercent.replace('{P}', percent);
+      document.getElementById('progress-bar').style.width = `${percent}%`;
+
+      // Update Texts
+      document.getElementById('question-title').textContent = q.title;
+      document.getElementById('question-subtitle').textContent = q.subtitle;
+
+      // Render Options
+      const container = document.getElementById('options-container');
+      container.innerHTML = '';
+
+      q.options.forEach((opt, optIdx) => {
         const btn = document.createElement('button');
-        btn.className = "w-full text-left bg-white hover:bg-sand/30 border border-sand/80 hover:border-terracotta/50 rounded-xl p-4 transition-all duration-200 flex items-start gap-3.5 group shadow-sm hover:shadow";
-        btn.onclick = () => selectOption(oIdx);
+        btn.className = "w-full text-left p-4 rounded-2xl border border-sand/90 bg-linen/50 option-card flex items-start space-x-3.5 group cursor-pointer";
+        btn.onclick = () => selectOption(opt.category, q);
+
         btn.innerHTML = `
-          <span class="text-2xl flex-shrink-0 group-hover:scale-110 transition-transform">${opt.icon}</span>
-          <div class="flex-grow">
-            <span class="block text-sm sm:text-base font-bold text-charcoal group-hover:text-terracotta transition-colors">${opt.text}</span>
-            <span class="block text-xs text-warmGray mt-0.5">${opt.sub}</span>
+          <div class="w-6 h-6 rounded-full border border-sand bg-white text-charcoal font-bold text-xs flex items-center justify-center flex-shrink-0 mt-0.5 group-hover:border-terracotta group-hover:bg-terracotta group-hover:text-white transition-colors">
+            ${String.fromCharCode(65 + optIdx)}
           </div>
-          <span class="text-warmGray/40 group-hover:text-terracotta font-bold text-sm">→</span>
+          <div class="flex-grow">
+            <span class="block text-sm font-bold text-charcoal leading-snug group-hover:text-terracotta transition-colors">${opt.label}</span>
+            <span class="block text-xs text-warmGray mt-0.5">${opt.desc}</span>
+          </div>
         `;
-        list.appendChild(btn);
+        container.appendChild(btn);
       });
     }
 
-    function selectOption(oIdx) {
-      userAnswers[currentStep] = oIdx;
-      const total = quizData[currentLang].questions.length;
-      
-      if (currentStep < total - 1) {
-        currentStep++;
-        renderQuestion(currentStep);
-        window.scrollTo({ top: 80, behavior: 'smooth' });
+    // HANDLE OPTION CLICK
+    function selectOption(category, q) {
+      if (scores[category] !== undefined) {
+        scores[category] += 2;
+      }
+
+      // Check if question has an interlude
+      if (q.hasInterlude) {
+        showInterlude(q.interludeData);
       } else {
-        finishQuiz();
+        advanceQuestion();
       }
     }
 
-    function prevQuestion() {
-      if (currentStep > 0) {
-        currentStep--;
-        renderQuestion(currentStep);
+    function showInterlude(data) {
+      document.getElementById('quiz-view').classList.add('hidden');
+      document.getElementById('progress-container').classList.add('hidden');
+      
+      const interludeView = document.getElementById('interlude-view');
+      document.getElementById('interlude-title').textContent = data.title;
+      document.getElementById('interlude-text').textContent = data.text;
+      document.getElementById('interlude-author').textContent = data.author;
+      document.getElementById('interlude-quote').textContent = `"${data.quote}"`;
+      
+      interludeView.classList.remove('hidden');
+    }
+
+    function nextAfterInterlude() {
+      document.getElementById('interlude-view').classList.add('hidden');
+      document.getElementById('progress-container').classList.remove('hidden');
+      document.getElementById('quiz-view').classList.remove('hidden');
+      advanceQuestion();
+    }
+
+    function advanceQuestion() {
+      currentQuestionIndex++;
+      const qList = questionsData[currentLang];
+      if (currentQuestionIndex < qList.length) {
+        renderQuestion(currentQuestionIndex);
+      } else {
+        startCalculating();
       }
     }
 
-    function finishQuiz() {
-      document.getElementById('screen-quiz').classList.add('hidden');
-      document.getElementById('screen-calculating').classList.remove('hidden');
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    // SIMULATE SCIENTIFIC AI CALCULATION
+    function startCalculating() {
+      document.getElementById('quiz-view').classList.add('hidden');
+      document.getElementById('progress-container').classList.add('hidden');
+      document.getElementById('calculating-view').classList.remove('hidden');
 
-      setTimeout(() => {
-        document.getElementById('calc-step-2').classList.remove('opacity-40');
+      const steps = i18n[currentLang].calculatingSteps;
+
+      let stepIdx = 0;
+      const interval = setInterval(() => {
+        stepIdx++;
+        if (stepIdx < steps.length) {
+          document.getElementById('calc-step-text').textContent = steps[stepIdx].text;
+          document.getElementById('calc-sub-text').textContent = steps[stepIdx].sub;
+          document.getElementById('calc-bar').style.width = steps[stepIdx].width;
+        } else {
+          clearInterval(interval);
+          setTimeout(showResults, 800);
+        }
       }, 1400);
-
-      setTimeout(() => {
-        document.getElementById('calc-step-3').classList.remove('opacity-40');
-      }, 2800);
-
-      setTimeout(() => {
-        document.getElementById('screen-calculating').classList.add('hidden');
-        document.getElementById('screen-results').classList.remove('hidden');
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-      }, 4200);
     }
 
-    // Auto-detect browser language initially
-    const navLang = navigator.language || navigator.userLanguage || 'en';
-    if (navLang.startsWith('pt')) {
-      setLang('pt');
-    } else if (navLang.startsWith('es')) {
-      setLang('es');
-    } else {
-      setLang('en');
+    // SHOW FINAL DIAGNOSIS & PAYWALL
+    function showResults() {
+      document.getElementById('calculating-view').classList.add('hidden');
+      document.getElementById('results-view').classList.remove('hidden');
+
+      // Determine winning category
+      let highestCategory = "somatic";
+      let highestScore = -1;
+      for (const [cat, score] of Object.entries(scores)) {
+        if (score > highestScore) {
+          highestScore = score;
+          highestCategory = cat;
+        }
+      }
+
+      const catalog = catalogData[currentLang] || catalogData['en'];
+      const prod = catalog[highestCategory] || catalog['somatic'];
+
+      // Update Diagnosis Text
+      document.getElementById('diagnosis-text').textContent = prod.diagnosis;
+
+      // Update Primary Offer
+      const t = i18n[currentLang];
+      document.getElementById('hero-prod-title').textContent = prod.title;
+      document.getElementById('hero-checkout-btn').href = prod.checkoutUrl;
+      if (document.getElementById('hero-exp-badge')) document.getElementById('hero-exp-badge').textContent = t.heroExpBadge;
+      if (document.getElementById('hero-prod-subtitle')) document.getElementById('hero-prod-subtitle').textContent = t.heroProdSubtitle;
+      
+      const scoreBadgeEl = document.getElementById('score-badge');
+      if (scoreBadgeEl) {
+        if (highestCategory === 'somatic') {
+          scoreBadgeEl.textContent = currentLang === 'pt' ? 'Cortisol Elevado e Tensão Visceral' : (currentLang === 'es' ? 'Cortisol Elevado y Tensión Visceral' : 'Elevated Cortisol & Visceral Tension');
+        } else if (highestCategory === 'cleanse') {
+          scoreBadgeEl.textContent = currentLang === 'pt' ? 'Biofilmes e Drenagem Lenta' : (currentLang === 'es' ? 'Biofilms y Drenaje Lento' : 'Biofilms & Sluggish Drainage');
+        } else if (highestCategory === 'skin') {
+          scoreBadgeEl.textContent = currentLang === 'pt' ? 'Glicação Dérmica e Queda de Colágeno' : (currentLang === 'es' ? 'Glicación Dérmica y Disminución de Colágeno' : 'Dermal Glycation & Collagen Decline');
+        } else if (highestCategory === 'heart') {
+          scoreBadgeEl.textContent = currentLang === 'pt' ? 'Tensão Vascular e Queda de Óxido Nítrico' : (currentLang === 'es' ? 'Tensión Vascular y Disminución de Óxido Nítrico' : 'Vascular Tension & Nitric Oxide Decline');
+        } else {
+          scoreBadgeEl.textContent = currentLang === 'pt' ? 'Rigidez Endotelial e Calcificação' : (currentLang === 'es' ? 'Rigidez Endotelial y Calcificación' : 'Endothelial Stiffness & Calcification');
+        }
+      }
+
+      // Bullets
+      const bulletList = document.getElementById('hero-prod-bullets');
+      bulletList.innerHTML = '';
+      prod.bullets.forEach(b => {
+        const li = document.createElement('li');
+        li.className = "flex items-start space-x-2";
+        li.innerHTML = `<span class="text-terracotta font-bold flex-shrink-0 mt-0.5">✓</span><span>${b}</span>`;
+        bulletList.appendChild(li);
+      });
+
+      // Update Affiliate Pairing
+      if (prod.affiliate) {
+        document.getElementById('affiliate-title').textContent = prod.affiliate.name;
+        document.getElementById('affiliate-desc').textContent = prod.affiliate.desc;
+        document.getElementById('affiliate-link-btn').href = prod.affiliate.link;
+        document.getElementById('affiliate-box').classList.remove('hidden');
+      } else {
+        document.getElementById('affiliate-box').classList.add('hidden');
+      }
+
+      // Scroll to top of results
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
+    // START ON LOAD
+    window.addEventListener('DOMContentLoaded', () => {
+      const initial = detectInitialLanguage();
+      setLanguage(initial);
+      const savedMode = localStorage.getItem('claire_quiz_viewmode') || 'phone';
+      setViewMode(savedMode);
+    });
   </script>
 </body>
 </html>
