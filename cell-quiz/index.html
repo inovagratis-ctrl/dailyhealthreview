@@ -436,6 +436,12 @@
               View All 6 Protocols in Claire's Official Whop Storefront →
             </a>
           </div>
+        <!-- RESTART / RETAKE ASSESSMENT BUTTON -->
+        <div class="mt-8 pt-6 border-t border-sand/80 text-center">
+          <button id="ui-btn-restart" onclick="restartQuiz()" class="inline-flex items-center space-x-2 px-5 py-2.5 bg-sand/60 hover:bg-sand text-stone-700 hover:text-charcoal rounded-full text-xs sm:text-sm font-semibold transition-all border border-sand shadow-2xs hover:shadow-xs cursor-pointer">
+            <span id="ui-restart-text">🔄 Recomeçar Avaliação (Limpar Respostas)</span>
+          </button>
+        </div>
         </div>
 
       </div>
@@ -533,6 +539,7 @@
         catTitle5: "❤️ 28-Day Clean Arteries Protocol",
         catDesc5: "Plaque defense, endothelial glycocalyx & Vitamin K2 calcium redirection",
         viewStorefront: "View All 6 Protocols in Claire's Official Whop Storefront →",
+        restartBtn: "🔄 Retake Assessment (Clear Answers)",
         footerCopy: "© 2026 Daily Health Review US • The Ageless Routine™ by Claire Evans.",
         footerMed: "Medical Disclaimer: The statements and protocols presented on this website have not been evaluated by the Food and Drug Administration. These materials are intended for educational and wellness guidance only and are not a substitute for professional medical diagnosis or treatment. Always consult your physician.",
         footerPrivacy: "Privacy Policy",
@@ -1665,6 +1672,35 @@
     };
 
     // LANGUAGE SWITCHER ENGINE
+    
+    // RESTART / RETAKE ASSESSMENT FUNCTION
+    function restartQuiz() {
+      currentQuestionIndex = 0;
+      for (const k in scores) {
+        scores[k] = 0;
+      }
+      document.getElementById('results-view').classList.add('hidden');
+      document.getElementById('interlude-view').classList.add('hidden');
+      document.getElementById('calculating-view').classList.add('hidden');
+      document.getElementById('quiz-view').classList.remove('hidden');
+
+      const t = i18n[currentLang];
+      const qList = questionsData[currentLang];
+      const total = qList.length;
+      document.getElementById('step-counter').textContent = t.stepCounter.replace('{X}', 1).replace('{Y}', total);
+      document.getElementById('step-percent').textContent = t.stepPercent.replace('{P}', 10);
+      document.getElementById('progress-bar').style.width = '10%';
+
+      renderQuestion(0);
+
+      const chassis = document.getElementById('app-chassis');
+      if (chassis) {
+        chassis.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
     function setLanguage(lang) {
       if (!['en', 'pt', 'es'].includes(lang)) lang = 'en';
       currentLang = lang;
