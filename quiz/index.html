@@ -120,8 +120,13 @@
   </header>
 
   <!-- MAIN CONTAINER -->
-  <main class="flex-grow flex items-center justify-center p-4 sm:p-6">
-    <div class="w-full max-w-xl bg-white rounded-3xl shadow-xl shadow-stone-200/60 border border-sand/80 p-6 sm:p-8 relative overflow-hidden">
+  <main class="flex-grow flex items-center justify-center p-3 sm:p-6 pb-24 sm:pb-28">
+    <div id="app-chassis" class="w-full max-w-[430px] bg-white sm:rounded-[48px] shadow-2xl sm:border-[10px] sm:border-[#1F1D1B] p-5 sm:p-7 relative overflow-hidden transition-all duration-300">
+      
+      <!-- Top Smartphone Speaker Notch (Dynamic Island Mockup) -->
+      <div id="chassis-notch" class="hidden sm:flex items-center justify-center w-24 h-4 bg-[#1F1D1B] rounded-full mx-auto mb-5">
+        <span class="w-2.5 h-2.5 rounded-full bg-[#2A2724] border border-[#3A3632]"></span>
+      </div>
       
       <!-- PROGRESS BAR CONTAINER -->
       <div id="progress-container" class="mb-6">
@@ -405,6 +410,18 @@
     </div>
   </main>
 
+  <!-- DESKTOP FLOATING VIEW MODE SWITCHER (MOBILE FRAME VS EXPANDED) -->
+  <div class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 hidden sm:flex items-center p-1 bg-white/95 backdrop-blur-md rounded-full shadow-2xl border border-sand/90 text-xs font-semibold">
+    <button id="btn-mode-phone" onclick="setViewMode('phone')" class="flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-white bg-charcoal shadow-sm">
+      <span>📱</span>
+      <span id="ui-mode-phone">Mobile View</span>
+    </button>
+    <button id="btn-mode-expanded" onclick="setViewMode('expanded')" class="flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-warmGray hover:text-charcoal">
+      <span>🖥️</span>
+      <span id="ui-mode-expanded">Expanded View</span>
+    </button>
+  </div>
+
   <!-- FOOTER -->
   <footer class="w-full text-center py-6 px-4 text-[11px] text-warmGray border-t border-sand/80 bg-white/50">
     <div class="max-w-2xl mx-auto space-y-2">
@@ -431,6 +448,8 @@
       en: {
         role: "by Claire Evans • Cellular Longevity Mentor",
         badge: "60-Sec Audit",
+        modePhone: "Mobile View",
+        modeExpanded: "Expanded View",
         claireIntro: "\"Answer instinctively. Let's find what your body needs to thrive.\"",
         stepCounter: "Question {X} of {Y}",
         stepPercent: "{P}% Complete",
@@ -470,6 +489,8 @@
       pt: {
         role: "por Claire Evans • Mentora de Longevidade Celular",
         badge: "Avaliação de 60s",
+        modePhone: "Modo Celular",
+        modeExpanded: "Modo Expandido",
         claireIntro: "\"Responda instintivamente. Vamos descobrir o que seu corpo precisa para florescer.\"",
         stepCounter: "Pergunta {X} de {Y}",
         stepPercent: "{P}% Concluído",
@@ -509,6 +530,8 @@
       es: {
         role: "por Claire Evans • Mentora de Longevidad Celular",
         badge: "Evaluación de 60s",
+        modePhone: "Modo Celular",
+        modeExpanded: "Modo Expandido",
         claireIntro: "\"Responde instintivamente. Descubramos lo que tu cuerpo necesita para florecer.\"",
         stepCounter: "Pregunta {X} de {Y}",
         stepPercent: "{P}% Completado",
@@ -1269,12 +1292,48 @@
       document.getElementById('ui-view-storefront').textContent = t.viewStorefront;
       document.getElementById('ui-footer-copy').textContent = t.footerCopy;
       document.getElementById('ui-footer-med').textContent = t.footerMed;
+      if (document.getElementById('ui-mode-phone')) document.getElementById('ui-mode-phone').textContent = t.modePhone;
+      if (document.getElementById('ui-mode-expanded')) document.getElementById('ui-mode-expanded').textContent = t.modeExpanded;
 
       // Re-render current question or results
       if (!document.getElementById('quiz-view').classList.contains('hidden')) {
         renderQuestion(currentQuestionIndex);
       } else if (!document.getElementById('results-view').classList.contains('hidden')) {
         showResults();
+      }
+    }
+
+    // DESKTOP VIEW MODE TOGGLE (PHONE CHASSIS VS EXPANDED)
+    let currentViewMode = 'phone';
+
+    function setViewMode(mode) {
+      currentViewMode = mode;
+      localStorage.setItem('claire_quiz_viewmode', mode);
+      const chassis = document.getElementById('app-chassis');
+      const notch = document.getElementById('chassis-notch');
+      const btnPhone = document.getElementById('btn-mode-phone');
+      const btnExpanded = document.getElementById('btn-mode-expanded');
+
+      if (!chassis) return;
+
+      if (mode === 'phone') {
+        chassis.className = "w-full max-w-[430px] bg-white sm:rounded-[48px] shadow-2xl sm:border-[10px] sm:border-[#1F1D1B] p-5 sm:p-7 relative overflow-hidden transition-all duration-300";
+        if (notch) notch.classList.remove('hidden');
+        if (btnPhone) {
+          btnPhone.className = "flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-white bg-charcoal shadow-sm";
+        }
+        if (btnExpanded) {
+          btnExpanded.className = "flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-warmGray hover:text-charcoal";
+        }
+      } else {
+        chassis.className = "w-full max-w-2xl bg-white rounded-3xl shadow-xl shadow-stone-200/60 border border-sand/80 p-6 sm:p-8 relative overflow-hidden transition-all duration-300";
+        if (notch) notch.classList.add('hidden');
+        if (btnExpanded) {
+          btnExpanded.className = "flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-white bg-charcoal shadow-sm";
+        }
+        if (btnPhone) {
+          btnPhone.className = "flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-warmGray hover:text-charcoal";
+        }
       }
     }
 
@@ -1449,6 +1508,8 @@
     window.addEventListener('DOMContentLoaded', () => {
       const initial = detectInitialLanguage();
       setLanguage(initial);
+      const savedMode = localStorage.getItem('claire_quiz_viewmode') || 'phone';
+      setViewMode(savedMode);
     });
   </script>
 </body>
