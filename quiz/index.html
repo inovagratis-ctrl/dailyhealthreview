@@ -139,6 +139,20 @@
       <div id="chassis-notch" class="hidden sm:flex items-center justify-center w-24 h-4 bg-[#1F1D1B] rounded-full mx-auto mb-4">
         <span class="w-2.5 h-2.5 rounded-full bg-[#2A2724] border border-[#3A3632]"></span>
       </div>
+      <!-- VIEW MODE SWITCHER DENTRO DO CHASSIS (NÃO FLUTUANTE) -->
+      <div class="hidden sm:flex items-center justify-center mb-4">
+        <div class="flex items-center p-1 bg-sand/70 rounded-full border border-sand text-xs font-semibold shadow-2xs">
+          <button id="btn-mode-phone" onclick="setViewMode('phone')" class="flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-white bg-charcoal shadow-sm cursor-pointer">
+            <span>📱</span>
+            <span id="ui-mode-phone">Modo Celular</span>
+          </button>
+          <button id="btn-mode-expanded" onclick="setViewMode('expanded')" class="flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer">
+            <span>🖥️</span>
+            <span id="ui-mode-expanded">Modo Expandido</span>
+          </button>
+        </div>
+      </div>
+
 
       <!-- App Brand Header Inside Chassis (Clean App Icon + High-Res Vector HTML Typography) -->
       <div class="mb-5 flex items-center justify-center space-x-3 sm:space-x-3.5">
@@ -443,33 +457,7 @@
     </div>
   </main>
 
-  <!-- DESKTOP FLOATING VIEW MODE SWITCHER (MOBILE FRAME VS EXPANDED) -->
-  <div class="fixed bottom-5 left-1/2 -translate-x-1/2 z-50 hidden sm:flex items-center p-1 bg-white/95 backdrop-blur-md rounded-full shadow-2xl border border-sand/90 text-xs font-semibold">
-    <button id="btn-mode-phone" onclick="setViewMode('phone')" class="flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-white bg-charcoal shadow-sm">
-      <span>📱</span>
-      <span id="ui-mode-phone">Mobile View</span>
-    </button>
-    <button id="btn-mode-expanded" onclick="setViewMode('expanded')" class="flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-warmGray hover:text-charcoal">
-      <span>🖥️</span>
-      <span id="ui-mode-expanded">Expanded View</span>
-    </button>
-  </div>
-
-  <!-- FOOTER -->
-  <footer class="w-full text-center py-6 px-4 text-xs sm:text-sm text-stone-500 border-t border-sand/80 bg-white/50">
-    <div class="max-w-2xl mx-auto space-y-2">
-      <p id="ui-footer-copy">© 2026 Daily Health Review US • Claire Evans Official Coaching & Wellness.</p>
-      <p id="ui-footer-med" class="max-w-lg mx-auto text-xs text-stone-500/90 leading-relaxed">
-        Medical Disclaimer: The statements and protocols presented on this website have not been evaluated by the Food and Drug Administration. These materials are intended for educational and wellness guidance only and are not a substitute for professional medical diagnosis or treatment. Always consult your physician.
-      </p>
-      <div class="flex justify-center space-x-4 text-xs sm:text-sm text-terracotta pt-1">
-        <a id="ui-footer-privacy" href="/privacy" class="hover:underline">Privacy Policy</a>
-        <span>•</span>
-        <a id="ui-footer-terms" href="/terms" class="hover:underline">Terms of Service</a>
-        <span>•</span>
-        <a id="ui-footer-disclosure" href="/disclosure" class="hover:underline">FTC Affiliate Disclosure</a>
-      </div>
-    </div>
+  
   </footer>
 
   <!-- MULTI-LANGUAGE SCRIPT (TRILINGUAL ENGINE: EN / PT / ES) -->
@@ -1439,19 +1427,19 @@
         chassis.className = "w-full max-w-[430px] bg-white sm:rounded-[48px] shadow-2xl sm:border-[10px] sm:border-[#1F1D1B] p-5 sm:p-7 relative overflow-hidden transition-all duration-300";
         if (notch) notch.classList.remove('hidden');
         if (btnPhone) {
-          btnPhone.className = "flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-white bg-charcoal shadow-sm";
+          btnPhone.className = "flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-white bg-charcoal shadow-sm cursor-pointer";
         }
         if (btnExpanded) {
-          btnExpanded.className = "flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-warmGray hover:text-charcoal";
+          btnExpanded.className = "flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer";
         }
       } else {
         chassis.className = "w-full max-w-2xl bg-white rounded-3xl shadow-xl shadow-stone-200/60 border border-sand/80 p-6 sm:p-8 relative overflow-hidden transition-all duration-300";
         if (notch) notch.classList.add('hidden');
         if (btnExpanded) {
-          btnExpanded.className = "flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-white bg-charcoal shadow-sm";
+          btnExpanded.className = "flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-white bg-charcoal shadow-sm cursor-pointer";
         }
         if (btnPhone) {
-          btnPhone.className = "flex items-center space-x-1.5 px-4 py-1.5 rounded-full transition-all text-warmGray hover:text-charcoal";
+          btnPhone.className = "flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer";
         }
       }
     }
