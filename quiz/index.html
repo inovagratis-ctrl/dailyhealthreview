@@ -140,9 +140,25 @@
         <span class="w-2.5 h-2.5 rounded-full bg-[#2A2724] border border-[#3A3632]"></span>
       </div>
 
-      <!-- App Brand Logo Inside Chassis -->
-      <div class="mb-4 text-center">
-        <img src="/quiz/images/the_ageless_routine_logo_horizontal.webp" alt="The Ageless Routine by Claire Evans" class="h-10 sm:h-12 w-auto mx-auto object-contain">
+      <!-- App Brand Header Inside Chassis (Clean App Icon + High-Res Vector HTML Typography) -->
+      <div class="mb-5 flex items-center justify-center space-x-3 sm:space-x-3.5">
+        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl overflow-hidden border border-amber-300/40 shadow-sm bg-[#1A2619] flex-shrink-0">
+          <img src="/quiz/images/the_ageless_routine_badge_square.webp" alt="The Ageless Routine App Icon" class="w-full h-full object-cover">
+        </div>
+        <div class="text-left">
+          <div class="flex items-center space-x-1">
+            <h1 class="cormorant text-base sm:text-lg font-bold tracking-wider text-charcoal leading-tight">
+              THE AGELESS ROUTINE
+            </h1>
+            <span class="text-[11px] font-bold text-terracotta align-top">™</span>
+          </div>
+          <p id="ui-chassis-sub" class="text-xs text-stone-500 font-medium leading-tight mt-0.5">
+            Personalized Wellness for Women 40+
+          </p>
+          <p id="ui-chassis-by" class="text-[11px] sm:text-xs text-terracotta font-semibold leading-tight mt-0.5">
+            by Claire Evans • Mature Vitality
+          </p>
+        </div>
       </div>
       
       <!-- PROGRESS BAR CONTAINER -->
@@ -467,6 +483,8 @@
         badge: "60-Sec Audit",
         modePhone: "Mobile View",
         modeExpanded: "Expanded View",
+        chassisSub: "Personalized Wellness for Women 40+",
+        chassisBy: "by Claire Evans • Mature Vitality",
         claireMentorBadge: "51 & Glowing",
         claireIntro: "\"Answer instinctively. Let's find what your body needs to thrive.\"",
         stepCounter: "Question {X} of {Y}",
@@ -526,6 +544,8 @@
         badge: "Avaliação de 60s",
         modePhone: "Modo Celular",
         modeExpanded: "Modo Expandido",
+        chassisSub: "Bem-Estar Personalizado para Mulheres 40+",
+        chassisBy: "por Claire Evans • Vitalidade Madura",
         claireMentorBadge: "51 Anos & Radiante",
         claireIntro: "\"Responda instintivamente. Vamos descobrir o que seu corpo precisa para florescer.\"",
         stepCounter: "Pergunta {X} de {Y}",
@@ -585,6 +605,8 @@
         badge: "Evaluación de 60s",
         modePhone: "Modo Celular",
         modeExpanded: "Modo Expandido",
+        chassisSub: "Bienestar Personalizado para Mujeres 40+",
+        chassisBy: "por Claire Evans • Vitalidad Madura",
         claireMentorBadge: "51 Años & Radiante",
         claireIntro: "\"Responde instintivamente. Descubramos lo que tu cuerpo necesita para florecer.\"",
         stepCounter: "Pregunta {X} de {Y}",
@@ -1365,6 +1387,8 @@
       document.getElementById('ui-footer-med').textContent = t.footerMed;
       if (document.getElementById('ui-mode-phone')) document.getElementById('ui-mode-phone').textContent = t.modePhone;
       if (document.getElementById('ui-mode-expanded')) document.getElementById('ui-mode-expanded').textContent = t.modeExpanded;
+      if (document.getElementById('ui-chassis-sub')) document.getElementById('ui-chassis-sub').textContent = t.chassisSub;
+      if (document.getElementById('ui-chassis-by')) document.getElementById('ui-chassis-by').textContent = t.chassisBy;
       if (document.getElementById('ui-claire-mentor-badge')) document.getElementById('ui-claire-mentor-badge').textContent = t.claireMentorBadge;
       if (document.getElementById('ui-calc-scan-badge')) document.getElementById('ui-calc-scan-badge').textContent = t.calcScanBadge;
       if (document.getElementById('ui-res-curated')) document.getElementById('ui-res-curated').textContent = t.resCurated;
