@@ -20,5 +20,5 @@ if %errorlevel% == 0 (
 echo Abrindo painel no seu navegador...
 start "" "http://localhost:8080/"
 echo.
-echo [SUCESSO] Painel aberto! Voce ja pode ver as 36 ofertas e 108 ativos.
+echo [SUCESSO] Painel aberto! Voce ja pode ver as 37 ofertas e 110 ativos.
 timeout /t 4 >nul

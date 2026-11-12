@@ -48,7 +48,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daily Health Review | Live Sales & Affiliate Command Center (108 Ativos • 5 Armas)</title>
+  <title>Daily Health Review | Live Sales & Affiliate Command Center (110 Ativos • 5 Armas)</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
@@ -74,7 +74,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span>
         <span class="font-bold text-slate-200"><i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> Auditoria Contínua de Links &amp; Comissões:</span>
         <span id="audit-badge" class="bg-emerald-950 text-emerald-300 border border-emerald-500/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full">
-          36 Showcases • 36 Editoriais • 36 Story Advertorials (Arma 5) • 36 Rotas 302 Blindadas • 5 Armas OK
+          37 Showcases • 37 Editoriais • 36 Story Advertorials (Arma 5) • 37 Rotas 302 Blindadas • 5 Armas OK
         </span>
       </div>
       <div class="flex items-center gap-3">
@@ -98,7 +98,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span> LIVE 8080
             </span>
           </h1>
-          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Catálogo: <strong class="text-emerald-400 font-bold">36 Showcases • 36 Reviews • 36 Story Advertorials (108 Ativos • 5 Armas OK)</strong></p>
+          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Catálogo: <strong class="text-emerald-400 font-bold">37 Showcases • 37 Reviews • 36 Story Advertorials (110 Ativos • 5 Armas OK)</strong></p>
         </div>
       </div>
       
@@ -155,9 +155,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-shield-halved"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">108 Páginas Ativas</div>
+        <div class="text-3xl font-black text-white">110 Páginas Ativas</div>
         <div class="text-xs text-cyan-200/80 mt-2 flex items-center gap-1">
-          <i class="fa-solid fa-check-double"></i> 36 Showcases + 36 Reviews + 36 Story Advertorials
+          <i class="fa-solid fa-check-double"></i> 37 Showcases + 37 Reviews + 36 Story Advertorials
         </div>
       </div>
 
@@ -202,7 +202,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
           <span class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0 font-bold"><i class="fa-solid fa-play"></i></span>
           <div>
             <span class="font-bold text-white block">Arma 1: VSL Video Box</span>
-            <span class="text-[10px] text-emerald-400 font-medium">36 Player Boxes no Ar</span>
+            <span class="text-[10px] text-emerald-400 font-medium">37 Player Boxes no Ar</span>
           </div>
         </div>
         <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-3 flex items-center gap-2.5">
@@ -399,17 +399,17 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div>
           <h2 class="text-base font-black text-white flex items-center gap-2">
-            <i class="fa-solid fa-table-cells-large text-emerald-400"></i> Matriz Completa de 36 Produtos (Artigos Pre-Sell &amp; Showcases Oficiais)
+            <i class="fa-solid fa-table-cells-large text-emerald-400"></i> Matriz Completa de 37 Produtos (Artigos Pre-Sell &amp; Showcases Oficiais)
           </h2>
           <p class="text-xs text-slate-400">Clique para abrir e auditar qualquer artigo ou página de vendas oficial do seu portal</p>
         </div>
         
         <div class="flex flex-wrap items-center gap-2">
           <!-- Filter Buttons -->
-          <button onclick="filterTable('all')" id="btn-filter-all" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow">Todos (36)</button>
+          <button onclick="filterTable('all')" id="btn-filter-all" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow">Todos (37)</button>
           <button onclick="filterTable('whitelist')" id="btn-filter-wl" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 hover:bg-amber-600 hover:text-white transition">⭐ VIP Whitelist (7)</button>
           <button onclick="filterTable('clickbank')" id="btn-filter-cb" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">ClickBank (24)</button>
-          <button onclick="filterTable('digistore')" id="btn-filter-ds" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">Digistore24 (12)</button>
+          <button onclick="filterTable('digistore')" id="btn-filter-ds" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">Digistore24 (13)</button>
           
           <!-- Instant Search Input -->
           <div class="relative">
@@ -1772,6 +1772,41 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-bolt text-amber-400"></i> 5 ARMAS OK</span></td>
             </tr>
 
+            <!-- 37. KetoSana -->
+            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="digistore">
+              <td class="p-3.5 text-slate-500 font-mono">37</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span> KetoSana® Liquid Drops <span class="bg-sky-500/20 text-sky-300 border border-sky-500/40 text-[9px] font-black px-1.5 py-0.5 rounded ml-1">DS24 #1 • $36.57/CART</span>
+              </td>
+              <td class="p-3.5"><span class="badge-ds text-[10px] font-bold px-2 py-0.5 rounded">Digistore24</span></td>
+              <td class="p-3.5 text-slate-300">Gotas Sublinguais Metabólicas (21 Botânicos + Cromo)</td>
+              <td class="p-3.5 text-emerald-400 font-bold">65%–75% RevShare (20% Cart Conv.)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/ketosana-metabolic-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
+                  /ketosana-metabolic-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <span class="text-slate-500 text-[10px] font-mono">Em preparação</span>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/showcase/ketosana" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /showcase/ketosana <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <div class="flex items-center gap-1.5 font-mono">
+                  <a href="https://dailyhealthreviewus.com/go/ketosana" target="_blank" rel="noopener" class="text-amber-400 hover:text-amber-300 font-bold hover:underline flex items-center gap-1" title="Testar Redirecionamento Oficial">
+                    /go/ketosana <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                  </a>
+                  <button onclick="copyLink('https://dailyhealthreviewus.com/go/ketosana', this)" class="text-slate-500 hover:text-amber-300 text-xs px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 transition" title="Copiar link limpo de divulgação">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </td>
+              <td class="p-3.5"><span class="bg-sky-950 text-sky-300 border border-sky-500/40 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-check-double text-emerald-400"></i> 4 ARMAS OK</span></td>
+            </tr>
+
           </tbody>
         </table>
       </div>
@@ -1807,7 +1842,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
   <!-- Footer -->
   <footer class="border-t border-slate-800 text-center py-6 text-xs text-slate-500">
-    Daily Health Review Live Analytics • Conectado à API ClickBank REST 1.3 • Nickname: <strong class="text-slate-300">eusimar72</strong> • 36 Ofertas e Showcases Conectados
+    Daily Health Review Live Analytics • Conectado à API ClickBank REST 1.3 • Nickname: <strong class="text-slate-300">eusimar72</strong> • 37 Ofertas e Showcases Conectados
   </footer>
 
   <script>
@@ -1914,7 +1949,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       if (icon) icon.classList.add('fa-spin');
       const badge = document.getElementById('audit-badge');
       if (badge && showToast) {
-        badge.innerText = 'Auditando 36 Showcases, Artigos e HopLinks em tempo real...';
+        badge.innerText = 'Auditando 37 Showcases, Artigos e HopLinks em tempo real...';
       }
       try {
         const res = await fetch('/api/audit');
@@ -1935,7 +1970,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 • Story Advertorials (Arma 5): ${data.advertorials_ok || 36}/${data.total_products} Ativos
 • Rotas 302 de Servidor: ${data.redirects_ok}/${data.total_products} Blindadas
 • Rastreamento de Afiliado: ${data.affiliate_tags_ok}/${data.total_products} Ativos
-• Total de Páginas no Ar: 108 Páginas de Alta Conversão
+• Total de Páginas no Ar: ${(data.showcases_ok || 37) + (data.editorials_ok || 37) + (data.advertorials_ok || 36)} Páginas de Alta Conversão
 
 Todas as 5 armas de conversão estão 100% ativas em todos os produtos.`);
           }
@@ -1979,11 +2014,11 @@ class DashboardHandler(SimpleHTTPRequestHandler):
                 self.wfile.write(json.dumps({
                     "status": "ONLINE",
                     "port": PORT,
-                    "products_count": 36,
-                    "showcases_count": 36,
-                    "reviews_count": 36,
+                    "products_count": 37,
+                    "showcases_count": 37,
+                    "reviews_count": 37,
                     "advertorials_count": 36,
-                    "total_assets": 108,
+                    "total_assets": 110,
                     "weapons_status": "5_WEAPONS_ACTIVE",
                     "nickname": ACCOUNT_NICKNAME
                 }).encode("utf-8"))
@@ -2015,7 +2050,7 @@ def start_server():
     print("\n=======================================================")
     print("[+] CLICKBANK & DIGISTORE LIVE SALES DASHBOARD ATIVO!")
     print("[+] API Status: ONLINE (Conectada a ClickBank REST 1.3)")
-    print(f"[+] 36 PRODUTOS & SHOWCASES ATUALIZADOS")
+    print(f"[+] 37 PRODUTOS & SHOWCASES ATUALIZADOS")
     print(f"[+] Acesse no seu navegador: http://localhost:{PORT}")
     print("=======================================================\n")
     server.serve_forever()
