@@ -132,28 +132,8 @@
   </header>
 
   <!-- MAIN CONTAINER -->
-  <main class="flex-grow flex items-center justify-center p-3 sm:p-6 pb-24 sm:pb-28">
-    <div id="app-chassis" class="w-full max-w-[430px] bg-white sm:rounded-[48px] shadow-2xl sm:border-[10px] sm:border-[#1F1D1B] p-5 sm:p-7 relative overflow-hidden transition-all duration-300">
-      
-      <!-- Top Smartphone Speaker Notch (Dynamic Island Mockup) -->
-      <div id="chassis-notch" class="hidden sm:flex items-center justify-center w-24 h-4 bg-[#1F1D1B] rounded-full mx-auto mb-4">
-        <span class="w-2.5 h-2.5 rounded-full bg-[#2A2724] border border-[#3A3632]"></span>
-      </div>
-      <!-- VIEW MODE SWITCHER DENTRO DO CHASSIS (NÃO FLUTUANTE) -->
-      <div class="hidden sm:flex items-center justify-center mb-4">
-        <div class="flex items-center p-1 bg-sand/70 rounded-full border border-sand text-xs font-semibold shadow-2xs">
-          <button id="btn-mode-phone" onclick="setViewMode('phone')" class="flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-white bg-charcoal shadow-sm cursor-pointer">
-            <span>📱</span>
-            <span id="ui-mode-phone">Modo Celular</span>
-          </button>
-          <button id="btn-mode-expanded" onclick="setViewMode('expanded')" class="flex items-center space-x-1.5 px-3.5 py-1 rounded-full transition-all text-warmGray hover:text-charcoal cursor-pointer">
-            <span>🖥️</span>
-            <span id="ui-mode-expanded">Modo Expandido</span>
-          </button>
-        </div>
-      </div>
-
-
+  <main class="flex-grow flex items-center justify-center p-3 sm:p-6 md:p-8">
+    <div id="app-chassis" class="w-full max-w-2xl bg-white rounded-3xl shadow-xl shadow-stone-200/60 border border-sand/80 p-5 sm:p-8 md:p-10 relative overflow-hidden transition-all duration-300">
       <!-- App Brand Header Inside Chassis (Clean App Icon + High-Res Vector HTML Typography) -->
       <div class="mb-5 flex items-center justify-center space-x-3 sm:space-x-3.5">
         <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-2xl overflow-hidden border border-amber-300/40 shadow-sm bg-[#1A2619] flex-shrink-0">
