@@ -1,12 +1,14 @@
 {
-  "timestamp": "2026-11-09 22:46:52",
-  "total_products": 36,
-  "showcases_ok": 36,
-  "editorials_ok": 36,
+  "timestamp": "2026-11-15 20:25:15",
+  "total_products": 37,
+  "showcases_ok": 37,
+  "editorials_ok": 37,
   "advertorials_ok": 36,
-  "redirects_ok": 36,
-  "affiliate_tags_ok": 36,
-  "issues": [],
+  "redirects_ok": 37,
+  "affiliate_tags_ok": 37,
+  "issues": [
+    "Story Advertorial ausente: KetoSana\\u00ae US Liquid Drops (None)"
+  ],
   "products": [
     {
       "id": "nagano",
@@ -54,6 +56,18 @@
       "secret_slug": "corevital-berberine-burn-secret",
       "go_route": "/go/corevital",
       "dest_url": "https://fee3bcwkoenpkxc8wj3htv7tas.hop.clickbank.net",
+      "aff_ok": true
+    },
+    {
+      "id": "ketosana",
+      "title": "KetoSana\\u00ae US Liquid Drops",
+      "price": "$49/bottle",
+      "showcase_ok": true,
+      "editorial_ok": true,
+      "advertorial_ok": false,
+      "secret_slug": null,
+      "go_route": "/go/ketosana",
+      "dest_url": "https://myketosana.com/en/ketosana-pdp-fe?aff=eusimar72&cam=dhr",
       "aff_ok": true
     },
     {

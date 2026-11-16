@@ -1,5 +1,7 @@
-# Cloudflare Pages Redirects and Rewrites Configuration
-# Affiliate Bridge Redirects (Temporary 302/307)
+# Cloudflare Pages Redirects Configuration
+# Optimized for Google Search Console (Zero Redirection Loops, Direct Canonical 301s)
+
+# Whop Digital Products & Checkout Bridges (Temporary 302)
 /protocol https://whop.com/dailyhealthreviewus/cell-renewal-protocol 302
 /apothecary https://whop.com/checkout/plan_TQUatv6T9pQQU 302
 /somatic https://whop.com/checkout/plan_MTM6NIMtBjqIh 302
@@ -15,33 +17,14 @@
 /clean-arteries https://whop.com/dailyhealthreviewus/clean-arteries-protocol 302
 /go/arteries https://whop.com/checkout/plan_R3KhepBcIF5ue 302
 /claire/protocol https://whop.com/dailyhealthreviewus/cell-renewal-protocol 302
-/apothecary https://whop.com/checkout/plan_TQUatv6T9pQQU 302
-/somatic https://whop.com/checkout/plan_MTM6NIMtBjqIh 302
-/somatic-reset https://whop.com/dailyhealthreviewus/somatic-reset 302
+/go/protocol https://whop.com/dailyhealthreviewus/cell-renewal-protocol 302
+
+# Affiliate Links (/go/...) Bridge Redirects (302)
 /go/somatic https://whop.com/checkout/plan_MTM6NIMtBjqIh 302
-/cleanse https://whop.com/checkout/plan_1jcKUJYSZyL0k 302
-/parasite-cleanse https://whop.com/dailyhealthreviewus/parasite-cleanse-blueprint 302
 /go/cleanse https://whop.com/checkout/plan_1jcKUJYSZyL0k 302
-/heart https://whop.com/checkout/plan_TplaHGlAQH4BO 302
-/blood-pressure https://whop.com/dailyhealthreviewus/blood-pressure-protocol 302
 /go/heart https://whop.com/checkout/plan_TplaHGlAQH4BO 302
-/arteries https://whop.com/checkout/plan_R3KhepBcIF5ue 302
-/clean-arteries https://whop.com/dailyhealthreviewus/clean-arteries-protocol 302
 /go/arteries https://whop.com/checkout/plan_R3KhepBcIF5ue 302
 /go/protocol https://whop.com/dailyhealthreviewus/cell-renewal-protocol 302
-/apothecary https://whop.com/checkout/plan_TQUatv6T9pQQU 302
-/somatic https://whop.com/checkout/plan_MTM6NIMtBjqIh 302
-/somatic-reset https://whop.com/dailyhealthreviewus/somatic-reset 302
-/go/somatic https://whop.com/checkout/plan_MTM6NIMtBjqIh 302
-/cleanse https://whop.com/checkout/plan_1jcKUJYSZyL0k 302
-/parasite-cleanse https://whop.com/dailyhealthreviewus/parasite-cleanse-blueprint 302
-/go/cleanse https://whop.com/checkout/plan_1jcKUJYSZyL0k 302
-/heart https://whop.com/checkout/plan_TplaHGlAQH4BO 302
-/blood-pressure https://whop.com/dailyhealthreviewus/blood-pressure-protocol 302
-/go/heart https://whop.com/checkout/plan_TplaHGlAQH4BO 302
-/arteries https://whop.com/checkout/plan_R3KhepBcIF5ue 302
-/clean-arteries https://whop.com/dailyhealthreviewus/clean-arteries-protocol 302
-/go/arteries https://whop.com/checkout/plan_R3KhepBcIF5ue 302
 /go/lymphtonic https://19a86z9ovajqhs57bex45l0flv.hop.clickbank.net 302
 /go/audifort https://6f9834zioammkt802al5tm4pf5.hop.clickbank.net 302
 /go/neurovera https://6fd8bc8jpfkil09mti3fybx058.hop.clickbank.net 302
@@ -54,7 +37,6 @@
 /go/memory https://www.digistore24.com/redir/599473/eusimar72/ 302
 /go/cleansesana https://cleansesana.com/cleansesana-pdp-fe#aff=eusimar72 302
 /go/ketosana https://myketosana.com/en/ketosana-pdp-fe?aff=eusimar72&cam=dhr 302
-# SanaSocials French Editions (France, Belgium, Switzerland, Luxembourg)
 /go/lignesana https://myketosana.com/fr/lignesana-pdp-fe?aff=eusimar72&cam=dhr 302
 /go/lignesana-cart https://myketosana.com/fr/lignesana-dtc-bb-fe?aff=eusimar72&cam=dhr 302
 /go/floravitasana https://mycleansesana.com/fr/floravitasana-pdp-fe?aff=eusimar72&cam=dhr 302
@@ -92,95 +74,65 @@
 /go/nitric-boost https://d549316ruicd8samq8xf6o8o6r.hop.clickbank.net 302
 /go/livpure https://00bb409gwihe9v8cnuxlxzcu4l.hop.clickbank.net 302
 /go/dentabiome https://671272-iwcbjcy41kk86g4thhf.hop.clickbank.net 302
-/01_Pagina_Inicial_Portal_Home.html / 301
-/02_Artigo_1_Elixir_7_Segundos.html /morning-routine 301
-/03_Artigo_2_Nagano_Completo_Com_Fotos.html /nagano-tonic-review 301
 
+# Legacy Root Files Permanent Redirects (301) to Canonical Slugs with Trailing Slash
+/01_Pagina_Inicial_Portal_Home.html / 301
+/02_Artigo_1_Elixir_7_Segundos.html /morning-routine/ 301
+/03_Artigo_2_Nagano_Completo_Com_Fotos.html /nagano-tonic-review/ 301
 /showcase /showcase/ 301
 
-# Clean URL Rewrites for Legal & Articles
-/morning-routine /articles/02_Artigo_1_Elixir_7_Segundos.html 200
-/nagano-tonic-review /articles/03_Artigo_2_Nagano_Completo_Com_Fotos.html 200
-/prodentim-report /articles/prodentim-special-report.html 200
-/sugar-defender-report /articles/sugar-defender-guide.html 200
-/sugar-defender-guide /articles/sugar-defender-guide.html 200
-/yusleep-report /articles/yusleep-deep-sleep-report.html 200
-/yusleep-review /articles/yusleep-deep-sleep-report.html 200
+# Legacy Articles Directory Redirects (301)
+/articles/02_Artigo_1_Elixir_7_Segundos.html /morning-routine/ 301
+/articles/02_Artigo_1_Elixir_7_Segundos /morning-routine/ 301
+/articles/03_Artigo_2_Nagano_Completo_Com_Fotos.html /nagano-tonic-review/ 301
+/articles/03_Artigo_2_Nagano_Completo_Com_Fotos /nagano-tonic-review/ 301
+/articles/prodentim-special-report.html /prodentim-report/ 301
+/articles/prodentim-special-report /prodentim-report/ 301
+/articles/sugar-defender-guide.html /sugar-defender-guide/ 301
+/articles/sugar-defender-guide /sugar-defender-guide/ 301
+/articles/yusleep-deep-sleep-report.html /yusleep-deep-rest-report/ 301
+/articles/yusleep-deep-sleep-report /yusleep-deep-rest-report/ 301
+/sugar-defender-report /sugar-defender-guide/ 301
+/yusleep-report /yusleep-deep-rest-report/ 301
+/yusleep-review /yusleep-deep-rest-report/ 301
+
+# Legacy Report Slugs Renamed (301)
 /primebiome-report /primebiome-gut-skin-axis-report/ 301
 /kerassentials-fungus-report /kerassentials-nail-fungus-report/ 301
 /nanodefense-pro-nanotech-report /nanodefense-pro-nanotechnology-report/ 301
 /synaptigen-cognitive-clarity-report /synaptigen-memory-formula-report/ 301
 /metanail-complex-audit-report /metanail-complex-nail-fungus-report/ 301
 /nitric-boost-ultra-vitality-report /nitric-boost-ultra-erection-formula-report/ 301
-/about /about/index.html 200
-/editorial-standards /about/index.html 200
-/privacy /legal/privacy-policy.html 200
-/terms /legal/terms-of-service.html 200
-/disclosure /legal/affiliate-disclosure.html 200
-/disclaimer /legal/fda-disclaimer.html 200
-/contact /legal/contact.html 200
-/privacy-policy.html /privacy 301
-/terms-of-service.html /terms 301
-/affiliate-disclosure.html /disclosure 301
-/fda-disclaimer.html /disclaimer 301
-/contact.html /contact 301
-/legal/privacy-policy.html /privacy 301
-/legal/terms-of-service.html /terms 301
-/legal/affiliate-disclosure.html /disclosure 301
-/legal/fda-disclaimer.html /disclaimer 301
-/legal/contact.html /contact 301
-/disclaimer/privacy-policy.html /privacy 301
-/disclaimer/terms-of-service.html /terms 301
-/disclaimer/affiliate-disclosure.html /disclosure 301
-/privacy/terms-of-service.html /terms 301
-/privacy/affiliate-disclosure.html /disclosure 301
-/terms/privacy-policy.html /privacy 301
-# Claire Evans Recipes Rewrites
-/claire/flourless-blueberry-cake /claire/flourless-blueberry-cake/index.html 200
-/claire/cottage-cheese-cloud-bread /claire/cottage-cheese-cloud-bread/index.html 200
-/claire/tart-cherry-sleep-mocktail /claire/tart-cherry-sleep-mocktail/index.html 200
-/claire/golden-ginger-chia-gut-reset /claire/golden-ginger-chia-gut-reset/index.html 200
-/claire/oral-microbiome-teeth-reset /claire/oral-microbiome-teeth-reset/index.html 200
-/claire/teeth-reset /claire/oral-microbiome-teeth-reset/index.html 200
+/editorial-standards /about/ 301
+/claire/teeth-reset /claire/oral-microbiome-teeth-reset/ 301
 
-# High-Converting Story Advertorials
-/neotonics-gut-skin-secret /neotonics-gut-skin-secret/index.html 200
-/cleansesana-colon-waste-secret /cleansesana-colon-waste-secret/index.html 200
+# Legal Pages Legacy Redirects (301) directly to Canonical Trailing Slash
+/legal/privacy-policy.html /privacy/ 301
+/legal/privacy-policy /privacy/ 301
+/privacy-policy.html /privacy/ 301
+/privacy-policy /privacy/ 301
+/disclaimer/privacy-policy.html /privacy/ 301
+/terms/privacy-policy.html /privacy/ 301
 
+/legal/terms-of-service.html /terms/ 301
+/legal/terms-of-service /terms/ 301
+/terms-of-service.html /terms/ 301
+/terms-of-service /terms/ 301
+/disclaimer/terms-of-service.html /terms/ 301
+/privacy/terms-of-service.html /terms/ 301
 
+/legal/affiliate-disclosure.html /disclosure/ 301
+/legal/affiliate-disclosure /disclosure/ 301
+/affiliate-disclosure.html /disclosure/ 301
+/affiliate-disclosure /disclosure/ 301
+/disclaimer/affiliate-disclosure.html /disclosure/ 301
+/privacy/affiliate-disclosure.html /disclosure/ 301
 
+/legal/fda-disclaimer.html /disclaimer/ 301
+/legal/fda-disclaimer /disclaimer/ 301
+/fda-disclaimer.html /disclaimer/ 301
+/fda-disclaimer /disclaimer/ 301
 
-/nagano-japanese-tonic-secret /nagano-japanese-tonic-secret/index.html 200
-/advanced-joint-cucumbers-secret /advanced-joint-cucumbers-secret/index.html 200
-/prodentim-purple-mineral-secret /prodentim-purple-mineral-secret/index.html 200
-/corevital-berberine-burn-secret /corevital-berberine-burn-secret/index.html 200
-/cardioslim-tea-cardio-secret /cardioslim-tea-cardio-secret/index.html 200
-/sugar-defender-glucose-secret /sugar-defender-glucose-secret/index.html 200
-/advanced-amino-cellular-secret /advanced-amino-cellular-secret/index.html 200
-/advanced-collagen-firmness-secret /advanced-collagen-firmness-secret/index.html 200
-/advanced-memory-brain-secret /advanced-memory-brain-secret/index.html 200
-/circo2-nitric-oxide-secret /circo2-nitric-oxide-secret/index.html 200
-/audifort-hearing-clarity-secret /audifort-hearing-clarity-secret/index.html 200
-/femicore-pelvic-floor-secret /femicore-pelvic-floor-secret/index.html 200
-/lymphtonic-drainage-secret /lymphtonic-drainage-secret/index.html 200
-/visiflora-eye-retina-secret /visiflora-eye-retina-secret/index.html 200
-/neurovera-nerve-calm-secret /neurovera-nerve-calm-secret/index.html 200
-/phytomem-memory-recall-secret /phytomem-memory-recall-secret/index.html 200
-/joint-eternal-mobility-secret /joint-eternal-mobility-secret/index.html 200
-/prostavive-prostate-flow-secret /prostavive-prostate-flow-secret/index.html 200
-/alldayslimming-tea-detox-secret /alldayslimming-tea-detox-secret/index.html 200
-/spartamax-male-vitality-secret /spartamax-male-vitality-secret/index.html 200
-/fimavyn-metabolic-drops-secret /fimavyn-metabolic-drops-secret/index.html 200
-/glucotrust-sleep-glucose-secret /glucotrust-sleep-glucose-secret/index.html 200
-/javaburn-morning-coffee-secret /javaburn-morning-coffee-secret/index.html 200
-/kerassentials-nail-clear-secret /kerassentials-nail-clear-secret/index.html 200
-/nanodefense-nanotech-drops-secret /nanodefense-nanotech-drops-secret/index.html 200
-/synaptigen-synapse-clarity-secret /synaptigen-synapse-clarity-secret/index.html 200
-/metanail-20in1-complex-secret /metanail-20in1-complex-secret/index.html 200
-/jointgenesis-synovial-fluid-secret /jointgenesis-synovial-fluid-secret/index.html 200
-/synevra-lift-and-lock-secret /synevra-lift-and-lock-secret/index.html 200
-/nitricboost-male-stamina-secret /nitricboost-male-stamina-secret/index.html 200
-/livpure-liver-purification-secret /livpure-liver-purification-secret/index.html 200
-/dentabiome-postbiotic-mouth-secret /dentabiome-postbiotic-mouth-secret/index.html 200
-/yusleep-deep-rest-secret /yusleep-deep-rest-secret/index.html 200
-/primebiome-gut-dermal-secret /primebiome-gut-dermal-secret/index.html 200
+/legal/contact.html /contact/ 301
+/legal/contact /contact/ 301
+/contact.html /contact/ 301
