@@ -207,7 +207,7 @@
       <!-- Category Filter Buttons (Interactive JS) -->
       <div class="flex flex-wrap items-center justify-center gap-2 mt-6" id="filter-buttons">
         <button onclick="filterRecipes('all')" class="filter-btn active bg-stone-900 text-white px-4 py-2 rounded-full text-xs font-semibold tracking-wide transition shadow-sm" data-category="all">
-          All Recipes (6)
+          All Recipes (7)
         </button>
         <button onclick="filterRecipes('breads')" class="filter-btn bg-white hover:bg-stone-100 text-stone-700 border border-stone-200 px-4 py-2 rounded-full text-xs font-semibold tracking-wide transition" data-category="breads">
           Gut Health Breads
@@ -226,6 +226,55 @@
 
     <!-- 6 Recipe Cards Grid -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="recipes-grid">
+
+      <!-- Card 7: Claire's 30-Second Post-Shower Nail & Foot Ritual -->
+      <article class="recipe-card bg-white rounded-3xl border border-stone-200/90 overflow-hidden card-shadow card-hover transition duration-300 flex flex-col justify-between" data-category="elixirs">
+        <div>
+          <div class="relative overflow-hidden aspect-[4/3] bg-emerald-50">
+            <img 
+              src="/claire/post-shower-nail-foot-ritual/images/hero_nail_foot_ritual.jpg" 
+              alt="Claire's 30-Second Post-Shower Nail & Foot Ritual" 
+              class="w-full h-full object-cover transition duration-500 hover:scale-105"
+              loading="lazy"
+            >
+            <div class="absolute top-3.5 left-3.5 flex gap-2">
+              <span class="bg-[#728B70] text-white text-[10px] uppercase tracking-wider font-extrabold px-3 py-1 rounded-full shadow-md">
+                ★ NEW RITUAL
+              </span>
+              <span class="bg-white/95 text-stone-800 text-[10px] uppercase tracking-wider font-bold px-2.5 py-1 rounded-full shadow-sm">
+                Botanical Oils
+              </span>
+            </div>
+            <div class="absolute bottom-3 right-3 bg-stone-900/80 backdrop-blur text-white text-xs font-semibold px-2.5 py-1 rounded-lg">
+              <i class="fa-regular fa-clock mr-1"></i> 30 Secs
+            </div>
+          </div>
+          <div class="p-6">
+            <div class="flex items-center gap-1.5 text-amber-500 text-xs mb-2">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+              <span class="text-stone-500 font-semibold ml-1">4.9 (Over 14,200 Women)</span>
+            </div>
+            <h3 class="font-serif-luxury text-2xl font-bold text-stone-900 leading-snug hover:text-[#728B70] transition">
+              <a href="/claire/post-shower-nail-foot-ritual">
+                30-Second Post-Shower Nail &amp; Foot Botanical Ritual
+              </a>
+            </h3>
+            <p class="text-stone-600 text-xs sm:text-sm mt-2 leading-relaxed">
+              Why synthetic pharmacy gels cause fungal mutations, and how applying pure lavender, tea tree, and flaxseed oil right after your warm shower restores healthy pink nails.
+            </p>
+          </div>
+        </div>
+        <div class="px-6 pb-6 pt-2 border-t border-stone-100 flex items-center justify-between">
+          <span class="text-xs font-bold text-[#728B70] uppercase tracking-wider">
+            Doctor-Formulated Keratin Care
+          </span>
+          <a href="/claire/post-shower-nail-foot-ritual" class="inline-flex items-center gap-1 text-xs font-bold text-stone-900 hover:text-[#728B70] transition">
+            <span>View Ritual</span>
+            <i class="fa-solid fa-arrow-right text-[10px]"></i>
+          </a>
+        </div>
+      </article>
+
 
       <!-- CARD 1: Golden Turmeric Gut Buns (NEW VIRAL PIN) -->
       <article class="recipe-card bg-white rounded-3xl border border-stone-200/90 overflow-hidden card-shadow card-hover transition duration-300 flex flex-col justify-between" data-category="breads elixirs">
