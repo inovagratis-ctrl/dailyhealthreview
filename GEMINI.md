@@ -71,10 +71,15 @@
 ---
 
 ## 6. CREDENCIAIS E LINKS PRINCIPAIS DO ECOSSISTEMA
-* **Domínio Oficial:** `https://dailyhealthreviewus.com` (Hospedado na Vercel).
+* **Domínio Oficial:** `https://dailyhealthreviewus.com` (Hospedado no Cloudflare Pages: `https://dailyhealthreview.pages.dev`).
+* **Cloudflare Account:** `inovagratis@gmail.com` (ID `2d8700dd80552610de245a52e41d7300`).
+* **Cloudflare Pages Project:** `dailyhealthreview` (Zone ID `ccb33dfd970c8907b88102f297aa179a`).
 * **ID Afiliado Digistore24:** `eusimar72`
 * **Página Hub da Claire:** `https://dailyhealthreviewus.com/claire`
+* **E-mail Oficial da Conta TikTok / Redes da Claire:** `styllusfitloja@gmail.com`
 * **E-mail de Notificações / Suporte:** `eusimar72@gmail.com`
+* **Telefone de Recuperação (SMS):** `(68) 99214-1132`
+* **Usuário Oficial no TikTok & Instagram:** `@claire.matureskin`
 
 ---
 
