@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-15 22:49:27",
+  "timestamp": "2026-11-16 19:09:05",
   "total_products": 37,
   "showcases_ok": 37,
   "editorials_ok": 37,
@@ -103,7 +103,7 @@
       "advertorial_ok": true,
       "secret_slug": "cleansesana-colon-waste-secret",
       "go_route": "/go/cleansesana",
-      "dest_url": "https://cleansesana.com/cleansesana-pdp-fe#aff=eusimar72",
+      "dest_url": "https://cleansesana.com/cleansesana-pdp-fe?aff=eusimar72&cam=dhr",
       "aff_ok": true
     },
     {
