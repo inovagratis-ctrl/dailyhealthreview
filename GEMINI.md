@@ -33,6 +33,8 @@
          * Receitas Intestinais / Desinchaço ➔ **CleanseSana** (`/go/cleansesana`)
          * Receitas Matinais / Café / Termogênicas ➔ **Java Burn** (`/go/javaburn`)
          * Receitas / Dicas de Sorriso e Boca ➔ **ProDentim** (`/go/prodentim`)
+         * Rituais de Unhas / Pés / Cutículas ➔ **Kerassentials** (/go/kerassentials)
+         * Receitas Cetogênicas / Queima de Gordura ➔ **KetoSana US** (/go/ketosana)
 
 ---
 
