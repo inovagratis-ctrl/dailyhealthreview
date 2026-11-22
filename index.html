@@ -179,8 +179,9 @@
       </a>
 
       <!-- Navigation Links -->
-      <nav class="hidden lg:flex items-center gap-7 text-xs font-bold text-slate-600">
+      <nav class="hidden lg:flex items-center gap-6 text-xs font-bold text-slate-600">
         <a href="/claire" class="text-rose-600 hover:text-rose-700 transition flex items-center gap-1.5 font-extrabold"><i class="fa-solid fa-heart text-[10px]"></i> Claire's Recipes</a>
+        <a href="/quiz" class="text-amber-800 hover:text-amber-900 bg-amber-50 hover:bg-amber-100 px-2.5 py-1 rounded-full border border-amber-200 transition flex items-center gap-1.5 font-extrabold shadow-2xs"><i class="fa-solid fa-dna text-[10px] text-amber-600"></i> Cellular Age Quiz (60s)</a>
         <a href="#guides" class="hover:text-emerald-700 transition">Health Guides</a>
         <a href="#rankings" class="hover:text-emerald-700 transition">Top Rankings</a>
         <a href="#goals" class="hover:text-emerald-700 transition">Health Goals</a>
@@ -206,6 +207,10 @@
     <!-- Mobile Collapsible Menu Drawer -->
     <div id="mobileMenuDrawer" class="hidden lg:hidden border-t border-slate-100 bg-white/98 backdrop-blur-md px-4 pt-3 pb-6 space-y-2 shadow-lg transition-all duration-300">
       <div class="space-y-1 text-sm font-bold text-slate-700">
+        <a href="/quiz" class="mobile-nav-link flex items-center justify-between py-2.5 px-3 rounded-lg bg-amber-50 text-amber-900 hover:bg-amber-100 transition border border-amber-200/80">
+          <span><i class="fa-solid fa-dna text-amber-700 w-5 mr-2"></i> Cellular Age Quiz (60s)</span>
+          <span class="text-[10px] font-bold bg-amber-200/80 text-amber-900 px-2 py-0.5 rounded-full">Interactive</span>
+        </a>
         <a href="#rankings" class="mobile-nav-link flex items-center justify-between py-2.5 px-3 rounded-lg hover:bg-emerald-50 hover:text-emerald-800 transition">
           <span><i class="fa-solid fa-trophy text-emerald-600 w-5 mr-2"></i> Top 2026 Rankings</span>
           <i class="fa-solid fa-chevron-right text-xs text-slate-400"></i>
@@ -782,15 +787,48 @@
             Nutritional cellular turnover recipes crafted by mentor <strong>Claire Evans (51 &amp; Glowing, @claire.matureskin)</strong>. Wholesome, gluten-free, anti-inflammatory formulations designed to nourish mature skin, gut microbiome, and hormonal balance.
           </p>
         </div>
-        <a href="/claire/" class="inline-flex items-center gap-2 bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs sm:text-sm py-3 px-6 rounded-xl shadow-sm transition transform hover:-translate-y-0.5 shrink-0">
-          View All Longevity Recipes &rarr;
-        </a>
+        <div class="flex flex-wrap items-center gap-3 shrink-0">
+          <a href="/quiz" class="inline-flex items-center gap-2 bg-gradient-to-r from-amber-700 to-terracotta hover:from-amber-800 hover:to-terracottaDark text-white font-extrabold text-xs sm:text-sm py-3 px-5 rounded-xl shadow-sm transition transform hover:-translate-y-0.5">
+            <i class="fa-solid fa-dna text-amber-200"></i> Take 60-Sec Age Quiz &rarr;
+          </a>
+          <a href="/claire/" class="inline-flex items-center gap-2 bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs sm:text-sm py-3 px-5 rounded-xl shadow-sm transition transform hover:-translate-y-0.5">
+            View All Recipes &rarr;
+          </a>
+        </div>
       </div>
 
-      <!-- 5 Featured Recipe Cards -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+      <!-- 6 Featured Recipe Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
 
-        <!-- Recipe 1: Blueberry Cake -->
+        <!-- Recipe 1: Dermal Collagen Strawberry Jellies (NEW) -->
+        <div class="bg-white rounded-2xl border border-stone-200/90 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
+          <div>
+            <div class="relative overflow-hidden h-44 bg-rose-50">
+              <img src="/claire/strawberry-collagen-jellies/images/Cena_05_Prato_Pronto_Hero_Close.jpg" alt="3-Ingredient Dermal Collagen Strawberry Jellies" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" loading="lazy" />
+              <span class="absolute top-3 left-3 bg-rose-600 text-white text-[10px] font-black uppercase px-2 py-0.5 rounded-full shadow-sm">
+                ★ NEW RITUAL
+              </span>
+            </div>
+            <div class="p-4 space-y-2">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-rose-700 bg-rose-50 px-2 py-0.5 rounded border border-rose-200">
+                Pure Collagen
+              </span>
+              <h3 class="font-extrabold text-sm text-slate-900 font-serif leading-snug">
+                Collagen Strawberry Jellies
+              </h3>
+              <p class="text-[11px] text-slate-500 line-clamp-2">
+                Bouncy homemade bites with fresh strawberries and pure grass-fed gelatin for glowing skin.
+              </p>
+            </div>
+          </div>
+          <div class="p-4 pt-0">
+            <a href="/claire/strawberry-collagen-jellies/" class="block w-full text-center bg-stone-50 hover:bg-[#0e5e43] text-stone-700 hover:text-white font-bold text-xs py-2 rounded-xl border border-stone-200 hover:border-transparent transition">
+              Get Recipe &rarr;
+            </a>
+          </div>
+        </div>
+
+        <!-- Recipe 2: Blueberry Cake -->
         <div class="bg-white rounded-2xl border border-stone-200/90 overflow-hidden shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group">
           <div>
             <div class="relative overflow-hidden h-44 bg-stone-100">
