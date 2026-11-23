@@ -147,8 +147,8 @@
             </svg>
           </button>
 
-          <!-- Thumbnails Selector Grid (6 Items) -->
-          <div class="grid grid-cols-6 gap-1.5 sm:gap-2.5 flex-1">
+          <!-- Thumbnails Selector Grid (8 Items: Book, 3 Bonuses, Flat Lay, Cover, Plates, Sample) -->
+          <div class="grid grid-cols-4 sm:grid-cols-8 gap-1.5 sm:gap-2 flex-1">
             
             <!-- Thumb 0: Hero 3D Book -->
             <button 
@@ -156,58 +156,78 @@
               onclick="goToGallerySlide(0)" 
               class="thumb-btn thumbnail-active p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
               title="3D Book Mockup">
-              <img src="assets/mockup_hero.jpg" alt="3D Book Mockup" class="w-full h-12 sm:h-16 object-cover rounded-lg" />
-              <span class="block text-[9px] sm:text-xs font-bold text-center mt-0.5 text-espresso truncate">Book</span>
+              <img src="assets/mockup_hero.jpg" alt="3D Book Mockup" class="w-full h-10 sm:h-14 object-cover rounded-lg" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-espresso truncate">Book</span>
             </button>
 
-            <!-- Thumb 1: 3 Bonuses Bundle -->
+            <!-- Thumb 1: Bonus 1 Cards -->
             <button 
               type="button" 
               onclick="goToGallerySlide(1)" 
               class="thumb-btn p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
-              title="3 Free Sanctuary Bonuses">
-              <img src="assets/mockup_bonus_cards.jpg" alt="3 Free Bonuses" class="w-full h-12 sm:h-16 object-cover rounded-lg" />
-              <span class="block text-[9px] sm:text-xs font-bold text-center mt-0.5 text-terracotta truncate">★ Bonuses</span>
+              title="Bonus 1: 40 Somatic Reflection Cards">
+              <img src="assets/mockup_bonus_cards.jpg" alt="Bonus 1 Cards" class="w-full h-10 sm:h-14 object-cover rounded-lg" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-terracotta truncate">★ Bonus 1</span>
             </button>
 
-            <!-- Thumb 2: Flat Lay Mockup -->
+            <!-- Thumb 2: Bonus 2 Habit Tracker -->
             <button 
               type="button" 
               onclick="goToGallerySlide(2)" 
               class="thumb-btn p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
-              title="Tabletop Flat Lay with Tea">
-              <img src="assets/mockup_flatlay.jpg" alt="Flat Lay Mockup" class="w-full h-12 sm:h-16 object-cover rounded-lg" />
-              <span class="block text-[9px] sm:text-xs font-bold text-center mt-0.5 text-espresso truncate">Flat Lay</span>
+              title="Bonus 2: Evening Peace Companion">
+              <img src="assets/mockup_bonus_habit_tracker.jpg" alt="Bonus 2 Tracker" class="w-full h-10 sm:h-14 object-cover rounded-lg" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-terracotta truncate">★ Bonus 2</span>
             </button>
 
-            <!-- Thumb 3: Official Book Cover -->
+            <!-- Thumb 3: Bonus 3 Swatch Tester -->
             <button 
               type="button" 
               onclick="goToGallerySlide(3)" 
               class="thumb-btn p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
-              title="Official Cover Art">
-              <img src="assets/capa_oficial.jpg" alt="Official Cover" class="w-full h-12 sm:h-16 object-contain rounded-lg bg-[#FAF8F5] p-0.5" />
-              <span class="block text-[9px] sm:text-xs font-bold text-center mt-0.5 text-espresso truncate">Cover</span>
+              title="Bonus 3: Studio Swatch & Pen Tester">
+              <img src="assets/mockup_bonus_swatch_tester.jpg" alt="Bonus 3 Tester" class="w-full h-10 sm:h-14 object-cover rounded-lg" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-terracotta truncate">★ Bonus 3</span>
             </button>
 
-            <!-- Thumb 4: 9 Designs Grid -->
+            <!-- Thumb 4: Flat Lay Mockup -->
             <button 
               type="button" 
               onclick="goToGallerySlide(4)" 
               class="thumb-btn p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
-              title="All 40 Designs Overview">
-              <img src="assets/grid_all_designs.jpg" alt="Designs Grid" class="w-full h-12 sm:h-16 object-cover rounded-lg" />
-              <span class="block text-[9px] sm:text-xs font-bold text-center mt-0.5 text-espresso truncate">Plates</span>
+              title="Tabletop Flat Lay with Tea">
+              <img src="assets/mockup_flatlay.jpg" alt="Flat Lay Mockup" class="w-full h-10 sm:h-14 object-cover rounded-lg" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-espresso truncate">Flat Lay</span>
             </button>
 
-            <!-- Thumb 5: French Lavender Plate Sample -->
+            <!-- Thumb 5: Official Book Cover -->
             <button 
               type="button" 
               onclick="goToGallerySlide(5)" 
               class="thumb-btn p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
+              title="Official Cover Art">
+              <img src="assets/capa_oficial.jpg" alt="Official Cover" class="w-full h-10 sm:h-14 object-contain rounded-lg bg-[#FAF8F5] p-0.5" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-espresso truncate">Cover</span>
+            </button>
+
+            <!-- Thumb 6: 9 Designs Grid -->
+            <button 
+              type="button" 
+              onclick="goToGallerySlide(6)" 
+              class="thumb-btn p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
+              title="All 40 Designs Overview">
+              <img src="assets/grid_all_designs.jpg" alt="Designs Grid" class="w-full h-10 sm:h-14 object-cover rounded-lg" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-espresso truncate">Plates</span>
+            </button>
+
+            <!-- Thumb 7: French Lavender Plate Sample -->
+            <button 
+              type="button" 
+              onclick="goToGallerySlide(7)" 
+              class="thumb-btn p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
               title="French Lavender Sample">
-              <img src="assets/sample_lavender.png" alt="Lavender Sample" class="w-full h-12 sm:h-16 object-contain rounded-lg bg-[#FAF8F5] p-0.5" />
-              <span class="block text-[9px] sm:text-xs font-bold text-center mt-0.5 text-espresso truncate">Sample</span>
+              <img src="assets/sample_lavender.png" alt="Lavender Sample" class="w-full h-10 sm:h-14 object-contain rounded-lg bg-[#FAF8F5] p-0.5" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-espresso truncate">Sample</span>
             </button>
 
           </div>
@@ -919,12 +939,22 @@
       {
         src: "assets/mockup_hero.jpg",
         alt: "The 10-Minute Somatic Calm Coloring Ritual 3D Hardcover Mockup",
-        badge: "40 Printable Designs Included"
+        badge: "40 Printable Botanical Illustrations Included"
       },
       {
         src: "assets/mockup_bonus_cards.jpg",
-        alt: "The 3 Included Bonuses: 40 Reflection Cards, Habit Tracker & Swatch Tester",
-        badge: "★ 3 Free Bonuses Suite Included ($30 Value)"
+        alt: "Bonus 1: 40 Somatic Reflection Cards Deck ($14 Value Free)",
+        badge: "★ Bonus #1: 40 Reflection Cards Deck (100% Free)"
+      },
+      {
+        src: "assets/mockup_bonus_habit_tracker.jpg",
+        alt: "Bonus 2: Claire's Evening Peace Companion & Habit Tracker ($9 Value Free)",
+        badge: "★ Bonus #2: Evening Peace Habit Tracker (100% Free)"
+      },
+      {
+        src: "assets/mockup_bonus_swatch_tester.jpg",
+        alt: "Bonus 3: Studio Swatch & Pen Test Worksheet ($7 Value Free)",
+        badge: "★ Bonus #3: Studio Swatch & Pen Tester (100% Free)"
       },
       {
         src: "assets/mockup_flatlay.jpg",
@@ -938,7 +968,7 @@
       },
       {
         src: "assets/grid_all_designs.jpg",
-        alt: "9 Botanical Plates Overview Grid",
+        alt: "All 40 Botanical Plates Overview Grid",
         badge: "Solid 2.5pt Lines • Zero Gray Shading"
       },
       {
