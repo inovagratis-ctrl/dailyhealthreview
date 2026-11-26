@@ -191,3 +191,42 @@
 /buy/sleep https://ko-fi.com/s/29926b474d 302
 /go/evening-peace https://ko-fi.com/s/29926b474d 302
 /buy/evening-peace https://ko-fi.com/s/29926b474d 302
+
+
+# Canonical 301 Redirects from Old Folders to Master Review Slugs
+/staging/corevital-burn /corevital-burn-review/ 301
+/ketosana-metabolic-report /ketosana-review/ 301
+/sugar-defender-guide /sugar-defender-review/ 301
+/prodentim-report /prodentim-review/ 301
+/neotonics-skin-gut-report /neotonics-review/ 301
+/java-burn-coffee-ritual-report /java-burn-review/ 301
+/liv-pure-liver-fat-burning-report /liv-pure-review/ 301
+/cleansesana-gut-reboot /cleansesana-review/ 301
+/glucotrust-sleep-glucose-secret /glucotrust-review/ 301
+/dentabiome-oral-postbiotic-report /dentabiome-review/ 301
+/joint-genesis-synovial-fluid-report /joint-genesis-review/ 301
+/joint-eternal-mobility-report /joint-eternal-review/ 301
+/kerassentials-nail-fungus-report /kerassentials-review/ 301
+/metanail-complex-nail-fungus-report /metanail-review/ 301
+/nanodefense-pro-nanotechnology-report /nanodefense-pro-review/ 301
+/neurovera-brain-clarity-report /neurovera-review/ 301
+/nitric-boost-ultra-erection-formula-report /nitric-boost-review/ 301
+/phytomem-memory-formula-report /phytomem-review/ 301
+/primebiome-gut-skin-axis-report /primebiome-review/ 301
+/prostavive-prostate-health-report /prostavive-review/ 301
+/spartamax-vitality-gummies-report /spartamax-review/ 301
+/synaptigen-memory-formula-report /synaptigen-review/ 301
+/synevra-lift-and-lock-report /synevra-review/ 301
+/visiflora-vision-report /visiflora-review/ 301
+/yusleep-deep-rest-report /yusleep-review/ 301
+/advanced-amino-formula-report /advanced-amino-review/ 301
+/advanced-collagen-plus-report /advanced-collagen-review/ 301
+/advanced-joint-support-report /advanced-joint-review/ 301
+/advanced-memory-formula-guide /advanced-memory-review/ 301
+/all-day-slimming-tea-report /all-day-slimming-tea-review/ 301
+/audifort-hearing-support-report /audifort-review/ 301
+/cardioslim-tea-cardio-support-report /cardioslim-tea-review/ 301
+/circo2-nitric-oxide-report /circo2-review/ 301
+/femicore-pelvic-health-report /femicore-review/ 301
+/fimavyn-metabolic-activation-report /fimavyn-review/ 301
+/lymphtonic-drainage-report /lymphtonic-review/ 301
