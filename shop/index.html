@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claire Evans Boutique & Sanctuary Shop — Official Digital Collection</title>
+  <meta name="description" content="Discover Claire Evans' official digital collection. Guided evening journals, somatic coloring books, and 28-day cellular health protocols for women 40+." />
+  <link rel="canonical" href="https://dailyhealthreviewus.com/shop/">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            linen: '#FAF7F2',
+            sand: '#F3EDE2',
+            espresso: '#231B15',
+            bark: '#4A3B32',
+            terracotta: '#8C5845',
+            gold: '#C5A059',
+            botanic: '#2E3B2F',
+            sage: '#607262',
+            night: '#1E2530',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF7F2;
+      color: #231B15;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .serif-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .card-shadow {
+      box-shadow: 0 10px 25px -5px rgba(140, 88, 69, 0.08), 0 8px 10px -6px rgba(140, 88, 69, 0.04);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 30px -10px rgba(140, 88, 69, 0.16);
+    }
+    .filter-btn-active {
+      background-color: #8C5845 !important;
+      color: #FFFFFF !important;
+      border-color: #8C5845 !important;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-gold/20 selection:text-espresso min-h-screen flex flex-col justify-between">
+
+  <!-- TOP STORE BANNER -->
+  <div class="bg-[#2E3B2F] text-[#FAF7F2] text-xs sm:text-sm py-2 px-4 text-center font-medium tracking-wide">
+    <span>🌿 CLAIRE EVANS OFFICIAL DIGITAL BOUTIQUE • INSTANT PDF DOWNLOADS & LIFETIME ACCESS • 30-DAY GUARANTEE</span>
+  </div>
+
+  <!-- STORE HEADER -->
+  <header class="py-4 sm:py-5 px-4 sm:px-8 max-w-7xl mx-auto w-full flex items-center justify-between border-b border-[#EAE3D6] bg-white/80 backdrop-blur sticky top-0 z-50">
+    <div class="flex items-center space-x-3.5">
+      <!-- Botanical Emblem Icon -->
+      <a href="/shop/" class="flex items-center space-x-3 group">
+        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-[#FAF5EE] to-[#EFE5D3] border border-[#C5A059]/60 flex items-center justify-center shadow-sm flex-shrink-0 transition group-hover:scale-105">
+          <svg class="w-6 h-6 sm:w-7 sm:h-7 text-[#8C5845]" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="14.5" stroke="#C5A059" stroke-width="1" stroke-dasharray="2 1.5"/>
+            <path d="M16 26V8" stroke="#8C5845" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M16 8C13.5 5 9.5 5.5 8 8C8 11.5 12 13.5 16 13.5" fill="#C5A059" fill-opacity="0.2" stroke="#8C5845" stroke-width="1.2"/>
+            <path d="M16 13C18.5 10 22.5 10.5 24 13C24 16.5 20 18.5 16 18.5" fill="#C5A059" fill-opacity="0.2" stroke="#8C5845" stroke-width="1.2"/>
+            <circle cx="16" cy="6" r="2" fill="#C5A059"/>
+          </svg>
+        </div>
+        <div class="flex flex-col text-left">
+          <span class="font-serif text-lg sm:text-2xl font-bold tracking-[0.16em] text-[#231B15] uppercase leading-tight">
+            Claire Evans
+          </span>
+          <span class="text-xs sm:text-sm font-bold tracking-[0.22em] text-[#8C5845] uppercase">
+            Sanctuary Boutique & Shop
+          </span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Navigation Links -->
+    <nav class="hidden md:flex items-center space-x-6 text-xs sm:text-sm font-semibold tracking-wider uppercase text-bark">
+      <a href="/claire" class="hover:text-terracotta transition">← All Recipes</a>
+      <a href="#journals" class="hover:text-terracotta transition">Journals ($9.90)</a>
+      <a href="#protocols" class="hover:text-terracotta transition">Protocols ($27)</a>
+      <a href="#pairings" class="hover:text-terracotta transition">Daily Pairings</a>
+      <a href="/quiz" class="text-rose-700 bg-rose-50 px-3 py-1 rounded-full border border-rose-200 hover:bg-rose-100 transition">Cellular Quiz</a>
+    </nav>
+
+    <!-- Social & Back to Recipes -->
+    <div class="flex items-center space-x-3">
+      <a href="https://instagram.com/claire.matureskin" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center space-x-1.5 text-xs font-semibold text-rose-700 bg-rose-50 hover:bg-rose-100 px-3 py-1.5 rounded-full border border-rose-200 transition">
+        <span>@claire.matureskin</span>
+      </a>
+      <a href="/claire" class="text-xs font-semibold text-espresso bg-[#F3EDE2] hover:bg-[#EAE1D2] px-3.5 py-1.5 rounded-full transition flex items-center space-x-1">
+        <span>Recipes Hub</span>
+        <span>&rarr;</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- 1. HERO BOUTIQUE INTRO                                                    -->
+  <!-- ========================================================================= -->
+  <section class="py-10 sm:py-16 px-4 sm:px-6 max-w-5xl mx-auto text-center space-y-4">
+    <div class="inline-flex items-center space-x-2 bg-[#F3EDE2] text-terracotta text-xs sm:text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-[#E5DDD0]">
+      <span>✨ THE COMPLETE CLAIRE EVANS DIGITAL COLLECTION</span>
+    </div>
+
+    <h1 class="serif-title text-3xl sm:text-5xl font-bold text-espresso leading-tight">
+      Mindful Evening Rituals, Creative Calm & Cellular Health
+    </h1>
+
+    <p class="text-sm sm:text-lg text-bark max-w-2xl mx-auto leading-relaxed">
+      Welcome to my personal shop. Every journal, coloring plate, and cellular protocol was designed for women 40+ to release daily stress, nourish nighttime rest, and restore youthful vitality.
+    </p>
+
+    <!-- Quick Filter Tabs -->
+    <div class="flex flex-wrap items-center justify-center gap-2 pt-4">
+      <button onclick="filterShop('all', this)" class="filter-btn filter-btn-active px-4 py-2 rounded-full text-xs sm:text-sm font-bold border border-[#D5C6B5] transition shadow-xs">
+        All Creations (9)
+      </button>
+      <button onclick="filterShop('journals', this)" class="filter-btn bg-white hover:bg-sand/60 text-bark px-4 py-2 rounded-full text-xs sm:text-sm font-bold border border-[#D5C6B5] transition shadow-xs">
+        🌙 Journals & Coloring ($9.90)
+      </button>
+      <button onclick="filterShop('protocols', this)" class="filter-btn bg-white hover:bg-sand/60 text-bark px-4 py-2 rounded-full text-xs sm:text-sm font-bold border border-[#D5C6B5] transition shadow-xs">
+        🧬 Cellular Protocols ($27)
+      </button>
+      <button onclick="filterShop('pairings', this)" class="filter-btn bg-white hover:bg-sand/60 text-bark px-4 py-2 rounded-full text-xs sm:text-sm font-bold border border-[#D5C6B5] transition shadow-xs">
+        🌿 Daily Wellness Pairings
+      </button>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 2. COLLECTION 1: MINDFUL JOURNALS & SANCTUARY BOOKS ($9.90 USD)           -->
+  <!-- ========================================================================= -->
+  <section id="journals" class="shop-section max-w-6xl mx-auto px-4 sm:px-6 py-8">
+    <div class="flex items-center justify-between border-b border-[#E5DDD0] pb-3 mb-8">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-terracotta">Bedside Sanctuary Collection</span>
+        <h2 class="serif-title text-2xl sm:text-3xl font-bold text-espresso">
+          Mindful Evening Journals & Coloring Sanctuary
+        </h2>
+      </div>
+      <span class="bg-emerald-100 text-emerald-900 text-xs sm:text-sm font-bold px-3 py-1 rounded-full">
+        $9.90 USD Each • Instant PDF
+      </span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Product 1: Evening Peace Journal -->
+      <div class="bg-white rounded-2xl border border-[#E5DACB] card-shadow card-hover transition-all duration-300 flex flex-col justify-between overflow-hidden">
+        <div>
+          <!-- Product Mockup Image -->
+          <a href="/shop/evening-peace/" class="block relative aspect-[4/3] bg-[#FAF8F5] overflow-hidden border-b border-[#F2ECE1] p-3 flex items-center justify-center group">
+            <img 
+              src="/shop/evening-peace/assets/mockup_hero.jpg" 
+              alt="The 30-Day Evening Peace & Sleep Sanctuary Journal" 
+              class="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+            <span class="absolute top-3 left-3 bg-[#1E2530] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md">
+              NEW RELEASE
+            </span>
+            <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-gold text-xs font-bold px-2 py-0.5 rounded shadow-xs">
+              ★ 4.9
+            </span>
+          </a>
+
+          <!-- Content Details -->
+          <div class="p-5 sm:p-6 space-y-3">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-terracotta block">
+              🌙 35-Page Evening Guided Journal + 3 Bonuses
+            </span>
+            <h3 class="serif-title text-xl sm:text-2xl font-bold text-espresso leading-snug">
+              <a href="/shop/evening-peace/" class="hover:text-terracotta transition">
+                The 30-Day Evening Peace & Sleep Sanctuary Journal™
+              </a>
+            </h3>
+            <p class="text-xs sm:text-sm text-bark leading-relaxed">
+              Designed to quiet racing bedtime thoughts and reset nighttime cortisol. Includes 30 printable affirmation cards, 6 herbal tea recipes, and a 30-night sleep tracker.
+            </p>
+
+            <ul class="text-xs text-stone-600 space-y-1 pt-1">
+              <li>✓ 35-Page Master Journal (Print or Digital)</li>
+              <li>✓ Bonus 1: 30 Bedtime Affirmation Cards</li>
+              <li>✓ Bonus 2: 6 Restorative Sleep Tea Recipes</li>
+              <li>✓ Bonus 3: 30-Night Habit & Rest Tracker</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card Footer -->
+        <div class="p-5 sm:p-6 pt-0 space-y-3">
+          <div class="flex items-baseline justify-between border-t border-[#F2ECE1] pt-3">
+            <div>
+              <span class="text-2xl font-extrabold text-espresso">$9.90</span>
+              <span class="text-xs text-bark/60 line-through ml-1.5">$29.00</span>
+            </div>
+            <span class="text-xs font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">Save 66%</span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2">
+            <a 
+              href="/shop/evening-peace/" 
+              class="py-2.5 px-3 text-center text-xs font-bold text-bark bg-sand/60 hover:bg-sand rounded-xl border border-[#D5C6B5] transition">
+              Preview & Details
+            </a>
+            <a 
+              href="https://ko-fi.com/s/29926b474d" 
+              class="py-2.5 px-3 text-center text-xs font-bold text-white bg-[#8C5845] hover:bg-[#784938] rounded-xl shadow transition">
+              Buy Now • $9.90
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2: 30 Days of Creativity and Self-Care -->
+      <div class="bg-white rounded-2xl border border-[#E5DACB] card-shadow card-hover transition-all duration-300 flex flex-col justify-between overflow-hidden">
+        <div>
+          <!-- Product Mockup Image -->
+          <a href="/shop/creativity-and-self-care/" class="block relative aspect-[4/3] bg-[#FAF8F5] overflow-hidden border-b border-[#F2ECE1] p-3 flex items-center justify-center group">
+            <img 
+              src="/shop/creativity-and-self-care/assets/mockup_hero.jpg" 
+              alt="30 Days of Creativity and Self-Care Workbook" 
+              class="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+            <span class="absolute top-3 left-3 bg-[#8C5845] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md">
+              BESTSELLER
+            </span>
+            <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-gold text-xs font-bold px-2 py-0.5 rounded shadow-xs">
+              ★ 4.9
+            </span>
+          </a>
+
+          <!-- Content Details -->
+          <div class="p-5 sm:p-6 space-y-3">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-terracotta block">
+              🎨 60-Page Dual-Page Art & Journal Workbook
+            </span>
+            <h3 class="serif-title text-xl sm:text-2xl font-bold text-espresso leading-snug">
+              <a href="/shop/creativity-and-self-care/" class="hover:text-terracotta transition">
+                30 Days of Creativity and Self-Care™
+              </a>
+            </h3>
+            <p class="text-xs sm:text-sm text-bark leading-relaxed">
+              A mindful daily art and reflection workbook. 30 days of relaxing botanical coloring plates paired with gentle self-care prompts, gratitude, and creative joy.
+            </p>
+
+            <ul class="text-xs text-stone-600 space-y-1 pt-1">
+              <li>✓ 60 Full-Length Guided Pages</li>
+              <li>✓ 30 Hand-Drawn Botanical Coloring Plates</li>
+              <li>✓ 30 Guided Self-Care Journal Prompts</li>
+              <li>✓ Print at home or use on iPad (GoodNotes)</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card Footer -->
+        <div class="p-5 sm:p-6 pt-0 space-y-3">
+          <div class="flex items-baseline justify-between border-t border-[#F2ECE1] pt-3">
+            <div>
+              <span class="text-2xl font-extrabold text-espresso">$9.90</span>
+              <span class="text-xs text-bark/60 line-through ml-1.5">$29.00</span>
+            </div>
+            <span class="text-xs font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">Save 66%</span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2">
+            <a 
+              href="/shop/creativity-and-self-care/" 
+              class="py-2.5 px-3 text-center text-xs font-bold text-bark bg-sand/60 hover:bg-sand rounded-xl border border-[#D5C6B5] transition">
+              Preview & Details
+            </a>
+            <a 
+              href="https://ko-fi.com/s/96ba770dd8" 
+              class="py-2.5 px-3 text-center text-xs font-bold text-white bg-[#8C5845] hover:bg-[#784938] rounded-xl shadow transition">
+              Buy Now • $9.90
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3: Somatic Calm Coloring Book -->
+      <div class="bg-white rounded-2xl border border-[#E5DACB] card-shadow card-hover transition-all duration-300 flex flex-col justify-between overflow-hidden">
+        <div>
+          <!-- Product Mockup Image -->
+          <a href="/shop/somatic-calm-coloring-book/" class="block relative aspect-[4/3] bg-[#FAF8F5] overflow-hidden border-b border-[#F2ECE1] p-3 flex items-center justify-center group">
+            <img 
+              src="/shop/somatic-calm-coloring-book/assets/mockup_hero.jpg" 
+              alt="The Somatic Calm and Cellular Healing Coloring Book" 
+              class="max-w-full max-h-full object-contain transition-transform duration-300 group-hover:scale-105"
+              loading="lazy"
+            />
+            <span class="absolute top-3 left-3 bg-[#2E3B2F] text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-md">
+              COMMUNITY PICK
+            </span>
+            <span class="absolute top-3 right-3 bg-white/90 backdrop-blur text-gold text-xs font-bold px-2 py-0.5 rounded shadow-xs">
+              ★ 4.9
+            </span>
+          </a>
+
+          <!-- Content Details -->
+          <div class="p-5 sm:p-6 space-y-3">
+            <span class="text-[11px] font-bold uppercase tracking-wider text-terracotta block">
+              🌿 40 Healing Botanical Plates + 3 Bonuses
+            </span>
+            <h3 class="serif-title text-xl sm:text-2xl font-bold text-espresso leading-snug">
+              <a href="/shop/somatic-calm-coloring-book/" class="hover:text-terracotta transition">
+                The Somatic Calm & Cellular Healing Coloring Book™
+              </a>
+            </h3>
+            <p class="text-xs sm:text-sm text-bark leading-relaxed">
+              40 calming botanical illustrations for nervous system regulation, somatic unwinding, and cellular relaxation. Includes 3 printable bedside bonuses.
+            </p>
+
+            <ul class="text-xs text-stone-600 space-y-1 pt-1">
+              <li>✓ 40 Hand-Drawn Floral & Herbal Plates</li>
+              <li>✓ Bonus 1: Somatic Vagus Nerve Affirmations</li>
+              <li>✓ Bonus 2: 30-Day Mindful Color Tracker</li>
+              <li>✓ Bonus 3: Botanical Color Swatch Palette</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card Footer -->
+        <div class="p-5 sm:p-6 pt-0 space-y-3">
+          <div class="flex items-baseline justify-between border-t border-[#F2ECE1] pt-3">
+            <div>
+              <span class="text-2xl font-extrabold text-espresso">$9.90</span>
+              <span class="text-xs text-bark/60 line-through ml-1.5">$29.00</span>
+            </div>
+            <span class="text-xs font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">Save 66%</span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2">
+            <a 
+              href="/shop/somatic-calm-coloring-book/" 
+              class="py-2.5 px-3 text-center text-xs font-bold text-bark bg-sand/60 hover:bg-sand rounded-xl border border-[#D5C6B5] transition">
+              Preview & Details
+            </a>
+            <a 
+              href="https://ko-fi.com/s/a7f796f83f" 
+              class="py-2.5 px-3 text-center text-xs font-bold text-white bg-[#8C5845] hover:bg-[#784938] rounded-xl shadow transition">
+              Buy Now • $9.90
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 3. COLLECTION 2: CELLULAR PROTOCOLS & BLUEPRINTS ($27 USD WHOP VIP)       -->
+  <!-- ========================================================================= -->
+  <section id="protocols" class="shop-section max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <div class="flex items-center justify-between border-b border-[#E5DDD0] pb-3 mb-8">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Digital Masterclass Suite</span>
+        <h2 class="serif-title text-2xl sm:text-3xl font-bold text-espresso">
+          The Ageless Longevity Blueprint Protocols
+        </h2>
+      </div>
+      <span class="bg-amber-100 text-amber-900 text-xs sm:text-sm font-bold px-3 py-1 rounded-full">
+        $27 USD One-Time • Lifetime Whop VIP Access
+      </span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      
+      <!-- Whop 1: Cell Renewal -->
+      <div class="bg-white rounded-2xl border border-[#E5DACB] card-shadow p-6 flex flex-col justify-between hover:border-amber-600 transition">
+        <div>
+          <span class="text-[11px] uppercase tracking-wider font-extrabold text-amber-700 block mb-1">
+            🧬 28-Day Cellular Protocol
+          </span>
+          <h3 class="serif-title text-xl font-bold text-espresso mb-2">
+            The 28-Day Anti-Aging Cell Renewal Protocol™
+          </h3>
+          <p class="text-xs sm:text-sm text-bark leading-relaxed mb-4">
+            Daily meal schedules, botanical pairings, and the exact cellular routine that brought skin cell turnover back to youth velocity.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-[#F2ECE1] flex items-center justify-between">
+          <div>
+            <span class="font-bold text-lg text-espresso block leading-tight">$27 USD</span>
+            <span class="text-[10px] text-bark/70 uppercase">One-time payment</span>
+          </div>
+          <a href="/protocol" class="bg-amber-700 hover:bg-amber-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow">
+            Get Protocol &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Whop 2: Apothecary Bible -->
+      <div class="bg-white rounded-2xl border border-[#E5DACB] card-shadow p-6 flex flex-col justify-between hover:border-emerald-600 transition">
+        <div>
+          <span class="text-[11px] uppercase tracking-wider font-extrabold text-emerald-700 block mb-1">
+            🌿 Botanical Medicine
+          </span>
+          <h3 class="serif-title text-xl font-bold text-espresso mb-2">
+            The Home Apothecary Bible™
+          </h3>
+          <p class="text-xs sm:text-sm text-bark leading-relaxed mb-4">
+            Forgotten herbal infusions, soothing tinctures, and traditional kitchen remedies for joint aches, restful sleep, and gut resilience.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-[#F2ECE1] flex items-center justify-between">
+          <div>
+            <span class="font-bold text-lg text-espresso block leading-tight">$27 USD</span>
+            <span class="text-[10px] text-bark/70 uppercase">One-time payment</span>
+          </div>
+          <a href="/apothecary" class="bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow">
+            Get Bible &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Whop 3: Somatic Reset -->
+      <div class="bg-white rounded-2xl border border-[#E5DACB] card-shadow p-6 flex flex-col justify-between hover:border-rose-600 transition">
+        <div>
+          <span class="text-[11px] uppercase tracking-wider font-extrabold text-rose-700 block mb-1">
+            🧘🏼‍♀️ 21-Day Vagus Reset
+          </span>
+          <h3 class="serif-title text-xl font-bold text-espresso mb-2">
+            The 21-Day Somatic Nervous System & Cortisol Belly Reset™
+          </h3>
+          <p class="text-xs sm:text-sm text-bark leading-relaxed mb-4">
+            Gentle body postures, vagus nerve stimulation, and nighttime cortisol protocols to flatten stress bloating and quiet anxiety.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-[#F2ECE1] flex items-center justify-between">
+          <div>
+            <span class="font-bold text-lg text-espresso block leading-tight">$27 USD</span>
+            <span class="text-[10px] text-bark/70 uppercase">One-time payment</span>
+          </div>
+          <a href="/somatic" class="bg-rose-700 hover:bg-rose-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow">
+            Get Reset &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Whop 4: Parasite Cleanse -->
+      <div class="bg-white rounded-2xl border border-[#E5DACB] card-shadow p-6 flex flex-col justify-between hover:border-teal-600 transition">
+        <div>
+          <span class="text-[11px] uppercase tracking-wider font-extrabold text-teal-700 block mb-1">
+            🫖 14-Day Herbal Drainage
+          </span>
+          <h3 class="serif-title text-xl font-bold text-espresso mb-2">
+            The 14-Day Herbal Parasite Cleanse & Lymphatic Blueprint™
+          </h3>
+          <p class="text-xs sm:text-sm text-bark leading-relaxed mb-4">
+            Full-spectrum herbal bitter protocols to clear biofilm, relieve abdominal puffiness, and activate deep lymphatic drainage.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-[#F2ECE1] flex items-center justify-between">
+          <div>
+            <span class="font-bold text-lg text-espresso block leading-tight">$27 USD</span>
+            <span class="text-[10px] text-bark/70 uppercase">One-time payment</span>
+          </div>
+          <a href="/cleanse" class="bg-teal-700 hover:bg-teal-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow">
+            Get Cleanse &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Whop 5: Blood Pressure -->
+      <div class="bg-white rounded-2xl border border-[#E5DACB] card-shadow p-6 flex flex-col justify-between hover:border-indigo-600 transition">
+        <div>
+          <span class="text-[11px] uppercase tracking-wider font-extrabold text-indigo-700 block mb-1">
+            🫀 Arterial Elasticity
+          </span>
+          <h3 class="serif-title text-xl font-bold text-espresso mb-2">
+            The 9-Minute Arterial Elasticity & Blood Pressure Protocol™
+          </h3>
+          <p class="text-xs sm:text-sm text-bark leading-relaxed mb-4">
+            Daily endothelial breathwork, targeted nitric oxide kitchen combinations, and natural vascular relaxation routines.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-[#F2ECE1] flex items-center justify-between">
+          <div>
+            <span class="font-bold text-lg text-espresso block leading-tight">$27 USD</span>
+            <span class="text-[10px] text-bark/70 uppercase">One-time payment</span>
+          </div>
+          <a href="/heart" class="bg-indigo-700 hover:bg-indigo-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow">
+            Get Protocol &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Whop 6: Clean Arteries -->
+      <div class="bg-white rounded-2xl border border-[#E5DACB] card-shadow p-6 flex flex-col justify-between hover:border-red-600 transition">
+        <div>
+          <span class="text-[11px] uppercase tracking-wider font-extrabold text-red-700 block mb-1">
+            ❤️ Endothelial Restoration
+          </span>
+          <h3 class="serif-title text-xl font-bold text-espresso mb-2">
+            The 28-Day Clean Arteries & Endothelial Restoration Protocol™
+          </h3>
+          <p class="text-xs sm:text-sm text-bark leading-relaxed mb-4">
+            Advanced biological blueprint to dissolve micro-calcification, support smooth vascular flow, and restore cardiovascular elasticity.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-[#F2ECE1] flex items-center justify-between">
+          <div>
+            <span class="font-bold text-lg text-espresso block leading-tight">$27 USD</span>
+            <span class="text-[10px] text-bark/70 uppercase">One-time payment</span>
+          </div>
+          <a href="/arteries" class="bg-red-700 hover:bg-red-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition shadow">
+            Get Protocol &rarr;
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. COLLECTION 3: CLAIRE'S DAILY WELLNESS PAIRINGS (SUPPLEMENTS)          -->
+  <!-- ========================================================================= -->
+  <section id="pairings" class="shop-section max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <div class="flex items-center justify-between border-b border-[#E5DDD0] pb-3 mb-8">
+      <div>
+        <span class="text-xs font-bold uppercase tracking-wider text-terracotta">Editorial Recommendations</span>
+        <h2 class="serif-title text-2xl sm:text-3xl font-bold text-espresso">
+          Claire's Daily Wellness Pairings
+        </h2>
+      </div>
+      <span class="bg-[#F3EDE2] text-bark text-xs sm:text-sm font-bold px-3 py-1 rounded-full">
+        Direct Partner Portals
+      </span>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Pairing 1: Neotonics -->
+      <div class="bg-white rounded-2xl border border-[#E5DACB] p-5 card-shadow flex flex-col justify-between text-left">
+        <div>
+          <span class="text-[10px] uppercase tracking-wider font-bold text-rose-700 bg-rose-50 px-2 py-0.5 rounded">Cellular Skin Turnover</span>
+          <h4 class="font-bold text-espresso text-base mt-2 mb-1">Neotonics™</h4>
+          <p class="text-xs text-bark/80 leading-relaxed mb-3">
+            Gut-skin microbiome gummies that accelerated my 28-day skin renewal protocol.
+          </p>
+        </div>
+        <a href="/go/neotonics" target="_blank" rel="noopener noreferrer" class="block w-full py-2 px-3 text-center text-xs font-bold text-white bg-[#8C5845] hover:bg-[#784938] rounded-xl transition">
+          Official Portal &rarr;
+        </a>
+      </div>
+
+      <!-- Pairing 2: CleanseSana -->
+      <div class="bg-white rounded-2xl border border-[#E5DACB] p-5 card-shadow flex flex-col justify-between text-left">
+        <div>
+          <span class="text-[10px] uppercase tracking-wider font-bold text-emerald-700 bg-emerald-50 px-2 py-0.5 rounded">Deep Colon Cleanse</span>
+          <h4 class="font-bold text-espresso text-base mt-2 mb-1">CleanseSana™</h4>
+          <p class="text-xs text-bark/80 leading-relaxed mb-3">
+            Natural colon sweep pairing for my flourless gut breads and digestive smoothies.
+          </p>
+        </div>
+        <a href="/go/cleansesana" target="_blank" rel="noopener noreferrer" class="block w-full py-2 px-3 text-center text-xs font-bold text-white bg-[#8C5845] hover:bg-[#784938] rounded-xl transition">
+          Official Portal &rarr;
+        </a>
+      </div>
+
+      <!-- Pairing 3: Java Burn -->
+      <div class="bg-white rounded-2xl border border-[#E5DACB] p-5 card-shadow flex flex-col justify-between text-left">
+        <div>
+          <span class="text-[10px] uppercase tracking-wider font-bold text-amber-700 bg-amber-50 px-2 py-0.5 rounded">Morning Coffee Ritual</span>
+          <h4 class="font-bold text-espresso text-base mt-2 mb-1">Java Burn™</h4>
+          <p class="text-xs text-bark/80 leading-relaxed mb-3">
+            Tasteless daily morning coffee packet that ignites cellular fat-burning without jitters.
+          </p>
+        </div>
+        <a href="/go/javaburn" target="_blank" rel="noopener noreferrer" class="block w-full py-2 px-3 text-center text-xs font-bold text-white bg-[#8C5845] hover:bg-[#784938] rounded-xl transition">
+          Official Portal &rarr;
+        </a>
+      </div>
+
+      <!-- Pairing 4: ProDentim -->
+      <div class="bg-white rounded-2xl border border-[#E5DACB] p-5 card-shadow flex flex-col justify-between text-left">
+        <div>
+          <span class="text-[10px] uppercase tracking-wider font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded">Oral Microbiome Care</span>
+          <h4 class="font-bold text-espresso text-base mt-2 mb-1">ProDentim™</h4>
+          <p class="text-xs text-bark/80 leading-relaxed mb-3">
+            Dissolvable bedtime oral probiotics to repopulate healthy gum bacteria and fresh breath.
+          </p>
+        </div>
+        <a href="/go/prodentim" target="_blank" rel="noopener noreferrer" class="block w-full py-2 px-3 text-center text-xs font-bold text-white bg-[#8C5845] hover:bg-[#784938] rounded-xl transition">
+          Official Portal &rarr;
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. HAPPINESS GUARANTEE & TRUST STRIP                                      -->
+  <!-- ========================================================================= -->
+  <section class="py-12 bg-white border-y border-[#EAE3D6]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-4">
+      <div class="w-12 h-12 mx-auto rounded-full bg-[#FAF5EE] border border-[#C5A059]/60 flex items-center justify-center text-2xl">
+        🛡️
+      </div>
+      <h3 class="serif-title text-2xl sm:text-3xl font-bold text-espresso">
+        The Claire Evans 30-Day Happiness Guarantee
+      </h3>
+      <p class="text-sm sm:text-base text-bark max-w-xl mx-auto leading-relaxed">
+        I want you to feel deeply nurtured and supported. If any of our journals or digital protocols do not bring calm, joy, and vitality into your life, simply email my team at <a href="mailto:support@dailyhealthreviewus.com" class="text-terracotta font-bold underline">support@dailyhealthreviewus.com</a> for a prompt, courteous 100% refund.
+      </p>
+      <div class="pt-2 flex flex-wrap justify-center items-center gap-6 text-xs text-bark/80 font-semibold uppercase tracking-wider">
+        <span>⚡ Instant Download</span>
+        <span>•</span>
+        <span>🔒 256-Bit SSL Encrypted</span>
+        <span>•</span>
+        <span>📱 Compatible with All Devices</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER & COMPLIANCE                                                       -->
+  <!-- ========================================================================= -->
+  <footer class="py-12 bg-gradient-to-b from-[#FAF7F2] via-[#F4ECE0] to-[#EBE0D0] text-[#4A3B32] px-4 sm:px-6 border-t border-[#D8C7B3]">
+    <div class="max-w-4xl mx-auto text-center space-y-6">
+      
+      <div class="flex flex-col items-center justify-center space-y-2">
+        <span class="font-serif font-bold tracking-[0.2em] text-lg uppercase text-[#231B15]">
+          Claire Evans Sanctuary Boutique
+        </span>
+        <span class="text-xs font-bold text-[#8C5845] tracking-widest uppercase">
+          A Daily Health Review Sanctuary Publishing Edition
+        </span>
+      </div>
+
+      <p class="text-xs sm:text-sm text-[#4A3B32] max-w-xl mx-auto leading-relaxed">
+        Educational Disclaimer: The digital journals, coloring books, and wellness protocols offered by Claire Evans are for educational, reflective, and recreational self-care purposes only. They do not constitute medical advice or clinical diagnosis.
+      </p>
+
+      <div class="text-[#7A6B5D] text-xs font-semibold tracking-wide">
+        &copy; 2026 Daily Health Review. All rights reserved. • <a href="/claire" class="underline hover:text-terracotta">Claire's Recipe Hub</a> • <a href="/privacy" class="underline hover:text-terracotta">Privacy</a> • <a href="/terms" class="underline hover:text-terracotta">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JAVASCRIPT FOR CATEGORY FILTERING -->
+  <script>
+    function filterShop(category, btn) {
+      // 1. Update button styling
+      document.querySelectorAll('.filter-btn').forEach(b => {
+        b.classList.remove('filter-btn-active');
+        b.classList.add('bg-white', 'text-bark');
+      });
+      btn.classList.add('filter-btn-active');
+      btn.classList.remove('bg-white', 'text-bark');
+
+      // 2. Filter sections
+      const sections = {
+        journals: document.getElementById('journals'),
+        protocols: document.getElementById('protocols'),
+        pairings: document.getElementById('pairings')
+      };
+
+      if (category === 'all') {
+        Object.values(sections).forEach(s => s.classList.remove('hidden'));
+      } else {
+        Object.keys(sections).forEach(k => {
+          if (k === category) {
+            sections[k].classList.remove('hidden');
+          } else {
+            sections[k].classList.add('hidden');
+          }
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>

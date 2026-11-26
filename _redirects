@@ -143,9 +143,13 @@
 /legal/contact /contact/ 301
 /contact.html /contact/ 301
 
+# Claire Evans Official Boutique & Shop (/shop/)
+/claire/shop /shop/ 301
+/claire/shop/ /shop/ 301
+/boutique /shop/ 301
+/boutique/ /shop/ 301
+
 # Product 15: The 10-Minute Somatic Calm Coloring Ritual (Claire Evans)
-/shop /shop/somatic-calm-coloring-book/ 301
-/shop/ /shop/somatic-calm-coloring-book/ 301
 /coloring /shop/somatic-calm-coloring-book 301
 /coloring/ /shop/somatic-calm-coloring-book 301
 /calm-coloring /shop/somatic-calm-coloring-book 301
