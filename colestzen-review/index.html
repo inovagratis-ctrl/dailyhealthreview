@@ -34,20 +34,18 @@ gtag('config', 'G-BE7PQXFY9F');
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
 <link href="/css/style.css" rel="stylesheet"/>
 
+
 <style>
-  body {
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  }
-  .font-editorial {
-    font-family: 'Playfair Display', Georgia, serif;
-  }
-  .glow-cta {
-    box-shadow: 0 10px 30px -5px rgba(225, 29, 72, 0.4);
-  }
-  .glow-green {
-    box-shadow: 0 10px 30px -5px rgba(5, 150, 105, 0.4);
-  }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  h1, h2, h3, .font-serif { font-family: 'Playfair Display', Georgia, serif; }
+  .brand-green { background-color: #0e5e43; }
+  .brand-green-hover:hover { background-color: #09422f; }
+  .text-brand-green { color: #0e5e43; }
+  .border-brand-green { border-color: #0e5e43; }
+  .glow-cta { box-shadow: 0 10px 30px -5px rgba(14, 94, 67, 0.4); }
+  .glow-green { box-shadow: 0 10px 30px -5px rgba(5, 150, 105, 0.4); }
 </style>
+
 
 <!-- Open Graph -->
 <meta content="article" property="og:type"/>
@@ -87,10 +85,10 @@ gtag('config', 'G-BE7PQXFY9F');
 }
 </script>
 </head>
-<body class="bg-slate-50 text-slate-900 antialiased min-h-screen flex flex-col selection:bg-rose-100 selection:text-rose-900">
+<body class="bg-slate-50 text-slate-900 antialiased min-h-screen flex flex-col selection:bg-emerald-50 text-emerald-900 border border-emerald-200 selection:text-emerald-950">
 
 <!-- Top Announcement Trust Bar -->
-<div class="bg-slate-900 text-slate-300 text-xs py-2 px-4 border-b border-slate-800">
+<div class="bg-emerald-950 text-emerald-100 text-xs py-2 px-4 border-b border-emerald-900">
   <div class="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-1.5 text-center sm:text-left">
     <div class="flex items-center gap-2">
       <span class="inline-flex items-center gap-1.5 text-amber-400 font-bold">
@@ -112,35 +110,23 @@ gtag('config', 'G-BE7PQXFY9F');
 <header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm backdrop-blur-md bg-white/95">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
     
-    <!-- Logo Brand Oficial -->
-    <a href="/" class="flex items-center gap-3 group">
-      <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-rose-700 via-rose-600 to-amber-500 text-white flex items-center justify-center font-black text-xl shadow-md group-hover:scale-105 transition duration-200">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-        </svg>
-      </div>
-      <div>
-        <span class="text-xl sm:text-2xl font-black tracking-tight text-slate-900 block leading-none">
-          DAILY HEALTH <span class="text-rose-700">REVIEW</span>
-        </span>
-        <span class="text-[10px] font-bold text-slate-400 uppercase tracking-widest block mt-0.5">
-          Independent Wellness Network • USA
-        </span>
-      </div>
+    <!-- Logo Brand Oficial (Canônica & Única) -->
+    <a href="/" class="flex items-center group py-1">
+      <img src="/images/daily-health-review-logo.png" alt="Daily Health Review - Better Choices. A Healthier You." class="h-11 sm:h-14 w-auto object-contain transform group-hover:scale-105 transition duration-200">
     </a>
 
     <!-- Unified Menu Navigation -->
     <nav class="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
-      <a href="/" class="hover:text-rose-700 transition">All Reviews</a>
-      <a href="#verdict" class="hover:text-rose-700 transition">Verdict</a>
-      <a href="#ingredients" class="hover:text-rose-700 transition">Ingredients</a>
-      <a href="#pros-cons" class="hover:text-rose-700 transition">Pros & Cons</a>
-      <a href="#pricing" class="hover:text-rose-700 transition">Pricing & Discount</a>
+      <a href="/" class="hover:text-emerald-800 transition">All Reviews</a>
+      <a href="#verdict" class="hover:text-emerald-800 transition">Verdict</a>
+      <a href="#ingredients" class="hover:text-emerald-800 transition">Ingredients</a>
+      <a href="#pros-cons" class="hover:text-emerald-800 transition">Pros & Cons</a>
+      <a href="#pricing" class="hover:text-emerald-800 transition">Pricing & Discount</a>
     </nav>
 
     <!-- Header Action Button -->
     <div class="flex items-center gap-3">
-      <a href="/go/colestzen" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-rose-700 to-rose-600 hover:from-rose-800 hover:to-rose-700 text-white font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-md transition transform hover:-translate-y-0.5">
+      <a href="/go/colestzen" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#0e5e43] to-[#09422f] hover:from-rose-800 hover:to-rose-700 text-white font-extrabold text-xs uppercase tracking-wider rounded-xl shadow-md transition transform hover:-translate-y-0.5">
         <span>Official Site &gt;&gt;</span>
       </a>
     </div>
@@ -168,11 +154,11 @@ gtag('config', 'G-BE7PQXFY9F');
       <span>›</span>
       <span class="text-slate-600 font-medium">Cardiovascular & Arterial Health</span>
       <span>›</span>
-      <span class="text-rose-700 font-bold">ColestZen Review</span>
+      <span class="text-emerald-800 font-bold">ColestZen Review</span>
     </nav>
 
     <div class="flex items-center gap-2">
-      <span class="bg-rose-100 text-rose-800 text-xs font-black uppercase px-3 py-1 rounded-full tracking-wide">
+      <span class="bg-emerald-50 text-emerald-900 border border-emerald-200 text-emerald-900 text-xs font-black uppercase px-3 py-1 rounded-full tracking-wide">
         Cardiovascular Evaluation
       </span>
       <span class="bg-emerald-100 text-emerald-800 text-xs font-black uppercase px-3 py-1 rounded-full tracking-wide flex items-center gap-1">
@@ -215,7 +201,7 @@ gtag('config', 'G-BE7PQXFY9F');
   <!-- ============================================================ -->
   <!-- GRAND HERO SPLIT CARD (FULL WIDTH, EXPANSIVE & LUXURIOUS)    -->
   <!-- ============================================================ -->
-  <div id="verdict" class="bg-gradient-to-br from-rose-50/70 via-white to-amber-50/70 border-2 border-rose-200/80 rounded-3xl p-6 sm:p-10 mb-14 shadow-lg relative overflow-hidden">
+  <div id="verdict" class="bg-gradient-to-br from-emerald-50/60/70 via-white to-amber-50/70 border-2 border-emerald-200/80 rounded-3xl p-6 sm:p-10 mb-14 shadow-lg relative overflow-hidden">
     
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
       
@@ -223,10 +209,10 @@ gtag('config', 'G-BE7PQXFY9F');
       <div class="lg:col-span-7 space-y-5">
         
         <div class="flex flex-wrap items-center gap-2.5">
-          <span class="bg-gradient-to-r from-rose-700 to-rose-600 text-white text-xs font-black uppercase tracking-wider px-3.5 py-1 rounded-lg shadow-sm">
+          <span class="bg-gradient-to-r from-[#0e5e43] to-[#09422f] text-white text-xs font-black uppercase tracking-wider px-3.5 py-1 rounded-lg shadow-sm">
             EXECUTIVE CLINICAL VERDICT
           </span>
-          <span class="text-xs font-black text-rose-950 bg-rose-100/90 border border-rose-200 px-3 py-1 rounded-lg">
+          <span class="text-xs font-black text-emerald-950 bg-emerald-50 text-emerald-900 border border-emerald-200/90 border border-emerald-200 px-3 py-1 rounded-lg">
             Score: 9.8 / 10 • Gold Standard
           </span>
         </div>
@@ -241,19 +227,19 @@ gtag('config', 'G-BE7PQXFY9F');
 
         <!-- 4 Key Clinical Pillars -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm font-bold text-slate-800 pt-2">
-          <div class="bg-white/95 p-3.5 rounded-xl border border-rose-100 flex items-center gap-3 shadow-sm">
+          <div class="bg-white/95 p-3.5 rounded-xl border border-emerald-100 flex items-center gap-3 shadow-sm">
             <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-black text-sm shrink-0">✓</span>
             <span>Promotes Endothelial Elasticity</span>
           </div>
-          <div class="bg-white/95 p-3.5 rounded-xl border border-rose-100 flex items-center gap-3 shadow-sm">
+          <div class="bg-white/95 p-3.5 rounded-xl border border-emerald-100 flex items-center gap-3 shadow-sm">
             <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-black text-sm shrink-0">✓</span>
             <span>Zero Statin-Like Muscle Fatigue</span>
           </div>
-          <div class="bg-white/95 p-3.5 rounded-xl border border-rose-100 flex items-center gap-3 shadow-sm">
+          <div class="bg-white/95 p-3.5 rounded-xl border border-emerald-100 flex items-center gap-3 shadow-sm">
             <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-black text-sm shrink-0">✓</span>
             <span>100% Non-GMO Botanical Purity</span>
           </div>
-          <div class="bg-white/95 p-3.5 rounded-xl border border-rose-100 flex items-center gap-3 shadow-sm">
+          <div class="bg-white/95 p-3.5 rounded-xl border border-emerald-100 flex items-center gap-3 shadow-sm">
             <span class="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-black text-sm shrink-0">✓</span>
             <span>60-Day 100% Money-Back Guarantee</span>
           </div>
@@ -261,7 +247,7 @@ gtag('config', 'G-BE7PQXFY9F');
 
         <!-- Big Luxury Action Button -->
         <div class="pt-4">
-          <a href="/go/colestzen" target="_blank" rel="noopener noreferrer" class="glow-cta inline-flex flex-col items-center justify-center w-full sm:w-auto px-8 sm:px-12 py-5 bg-gradient-to-r from-rose-700 via-rose-600 to-amber-600 hover:from-rose-800 hover:to-amber-700 text-white font-black rounded-2xl shadow-xl transition-all transform hover:-translate-y-1 text-center">
+          <a href="/go/colestzen" target="_blank" rel="noopener noreferrer" class="glow-cta inline-flex flex-col items-center justify-center w-full sm:w-auto px-8 sm:px-12 py-5 bg-gradient-to-r from-[#0e5e43] via-[#09422f] to-[#0b3b60] hover:from-rose-800 hover:to-amber-700 text-white font-black rounded-2xl shadow-xl transition-all transform hover:-translate-y-1 text-center">
             <span class="text-base sm:text-lg tracking-wide uppercase flex items-center gap-2">
               CLAIM OFFICIAL COLESTZEN DISCOUNT &gt;&gt;
             </span>
@@ -279,7 +265,7 @@ gtag('config', 'G-BE7PQXFY9F');
 
       <!-- Coluna Direita: Frasco Oficial 3D em Destaque Nobre (5 cols) -->
       <div class="lg:col-span-5 flex flex-col items-center justify-center">
-        <div class="relative bg-white p-6 sm:p-8 rounded-3xl border-2 border-rose-100 shadow-2xl w-full max-w-[340px] text-center transform hover:scale-[1.02] transition duration-300">
+        <div class="relative bg-white p-6 sm:p-8 rounded-3xl border-2 border-emerald-100 shadow-2xl w-full max-w-[340px] text-center transform hover:scale-[1.02] transition duration-300">
           
           <!-- Badge Superior Flutuante -->
           <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-amber-500 to-amber-600 text-slate-950 text-xs font-black uppercase tracking-wider px-4 py-1.5 rounded-full shadow-lg whitespace-nowrap">
@@ -317,7 +303,7 @@ gtag('config', 'G-BE7PQXFY9F');
 
       <section>
         <h2 class="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight mb-4 flex items-center gap-2">
-          <span class="w-2 h-7 bg-rose-600 rounded-full inline-block"></span>
+          <span class="w-2 h-7 brand-green rounded-full inline-block"></span>
           Why Conventional Cholesterol Management Misses the Root Cause
         </h2>
         <p>
@@ -337,7 +323,7 @@ gtag('config', 'G-BE7PQXFY9F');
 
       <section id="ingredients">
         <h2 class="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight mb-4 flex items-center gap-2">
-          <span class="w-2 h-7 bg-rose-600 rounded-full inline-block"></span>
+          <span class="w-2 h-7 brand-green rounded-full inline-block"></span>
           What Exactly Is ColestZen & How Does It Work?
         </h2>
         <p>
@@ -346,21 +332,21 @@ gtag('config', 'G-BE7PQXFY9F');
 
         <div class="space-y-3 my-6">
           <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex items-start gap-3">
-            <span class="text-rose-700 font-black text-lg">01</span>
+            <span class="text-emerald-800 font-black text-lg">01</span>
             <div>
               <h4 class="font-extrabold text-slate-900 text-base mb-1">Endothelial Nitric Oxide Restoration</h4>
               <p class="text-sm text-slate-600">Encourages vascular walls to expand and contract smoothly, promoting unhindered blood flow and relaxed blood pressure.</p>
             </div>
           </div>
           <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex items-start gap-3">
-            <span class="text-rose-700 font-black text-lg">02</span>
+            <span class="text-emerald-800 font-black text-lg">02</span>
             <div>
               <h4 class="font-extrabold text-slate-900 text-base mb-1">Cellular Lipid Recycling Pathway</h4>
               <p class="text-sm text-slate-600">Assists the liver in processing and clearing circulating low-density particles, naturally supporting an optimal LDL-to-HDL ratio.</p>
             </div>
           </div>
           <div class="p-4 bg-white rounded-xl border border-slate-200 shadow-sm flex items-start gap-3">
-            <span class="text-rose-700 font-black text-lg">03</span>
+            <span class="text-emerald-800 font-black text-lg">03</span>
             <div>
               <h4 class="font-extrabold text-slate-900 text-base mb-1">Microvascular Antioxidant Shield</h4>
               <p class="text-sm text-slate-600">Delivers potent bioflavonoids (including Ceylon Cinnamon, Bitter Melon, and Gymnema Sylvestre) that neutralize the free radicals responsible for lipid oxidation.</p>
@@ -372,7 +358,7 @@ gtag('config', 'G-BE7PQXFY9F');
       <!-- Pros & Cons Section (Wide & Beautiful) -->
       <section id="pros-cons">
         <h2 class="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight mb-4 flex items-center gap-2">
-          <span class="w-2 h-7 bg-rose-600 rounded-full inline-block"></span>
+          <span class="w-2 h-7 brand-green rounded-full inline-block"></span>
           Pros &amp; Cons: An Honest Clinical Evaluation
         </h2>
         
@@ -391,12 +377,12 @@ gtag('config', 'G-BE7PQXFY9F');
             </ul>
           </div>
 
-          <div class="bg-rose-50/80 border-2 border-rose-200 rounded-2xl p-6 shadow-sm">
-            <h3 class="text-rose-950 font-black text-lg mb-3 flex items-center gap-2">
-              <span class="w-6 h-6 rounded-full bg-rose-600 text-white flex items-center justify-center text-xs font-black">✕</span>
+          <div class="bg-rose-50/80 border-2 border-emerald-200 rounded-2xl p-6 shadow-sm">
+            <h3 class="text-emerald-950 font-black text-lg mb-3 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full brand-green text-white flex items-center justify-center text-xs font-black">✕</span>
               Important Considerations (Cons)
             </h3>
-            <ul class="space-y-2.5 text-xs sm:text-sm text-rose-900 font-medium">
+            <ul class="space-y-2.5 text-xs sm:text-sm text-emerald-950 font-medium">
               <li class="flex items-start gap-2"><span>•</span> Strictly sold through the official portal (not available on Amazon or Walmart).</li>
               <li class="flex items-start gap-2"><span>•</span> Discounted 6-bottle bundles frequently run low on stock during peak periods.</li>
               <li class="flex items-start gap-2"><span>•</span> Cumulative formula: requires daily consistency for 60 to 90 days for peak results.</li>
@@ -409,7 +395,7 @@ gtag('config', 'G-BE7PQXFY9F');
       <!-- GRAND OFFICIAL PRICING & BUNDLE SHOWCASE                     -->
       <!-- ============================================================ -->
       <section id="pricing" class="bg-white border-2 border-slate-200 rounded-3xl p-6 sm:p-10 shadow-lg text-center my-10">
-        <span class="inline-block bg-gradient-to-r from-rose-700 to-amber-600 text-white text-xs font-black uppercase tracking-wider px-4 py-1.5 rounded-full mb-3 shadow-sm">
+        <span class="inline-block bg-gradient-to-r from-[#0e5e43] to-[#0b3b60] text-white text-xs font-black uppercase tracking-wider px-4 py-1.5 rounded-full mb-3 shadow-sm">
           OFFICIAL VERIFIED PRICING & PROMOTIONAL TIERS
         </span>
 
@@ -431,7 +417,7 @@ gtag('config', 'G-BE7PQXFY9F');
         <!-- 3 Feature Pillars -->
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto text-xs sm:text-sm font-bold text-slate-800 mb-8">
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-2xl shadow-sm">
-            <p class="text-rose-700 text-lg font-black">$49 / Bottle</p>
+            <p class="text-emerald-800 text-lg font-black">$49 / Bottle</p>
             <p class="text-xs text-slate-500 font-medium mt-0.5">Best Value 6-Month Supply</p>
           </div>
           <div class="p-4 bg-slate-50 border border-slate-200 rounded-2xl shadow-sm">
@@ -467,7 +453,7 @@ gtag('config', 'G-BE7PQXFY9F');
       <!-- FAQ Section -->
       <section class="space-y-4 pt-4">
         <h2 class="text-2xl sm:text-3xl font-black text-slate-950 tracking-tight mb-4 flex items-center gap-2">
-          <span class="w-2 h-7 bg-rose-600 rounded-full inline-block"></span>
+          <span class="w-2 h-7 brand-green rounded-full inline-block"></span>
           Frequently Asked Questions (FAQ)
         </h2>
 
@@ -497,7 +483,7 @@ gtag('config', 'G-BE7PQXFY9F');
       <!-- Quick Verdict Card -->
       <div class="bg-white rounded-3xl p-6 border-2 border-slate-200 shadow-md space-y-4">
         <div class="flex items-center justify-between pb-3 border-b border-slate-100">
-          <span class="text-xs font-black uppercase tracking-wider text-rose-700">QUICK REVIEW SUMMARY</span>
+          <span class="text-xs font-black uppercase tracking-wider text-emerald-800">QUICK REVIEW SUMMARY</span>
           <span class="text-xs font-bold bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full">Top Pick 2026</span>
         </div>
 
@@ -521,7 +507,7 @@ gtag('config', 'G-BE7PQXFY9F');
           </div>
           <div class="flex justify-between">
             <span class="text-slate-500">Starting Price:</span>
-            <span class="text-rose-700 font-extrabold">$49 / Bottle</span>
+            <span class="text-emerald-800 font-extrabold">$49 / Bottle</span>
           </div>
           <div class="flex justify-between">
             <span class="text-slate-500">Guarantee:</span>
@@ -529,7 +515,7 @@ gtag('config', 'G-BE7PQXFY9F');
           </div>
         </div>
 
-        <a href="/go/colestzen" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 bg-gradient-to-r from-rose-700 to-amber-600 hover:from-rose-800 hover:to-amber-700 text-white font-black text-center text-xs uppercase tracking-wider rounded-xl shadow-md transition transform hover:-translate-y-0.5">
+        <a href="/go/colestzen" target="_blank" rel="noopener noreferrer" class="block w-full py-3.5 bg-gradient-to-r from-[#0e5e43] to-[#0b3b60] hover:from-rose-800 hover:to-amber-700 text-white font-black text-center text-xs uppercase tracking-wider rounded-xl shadow-md transition transform hover:-translate-y-0.5">
           Visit Official Portal &gt;&gt;
         </a>
       </div>
@@ -557,10 +543,7 @@ gtag('config', 'G-BE7PQXFY9F');
     
     <div class="flex flex-col sm:flex-row justify-between items-center gap-4 border-b border-slate-800/80 pb-6">
       <div class="flex items-center gap-2.5">
-        <div class="w-8 h-8 rounded-lg bg-rose-700 text-white flex items-center justify-center font-bold text-sm">
-          DR
-        </div>
-        <span class="text-base font-black tracking-tight text-white">DAILY HEALTH REVIEW</span>
+        <img src="/images/daily-health-review-logo.png" alt="Daily Health Review" class="h-9 sm:h-10 w-auto object-contain brightness-0 invert opacity-90">
       </div>
       <div class="flex flex-wrap justify-center gap-6 text-slate-400 font-medium">
         <a href="/" class="hover:text-white transition">Home</a>
