@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>30 Days of Creativity and Self-Care™ — A Mindful Daily Art & Reflection Workbook</title>
+  <meta name="description" content="A 60-page guided daily art and mindful reflection workbook for women. 30 days of relaxing botanical coloring plates paired with gentle self-care prompts." />
+  
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'sans-serif'],
+          },
+          colors: {
+            linen: '#FAF7F2',
+            sand: '#F3EDE2',
+            espresso: '#231B15',
+            bark: '#4A3B32',
+            terracotta: '#8C5845',
+            gold: '#C5A059',
+            botanic: '#2E3B2F',
+            sage: '#607262',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FAF7F2;
+      color: #231B15;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .serif-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .thumbnail-active {
+      border-color: #8C5845 !important;
+      box-shadow: 0 0 0 3px rgba(140, 88, 69, 0.3);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-gold/20 selection:text-espresso text-base">
+
+  <!-- TOP STORE BANNER -->
+  <div class="bg-[#2E3B2F] text-[#FAF7F2] text-sm sm:text-base py-2.5 px-4 text-center font-medium tracking-wide">
+    <span>🌿 30-DAY MINDFUL CREATIVE COMPANION • INSTANT PDF DOWNLOAD • PRINT AT HOME</span>
+  </div>
+
+  <!-- STORE HEADER -->
+  <header class="py-5 px-4 sm:px-6 max-w-6xl mx-auto flex items-center justify-between border-b border-[#EAE3D6]">
+    <div class="flex items-center space-x-3.5">
+      <!-- Botanical Emblem Icon -->
+      <div class="w-12 h-12 rounded-full bg-gradient-to-br from-[#FAF5EE] to-[#EFE5D3] border border-[#C5A059]/60 flex items-center justify-center shadow-sm flex-shrink-0">
+        <svg class="w-7 h-7 text-[#8C5845]" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="16" cy="16" r="14.5" stroke="#C5A059" stroke-width="1" stroke-dasharray="2 1.5"/>
+          <path d="M16 26V8" stroke="#8C5845" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M16 8C13.5 5 9.5 5.5 8 8C8 11.5 12 13.5 16 13.5" fill="#C5A059" fill-opacity="0.2" stroke="#8C5845" stroke-width="1.2"/>
+          <path d="M16 13C18.5 10 22.5 10.5 24 13C24 16.5 20 18.5 16 18.5" fill="#C5A059" fill-opacity="0.2" stroke="#8C5845" stroke-width="1.2"/>
+          <circle cx="16" cy="6" r="2" fill="#C5A059"/>
+        </svg>
+      </div>
+
+      <!-- Typography Lockup -->
+      <div class="flex flex-col text-left">
+        <span class="font-serif text-xl sm:text-2xl font-bold tracking-[0.18em] text-[#231B15] uppercase leading-tight">
+          Claire Evans
+        </span>
+        <span class="text-sm font-bold tracking-[0.24em] text-[#8C5845] uppercase mt-0.5">
+          Creative Sanctuary
+        </span>
+        <span class="text-sm text-[#6B5A4D] tracking-wide italic font-serif">
+          Daily Health Review • Sanctuary Collection
+        </span>
+      </div>
+    </div>
+
+    <!-- Right Side: Official Status Badge -->
+    <div class="flex items-center space-x-2">
+      <div class="flex items-center space-x-2 text-sm sm:text-base font-semibold text-emerald-900 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200 shadow-sm">
+        <span class="w-2.5 h-2.5 rounded-full bg-emerald-600 animate-pulse"></span>
+        <span>Instant PDF Access</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- 1. E-COMMERCE HERO SPLIT: GALLERY (LEFT) + BUY BOX (RIGHT) -->
+  <!-- ========================================================================= -->
+  <main class="max-w-6xl mx-auto px-4 sm:px-6 pt-6 sm:pt-10 pb-16">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+      
+      <!-- ================= LEFT COLUMN: INTERACTIVE PRODUCT GALLERY CAROUSEL ================= -->
+      <div class="lg:col-span-7 space-y-4">
+        
+        <!-- Main Featured Image Viewer -->
+        <div id="gallery-zoom-container" class="relative bg-white rounded-2xl p-4 sm:p-6 border border-[#E5DACB] shadow-lg overflow-hidden flex items-center justify-center min-h-[380px] sm:min-h-[500px] cursor-zoom-in group select-none">
+          
+          <!-- Product Badge Tag -->
+          <span id="gallery-badge" class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm text-sm sm:text-base font-bold text-terracotta px-3.5 py-1.5 rounded-full border border-[#E0D5C5] shadow-sm z-10 pointer-events-none">
+            60-Page Guided Master Edition
+          </span>
+
+          <!-- Slide Counter Badge -->
+          <span id="gallery-counter" class="absolute bottom-4 right-4 bg-black/60 backdrop-blur-sm text-white text-xs sm:text-sm font-bold px-3 py-1 rounded-full z-10 pointer-events-none">
+            1 / 8
+          </span>
+
+          <!-- Clean Unobstructed Image Wrapper with Zoom on Hover -->
+          <div class="w-full h-full flex items-center justify-center overflow-hidden">
+            <img 
+              id="main-gallery-img"
+              src="assets/mockup_hero.jpg" 
+              alt="30 Days of Creativity and Self-Care 3D Deluxe Workbook Mockup" 
+              class="w-full max-h-[500px] object-contain rounded-xl transition-transform duration-300 ease-out origin-center" 
+              loading="eager"
+            />
+          </div>
+
+        </div>
+
+        <!-- Thumbnail Strip Flanked by Navigation Arrows -->
+        <div class="flex items-center space-x-1.5 sm:space-x-3">
+          
+          <!-- Prev Arrow Button -->
+          <button 
+            type="button" 
+            onclick="prevGalleryImage()" 
+            class="flex-shrink-0 w-9 h-14 sm:w-11 sm:h-20 bg-white hover:bg-[#F3EDE2] text-espresso rounded-xl shadow-sm hover:shadow border border-[#E0D5C5] flex items-center justify-center transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-terracotta cursor-pointer"
+            aria-label="Previous Image"
+            title="Previous Image">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-espresso" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <!-- Thumbnails Selector Grid (8 Items) -->
+          <div class="grid grid-cols-4 sm:grid-cols-8 gap-1.5 sm:gap-2 flex-1">
+            
+            <!-- Thumb 0: Hero 3D Workbook -->
+            <button 
+              type="button" 
+              onclick="goToGallerySlide(0)" 
+              class="thumb-btn thumbnail-active p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
+              title="3D Deluxe Workbook">
+              <img src="assets/mockup_hero.jpg" alt="3D Workbook Mockup" class="w-full h-10 sm:h-14 object-cover rounded-lg" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-espresso truncate">Hero</span>
+            </button>
+
+            <!-- Thumb 1: Hardcover Edition -->
+            <button 
+              type="button" 
+              onclick="goToGallerySlide(1)" 
+              class="thumb-btn p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
+              title="Standing Hardcover Edition">
+              <img src="assets/mockup_hardcover.jpg" alt="Hardcover Edition" class="w-full h-10 sm:h-14 object-cover rounded-lg" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-terracotta truncate">Hardcover</span>
+            </button>
+
+            <!-- Thumb 2: Colored Pencils Studio -->
+            <button 
+              type="button" 
+              onclick="goToGallerySlide(2)" 
+              class="thumb-btn p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
+              title="Studio Flat Lay with Colored Pencils">
+              <img src="assets/mockup_pencils.jpg" alt="Studio Pencils" class="w-full h-10 sm:h-14 object-cover rounded-lg" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-espresso truncate">Pencils</span>
+            </button>
+
+            <!-- Thumb 3: Rose Gold Flat Lay -->
+            <button 
+              type="button" 
+              onclick="goToGallerySlide(3)" 
+              class="thumb-btn p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
+              title="Rose Gold Lifestyle Lay">
+              <img src="assets/mockup_rose.jpg" alt="Rose Gold Mockup" class="w-full h-10 sm:h-14 object-cover rounded-lg" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-espresso truncate">Rose</span>
+            </button>
+
+            <!-- Thumb 4: Title Cover Page -->
+            <button 
+              type="button" 
+              onclick="goToGallerySlide(4)" 
+              class="thumb-btn p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
+              title="Workbook Title Cover Page">
+              <img src="assets/page_1.jpg" alt="Title Cover Page" class="w-full h-10 sm:h-14 object-cover rounded-lg bg-[#FAF8F5]" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-espresso truncate">Cover</span>
+            </button>
+
+            <!-- Thumb 5: Day 1 Botanical Art Plate -->
+            <button 
+              type="button" 
+              onclick="goToGallerySlide(5)" 
+              class="thumb-btn p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
+              title="Day 1 Art Plate">
+              <img src="assets/page_2.jpg" alt="Day 1 Art Plate" class="w-full h-10 sm:h-14 object-cover rounded-lg bg-[#FAF8F5]" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-espresso truncate">Day 1 Art</span>
+            </button>
+
+            <!-- Thumb 6: Day 2 Botanical Plate -->
+            <button 
+              type="button" 
+              onclick="goToGallerySlide(6)" 
+              class="thumb-btn p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
+              title="Day 2 Botanical Plate">
+              <img src="assets/page_3.jpg" alt="Day 2 Botanical Plate" class="w-full h-10 sm:h-14 object-cover rounded-lg bg-[#FAF8F5]" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-espresso truncate">Day 2 Art</span>
+            </button>
+
+            <!-- Thumb 7: Day 2 Reflection & Sketch Journal -->
+            <button 
+              type="button" 
+              onclick="goToGallerySlide(7)" 
+              class="thumb-btn p-1 sm:p-1.5 rounded-xl bg-white border-2 border-transparent hover:border-terracotta transition-all shadow-sm focus:outline-none relative"
+              title="Day 2 Reflection & Sketch Page">
+              <img src="assets/page_4.jpg" alt="Day 2 Reflection Page" class="w-full h-10 sm:h-14 object-cover rounded-lg bg-[#FAF8F5]" />
+              <span class="block text-[8px] sm:text-[11px] font-bold text-center mt-0.5 text-espresso truncate">Journal</span>
+            </button>
+
+          </div>
+
+          <!-- Next Arrow Button -->
+          <button 
+            type="button" 
+            onclick="nextGalleryImage()" 
+            class="flex-shrink-0 w-9 h-14 sm:w-11 sm:h-20 bg-white hover:bg-[#F3EDE2] text-espresso rounded-xl shadow-sm hover:shadow border border-[#E0D5C5] flex items-center justify-center transition-all hover:scale-105 focus:outline-none focus:ring-2 focus:ring-terracotta cursor-pointer"
+            aria-label="Next Image"
+            title="Next Image">
+            <svg class="w-5 h-5 sm:w-6 sm:h-6 text-espresso" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+
+        </div>
+
+        <p class="text-center text-sm sm:text-base text-bark font-medium italic pt-1">
+          💡 Use the bottom arrows or click thumbnails to browse. Hover freely over the image to zoom.
+        </p>
+      </div>
+
+      <!-- ================= RIGHT COLUMN: THE BUY BOX (CONVERSION ENGINE) ================= -->
+      <div class="lg:col-span-5 bg-white rounded-2xl p-6 sm:p-8 border border-[#E5DACB] shadow-xl space-y-6">
+        
+        <!-- Rating & Category Pill -->
+        <div class="flex items-center justify-between border-b border-[#F2ECE1] pb-4">
+          <div class="flex items-center space-x-2">
+            <span class="text-gold text-base">★★★★★</span>
+            <span class="text-sm font-bold text-espresso">4.9</span>
+            <span class="text-sm sm:text-base text-bark/80">• Community Favorite</span>
+          </div>
+          <span class="bg-[#F3EDE2] text-terracotta text-sm font-bold uppercase tracking-wider px-3 py-1 rounded-md">
+            Guided Workbook
+          </span>
+        </div>
+
+        <!-- Product Title & Scope -->
+        <div class="space-y-2">
+          <h1 class="serif-title text-3xl sm:text-4xl font-bold text-espresso leading-tight">
+            30 Days of Creativity and Self-Care™
+          </h1>
+          <p class="text-sm sm:text-base text-bark leading-relaxed">
+            A Mindful Daily Art & Reflection Workbook for Gentle Presence, Stress Relief & Creative Joy.
+          </p>
+          <p class="text-sm sm:text-base font-semibold text-terracotta">
+            Created by Claire Evans • Daily Health Review (@claire.matureskin)
+          </p>
+        </div>
+
+        <!-- Price Callout -->
+        <div class="bg-linen p-4 sm:p-5 rounded-xl border border-[#E8DFCFC0]">
+          <div class="flex items-baseline space-x-3">
+            <span class="text-4xl sm:text-5xl font-extrabold text-espresso">$9.90</span>
+            <span class="text-base font-medium text-bark/60 line-through">$29.00</span>
+            <span class="bg-emerald-100 text-emerald-900 text-sm sm:text-base font-bold px-2.5 py-1 rounded">SAVE 66%</span>
+          </div>
+          <p class="text-sm sm:text-base text-bark mt-2 font-medium">
+            ⚡ One-time payment • Instant 60-page PDF download • Keep forever on all your devices
+          </p>
+        </div>
+
+        <!-- Core Checklist: What You Receive -->
+        <div class="space-y-3 text-sm sm:text-base text-bark">
+          <div class="flex items-start space-x-2.5">
+            <span class="text-emerald-700 font-bold text-base mt-0.5">✓</span>
+            <span><b>60-Page Full-Length Workbook</b> (30 daily dual-page creative chapters)</span>
+          </div>
+          <div class="flex items-start space-x-2.5">
+            <span class="text-emerald-700 font-bold text-base mt-0.5">✓</span>
+            <span><b>30 Mindful Art Plates:</b> Botanicals, calming nature & cozy still life for coloring</span>
+          </div>
+          <div class="flex items-start space-x-2.5">
+            <span class="text-emerald-700 font-bold text-base mt-0.5">✓</span>
+            <span><b>30 Guided Self-Care Journals:</b> Mindful prompts, gratitude & free sketching space</span>
+          </div>
+          <div class="flex items-start space-x-2.5">
+            <span class="text-emerald-700 font-bold text-base mt-0.5">✓</span>
+            <span><b>Dual Format:</b> Compatible with standard US Letter (8.5×11") and A4 printing</span>
+          </div>
+          <div class="flex items-start space-x-2.5">
+            <span class="text-emerald-700 font-bold text-base mt-0.5">✓</span>
+            <span><b>Unlimited Reprints:</b> Color with pencils or import into iPad (GoodNotes/Procreate)</span>
+          </div>
+        </div>
+
+        <!-- Primary High-Impact CTA -->
+        <div class="pt-2 space-y-3">
+          <a 
+            href="#comprar" 
+            onclick="handleBuyClick(event)"
+            class="block w-full py-4 px-6 bg-[#8C5845] hover:bg-[#784938] text-white font-bold text-center text-base sm:text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-200 tracking-wide uppercase transform hover:-translate-y-0.5">
+            Download Instantly • $9.90 USD
+          </a>
+
+          <a 
+            href="#amostra-gratis" 
+            class="block w-full py-3.5 px-6 bg-white hover:bg-sand/40 text-bark font-semibold text-center text-sm sm:text-base rounded-xl border border-[#D5C6B5] transition-colors">
+            Or Download 3-Day Free Sample Pack First ↓
+          </a>
+        </div>
+
+        <!-- Trust & Security Badges -->
+        <div class="pt-3 border-t border-[#F2ECE1] grid grid-cols-3 gap-2 text-center text-sm text-bark">
+          <div class="p-1">
+            <span class="block text-base">⚡</span>
+            <span class="font-bold text-espresso block">Instant Access</span>
+            <span class="text-sm font-medium text-bark/80">PDF sent to email</span>
+          </div>
+          <div class="p-1">
+            <span class="block text-base">🔒</span>
+            <span class="font-bold text-espresso block">Secure Checkout</span>
+            <span class="text-sm font-medium text-bark/80">256-Bit Encrypted</span>
+          </div>
+          <div class="p-1">
+            <span class="block text-base">🛡️</span>
+            <span class="font-bold text-espresso block">30-Day Guarantee</span>
+            <span class="text-sm font-medium text-bark/80">Full refund policy</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- 2. 3-PILLAR BENEFIT STRIP -->
+  <!-- ========================================================================= -->
+  <section class="py-10 bg-white border-y border-[#EAE3D6]">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+      
+      <div class="flex items-center space-x-3.5 p-3 text-left">
+        <span class="text-3xl text-terracotta flex-shrink-0">🖨️</span>
+        <div>
+          <h4 class="font-bold text-sm sm:text-base uppercase tracking-wider text-espresso">Home Printer Friendly</h4>
+          <p class="text-sm sm:text-base text-bark mt-0.5">Standard crisp black linework with zero heavy gray ink-wasters.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-3.5 p-3 text-left">
+        <span class="text-3xl text-terracotta flex-shrink-0">🧘</span>
+        <div>
+          <h4 class="font-bold text-sm sm:text-base uppercase tracking-wider text-espresso">10-15 Min Daily Ritual</h4>
+          <p class="text-sm sm:text-base text-bark mt-0.5">Gentle, screen-free creative pauses that fit easily into busy days.</p>
+        </div>
+      </div>
+
+      <div class="flex items-center space-x-3.5 p-3 text-left">
+        <span class="text-3xl text-terracotta flex-shrink-0">📱</span>
+        <div>
+          <h4 class="font-bold text-sm sm:text-base uppercase tracking-wider text-espresso">Print or Digital Journal</h4>
+          <p class="text-sm sm:text-base text-bark mt-0.5">Print at home or use with Apple Pencil in GoodNotes & Procreate.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 3. FREE LEAD MAGNET: 3-DAY SAMPLE PACK -->
+  <!-- ========================================================================= -->
+  <section id="amostra-gratis" class="py-14 px-4 sm:px-6 max-w-3xl mx-auto">
+    <div class="bg-gradient-to-br from-sand to-[#FAF2E6] border-2 border-dashed border-[#C5A059] rounded-2xl p-6 sm:p-10 shadow-sm text-center space-y-4">
+      <div class="inline-block bg-[#8C5845] text-white text-sm font-bold uppercase tracking-widest px-3.5 py-1.5 rounded-full">
+        Free 3-Day Gift
+      </div>
+      
+      <h3 class="serif-title text-2xl sm:text-3xl font-semibold text-espresso leading-snug">
+        Want to Experience the Ritual First? Download the Free 3-Day Sample Pack
+      </h3>
+
+      <p class="text-sm sm:text-base text-bark max-w-lg mx-auto leading-relaxed">
+        Get immediate access to Days 1, 2, and 3: 6 complete printable pages featuring hand-drawn botanical coloring plates paired with guided self-care journaling prompts.
+      </p>
+
+      <!-- Lead Magnet Form -->
+      <form id="sample-form" onsubmit="handleSampleSubmit(event)" class="max-w-md mx-auto pt-2 space-y-3 sm:space-y-0 sm:flex sm:gap-2">
+        <input 
+          type="email" 
+          id="sample-email" 
+          required 
+          placeholder="Enter your email address..." 
+          class="w-full px-4 py-3.5 rounded-lg border border-[#D0BFAC] text-base focus:outline-none focus:ring-2 focus:ring-terracotta bg-white"
+        />
+        <button 
+          type="submit" 
+          class="w-full sm:w-auto px-6 py-3.5 bg-[#2E3B2F] hover:bg-[#202B21] text-white font-bold text-sm rounded-lg tracking-wide transition-colors whitespace-nowrap shadow-md">
+          Download Free Pack
+        </button>
+      </form>
+
+      <div id="sample-success" class="hidden text-sm font-semibold text-emerald-800 bg-emerald-100 py-3 px-4 rounded-lg mt-3">
+        🌿 Success! Opening your 3-day sample pack PDF now...
+      </div>
+
+      <p class="text-sm text-bark/80 pt-1">We respect your privacy. Zero spam, unsubscribe anytime with one click.</p>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 4. TAKE A LOOK INSIDE: THE DUAL-PAGE EXPERIENCE -->
+  <!-- ========================================================================= -->
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <div class="text-center max-w-2xl mx-auto mb-10">
+      <div class="inline-flex items-center space-x-2 bg-[#F3EDE2] text-terracotta text-sm font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-3 border border-[#E5DDD0]">
+        <span>🌿 INSIDE THE 60-PAGE WORKBOOK</span>
+      </div>
+      <h2 class="serif-title text-3xl sm:text-4xl text-espresso font-semibold mb-3">
+        Every Day Features a Calming Dual-Page Rhythm
+      </h2>
+      <p class="text-bark text-base sm:text-lg leading-relaxed">
+        Unlike ordinary coloring books that offer only pictures, <em>30 Days of Creativity and Self-Care</em> pairs each daily artistic illustration with an unhurried space for mindfulness, gratitude, and gentle creative expression.
+      </p>
+    </div>
+
+    <!-- Dual Page Preview Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      
+      <!-- Preview 1: Day 1 Coloring -->
+      <div class="bg-white p-4 rounded-2xl border border-[#E5DDD0] shadow-sm text-center">
+        <div class="aspect-[3/4] bg-[#FAF7F2] rounded-xl overflow-hidden mb-3 border border-[#F2ECE1] relative flex items-center justify-center p-2">
+          <img src="assets/page_2.jpg" alt="Day 1 Botanical Coloring Plate" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <span class="absolute top-2 left-2 bg-[#8C5845] text-white text-xs font-bold px-2 py-0.5 rounded-md shadow-xs">DAY 01 • ART</span>
+        </div>
+        <p class="font-bold text-espresso text-base">Floral Harmony</p>
+        <p class="text-sm text-bark/80 italic mt-0.5">Mindful Botanical Coloring</p>
+        <span class="inline-block mt-2 text-xs font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-full">In Free Sample Pack</span>
+      </div>
+
+      <!-- Preview 2: Day 2 Coloring -->
+      <div class="bg-white p-4 rounded-2xl border border-[#E5DDD0] shadow-sm text-center">
+        <div class="aspect-[3/4] bg-[#FAF7F2] rounded-xl overflow-hidden mb-3 border border-[#F2ECE1] relative flex items-center justify-center p-2">
+          <img src="assets/page_3.jpg" alt="Day 2 Botanical Still Life" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <span class="absolute top-2 left-2 bg-[#8C5845] text-white text-xs font-bold px-2 py-0.5 rounded-md shadow-xs">DAY 02 • ART</span>
+        </div>
+        <p class="font-bold text-espresso text-base">Autumn Pears & Foliage</p>
+        <p class="text-sm text-bark/80 italic mt-0.5">Tactile Shading & Presence</p>
+        <span class="inline-block mt-2 text-xs font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-full">In Free Sample Pack</span>
+      </div>
+
+      <!-- Preview 3: Day 2 Journal -->
+      <div class="bg-white p-4 rounded-2xl border border-[#E5DDD0] shadow-sm text-center">
+        <div class="aspect-[3/4] bg-[#FAF7F2] rounded-xl overflow-hidden mb-3 border border-[#F2ECE1] relative flex items-center justify-center p-2">
+          <img src="assets/page_4.jpg" alt="Day 2 Reflection & Sketch Journal" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <span class="absolute top-2 left-2 bg-[#2E3B2F] text-white text-xs font-bold px-2 py-0.5 rounded-md shadow-xs">DAY 02 • JOURNAL</span>
+        </div>
+        <p class="font-bold text-espresso text-base">Mindful Prompt & Sketch</p>
+        <p class="text-sm text-bark/80 italic mt-0.5">Creative Journaling Companion</p>
+        <span class="inline-block mt-2 text-xs font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-full">In Free Sample Pack</span>
+      </div>
+
+      <!-- Preview 4: Day 3 Art & Prompt -->
+      <div class="bg-white p-4 rounded-2xl border border-[#E5DDD0] shadow-sm text-center">
+        <div class="aspect-[3/4] bg-[#FAF7F2] rounded-xl overflow-hidden mb-3 border border-[#F2ECE1] relative flex items-center justify-center p-2">
+          <img src="assets/page_5.jpg" alt="Day 3 Botanical Illustration" class="max-w-full max-h-full object-contain" loading="lazy" />
+          <span class="absolute top-2 left-2 bg-[#8C5845] text-white text-xs font-bold px-2 py-0.5 rounded-md shadow-xs">DAY 03 • ART</span>
+        </div>
+        <p class="font-bold text-espresso text-base">Botanical Sanctuary</p>
+        <p class="text-sm text-bark/80 italic mt-0.5">Gentle Daily Rhythm</p>
+        <span class="inline-block mt-2 text-xs font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded-full">In Free Sample Pack</span>
+      </div>
+
+    </div>
+
+    <!-- Callout Box -->
+    <div class="bg-white p-6 sm:p-8 rounded-3xl border border-[#E5DDD0] shadow-sm mb-14 text-center max-w-3xl mx-auto">
+      <span class="bg-[#F3EDE2] text-terracotta text-sm font-bold uppercase tracking-wider px-3.5 py-1 rounded-full">
+        ✨ 54 Additional Pages in the Full Edition
+      </span>
+      <h3 class="serif-title text-2xl font-bold text-espresso mt-3 mb-2">Ready to Complete the Full 30-Day Journey?</h3>
+      <p class="text-bark text-base leading-relaxed mb-6">
+        Unlock all 30 days of mindful art plates and guided self-care reflections in one complete 60-page heirloom printable PDF workbook for just $9.90 USD.
+      </p>
+      <a href="#comprar" class="inline-flex items-center space-x-2 bg-[#8C5845] hover:bg-[#734433] text-white font-bold text-base px-8 py-3.5 rounded-2xl shadow-sm hover:shadow-md transition-all">
+        <span>Get the Full 60-Page Edition • $9.90</span>
+        <span>&rarr;</span>
+      </a>
+    </div>
+
+    <!-- 4 Weekly Pillars Structure -->
+    <div class="bg-white p-6 sm:p-10 rounded-3xl border border-[#E5DDD0] shadow-sm">
+      <div class="text-center max-w-2xl mx-auto mb-8">
+        <span class="text-sm font-bold uppercase tracking-wider text-terracotta">Curated Curriculum</span>
+        <h3 class="serif-title text-2xl sm:text-3xl text-espresso font-semibold mt-1">
+          The 4 Gentle Weekly Themes
+        </h3>
+        <p class="text-bark text-sm sm:text-base mt-2">
+          Structured gently to guide you step-by-step from daily stress to grounded creative fulfillment:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-sm text-bark">
+        <!-- Week 1 -->
+        <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#F2ECE1]">
+          <h4 class="font-bold text-espresso text-base border-b border-[#E5DDD0] pb-2 mb-3">🌿 Week 1: Grounding</h4>
+          <p class="text-xs text-terracotta font-bold uppercase tracking-wider mb-2">Days 01 to 07</p>
+          <ul class="space-y-1.5 text-xs sm:text-sm">
+            <li>• Calming the evening mind</li>
+            <li>• Releasing screen fatigue</li>
+            <li>• Breath and color awareness</li>
+            <li>• Creating a cozy creative nook</li>
+            <li>• Gentle sensory observation</li>
+          </ul>
+        </div>
+
+        <!-- Week 2 -->
+        <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#F2ECE1]">
+          <h4 class="font-bold text-espresso text-base border-b border-[#E5DDD0] pb-2 mb-3">🎨 Week 2: Expression</h4>
+          <p class="text-xs text-terracotta font-bold uppercase tracking-wider mb-2">Days 08 to 14</p>
+          <ul class="space-y-1.5 text-xs sm:text-sm">
+            <li>• Playing with color palettes</li>
+            <li>• Embracing creative intuition</li>
+            <li>• Freedom from rigid lines</li>
+            <li>• Mindful sketching prompts</li>
+            <li>• Honoring personal rhythm</li>
+          </ul>
+        </div>
+
+        <!-- Week 3 -->
+        <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#F2ECE1]">
+          <h4 class="font-bold text-espresso text-base border-b border-[#E5DDD0] pb-2 mb-3">🌸 Week 3: Self-Compassion</h4>
+          <p class="text-xs text-terracotta font-bold uppercase tracking-wider mb-2">Days 15 to 21</p>
+          <ul class="space-y-1.5 text-xs sm:text-sm">
+            <li>• Letting go of perfectionism</li>
+            <li>• Daily gratitude reflections</li>
+            <li>• Calming inner self-criticism</li>
+            <li>• Gentle boundary setting</li>
+            <li>• Honoring emotional rest</li>
+          </ul>
+        </div>
+
+        <!-- Week 4 -->
+        <div class="bg-[#FAF7F2] p-5 rounded-2xl border border-[#E5DDD0] shadow-xs border-[#F2ECE1]">
+          <h4 class="font-bold text-espresso text-base border-b border-[#E5DDD0] pb-2 mb-3">✨ Week 4: Joy & Renewal</h4>
+          <p class="text-xs text-terracotta font-bold uppercase tracking-wider mb-2">Days 22 to 30</p>
+          <ul class="space-y-1.5 text-xs sm:text-sm">
+            <li>• Rediscovering childhood play</li>
+            <li>• Cultivating everyday beauty</li>
+            <li>• Celebrating personal growth</li>
+            <li>• Long-term creative habits</li>
+            <li>• Savoring peaceful presence</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 5. WHY THIS DAILY RITUAL WORKS -->
+  <!-- ========================================================================= -->
+  <section class="py-16 px-4 sm:px-6 max-w-4xl mx-auto">
+    <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+      <span class="bg-[#F3EDE2] text-terracotta text-sm sm:text-base font-bold uppercase tracking-wider px-3.5 py-1.5 rounded-full">
+        The Mindful Habit
+      </span>
+      <h2 class="serif-title text-3xl sm:text-4xl font-semibold text-espresso">
+        Why 10-15 Minutes of Creative Self-Care Transforms Your Day
+      </h2>
+      <p class="text-sm sm:text-base text-bark leading-relaxed">
+        When your days are filled with responsibilities, caring for others, and constant digital notifications, having a quiet space just for you is not a luxury — it is essential well-being.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <div class="p-6 rounded-xl bg-white border border-[#E5DACB] shadow-sm space-y-3">
+        <div class="text-terracotta text-3xl font-bold">01</div>
+        <h4 class="font-bold text-espresso text-base sm:text-lg">Quiet Digital Detox</h4>
+        <p class="text-sm sm:text-base text-bark leading-relaxed">
+          Gives your eyes and mind a natural break from blue light and endless information, allowing your attention to slow down and center.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-xl bg-white border border-[#E5DACB] shadow-sm space-y-3">
+        <div class="text-terracotta text-3xl font-bold">02</div>
+        <h4 class="font-bold text-espresso text-base sm:text-lg">Tactile Flow & Grounding</h4>
+        <p class="text-sm sm:text-base text-bark leading-relaxed">
+          The physical feeling of colored pencil gliding on paper engages fine motor focus, gently shifting you out of overthinking.
+        </p>
+      </div>
+
+      <div class="p-6 rounded-xl bg-white border border-[#E5DACB] shadow-sm space-y-3">
+        <div class="text-terracotta text-3xl font-bold">03</div>
+        <h4 class="font-bold text-espresso text-base sm:text-lg">Zero Performance Pressure</h4>
+        <p class="text-sm sm:text-base text-bark leading-relaxed">
+          There is no "right way" to color or journal. It is entirely your sacred space to unwind, reflect, and enjoy quiet presence.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 6. WHAT WOMEN ARE SAYING -->
+  <!-- ========================================================================= -->
+  <section class="py-14 bg-white border-y border-[#EAE3D6]">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-2 mb-10">
+        <p class="text-sm sm:text-base font-bold uppercase tracking-widest text-terracotta">Reader Experiences</p>
+        <h2 class="serif-title text-3xl sm:text-4xl font-semibold text-espresso">
+          "The Most Nurturing Part of My Daily Routine"
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="p-6 rounded-xl bg-linen border border-[#E6DDCE] shadow-sm space-y-3">
+          <div class="text-gold text-base">★★★★★</div>
+          <p class="text-sm sm:text-base text-bark italic leading-relaxed">
+            "Having the coloring page on the left and the reflection on the right is genius. It takes away all the pressure of a blank journal while giving me a peaceful 15 minutes every morning."
+          </p>
+          <p class="text-sm sm:text-base font-bold text-espresso">&mdash; Carolyn M., 53 • Verified Reader</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-linen border border-[#E6DDCE] shadow-sm space-y-3">
+          <div class="text-gold text-base">★★★★★</div>
+          <p class="text-sm sm:text-base text-bark italic leading-relaxed">
+            "I printed the entire workbook and put it in a floral binder. The illustrations are so tasteful and the prompts are so gentle. It helped me break my phone addiction before bed."
+          </p>
+          <p class="text-sm sm:text-base font-bold text-espresso">&mdash; Patricia L., 59 • Verified Reader</p>
+        </div>
+
+        <div class="p-6 rounded-xl bg-linen border border-[#E6DDCE] shadow-sm space-y-3">
+          <div class="text-gold text-base">★★★★★</div>
+          <p class="text-sm sm:text-base text-bark italic leading-relaxed">
+            "Unbelievable quality for $9.90. I was able to download immediately and started Day 1 tonight with my favorite colored pencils. Truly soothing."
+          </p>
+          <p class="text-sm sm:text-base font-bold text-espresso">&mdash; Eleanor T., 48 • Verified Reader</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 7. FAQ ACCORDION -->
+  <!-- ========================================================================= -->
+  <section class="py-14 px-4 sm:px-6 max-w-3xl mx-auto">
+    <div class="text-center space-y-2 mb-10">
+      <p class="text-sm sm:text-base font-bold uppercase tracking-widest text-terracotta">Support & Details</p>
+      <h2 class="serif-title text-3xl sm:text-4xl font-semibold text-espresso">Frequently Asked Questions</h2>
+    </div>
+
+    <div class="space-y-3.5">
+      
+      <details class="bg-white rounded-xl p-5 border border-[#E8DFCFC0] shadow-sm cursor-pointer group">
+        <summary class="font-bold text-base sm:text-lg text-espresso flex justify-between items-center select-none">
+          <span>How do I receive the workbook after ordering?</span>
+          <span class="text-terracotta text-xl font-bold group-open:rotate-45 transition-transform">+</span>
+        </summary>
+        <p class="text-sm sm:text-base text-bark mt-3 leading-relaxed border-t border-[#F2ECE1] pt-3">
+          Instantly! Immediately after your secure order completes, a download link will appear on your screen, and an email with the PDF file will be sent right away. You can save it to your computer, tablet, or phone forever.
+        </p>
+      </details>
+
+      <details class="bg-white rounded-xl p-5 border border-[#E8DFCFC0] shadow-sm cursor-pointer group">
+        <summary class="font-bold text-base sm:text-lg text-espresso flex justify-between items-center select-none">
+          <span>What paper and printer do I need?</span>
+          <span class="text-terracotta text-xl font-bold group-open:rotate-45 transition-transform">+</span>
+        </summary>
+        <p class="text-sm sm:text-base text-bark mt-3 leading-relaxed border-t border-[#F2ECE1] pt-3">
+          Any home printer handles these clean vector lines effortlessly. Standard copy paper (80–90 GSM) is great for pencils and ballpoint pens. For markers or a luxury tactile feel, we suggest 120–160 GSM matte paper.
+        </p>
+      </details>
+
+      <details class="bg-white rounded-xl p-5 border border-[#E8DFCFC0] shadow-sm cursor-pointer group">
+        <summary class="font-bold text-base sm:text-lg text-espresso flex justify-between items-center select-none">
+          <span>Can I print pages more than once?</span>
+          <span class="text-terracotta text-xl font-bold group-open:rotate-45 transition-transform">+</span>
+        </summary>
+        <p class="text-sm sm:text-base text-bark mt-3 leading-relaxed border-t border-[#F2ECE1] pt-3">
+          Yes! You have lifetime personal access. You can print the 30-day journey as many times as you like, or reprint individual favorite coloring plates whenever you want a fresh start.
+        </p>
+      </details>
+
+      <details class="bg-white rounded-xl p-5 border border-[#E8DFCFC0] shadow-sm cursor-pointer group">
+        <summary class="font-bold text-base sm:text-lg text-espresso flex justify-between items-center select-none">
+          <span>Can I use this on my iPad or tablet?</span>
+          <span class="text-terracotta text-xl font-bold group-open:rotate-45 transition-transform">+</span>
+        </summary>
+        <p class="text-sm sm:text-base text-bark mt-3 leading-relaxed border-t border-[#F2ECE1] pt-3">
+          Absolutely. You can import the PDF into apps like GoodNotes, Notability, Procreate, or Apple Books to color and write using your Apple Pencil or stylus.
+        </p>
+      </details>
+
+      <details class="bg-white rounded-xl p-5 border border-[#E8DFCFC0] shadow-sm cursor-pointer group">
+        <summary class="font-bold text-base sm:text-lg text-espresso flex justify-between items-center select-none">
+          <span>What is your refund policy?</span>
+          <span class="text-terracotta text-xl font-bold group-open:rotate-45 transition-transform">+</span>
+        </summary>
+        <p class="text-sm sm:text-base text-bark mt-3 leading-relaxed border-t border-[#F2ECE1] pt-3">
+          We offer an unconditional 30-day money-back guarantee. If you do not feel a sense of calm, creative joy, and daily fulfillment, simply send an email to support@dailyhealthreviewus.com and we will issue a full 100% refund.
+        </p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- 8. BOTTOM BUY CALLOUT -->
+  <!-- ========================================================================= -->
+  <section id="comprar" class="py-14 bg-[#F4EFE7] border-t border-[#DFCFC0]">
+    <div class="max-w-xl mx-auto px-4 text-center space-y-4">
+      <h3 class="serif-title text-3xl sm:text-4xl font-bold text-espresso leading-tight">
+        Ready for Your 30-Day Creative Reset?
+      </h3>
+      <p class="text-sm sm:text-base text-bark">
+        Download the complete 60-page guided workbook now for just $9.90 USD.
+      </p>
+      <a 
+        href="#" 
+        onclick="handleBuyClick(event)"
+        class="inline-block w-full py-4 px-8 bg-[#8C5845] hover:bg-[#784938] text-white font-bold text-base sm:text-lg rounded-xl shadow-xl hover:shadow-2xl transition-all duration-200 tracking-wide uppercase">
+        Get Complete 60-Page Edition • $9.90
+      </a>
+      <p class="text-sm sm:text-base text-bark font-medium">
+        ⚡ Instant PDF Download Link • 30-Day Money-Back Guarantee
+      </p>
+    </div>
+  </section>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER & COMPLIANCE -->
+  <!-- ========================================================================= -->
+  <footer class="py-14 bg-gradient-to-b from-[#FAF7F2] via-[#F4ECE0] to-[#EBE0D0] text-[#4A3B32] px-4 sm:px-6 border-t-2 border-[#D8C7B3] relative">
+    <div class="max-w-4xl mx-auto text-center space-y-6">
+      
+      <!-- Footer Luxury Emblem & Typography -->
+      <div class="flex flex-col items-center justify-center space-y-2.5">
+        <div class="w-12 h-12 rounded-full bg-white border border-[#C5A059]/60 flex items-center justify-center shadow-sm">
+          <svg class="w-7 h-7 text-[#8C5845]" viewBox="0 0 32 32" fill="none">
+            <circle cx="16" cy="16" r="14.5" stroke="#C5A059" stroke-width="1" stroke-dasharray="2 1.5"/>
+            <path d="M16 26V8" stroke="#8C5845" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M16 8C13.5 5 9.5 5.5 8 8C8 11.5 12 13.5 16 13.5" fill="#C5A059" fill-opacity="0.25" stroke="#8C5845" stroke-width="1.1"/>
+            <path d="M16 13C18.5 10 22.5 10.5 24 13C24 16.5 20 18.5 16 18.5" fill="#C5A059" fill-opacity="0.25" stroke="#8C5845" stroke-width="1.1"/>
+            <circle cx="16" cy="6" r="2" fill="#C5A059"/>
+          </svg>
+        </div>
+        <span class="font-serif font-bold tracking-[0.22em] text-lg uppercase text-[#231B15]">
+          Claire Evans Creative Sanctuary
+        </span>
+        <span class="text-sm font-bold text-[#8C5845] tracking-widest uppercase">
+          A Daily Health Review Sanctuary Edition
+        </span>
+      </div>
+      
+      <p class="text-[#4A3B32] max-w-xl mx-auto leading-relaxed text-sm sm:text-base font-medium">
+        30 Days of Creativity and Self-Care™ is a mindful art and reflection workbook created by Claire Evans (@claire.matureskin) and published by Daily Health Review Publishing.
+      </p>
+
+      <!-- Soft Divider Line -->
+      <div class="w-24 h-px bg-[#D6C5B2] mx-auto"></div>
+
+      <!-- Money Back Guarantee -->
+      <div class="bg-white/80 rounded-2xl p-4 sm:p-5 border border-[#E0D5C5] max-w-xl mx-auto text-center space-y-1.5 shadow-sm">
+        <span class="text-xs font-bold uppercase tracking-wider text-terracotta bg-[#F3EDE2] px-3 py-1 rounded-md inline-block">
+          🛡️ 30-Day Happiness Guarantee
+        </span>
+        <p class="text-xs sm:text-sm text-espresso font-medium leading-relaxed">
+          If these mindful art prompts and reflection pages do not bring peace and fulfillment to your days, contact our team at <a href="mailto:support@dailyhealthreviewus.com" class="text-terracotta font-bold underline">support@dailyhealthreviewus.com</a> within 30 days for a prompt 100% refund.
+        </p>
+      </div>
+
+      <p class="text-[#6B5A4D] text-xs sm:text-sm max-w-2xl mx-auto leading-relaxed">
+        <b>Educational & Wellness Disclaimer:</b> This digital workbook is intended purely for recreational coloring, creative leisure, and mindful daily self-care. It does not constitute medical, psychological, or psychiatric therapy, diagnosis, or clinical treatment. Consult a licensed healthcare provider for any health concern.
+      </p>
+
+      <div class="pt-2 text-[#7A6B5D] text-xs sm:text-sm font-semibold tracking-wide">
+        &copy; 2026 Daily Health Review. All rights reserved. For personal home use only.
+      </div>
+    </div>
+  </footer>
+
+  <!-- STICKY MOBILE CTA BAR -->
+  <div id="sticky-cta" class="fixed bottom-0 inset-x-0 bg-white/95 backdrop-blur-md border-t border-[#E0D5C5] p-3.5 px-4 z-40 sm:hidden flex items-center justify-between shadow-2xl transition-transform duration-300 translate-y-full">
+    <div>
+      <span class="text-sm text-bark font-bold block uppercase tracking-wider">60-Page Edition</span>
+      <span class="text-lg font-extrabold text-espresso">$9.90 <span class="text-sm font-semibold text-bark">USD</span></span>
+    </div>
+    <a href="#comprar" class="px-6 py-3 bg-[#8C5845] text-white text-sm font-bold rounded-xl shadow-md">
+      Download Now
+    </a>
+  </div>
+
+  <!-- JAVASCRIPT FOR GALLERY SWAP & INTERACTIONS -->
+  <script>
+    // Configuration: Secure digital checkout gateway URL (Product 16)
+    const CHECKOUT_URL = "https://ko-fi.com/s/96ba770dd8";
+
+    // ------------------------------------------------------------------------
+    // GALLERY CAROUSEL LOGIC WITH PREV/NEXT ARROWS
+    // ------------------------------------------------------------------------
+    const gallerySlides = [
+      {
+        src: "assets/mockup_hero.jpg",
+        alt: "30 Days of Creativity and Self-Care 3D Deluxe Workbook Mockup",
+        badge: "60-Page Guided Master Edition"
+      },
+      {
+        src: "assets/mockup_hardcover.jpg",
+        alt: "Standing Hardcover Presentation Edition",
+        badge: "Daily Screen-Free Creative Sanctuary"
+      },
+      {
+        src: "assets/mockup_pencils.jpg",
+        alt: "Studio Flat Lay with Colored Pencils",
+        badge: "Mindful Coloring & Tactile Relaxation"
+      },
+      {
+        src: "assets/mockup_rose.jpg",
+        alt: "Rose Gold Lifestyle Flat Lay",
+        badge: "Gentle Daily Presence & Self-Love"
+      },
+      {
+        src: "assets/page_1.jpg",
+        alt: "Workbook Title & Sacred Intention Cover",
+        badge: "Print-Ready Single-Sided Sheets"
+      },
+      {
+        src: "assets/page_2.jpg",
+        alt: "Day 1: Mindful Botanical Illustration",
+        badge: "Day 01: Botanical Coloring Plate"
+      },
+      {
+        src: "assets/page_3.jpg",
+        alt: "Day 2: Botanical Still Life with Pears",
+        badge: "Day 02: Mindful Art Plate"
+      },
+      {
+        src: "assets/page_4.jpg",
+        alt: "Day 2: Mindful Reflection & Sketch Journal",
+        badge: "Day 02: Self-Care Journal & Prompt"
+      }
+    ];
+
+    let currentSlideIdx = 0;
+
+    function renderSlide(idx) {
+      if (idx < 0) idx = gallerySlides.length - 1;
+      if (idx >= gallerySlides.length) idx = 0;
+      currentSlideIdx = idx;
+
+      const mainImg = document.getElementById('main-gallery-img');
+      const badge = document.getElementById('gallery-badge');
+      const counter = document.getElementById('gallery-counter');
+      const slide = gallerySlides[currentSlideIdx];
+
+      if (mainImg) {
+        mainImg.style.opacity = '0.3';
+        setTimeout(() => {
+          mainImg.src = slide.src;
+          mainImg.alt = slide.alt;
+          mainImg.style.opacity = '1';
+        }, 120);
+      }
+
+      if (badge) {
+        badge.innerText = slide.badge;
+      }
+      if (counter) {
+        counter.innerText = `${currentSlideIdx + 1} / ${gallerySlides.length}`;
+      }
+
+      // Sync Thumbnails
+      const thumbBtns = document.querySelectorAll('.thumb-btn');
+      thumbBtns.forEach((btn, bIdx) => {
+        if (bIdx === currentSlideIdx) {
+          btn.classList.add('thumbnail-active');
+        } else {
+          btn.classList.remove('thumbnail-active');
+        }
+      });
+    }
+
+    function nextGalleryImage() {
+      renderSlide(currentSlideIdx + 1);
+    }
+
+    function prevGalleryImage() {
+      renderSlide(currentSlideIdx - 1);
+    }
+
+    function goToGallerySlide(idx) {
+      renderSlide(idx);
+    }
+
+    function switchGalleryImage(newSrc, btnElement) {
+      const foundIdx = gallerySlides.findIndex(s => s.src === newSrc);
+      if (foundIdx !== -1) {
+        renderSlide(foundIdx);
+      } else {
+        const mainImg = document.getElementById('main-gallery-img');
+        if (mainImg) mainImg.src = newSrc;
+      }
+    }
+
+    // ------------------------------------------------------------------------
+    // MEDIUM ZOOM ON HOVER (TRACKING MOUSE POSITION)
+    // ------------------------------------------------------------------------
+    document.addEventListener('DOMContentLoaded', () => {
+      const zoomContainer = document.getElementById('gallery-zoom-container');
+      const mainImg = document.getElementById('main-gallery-img');
+
+      if (zoomContainer && mainImg) {
+        zoomContainer.addEventListener('mousemove', (e) => {
+          const rect = zoomContainer.getBoundingClientRect();
+          const x = ((e.clientX - rect.left) / rect.width) * 100;
+          const y = ((e.clientY - rect.top) / rect.height) * 100;
+          mainImg.style.transformOrigin = `${x}% ${y}%`;
+          mainImg.style.transform = 'scale(1.4)';
+        });
+
+        zoomContainer.addEventListener('mouseleave', () => {
+          mainImg.style.transformOrigin = 'center center';
+          mainImg.style.transform = 'scale(1)';
+        });
+      }
+    });
+
+    // ------------------------------------------------------------------------
+    // LEAD MAGNET: REAL 6-PAGE SAMPLE PDF DELIVERY
+    // ------------------------------------------------------------------------
+    function handleSampleSubmit(e) {
+      e.preventDefault();
+      const emailInput = document.getElementById('sample-email');
+      const successDiv = document.getElementById('sample-success');
+      
+      if (emailInput && emailInput.value) {
+        if (successDiv) {
+          successDiv.classList.remove('hidden');
+        }
+        emailInput.value = '';
+        
+        // Instant real PDF download
+        setTimeout(() => {
+          window.open('assets/Creative_Self_Care_3_Day_Sample_Pack.pdf', '_blank');
+        }, 800);
+      }
+    }
+
+    // ------------------------------------------------------------------------
+    // BUY BUTTON CHECKOUT TRIGGER
+    // ------------------------------------------------------------------------
+    function handleBuyClick(e) {
+      e.preventDefault();
+      if (CHECKOUT_URL && CHECKOUT_URL.trim() !== "") {
+        window.location.href = CHECKOUT_URL;
+      } else {
+        window.location.href = "mailto:support@dailyhealthreviewus.com?subject=Order%20Inquiry%20-%2030%20Days%20of%20Creativity%20and%20Self-Care&body=Hello%2C%20I%20would%20like%20to%20order%20the%20$9.90%20Workbook.";
+      }
+    }
+
+    // ------------------------------------------------------------------------
+    // MOBILE STICKY CTA BAR TRIGGER
+    // ------------------------------------------------------------------------
+    window.addEventListener('scroll', () => {
+      const stickyBar = document.getElementById('sticky-cta');
+      if (stickyBar) {
+        if (window.scrollY > 450) {
+          stickyBar.classList.remove('translate-y-full');
+        } else {
+          stickyBar.classList.add('translate-y-full');
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

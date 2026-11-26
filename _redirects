@@ -154,7 +154,12 @@
 /buy/coloring https://ko-fi.com/s/a7f796f83f 302
 
 # Product 16: 30 Days of Creativity and Self-Care (Workbook)
-/creativity https://ko-fi.com/s/96ba770dd8 302
+/creativity /shop/creativity-and-self-care/ 301
+/creativity/ /shop/creativity-and-self-care/ 301
+/self-care /shop/creativity-and-self-care/ 301
+/self-care/ /shop/creativity-and-self-care/ 301
+/shop/creativity /shop/creativity-and-self-care/ 301
 /go/creativity https://ko-fi.com/s/96ba770dd8 302
-/self-care https://ko-fi.com/s/96ba770dd8 302
+/buy/creativity https://ko-fi.com/s/96ba770dd8 302
 /go/self-care https://ko-fi.com/s/96ba770dd8 302
+/buy/self-care https://ko-fi.com/s/96ba770dd8 302
