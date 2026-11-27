@@ -99,7 +99,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span> LIVE 8080
             </span>
           </h1>
-          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Catálogo: <strong class="text-emerald-400 font-bold">41 Produtos • 41 Reviews Magazine • 3 Redes (ClickBank • Digistore24 • BuyGoods)</strong></p>
+          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Catálogo: <strong class="text-emerald-400 font-bold">43 Produtos • 43 Reviews Magazine • 3 Redes (ClickBank • Digistore24 • BuyGoods)</strong></p>
         </div>
       </div>
       
@@ -156,9 +156,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-shield-halved"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">41 Produtos Ativos</div>
+        <div class="text-3xl font-black text-white">43 Produtos Ativos</div>
         <div class="text-xs text-cyan-200/80 mt-2 flex items-center gap-1">
-          <i class="fa-solid fa-check-double"></i> 41 Reviews Magazine 100% Blindados + Showcases + Advertorials
+          <i class="fa-solid fa-check-double"></i> 43 Reviews Magazine 100% Blindados + Showcases + Advertorials
         </div>
       </div>
 
@@ -259,7 +259,29 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <!-- 7 VIP Grid Cards -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         
-                                <!-- VIP Card 0.3: SynoGut (BuyGoods - Saúde Digestiva & Intestino) -->
+        <!-- VIP Card 0.4: VigorSana (Digistore24 / SanaSocials - Vitalidade & Óxido Nítrico) -->
+        <div class="bg-slate-900/90 border border-blue-500/50 rounded-xl p-4 hover:border-blue-400 transition shadow relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-blue-600 text-white text-[9px] font-black px-2 py-0.5 rounded-bl">REFUND RATE 3.4% • DIGISTORE24</div>
+          <div class="flex items-start justify-between mb-2 mt-1">
+            <span class="text-xs font-black text-white flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-blue-400 animate-pulse"></span> VigorSana™ (Digistore24)
+            </span>
+            <span class="bg-blue-500/20 text-blue-300 text-[10px] font-bold px-2 py-0.5 rounded border border-blue-500/40">BRAND BIDDING LIBERADO</span>
+          </div>
+          <div class="text-emerald-400 font-extrabold text-xs mb-1">
+            60% Revshare • Payout Médio ~$120.00 / venda
+          </div>
+          <div class="text-[10px] text-blue-300/80 mb-3 font-mono">
+            ID: eusimar72 • 2º Mais Vendido SanaSocials • Apenas 3.4% Reembolso
+          </div>
+          <div class="grid grid-cols-3 gap-1.5 text-[10px] font-mono">
+            <a href="https://dailyhealthreviewus.com/vigorsana-review/" target="_blank" class="bg-blue-950/80 hover:bg-blue-900 text-blue-300 border border-blue-500/30 text-center py-1.5 rounded transition font-bold">Review Oficial</a>
+            <a href="https://dailyhealthreviewus.com/go/vigorsana" target="_blank" class="bg-amber-950/80 hover:bg-amber-900 text-amber-300 border border-amber-500/30 text-center py-1.5 rounded transition font-bold">/go/vigorsana</a>
+            <button onclick="copyLink('https://dailyhealthreviewus.com/vigorsana-review/', this)" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-center py-1.5 rounded transition">Copiar URL</button>
+          </div>
+        </div>
+
+        <!-- VIP Card 0.3: SynoGut (BuyGoods - Saúde Digestiva & Intestino) -->
         <div class="bg-slate-900/90 border border-purple-500/50 rounded-xl p-4 hover:border-purple-400 transition shadow relative overflow-hidden">
           <div class="absolute top-0 right-0 bg-purple-600 text-white text-[9px] font-black px-2 py-0.5 rounded-bl">SEM RESTRIÇÃO DE SEARCH</div>
           <div class="flex items-start justify-between mb-2 mt-1">
@@ -2057,6 +2079,41 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                     /go/synogut <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
                   </a>
                   <button onclick="copyLink('https://dailyhealthreviewus.com/go/synogut', this)" class="text-slate-500 hover:text-amber-300 text-xs px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 transition" title="Copiar link limpo de divulgação">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-bolt text-amber-400"></i> MAGAZINE OK</span></td>
+            </tr>
+
+            <!-- 43. VigorSana -->
+            <tr class="hover:bg-slate-800/50 transition product-row bg-blue-950/20" data-platform="digistore24" data-whitelist="true">
+              <td class="p-3.5 text-slate-500 font-mono">43</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-blue-400 animate-pulse"></span> VigorSana™ <span class="bg-blue-500/20 text-blue-300 border border-blue-500/40 text-[9px] font-bold px-1.5 py-0.5 rounded ml-1">SANASOCIALS NOVO</span>
+              </td>
+              <td class="p-3.5"><span class="badge-bg text-[10px] font-bold px-2 py-0.5 rounded">Digistore24</span></td>
+              <td class="p-3.5 text-slate-300">Vitalidade Masculina, Óxido Nítrico &amp; Endotélio</td>
+              <td class="p-3.5 text-emerald-400 font-bold">60% Revshare (Refund 3.4% • AOV ~$120)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/vigorsana-review/" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /vigorsana-review <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <span class="text-slate-500 text-[10px] font-mono">Review Magazine</span>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/vigorsana-review/" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /vigorsana-review <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <div class="flex items-center gap-1.5 font-mono">
+                  <a href="https://dailyhealthreviewus.com/go/vigorsana" target="_blank" rel="noopener" class="text-amber-400 hover:text-amber-300 font-bold hover:underline flex items-center gap-1" title="Testar Redirecionamento Oficial">
+                    /go/vigorsana <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                  </a>
+                  <button onclick="copyLink('https://dailyhealthreviewus.com/go/vigorsana', this)" class="text-slate-500 hover:text-amber-300 text-xs px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 transition" title="Copiar link limpo de divulgação">
                     <i class="fa-regular fa-copy"></i>
                   </button>
                 </div>
