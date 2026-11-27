@@ -1,18 +1,55 @@
 ===========================================================================
 RELATÓRIO PERIÓDICO DE INTEGRIDADE DE LINKS & COMISSÕES
-Data e Hora: 2026-11-27 12:05:15
+Data e Hora: 2026-11-27 12:32:58
 ===========================================================================
 Total de Produtos Auditados : 42
 Showcases 100% Online       : 42 / 42
 Editoriais 100% Online      : 42 / 42
-Story Advertorials (Arma 5) : 41 / 42
+Story Advertorials (Arma 5) : 4 / 42
 Rotas 302 Ativas            : 42 / 42
 Links com Rastreamento Ativo: 42 / 42
-Total de Alertas / Pendências: 1
+Total de Alertas / Pendências: 38
 ===========================================================================
 
 PENDÊNCIAS DETECTADAS:
  [!] Story Advertorial ausente: VigorSana™ (None)
+ [!] Story Advertorial ausente: Nagano Lean Body Tonic\u2122 (nagano-japanese-tonic-secret)
+ [!] Story Advertorial ausente: Advanced Joint Support\u2122 (advanced-joint-cucumbers-secret)
+ [!] Story Advertorial ausente: ProDentim\u00ae Oral Health (prodentim-purple-mineral-secret)
+ [!] Story Advertorial ausente: CoreVital Burn\u2122 (corevital-berberine-burn-secret)
+ [!] Story Advertorial ausente: KetoSana\u00ae US Liquid Drops (ketosana-metabolic-drops-secret)
+ [!] Story Advertorial ausente: Cardio Slim Tea\u2122 (cardioslim-tea-cardio-secret)
+ [!] Story Advertorial ausente: Sugar Defender\u00ae (sugar-defender-glucose-secret)
+ [!] Story Advertorial ausente: CleanseSana\u00ae Colon Cleanse (cleansesana-colon-waste-secret)
+ [!] Story Advertorial ausente: Advanced Amino Formula\u2122 (advanced-amino-cellular-secret)
+ [!] Story Advertorial ausente: Advanced Collagen PLUS\u2122 (advanced-collagen-firmness-secret)
+ [!] Story Advertorial ausente: Advanced Memory Formula\u2122 (advanced-memory-brain-secret)
+ [!] Story Advertorial ausente: CirCO2\u00ae Nitric Oxide (circo2-nitric-oxide-secret)
+ [!] Story Advertorial ausente: Audifort\u2122 Ear Support (audifort-hearing-clarity-secret)
+ [!] Story Advertorial ausente: FemiCore\u2122 Pelvic Health (femicore-pelvic-floor-secret)
+ [!] Story Advertorial ausente: Neotonics\u00ae Gut & Skin (neotonics-gut-skin-secret)
+ [!] Story Advertorial ausente: LymphTonic\u2122 Drainage (lymphtonic-drainage-secret)
+ [!] Story Advertorial ausente: VisiFlora\u00ae Eye & Vision (visiflora-eye-retina-secret)
+ [!] Story Advertorial ausente: NeuroVera\u2122 Nerve Health (neurovera-nerve-calm-secret)
+ [!] Story Advertorial ausente: PhytoMem\u2122 Cognition (phytomem-memory-recall-secret)
+ [!] Story Advertorial ausente: Joint Eternal\u2122 (joint-eternal-mobility-secret)
+ [!] Story Advertorial ausente: ProstaVive\u2122 Men's Health (prostavive-prostate-flow-secret)
+ [!] Story Advertorial ausente: All Day Slimming Tea\u00ae (alldayslimming-tea-detox-secret)
+ [!] Story Advertorial ausente: SpartaMax\u2122 Male Vitality (spartamax-male-vitality-secret)
+ [!] Story Advertorial ausente: Fimavyn\u2122 Metabolic Drops (fimavyn-metabolic-drops-secret)
+ [!] Story Advertorial ausente: GlucoTrust\u2122 Glucose Support (glucotrust-sleep-glucose-secret)
+ [!] Story Advertorial ausente: Java Burn\u2122 Coffee Booster (javaburn-morning-coffee-secret)
+ [!] Story Advertorial ausente: Kerassentials® Nail & Skin Oil (kerassentials-nail-clear-secret)
+ [!] Story Advertorial ausente: NanoDefense Pro™ Nanotech Drops (nanodefense-nanotech-drops-secret)
+ [!] Story Advertorial ausente: Synaptigen™ Cognitive Clarity (synaptigen-synapse-clarity-secret)
+ [!] Story Advertorial ausente: Metanail Complex™ 20-in-1 (metanail-20in1-complex-secret)
+ [!] Story Advertorial ausente: BioDynamix Joint Genesis™ (jointgenesis-synovial-fluid-secret)
+ [!] Story Advertorial ausente: Synevra Lift & Lock System (synevra-lift-and-lock-secret)
+ [!] Story Advertorial ausente: Nitric Boost Ultra™ (nitricboost-male-stamina-secret)
+ [!] Story Advertorial ausente: Liv Pure™ (livpure-liver-purification-secret)
+ [!] Story Advertorial ausente: DentaBiome™ (dentabiome-postbiotic-mouth-secret)
+ [!] Story Advertorial ausente: Yu Sleep™ Deep Rest (yusleep-deep-rest-secret)
+ [!] Story Advertorial ausente: PrimeBiome™ Gut & Skin (primebiome-gut-dermal-secret)
 
 DETALHAMENTO DOS 36 PRODUTOS:
 #   | Produto                   | Showcase | Editorial | Afiliado | Rota
