@@ -2,6 +2,7 @@
 // Supports unlimited redirects with zero 100-rule limit bottlenecks
 
 const REDIRECTS_301 = {
+  "/nervogen-review": "/nervogen-pro-review/",
   "/nervefresh-review": "/nerve-fresh-review/",
   "/authors/marcus-vance": "/authors/marcus-vance-md/",
   "/01_Pagina_Inicial_Portal_Home.html": "/",
@@ -148,6 +149,10 @@ const REDIRECTS_301 = {
 };
 
 const REDIRECTS_302 = {
+  "/go/nervogen": "https://thenervogen.com/text.php?aff_id=52706&subid=dhr",
+  "/go/nervogen-pro": "https://thenervogen.com/text.php?aff_id=52706&subid=dhr",
+  "/go/nervogen-tsl": "https://thenervogen.com/text.php?aff_id=52706&subid=dhr",
+  "/go/nervogen-vsl": "https://thenervogen.com/video.php?aff_id=52706&subid=dhr",
   "/go/zencortex": "https://zencortex24.com/b/order-now.php?aff_id=189046&subid=dhr",
   "/go/zen-cortex": "https://zencortex24.com/b/order-now.php?aff_id=189046&subid=dhr",
   "/go/zencortex-tsl": "https://zencortex24.com/b/order-now.php?aff_id=189046&subid=dhr",
