@@ -654,11 +654,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-bolt text-amber-400"></i> 5 ARMAS OK</span></td>
             </tr>
 
-            <!-- 4. JointEternal -->
+            <!-- 4. Joint Eternal -->
             <tr class="hover:bg-slate-800/50 transition product-row bg-emerald-950/20" data-platform="buygoods" data-whitelist="true">
               <td class="p-3.5 text-slate-500 font-mono">04</td>
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span> JointEternal™ <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[9px] font-bold px-1.5 py-0.5 rounded ml-1">BUYGOODS 75% REVSHARE</span>
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span> Joint Eternal™ <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[9px] font-bold px-1.5 py-0.5 rounded ml-1">BUYGOODS 75% REVSHARE</span>
               </td>
               <td class="p-3.5"><span class="badge-bg text-[10px] font-bold px-2 py-0.5 rounded">BuyGoods</span></td>
               <td class="p-3.5 text-slate-300">Estabilidade Articular &amp; Cartilagem (Glucosamina, Chondroitina, MSM)</td>
