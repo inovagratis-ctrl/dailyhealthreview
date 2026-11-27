@@ -148,6 +148,9 @@ const REDIRECTS_301 = {
 };
 
 const REDIRECTS_302 = {
+  "/go/quietum-plus": "https://826d7czojafjbsci4gomri6d1i.hop.clickbank.net/?cbpage=tsl",
+  "/go/quietumplus": "https://826d7czojafjbsci4gomri6d1i.hop.clickbank.net/?cbpage=tsl",
+  "/go/quietum": "https://826d7czojafjbsci4gomri6d1i.hop.clickbank.net/?cbpage=tsl",
   "/go/nerve-fresh": "https://secure.nervefresh.com/index-dtc-bg?aff_id=21014&subid=dhr",
   "/go/nervefresh": "https://secure.nervefresh.com/index-dtc-bg?aff_id=21014&subid=dhr",
   "/go/nerve-fresh-vsl": "https://secure.nervefresh.com/index-vsl-bg?aff_id=21014&subid=dhr",
