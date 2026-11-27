@@ -148,6 +148,10 @@ const REDIRECTS_301 = {
 };
 
 const REDIRECTS_302 = {
+  "/go/zencortex": "https://zencortex24.com/b/order-now.php?aff_id=189046&subid=dhr",
+  "/go/zen-cortex": "https://zencortex24.com/b/order-now.php?aff_id=189046&subid=dhr",
+  "/go/zencortex-tsl": "https://zencortex24.com/b/order-now.php?aff_id=189046&subid=dhr",
+  "/go/zencortex-vsl": "https://zencortex24.com/b/101.php?aff_id=189046&subid=dhr",
   "/go/quietum-plus": "https://826d7czojafjbsci4gomri6d1i.hop.clickbank.net/?cbpage=tsl",
   "/go/quietumplus": "https://826d7czojafjbsci4gomri6d1i.hop.clickbank.net/?cbpage=tsl",
   "/go/quietum": "https://826d7czojafjbsci4gomri6d1i.hop.clickbank.net/?cbpage=tsl",
