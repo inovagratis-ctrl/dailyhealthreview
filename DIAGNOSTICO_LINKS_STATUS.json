@@ -1,13 +1,25 @@
 {
-  "timestamp": "2026-11-27 06:02:50",
-  "total_products": 40,
-  "showcases_ok": 40,
-  "editorials_ok": 40,
-  "advertorials_ok": 40,
-  "redirects_ok": 40,
-  "affiliate_tags_ok": 40,
+  "timestamp": "2026-11-27 06:30:32",
+  "total_products": 41,
+  "showcases_ok": 41,
+  "editorials_ok": 41,
+  "advertorials_ok": 41,
+  "redirects_ok": 41,
+  "affiliate_tags_ok": 41,
   "issues": [],
   "products": [
+    {
+      "id": "synogut",
+      "title": "SynoGut™",
+      "price": "$49/bottle",
+      "showcase_ok": true,
+      "editorial_ok": true,
+      "advertorial_ok": true,
+      "secret_slug": null,
+      "go_route": "/go/synogut",
+      "dest_url": "https://thesynogut.com/video.php?aff_id=276314&subid=dhr",
+      "aff_ok": true
+    },
     {
       "id": "nervecalm",
       "title": "NerveCalm™",

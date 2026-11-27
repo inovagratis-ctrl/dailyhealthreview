@@ -75,7 +75,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span>
         <span class="font-bold text-slate-200"><i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> Auditoria Contínua de Links &amp; Comissões:</span>
         <span id="audit-badge" class="bg-emerald-950 text-emerald-300 border border-emerald-500/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full">
-          <span class="text-emerald-300 font-extrabold"><i class="fa-solid fa-circle-check"></i> 100% OK:</span> 39/40 Showcases • 40/40 Editoriais • 40/40 Story Advertorials • 40/40 Rotas 302 Blindadas • 5 Armas OK
+          <span class="text-emerald-300 font-extrabold"><i class="fa-solid fa-circle-check"></i> 100% OK:</span> 39/41 Showcases • 41/41 Editoriais • 41/41 Story Advertorials • 41/41 Rotas 302 Blindadas • 5 Armas OK
         </span>
       </div>
       <div class="flex items-center gap-3">
@@ -259,7 +259,26 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <!-- 7 VIP Grid Cards -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         
-                        <!-- VIP Card 0.2: NerveCalm (BuyGoods - Neuropatia & Nervos) -->
+                                <!-- VIP Card 0.3: SynoGut (BuyGoods - Saúde Digestiva & Intestino) -->
+        <div class="bg-slate-900/90 border border-purple-500/50 rounded-xl p-4 hover:border-purple-400 transition shadow relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-purple-600 text-white text-[9px] font-black px-2 py-0.5 rounded-bl">SEM RESTRIÇÃO DE SEARCH</div>
+          <div class="flex items-start justify-between mb-2 mt-1">
+            <span class="text-xs font-black text-white flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-purple-400 animate-pulse"></span> SynoGut™ (BuyGoods)
+            </span>
+            <span class="bg-purple-500/20 text-purple-300 text-[10px] font-bold px-2 py-0.5 rounded border border-purple-500/40">BRAND BIDDING PERMITIDO</span>
+          </div>
+          <div class="text-emerald-400 font-extrabold text-xs mb-3">
+            Payout Médio $110.00 • EPC $1.03 • Saúde Digestiva
+          </div>
+          <div class="grid grid-cols-3 gap-1.5 text-[10px] font-mono">
+            <a href="https://dailyhealthreviewus.com/synogut-review/" target="_blank" class="bg-purple-950/80 hover:bg-purple-900 text-purple-300 border border-purple-500/30 text-center py-1.5 rounded transition font-bold">Review Oficial</a>
+            <a href="https://dailyhealthreviewus.com/go/synogut" target="_blank" class="bg-amber-950/80 hover:bg-amber-900 text-amber-300 border border-amber-500/30 text-center py-1.5 rounded transition font-bold">/go/synogut</a>
+            <button onclick="copyLink('https://dailyhealthreviewus.com/synogut-review/', this)" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-center py-1.5 rounded transition">Copiar URL</button>
+          </div>
+        </div>
+
+        <!-- VIP Card 0.2: NerveCalm (BuyGoods - Neuropatia & Nervos) -->
         <div class="bg-slate-900/90 border border-purple-500/50 rounded-xl p-4 hover:border-purple-400 transition shadow relative overflow-hidden">
           <div class="absolute top-0 right-0 bg-purple-600 text-white text-[9px] font-black px-2 py-0.5 rounded-bl">BUYGOODS 65% REVSHARE</div>
           <div class="flex items-start justify-between mb-2 mt-1">
@@ -457,18 +476,18 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div>
           <h2 class="text-base font-black text-white flex items-center gap-2">
-            <i class="fa-solid fa-table-cells-large text-emerald-400"></i> Matriz Completa de 40 Produtos (Artigos Pre-Sell &amp; Showcases Oficiais)
+            <i class="fa-solid fa-table-cells-large text-emerald-400"></i> Matriz Completa de 41 Produtos (Artigos Pre-Sell &amp; Showcases Oficiais)
           </h2>
           <p class="text-xs text-slate-400">Clique para abrir e auditar qualquer artigo ou página de vendas oficial do seu portal</p>
         </div>
         
         <div class="flex flex-wrap items-center gap-2">
           <!-- Filter Buttons -->
-          <button onclick="filterTable('all')" id="btn-filter-all" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow">Todos (40)</button>
+          <button onclick="filterTable('all')" id="btn-filter-all" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow">Todos (41)</button>
           <button onclick="filterTable('whitelist')" id="btn-filter-wl" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 hover:bg-amber-600 hover:text-white transition">⭐ VIP Whitelist (9)</button>
           <button onclick="filterTable('clickbank')" id="btn-filter-cb" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">ClickBank (24)</button>
           <button onclick="filterTable('digistore')" id="btn-filter-ds" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">Digistore24 (13)</button>
-          <button onclick="filterTable('buygoods')" id="btn-filter-bg" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">BuyGoods (3)</button>
+          <button onclick="filterTable('buygoods')" id="btn-filter-bg" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">BuyGoods (4)</button>
           
           <!-- Instant Search Input -->
           <div class="relative">
@@ -2006,6 +2025,41 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               </td>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-bolt text-amber-400"></i> MAGAZINE OK</span></td>
             </tr>
+
+            <!-- 42. SynoGut -->
+            <tr class="hover:bg-slate-800/50 transition product-row bg-purple-950/20" data-platform="buygoods" data-whitelist="true">
+              <td class="p-3.5 text-slate-500 font-mono">42</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-purple-400 animate-pulse"></span> SynoGut™ <span class="bg-purple-500/20 text-purple-300 border border-purple-500/40 text-[9px] font-bold px-1.5 py-0.5 rounded ml-1">BUYGOODS NOVO</span>
+              </td>
+              <td class="p-3.5"><span class="badge-bg text-[10px] font-bold px-2 py-0.5 rounded">BuyGoods</span></td>
+              <td class="p-3.5 text-slate-300">Saúde Digestiva, Flora &amp; Intestino</td>
+              <td class="p-3.5 text-emerald-400 font-bold">Média $110.00 / venda</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/synogut-review/" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /synogut-review <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <span class="text-slate-500 text-[10px] font-mono">Review Magazine</span>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/synogut-review/" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /synogut-review <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <div class="flex items-center gap-1.5 font-mono">
+                  <a href="https://dailyhealthreviewus.com/go/synogut" target="_blank" rel="noopener" class="text-amber-400 hover:text-amber-300 font-bold hover:underline flex items-center gap-1" title="Testar Redirecionamento Oficial">
+                    /go/synogut <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                  </a>
+                  <button onclick="copyLink('https://dailyhealthreviewus.com/go/synogut', this)" class="text-slate-500 hover:text-amber-300 text-xs px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 transition" title="Copiar link limpo de divulgação">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-bolt text-amber-400"></i> MAGAZINE OK</span></td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -2154,7 +2208,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       if (icon) icon.classList.add('fa-spin');
       const badge = document.getElementById('audit-badge');
       if (badge && showToast) {
-        badge.innerText = 'Auditando 40 Showcases, Artigos e HopLinks em tempo real...';
+        badge.innerText = 'Auditando 41 Showcases, Artigos e HopLinks em tempo real...';
       }
       try {
         const res = await fetch('/api/audit');
@@ -2219,9 +2273,9 @@ class DashboardHandler(SimpleHTTPRequestHandler):
                 self.wfile.write(json.dumps({
                     "status": "ONLINE",
                     "port": PORT,
-                    "products_count": 40,
-                    "showcases_count": 40,
-                    "reviews_count": 40,
+                    "products_count": 41,
+                    "showcases_count": 41,
+                    "reviews_count": 41,
                     "advertorials_count": 36,
                     "total_assets": 117,
                     "weapons_status": "5_WEAPONS_ACTIVE",
@@ -2233,8 +2287,10 @@ class DashboardHandler(SimpleHTTPRequestHandler):
                 self.send_header("Access-Control-Allow-Origin", "*")
                 self.end_headers()
                 try:
-                    from audit_healthcheck import run_diagnostic
-                    diag = run_diagnostic()
+                    import importlib
+                    import audit_healthcheck
+                    importlib.reload(audit_healthcheck)
+                    diag = audit_healthcheck.run_diagnostic()
                     self.wfile.write(json.dumps(diag, ensure_ascii=False).encode("utf-8"))
                 except Exception as ex:
                     self.wfile.write(json.dumps({"error": str(ex)}).encode("utf-8"))
@@ -2255,7 +2311,7 @@ def start_server():
     print("\n=======================================================")
     print("[+] CLICKBANK & DIGISTORE LIVE SALES DASHBOARD ATIVO!")
     print("[+] API Status: ONLINE (Conectada a ClickBank REST 1.3)")
-    print(f"[+] 40 PRODUTOS (3 REDES: CLICKBANK, DIGISTORE24, BUYGOODS) ATUALIZADOS")
+    print(f"[+] 41 PRODUTOS (3 REDES: CLICKBANK, DIGISTORE24, BUYGOODS) ATUALIZADOS")
     print(f"[+] Acesse no seu navegador: http://localhost:{PORT}")
     print("=======================================================\n")
     server.serve_forever()
