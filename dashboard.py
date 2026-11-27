@@ -655,40 +655,37 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             </tr>
 
             <!-- 4. JointEternal -->
-            <tr class="hover:bg-slate-800/50 transition product-row" data-platform="digistore">
+            <tr class="hover:bg-slate-800/50 transition product-row bg-emerald-950/20" data-platform="buygoods" data-whitelist="true">
               <td class="p-3.5 text-slate-500 font-mono">04</td>
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
-                <span class="w-2.5 h-2.5 rounded-full bg-teal-400"></span> JointEternal™ (Cartilage Matrix)
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span> JointEternal™ <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[9px] font-bold px-1.5 py-0.5 rounded ml-1">BUYGOODS 75% REVSHARE</span>
               </td>
-              <td class="p-3.5"><span class="badge-ds text-[10px] font-bold px-2 py-0.5 rounded">Digistore24</span></td>
-              <td class="p-3.5 text-slate-300">Estabilidade Articular &amp; Cartilagem (1,500mg Glucosamina)</td>
-              <td class="p-3.5 text-emerald-400 font-bold">75% (AOV $250+, Até $175+/venda)</td>
+              <td class="p-3.5"><span class="badge-bg text-[10px] font-bold px-2 py-0.5 rounded">BuyGoods</span></td>
+              <td class="p-3.5 text-slate-300">Estabilidade Articular &amp; Cartilagem (Glucosamina, Chondroitina, MSM)</td>
+              <td class="p-3.5 text-emerald-400 font-bold">75% FE / 75% BE Revshare (AOV ~$180)</td>
               <td class="p-3.5">
-                <a href="https://dailyhealthreviewus.com/joint-eternal-mobility-report" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono">
-                  /joint-eternal-report <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                <a href="https://dailyhealthreviewus.com/joint-eternal-review/" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /joint-eternal-review <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
                 </a>
               </td>
-                            <td class="p-3.5">
-                <a href="https://dailyhealthreviewus.com/joint-eternal-mobility-secret" target="_blank" class="text-rose-400 hover:text-rose-300 hover:underline flex items-center gap-1 font-mono font-bold">
-                  /joint-eternal-secret <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
-                </a>
+              <td class="p-3.5">
+                <span class="text-slate-500 text-[10px] font-mono">Review Magazine</span>
               </td>
-<td class="p-3.5">
+              <td class="p-3.5">
                 <a href="https://dailyhealthreviewus.com/showcase/joint-eternal" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
                   /showcase/joint-eternal <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
                 </a>
               </td>
               <td class="p-3.5">
-                <div class="flex items-center gap-1.5 font-mono">
-                  <a href="https://dailyhealthreviewus.com/go/jointeternal" target="_blank" rel="noopener" class="text-amber-400 hover:text-amber-300 font-bold hover:underline flex items-center gap-1" title="Testar Redirecionamento Oficial">
-                    /go/jointeternal <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                <div class="flex items-center gap-2">
+                  <a href="https://dailyhealthreviewus.com/go/joint-eternal" target="_blank" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 font-mono text-[11px] font-bold bg-emerald-950/60 border border-emerald-800/80 px-2 py-0.5 rounded">
+                    /go/joint-eternal <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
                   </a>
-                  <button onclick="copyLink('https://dailyhealthreviewus.com/go/jointeternal', this)" class="text-slate-500 hover:text-amber-300 text-xs px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 transition" title="Copiar link limpo de divulgação">
+                  <button onclick="copyLink('https://dailyhealthreviewus.com/go/joint-eternal', this)" class="text-slate-500 hover:text-slate-300 transition text-[11px]">
                     <i class="fa-regular fa-copy"></i>
                   </button>
                 </div>
               </td>
-              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-bolt text-amber-400"></i> 5 ARMAS OK</span></td>
             </tr>
 
             <!-- 5. Advanced Joint Support -->
