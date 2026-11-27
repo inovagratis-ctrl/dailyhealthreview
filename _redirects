@@ -127,7 +127,18 @@
 /synaptigen-cognitive-clarity-report /synaptigen-memory-formula-report/ 301
 /metanail-complex-audit-report /metanail-complex-nail-fungus-report/ 301
 /nitric-boost-ultra-vitality-report /nitric-boost-ultra-erection-formula-report/ 301
-/editorial-standards /about/ 301
+/editorial-standards /editorial-standards/ 301
+/editorial-standards.html /editorial-standards/ 301
+/editorial-policy /editorial-standards/ 301
+/editorial-policy/ /editorial-standards/ 301
+/editorial-policy.html /editorial-standards/ 301
+/editorial-policy/* /editorial-standards/ 301
+/authors /authors/ 301
+/author /authors/ 301
+/author/ /authors/ 301
+/author/* /authors/ 301
+/authors/sarah-lin /authors/sarah-lin/ 301
+/authors/marcus-vance-md /authors/marcus-vance-md/ 301
 /claire/teeth-reset /claire/oral-microbiome-teeth-reset/ 301
 
 # Legal Pages Legacy Redirects (301) directly to Canonical Trailing Slash
@@ -213,6 +224,8 @@
 
 # Canonical 301 Redirects from Old Folders to Master Review Slugs
 /staging/corevital-burn /corevital-burn-review/ 301
+/staging/corevital-burn/ /corevital-burn-review/ 301
+/staging/corevital-burn/* /corevital-burn-review/ 301
 /ketosana-metabolic-report /ketosana-review/ 301
 /sugar-defender-guide /sugar-defender-review/ 301
 /prodentim-report /prodentim-review/ 301
