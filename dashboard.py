@@ -99,7 +99,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span> LIVE 8080
             </span>
           </h1>
-          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Catálogo: <strong class="text-emerald-400 font-bold">39 Produtos • 39 Reviews Magazine • 3 Redes (ClickBank • Digistore24 • BuyGoods)</strong></p>
+          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Catálogo: <strong class="text-emerald-400 font-bold">41 Produtos • 41 Reviews Magazine • 3 Redes (ClickBank • Digistore24 • BuyGoods)</strong></p>
         </div>
       </div>
       
@@ -156,9 +156,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-shield-halved"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">39 Produtos Ativos</div>
+        <div class="text-3xl font-black text-white">41 Produtos Ativos</div>
         <div class="text-xs text-cyan-200/80 mt-2 flex items-center gap-1">
-          <i class="fa-solid fa-check-double"></i> 39 Reviews Magazine 100% Blindados + Showcases + Advertorials
+          <i class="fa-solid fa-check-double"></i> 41 Reviews Magazine 100% Blindados + Showcases + Advertorials
         </div>
       </div>
 
@@ -268,8 +268,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             </span>
             <span class="bg-purple-500/20 text-purple-300 text-[10px] font-bold px-2 py-0.5 rounded border border-purple-500/40">BRAND BIDDING PERMITIDO</span>
           </div>
-          <div class="text-emerald-400 font-extrabold text-xs mb-3">
-            Payout Médio $110.00 • EPC $1.03 • Saúde Digestiva
+          <div class="text-emerald-400 font-extrabold text-xs mb-1">
+            65% Frontend • 60% Backend Revshare (Payout ~$110.00)
+          </div>
+          <div class="text-[10px] text-purple-300/80 mb-3 font-mono">
+            ID: 182914 • VSL/TSL Ativos • EPC $1.03 • Tier-1
           </div>
           <div class="grid grid-cols-3 gap-1.5 text-[10px] font-mono">
             <a href="https://dailyhealthreviewus.com/synogut-review/" target="_blank" class="bg-purple-950/80 hover:bg-purple-900 text-purple-300 border border-purple-500/30 text-center py-1.5 rounded transition font-bold">Review Oficial</a>
@@ -2034,7 +2037,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               </td>
               <td class="p-3.5"><span class="badge-bg text-[10px] font-bold px-2 py-0.5 rounded">BuyGoods</span></td>
               <td class="p-3.5 text-slate-300">Saúde Digestiva, Flora &amp; Intestino</td>
-              <td class="p-3.5 text-emerald-400 font-bold">Média $110.00 / venda</td>
+              <td class="p-3.5 text-emerald-400 font-bold">65% Frontend / 60% Backend (~$110)</td>
               <td class="p-3.5">
                 <a href="https://dailyhealthreviewus.com/synogut-review/" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono font-bold">
                   /synogut-review <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>

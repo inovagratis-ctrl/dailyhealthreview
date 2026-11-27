@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-11-27 06:30:32",
+  "timestamp": "2026-11-27 06:38:42",
   "total_products": 41,
   "showcases_ok": 41,
   "editorials_ok": 41,
@@ -17,7 +17,7 @@
       "advertorial_ok": true,
       "secret_slug": null,
       "go_route": "/go/synogut",
-      "dest_url": "https://thesynogut.com/video.php?aff_id=276314&subid=dhr",
+      "dest_url": "https://thesynogut.com/video.php?aff_id=182914&subid=dhr",
       "aff_ok": true
     },
     {
