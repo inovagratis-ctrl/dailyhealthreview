@@ -647,10 +647,10 @@
             </div>
 
             <div class="mt-4 space-y-2">
-              <a href="/showcase/corevital" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-4 rounded-xl shadow transition">
+              <a href="/go/corevital" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-4 rounded-xl shadow transition">
                 Check Official Offer &rarr;
               </a>
-              <a href="/showcase/corevital" target="_blank" rel="noopener" class="block w-full text-center bg-slate-50 hover:bg-slate-100 text-slate-600 font-bold text-[11px] py-1.5 rounded-lg border border-slate-200 transition">
+              <a href="/staging/corevital-burn" target="_blank" rel="noopener" class="block w-full text-center bg-slate-50 hover:bg-slate-100 text-slate-600 font-bold text-[11px] py-1.5 rounded-lg border border-slate-200 transition">
                 Read Formulation Audit
               </a>
             </div>
@@ -1319,10 +1319,10 @@
             </div>
 
             <div class="space-y-2">
-              <a href="/showcase/corevital" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-3 rounded-xl shadow-sm transition transform hover:-translate-y-0.5">
+              <a href="/go/corevital" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-3 rounded-xl shadow-sm transition transform hover:-translate-y-0.5">
                 Check Official Offer &rarr;
               </a>
-              <a href="/showcase/corevital" target="_blank" rel="noopener" class="block w-full text-center bg-slate-50 hover:bg-slate-100 text-slate-600 font-bold text-[11px] py-1.5 rounded-lg border border-slate-200 transition">
+              <a href="/staging/corevital-burn" target="_blank" rel="noopener" class="block w-full text-center bg-slate-50 hover:bg-slate-100 text-slate-600 font-bold text-[11px] py-1.5 rounded-lg border border-slate-200 transition">
                 Read Formulation Audit
               </a>
             </div>
@@ -3424,8 +3424,8 @@
             "originalPrice": "$69",
             "guarantee": "60-Day Guarantee",
             "desc": "Natural blend formulated with Psyllium, Bentonite Clay, Flaxseed, and Probiotics to soothe digestive lining and support regular bowel motility.",
-            "showcase": "/synogut-review",
-            "review": "/synogut-review",
+            "showcase": "/go/synogut",
+            "review": "/synogut-review/",
             "go": "/go/synogut"
       },
       {
@@ -3440,8 +3440,8 @@
             "originalPrice": "$89",
             "guarantee": "90-Day Guarantee",
             "desc": "Targeted botanical nerve formula with Corydalis Yanhusuo, Opuntia, and Marshmallow Root to soothe burning feet and nerve tingling.",
-            "showcase": "/nervecalm-review",
-            "review": "/nervecalm-review",
+            "showcase": "/go/nervecalm",
+            "review": "/nervecalm-review/",
             "go": "/go/nervecalm"
       },
       {
@@ -3456,8 +3456,8 @@
             "originalPrice": "$99",
             "guarantee": "60-Day Guarantee",
             "desc": "Cardiovascular and lipid balance formula featuring Bergavit, Guggul, and Artichoke to maintain healthy arterial compliance.",
-            "showcase": "/colestzen-review",
-            "review": "/colestzen-review",
+            "showcase": "/go/colestzen",
+            "review": "/colestzen-review/",
             "go": "/go/colestzen"
       },
       {
@@ -3472,8 +3472,8 @@
             "originalPrice": "$69",
             "guarantee": "60-Day Guarantee",
             "desc": "Advanced botanical nitric oxide and cellular energy formula featuring L-Citrulline, French Maritime Pine Bark, and Maca Root.",
-            "showcase": "/vigorsana-review",
-            "review": "/vigorsana-review",
+            "showcase": "/go/vigorsana",
+            "review": "/vigorsana-review/",
             "go": "/go/vigorsana"
       },
       {
@@ -3488,8 +3488,8 @@
             "originalPrice": "$99",
             "guarantee": "60-Day Guarantee",
             "desc": "Clinical hepatic support complex engineered to optimize bile acid synthesis, Phase II conjugation, and liver cell regeneration.",
-            "showcase": "/livarix-review",
-            "review": "/livarix-review",
+            "showcase": "/go/livarix",
+            "review": "/livarix-review/",
             "go": "/go/livarix"
       },
       {
@@ -3552,8 +3552,8 @@
             "originalPrice": "$69",
             "guarantee": "60-Day Guarantee",
             "desc": "Dr. Samir Bute formulation targeting thermogenic brown fat conversion for 24-hour resting caloric expenditure.",
-            "showcase": "/showcase/corevital",
-            "review": "/showcase/corevital",
+            "showcase": "/go/corevital",
+            "review": "/staging/corevital-burn",
             "go": "/go/corevital"
       },
       {
@@ -4103,7 +4103,7 @@
       }
 
       list.forEach(p => {
-        const showcaseUrl = p.showcase;
+        const offerUrl = p.go || p.showcase;
         const reviewUrl = p.review;
         const card = document.createElement('div');
         card.className = "product-card bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all p-5 flex flex-col justify-between";
@@ -4142,7 +4142,7 @@
             </div>
 
             <div class="space-y-2">
-              <a href="${showcaseUrl}" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-3 rounded-xl shadow-sm transition transform hover:-translate-y-0.5">
+              <a href="${offerUrl}" target="_blank" rel="noopener sponsored" class="block w-full text-center bg-[#0e5e43] hover:bg-[#09422f] text-white font-extrabold text-xs py-2.5 px-3 rounded-xl shadow-sm transition transform hover:-translate-y-0.5">
                 Check Official Offer &rarr;
               </a>
               <a href="${reviewUrl}" target="_blank" rel="noopener" class="block w-full text-center bg-slate-50 hover:bg-slate-100 text-slate-600 font-bold text-[11px] py-1.5 rounded-lg border border-slate-200 transition">
