@@ -1,0 +1,274 @@
+{
+  "total_html_files": 209,
+  "files_with_aggressive_claims": {},
+  "files_with_arbitrary_labels": {
+    "showcase\\lymphtonic\\index.html": [
+      [
+        "gold\\s+standard",
+        1
+      ]
+    ]
+  },
+  "files_with_unverified_counters": {
+    "showcase\\all-day-slimming-tea\\index.html": [
+      [
+        "over\\s+9[0-9]%\\s+of\\s+(?:our\\s+)?customers",
+        1
+      ]
+    ],
+    "showcase\\audifort\\index.html": [
+      [
+        "over\\s+9[0-9]%\\s+of\\s+(?:our\\s+)?customers",
+        1
+      ]
+    ],
+    "showcase\\femicore\\index.html": [
+      [
+        "over\\s+9[0-9]%\\s+of\\s+(?:our\\s+)?customers",
+        1
+      ]
+    ],
+    "showcase\\joint-eternal\\index.html": [
+      [
+        "over\\s+9[0-9]%\\s+of\\s+(?:our\\s+)?customers",
+        1
+      ]
+    ],
+    "showcase\\neotonics\\index.html": [
+      [
+        "over\\s+9[0-9]%\\s+of\\s+(?:our\\s+)?customers",
+        1
+      ]
+    ],
+    "showcase\\prodentim\\index.html": [
+      [
+        "over\\s+9[0-9]%\\s+of\\s+(?:our\\s+)?customers",
+        1
+      ]
+    ],
+    "showcase\\prostavive\\index.html": [
+      [
+        "over\\s+9[0-9]%\\s+of\\s+(?:our\\s+)?customers",
+        1
+      ]
+    ],
+    "showcase\\spartamax\\index.html": [
+      [
+        "over\\s+9[0-9]%\\s+of\\s+(?:our\\s+)?customers",
+        1
+      ]
+    ],
+    "showcase\\sugar-defender\\index.html": [
+      [
+        "over\\s+9[0-9]%\\s+of\\s+(?:our\\s+)?customers",
+        1
+      ]
+    ]
+  },
+  "guarantee_inconsistencies": {
+    "index.html": [
+      "180",
+      "60",
+      "90"
+    ],
+    "editorial-standards\\index.html": [
+      "180",
+      "60"
+    ],
+    "showcase\\index.html": [
+      "180",
+      "60",
+      "90"
+    ]
+  },
+  "missing_or_misplaced_ftc": [
+    [
+      "advanced-amino-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6502 vs cta:4351)"
+    ],
+    [
+      "advanced-collagen-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6526 vs cta:4361)"
+    ],
+    [
+      "advanced-joint-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6495 vs cta:4349)"
+    ],
+    [
+      "advanced-memory-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6533 vs cta:4380)"
+    ],
+    [
+      "all-day-slimming-tea-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6526 vs cta:4361)"
+    ],
+    [
+      "audifort-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6328 vs cta:4227)"
+    ],
+    [
+      "cardioslim-tea-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6415 vs cta:4287)"
+    ],
+    [
+      "circo2-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6282 vs cta:4199)"
+    ],
+    [
+      "cleansesana-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6380 vs cta:4260)"
+    ],
+    [
+      "colestzen-review\\index.html",
+      "FTC_AFTER_CTA (ftc:4548 vs cta:3753)"
+    ],
+    [
+      "corevital-burn-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6485 vs cta:4353)"
+    ],
+    [
+      "dentabiome-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6357 vs cta:4249)"
+    ],
+    [
+      "femicore-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6331 vs cta:4227)"
+    ],
+    [
+      "fimavyn-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6326 vs cta:4230)"
+    ],
+    [
+      "glucotrust-blutzucker-bericht\\index.html",
+      "MISSING_FTC"
+    ],
+    [
+      "glucotrust-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6361 vs cta:4249)"
+    ],
+    [
+      "java-burn-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6347 vs cta:4236)"
+    ],
+    [
+      "joint-eternal-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6410 vs cta:4282)"
+    ],
+    [
+      "joint-genesis-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6415 vs cta:4282)"
+    ],
+    [
+      "kerassentials-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6403 vs cta:4282)"
+    ],
+    [
+      "ketosana-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6292 vs cta:4185)"
+    ],
+    [
+      "liv-pure-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6333 vs cta:4227)"
+    ],
+    [
+      "livarix-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6315 vs cta:4216)"
+    ],
+    [
+      "lymphtonic-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6365 vs cta:4251)"
+    ],
+    [
+      "metanail-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6401 vs cta:4283)"
+    ],
+    [
+      "nagano-tonic-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6488 vs cta:4353)"
+    ],
+    [
+      "nanodefense-pro-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6429 vs cta:4296)"
+    ],
+    [
+      "neotonics-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6376 vs cta:4272)"
+    ],
+    [
+      "nervecalm-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6624 vs cta:4505)"
+    ],
+    [
+      "neurovera-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6347 vs cta:4238)"
+    ],
+    [
+      "nitric-boost-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6392 vs cta:4271)"
+    ],
+    [
+      "phytomem-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6327 vs cta:4227)"
+    ],
+    [
+      "primebiome-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6357 vs cta:4249)"
+    ],
+    [
+      "prodentim-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6379 vs cta:4267)"
+    ],
+    [
+      "prostavive-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6364 vs cta:4249)"
+    ],
+    [
+      "quiz\\index.html",
+      "FTC_AFTER_CTA (ftc:44778 vs cta:33996)"
+    ],
+    [
+      "quiz\\metabolic-assessment\\index.html",
+      "MISSING_FTC"
+    ],
+    [
+      "shop\\index.html",
+      "MISSING_FTC"
+    ],
+    [
+      "spartamax-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6348 vs cta:4238)"
+    ],
+    [
+      "staging\\corevital-burn\\index.html",
+      "MISSING_FTC"
+    ],
+    [
+      "sugar-defender-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6397 vs cta:4262)"
+    ],
+    [
+      "synaptigen-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6366 vs cta:4249)"
+    ],
+    [
+      "synevra-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6310 vs cta:4216)"
+    ],
+    [
+      "synogut-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6532 vs cta:4422)"
+    ],
+    [
+      "vigorsana-review\\index.html",
+      "FTC_AFTER_CTA (ftc:7054 vs cta:4976)"
+    ],
+    [
+      "visiflora-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6353 vs cta:4238)"
+    ],
+    [
+      "yusleep-review\\index.html",
+      "FTC_AFTER_CTA (ftc:6315 vs cta:4216)"
+    ]
+  ]
+}
