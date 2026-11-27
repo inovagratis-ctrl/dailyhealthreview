@@ -4105,6 +4105,7 @@
       list.forEach(p => {
         const offerUrl = p.go || p.showcase;
         const reviewUrl = p.review;
+        const showcaseUrl = p.review || p.showcase;
         const card = document.createElement('div');
         card.className = "product-card bg-white rounded-2xl border border-slate-200/90 shadow-sm hover:shadow-xl transition-all p-5 flex flex-col justify-between";
         card.setAttribute('data-category', p.category);
