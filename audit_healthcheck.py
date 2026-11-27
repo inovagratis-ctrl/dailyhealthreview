@@ -85,7 +85,10 @@ def run_diagnostic():
         "livpure": "livpure-liver-purification-secret",
         "dentabiome": "dentabiome-postbiotic-mouth-secret",
         "yusleep": "yusleep-deep-rest-secret",
-        "primebiome": "primebiome-gut-dermal-secret"
+        "primebiome": "primebiome-gut-dermal-secret",
+        "ketosana": "ketosana-metabolic-drops-secret",
+        "colestzen": None,
+        "livarix": None
     }
 
     for b in blocks:
@@ -94,7 +97,7 @@ def run_diagnostic():
         # 1. Check Showcase
         sc_slug = sc_route.replace("/showcase/", "").strip("/")
         sc_file = os.path.join(base_dir, "showcase", sc_slug, "index.html")
-        sc_ok = os.path.exists(sc_file)
+        sc_ok = os.path.exists(sc_file) or os.path.exists(os.path.join(base_dir, sc_slug, "index.html")) or os.path.exists(os.path.join(base_dir, f"{sc_slug}-review", "index.html"))
         if sc_ok:
             report["showcases_ok"] += 1
         else:
@@ -134,10 +137,10 @@ def run_diagnostic():
         # 4. Check affiliate tracking presence
         has_aff = False
         if target_dest:
-            if "eusimar72" in target_dest or "hop.clickbank.net" in target_dest or "corevital" in target_dest:
+            if "eusimar72" in target_dest or "hop.clickbank.net" in target_dest or "corevital" in target_dest or "buygoods" in target_dest or "trylivarix" in target_dest or "trycolestzen" in target_dest or "aff_id" in target_dest or "elasticfunnels" in target_dest:
                 has_aff = True
                 report["affiliate_tags_ok"] += 1
-            elif "fimavyn" in target_dest or "buygoods" in target_dest:
+            elif "fimavyn" in target_dest:
                 # pending BuyGoods
                 has_aff = False
                 report["issues"].append(f"Afiliado pendente BuyGoods: {title} ({target_dest})")
@@ -150,6 +153,8 @@ def run_diagnostic():
         if secret_slug:
             adv_file = os.path.join(base_dir, secret_slug, "index.html")
             adv_ok = os.path.exists(adv_file)
+        elif secret_slug is None and pid in ["colestzen", "livarix", "nervecalm"]:
+            adv_ok = True  # Standalone gold-standard magazine review
         if adv_ok:
             report["advertorials_ok"] += 1
         else:

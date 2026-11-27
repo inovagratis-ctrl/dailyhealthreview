@@ -1,15 +1,49 @@
 {
-  "timestamp": "2026-11-26 18:46:49",
-  "total_products": 37,
-  "showcases_ok": 37,
-  "editorials_ok": 37,
-  "advertorials_ok": 36,
-  "redirects_ok": 37,
-  "affiliate_tags_ok": 37,
-  "issues": [
-    "Story Advertorial ausente: KetoSana\\u00ae US Liquid Drops (None)"
-  ],
+  "timestamp": "2026-11-27 06:02:50",
+  "total_products": 40,
+  "showcases_ok": 40,
+  "editorials_ok": 40,
+  "advertorials_ok": 40,
+  "redirects_ok": 40,
+  "affiliate_tags_ok": 40,
+  "issues": [],
   "products": [
+    {
+      "id": "nervecalm",
+      "title": "NerveCalm™",
+      "price": "$49/bottle",
+      "showcase_ok": true,
+      "editorial_ok": true,
+      "advertorial_ok": true,
+      "secret_slug": null,
+      "go_route": "/go/nervecalm",
+      "dest_url": "https://getnervecalm.com/dtc/?aff_id=276314&subid=dhr",
+      "aff_ok": true
+    },
+    {
+      "id": "colestzen",
+      "title": "ColestZen™",
+      "price": "$49/bottle",
+      "showcase_ok": true,
+      "editorial_ok": true,
+      "advertorial_ok": true,
+      "secret_slug": null,
+      "go_route": "/go/colestzen",
+      "dest_url": "https://www.trycolestzen.com/video?aff_id=10566&subid=dhr",
+      "aff_ok": true
+    },
+    {
+      "id": "livarix",
+      "title": "Livarix™",
+      "price": "$49/bottle",
+      "showcase_ok": true,
+      "editorial_ok": true,
+      "advertorial_ok": true,
+      "secret_slug": null,
+      "go_route": "/go/livarix",
+      "dest_url": "https://www.trylivarix.com/video?aff_id=2330&subid=dhr",
+      "aff_ok": true
+    },
     {
       "id": "nagano",
       "title": "Nagano Lean Body Tonic\\u2122",
@@ -64,8 +98,8 @@
       "price": "$49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
-      "advertorial_ok": false,
-      "secret_slug": null,
+      "advertorial_ok": true,
+      "secret_slug": "ketosana-metabolic-drops-secret",
       "go_route": "/go/ketosana",
       "dest_url": "https://myketosana.com/en/ketosana-pdp-fe?aff=eusimar72&cam=dhr",
       "aff_ok": true

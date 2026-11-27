@@ -1,56 +1,58 @@
 ===========================================================================
 RELATÓRIO PERIÓDICO DE INTEGRIDADE DE LINKS & COMISSÕES
-Data e Hora: 2026-11-26 18:46:49
+Data e Hora: 2026-11-27 06:02:50
 ===========================================================================
-Total de Produtos Auditados : 37
-Showcases 100% Online       : 37 / 37
-Editoriais 100% Online      : 37 / 37
-Story Advertorials (Arma 5) : 36 / 37
-Rotas 302 Ativas            : 37 / 37
-Links com Rastreamento Ativo: 37 / 37
-Total de Alertas / Pendências: 1
+Total de Produtos Auditados : 40
+Showcases 100% Online       : 40 / 40
+Editoriais 100% Online      : 40 / 40
+Story Advertorials (Arma 5) : 40 / 40
+Rotas 302 Ativas            : 40 / 40
+Links com Rastreamento Ativo: 40 / 40
+Total de Alertas / Pendências: 0
 ===========================================================================
 
-PENDÊNCIAS DETECTADAS:
- [!] Story Advertorial ausente: KetoSana\u00ae US Liquid Drops (None)
+STATUS: TODOS OS 36 PRODUTOS E LINKS ESTÃO 100% SEGUROS E ATIVOS!
 
 DETALHAMENTO DOS 36 PRODUTOS:
 #   | Produto                   | Showcase | Editorial | Afiliado | Rota
 ---------------------------------------------------------------------------
-01  | Nagano Lean Body Tonic\u2 | OK       | OK        | OK       | /go/nagano
-02  | Advanced Joint Support\u2 | OK       | OK        | OK       | /go/jointsupport
-03  | ProDentim\u00ae Oral Heal | OK       | OK        | OK       | /go/prodentim
-04  | CoreVital Burn\u2122      | OK       | OK        | OK       | /go/corevital
-05  | KetoSana\u00ae US Liquid  | OK       | OK        | OK       | /go/ketosana
-06  | Cardio Slim Tea\u2122     | OK       | OK        | OK       | /go/cardioslim
-07  | Sugar Defender\u00ae      | OK       | OK        | OK       | /go/sugardefender
-08  | CleanseSana\u00ae Colon C | OK       | OK        | OK       | /go/cleansesana
-09  | Advanced Amino Formula\u2 | OK       | OK        | OK       | /go/amino
-10  | Advanced Collagen PLUS\u2 | OK       | OK        | OK       | /go/collagen
-11  | Advanced Memory Formula\u | OK       | OK        | OK       | /go/memory
-12  | CirCO2\u00ae Nitric Oxide | OK       | OK        | OK       | /go/circo2
-13  | Audifort\u2122 Ear Suppor | OK       | OK        | OK       | /go/audifort
-14  | FemiCore\u2122 Pelvic Hea | OK       | OK        | OK       | /go/femicore
-15  | Neotonics\u00ae Gut & Ski | OK       | OK        | OK       | /go/neotonics
-16  | LymphTonic\u2122 Drainage | OK       | OK        | OK       | /go/lymphtonic
-17  | VisiFlora\u00ae Eye & Vis | OK       | OK        | OK       | /go/visiflora
-18  | NeuroVera\u2122 Nerve Hea | OK       | OK        | OK       | /go/neurovera
-19  | PhytoMem\u2122 Cognition  | OK       | OK        | OK       | /go/phytomem
-20  | Joint Eternal\u2122       | OK       | OK        | OK       | /go/jointeternal
-21  | ProstaVive\u2122 Men's He | OK       | OK        | OK       | /go/prostavive
-22  | All Day Slimming Tea\u00a | OK       | OK        | OK       | /go/slimmingtea
-23  | SpartaMax\u2122 Male Vita | OK       | OK        | OK       | /go/spartamax
-24  | Fimavyn\u2122 Metabolic D | OK       | OK        | OK       | /go/fimavyn
-25  | GlucoTrust\u2122 Glucose  | OK       | OK        | OK       | /go/glucotrust
-26  | Java Burn\u2122 Coffee Bo | OK       | OK        | OK       | /go/javaburn
-27  | Kerassentials® Nail & Ski | OK       | OK        | OK       | /go/kerassentials
-28  | NanoDefense Pro™ Nanotech | OK       | OK        | OK       | /go/nanodefensepro
-29  | Synaptigen™ Cognitive Cla | OK       | OK        | OK       | /go/synaptigen
-30  | Metanail Complex™ 20-in-1 | OK       | OK        | OK       | /go/metanail
-31  | BioDynamix Joint Genesis™ | OK       | OK        | OK       | /go/jointgenesis
-32  | Synevra Lift & Lock Syste | OK       | OK        | OK       | /go/synevra
-33  | Nitric Boost Ultra™       | OK       | OK        | OK       | /go/nitricboost
-34  | Liv Pure™                 | OK       | OK        | OK       | /go/livpure
-35  | DentaBiome™               | OK       | OK        | OK       | /go/dentabiome
-36  | Yu Sleep™ Deep Rest       | OK       | OK        | OK       | /go/yusleep
-37  | PrimeBiome™ Gut & Skin    | OK       | OK        | OK       | /go/primebiome
+01  | NerveCalm™                | OK       | OK        | OK       | /go/nervecalm
+02  | ColestZen™                | OK       | OK        | OK       | /go/colestzen
+03  | Livarix™                  | OK       | OK        | OK       | /go/livarix
+04  | Nagano Lean Body Tonic\u2 | OK       | OK        | OK       | /go/nagano
+05  | Advanced Joint Support\u2 | OK       | OK        | OK       | /go/jointsupport
+06  | ProDentim\u00ae Oral Heal | OK       | OK        | OK       | /go/prodentim
+07  | CoreVital Burn\u2122      | OK       | OK        | OK       | /go/corevital
+08  | KetoSana\u00ae US Liquid  | OK       | OK        | OK       | /go/ketosana
+09  | Cardio Slim Tea\u2122     | OK       | OK        | OK       | /go/cardioslim
+10  | Sugar Defender\u00ae      | OK       | OK        | OK       | /go/sugardefender
+11  | CleanseSana\u00ae Colon C | OK       | OK        | OK       | /go/cleansesana
+12  | Advanced Amino Formula\u2 | OK       | OK        | OK       | /go/amino
+13  | Advanced Collagen PLUS\u2 | OK       | OK        | OK       | /go/collagen
+14  | Advanced Memory Formula\u | OK       | OK        | OK       | /go/memory
+15  | CirCO2\u00ae Nitric Oxide | OK       | OK        | OK       | /go/circo2
+16  | Audifort\u2122 Ear Suppor | OK       | OK        | OK       | /go/audifort
+17  | FemiCore\u2122 Pelvic Hea | OK       | OK        | OK       | /go/femicore
+18  | Neotonics\u00ae Gut & Ski | OK       | OK        | OK       | /go/neotonics
+19  | LymphTonic\u2122 Drainage | OK       | OK        | OK       | /go/lymphtonic
+20  | VisiFlora\u00ae Eye & Vis | OK       | OK        | OK       | /go/visiflora
+21  | NeuroVera\u2122 Nerve Hea | OK       | OK        | OK       | /go/neurovera
+22  | PhytoMem\u2122 Cognition  | OK       | OK        | OK       | /go/phytomem
+23  | Joint Eternal\u2122       | OK       | OK        | OK       | /go/jointeternal
+24  | ProstaVive\u2122 Men's He | OK       | OK        | OK       | /go/prostavive
+25  | All Day Slimming Tea\u00a | OK       | OK        | OK       | /go/slimmingtea
+26  | SpartaMax\u2122 Male Vita | OK       | OK        | OK       | /go/spartamax
+27  | Fimavyn\u2122 Metabolic D | OK       | OK        | OK       | /go/fimavyn
+28  | GlucoTrust\u2122 Glucose  | OK       | OK        | OK       | /go/glucotrust
+29  | Java Burn\u2122 Coffee Bo | OK       | OK        | OK       | /go/javaburn
+30  | Kerassentials® Nail & Ski | OK       | OK        | OK       | /go/kerassentials
+31  | NanoDefense Pro™ Nanotech | OK       | OK        | OK       | /go/nanodefensepro
+32  | Synaptigen™ Cognitive Cla | OK       | OK        | OK       | /go/synaptigen
+33  | Metanail Complex™ 20-in-1 | OK       | OK        | OK       | /go/metanail
+34  | BioDynamix Joint Genesis™ | OK       | OK        | OK       | /go/jointgenesis
+35  | Synevra Lift & Lock Syste | OK       | OK        | OK       | /go/synevra
+36  | Nitric Boost Ultra™       | OK       | OK        | OK       | /go/nitricboost
+37  | Liv Pure™                 | OK       | OK        | OK       | /go/livpure
+38  | DentaBiome™               | OK       | OK        | OK       | /go/dentabiome
+39  | Yu Sleep™ Deep Rest       | OK       | OK        | OK       | /go/yusleep
+40  | PrimeBiome™ Gut & Skin    | OK       | OK        | OK       | /go/primebiome

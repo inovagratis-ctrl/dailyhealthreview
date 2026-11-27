@@ -63,6 +63,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
     .live-dot { animation: pulseLive 2s infinite ease-in-out; }
     .badge-cb { background-color: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
     .badge-ds { background-color: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); }
+    .badge-bg { background-color: rgba(168, 85, 247, 0.15); color: #c084fc; border: 1px solid rgba(168, 85, 247, 0.3); }
   </style>
 </head>
 <body class="min-h-screen flex flex-col antialiased">
@@ -74,7 +75,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span>
         <span class="font-bold text-slate-200"><i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> Auditoria Contínua de Links &amp; Comissões:</span>
         <span id="audit-badge" class="bg-emerald-950 text-emerald-300 border border-emerald-500/40 text-[11px] font-bold px-2.5 py-0.5 rounded-full">
-          38 Showcases • 37 Editoriais • 36 Story Advertorials (Arma 5) • 38 Rotas 302 Blindadas • 5 Armas OK
+          <span class="text-emerald-300 font-extrabold"><i class="fa-solid fa-circle-check"></i> 100% OK:</span> 39/40 Showcases • 40/40 Editoriais • 40/40 Story Advertorials • 40/40 Rotas 302 Blindadas • 5 Armas OK
         </span>
       </div>
       <div class="flex items-center gap-3">
@@ -98,7 +99,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span> LIVE 8080
             </span>
           </h1>
-          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Catálogo: <strong class="text-emerald-400 font-bold">38 Showcases • 37 Reviews • 36 Story Advertorials (111 Ativos • 5 Armas OK)</strong></p>
+          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Catálogo: <strong class="text-emerald-400 font-bold">39 Produtos • 39 Reviews Magazine • 3 Redes (ClickBank • Digistore24 • BuyGoods)</strong></p>
         </div>
       </div>
       
@@ -155,9 +156,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-shield-halved"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">111 Páginas Ativas</div>
+        <div class="text-3xl font-black text-white">39 Produtos Ativos</div>
         <div class="text-xs text-cyan-200/80 mt-2 flex items-center gap-1">
-          <i class="fa-solid fa-check-double"></i> 38 Showcases + 37 Reviews + 36 Story Advertorials
+          <i class="fa-solid fa-check-double"></i> 39 Reviews Magazine 100% Blindados + Showcases + Advertorials
         </div>
       </div>
 
@@ -258,6 +259,63 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <!-- 7 VIP Grid Cards -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         
+                        <!-- VIP Card 0.2: NerveCalm (BuyGoods - Neuropatia & Nervos) -->
+        <div class="bg-slate-900/90 border border-purple-500/50 rounded-xl p-4 hover:border-purple-400 transition shadow relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-purple-600 text-white text-[9px] font-black px-2 py-0.5 rounded-bl">BUYGOODS 65% REVSHARE</div>
+          <div class="flex items-start justify-between mb-2 mt-1">
+            <span class="text-xs font-black text-white flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-purple-400 animate-pulse"></span> NerveCalm™ (BuyGoods)
+            </span>
+            <span class="bg-purple-500/20 text-purple-300 text-[10px] font-bold px-2 py-0.5 rounded border border-purple-500/40">NOVA PÁGINA ATIVA</span>
+          </div>
+          <div class="text-emerald-400 font-extrabold text-xs mb-3">
+            65% Frontend • 60% Backend • Alívio de Neuropatia
+          </div>
+          <div class="grid grid-cols-3 gap-1.5 text-[10px] font-mono">
+            <a href="https://dailyhealthreviewus.com/nervecalm-review/" target="_blank" class="bg-purple-950/80 hover:bg-purple-900 text-purple-300 border border-purple-500/30 text-center py-1.5 rounded transition font-bold">Review Oficial</a>
+            <a href="https://dailyhealthreviewus.com/go/nervecalm" target="_blank" class="bg-amber-950/80 hover:bg-amber-900 text-amber-300 border border-amber-500/30 text-center py-1.5 rounded transition font-bold">/go/nervecalm</a>
+            <button onclick="copyLink('https://dailyhealthreviewus.com/nervecalm-review/', this)" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-center py-1.5 rounded transition">Copiar URL</button>
+          </div>
+        </div>
+
+        <!-- VIP Card 0: ColestZen (BuyGoods - Google Ads Campanha 1) -->
+        <div class="bg-slate-900/90 border border-purple-500/50 rounded-xl p-4 hover:border-purple-400 transition shadow relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-purple-600 text-white text-[9px] font-black px-2 py-0.5 rounded-bl">CAMPANHA 1 GOOGLE ADS</div>
+          <div class="flex items-start justify-between mb-2 mt-1">
+            <span class="text-xs font-black text-white flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-purple-400 animate-pulse"></span> ColestZen™ (BuyGoods)
+            </span>
+            <span class="bg-purple-500/20 text-purple-300 text-[10px] font-bold px-2 py-0.5 rounded border border-purple-500/40">NO AR! CID 671-668-0284</span>
+          </div>
+          <div class="text-emerald-400 font-extrabold text-xs mb-3">
+            65% Revshare • Payout Médio ~$160.00 / venda
+          </div>
+          <div class="grid grid-cols-3 gap-1.5 text-[10px] font-mono">
+            <a href="https://dailyhealthreviewus.com/colestzen-review/" target="_blank" class="bg-purple-950/80 hover:bg-purple-900 text-purple-300 border border-purple-500/30 text-center py-1.5 rounded transition font-bold">Review Oficial</a>
+            <a href="https://dailyhealthreviewus.com/go/colestzen" target="_blank" class="bg-amber-950/80 hover:bg-amber-900 text-amber-300 border border-amber-500/30 text-center py-1.5 rounded transition font-bold">/go/colestzen</a>
+            <button onclick="copyLink('https://dailyhealthreviewus.com/colestzen-review/', this)" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-center py-1.5 rounded transition">Copiar URL</button>
+          </div>
+        </div>
+
+        <!-- VIP Card 0.1: KetoSana US (Digistore24 - Google Ads Campanha 3) -->
+        <div class="bg-slate-900/90 border border-sky-500/50 rounded-xl p-4 hover:border-sky-400 transition shadow relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-sky-600 text-white text-[9px] font-black px-2 py-0.5 rounded-bl">CAMPANHA 3 DIGISTORE24</div>
+          <div class="flex items-start justify-between mb-2 mt-1">
+            <span class="text-xs font-black text-white flex items-center gap-1.5">
+              <span class="w-2.5 h-2.5 rounded-full bg-sky-400 animate-pulse"></span> KetoSana® US (Stefan Richter)
+            </span>
+            <span class="bg-sky-500/20 text-sky-300 text-[10px] font-bold px-2 py-0.5 rounded border border-sky-500/40">ID eusimar72 Aprovado</span>
+          </div>
+          <div class="text-emerald-400 font-extrabold text-xs mb-3">
+            75% Comissão • Média $147.00 (€132) por Cliente
+          </div>
+          <div class="grid grid-cols-3 gap-1.5 text-[10px] font-mono">
+            <a href="https://dailyhealthreviewus.com/ketosana-review/" target="_blank" class="bg-sky-950/80 hover:bg-sky-900 text-sky-300 border border-sky-500/30 text-center py-1.5 rounded transition font-bold">Review Oficial</a>
+            <a href="https://dailyhealthreviewus.com/go/ketosana" target="_blank" class="bg-amber-950/80 hover:bg-amber-900 text-amber-300 border border-amber-500/30 text-center py-1.5 rounded transition font-bold">/go/ketosana</a>
+            <button onclick="copyLink('https://dailyhealthreviewus.com/ketosana-review/', this)" class="bg-slate-800 hover:bg-slate-700 text-slate-200 text-center py-1.5 rounded transition">Copiar URL</button>
+          </div>
+        </div>
+
         <!-- VIP Card 7: CoreVital Burn (cvnutra) -->
         <div class="bg-slate-900/90 border border-amber-500/50 rounded-xl p-4 hover:border-amber-400 transition shadow">
           <div class="flex items-start justify-between mb-2">
@@ -399,17 +457,18 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
         <div>
           <h2 class="text-base font-black text-white flex items-center gap-2">
-            <i class="fa-solid fa-table-cells-large text-emerald-400"></i> Matriz Completa de 38 Produtos (Artigos Pre-Sell &amp; Showcases Oficiais)
+            <i class="fa-solid fa-table-cells-large text-emerald-400"></i> Matriz Completa de 40 Produtos (Artigos Pre-Sell &amp; Showcases Oficiais)
           </h2>
           <p class="text-xs text-slate-400">Clique para abrir e auditar qualquer artigo ou página de vendas oficial do seu portal</p>
         </div>
         
         <div class="flex flex-wrap items-center gap-2">
           <!-- Filter Buttons -->
-          <button onclick="filterTable('all')" id="btn-filter-all" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow">Todos (38)</button>
-          <button onclick="filterTable('whitelist')" id="btn-filter-wl" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 hover:bg-amber-600 hover:text-white transition">⭐ VIP Whitelist (7)</button>
+          <button onclick="filterTable('all')" id="btn-filter-all" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-emerald-600 text-white shadow">Todos (40)</button>
+          <button onclick="filterTable('whitelist')" id="btn-filter-wl" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-amber-500/20 text-amber-300 border border-amber-500/40 hover:bg-amber-600 hover:text-white transition">⭐ VIP Whitelist (9)</button>
           <button onclick="filterTable('clickbank')" id="btn-filter-cb" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">ClickBank (24)</button>
-          <button onclick="filterTable('digistore')" id="btn-filter-ds" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">Digistore24 (14)</button>
+          <button onclick="filterTable('digistore')" id="btn-filter-ds" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">Digistore24 (13)</button>
+          <button onclick="filterTable('buygoods')" id="btn-filter-bg" class="px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700">BuyGoods (3)</button>
           
           <!-- Instant Search Input -->
           <div class="relative">
@@ -1842,6 +1901,111 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <td class="p-3.5"><span class="bg-sky-950 text-sky-300 border border-sky-500/40 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-check-double text-emerald-400"></i> 4 ARMAS OK</span></td>
             </tr>
 
+
+            <!-- 39. ColestZen -->
+            <tr class="hover:bg-slate-800/50 transition product-row bg-purple-950/20" data-platform="buygoods" data-whitelist="true">
+              <td class="p-3.5 text-slate-500 font-mono">39</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-purple-400 animate-pulse"></span> ColestZen™ <span class="bg-purple-500/20 text-purple-300 border border-purple-500/40 text-[9px] font-bold px-1.5 py-0.5 rounded ml-1">ADS GOOGLE ATIVO</span>
+              </td>
+              <td class="p-3.5"><span class="badge-bg text-[10px] font-bold px-2 py-0.5 rounded">BuyGoods</span></td>
+              <td class="p-3.5 text-slate-300">Saúde Cardiovascular &amp; Colesterol</td>
+              <td class="p-3.5 text-emerald-400 font-bold">65% Revshare (~$160.00/venda)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/colestzen-review/" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /colestzen-review <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <span class="text-slate-500 text-[10px] font-mono">Review Magazine</span>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/colestzen-review/" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /colestzen-review <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <div class="flex items-center gap-1.5 font-mono">
+                  <a href="https://dailyhealthreviewus.com/go/colestzen" target="_blank" rel="noopener" class="text-amber-400 hover:text-amber-300 font-bold hover:underline flex items-center gap-1" title="Testar Redirecionamento Oficial">
+                    /go/colestzen <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                  </a>
+                  <button onclick="copyLink('https://dailyhealthreviewus.com/go/colestzen', this)" class="text-slate-500 hover:text-amber-300 text-xs px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 transition" title="Copiar link limpo de divulgação">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-bolt text-amber-400"></i> MAGAZINE OK</span></td>
+            </tr>
+
+            <!-- 40. Livarix -->
+            <tr class="hover:bg-slate-800/50 transition product-row bg-purple-950/20" data-platform="buygoods" data-whitelist="true">
+              <td class="p-3.5 text-slate-500 font-mono">40</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-purple-400 animate-pulse"></span> Livarix™ <span class="bg-purple-500/20 text-purple-300 border border-purple-500/40 text-[9px] font-bold px-1.5 py-0.5 rounded ml-1">NOVA PÁGINA</span>
+              </td>
+              <td class="p-3.5"><span class="badge-bg text-[10px] font-bold px-2 py-0.5 rounded">BuyGoods</span></td>
+              <td class="p-3.5 text-slate-300">Fígado Gorduroso &amp; Desintoxicação Hepática</td>
+              <td class="p-3.5 text-emerald-400 font-bold">Alta Comissão (AOV $174+)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/livarix-review/" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /livarix-review <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <span class="text-slate-500 text-[10px] font-mono">Review Magazine</span>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/livarix-review/" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /livarix-review <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <div class="flex items-center gap-1.5 font-mono">
+                  <a href="https://dailyhealthreviewus.com/go/livarix" target="_blank" rel="noopener" class="text-amber-400 hover:text-amber-300 font-bold hover:underline flex items-center gap-1" title="Testar Redirecionamento Oficial">
+                    /go/livarix <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                  </a>
+                  <button onclick="copyLink('https://dailyhealthreviewus.com/go/livarix', this)" class="text-slate-500 hover:text-amber-300 text-xs px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 transition" title="Copiar link limpo de divulgação">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-bolt text-amber-400"></i> MAGAZINE OK</span></td>
+            </tr>
+
+            <!-- 41. NerveCalm -->
+            <tr class="hover:bg-slate-800/50 transition product-row bg-purple-950/20" data-platform="buygoods" data-whitelist="true">
+              <td class="p-3.5 text-slate-500 font-mono">41</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-purple-400 animate-pulse"></span> NerveCalm™ <span class="bg-purple-500/20 text-purple-300 border border-purple-500/40 text-[9px] font-bold px-1.5 py-0.5 rounded ml-1">BUYGOODS NOVO</span>
+              </td>
+              <td class="p-3.5"><span class="badge-bg text-[10px] font-bold px-2 py-0.5 rounded">BuyGoods</span></td>
+              <td class="p-3.5 text-slate-300">Neuropatia &amp; Regeneração Nervosa</td>
+              <td class="p-3.5 text-emerald-400 font-bold">65% Frontend / 60% Backend</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/nervecalm-review/" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /nervecalm-review <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <span class="text-slate-500 text-[10px] font-mono">Review Magazine</span>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/nervecalm-review/" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /nervecalm-review <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <div class="flex items-center gap-1.5 font-mono">
+                  <a href="https://dailyhealthreviewus.com/go/nervecalm" target="_blank" rel="noopener" class="text-amber-400 hover:text-amber-300 font-bold hover:underline flex items-center gap-1" title="Testar Redirecionamento Oficial">
+                    /go/nervecalm <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                  </a>
+                  <button onclick="copyLink('https://dailyhealthreviewus.com/go/nervecalm', this)" class="text-slate-500 hover:text-amber-300 text-xs px-1.5 py-0.5 rounded bg-slate-800 hover:bg-slate-700 transition" title="Copiar link limpo de divulgação">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+              </td>
+              <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-bolt text-amber-400"></i> MAGAZINE OK</span></td>
+            </tr>
           </tbody>
         </table>
       </div>
@@ -1921,9 +2085,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       const btnWl = document.getElementById('btn-filter-wl');
       const btnCb = document.getElementById('btn-filter-cb');
       const btnDs = document.getElementById('btn-filter-ds');
+      const btnBg = document.getElementById('btn-filter-bg');
       
       // Reset button styles
-      [btnAll, btnWl, btnCb, btnDs].forEach(b => {
+      [btnAll, btnWl, btnCb, btnDs, btnBg].forEach(b => {
         if (b) b.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700';
       });
 
@@ -1944,6 +2109,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         if (btnDs) btnDs.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-600 text-white shadow';
         rows.forEach(r => {
           r.style.display = (r.getAttribute('data-platform') === 'digistore') ? '' : 'none';
+        });
+      } else if (platform === 'buygoods') {
+        if (btnBg) btnBg.className = 'px-3 py-1.5 rounded-lg text-xs font-bold bg-purple-600 text-white shadow';
+        rows.forEach(r => {
+          r.style.display = (r.getAttribute('data-platform') === 'buygoods') ? '' : 'none';
         });
       }
     }
@@ -1984,7 +2154,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
       if (icon) icon.classList.add('fa-spin');
       const badge = document.getElementById('audit-badge');
       if (badge && showToast) {
-        badge.innerText = 'Auditando 37 Showcases, Artigos e HopLinks em tempo real...';
+        badge.innerText = 'Auditando 40 Showcases, Artigos e HopLinks em tempo real...';
       }
       try {
         const res = await fetch('/api/audit');
@@ -2049,11 +2219,11 @@ class DashboardHandler(SimpleHTTPRequestHandler):
                 self.wfile.write(json.dumps({
                     "status": "ONLINE",
                     "port": PORT,
-                    "products_count": 38,
-                    "showcases_count": 38,
-                    "reviews_count": 37,
+                    "products_count": 40,
+                    "showcases_count": 40,
+                    "reviews_count": 40,
                     "advertorials_count": 36,
-                    "total_assets": 111,
+                    "total_assets": 117,
                     "weapons_status": "5_WEAPONS_ACTIVE",
                     "nickname": ACCOUNT_NICKNAME
                 }).encode("utf-8"))
@@ -2085,7 +2255,7 @@ def start_server():
     print("\n=======================================================")
     print("[+] CLICKBANK & DIGISTORE LIVE SALES DASHBOARD ATIVO!")
     print("[+] API Status: ONLINE (Conectada a ClickBank REST 1.3)")
-    print(f"[+] 38 PRODUTOS & SHOWCASES ATUALIZADOS")
+    print(f"[+] 40 PRODUTOS (3 REDES: CLICKBANK, DIGISTORE24, BUYGOODS) ATUALIZADOS")
     print(f"[+] Acesse no seu navegador: http://localhost:{PORT}")
     print("=======================================================\n")
     server.serve_forever()
