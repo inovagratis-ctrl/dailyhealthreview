@@ -2,6 +2,7 @@
 // Supports unlimited redirects with zero 100-rule limit bottlenecks
 
 const REDIRECTS_301 = {
+  "/nervefresh-review": "/nerve-fresh-review/",
   "/authors/marcus-vance": "/authors/marcus-vance-md/",
   "/01_Pagina_Inicial_Portal_Home.html": "/",
   "/02_Artigo_1_Elixir_7_Segundos.html": "/morning-routine/",
@@ -147,6 +148,10 @@ const REDIRECTS_301 = {
 };
 
 const REDIRECTS_302 = {
+  "/go/nerve-fresh": "https://secure.nervefresh.com/index-dtc-bg?aff_id=21014&subid=dhr",
+  "/go/nervefresh": "https://secure.nervefresh.com/index-dtc-bg?aff_id=21014&subid=dhr",
+  "/go/nerve-fresh-vsl": "https://secure.nervefresh.com/index-vsl-bg?aff_id=21014&subid=dhr",
+  "/go/nerve-fresh-tsl": "https://secure.nervefresh.com/index-tsl-bg?aff_id=21014&subid=dhr",
   "/go/synogut-tsl": "https://thesynogut.com/text.php?aff_id=182914&subid=dhr",
   "/go/synogut-text": "https://thesynogut.com/text.php?aff_id=182914&subid=dhr",
   "/go/synogut-vsl": "https://thesynogut.com/video.php?aff_id=182914&subid=dhr",

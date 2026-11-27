@@ -99,7 +99,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               <span class="w-2 h-2 rounded-full bg-emerald-400 live-dot"></span> LIVE 8080
             </span>
           </h1>
-          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Catálogo: <strong class="text-emerald-400 font-bold">43 Produtos • 43 Reviews Magazine • 3 Redes (ClickBank • Digistore24 • BuyGoods)</strong></p>
+          <p class="text-xs text-slate-400">ID Afiliado: <span class="text-amber-400 font-bold">eusimar72</span> • Catálogo: <strong class="text-emerald-400 font-bold">44 Produtos • 43 Reviews Magazine • 3 Redes (ClickBank • Digistore24 • BuyGoods)</strong></p>
         </div>
       </div>
       
@@ -156,7 +156,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <i class="fa-solid fa-shield-halved"></i>
           </div>
         </div>
-        <div class="text-3xl font-black text-white">43 Produtos Ativos</div>
+        <div class="text-3xl font-black text-white">44 Produtos Ativos</div>
         <div class="text-xs text-cyan-200/80 mt-2 flex items-center gap-1">
           <i class="fa-solid fa-check-double"></i> 43 Reviews Magazine 100% Blindados + Showcases + Advertorials
         </div>
@@ -2088,7 +2088,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 
             <!-- 43. VigorSana -->
             <tr class="hover:bg-slate-800/50 transition product-row bg-blue-950/20" data-platform="digistore24" data-whitelist="true">
-              <td class="p-3.5 text-slate-500 font-mono">43</td>
+              <td class="p-3.5 text-slate-500 font-mono">44</td>
               <td class="p-3.5 font-bold text-white flex items-center gap-2">
                 <span class="w-2.5 h-2.5 rounded-full bg-blue-400 animate-pulse"></span> VigorSana™ <span class="bg-blue-500/20 text-blue-300 border border-blue-500/40 text-[9px] font-bold px-1.5 py-0.5 rounded ml-1">SANASOCIALS NOVO</span>
               </td>
@@ -2120,6 +2120,38 @@ HTML_TEMPLATE = """<!DOCTYPE html>
               </td>
               <td class="p-3.5"><span class="bg-emerald-950 text-emerald-400 border border-emerald-500/40 text-[10px] font-bold px-2 py-0.5 rounded flex items-center gap-1 whitespace-nowrap"><i class="fa-solid fa-bolt text-amber-400"></i> MAGAZINE OK</span></td>
             </tr>
+
+            <!-- 44. Nerve Fresh -->
+            <tr class="hover:bg-slate-800/50 transition product-row bg-emerald-950/20" data-platform="buygoods" data-whitelist="true">
+              <td class="p-3.5 text-slate-500 font-mono">44</td>
+              <td class="p-3.5 font-bold text-white flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span> Nerve Fresh™ <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 text-[9px] font-bold px-1.5 py-0.5 rounded ml-1">BUYGOODS NOVO</span>
+              </td>
+              <td class="p-3.5"><span class="badge-bg text-[10px] font-bold px-2 py-0.5 rounded">BuyGoods</span></td>
+              <td class="p-3.5 text-slate-300">Saúde Nervosa, DHCB &amp; Alívio de Neuropatia</td>
+              <td class="p-3.5 text-emerald-400 font-bold">70% FE / 55% BE Revshare (180d Guarantee)</td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/nerve-fresh-review/" target="_blank" class="text-cyan-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /nerve-fresh-review <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <span class="text-slate-500 text-[10px] font-mono">Review Magazine</span>
+              </td>
+              <td class="p-3.5">
+                <a href="https://dailyhealthreviewus.com/nerve-fresh-review/" target="_blank" class="text-emerald-400 hover:underline flex items-center gap-1 font-mono font-bold">
+                  /nerve-fresh-review <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                </a>
+              </td>
+              <td class="p-3.5">
+                <div class="flex items-center gap-2">
+                  <a href="https://dailyhealthreviewus.com/go/nerve-fresh" target="_blank" class="text-emerald-400 hover:text-emerald-300 flex items-center gap-1 font-mono text-[11px] font-bold bg-emerald-950/60 border border-emerald-800/80 px-2 py-0.5 rounded">
+                    /go/nerve-fresh <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+                  </a>
+                </div>
+              </td>
+            </tr>
+
           </tbody>
         </table>
       </div>
