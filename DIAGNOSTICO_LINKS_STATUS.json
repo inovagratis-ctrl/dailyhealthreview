@@ -1,12 +1,14 @@
 {
-  "timestamp": "2026-11-27 09:17:53",
-  "total_products": 41,
-  "showcases_ok": 41,
-  "editorials_ok": 41,
+  "timestamp": "2026-11-27 12:05:15",
+  "total_products": 42,
+  "showcases_ok": 42,
+  "editorials_ok": 42,
   "advertorials_ok": 41,
-  "redirects_ok": 41,
-  "affiliate_tags_ok": 41,
-  "issues": [],
+  "redirects_ok": 42,
+  "affiliate_tags_ok": 42,
+  "issues": [
+    "Story Advertorial ausente: VigorSana™ (None)"
+  ],
   "products": [
     {
       "id": "synogut",
@@ -42,6 +44,18 @@
       "secret_slug": null,
       "go_route": "/go/colestzen",
       "dest_url": "https://www.trycolestzen.com/video?aff_id=10566&subid=dhr",
+      "aff_ok": true
+    },
+    {
+      "id": "vigorsana",
+      "title": "VigorSana™",
+      "price": "$49/bottle",
+      "showcase_ok": true,
+      "editorial_ok": true,
+      "advertorial_ok": false,
+      "secret_slug": null,
+      "go_route": "/go/vigorsana",
+      "dest_url": "https://myvigorsana.com/en/vigorsana-pdp-fe?aff=eusimar72&cam=dhr",
       "aff_ok": true
     },
     {

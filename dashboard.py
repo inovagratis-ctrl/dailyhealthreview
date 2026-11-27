@@ -2333,11 +2333,11 @@ class DashboardHandler(SimpleHTTPRequestHandler):
                 self.wfile.write(json.dumps({
                     "status": "ONLINE",
                     "port": PORT,
-                    "products_count": 41,
-                    "showcases_count": 41,
-                    "reviews_count": 41,
+                    "products_count": 43,
+                    "showcases_count": 43,
+                    "reviews_count": 43,
                     "advertorials_count": 36,
-                    "total_assets": 117,
+                    "total_assets": 122,
                     "weapons_status": "5_WEAPONS_ACTIVE",
                     "nickname": ACCOUNT_NICKNAME
                 }).encode("utf-8"))
@@ -2371,17 +2371,13 @@ def start_server():
     print("\n=======================================================")
     print("[+] CLICKBANK & DIGISTORE LIVE SALES DASHBOARD ATIVO!")
     print("[+] API Status: ONLINE (Conectada a ClickBank REST 1.3)")
-    print(f"[+] 41 PRODUTOS (3 REDES: CLICKBANK, DIGISTORE24, BUYGOODS) ATUALIZADOS")
+    print(f"[+] 43 PRODUTOS (3 REDES: CLICKBANK, DIGISTORE24, BUYGOODS) ATUALIZADOS")
     print(f"[+] Acesse no seu navegador: http://localhost:{PORT}")
     print("=======================================================\n")
-    server.serve_forever()
-
-if __name__ == "__main__":
-    t = threading.Thread(target=start_server, daemon=True)
-    t.start()
-    time.sleep(1)
     try:
-        while True:
-            time.sleep(1)
+        server.serve_forever()
     except KeyboardInterrupt:
         print("\nPainel encerrado.")
+
+if __name__ == "__main__":
+    start_server()
