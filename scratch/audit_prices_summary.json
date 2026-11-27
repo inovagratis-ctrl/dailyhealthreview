@@ -1,0 +1,947 @@
+[
+  {
+    "folder": "advanced-amino-formula-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "advanced-amino-review",
+    "title": "Advanced Amino Formula Review 2026: Clinical Breakdown & Ind",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/advanced-amino"
+    ]
+  },
+  {
+    "folder": "advanced-collagen-plus-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "advanced-collagen-review",
+    "title": "Advanced Collagen Plus Review 2026: Clinical Breakdown & Ind",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/advanced-collagen"
+    ]
+  },
+  {
+    "folder": "advanced-joint-review",
+    "title": "Advanced Joint Support Review 2026: Clinical Breakdown & Ind",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/advanced-joint"
+    ]
+  },
+  {
+    "folder": "advanced-joint-support-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "advanced-memory-formula-guide",
+    "title": "Advanced Memory Formula: The Botanical Science &amp; Neuro-N",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": [
+      "/go/memory"
+    ]
+  },
+  {
+    "folder": "advanced-memory-review",
+    "title": "Advanced Memory Formula Review 2026: Clinical Breakdown & In",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/advanced-memory"
+    ]
+  },
+  {
+    "folder": "all-day-slimming-tea-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "all-day-slimming-tea-review",
+    "title": "All Day Slimming Tea Review 2026: Clinical Breakdown & Indep",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/all-day-slimming-tea"
+    ]
+  },
+  {
+    "folder": "audifort-hearing-support-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "audifort-review",
+    "title": "Audifort Review 2026: Clinical Breakdown & Independent Lab F",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/audifort"
+    ]
+  },
+  {
+    "folder": "cardioslim-tea-cardio-support-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "cardioslim-tea-review",
+    "title": "CardioSlim Tea Review 2026: Clinical Breakdown & Independent",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/cardioslim"
+    ]
+  },
+  {
+    "folder": "circo2-nitric-oxide-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "circo2-review",
+    "title": "Circo2 Review 2026: Clinical Breakdown & Independent Lab Fac",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/circo2"
+    ]
+  },
+  {
+    "folder": "cleansesana-review",
+    "title": "CleanseSana Review 2026: Clinical Breakdown & Independent La",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/cleansesana"
+    ]
+  },
+  {
+    "folder": "colestzen-review",
+    "title": "ColestZen Review 2026: Does It Support Healthy Arterial & Ch",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/colestzen"
+    ]
+  },
+  {
+    "folder": "corevital-burn-review",
+    "title": "CoreVital Burn Review 2026: Dr. Samir Bute's 5-Botanical For",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0,
+      119.95
+    ],
+    "redirect": [
+      "/go/corevital"
+    ]
+  },
+  {
+    "folder": "dentabiome-oral-postbiotic-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "dentabiome-review",
+    "title": "Dentabiome Review 2026: Clinical Breakdown & Independent Lab",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/dentabiome"
+    ]
+  },
+  {
+    "folder": "femicore-pelvic-health-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "femicore-review",
+    "title": "FemiCore Review 2026: Clinical Breakdown & Independent Lab F",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/femicore"
+    ]
+  },
+  {
+    "folder": "fimavyn-metabolic-activation-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "fimavyn-review",
+    "title": "Fimavyn Review 2026: Clinical Breakdown & Independent Lab Fa",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/fimavyn"
+    ]
+  },
+  {
+    "folder": "glucotrust-review",
+    "title": "GlucoTrust Review 2026: Clinical Breakdown & Independent Lab",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/glucotrust"
+    ]
+  },
+  {
+    "folder": "java-burn-coffee-ritual-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "java-burn-review",
+    "title": "Java Burn Review 2026: Does This Morning Coffee Enhancer Tru",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/javaburn"
+    ]
+  },
+  {
+    "folder": "joint-eternal-mobility-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "joint-eternal-review",
+    "title": "Joint Eternal Review 2026: Clinical Breakdown & Independent ",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/joint-eternal"
+    ]
+  },
+  {
+    "folder": "joint-genesis-review",
+    "title": "Joint Genesis Review 2026: Clinical Breakdown & Independent ",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/jointgenesis"
+    ]
+  },
+  {
+    "folder": "joint-genesis-synovial-fluid-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "kerassentials-nail-fungus-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "kerassentials-review",
+    "title": "Kerassentials Review 2026: Clinical Breakdown & Independent ",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/kerassentials"
+    ]
+  },
+  {
+    "folder": "ketosana-metabolic-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "ketosana-review",
+    "title": "KetoSana Review 2026: Does This Exogenous Ketone Formula Acc",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/ketosana"
+    ]
+  },
+  {
+    "folder": "liv-pure-liver-fat-burning-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "liv-pure-review",
+    "title": "Liv Pure Review 2026: Clinical Breakdown & Independent Lab F",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/livpure"
+    ]
+  },
+  {
+    "folder": "livarix-review",
+    "title": "Livarix Review 2026: Clinical Breakdown & Independent Lab Fa",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/livarix"
+    ]
+  },
+  {
+    "folder": "lymphtonic-drainage-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "lymphtonic-review",
+    "title": "Lymphtonic Review 2026: Clinical Breakdown & Independent Lab",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/lymphtonic"
+    ]
+  },
+  {
+    "folder": "metanail-complex-nail-fungus-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "metanail-review",
+    "title": "Metanail Complex Review 2026: Clinical Breakdown & Independe",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/metanail"
+    ]
+  },
+  {
+    "folder": "nagano-tonic-review",
+    "title": "Nagano Lean Body Tonic Review 2026: Clinical Breakdown & Ind",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/nagano"
+    ]
+  },
+  {
+    "folder": "nanodefense-pro-nanotechnology-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "nanodefense-pro-review",
+    "title": "NanoDefense Pro Review 2026: Clinical Breakdown & Independen",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/nanodefense"
+    ]
+  },
+  {
+    "folder": "neotonics-review",
+    "title": "Neotonics Review 2026: Does This Gut-Skin Probiotic Accelera",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/neotonics"
+    ]
+  },
+  {
+    "folder": "neotonics-skin-gut-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "nerve-fresh-review",
+    "title": "Nerve Fresh Review 2026: Clinical Breakdown &amp; Independen",
+    "schema_price": [
+      "69.00",
+      "177.00",
+      "234.00"
+    ],
+    "schema_range": "$39.00 - $69.00",
+    "detected_prices": [
+      39.0,
+      59.0,
+      69.0,
+      177.0,
+      234.0,
+      300.0
+    ],
+    "redirect": [
+      "/go/nerve-fresh"
+    ]
+  },
+  {
+    "folder": "nervecalm-review",
+    "title": "NerveCalm Review 2026: Does This Botanical Formula Truly Soo",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/nervecalm"
+    ]
+  },
+  {
+    "folder": "nervogen-pro-review",
+    "title": "NervoGen Pro Review 2026: Clinical Breakdown &amp; Independe",
+    "schema_price": [
+      "69.00",
+      "177.00",
+      "294.00"
+    ],
+    "schema_range": "$49.00 - $69.00",
+    "detected_prices": [
+      49.0,
+      59.0,
+      69.0,
+      177.0,
+      294.0,
+      300.0
+    ],
+    "redirect": [
+      "/go/nervogen"
+    ]
+  },
+  {
+    "folder": "neurovera-brain-clarity-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "neurovera-review",
+    "title": "NeuroVera Review 2026: Clinical Breakdown & Independent Lab ",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/neurovera"
+    ]
+  },
+  {
+    "folder": "nitric-boost-review",
+    "title": "Nitric Boost Review 2026: Clinical Breakdown & Independent L",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/nitricboost"
+    ]
+  },
+  {
+    "folder": "nitric-boost-ultra-erection-formula-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "phytomem-memory-formula-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "phytomem-review",
+    "title": "Phytomem Review 2026: Clinical Breakdown & Independent Lab F",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/phytomem"
+    ]
+  },
+  {
+    "folder": "primebiome-gut-skin-axis-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "primebiome-review",
+    "title": "PrimeBiome Review 2026: Clinical Breakdown & Independent Lab",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/primebiome"
+    ]
+  },
+  {
+    "folder": "prodentim-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "prodentim-review",
+    "title": "ProDentim Review 2026: The Clinical Truth About 3.5 Billion ",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/prodentim"
+    ]
+  },
+  {
+    "folder": "prostavive-prostate-health-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "prostavive-review",
+    "title": "ProstaVive Review 2026: Clinical Breakdown & Independent Lab",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/prostavive"
+    ]
+  },
+  {
+    "folder": "quietum-plus-review",
+    "title": "Quietum Plus Review 2026: Clinical Breakdown &amp; Independe",
+    "schema_price": [
+      "158.00",
+      "207.00",
+      "294.00"
+    ],
+    "schema_range": "$49.00 - $79.00",
+    "detected_prices": [
+      49.0,
+      69.0,
+      79.0,
+      158.0,
+      207.0,
+      294.0
+    ],
+    "redirect": [
+      "/go/quietum-plus"
+    ]
+  },
+  {
+    "folder": "spartamax-review",
+    "title": "SpartaMax Review 2026: Clinical Breakdown & Independent Lab ",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/spartamax"
+    ]
+  },
+  {
+    "folder": "spartamax-vitality-gummies-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "sugar-defender-guide",
+    "title": "Sugar Defender Review 2026: 24-Herb Glucose Matrix Audit",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": [
+      "/go/sugardefender"
+    ]
+  },
+  {
+    "folder": "sugar-defender-review",
+    "title": "Sugar Defender Review 2026: Does This Liquid Herbal Drop Bal",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/sugar-defender"
+    ]
+  },
+  {
+    "folder": "synaptigen-memory-formula-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "synaptigen-review",
+    "title": "Synaptigen Review 2026: Clinical Breakdown & Independent Lab",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/synaptigen"
+    ]
+  },
+  {
+    "folder": "synevra-lift-and-lock-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "synevra-review",
+    "title": "Synevra Review 2026: Clinical Breakdown & Independent Lab Fa",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/synevra"
+    ]
+  },
+  {
+    "folder": "synogut-review",
+    "title": "SynoGut Review 2026: Does This Natural Formula Restore Smoot",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/synogut"
+    ]
+  },
+  {
+    "folder": "vigorsana-review",
+    "title": "VigorSana Review 2026: Does This Botanical Nitric Oxide Form",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/vigorsana"
+    ]
+  },
+  {
+    "folder": "visiflora-review",
+    "title": "VisiFlora Review 2026: Clinical Breakdown & Independent Lab ",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/visiflora"
+    ]
+  },
+  {
+    "folder": "visiflora-vision-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "yusleep-deep-rest-report",
+    "title": "Redirecting to Verified Clinical Review...",
+    "schema_price": [],
+    "schema_range": null,
+    "detected_prices": [],
+    "redirect": []
+  },
+  {
+    "folder": "yusleep-review",
+    "title": "YuSleep Review 2026: Clinical Breakdown & Independent Lab Fa",
+    "schema_price": [
+      "49.00"
+    ],
+    "schema_range": null,
+    "detected_prices": [
+      49.0
+    ],
+    "redirect": [
+      "/go/yusleep"
+    ]
+  },
+  {
+    "folder": "zencortex-review",
+    "title": "ZenCortex Review 2026: Clinical Breakdown &amp; Independent ",
+    "schema_price": [
+      "158.00",
+      "207.00",
+      "294.00"
+    ],
+    "schema_range": "$49.00 - $79.00",
+    "detected_prices": [
+      49.0,
+      69.0,
+      79.0,
+      158.0,
+      207.0,
+      294.0
+    ],
+    "redirect": [
+      "/go/zencortex"
+    ]
+  }
+]
