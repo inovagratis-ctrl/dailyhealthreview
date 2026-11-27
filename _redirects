@@ -133,29 +133,41 @@
 # Legal Pages Legacy Redirects (301) directly to Canonical Trailing Slash
 /legal/privacy-policy.html /privacy/ 301
 /legal/privacy-policy /privacy/ 301
+/legal/privacy-policy/ /privacy/ 301
 /privacy-policy.html /privacy/ 301
 /privacy-policy /privacy/ 301
+/privacy-policy/ /privacy/ 301
+/privacy-policy/* /privacy/ 301
 /disclaimer/privacy-policy.html /privacy/ 301
 /terms/privacy-policy.html /privacy/ 301
 
 /legal/terms-of-service.html /terms/ 301
 /legal/terms-of-service /terms/ 301
+/legal/terms-of-service/ /terms/ 301
 /terms-of-service.html /terms/ 301
 /terms-of-service /terms/ 301
+/terms-of-service/ /terms/ 301
+/terms-of-service/* /terms/ 301
 /disclaimer/terms-of-service.html /terms/ 301
 /privacy/terms-of-service.html /terms/ 301
 
 /legal/affiliate-disclosure.html /disclosure/ 301
 /legal/affiliate-disclosure /disclosure/ 301
+/legal/affiliate-disclosure/ /disclosure/ 301
 /affiliate-disclosure.html /disclosure/ 301
 /affiliate-disclosure /disclosure/ 301
+/affiliate-disclosure/ /disclosure/ 301
+/affiliate-disclosure/* /disclosure/ 301
 /disclaimer/affiliate-disclosure.html /disclosure/ 301
 /privacy/affiliate-disclosure.html /disclosure/ 301
 
 /legal/fda-disclaimer.html /disclaimer/ 301
 /legal/fda-disclaimer /disclaimer/ 301
+/legal/fda-disclaimer/ /disclaimer/ 301
 /fda-disclaimer.html /disclaimer/ 301
 /fda-disclaimer /disclaimer/ 301
+/fda-disclaimer/ /disclaimer/ 301
+/fda-disclaimer/* /disclaimer/ 301
 
 /legal/contact.html /contact/ 301
 /legal/contact /contact/ 301
