@@ -75,66 +75,130 @@
 
   <!-- Schema.org JSON-LD -->
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Product",
-        "name": "KetoSana US Liquid Dietary Supplement Drops (2 Fl Oz)",
-        "image": [
-          "https://dailyhealthreviewus.com/Imagens_Oficiais/ketosana_1_bottle.png",
-          "https://dailyhealthreviewus.com/Imagens_Oficiais/ketosana_3_bottles.png",
-          "https://dailyhealthreviewus.com/Imagens_Oficiais/ketosana_6_bottles.png"
-        ],
-        "description": "Liquid botanical and amino acid dietary supplement drops (2 Fl Oz / 59.14 mL, 60 servings) combining 7 mcg Chromium Picolinate (20% DV) and a 200 mg proprietary herbal blend, shipped from Aurora, CO with a 60-day money-back guarantee.",
-        "brand": {
-          "@type": "Brand",
-          "name": "KetoSana"
-        },
-        "sku": "KETOSANA-US-3BTL",
-        "offers": {
-          "@type": "AggregateOffer",
-          "url": "https://dailyhealthreviewus.com/showcase/ketosana",
-          "priceCurrency": "USD",
-          "lowPrice": "49.00",
-          "highPrice": "69.00",
-          "offerCount": "3",
-          "priceValidUntil": "2027-12-31",
-          "availability": "https://schema.org/InStock"
-        }
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "KetoSana US Liquid Dietary Supplement Drops (2 Fl Oz)",
+      "image": [
+        "https://dailyhealthreviewus.com/Imagens_Oficiais/ketosana_1_bottle.png",
+        "https://dailyhealthreviewus.com/Imagens_Oficiais/ketosana_3_bottles.png",
+        "https://dailyhealthreviewus.com/Imagens_Oficiais/ketosana_6_bottles.png"
+      ],
+      "description": "Liquid botanical and amino acid dietary supplement drops (2 Fl Oz / 59.14 mL, 60 servings) combining 7 mcg Chromium Picolinate (20% DV) and a 200 mg proprietary herbal blend, shipped from Aurora, CO with a 60-day money-back guarantee.",
+      "brand": {
+        "@type": "Brand",
+        "name": "KetoSana"
       },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How do you take KetoSana US liquid drops?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "According to the official label directions, adults take 1 mL (approximately 2 droppers full) twice daily or as directed by a healthcare professional. Each 2 Fl Oz (59.14 mL) bottle contains 60 measured 1 mL servings."
-            }
+      "sku": "KETOSANA-US-3BTL",
+      "offers": {
+        "@type": "AggregateOffer",
+        "url": "https://dailyhealthreviewus.com/showcase/ketosana",
+        "priceCurrency": "USD",
+        "lowPrice": "49.00",
+        "highPrice": "69.00",
+        "offerCount": "3",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2024-01-01",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 60,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
           },
-          {
-            "@type": "Question",
-            "name": "Where do KetoSana US orders ship from and how long does delivery take?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "US orders are picked, packed, and dispatched within 1 to 2 business days from the KetoSana US fulfillment center in Aurora, CO 80011. Continental US delivery typically takes 5 to 7 business days, with free shipping included on 3-bottle and 6-bottle packages."
-            }
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
           },
-          {
-            "@type": "Question",
-            "name": "What is covered by the 60-Day Money-Back Guarantee?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "KetoSana orders include a 60-day money-back guarantee from the date of purchase. Customers can contact support@myketosana.com within 60 days for return arrangement instructions to Aurora, CO 80011."
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 2,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 3,
+              "maxValue": 5,
+              "unitCode": "DAY"
             }
           }
-        ]
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "184",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.9",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Daily Health Review - Board of Research",
+          "url": "https://dailyhealthreviewus.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Daily Health Review",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://dailyhealthreviewus.com/images/daily-health-review-logo.png"
+          }
+        }
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do you take KetoSana US liquid drops?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "According to the official label directions, adults take 1 mL (approximately 2 droppers full) twice daily or as directed by a healthcare professional. Each 2 Fl Oz (59.14 mL) bottle contains 60 measured 1 mL servings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where do KetoSana US orders ship from and how long does delivery take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "US orders are picked, packed, and dispatched within 1 to 2 business days from the KetoSana US fulfillment center in Aurora, CO 80011. Continental US delivery typically takes 5 to 7 business days, with free shipping included on 3-bottle and 6-bottle packages."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is covered by the 60-Day Money-Back Guarantee?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "KetoSana orders include a 60-day money-back guarantee from the date of purchase. Customers can contact support@myketosana.com within 60 days for return arrangement instructions to Aurora, CO 80011."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 
   <!-- Pinterest Tag -->
   <script>

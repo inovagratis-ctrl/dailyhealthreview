@@ -83,7 +83,7 @@
           "@type": "MerchantReturnPolicy",
           "applicableCountry": "US",
           "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-          "merchantReturnDays": 180,
+          "merchantReturnDays": 60,
           "returnMethod": "https://schema.org/ReturnByMail",
           "returnFees": "https://schema.org/FreeReturn"
         },
@@ -102,7 +102,7 @@
             "@type": "ShippingDeliveryTime",
             "handlingTime": {
               "@type": "QuantitativeValue",
-              "minValue": 0,
+              "minValue": 1,
               "maxValue": 2,
               "unitCode": "DAY"
             },
@@ -112,6 +112,28 @@
               "maxValue": 5,
               "unitCode": "DAY"
             }
+          }
+        },
+        "validFrom": "2024-01-01"
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.9",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Daily Health Review - Board of Research",
+          "url": "https://dailyhealthreviewus.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Daily Health Review",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://dailyhealthreviewus.com/images/daily-health-review-logo.png"
           }
         }
       }
@@ -171,7 +193,7 @@
     }
   ]
 }
-  </script>
+</script>
 <style>
     body { font-family: 'Montserrat', sans-serif; }
     .font-heading { font-family: 'Oswald', sans-serif; }

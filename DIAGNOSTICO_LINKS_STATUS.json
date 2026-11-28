@@ -1,13 +1,18 @@
 {
-  "timestamp": "2026-11-27 16:37:54",
-  "total_products": 42,
-  "showcases_ok": 42,
-  "editorials_ok": 42,
+  "timestamp": "2026-11-28 06:49:33",
+  "total_products": 46,
+  "showcases_ok": 37,
+  "editorials_ok": 46,
   "advertorials_ok": 4,
-  "redirects_ok": 42,
-  "affiliate_tags_ok": 42,
+  "redirects_ok": 46,
+  "affiliate_tags_ok": 46,
   "issues": [
+    "Showcase ausente: SynoGut™ em showcase/go/synogut/index.html",
+    "Showcase ausente: NerveCalm™ em showcase/go/nervecalm/index.html",
+    "Showcase ausente: ColestZen™ em showcase/go/colestzen/index.html",
+    "Showcase ausente: VigorSana™ em showcase/go/vigorsana/index.html",
     "Story Advertorial ausente: VigorSana™ (None)",
+    "Showcase ausente: Livarix™ em showcase/go/livarix/index.html",
     "Story Advertorial ausente: Nagano Lean Body Tonic\\u2122 (nagano-japanese-tonic-secret)",
     "Story Advertorial ausente: Advanced Joint Support\\u2122 (advanced-joint-cucumbers-secret)",
     "Story Advertorial ausente: ProDentim\\u00ae Oral Health (prodentim-purple-mineral-secret)",
@@ -44,14 +49,22 @@
     "Story Advertorial ausente: Liv Pure™ (livpure-liver-purification-secret)",
     "Story Advertorial ausente: DentaBiome™ (dentabiome-postbiotic-mouth-secret)",
     "Story Advertorial ausente: Yu Sleep™ Deep Rest (yusleep-deep-rest-secret)",
-    "Story Advertorial ausente: PrimeBiome™ Gut & Skin (primebiome-gut-dermal-secret)"
+    "Story Advertorial ausente: PrimeBiome™ Gut & Skin (primebiome-gut-dermal-secret)",
+    "Showcase ausente: Nerve Fresh™ em showcase/go/nerve-fresh/index.html",
+    "Story Advertorial ausente: Nerve Fresh™ (None)",
+    "Showcase ausente: Quietum Plus™ em showcase/go/quietum-plus/index.html",
+    "Story Advertorial ausente: Quietum Plus™ (None)",
+    "Showcase ausente: ZenCortex™ em showcase/go/zencortex/index.html",
+    "Story Advertorial ausente: ZenCortex™ (None)",
+    "Showcase ausente: NervoGen Pro™ em showcase/go/nervogen/index.html",
+    "Story Advertorial ausente: NervoGen Pro™ (None)"
   ],
   "products": [
     {
       "id": "synogut",
       "title": "SynoGut™",
-      "price": "$49/bottle",
-      "showcase_ok": true,
+      "price": "From $49/bottle",
+      "showcase_ok": false,
       "editorial_ok": true,
       "advertorial_ok": true,
       "secret_slug": null,
@@ -62,8 +75,8 @@
     {
       "id": "nervecalm",
       "title": "NerveCalm™",
-      "price": "$49/bottle",
-      "showcase_ok": true,
+      "price": "From $49/bottle",
+      "showcase_ok": false,
       "editorial_ok": true,
       "advertorial_ok": true,
       "secret_slug": null,
@@ -74,8 +87,8 @@
     {
       "id": "colestzen",
       "title": "ColestZen™",
-      "price": "$49/bottle",
-      "showcase_ok": true,
+      "price": "From $49/bottle",
+      "showcase_ok": false,
       "editorial_ok": true,
       "advertorial_ok": true,
       "secret_slug": null,
@@ -86,8 +99,8 @@
     {
       "id": "vigorsana",
       "title": "VigorSana™",
-      "price": "$49/bottle",
-      "showcase_ok": true,
+      "price": "From $49/bottle",
+      "showcase_ok": false,
       "editorial_ok": true,
       "advertorial_ok": false,
       "secret_slug": null,
@@ -98,8 +111,8 @@
     {
       "id": "livarix",
       "title": "Livarix™",
-      "price": "$49/bottle",
-      "showcase_ok": true,
+      "price": "From $49/bottle",
+      "showcase_ok": false,
       "editorial_ok": true,
       "advertorial_ok": true,
       "secret_slug": null,
@@ -110,7 +123,7 @@
     {
       "id": "nagano",
       "title": "Nagano Lean Body Tonic\\u2122",
-      "price": "$39/bottle",
+      "price": "From $39/tub",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -122,7 +135,7 @@
     {
       "id": "advanced-joint",
       "title": "Advanced Joint Support\\u2122",
-      "price": "$41.50/bottle",
+      "price": "From $41.50/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -134,7 +147,7 @@
     {
       "id": "prodentim",
       "title": "ProDentim\\u00ae Oral Health",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -146,7 +159,7 @@
     {
       "id": "corevital",
       "title": "CoreVital Burn\\u2122",
-      "price": "$29.90/bottle",
+      "price": "$39.98/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -158,7 +171,7 @@
     {
       "id": "ketosana",
       "title": "KetoSana\\u00ae US Liquid Drops",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -170,7 +183,7 @@
     {
       "id": "cardioslim",
       "title": "Cardio Slim Tea\\u2122",
-      "price": "$49/pouch",
+      "price": "From $49/pouch",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -182,7 +195,7 @@
     {
       "id": "sugar-defender",
       "title": "Sugar Defender\\u00ae",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -194,7 +207,7 @@
     {
       "id": "cleansesana",
       "title": "CleanseSana\\u00ae Colon Cleanse",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -206,7 +219,7 @@
     {
       "id": "advanced-amino",
       "title": "Advanced Amino Formula\\u2122",
-      "price": "$41.50/bottle",
+      "price": "From $41.50/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -218,7 +231,7 @@
     {
       "id": "collagen",
       "title": "Advanced Collagen PLUS\\u2122",
-      "price": "$41.50/pouch",
+      "price": "From $41.50/pouch",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -230,7 +243,7 @@
     {
       "id": "memory",
       "title": "Advanced Memory Formula\\u2122",
-      "price": "$41.50/bottle",
+      "price": "From $41.50/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -242,7 +255,7 @@
     {
       "id": "circo2",
       "title": "CirCO2\\u00ae Nitric Oxide",
-      "price": "$41.50/box",
+      "price": "From $41.50/box",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -254,7 +267,7 @@
     {
       "id": "audifort",
       "title": "Audifort\\u2122 Ear Support",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -266,7 +279,7 @@
     {
       "id": "femicore",
       "title": "FemiCore\\u2122 Pelvic Health",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -278,7 +291,7 @@
     {
       "id": "neotonics",
       "title": "Neotonics\\u00ae Gut & Skin",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -290,7 +303,7 @@
     {
       "id": "lymphtonic",
       "title": "LymphTonic\\u2122 Drainage",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -302,7 +315,7 @@
     {
       "id": "visiflora",
       "title": "VisiFlora\\u00ae Eye & Vision",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -314,7 +327,7 @@
     {
       "id": "neurovera",
       "title": "NeuroVera\\u2122 Nerve Health",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -326,7 +339,7 @@
     {
       "id": "phytomem",
       "title": "PhytoMem\\u2122 Cognition",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -338,7 +351,7 @@
     {
       "id": "joint-eternal",
       "title": "Joint Eternal\\u2122",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -350,7 +363,7 @@
     {
       "id": "prostavive",
       "title": "ProstaVive\\u2122 Men's Health",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -362,7 +375,7 @@
     {
       "id": "slimming-tea",
       "title": "All Day Slimming Tea\\u00ae",
-      "price": "$49/pouch",
+      "price": "From $49/pouch",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -374,7 +387,7 @@
     {
       "id": "spartamax",
       "title": "SpartaMax\\u2122 Male Vitality",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -386,7 +399,7 @@
     {
       "id": "fimavyn",
       "title": "Fimavyn\\u2122 Metabolic Drops",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -398,7 +411,7 @@
     {
       "id": "glucotrust",
       "title": "GlucoTrust\\u2122 Glucose Support",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -410,7 +423,7 @@
     {
       "id": "javaburn",
       "title": "Java Burn\\u2122 Coffee Booster",
-      "price": "$39/pouch",
+      "price": "From $39/pouch",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -422,7 +435,7 @@
     {
       "id": "kerassentials",
       "title": "Kerassentials® Nail & Skin Oil",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -434,7 +447,7 @@
     {
       "id": "nanodefense",
       "title": "NanoDefense Pro™ Nanotech Drops",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -446,7 +459,7 @@
     {
       "id": "synaptigen",
       "title": "Synaptigen™ Cognitive Clarity",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -458,7 +471,7 @@
     {
       "id": "metanail",
       "title": "Metanail Complex™ 20-in-1",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -470,7 +483,7 @@
     {
       "id": "jointgenesis",
       "title": "BioDynamix Joint Genesis™",
-      "price": "$39/bottle",
+      "price": "From $39/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -482,7 +495,7 @@
     {
       "id": "synevra",
       "title": "Synevra Lift & Lock System",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -494,7 +507,7 @@
     {
       "id": "nitricboost",
       "title": "Nitric Boost Ultra™",
-      "price": "$49/jar",
+      "price": "From $49/jar",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -506,7 +519,7 @@
     {
       "id": "livpure",
       "title": "Liv Pure™",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -518,7 +531,7 @@
     {
       "id": "dentabiome",
       "title": "DentaBiome™",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -530,7 +543,7 @@
     {
       "id": "yusleep",
       "title": "Yu Sleep™ Deep Rest",
-      "price": "$39/bottle",
+      "price": "From $39/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
@@ -542,13 +555,61 @@
     {
       "id": "primebiome",
       "title": "PrimeBiome™ Gut & Skin",
-      "price": "$49/bottle",
+      "price": "From $49/bottle",
       "showcase_ok": true,
       "editorial_ok": true,
       "advertorial_ok": false,
       "secret_slug": "primebiome-gut-dermal-secret",
       "go_route": "/go/primebiome",
       "dest_url": "https://8feeba4gyffmgnd9whq0p3wdii.hop.clickbank.net",
+      "aff_ok": true
+    },
+    {
+      "id": "nervefresh",
+      "title": "Nerve Fresh™",
+      "price": "From $39/bottle",
+      "showcase_ok": false,
+      "editorial_ok": true,
+      "advertorial_ok": false,
+      "secret_slug": null,
+      "go_route": "/go/nerve-fresh",
+      "dest_url": "https://secure.nervefresh.com/index-dtc-bg?aff_id=21014&subid=dhr",
+      "aff_ok": true
+    },
+    {
+      "id": "quietumplus",
+      "title": "Quietum Plus™",
+      "price": "From $49/bottle",
+      "showcase_ok": false,
+      "editorial_ok": true,
+      "advertorial_ok": false,
+      "secret_slug": null,
+      "go_route": "/go/quietum-plus",
+      "dest_url": "https://826d7czojafjbsci4gomri6d1i.hop.clickbank.net/?cbpage=tsl",
+      "aff_ok": true
+    },
+    {
+      "id": "zencortex",
+      "title": "ZenCortex™",
+      "price": "From $49/bottle",
+      "showcase_ok": false,
+      "editorial_ok": true,
+      "advertorial_ok": false,
+      "secret_slug": null,
+      "go_route": "/go/zencortex",
+      "dest_url": "https://zencortex24.com/b/order-now.php?aff_id=189046&subid=dhr",
+      "aff_ok": true
+    },
+    {
+      "id": "nervogen",
+      "title": "NervoGen Pro™",
+      "price": "From $49/bottle",
+      "showcase_ok": false,
+      "editorial_ok": true,
+      "advertorial_ok": false,
+      "secret_slug": null,
+      "go_route": "/go/nervogen",
+      "dest_url": "https://thenervogen.com/text.php?aff_id=52706&subid=dhr",
       "aff_ok": true
     }
   ]

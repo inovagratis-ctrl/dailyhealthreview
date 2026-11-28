@@ -69,43 +69,100 @@
 <meta content="https://dailyhealthreviewus.com/showcase/advanced-memory/images/hero-bottle.png" name="twitter:image"/>
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Product",
-        "name": "Advanced Memory Formula",
-        "image": "https://dailyhealthreviewus.com/showcase/advanced-memory/images/hero-bottle.png",
-        "description": "Advanced Memory Formula is a premier neuro-nutritional supplement engineered with Luteolin, Bacopa Monnieri, Ginkgo Biloba, and Phosphatidylserine to restore cellular brain energy, enhance memory recall, and protect brain synapses.",
-        "brand": {
-          "@type": "Brand",
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Advanced Memory Formula",
+      "image": "https://dailyhealthreviewus.com/showcase/advanced-memory/images/hero-bottle.png",
+      "description": "Advanced Memory Formula is a premier neuro-nutritional supplement engineered with Luteolin, Bacopa Monnieri, Ginkgo Biloba, and Phosphatidylserine to restore cellular brain energy, enhance memory recall, and protect brain synapses.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Advanced Bionutritionals"
+      },
+      "sku": "ADVMEM-6BTL",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1480",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "41.50",
+        "highPrice": "49.95",
+        "offerCount": "3",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
           "name": "Advanced Bionutritionals"
         },
-        "sku": "ADVMEM-6BTL",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "1480",
-          "bestRating": "5",
-          "worstRating": "1"
+        "validFrom": "2024-01-01",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 60,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
         },
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "USD",
-          "lowPrice": "41.50",
-          "highPrice": "49.95",
-          "offerCount": "3",
-          "priceValidUntil": "2027-12-31",
-          "availability": "https://schema.org/InStock",
-          "seller": {
-            "@type": "Organization",
-            "name": "Advanced Bionutritionals"
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 2,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 3,
+              "maxValue": 5,
+              "unitCode": "DAY"
+            }
+          }
+        }
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.9",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Daily Health Review - Board of Research",
+          "url": "https://dailyhealthreviewus.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Daily Health Review",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://dailyhealthreviewus.com/images/daily-health-review-logo.png"
           }
         }
       }
-    ]
-  }
-  </script>
+    }
+  ]
+}
+</script>
 <style>
     .pulse-btn {
       animation: pulse-glow 2.2s infinite;

@@ -69,43 +69,100 @@
 <meta content="https://dailyhealthreviewus.com/showcase/phytomem/images/hero-bottle.png" name="twitter:image"/>
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Product",
-        "name": "Phytomem One",
-        "image": "https://dailyhealthreviewus.com/showcase/phytomem/images/hero-bottle.png",
-        "description": "Phytomem One is a premier dual-defense cognitive and memory support dietary formula containing standardized botanical nootropics designed to nourish cerebral microcirculation and brain neuroplasticity.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Phytomem One"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Phytomem One",
+      "image": "https://dailyhealthreviewus.com/showcase/phytomem/images/hero-bottle.png",
+      "description": "Phytomem One is a premier dual-defense cognitive and memory support dietary formula containing standardized botanical nootropics designed to nourish cerebral microcirculation and brain neuroplasticity.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Phytomem One"
+      },
+      "sku": "PHYTOMEM-6BTL",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1150",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "49.00",
+        "highPrice": "79.00",
+        "offerCount": "3",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Phytomem Official"
         },
-        "sku": "PHYTOMEM-6BTL",
-        "aggregateRating": {
-          "@type": "AggregateRating",
+        "validFrom": "2024-01-01",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 60,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 2,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 3,
+              "maxValue": 5,
+              "unitCode": "DAY"
+            }
+          }
+        }
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
           "ratingValue": "4.9",
-          "reviewCount": "1150",
-          "bestRating": "5",
-          "worstRating": "1"
+          "bestRating": "5"
         },
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "USD",
-          "lowPrice": "49.00",
-          "highPrice": "79.00",
-          "offerCount": "3",
-          "priceValidUntil": "2027-12-31",
-          "availability": "https://schema.org/InStock",
-          "seller": {
-            "@type": "Organization",
-            "name": "Phytomem Official"
+        "author": {
+          "@type": "Organization",
+          "name": "Daily Health Review - Board of Research",
+          "url": "https://dailyhealthreviewus.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Daily Health Review",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://dailyhealthreviewus.com/images/daily-health-review-logo.png"
           }
         }
       }
-    ]
-  }
-  </script>
+    }
+  ]
+}
+</script>
 <style>
     .pulse-btn {
       animation: pulse-glow 2.2s infinite;

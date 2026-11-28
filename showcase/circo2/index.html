@@ -69,43 +69,100 @@
 <meta content="https://dailyhealthreviewus.com/showcase/circo2/images/hero-box.png" name="twitter:image"/>
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Product",
-        "name": "circO2",
-        "image": "https://dailyhealthreviewus.com/showcase/circo2/images/hero-box.png",
-        "description": "circO2 is an advanced nitric oxide and oxygen booster formulated with 30 quick-dissolve lozenges designed to rapidly replenish nitric oxide levels, support arterial elasticity, and promote youthful energy.",
-        "brand": {
-          "@type": "Brand",
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "circO2",
+      "image": "https://dailyhealthreviewus.com/showcase/circo2/images/hero-box.png",
+      "description": "circO2 is an advanced nitric oxide and oxygen booster formulated with 30 quick-dissolve lozenges designed to rapidly replenish nitric oxide levels, support arterial elasticity, and promote youthful energy.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Advanced Bionutritionals"
+      },
+      "sku": "CIRCO2-6BOX",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1840",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "41.50",
+        "highPrice": "49.95",
+        "offerCount": "3",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
           "name": "Advanced Bionutritionals"
         },
-        "sku": "CIRCO2-6BOX",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "1840",
-          "bestRating": "5",
-          "worstRating": "1"
+        "validFrom": "2024-01-01",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 60,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
         },
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "USD",
-          "lowPrice": "41.50",
-          "highPrice": "49.95",
-          "offerCount": "3",
-          "priceValidUntil": "2027-12-31",
-          "availability": "https://schema.org/InStock",
-          "seller": {
-            "@type": "Organization",
-            "name": "Advanced Bionutritionals"
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 2,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 3,
+              "maxValue": 5,
+              "unitCode": "DAY"
+            }
+          }
+        }
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": "4.9",
+          "bestRating": "5"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "Daily Health Review - Board of Research",
+          "url": "https://dailyhealthreviewus.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Daily Health Review",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://dailyhealthreviewus.com/images/daily-health-review-logo.png"
           }
         }
       }
-    ]
-  }
-  </script>
+    }
+  ]
+}
+</script>
 <style>
     .pulse-btn {
       animation: pulse-glow 2.2s infinite;

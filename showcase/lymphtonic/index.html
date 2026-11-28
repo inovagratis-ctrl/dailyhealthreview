@@ -69,43 +69,100 @@
 <meta content="https://dailyhealthreviewus.com/showcase/lymphtonic/images/hero-bottles.png" name="twitter:image"/>
 <!-- Schema.org JSON-LD -->
 <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Product",
-        "name": "Lymph Tonic",
-        "image": "https://dailyhealthreviewus.com/showcase/lymphtonic/images/hero-bottles.png",
-        "description": "Lymph Tonic is an alcohol-free liquid herbal dietary supplement designed to promote healthy lymphatic drainage, reduce lower limb swelling, and boost immune waste elimination.",
-        "brand": {
-          "@type": "Brand",
-          "name": "Lymph Tonic"
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "Lymph Tonic",
+      "image": "https://dailyhealthreviewus.com/showcase/lymphtonic/images/hero-bottles.png",
+      "description": "Lymph Tonic is an alcohol-free liquid herbal dietary supplement designed to promote healthy lymphatic drainage, reduce lower limb swelling, and boost immune waste elimination.",
+      "brand": {
+        "@type": "Brand",
+        "name": "Lymph Tonic"
+      },
+      "sku": "LYMPHTONIC-6BTL",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "1420",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "USD",
+        "lowPrice": "49.00",
+        "highPrice": "79.00",
+        "offerCount": "3",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Lymph Tonic Official"
         },
-        "sku": "LYMPHTONIC-6BTL",
-        "aggregateRating": {
-          "@type": "AggregateRating",
+        "validFrom": "2024-01-01",
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 60,
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "returnFees": "https://schema.org/FreeReturn"
+        },
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 1,
+              "maxValue": 2,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 3,
+              "maxValue": 5,
+              "unitCode": "DAY"
+            }
+          }
+        }
+      },
+      "review": {
+        "@type": "Review",
+        "reviewRating": {
+          "@type": "Rating",
           "ratingValue": "4.9",
-          "reviewCount": "1420",
-          "bestRating": "5",
-          "worstRating": "1"
+          "bestRating": "5"
         },
-        "offers": {
-          "@type": "AggregateOffer",
-          "priceCurrency": "USD",
-          "lowPrice": "49.00",
-          "highPrice": "79.00",
-          "offerCount": "3",
-          "priceValidUntil": "2027-12-31",
-          "availability": "https://schema.org/InStock",
-          "seller": {
-            "@type": "Organization",
-            "name": "Lymph Tonic Official"
+        "author": {
+          "@type": "Organization",
+          "name": "Daily Health Review - Board of Research",
+          "url": "https://dailyhealthreviewus.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Daily Health Review",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://dailyhealthreviewus.com/images/daily-health-review-logo.png"
           }
         }
       }
-    ]
-  }
-  </script>
+    }
+  ]
+}
+</script>
 <style>
     .pulse-btn {
       animation: pulse-glow 2.2s infinite;

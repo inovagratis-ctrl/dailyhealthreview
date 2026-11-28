@@ -1,18 +1,23 @@
 ===========================================================================
 RELATÓRIO PERIÓDICO DE INTEGRIDADE DE LINKS & COMISSÕES
-Data e Hora: 2026-11-27 16:37:54
+Data e Hora: 2026-11-28 06:49:33
 ===========================================================================
-Total de Produtos Auditados : 42
-Showcases 100% Online       : 42 / 42
-Editoriais 100% Online      : 42 / 42
-Story Advertorials (Arma 5) : 4 / 42
-Rotas 302 Ativas            : 42 / 42
-Links com Rastreamento Ativo: 42 / 42
-Total de Alertas / Pendências: 38
+Total de Produtos Auditados : 46
+Showcases 100% Online       : 37 / 46
+Editoriais 100% Online      : 46 / 46
+Story Advertorials (Arma 5) : 4 / 46
+Rotas 302 Ativas            : 46 / 46
+Links com Rastreamento Ativo: 46 / 46
+Total de Alertas / Pendências: 51
 ===========================================================================
 
 PENDÊNCIAS DETECTADAS:
+ [!] Showcase ausente: SynoGut™ em showcase/go/synogut/index.html
+ [!] Showcase ausente: NerveCalm™ em showcase/go/nervecalm/index.html
+ [!] Showcase ausente: ColestZen™ em showcase/go/colestzen/index.html
+ [!] Showcase ausente: VigorSana™ em showcase/go/vigorsana/index.html
  [!] Story Advertorial ausente: VigorSana™ (None)
+ [!] Showcase ausente: Livarix™ em showcase/go/livarix/index.html
  [!] Story Advertorial ausente: Nagano Lean Body Tonic\u2122 (nagano-japanese-tonic-secret)
  [!] Story Advertorial ausente: Advanced Joint Support\u2122 (advanced-joint-cucumbers-secret)
  [!] Story Advertorial ausente: ProDentim\u00ae Oral Health (prodentim-purple-mineral-secret)
@@ -50,15 +55,23 @@ PENDÊNCIAS DETECTADAS:
  [!] Story Advertorial ausente: DentaBiome™ (dentabiome-postbiotic-mouth-secret)
  [!] Story Advertorial ausente: Yu Sleep™ Deep Rest (yusleep-deep-rest-secret)
  [!] Story Advertorial ausente: PrimeBiome™ Gut & Skin (primebiome-gut-dermal-secret)
+ [!] Showcase ausente: Nerve Fresh™ em showcase/go/nerve-fresh/index.html
+ [!] Story Advertorial ausente: Nerve Fresh™ (None)
+ [!] Showcase ausente: Quietum Plus™ em showcase/go/quietum-plus/index.html
+ [!] Story Advertorial ausente: Quietum Plus™ (None)
+ [!] Showcase ausente: ZenCortex™ em showcase/go/zencortex/index.html
+ [!] Story Advertorial ausente: ZenCortex™ (None)
+ [!] Showcase ausente: NervoGen Pro™ em showcase/go/nervogen/index.html
+ [!] Story Advertorial ausente: NervoGen Pro™ (None)
 
 DETALHAMENTO DOS 36 PRODUTOS:
 #   | Produto                   | Showcase | Editorial | Afiliado | Rota
 ---------------------------------------------------------------------------
-01  | SynoGut™                  | OK       | OK        | OK       | /go/synogut
-02  | NerveCalm™                | OK       | OK        | OK       | /go/nervecalm
-03  | ColestZen™                | OK       | OK        | OK       | /go/colestzen
-04  | VigorSana™                | OK       | OK        | OK       | /go/vigorsana
-05  | Livarix™                  | OK       | OK        | OK       | /go/livarix
+01  | SynoGut™                  | FALHA    | OK        | OK       | /go/synogut
+02  | NerveCalm™                | FALHA    | OK        | OK       | /go/nervecalm
+03  | ColestZen™                | FALHA    | OK        | OK       | /go/colestzen
+04  | VigorSana™                | FALHA    | OK        | OK       | /go/vigorsana
+05  | Livarix™                  | FALHA    | OK        | OK       | /go/livarix
 06  | Nagano Lean Body Tonic\u2 | OK       | OK        | OK       | /go/nagano
 07  | Advanced Joint Support\u2 | OK       | OK        | OK       | /go/jointsupport
 08  | ProDentim\u00ae Oral Heal | OK       | OK        | OK       | /go/prodentim
@@ -96,3 +109,7 @@ DETALHAMENTO DOS 36 PRODUTOS:
 40  | DentaBiome™               | OK       | OK        | OK       | /go/dentabiome
 41  | Yu Sleep™ Deep Rest       | OK       | OK        | OK       | /go/yusleep
 42  | PrimeBiome™ Gut & Skin    | OK       | OK        | OK       | /go/primebiome
+43  | Nerve Fresh™              | FALHA    | OK        | OK       | /go/nerve-fresh
+44  | Quietum Plus™             | FALHA    | OK        | OK       | /go/quietum-plus
+45  | ZenCortex™                | FALHA    | OK        | OK       | /go/zencortex
+46  | NervoGen Pro™             | FALHA    | OK        | OK       | /go/nervogen
